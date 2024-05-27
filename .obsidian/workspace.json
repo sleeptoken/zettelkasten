@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "738f5b95a2545caa",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "54ab32f5e98842c4",
             "type": "leaf",
             "state": {
@@ -147,8 +139,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "738f5b95a2545caa",
+  "active": "54ab32f5e98842c4",
   "lastOpenFiles": [
+    "Remote Thought/Cryptographic Failures.md",
     "Zettelkasten/Cryptographic Failures.md",
     "Zettelkasten/Flat-file Database.md",
     "Tags/database.md",
