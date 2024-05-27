@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Untitled.md",
+                "file": "Remote Thought/Appdata storage in windows.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Untitled.md",
+                "file": "Remote Thought/Appdata storage in windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Untitled.md",
+                "file": "Remote Thought/Appdata storage in windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Untitled.md"
+                "file": "Remote Thought/Appdata storage in windows.md"
               }
             }
           }
@@ -152,7 +152,7 @@
   "lastOpenFiles": [
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Tags/win.md",
-    "Remote Thought/Untitled.md",
+    "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/Cryptographic Failures.md",
     "Zettelkasten/Cryptographic Failures.md",
     "Zettelkasten/Flat-file Database.md",
