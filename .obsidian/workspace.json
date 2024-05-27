@@ -11,8 +11,13 @@
             "id": "54ab32f5e98842c4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Remote Thought/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Remote Thought/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Remote Thought/Untitled.md"
+              }
             }
           }
         ],
@@ -141,6 +150,9 @@
   },
   "active": "54ab32f5e98842c4",
   "lastOpenFiles": [
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Tags/win.md",
+    "Remote Thought/Untitled.md",
     "Remote Thought/Cryptographic Failures.md",
     "Zettelkasten/Cryptographic Failures.md",
     "Zettelkasten/Flat-file Database.md",
@@ -165,13 +177,11 @@
     "Untitled.canvas",
     "Zettelkasten/2024-05-18.md",
     "Zettelkasten/test tag.md",
-    "Zettelkasten/test1.md",
     "Zettelkasten",
     "Template",
     "Indexes",
     "Tags",
     "Vocab",
-    "Source Material",
-    "Welcome.md"
+    "Source Material"
   ]
 }
