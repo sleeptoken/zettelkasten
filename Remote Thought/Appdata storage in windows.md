@@ -14,3 +14,4 @@ The **AppData** system folder in Windows is the default location for applicati
 
 ### References
 [What is AppData Folder in Windows and How to Clean It Up? – TheITBros](https://theitbros.com/appdata-folder/#:~:text=The%20AppData%20folder%20on%20Windows%20has%20three%20subfolders%3A,one%20computer%20to%20another%20%28environment%20variable%20%25APPDATA%25%20%29.)
+[Remote Desktop Services - Secure data storage | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-plan-secure-data-storage)
