@@ -3,7 +3,7 @@
 
 Source: #portswigger
 
-Tags: 
+Tags: [[web]]
 
 if the ../../ sequence is blocked then try using the desired directory path directly sometimes the app is misconfigured                   example. `/image?filename=/etc/passwd` 
 
