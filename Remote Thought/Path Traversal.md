@@ -17,5 +17,7 @@ I request  `....//....//....//etc/passwd`
 **Encoded Path Traversal** 
 web servers may strip any directory traversal sequences before passing your input to the application .U can sometimes bypass this kind of sanitization by URL encoding, or even double URL encoding, the `../` characters. Various non-standard encodings, such as `..%c0%af` or `..%ef%bc%8f`, may also work
 
+An application may require the user-supplied filename to end with an expected file extension, such as .png. In this case, it might be possible to use a null byte to effectively terminate the file path before the required extension. For example: filename=`../../../etc/passwd%00.png`
+
 ### References
 https://portswigger.net/web-security/learning-paths/path-traversal
