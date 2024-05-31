@@ -19,5 +19,11 @@ web servers may strip any directory traversal sequences before passing your inpu
 
 An application may require the user-supplied filename to end with an expected file extension, such as .png. In this case, it might be possible to use a null byte to effectively terminate the file path before the required extension. For example: filename=`../../../etc/passwd%00.png`
 
+#### Prevention 
+to avoid passing user-supplied input to filesystem APIs altogether
+If you can't avoid passing user-supplied input to filesystem APIs, then -
+Compare the user input with a whitelist of permitted values
+verify that the input contains only permitted content, such as alphanumeric characters only. 
+
 ### References
 https://portswigger.net/web-security/learning-paths/path-traversal
