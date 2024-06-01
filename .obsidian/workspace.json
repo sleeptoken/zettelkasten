@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4877bb6560fc268b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Security configs.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/sqli.md",
+                "file": "Remote Thought/Security configs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/sqli.md",
+                "file": "Remote Thought/Security configs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/sqli.md"
+                "file": "Remote Thought/Security configs.md"
               }
             }
           }
@@ -148,16 +162,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "4877bb6560fc268b",
   "lastOpenFiles": [
     "Remote Thought/Injection.md",
+    "Remote Thought/Path Traversal.md",
+    "Remote Thought/Security configs.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
     "Tags/sqli.md",
     "Remote Thought/LLM attacks.md",
-    "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Broken Access Control.md",
     "Remote Thought/Flat-file Database.md",
-    "Remote Thought/Path Traversal.md",
     "Tags/api.md",
     "Tags/IDOR.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
@@ -175,7 +190,6 @@
     "Zettelkasten/Git forensics & pushing to a remote repo.md",
     "Tags/flat-file.md",
     "Tags/owasp.md",
-    "Zettelkasten/vim on more(editor) interactive mode.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
