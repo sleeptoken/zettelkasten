@@ -3,7 +3,7 @@
 
 Source: #overthewire #bandit
 
-Tags: [[linux]] [[ssh]] [[more]] [[shell]]
+Tags: [[linux]] [[ssh]] [[more]] [[shell]] [[vim]]
 
 what shell is the default for a user, can be found at the end of the line for the user in the `/etc/passwd` file. user default shell is shown when using ssh .
 `/etc/shells` shows all the shells that we have 

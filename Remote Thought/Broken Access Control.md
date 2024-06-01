@@ -13,13 +13,5 @@ Tags: [[web]] [[IDOR]] [[owasp]]
 	- refers to an access control vulnerability where you can access resources you wouldn't ordinarily be able to see. This occurs when the programmer exposes a Direct Object Reference, which is just an identifier that refers to specific objects within the server.
 
 
-
-
-
-
-
-
-
-
 ### References
 [TryHackMe | OWASP Top 10 - 2021](https://tryhackme.com/r/room/owasptop102021)
