@@ -5,7 +5,7 @@ Source: #tryhackme #owasp2021
 
 Tags: [[web]] [[owasp]] [[flat-file]] [[database]]
 
-#### Cryptographic Failures was ranked No. 2 on OWASP Top 10 2021
+#### Cryptographic Failures were ranked No. 2 on OWASP Top 10 2021
 
 A **cryptographic failure** refers to any vulnerability arising from the misuse (or lack of use) of cryptographic algorithms for protecting sensitive information. Web applications require cryptography to provide confidentiality for their users at many levels.
 
