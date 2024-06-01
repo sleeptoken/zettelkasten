@@ -3,7 +3,7 @@
 
 Source: #portswigger 
 
-Tags: [[web]] 
+Tags: [[web]] [[api]]
 
 Some LLMs may require the client to call a separate function endpoint (effectively a private API) in order to generate valid requests that can be sent to those APIs. 
 
@@ -18,9 +18,10 @@ Some LLMs may require the client to call a separate function endpoint (effective
 excessive agency - a situation in which an LLM has access to APIs that can access sensitive information and can be persuaded to use those APIs unsafely
 
 APIs that send emails sometimes use operating system commands that offer a pathway to RCE.
-if the API takes email as an argument then try injecting commands in the username part of the email ID for example - $(whoami)@gmail.com
+if the API takes email as an argument then try injecting commands in the username part of the email ID for example - $(whoami)@gmail.com then check the email client for response
 
-
-
+###### Indirect Prompt injection 
+direct prompt se nhi hota hai 
+prevention - LLM can "understand" that it should ignore instructions from within a web-page or email. 
 ### References
 https://portswigger.net/web-security/learning-paths/llm-attacks
