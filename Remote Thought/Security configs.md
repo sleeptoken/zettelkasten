@@ -14,5 +14,8 @@ Security misconfigurations include:
 - Error messages that are overly detailed and allow attackers to find out more about the system.
 - Not using [HTTP security headers](https://owasp.org/www-project-secure-headers/).
 
-Debugging Interfaces
+**Debugging Interfaces**
+
+
 ### References
+[TryHackMe | OWASP Top 10 - 2021](https://tryhackme.com/r/room/owasptop102021)
