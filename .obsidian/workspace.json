@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "089b70f77c86b0c4",
+        "id": "478cd418e7dce2d2",
         "type": "tabs",
         "children": [
           {
-            "id": "54ab32f5e98842c4",
+            "id": "9752d92f1c478cd4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+                "file": "Remote Thought/LLM attacks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+                "file": "Remote Thought/LLM attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+                "file": "Remote Thought/LLM attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md"
+                "file": "Remote Thought/LLM attacks.md"
               }
             }
           }
@@ -148,16 +148,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54ab32f5e98842c4",
+  "active": "9752d92f1c478cd4",
   "lastOpenFiles": [
-    "Remote Thought/Flat-file Database.md",
+    "Remote Thought/LLM attacks.md",
+    "Tags/IDOR.md",
     "Remote Thought/Path Traversal.md",
+    "Remote Thought/Flat-file Database.md",
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/Broken Access Control.md",
     "Remote Thought/Cryptographic Failures.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Tags/web.md",
     "Tags/vim.md",
     "Tags/RDS.md",
@@ -171,11 +173,9 @@
     "Tags/flat-file.md",
     "Tags/owasp.md",
     "Zettelkasten/vim on more(editor) interactive mode.md",
-    "Tags/IDOR.md",
     "Template/Full Note.md",
     "Tags/git.md",
     "Tags/shell.md",
-    "Tags/more.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
