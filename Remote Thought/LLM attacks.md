@@ -3,7 +3,7 @@
 
 Source: #portswigger 
 
-Tags: 
+Tags: [[web]] 
 
 Some LLMs may require the client to call a separate function endpoint (effectively a private API) in order to generate valid requests that can be sent to those APIs. 
 
@@ -17,6 +17,7 @@ Some LLMs may require the client to call a separate function endpoint (effective
 
 excessive agency - a situation in which an LLM has access to APIs that can access sensitive information and can be persuaded to use those APIs unsafely
 
+APIs that send emails sometimes use operating system commands that offer a pathway to RCE.
 
 
 
