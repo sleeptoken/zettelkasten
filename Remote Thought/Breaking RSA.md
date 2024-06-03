@@ -22,7 +22,9 @@ echo "ibase=16; resulting_modules_from_prev_out | BC_LINE_LENGTH=0 bc
 ```
 
 
-
+use the above 2 commands to get the modulus of the public key 
+then use a py script(from git or chat gpt) to find the p,q from the above obtained modulus
+further use a py script to 
 
 
 
