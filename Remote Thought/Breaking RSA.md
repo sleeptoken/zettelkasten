@@ -16,6 +16,15 @@ Show fingerprint of specified public key file along with the length
 ssh-keygen -e -m PKCS8 -f id_rsa.pub | openssl rsa -pubin -noout -modulus
 ```
 
+```
+echo "ibase=16; resulting_modules_from_prev_out | BC_LINE_LENGTH=0 bc
+```
+
+
+
+
+
+
 
 ### References
 [TryHackMe | Breaking RSA](https://tryhackme.com/r/room/breakrsa)
