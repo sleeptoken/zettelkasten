@@ -3,7 +3,7 @@
 
 Source: #tryhackme 
 
-Tags: [[RSA]] [[Cryptography]]
+Tags: [[RSA]] [[Cryptography]] [[py]]
 
  Let n be a +ve odd integer. Using Fermat's factorization method we can efficiently factorize n into p and q (n = p * q) provided the **difference between p and q is small**.
 
@@ -22,9 +22,11 @@ echo "ibase=16; resulting_modules_from_prev_out | BC_LINE_LENGTH=0 bc
 ```
 
 
-use the above 2 commands to get the modulus of the public key 
-then use a py script(from git or chat gpt) to find the p,q from the above obtained modulus
-further use a py script to 
+use the above 2 commands to get the modulus of the public key or you can use a py script to do the same 
+
+then use a py script (from git or chat GPT) named Fermat's factorization method to find the p, q from the above obtained modulus
+
+further use a py script (from git or chat GPT) to generate a private key from the above obtained values and login via ssh using the generated private key 
 
 
 
