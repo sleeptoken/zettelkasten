@@ -3,7 +3,7 @@
 
 Source: #tryhackme 
 
-Tags: [[RSA]] [[Cryptography]] [[py]]
+Tags: [[RSA]] [[Cryptography]] [[py]] 
 
  Let n be a +ve odd integer. Using Fermat's factorization method we can efficiently factorize n into p and q (n = p * q) provided the **difference between p and q is small**.
 
@@ -33,3 +33,7 @@ further use a py script (from git or chat GPT) to generate a private key from th
 
 ### References
 [TryHackMe | Breaking RSA](https://tryhackme.com/r/room/breakrsa)
+
+writeup (inclusive of py scripts)
+[Breaking RSA | Writeups (gitbook.io)](https://0xb0b.gitbook.io/writeups/tryhackme/2024/breaking-rsa)
+[TryHackMe: Breaking RSA | jaxafed](https://jaxafed.github.io/posts/tryhackme-breaking_rsa/)
