@@ -3,7 +3,7 @@
 
 Source: #tryhackme #owasp2021 
 
-Tags: [[web]] [[owasp]]
+Tags: [[web]] [[owasp]] [[py]]
 
 #### Security misconfigs were ranked No. 5 on OWASP Top 10 2021
 
