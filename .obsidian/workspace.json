@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fd0d8ebf99de2508",
+        "id": "6ed9c73d81c930c8",
         "type": "tabs",
         "children": [
           {
-            "id": "f6b6ac9fe6a6583a",
+            "id": "6375865893b65713",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/SSRF.md",
+                "file": "Remote Thought/ROT13.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/SSRF.md",
+                "file": "Remote Thought/ROT13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/SSRF.md",
+                "file": "Remote Thought/ROT13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/SSRF.md"
+                "file": "Remote Thought/ROT13.md"
               }
             }
           }
@@ -147,9 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "6375865893b65713",
   "lastOpenFiles": [
     "Pasted image 20240604110852.png",
+    "Remote Thought/ROT13.md",
     "Remote Thought/SSRF.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Integrity Failure.md",
@@ -174,7 +175,6 @@
     "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/break RSA w public ky.md",
     "Tags/more.md",
-    "Tags/Cryptography.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
