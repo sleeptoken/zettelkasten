@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6b1468df6e5ba48d",
+        "id": "fd0d8ebf99de2508",
         "type": "tabs",
         "children": [
           {
-            "id": "cf3d3e869dabeb4a",
+            "id": "f6b6ac9fe6a6583a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Integrity Failure.md",
+                "file": "Remote Thought/SSRF.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Integrity Failure.md",
+                "file": "Remote Thought/SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Integrity Failure.md",
+                "file": "Remote Thought/SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Integrity Failure.md"
+                "file": "Remote Thought/SSRF.md"
               }
             }
           }
@@ -147,16 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf3d3e869dabeb4a",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Tags/JWT.md",
+    "Pasted image 20240604110852.png",
+    "Remote Thought/SSRF.md",
+    "Remote Thought/Injection.md",
     "Remote Thought/Integrity Failure.md",
+    "Tags/JWT.md",
     "Tags/API.md",
     "Tags/git.md",
     "Remote Thought/Insecure Design.md",
-    "Pasted image 20240604110852.png",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Remote Thought/Injection.md",
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Broken Access Control.md",
     "Tags/owasp.md",
@@ -174,8 +175,6 @@
     "Remote Thought/break RSA w public ky.md",
     "Tags/more.md",
     "Tags/Cryptography.md",
-    "Tags/RSA.md",
-    "Tags/sqli.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
