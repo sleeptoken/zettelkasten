@@ -13,6 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Tags/Cryptography.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7603537f40835994",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Remote Thought/ROT13.md",
                 "mode": "source",
                 "backlinks": true,
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/ROT13.md",
+                "file": "Tags/Cryptography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/ROT13.md",
+                "file": "Tags/Cryptography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/ROT13.md"
+                "file": "Tags/Cryptography.md"
               }
             }
           }
@@ -149,8 +162,9 @@
   },
   "active": "6375865893b65713",
   "lastOpenFiles": [
-    "Pasted image 20240604110852.png",
     "Remote Thought/ROT13.md",
+    "Tags/Cryptography.md",
+    "Pasted image 20240604110852.png",
     "Remote Thought/SSRF.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Integrity Failure.md",
