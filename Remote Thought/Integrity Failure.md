@@ -22,7 +22,11 @@ Modern browsers allow you to specify a hash along the library's URL so that the 
 #### ﻿Data Integrity Failures﻿
 
 JWT is one of the integrity mechanisms to guarantee that the cookie hasn't been altered by the user
-JWTs are very simple tokens that allow you to store key-value pairs on a token that provides integrity as part of the token
+
+A data integrity failure vulnerability was present on some libraries implementing JWTs a while ago. The vulnerable libraries allowed attackers to bypass the signature validation by changing the two following things in a JWT:
+
+1. Modify the header section of the token so that the `alg` header would contain the value `none`.
+2. Remove the signature part.
 
 
 ### References

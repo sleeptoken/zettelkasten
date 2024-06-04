@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a835fb1e175974a2",
+        "id": "6b1468df6e5ba48d",
         "type": "tabs",
         "children": [
           {
-            "id": "d7cd5d6ef134aab6",
+            "id": "cf3d3e869dabeb4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/JWT.md",
+                "file": "Remote Thought/Integrity Failure.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/JWT.md",
+                "file": "Remote Thought/Integrity Failure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/JWT.md",
+                "file": "Remote Thought/Integrity Failure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/JWT.md"
+                "file": "Remote Thought/Integrity Failure.md"
               }
             }
           }
@@ -134,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,18 +147,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7cd5d6ef134aab6",
+  "active": "cf3d3e869dabeb4a",
   "lastOpenFiles": [
+    "Tags/JWT.md",
     "Remote Thought/Integrity Failure.md",
-    "Remote Thought/JWT.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Tags/API.md",
+    "Tags/git.md",
     "Remote Thought/Insecure Design.md",
+    "Pasted image 20240604110852.png",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Broken Access Control.md",
     "Tags/owasp.md",
     "Tags/py.md",
-    "Tags/API.md",
     "Tags/flat-file.md",
     "Remote Thought/Cryptographic Failures.md",
     "Tags/bash.md",
@@ -173,7 +176,6 @@
     "Tags/Cryptography.md",
     "Tags/RSA.md",
     "Tags/sqli.md",
-    "Tags/IDOR.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
