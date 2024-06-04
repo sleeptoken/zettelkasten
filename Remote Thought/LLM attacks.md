@@ -3,7 +3,7 @@
 
 Source: #portswigger 
 
-Tags: [[web]] [[api]]
+Tags: [[web]] [[API]]
 
 Some LLMs may require the client to call a separate function endpoint (effectively a private API) in order to generate valid requests that can be sent to those APIs. 
 
