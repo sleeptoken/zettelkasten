@@ -4,3 +4,4 @@ Web app and framework offering modular conversion, encoding and encryption - [Mo
 
 a collection of over 900 tools to help solve games, riddles, ciphers, mathematics, puzzles, etc. - [dCode - Online Ciphers, Solvers, Decoders, Calculators](https://www.dcode.fr/en)
 
+a web app that lets you perform various operations on data, such as encryption, encoding, compression and data analysis. - [CyberChef](https://cyberchef.org/)
