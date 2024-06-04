@@ -13,10 +13,11 @@ To calculate the different hashes in Linux -
 `md5sum file.name`
 `sha1sum file.name`
 `sha256sum file.name`
-
 #### Software Integrity Failures
 
-
+ a website that uses third-party libraries that are stored in some external servers that are out of your control. Take as an example jQuery. You can include jQuery in your website directly from their servers without actually downloading it
+ 
+Modern browsers allow you to specify a hash along the library's URL so that the library code is executed only if the hash of the downloaded file matches the expected value. This security mechanism is called Subresource Integrity (SRI), and you can read more about it [here](https://www.srihash.org/).
 
 ### References
 [TryHackMe | OWASP Top 10 - 2021](https://tryhackme.com/r/room/owasptop102021)
