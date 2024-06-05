@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Reflected XSS.md",
+                "file": "Remote Thought/Stored XSS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Reflected XSS.md",
+                "file": "Remote Thought/Stored XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Reflected XSS.md",
+                "file": "Remote Thought/Stored XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Reflected XSS.md"
+                "file": "Remote Thought/Stored XSS.md"
               }
             }
           }
@@ -149,19 +149,19 @@
   },
   "active": "88e25fb7439bcd47",
   "lastOpenFiles": [
-    "Tags/ASP.NET.md",
     "Remote Thought/Reflected XSS.md",
-    "Remote Thought/JavaScript.md",
+    "Remote Thought/Integrity Failure.md",
+    "Remote Thought/Stored XSS.md",
+    "Tags/JavaScript.md",
+    "Tags/ASP.NET.md",
     "Tags/PHP.md",
     "Remote Thought/Security configs.md",
     "Tags/XSS.md",
     "Remote Thought/Injection.md",
-    "Remote Thought/Stored XSS.md",
     "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Path Traversal.md",
     "Tags/web.md",
-    "Remote Thought/Integrity Failure.md",
     "Remote Thought/break RSA w public ky.md",
     "Tags/Cryptography.md",
     "Pasted image 20240604110852.png",

@@ -22,7 +22,7 @@ using the `escapeHtml()` function which aims to escape characters such as `<
  using the `escape()` function from the `html` module. Note that the `html.escape()` function in Flask is actually an alias for `markupsafe.escape()`. They both come from the Werkzeug library and serve the same purpose: escaping unsafe characters in strings.
 
 [[ASP.NET]] C#.
-
-
+`Request.QueryString`, which returns a collection of associated string keys and values
+`HttpUtility.HtmlEncode()` which converts various characters, such as `<`, `>`, and `&`, into their respective HTML entity encoding.
 
 ### References
