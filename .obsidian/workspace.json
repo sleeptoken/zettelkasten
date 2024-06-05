@@ -149,9 +149,9 @@
   },
   "active": "88e25fb7439bcd47",
   "lastOpenFiles": [
-    "Remote Thought/DOM-based XSS.md",
-    "Tags/JavaScript.md",
     "Remote Thought/Reflected XSS.md",
+    "Tags/JavaScript.md",
+    "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Stored XSS.md",
     "Remote Thought/Integrity Failure.md",
     "Tags/ASP.NET.md",

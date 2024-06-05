@@ -14,6 +14,7 @@ Using [[JavaScript]], you can manipulate the DOM tree -
 - create a new element using`document.createElement()`
 - add a child to any element using `element.append()`
 
+avoiding adding user input directly with `document.write()`. Instead, we first escaped the user input using `encodeURIComponent()` and then added it to `textContent`.
 
 
 ### References
