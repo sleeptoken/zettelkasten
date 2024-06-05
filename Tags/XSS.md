@@ -15,8 +15,9 @@ Types of XSS-
 - [[Stored XSS]]
 - [[DOM-based XSS]]
 
-
-
+- Various repositories can be consulted to build your custom XSS payload.  [Payload List](https://github.com/payloadbox/xss-payload-list)
+- sometimes, there are filters blocking XSS payloads. If there is a limitation based on the payload length, then [Tiny Payloads](https://github.com/terjanq/Tiny-XSS-Payloads)
+- If XSS payloads are blocked based on specific blocklists, there are various tricks for evasion. For instance, a horizontal tab, a new line, or a carriage return can break up the payload, based on the [XSS Filter Evasion Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html), we can break up the payload.
 
 ### References
 [TryHackMe | XSS](https://tryhackme.com/r/room/axss)
