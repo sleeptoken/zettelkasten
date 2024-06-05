@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/XSS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6c750c928ef2b044",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Injection.md",
+                "file": "Remote Thought/Reflected XSS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/XSS.md",
+                "file": "Remote Thought/Reflected XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/XSS.md",
+                "file": "Remote Thought/Reflected XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/XSS.md"
+                "file": "Remote Thought/Reflected XSS.md"
               }
             }
           }
@@ -162,11 +149,12 @@
   },
   "active": "88e25fb7439bcd47",
   "lastOpenFiles": [
+    "Remote Thought/Security configs.md",
     "Tags/XSS.md",
+    "Remote Thought/Reflected XSS.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Stored XSS.md",
     "Remote Thought/DOM-based XSS.md",
-    "Remote Thought/Reflected XSS.md",
     "Remote Thought/JavaScript.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Path Traversal.md",
@@ -188,7 +176,6 @@
     "Tags/flat-file.md",
     "Remote Thought/Cryptographic Failures.md",
     "Tags/bash.md",
-    "Tags/hashing.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
