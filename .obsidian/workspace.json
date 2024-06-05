@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Stored XSS.md",
+                "file": "Remote Thought/DOM-based XSS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Stored XSS.md",
+                "file": "Remote Thought/DOM-based XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Stored XSS.md",
+                "file": "Remote Thought/DOM-based XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Stored XSS.md"
+                "file": "Remote Thought/DOM-based XSS.md"
               }
             }
           }
@@ -149,9 +149,9 @@
   },
   "active": "88e25fb7439bcd47",
   "lastOpenFiles": [
+    "Remote Thought/Stored XSS.md",
     "Remote Thought/Reflected XSS.md",
     "Remote Thought/Integrity Failure.md",
-    "Remote Thought/Stored XSS.md",
     "Tags/JavaScript.md",
     "Tags/ASP.NET.md",
     "Tags/PHP.md",
