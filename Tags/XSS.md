@@ -10,6 +10,10 @@ XSS is a vulnerability that allows an attacker to inject malicious scripts into
 
 **Encoding**: The [[JavaScript]] function `btoa("string")` encodes a string of binary data to create a base64-encoded ASCII string. This is useful to remove white space and special characters or encode other alphabets. The reverse function is `atob("base64_string")`
 
+Types of XSS- 
+- [[Reflected XSS]]
+- [[Stored XSS]]
+- [[DOM-based XSS]]
 
 
 

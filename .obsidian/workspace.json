@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/XSS.md",
+                "file": "Tags/XSS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c750c928ef2b044",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Injection.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/XSS.md",
+                "file": "Tags/XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/XSS.md",
+                "file": "Tags/XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/XSS.md"
+                "file": "Tags/XSS.md"
               }
             }
           }
@@ -150,8 +162,12 @@
   },
   "active": "88e25fb7439bcd47",
   "lastOpenFiles": [
-    "JavaScript.md",
-    "Remote Thought/XSS.md",
+    "Tags/XSS.md",
+    "Remote Thought/Injection.md",
+    "Remote Thought/Stored XSS.md",
+    "Remote Thought/DOM-based XSS.md",
+    "Remote Thought/Reflected XSS.md",
+    "Remote Thought/JavaScript.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Path Traversal.md",
     "Tags/web.md",
@@ -160,7 +176,6 @@
     "Tags/Cryptography.md",
     "Pasted image 20240604110852.png",
     "Remote Thought/SSRF.md",
-    "Remote Thought/Injection.md",
     "Tags/JWT.md",
     "Tags/API.md",
     "Tags/git.md",
@@ -174,9 +189,6 @@
     "Remote Thought/Cryptographic Failures.md",
     "Tags/bash.md",
     "Tags/hashing.md",
-    "Remote Thought/LLM attacks.md",
-    "Remote Thought/Security configs.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
