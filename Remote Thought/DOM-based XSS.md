@@ -9,7 +9,10 @@ Tags: [[XSS]] [[web]]
 DOM-based XSS is completely browser-based and does not need to go to the server and back to the client
 
  The DOM is a programming interface representing a web document as a tree. The DOM makes it possible to programmatically access and manipulate the different parts of a website using JavaScript.
-
+We can view the DOM tree using the web browser’s built-in Web Developer’s Tools.
+Using [[JavaScript]], you can manipulate the DOM tree -
+- create a new element using`document.createElement()`
+- add a child to any element using `element.append()`
 
 
 
