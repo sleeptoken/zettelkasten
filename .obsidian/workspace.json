@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "88e25fb7439bcd47",
+            "id": "a4bca1fe0becdf15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/XSS.md",
+                "file": "Remote Thought/w.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/XSS.md",
+                "file": "Remote Thought/w.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/XSS.md",
+                "file": "Remote Thought/w.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/XSS.md"
+                "file": "Remote Thought/w.md"
               }
             }
           }
@@ -148,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88e25fb7439bcd47",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Tags/XSS.md",
+    "Remote Thought/w.md",
     "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/JavaScript.md",
@@ -158,7 +159,6 @@
     "Tags/ASP.NET.md",
     "Tags/PHP.md",
     "Remote Thought/Security configs.md",
-    "Tags/XSS.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Path Traversal.md",
@@ -176,7 +176,6 @@
     "Remote Thought/Broken Access Control.md",
     "Tags/owasp.md",
     "Tags/py.md",
-    "Tags/flat-file.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
