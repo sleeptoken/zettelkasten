@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/w.md",
+                "file": "Remote Thought/Sudo Vulnerability.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#privelage",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/w.md",
+                "file": "Remote Thought/Sudo Vulnerability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/w.md",
+                "file": "Remote Thought/Sudo Vulnerability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/w.md"
+                "file": "Remote Thought/Sudo Vulnerability.md"
               }
             }
           }
@@ -151,7 +150,7 @@
   "active": "a4bca1fe0becdf15",
   "lastOpenFiles": [
     "Tags/XSS.md",
-    "Remote Thought/w.md",
+    "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/JavaScript.md",
