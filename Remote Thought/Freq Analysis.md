@@ -12,11 +12,16 @@ use [[scp]](secure copy) command in Linux system to copy file(s) between servers
 `scp -P port source_file user@hostname:destination_file`
 here source file is the file you wanna transfer and destination file is the directory path where you wanna transfer the file to 
 
+in frequency analysis along with single letter occurrence also check trigrams (3 letter occurrence - "the" in English)
+
 
 
 
 
 ### References
+
+Freq analysis chart - 
+[Frequency Table (cornell.edu)](https://pi.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html)
 
 Krypton scripts - 
 https://github.com/m-rosinsky/Krypton_Scripts
