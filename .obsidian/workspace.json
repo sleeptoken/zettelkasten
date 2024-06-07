@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/vim.md",
+                "file": "Remote Thought/Sudo Vulnerability.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/vim.md",
+                "file": "Remote Thought/Sudo Vulnerability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/vim.md",
+                "file": "Remote Thought/Sudo Vulnerability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/vim.md"
+                "file": "Remote Thought/Sudo Vulnerability.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "63278c093375f6b7",
   "lastOpenFiles": [
+    "Remote Thought/Stored XSS.md",
+    "Tags/vim.md",
     "Tags/more.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Tags/ftp.md",
@@ -158,7 +160,6 @@
     "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/JavaScript.md",
-    "Remote Thought/Stored XSS.md",
     "Remote Thought/Integrity Failure.md",
     "Tags/ASP.NET.md",
     "Tags/PHP.md",
@@ -175,7 +176,6 @@
     "Tags/API.md",
     "Tags/git.md",
     "Remote Thought/Insecure Design.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
