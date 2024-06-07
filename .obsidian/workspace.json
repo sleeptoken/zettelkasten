@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0bc4b43500356292",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Sudo Vulnerability.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -147,18 +161,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "63278c093375f6b7",
+  "active": "0bc4b43500356292",
   "lastOpenFiles": [
+    "Remote Thought/Reflected XSS.md",
+    "Tags/stego.md",
+    "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Stored XSS.md",
     "Tags/vim.md",
     "Tags/more.md",
-    "Remote Thought/Sudo Vulnerability.md",
     "Tags/ftp.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Tags/ssh.md",
     "Tags/XSS.md",
     "Remote Thought/DOM-based XSS.md",
-    "Remote Thought/Reflected XSS.md",
     "Tags/JavaScript.md",
     "Remote Thought/Integrity Failure.md",
     "Tags/ASP.NET.md",
@@ -175,7 +190,6 @@
     "Tags/JWT.md",
     "Tags/API.md",
     "Tags/git.md",
-    "Remote Thought/Insecure Design.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
