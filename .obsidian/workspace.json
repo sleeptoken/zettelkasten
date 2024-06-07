@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Sudo Vulnerability.md",
+                "file": "Remote Thought/Caesar Cipher.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Sudo Vulnerability.md",
+                "file": "Remote Thought/Caesar Cipher.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Sudo Vulnerability.md",
+                "file": "Remote Thought/Caesar Cipher.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Sudo Vulnerability.md"
+                "file": "Remote Thought/Caesar Cipher.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "63278c093375f6b7",
   "lastOpenFiles": [
+    "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Tags/stego.md",
     "Tags/sudo.md",
@@ -175,7 +176,6 @@
     "Tags/Cryptography.md",
     "Pasted image 20240604110852.png",
     "Remote Thought/SSRF.md",
-    "Tags/JWT.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
