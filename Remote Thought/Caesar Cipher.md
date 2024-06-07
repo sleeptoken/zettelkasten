@@ -19,8 +19,7 @@ tr "[]"  "[]" (translate) command takes 2 arguments .
 
 #### level 2-3
 
-run "[A-Z]" through the given encrypt function see how it affects the original alphabetical order, further use translate command to 
-
+run "[A-Z]" through the given encrypt function see how it affects the original alphabetical order, further use the output as arg 1 in translate command to decode 
 ### References
 
 [OverTheWire: Level Info: Krypton Level 1 → Level 2](https://overthewire.org/wargames/krypton/krypton1.html)
