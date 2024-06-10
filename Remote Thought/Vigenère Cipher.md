@@ -3,7 +3,7 @@
 
 Source: #overthewire #krypton 
 
-Tags: [[Cryptography]]
+Tags: [[Cryptography]] [[linux]]
 
 #### Level 4 - 5
 
@@ -15,6 +15,11 @@ K G O L D G O L D G O L D G O L D G O L D G O\
 ```
 
 Here the key is "GOLD", and all the letters corresponding to G are collected thus making this a monoalphabetic cipher further freq analysis is carried out 
+
+#### level 5 - 6 
+
+Find repeated sequences that are certain chars separated that separated length will be the 
+
 
 
 ### References
