@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0041250a6f41835e",
+            "id": "2a2ce372e26260a4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Freq Analysis.md",
+                "file": "Remote Thought/Vigenère Cipher.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Freq Analysis.md",
+                "file": "Remote Thought/Vigenère Cipher.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Freq Analysis.md",
+                "file": "Remote Thought/Vigenère Cipher.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Freq Analysis.md"
+                "file": "Remote Thought/Vigenère Cipher.md"
               }
             }
           }
@@ -148,11 +148,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0041250a6f41835e",
+  "active": "2a2ce372e26260a4",
   "lastOpenFiles": [
+    "Remote Thought/Freq Analysis.md",
+    "Remote Thought/Vigenère Cipher.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Template/Full Note.md",
-    "Remote Thought/Freq Analysis.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Sudo Vulnerability.md",
@@ -175,7 +176,6 @@
     "Remote Thought/Security configs.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Path Traversal.md",
-    "Tags/web.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",

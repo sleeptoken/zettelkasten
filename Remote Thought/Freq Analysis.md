@@ -3,7 +3,7 @@
 
 Source: #overthewire #krypton 
 
-Tags: [[linux]] 
+Tags: [[linux]] [[Cryptography]]
 
 #### Level 3-4
 
@@ -15,15 +15,12 @@ here source file is the file you wanna transfer and destination file is the dire
 in frequency analysis along with single letter occurrence also check trigrams (3 letter occurrence - "the" in English)
 
 
-
-
-
 ### References
 
 Freq analysis chart - 
 [Frequency Table (cornell.edu)](https://pi.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html)
 
-Krypton scripts - 
-https://github.com/m-rosinsky/Krypton_Scripts
+freq analysis script - 
+https://github.com/m-rosinsky/Krypton_Scripts/blob/master/freq_analysis.py
 
 scp - https://www.geeksforgeeks.org/scp-command-in-linux-with-examples/
