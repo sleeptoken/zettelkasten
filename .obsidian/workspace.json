@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Vigenère Cipher.md",
+                "file": "Remote Thought/Polyalphabetic Ciphers.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Vigenère Cipher.md",
+                "file": "Remote Thought/Polyalphabetic Ciphers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Vigenère Cipher.md",
+                "file": "Remote Thought/Polyalphabetic Ciphers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Vigenère Cipher.md"
+                "file": "Remote Thought/Polyalphabetic Ciphers.md"
               }
             }
           }
@@ -151,7 +151,7 @@
   "active": "2a2ce372e26260a4",
   "lastOpenFiles": [
     "Remote Thought/Freq Analysis.md",
-    "Remote Thought/Vigenère Cipher.md",
+    "Remote Thought/Polyalphabetic Ciphers.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Template/Full Note.md",
     "Remote Thought/Cryptographic Failures.md",
