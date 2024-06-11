@@ -15,7 +15,7 @@ K G O L D G O L D G O L D G O L D G O L D G O\
 ```
 
 Here the key is "GOLD", and all the letters corresponding to G are collected thus making this a monoalphabetic cipher further freq analysis is carried out to find the 1st letter of the key.
-Then increase the shift by one and then 
+Then increase the shift by one and then repeat the process
 
 #### level 5 - 6 
 
