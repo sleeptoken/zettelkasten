@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "231f722af38b9a71",
+        "id": "160c634fe8779562",
         "type": "tabs",
         "children": [
           {
-            "id": "ab96306bb0e3faac",
+            "id": "ff1ff47353958a2a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Stream Cipher.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -70,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stream Cipher.md",
+                "file": "Pasted image 20240604110852.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stream Cipher.md",
+                "file": "Pasted image 20240604110852.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stream Cipher.md"
+                "file": "Pasted image 20240604110852.png"
               }
             }
           }
@@ -148,8 +142,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab96306bb0e3faac",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "pwntools.md",
     "Stream Cipher.md",
     "Remote Thought/Polyalphabetic Ciphers.md",
     "Remote Thought/Freq Analysis.md",
@@ -175,7 +170,6 @@
     "Tags/ASP.NET.md",
     "Tags/PHP.md",
     "Remote Thought/Security configs.md",
-    "Remote Thought/Injection.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
