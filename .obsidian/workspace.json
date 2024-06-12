@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "160c634fe8779562",
+        "id": "6334ce6573d79c0a",
         "type": "tabs",
         "children": [
           {
-            "id": "9c88705b6f181444",
+            "id": "ca74099341c615ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SweetRice Exploit & Stabilizing Shells.md",
+                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SweetRice Exploit & Stabilizing Shells.md",
+                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SweetRice Exploit & Stabilizing Shells.md",
+                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SweetRice Exploit & Stabilizing Shells.md"
+                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md"
               }
             }
           }
@@ -148,18 +148,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c88705b6f181444",
+  "active": "ca74099341c615ba",
   "lastOpenFiles": [
     "Stream Cipher.md",
-    "SweetRice Exploit & Stabilizing Shells.md",
+    "Tags/revshell.md",
     "pwntools.md",
+    "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
+    "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Polyalphabetic Ciphers.md",
     "Remote Thought/Freq Analysis.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Template/Full Note.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Caesar Cipher.md",
-    "Remote Thought/Sudo Vulnerability.md",
     "Tags/stego.md",
     "Tags/sudo.md",
     "Tags/hydra.md",
@@ -175,7 +176,6 @@
     "Tags/JavaScript.md",
     "Remote Thought/Integrity Failure.md",
     "Tags/ASP.NET.md",
-    "Tags/PHP.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
