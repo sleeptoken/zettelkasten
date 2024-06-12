@@ -8,11 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ff1ff47353958a2a",
+            "id": "9c88705b6f181444",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "SweetRice Exploit & Stabilizing Shells.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -81,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240604110852.png",
+                "file": "SweetRice Exploit & Stabilizing Shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240604110852.png",
+                "file": "SweetRice Exploit & Stabilizing Shells.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240604110852.png"
+                "file": "SweetRice Exploit & Stabilizing Shells.md"
               }
             }
           }
@@ -142,9 +148,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "9c88705b6f181444",
   "lastOpenFiles": [
     "pwntools.md",
+    "SweetRice Exploit & Stabilizing Shells.md",
     "Stream Cipher.md",
     "Remote Thought/Polyalphabetic Ciphers.md",
     "Remote Thought/Freq Analysis.md",
@@ -169,7 +176,6 @@
     "Remote Thought/Integrity Failure.md",
     "Tags/ASP.NET.md",
     "Tags/PHP.md",
-    "Remote Thought/Security configs.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
