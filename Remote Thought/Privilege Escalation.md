@@ -82,6 +82,18 @@ There are multiple ways to spawn [[revshell]] natively on many Linux distributio
 
 #### Privilege Escalation Tools
 
+##### Linux Smart Enumeration(lse.sh)
+[diego-treitos/linux-smart-enumeration: Linux enumeration tool for pentesting and CTFs with verbosity levels (github.com)](https://github.com/diego-treitos/linux-smart-enumeration)
+
+##### LinEnum
+Can copy interesting files for export, and search for files containing a keyword (eg. password)
+[rebootuser/LinEnum: Scripted Local Linux Enumeration & Privilege Escalation Checks (github.com)](https://github.com/rebootuser/LinEnum)
+
+#### Kernel Exploits
+
+Should be the last resort 
+
+
 
 
 
