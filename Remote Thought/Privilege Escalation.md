@@ -13,24 +13,25 @@ All Privilege Escalation are effectively examples of access control violations.
 - By default, a user’s primary group has the same name as their user account
 ##### File & Directory  
 - All files & directories have a single owner and a group.
-- 3 types of file and directory permissions (file perms and dir perms look the same but have different functionalities) - 
-		- execute
-		- read
-		- write 
 ##### Special Permissions
 - **setuid (SUID)** bit When set, files will get executed with the privileges of the file owner.
 - **setgid (SGID)** bit When set on a file, the file will get executed with the privileges of the file group. 
 - When set on a directory, files created within that directory will inherit the group of the directory itself
 ##### Viewing Permission
+```
+$ ls -l /bin/date
+-rwxr-xr-x 1 root root 60416 Apr 28 2010 /bin/date
+```
+- above the file is owned by root and belongs to the root group 
 - The first 10 characters indicate the permissions set on the file or directory.
 - The first character simply indicates the type (e.g. '-' for file, 'd' for directory)
 - The remaining 9 characters represent the 3 sets of permissions (owner, group, others).
 - Each set contains 3 characters, indicating the read (r), write (w), and execute (x) permissions. 
 - SUID/SGID permissions are represented by an 's' in the execute position
 
-each user has 3 user IDs in Linux (real, effective, and saved)
-A user’s real ID is who they actually are (the ID defined in /etc/passwd).
-
+- each user has 3 user IDs in Linux (real, effective, and saved)
+	- A user’s real ID is who they actually are (the ID defined in /etc/passwd).
+	- A user’s effective ID is normally equal to their real ID, however when executing a process as another user, the effective ID is set to that user’s real ID
 
 ### References
 
