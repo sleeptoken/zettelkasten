@@ -40,3 +40,5 @@ Many of these will also allow you to escape jail shells. The top 3 would be my m
 ### References
 
 [Full TTYs | HackTricks | HackTricks](https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/full-ttys)
+
+[What is the exact difference between a 'terminal', a 'shell', a 'tty' and a 'console'? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con)

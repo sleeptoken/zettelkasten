@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6334ce6573d79c0a",
+        "id": "d99842505485a76c",
         "type": "tabs",
         "children": [
           {
-            "id": "ca74099341c615ba",
+            "id": "e6ac83d4cfd70522",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Spawning a TTY shell.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Spawning a TTY shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Spawning a TTY shell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Remote Thought/Spawning a TTY shell.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,17 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca74099341c615ba",
+  "active": "e6ac83d4cfd70522",
   "lastOpenFiles": [
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Stored XSS.md",
-    "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Spawning a TTY shell.md",
+    "Remote Thought/SSRF.md",
+    "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/break RSA w public ky.md",
     "Tags/revshell.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Security configs.md",
-    "Remote Thought/SSRF.md",
     "Tags/sudo.md",
     "Tags/rootbash.md",
     "Tags/shellspawn.md",
