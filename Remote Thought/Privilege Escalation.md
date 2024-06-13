@@ -39,7 +39,6 @@ $ ls -l /bin/date
 # cat /proc/$$/status | grep "[UG]id"
 ```
 
-
 ### References
 
 [Linux Privilege Escalation Tutorial: Become an Ethical Hacker | Udemy](https://www.udemy.com/course/linux-privilege-escalation/)
