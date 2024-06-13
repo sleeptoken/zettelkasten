@@ -33,7 +33,7 @@ exec "/bin/sh"  ..... (From within IRB)
 !sh  ..... (From within nmap)
 ```
 
-another method for spawning a TTY shell is documented in [[Stabilizing Shells]] without using p
+Another method for spawning a TTY shell is documented in [[Stabilizing Shells and RootBash]] without using python
 
 Many of these will also allow you to escape jail shells. The top 3 would be my most successful in general for spawning from the command line
 
