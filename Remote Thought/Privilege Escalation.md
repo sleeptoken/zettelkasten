@@ -28,10 +28,11 @@ $ ls -l /bin/date
 - The remaining 9 characters represent the 3 sets of permissions (owner, group, others).
 - Each set contains 3 characters, indicating the read (r), write (w), and execute (x) permissions. 
 - SUID/SGID permissions are represented by an 's' in the execute position
-
+##### User ID's 
 - each user has 3 user IDs in Linux (real, effective, and saved)
-	- A user’s real ID is who they actually are (the ID defined in /etc/passwd).
-	- A user’s effective ID is normally equal to their real ID, however when executing a process as another user, the effective ID is set to that user’s real ID
+	- Real ID is who they actually are (the ID defined in /etc/passwd).
+	- Effective ID is normally equal to their real ID, however when executing a process as another user, the effective ID is set to that user’s real ID
+	- Saved ID is used to ensure that SUID processes can temporarily switch a user’s effective ID back to their real ID and back again without losing track of the original effective ID
 
 ### References
 
