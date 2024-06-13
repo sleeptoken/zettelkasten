@@ -5,8 +5,7 @@ Source: #privesc
 
 Tags: 
 
-All privesc are effectively examples of access control violations.
-
+All Privilege Escalation are effectively examples of access control violations.
 #### Permissions in Linux
 ##### User 
 - User accounts are configured in the /etc/passwd file. 
@@ -15,13 +14,20 @@ All privesc are effectively examples of access control violations.
 ##### Group
 - Groups are configured in the /etc/group file. 
 - By default, a user’s primary group has the same name as their user account
-#### File & Directory  
+##### File & Directory  
 - All files & directories have a single owner and a group.
 - Only the owner can change permissions.
-- 3 types of file and directory permissions - 
+- 3 types of file and directory permissions (file perms and dir perms look the same but have different functionalities) - 
 		- execute
 		- read
 		- write 
+##### Special Permissions
+- **setuid (SUID)** bit When set, files will get executed with the privileges of the file owner.
+- **setgid (SGID)** bit When set on a file, the file will get executed with the privileges of the file group. 
+- When set on a directory, files created within that directory will inherit the group of the directory itself
+##### Viewing Permission
+
+
 
 
 ### References
