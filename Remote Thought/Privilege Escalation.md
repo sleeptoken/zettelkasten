@@ -39,6 +39,30 @@ $ ls -l /bin/date
 # cat /proc/$$/status | grep "[UG]id"
 ```
 
+
+
+
+
+
+
+
+#### Spawning Root shell
+
+use the following methods to spawn a root shell in situations where commands can be executed as root-
+##### [[rootbash]] SUID
+
+To spawn a root shell, create a copy of the /bin/bash executable file (I usually rename it rootbash), make sure it is owned by the root user, and has the SUID bit set.
+A root shell can be spawned by simply executing the rootbash file with the -p command line option. The benefit of this method is it is persistent (once you run the exploit, rootbash can be used multiple times)
+
+##### Custom Executables
+
+There may be instances where some root process executes another process which you can control. In these cases, the following C code, once compiled, will spawn a Bash shell running as root:  
+int main() { 
+	setuid(0); 
+	system("/bin/bash -p"); } 
+$ gcc -o
+
+
 ### References
 
 [Linux Privilege Escalation Tutorial: Become an Ethical Hacker | Udemy](https://www.udemy.com/course/linux-privilege-escalation/)
