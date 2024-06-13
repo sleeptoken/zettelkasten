@@ -31,8 +31,14 @@ $ ls -l /bin/date
 ##### User ID's 
 - each user has 3 user IDs in Linux (real, effective, and saved)
 	- Real ID is who they actually are (the ID defined in /etc/passwd).
-	- Effective ID is normally equal to their real ID, however when executing a process as another user, the effective ID is set to that user’s real ID
+	- Effective ID is normally equal to their real ID, however when executing a process as another user, the effective ID is set to that user’s real ID. The effective ID is used in most access control decisions to verify a user, and commands such as `whoami` use the effective ID
 	- Saved ID is used to ensure that SUID processes can temporarily switch a user’s effective ID back to their real ID and back again without losing track of the original effective ID
+- `id` command will print real and effective uid/gid
+- the command below will show the real, effective, saved, and file system user / group IDs of the current process (i.e. our shell)
+```
+# cat /proc/$$/status | grep "[UG]id"
+```
+
 
 ### References
 
