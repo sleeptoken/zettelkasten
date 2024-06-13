@@ -26,8 +26,14 @@ All Privilege Escalation are effectively examples of access control violations.
 - **setgid (SGID)** bit When set on a file, the file will get executed with the privileges of the file group. 
 - When set on a directory, files created within that directory will inherit the group of the directory itself
 ##### Viewing Permission
+- The first 10 characters indicate the permissions set on the file or directory.
+- The first character simply indicates the type (e.g. '-' for file, 'd' for directory)
+- The remaining 9 characters represent the 3 sets of permissions (owner, group, others).
+- Each set contains 3 characters, indicating the read (r), write (w), and execute (x) permissions. 
+- SUID/SGID permissions are represented by an 's' in the execute position
 
-
+each user has 3 user IDs in Linux (real, effective, and saved)
+A user’s real ID is who they actually are (the ID defined in /etc/passwd).
 
 
 ### References
