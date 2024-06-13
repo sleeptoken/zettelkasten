@@ -3,7 +3,7 @@
 
 Source: #tryhackme #CTF #privesc 
 
-Tags: [[shell]] [[shellspawn]] [[linux]]
+Tags: [[shell]]  [[linux]]
 
 `searchsploit -x path` - use this to see details about the exploit and then configure that exploit according to the current machine
 
@@ -14,7 +14,7 @@ sometimes to find the login page you might have to
 - look at the documentation of the web app
 
 use `rlwrap` with your `nc` commands - ability to use arrow keys and access command history 
-#### Spawning a TTY shell
+[[Spawning a TTY shell]]
 
 ```
 /usr/bin/script -qc /bin/bash /dev/null
