@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md"
+                "file": "Remote Thought/Spawning a TTY shell.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "ca74099341c615ba",
   "lastOpenFiles": [
+    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Stored XSS.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/break RSA w public ky.md",
     "Tags/revshell.md",
     "Remote Thought/vim on more(editor) interactive mode.md",

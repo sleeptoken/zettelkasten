@@ -38,4 +38,5 @@ Another method for spawning a TTY shell is documented in [[Stabilizing Shells an
 Many of these will also allow you to escape jail shells. The top 3 would be my most successful in general for spawning from the command line
 
 ### References
-reference deleted from the web
+
+[Full TTYs | HackTricks | HackTricks](https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/full-ttys)

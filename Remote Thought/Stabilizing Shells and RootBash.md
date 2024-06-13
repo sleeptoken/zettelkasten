@@ -53,12 +53,13 @@ after running this command check out `sudo -l `to see the perms for current user
 eg. `sudo /usr/bin/perl /home/itguy/backup.pl`
 check `tmp` dir, it should have the rootbash binary. run that rootbash binary with `-p` and become root
 
-Alternative method could be to echo a revshell in the file that can run with sudo privilege and have nc setup to listen [1]
+Alternative method could be to echo a revshell in the file that can run with sudo privilege and have nc setup to listen (Check walkthroughs)
 
 ### References
 
 [TryHackMe | LazyAdmin](https://tryhackme.com/r/room/lazyadmin)
 
-[walkthrough by darksec](https://www.youtube.com/watch?v=Tf8mMs0lvPA)
-
-[1] - [LazyAdmin -- Write-up | MuirlandOracle | Blog](https://muirlandoracle.co.uk/2020/01/11/lazyadmin-write-up/)
+Walkthroughs - 
+- [walkthrough by darksec](https://www.youtube.com/watch?v=Tf8mMs0lvPA)
+-  [LazyAdmin -- Write-up | MuirlandOracle | Blog](https://muirlandoracle.co.uk/2020/01/11/lazyadmin-write-up/)
+- [TryHackMe - Lazy Admin – sckull](https://sckull.github.io/posts/lazyadmin/)
