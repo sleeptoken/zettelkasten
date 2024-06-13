@@ -11,8 +11,13 @@
             "id": "e6ac83d4cfd70522",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Privilege Escalation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Remote Thought/Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Remote Thought/Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Remote Thought/Privilege Escalation.md"
+              }
             }
           }
         ]
@@ -140,6 +149,7 @@
   },
   "active": "e6ac83d4cfd70522",
   "lastOpenFiles": [
+    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Stored XSS.md",
     "Remote Thought/Spawning a TTY shell.md",
@@ -165,7 +175,6 @@
     "Tags/ftp.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/vim.md",
-    "Tags/more.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
