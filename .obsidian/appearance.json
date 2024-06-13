@@ -1,5 +1,7 @@
 {
   "accentColor": "#6c44ca",
   "theme": "obsidian",
-  "cssTheme": "Vanilla AMOLED"
+  "cssTheme": "Vanilla AMOLED",
+  "baseFontSize": 16,
+  "baseFontSizeAction": true
 }
