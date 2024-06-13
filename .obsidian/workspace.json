@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6c5cc26c58a8e79b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/SweetRice Exploit & Stabilizing Shells.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -147,10 +161,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca74099341c615ba",
+  "active": "6c5cc26c58a8e79b",
   "lastOpenFiles": [
-    "Remote Thought/Sudo Vulnerability.md",
+    "Untitled.md",
     "Remote Thought/SweetRice Exploit & Stabilizing Shells.md",
+    "Remote Thought/break RSA w public ky.md",
+    "Remote Thought/Sudo Vulnerability.md",
     "Tags/revshell.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Security configs.md",
@@ -173,8 +189,6 @@
     "Remote Thought/Reflected XSS.md",
     "Tags/vim.md",
     "Tags/more.md",
-    "Tags/ssh.md",
-    "Tags/XSS.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
