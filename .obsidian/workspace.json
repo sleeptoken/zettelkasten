@@ -32,22 +32,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5f884c6f57767dc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Services Running as Root.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Services Running as Root.md",
+                "file": "Remote Thought/Port Forwarding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Services Running as Root.md",
+                "file": "Remote Thought/Port Forwarding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Services Running as Root.md"
+                "file": "Remote Thought/Port Forwarding.md"
               }
             }
           }
@@ -175,11 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f884c6f57767dc8",
+  "active": "67f05142e0862343",
   "lastOpenFiles": [
+    "Remote Thought/Services Running as Root.md",
     "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Port Forwarding.md",
-    "Remote Thought/Services Running as Root.md",
     "Remote Thought/Injection.md",
     "Tags/sqli.md",
     "Tags/sql.md",

