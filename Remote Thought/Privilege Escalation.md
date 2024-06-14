@@ -3,7 +3,7 @@
 
 Source: #privesc 
 
-Tags: 
+Tags: [[linux]]
 
 All Privilege Escalation are effectively examples of access control violations.
 #### Permissions in Linux
@@ -101,7 +101,32 @@ Beware though, as Kernel exploits can often be unstable and may be one-shot or c
 
 #### Service Exploits 
 
+- See the services that are running as root if vulnerable services are running as root, exploiting them can lead to command execution as root . 
+- Service exploits can be found the same way as kernel exploits 
+```
+$ ps aux | grep "^root"
+```
+above command will show all processes that are running as root:
+##### Enumerating Program Versions
+```
+$ <program> --version 
+$ <program> -v
 
+On Debian-like distributions, dpkg can show installed programs and their version:
+$ dpkg -l | grep <program>  
+
+On systems that use rpm, the following achieves the same
+$ rpm –qa | grep <program>
+```
+Example of the above is on [[Services Running as Root]] 
+ 
+##### Port Forwarding
+
+In some instances, a root process may be bound to an internal port, through which it communicates. 
+If for some reason, an exploit cannot run locally on the target machine, the port can be forwarded[[Port Forwarding]] using SSH to your local machine: 
+```
+$ ssh -R <local-port>:127.0.0.1:<target-port> <username>@<local-machine>
+```
 
 ### References
 
