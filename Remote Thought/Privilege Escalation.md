@@ -130,6 +130,29 @@ $ ssh -R <local-port>:127.0.0.1:<target-port> <username>@<local-machine>
 
 #### Weak File Permissions
 
+Find all writable files in /etc: 
+`$ find /etc -maxdepth 1 -writable -type f`
+
+Find all readable files in /etc: 
+`$ find /etc -maxdepth 1 -readable -type f`
+
+Find all directories which can be written to:
+`$ find / -executable -writable -type d 2> /dev/null`
+
+- `/etc/shadow` file contains user password hashes
+- `/etc/passwd` historically contained user password hashes
+- If we can write to `/etc/passwd`, we can easily enter a known password hash for the root user, and then use the `su` command to switch to the root user. 
+- Alternatively, if we can only append to the file, we can create a new user but assign them the root user ID (0). This works because Linux allows multiple entries for the same user ID, as long as the usernames are different
+
+The root account in `/etc/passwd` is usually configured like this:
+```
+root:x:0:0:root:/root:/bin/bash
+```
+The “x” in the second field instructs Linux to look for the password hash in the `/etc/shadow` file
+- In some versions of Linux, it is possible to simply delete the “x”, which Linux interprets as the user having no password
+
+
+
 
 ### References
 
