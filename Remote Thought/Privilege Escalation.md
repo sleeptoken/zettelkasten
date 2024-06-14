@@ -128,6 +128,9 @@ If for some reason, an exploit cannot run locally on the target machine, the por
 $ ssh -R <local-port>:127.0.0.1:<target-port> <username>@<local-machine>
 ```
 
+#### Weak File Permissions
+
+
 ### References
 
 [Linux Privilege Escalation Tutorial: Become an Ethical Hacker | Udemy](https://www.udemy.com/course/linux-privilege-escalation/)
