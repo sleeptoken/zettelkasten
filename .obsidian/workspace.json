@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ba3a61bf029f0aab",
+        "id": "dd861ba922a1f928",
         "type": "tabs",
         "children": [
           {
-            "id": "b446dd53b184d4dc",
+            "id": "a69ee5a7c81fbfba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "67f05142e0862343",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Port Forwarding.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Port Forwarding.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Port Forwarding.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Port Forwarding.md"
+                "file": "Remote Thought/Privilege Escalation.md"
               }
             }
           }
@@ -162,14 +148,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67f05142e0862343",
+  "active": "a69ee5a7c81fbfba",
   "lastOpenFiles": [
     "Remote Thought/Services Running as Root.md",
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Port Forwarding.md",
+    "Remote Thought/Privilege Escalation.md",
+    "Tags/sql.md",
+    "Tags/mysql.md",
     "Remote Thought/Injection.md",
     "Tags/sqli.md",
-    "Tags/sql.md",
     "pwntools.md",
     "Stream Cipher.md",
     "Remote Thought/Freq Analysis.md",
@@ -190,7 +177,6 @@
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Security configs.md",
     "Tags/sudo.md",
-    "Tags/shellspawn.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
