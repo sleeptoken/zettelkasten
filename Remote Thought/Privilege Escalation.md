@@ -264,7 +264,20 @@ $ sudo LD_LIBRARY_PATH=. apache2
 ```
 #### Cron Jobs
 
+- Cron jobs run with the security level of the user who owns them.
+- By default, cron jobs are run using the `/bin/sh` shell, with limited environment variables.
+- Cron table files (crontabs) store the configuration for cron jobs
+- User crontabs are usually located in` /var/spool/cron/` or `/var/spool/cron/crontabs/`
+- The system-wide crontab is located at `/etc/crontab`
+Examples of privesc found in [[cron job]]
 
+- The crontab PATH environment variable is by default set to `/usr/bin:/bin`
+- The PATH variable can be overwritten in the crontab file
+- If a cron job program/script does not use an absolute path, and one of the PATH directories is writable by our user, we may be able to create a program/script with the same name as the cron job
+##### Wildcard
+
+- When a wildcard character (*) is provided to a command as part of an argument, the shell will first perform filename expansion (also known as globbing) on the wildcard
+- This process replaces the wildcard with a space-separated list of the file and directory names in the current directory
 
 
 
