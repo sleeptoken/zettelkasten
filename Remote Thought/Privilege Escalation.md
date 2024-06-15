@@ -162,15 +162,18 @@ It is always worth exploring the file system looking for readable backup files. 
 
 #### Sudo
 
+user must be permitted access via rule(s) in the `/etc/sudoers` file
+##### Known Passwords
 
-
-
-
-
-
-
-
-
+If your low privileged user account can use [[sudo]] unrestricted (i.e. you can run any programs) and you know the user’s password, privilege escalation is easy, by using the “switch user” (su) command to spawn a root shell. alt methods are listed below, if `sudo su` doesn't work .
+```
+$ sudo su
+$ sudo -s
+$ sudo -i 
+$ sudo /bin/bash 
+$ sudo passwd (to change the root users password)
+```
+##### Shell Escape Sequence
 
 
 ### References

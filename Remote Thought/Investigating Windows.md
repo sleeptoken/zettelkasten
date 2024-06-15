@@ -1,7 +1,7 @@
 
 2024-06-15 11:21
 
-Source: #forensics 
+Source: #forensics #tryhackme 
 
 Tags: [[win]]
 
@@ -22,11 +22,6 @@ In general, an attacker will oftentimes add the C2 server IP address to the host
 **What was the extension name of the shell uploaded via the servers website?**
 
 since it's a windows machine it is highly likely that the web server in use is IIS. According to [Stackify](https://stackify.com/what-is-inetpub/), inetpub “is the folder on a computer that is the default folder for Microsoft Internet Information Services (IIS). check `C: drive: inetpub.` The website content and web apps are stored in the inetpub folder — which keeps it organized and secure.”
-
-
-
-
-
 
 ### References
 [TryHackMe | Investigating Windows](https://tryhackme.com/r/room/investigatingwindows)
