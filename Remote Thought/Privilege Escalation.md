@@ -143,8 +143,10 @@ Find all directories which can be written to:
 
 - `/etc/shadow` file contains user password hashes
 - `/etc/passwd` historically contained user password hashes
-- If we can write to `/etc/passwd`, we can easily enter a known password hash for the root user, and then use the `su` command to switch to the root user. 
+- For backwards compatibility, if the second field of a user row in `/etc/passwd `contains a password hash, it takes precedent over the hash in `/etc/shadow`
+- If we can write to `/etc/passwd`, we can easily enter a known (generate a hash for a known phrase by using` openssl passwd "pass_phrase"`) password hash (in place of 'x' after the 1st colon in the `/etc/passwd` file) for the root user, and then use the `su` command to switch to the root user. 
 - Alternatively, if we can only append to the file, we can create a new user but assign them the root user ID (0). This works because Linux allows multiple entries for the same user ID, as long as the usernames are different
+- the password hash when cat'd out from `/etc/shadow` lies between the 1st and 2nd colon
 ##### /etc/passwd 
 
 The root account in `/etc/passwd` is usually configured like this:
