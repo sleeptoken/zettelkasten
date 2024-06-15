@@ -160,6 +160,19 @@ The “x” in the second field instructs Linux to look for the password hash in
 It is always worth exploring the file system looking for readable backup files. Some common places include user home directories, the / (root) directory, /tmp, and /var/backups
 
 
+#### Sudo
+
+
+
+
+
+
+
+
+
+
+
+
 ### References
 
 [Linux Privilege Escalation Tutorial: Become an Ethical Hacker | Udemy](https://www.udemy.com/course/linux-privilege-escalation/)

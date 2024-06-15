@@ -3,7 +3,7 @@
 
 Source: #tryhackme #CTF #privesc 
 
-Tags: [[shell]] [[linux]]
+Tags: [[shell]] [[linux]] 
 
 `searchsploit -x path` - use this to see details about the exploit and then configure that exploit according to the current machine
 
