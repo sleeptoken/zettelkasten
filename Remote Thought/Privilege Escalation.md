@@ -84,11 +84,9 @@ There are multiple ways to spawn [[revshell]] natively on many Linux distributio
 
 ##### Linux Smart Enumeration(lse.sh)
 [diego-treitos/linux-smart-enumeration: Linux enumeration tool for pentesting and CTFs with verbosity levels (github.com)](https://github.com/diego-treitos/linux-smart-enumeration)
-
 ##### LinEnum
 Can copy interesting files for export, and search for files containing a keyword (eg. password)
 [rebootuser/LinEnum: Scripted Local Linux Enumeration & Privilege Escalation Checks (github.com)](https://github.com/rebootuser/LinEnum)
-
 #### Kernel Exploits
 
 Kernel acts as a layer between application software and the actual computer hardware
@@ -162,6 +160,7 @@ It is always worth exploring the file system looking for readable backup files. 
 
 #### Sudo
 
+these will work mostly if you could `sudo` without a password
 user must be permitted access via rule(s) in the `/etc/sudoers` file
 ##### Known Passwords
 
@@ -174,6 +173,42 @@ $ sudo /bin/bash
 $ sudo passwd (to change the root users password)
 ```
 ##### Shell Escape Sequence
+
+- Even if we are restricted to running certain programs via sudo, it is sometimes possible to ([[Shell Escape]]) “escape” the program and spawn a shell.
+- Since the initial program runs with root privileges, so does the spawned shell. 
+- A list of programs with their shell escape sequences can be found here: https://gtfobins.github.io
+##### Abusing Intended Functionality
+
+if a program doesn’t have an escape sequence, it may still be possible to use it to escalate privileges
+```
+$ sudo -l
+...
+ (root) NOPASSWD: /usr/sbin/apache2
+```
+- apache2 doesn't have any know shell escape sequences, however when parsing a given config file, it will error and print any line it doesn’t understand
+- Run apache2 using `sudo`, and provide it the `/etc/shadow` file as a config file
+```
+$ sudo apache2 -f /etc/shadow
+...
+Syntax error on line 1 of /etc/shadow:
+Invalid command 'root:....<hash>....'
+```
+- Extract the root user’s hash from the file.
+##### Environment Variables
+
+- Programs run through `sudo` can inherit the environment variables from the user’s environment.
+- In the `/etc/sudoers` config file, if the `env_reset` option is set, `sudo` will run programs in a new, minimal environment.
+- The `env_keep` option can be used to keep certain environment variables from the user’s environment.
+###### LD_PRELOAD
+
+- LD_PRELOAD is an environment variable which can be set to the path of a shared object (.so) file. 
+- When set, the shared object will be loaded before any others. 
+- By creating a custom shared object and creating an `init()` function, we can execute code as soon as the object is loaded.
+###### Limitations
+
+- LD_PRELOAD will not work if the real user ID is different from the effective user ID. 
+- `sudo` must be configured to preserve the LD_PRELOAD environment variable using the `env_keep` option
+
 
 
 ### References

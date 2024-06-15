@@ -150,8 +150,9 @@
   },
   "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
-    "Tags/sudo.md",
+    "Shell Escape.md",
     "Remote Thought/Privilege Escalation.md",
+    "Tags/sudo.md",
     "Remote Thought/Investigating Windows.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Spawning a TTY shell.md",
@@ -176,7 +177,6 @@
     "Remote Thought/SSRF.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/break RSA w public ky.md",
-    "Remote Thought/vim on more(editor) interactive mode.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
