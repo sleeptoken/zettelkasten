@@ -271,3 +271,7 @@ $ sudo LD_LIBRARY_PATH=. apache2
 ### References
 
 [Linux Privilege Escalation Tutorial: Become an Ethical Hacker | Udemy](https://www.udemy.com/course/linux-privilege-escalation/)
+
+[GitHub - sagishahar/lpeworkshop: Windows / Linux Local Privilege Escalation Workshop](https://github.com/sagishahar/lpeworkshop?tab=readme-ov-file)
+
+[TryHackMe | Linux PrivEsc](https://tryhackme.com/r/room/linuxprivesc)
