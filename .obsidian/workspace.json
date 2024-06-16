@@ -21,19 +21,6 @@
             }
           },
           {
-            "id": "6354e0766784aa27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tags/NFS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "36d3c1b7fb4e20a1",
             "type": "leaf",
             "state": {
@@ -176,9 +163,10 @@
   },
   "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
-    "Tags/NFS.md",
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/cron job.md",
+    "Tags/NFS.md",
+    "Tags/msfvenom.md",
+    "Remote Thought/Privilege Escalation.md",
     "Tags/rootbash.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Caesar Cipher.md",
@@ -201,7 +189,6 @@
     "Tags/PHP.md",
     "Tags/RDS.md",
     "Tags/revshell.md",
-    "Tags/XSS.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",

@@ -90,7 +90,7 @@ Can copy interesting files for export, and search for files containing a keyword
 
 Kernel acts as a layer between application software and the actual computer hardware
 Finding and using kernel exploits is usually a simple process:
-1. Enumerate kernel version (uname -a). 
+1. Enumerate kernel version `(uname -a). `
 2. Find matching exploits (Google, ExploitDB, GitHub, [linux-exploit-suggester-2](https://github.com/jondonas/linux-exploit-suggester-2))
 **while finding exploits make sure to search correct version and flavor of Linux**  
 4. Compile and run.
