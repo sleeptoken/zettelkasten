@@ -79,7 +79,6 @@ This reverse shell can be caught using netcat or Metasploit’s own multi/handle
 
 There are multiple ways to spawn [[revshell]] natively on many Linux distributions. A good tool for suggesting these is: https://github.com/mthbernardes/rsg 
 
-
 #### Privilege Escalation Tools
 
 ##### Linux Smart Enumeration(lse.sh)
@@ -276,8 +275,47 @@ Examples of privesc found in [[cron job]]
 - If a cron job program/script does not use an absolute path, and one of the PATH directories is writable by our user, we may be able to create a program/script with the same name as the cron job
 ##### Wildcard
 
-- When a wildcard character (*) is provided to a command as part of an argument, the shell will first perform filename expansion (also known as globbing) on the wildcard
-- This process replaces the wildcard with a space-separated list of the file and directory names in the current directory
+- When a wildcard character `(*)` is provided to a command as part of an argument, the shell will first perform filename expansion (also known as globbing) on the wildcard
+- This process replaces the wildcard with a space-separated list of the file and directory names in the current directory . Further details are in the example file
+
+#### Password & keys
+
+##### Passwords
+
+- passwords, such as those for services may be stored in plaintext in config files.
+- If the root user re-used their password for a service, that password may be found and used to switch to the root use
+##### History Files
+
+- History files record commands issued by users while they are using certain programs. 
+- If a user types a password as part of a command, this password may get stored in a history file.
+View the contents of hidden files in the user’s home directory with filenames ending in “history”
+```
+cat ~/.*history | less
+```
+##### Config Files
+
+- Many services and programs use configuration (config) files to store settings.
+- If a service needs to authenticate to something, it might store the credentials in a config file. 
+- If these config files are accessible, and the passwords they store are reused by privileged users, we may be able to use it to log in as that user.
+##### SSH keys
+
+- SSH keys can be used instead of passwords to authenticate users using SSH.
+- If a user has stored their private key insecurely, anyone who can read the key may be able to log into their account using it.
+
+#### NFS
+
+- NFS (Network File System) is a popular distributed file system. 
+- [[NFS]] shares are configured in the `/etc/exports` file.
+- Remote users can mount shares, access, create, modify files. 
+- By default, created files inherit the remote user’s id and group id (as owner and group respectively), even if they don’t exist on the NFS server
+
+Show the NFS server’s export list:
+Similar Nmap script:
+Mount an NFS share
+##### Root Squashing
+
+Root Squashing is how NFS prevents an obvious privilege escalation. If the remote user is (or claims to be) root (uid=0), NFS will instead “squash” the user and treat them as if they are the “nobody” user, in the “nogroup” group. While this behavior is default, it can be disabled
+##### no_root_squash
 
 
 

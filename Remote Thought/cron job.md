@@ -29,6 +29,10 @@ The system-wide crontab is located at `/etc/crontab`
 ```
 4. Ensure that overwrite.sh is executable
 5. Once the `/tmp/rootbash` file is created, execute it (with -p to preserve the effective UID) to gain a root shell
+##### Wildcard
+
+
+
 
 
 ### References

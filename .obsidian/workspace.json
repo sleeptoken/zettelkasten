@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "NFS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "NFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "NFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md"
+                "file": "NFS.md"
               }
             }
           }
@@ -163,10 +162,11 @@
   },
   "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
+    "Remote Thought/Privilege Escalation.md",
+    "NFS.md",
     "Remote Thought/cron job.md",
     "Tags/rootbash.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Cryptographic Failures.md",
     "Tags/Cryptography.md",
@@ -188,7 +188,6 @@
     "Tags/RDS.md",
     "Tags/revshell.md",
     "Tags/XSS.md",
-    "Tags/win.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
