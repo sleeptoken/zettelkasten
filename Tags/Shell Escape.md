@@ -3,7 +3,7 @@
 
 Source: #privesc 
 
-Tags: [[linux]]
+Tags: [[linux]] [[shell]]]
 
 - Firstly List the programs your user is allowed to run via sudo using `sudo -l`
 - For each program in the list, see if there is a shell escape sequence on GTFOBins (https://gtfobins.github.io/)

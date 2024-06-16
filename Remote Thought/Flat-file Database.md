@@ -5,7 +5,6 @@ Source: #tryhackme
 
 Tags: [[database]]
 
-
 Flat-file databases are stored as a file on the disk of a computer.
 The most common (and simplest) format of a flat-file database is an SQLite database.
 
