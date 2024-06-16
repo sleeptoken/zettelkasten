@@ -278,6 +278,8 @@ Examples of privesc found in [[cron job]]
 - When a wildcard character `(*)` is provided to a command as part of an argument, the shell will first perform filename expansion (also known as globbing) on the wildcard
 - This process replaces the wildcard with a space-separated list of the file and directory names in the current directory . Further details are in the example file
 
+#### SUID / SGID Executables
+ 
 #### Password & keys
 
 ##### Passwords
@@ -309,14 +311,17 @@ cat ~/.*history | less
 - Remote users can mount shares, access, create, modify files. 
 - By default, created files inherit the remote user’s id and group id (as owner and group respectively), even if they don’t exist on the NFS server
 
+**Useful Commands**
+```
 Show the NFS server’s export list:
+showmount -e <target>
+
 Similar Nmap script:
+nmap –sV –script=nfs-showmount <target>
+
 Mount an NFS share
-##### Root Squashing
-
-Root Squashing is how NFS prevents an obvious privilege escalation. If the remote user is (or claims to be) root (uid=0), NFS will instead “squash” the user and treat them as if they are the “nobody” user, in the “nogroup” group. While this behavior is default, it can be disabled
-##### no_root_squash
-
+mount -o rw,vers=2 <target>:<share> <local_directory>
+```
 
 
 ### References

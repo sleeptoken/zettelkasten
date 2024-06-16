@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NFS.md",
+                "file": "Remote Thought/Privilege Escalation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6354e0766784aa27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tags/NFS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -83,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NFS.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NFS.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NFS.md"
+                "file": "Remote Thought/Privilege Escalation.md"
               }
             }
           }
@@ -162,8 +176,8 @@
   },
   "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
+    "Tags/NFS.md",
     "Remote Thought/Privilege Escalation.md",
-    "NFS.md",
     "Remote Thought/cron job.md",
     "Tags/rootbash.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
