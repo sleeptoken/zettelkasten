@@ -364,17 +364,37 @@ Example:
 - Above code does the following - 
 - propend our current directory to the path variable 
 - suid-env file is the one trying to start the apache server
-##### Abusing Shell Features
+##### Abusing Shell Features # 1 (Bash <4.2-048)
 
-- In some shells (notably Bash <4.2-048) it is possible to define user functions with an absolute path name. 
-- These functions can be exported so that subprocesses have access to them, and the functions can take precedence over the actual executable being called
+- In some shells (notably Bash <4.2-048) it is possible to define user functions with an absolute path name (forward slashes in their names). 
+- These functions can be exported so that subprocesses have access to them, and the functions can take precedence over any executable with an identical path (the actual executable being called)
 
 Example:
+1. Similar to the previous one we have a file that is starting `apache` using the `service` command but this time it is using absolute path `(/usr/sbin/service apache2 start)`
+2. create a function with the name `/usr/sbin/service` and make it execute bash
+```
+function /usr/sbin/service { /bin/bash -p; }
+
+export -f /usr/sbin/service 
+```
+##### Abusing Shell Features # 2 (Bash <4.4)
+
+- Bash has a debugging mode which can be enabled with the –x command line option, or by modifying the SHELLOPTS environment variable to include xtrace. 
+- By default, SHELLOPTS is read only, however the env command allows SHELLOPTS to be set. 
+- When in debugging mode, Bash uses the environment variable PS4 to display an extra prompt for debug statements. This variable can include an embedded command, which will execute every time it is shown.
+- If a SUID file runs another program via Bash (e.g. by using system() ) these environment variables can be inherited. 
+- If an SUID file is being executed, this command will execute with the privileges of the file owner. 
+- In Bash versions 4.4 and above, the PS4 environment variable is not inherited by shells running as root
+
+Example - 
 Similar to the previous one we have a file that is starting `apache` using the `service` command but this time it is using absolute path `(/usr/sbin/service apache2 start)`
+Run the SUID file with bash debugging enabled and the PS4 variable assigned to our payload:
 
-
-
-
+```
+$ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/rootbash; chown root /tmp/rootbash; chmod +s /tmp/rootbash)' /usr/local/bin/suid-env2
+```
+**chown root /tmp/rootbash is not necessary**
+suid-env2 is the file which is starting `apache` server
 
 #### Password & keys
 
