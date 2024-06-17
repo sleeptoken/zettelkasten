@@ -354,6 +354,25 @@ Running [[strace]] against a command:
 Running [[ltrace]] against a command:   
 `$ ltrace <command>`
 
+Example: 
+- we see a file that is trying to start the `apache` web server and on running  `strings`/`strace` on the file -
+- we can see that the file is trying to run `service apache2 start` cmd (**no absolute path)**
+- since the service command does not use an absolute path we can create our own version of the service executable and propend its location to the path variable, which will cause the shell to use it and execute it with root privileges
+```
+ PATH=.:$PATH /usr/local/bin/suid-env
+```
+- Above code does the following - 
+- propend our current directory to the path variable 
+- suid-env file is the one trying to start the apache server
+##### Abusing Shell Features
+
+- In some shells (notably Bash <4.2-048) it is possible to define user functions with an absolute path name. 
+- These functions can be exported so that subprocesses have access to them, and the functions can take precedence over the actual executable being called
+
+Example:
+Similar to the previous one we have a file that is starting `apache` using the `service` command but this time it is using absolute path `(/usr/sbin/service apache2 start)`
+
+
 
 
 
