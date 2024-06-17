@@ -56,7 +56,7 @@ A root shell can be spawned by simply executing the rootbash file with the -p co
 
 ##### Custom Executables
 
-There may be instances where some root process executes another process which you can control. In these cases, the following [[C]] code, once compiled, will spawn a Bash shell running as root:  
+There may be instances where some root process executes another process which you can control. In these cases, the following [[c]] code, once compiled, will spawn a Bash shell running as root:  
 ```
 int main() { 
 	setuid(0); 
@@ -281,7 +281,7 @@ Examples of privesc found in [[cron job]]
 #### SUID / SGID Executables
 
 If the file is owned by root, it gets executed with root privileges, and we may be able to use it to escalate privileges.
-We can use the following find command to locate files with the SUID or SGID bits set
+We can use the following [[find]] command to locate files with the SUID or SGID bits set
 ```
 find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \;2> /dev/null
 ```
@@ -337,6 +337,23 @@ Compile `libcalc.c` into `/home/user/.config/libcalc.so`
 ```
 $ gcc -shared -fPIC -o /home/user/.config/libcalc.so libcalc.c
 ```
+##### PATH Environment Variable
+
+- The `PATH` environment variable contains a list of directories where the shell should try to find programs
+- If a program tries to execute another program, but only specifies the program name, rather than its full (absolute) path, the shell will search the PATH directories until it is found
+- Since a user has full control over their PATH variable, we can tell the shell to first look for programs in a directory we can write to.
+- If a program tries to execute another program, the name of that program is likely embedded in the executable file as a string. 
+- We can run strings on the executable file to find strings of characters. We can also use strace/ ltrace to see how the program is executing. 
+
+Running [[strings]] against a file: 
+`$ strings /path/to/file`
+
+Running [[strace]] against a command: 
+`$ strace -v -f -e execve <command> 2>&1 | grep exec`
+
+Running [[ltrace]] against a command:   
+`$ ltrace <command>`
+
 
 
 
