@@ -163,10 +163,10 @@
   },
   "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
-    "c.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Tags/rootbash.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/Privilege Escalation.md",
+    "c.md",
+    "Tags/rootbash.md",
     "Tags/strace.md",
     "Tags/Shell Escape.md",
     "Tags/NFS.md",

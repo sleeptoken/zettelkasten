@@ -20,7 +20,7 @@ use `rlwrap` with your `nc` commands - ability to use arrow keys and access comm
 /usr/bin/script -qc /bin/bash /dev/null
 
 #background the session using ctrl + z
-
+find
 stty raw -echo
 
 #foreground the session using nc -nlvp previous_listening_port 
