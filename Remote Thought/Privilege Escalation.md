@@ -294,6 +294,27 @@ A list of programs with their shell escape sequences can be found here: https://
 
 **LD_PRELOAD & LD_LIBRARY_PATH Both these environment variables get ignored when SUID files are executed.**
 
+Example - 
+1. on running linux smart enum script we find an uncommon SUID bit set of **exim** (Exim is a popular mail transfer agent that is somewhat notorious for having many security vulnerabilities)
+2. find the version by executing the file with `--version` command 
+3. we find a local priv esc exploit for the current version of exim on searchsploit
+on executing the code in the adversary machine we get a strange error from bash 
+```
+$ ./39535.sh
+-bash: ./39535.sh: /bin/sh^M: bad interpreter: No such file or directory 
+```
+- Note the ^M symbol this usually means the exploit code was written using windows new line characters, luckily we can remove the chars using the sed command 
+- to get ^M simply hold `ctrl + V + M`
+```
+$ sed -i -e "s/^M//" 39535.sh > privesc.sh
+$ chmod + privesc.sh
+```
+##### Shared Object Injection
+
+- When a program is executed, it will try to load the shared objects it requires. 
+- By using a program called [[strace]], we can track these system calls and determine whether any shared objects were not found.
+- If we can write to the location the program tries to open, we can create a shared object and spawn a root shell when it is loaded.
+
 
 
 #### Password & keys
