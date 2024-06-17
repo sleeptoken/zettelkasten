@@ -281,7 +281,18 @@ Examples of privesc found in [[cron job]]
 #### SUID / SGID Executables
 
 If the file is owned by root, it gets executed with root privileges, and we may be able to use it to escalate privileges.
+We can use the following find command to locate files with the SUID or SGID bits set
+```
+find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \;2> /dev/null
 
+it will search for items recursively only looking for files with suid and sgid bit set and then will run ls -l command against each one 
+```
+##### Shell Escape Sequences 
+
+- Just as we were able to use shell escape sequences with programs running via sudo, we can do the same with SUID / SGID files. 
+A list of programs with their shell escape sequences can be found here: https://gtfobins.github.io/ 
+
+**LD_PRELOAD & LD_LIBRARY_PATH Both these environment variables get ignored when SUID files are executed.**
 
 
 
