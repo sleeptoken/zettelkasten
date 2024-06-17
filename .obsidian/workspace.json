@@ -19,6 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3a39830b4a173ef5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Privilege Escalation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -150,13 +163,17 @@
   },
   "active": "43fbad7ec0df9666",
   "lastOpenFiles": [
+    "c.md",
+    "Remote Thought/Privilege Escalation.md",
+    "Tags/rootbash.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Tags/strace.md",
     "Tags/Shell Escape.md",
     "Tags/NFS.md",
     "Tags/linux.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Cryptographic Failures.md",
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/LLM attacks.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Insecure Design.md",
@@ -170,12 +187,8 @@
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/revshell.md",
     "Tags/msfvenom.md",
-    "Tags/rootbash.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Tags/Cryptography.md",
     "Tags/git.md",
-    "Tags/ftp.md",
-    "Tags/flat-file.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
