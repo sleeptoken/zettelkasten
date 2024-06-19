@@ -438,8 +438,21 @@ nmap –sV –script=nfs-showmount <target>
 Mount an NFS share
 mount -o rw,vers=2 <target>:<share> <local_directory>
 ```
+#### Privilege Escalation Strategies 
 
+If your scripts are failing and you don’t know why, you can always run the manual commands from this course, and other Linux PrivEsc cheatsheets online (e.g. https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 
+1. Spend some time and read over the results of your enumeration. 
+2. If Linux Smart Enumeration level 0 or 1 finds something interesting, make a note of it. 
+3. Avoid rabbit holes by creating a checklist of things you need for the privilege escalation method to work
+4. Have a quick look around for files in your user’s home directory and other common locations (e.g. /var/backup, /var/logs).
+5. If your user has a history file, read it, it may have important information like commands or even passwords
+6. Try things that don’t have many steps first, e.g. Sudo, Cron Jobs, SUID files. 
+7. Have a good look at root processes, enumerate their versions and search for exploits. 
+8. Check for internal ports that you might be able to forward to your attacking machine.
+9. If you still don’t have root, re-read your full enumeration dumps and highlight anything that seems odd. 
+10. This might be a process or file name you aren’t familiar with, an “unusual” filesystem configured (on Linux, anything that isn’t ext, swap, or tmpfs), or even a username.
+11. At this stage you can also start to think about Kernel Exploits.
 ### References
 
 [Linux Privilege Escalation Tutorial: Become an Ethical Hacker | Udemy](https://www.udemy.com/course/linux-privilege-escalation/)

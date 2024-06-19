@@ -148,10 +148,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "ec23de4bff1665f8",
   "lastOpenFiles": [
-    "Tags/ltrace.md",
     "Remote Thought/Privilege Escalation.md",
+    "Tags/ltrace.md",
     "Tags/strace.md",
     "Tags/strings.md",
     "Tags/Find.md",
