@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "97254e9f2cdf12b4",
+        "id": "f80f88f6540e86a2",
         "type": "tabs",
         "children": [
           {
-            "id": "40bdb3e2e9c248ef",
+            "id": "4d562b16b08abf71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Clickjacking.md",
+                "file": "Remote Thought/Linux Variables and Shell Escape.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Clickjacking.md",
+                "file": "Remote Thought/Linux Variables and Shell Escape.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Clickjacking.md",
+                "file": "Remote Thought/Linux Variables and Shell Escape.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Clickjacking.md"
+                "file": "Remote Thought/Linux Variables and Shell Escape.md"
               }
             }
           }
@@ -148,10 +148,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "40bdb3e2e9c248ef",
+  "active": "4d562b16b08abf71",
   "lastOpenFiles": [
-    "Remote Thought/CSRF.md",
+    "Remote Thought/Linux Variables and Shell Escape.md",
+    "Tags/Shell Escape.md",
+    "Remote Thought/cron job.md",
     "Remote Thought/Clickjacking.md",
+    "Remote Thought/CSRF.md",
     "Remote Thought/LLM attacks.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/ltrace.md",
@@ -161,7 +164,6 @@
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Tags/c.md",
     "Tags/rootbash.md",
-    "Tags/Shell Escape.md",
     "Tags/NFS.md",
     "Tags/linux.md",
     "Remote Thought/Caesar Cipher.md",
@@ -173,9 +175,7 @@
     "Remote Thought/Investigating Windows.md",
     "Remote Thought/Path Traversal.md",
     "Remote Thought/break RSA w public ky.md",
-    "Remote Thought/cron job.md",
     "Remote Thought/DOM-based XSS.md",
-    "Remote Thought/Flat-file Database.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
