@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e61c650be59d7e98",
+        "id": "e91facb0c9cdf502",
         "type": "tabs",
         "children": [
           {
-            "id": "e36739788b4991f4",
+            "id": "b21e93fc35ef7c32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/DNS.md",
+                "file": "Binary exploit toolkit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/DNS.md",
+                "file": "Binary exploit toolkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/DNS.md",
+                "file": "Binary exploit toolkit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/DNS.md"
+                "file": "Binary exploit toolkit.md"
               }
             }
           }
@@ -148,21 +148,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e36739788b4991f4",
+  "active": "b21e93fc35ef7c32",
   "lastOpenFiles": [
-    "Stream Cipher.md",
+    "Tags/pwntools.md",
+    "Binary exploit toolkit.md",
+    "Remote Thought/Privilege Escalation.md",
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
+    "Remote Thought/Injection.md",
     "Remote Thought/Freq Analysis.md",
+    "Remote Thought/Integrity Failure.md",
     "Remote Thought/Insecure Design.md",
+    "pawntools.md",
+    "Remote Thought/CSRF.md",
     "Tags/DNS.md",
+    "Stream Cipher.md",
     "Remote Thought/Clickjacking.md",
     "Remote Thought/Broken Access Control.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Tags/Shell Escape.md",
     "Remote Thought/cron job.md",
-    "Remote Thought/CSRF.md",
     "Remote Thought/LLM attacks.md",
-    "Remote Thought/Privilege Escalation.md",
     "Tags/ltrace.md",
     "Tags/strace.md",
     "Tags/strings.md",
@@ -171,11 +176,6 @@
     "Tags/c.md",
     "Tags/rootbash.md",
     "Tags/NFS.md",
-    "Tags/linux.md",
-    "Remote Thought/Caesar Cipher.md",
-    "Remote Thought/Cryptographic Failures.md",
-    "Remote Thought/Injection.md",
-    "Remote Thought/Integrity Failure.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
