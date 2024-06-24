@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f80f88f6540e86a2",
+        "id": "e61c650be59d7e98",
         "type": "tabs",
         "children": [
           {
-            "id": "4d562b16b08abf71",
+            "id": "e36739788b4991f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Broken Access Control.md",
+                "file": "Tags/DNS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Broken Access Control.md",
+                "file": "Tags/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Broken Access Control.md",
+                "file": "Tags/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Broken Access Control.md"
+                "file": "Tags/DNS.md"
               }
             }
           }
@@ -147,14 +147,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d562b16b08abf71",
+  "active": "e36739788b4991f4",
   "lastOpenFiles": [
+    "Stream Cipher.md",
     "Remote Thought/Freq Analysis.md",
+    "Remote Thought/Insecure Design.md",
+    "Tags/DNS.md",
+    "Remote Thought/Clickjacking.md",
+    "Remote Thought/Broken Access Control.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Tags/Shell Escape.md",
     "Remote Thought/cron job.md",
-    "Remote Thought/Clickjacking.md",
     "Remote Thought/CSRF.md",
     "Remote Thought/LLM attacks.md",
     "Remote Thought/Privilege Escalation.md",
@@ -170,11 +174,7 @@
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Injection.md",
-    "Remote Thought/Insecure Design.md",
     "Remote Thought/Integrity Failure.md",
-    "Remote Thought/Investigating Windows.md",
-    "Remote Thought/Path Traversal.md",
-    "Remote Thought/break RSA w public ky.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
