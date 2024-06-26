@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b21e93fc35ef7c32",
+            "id": "cb59e4f110d82829",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "Remote Thought/Symbolic Link & brute force.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "Remote Thought/Symbolic Link & brute force.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "Remote Thought/Symbolic Link & brute force.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md"
+                "file": "Remote Thought/Symbolic Link & brute force.md"
               }
             }
           }
@@ -148,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0cc3d1be09e41370",
+  "active": "cb59e4f110d82829",
   "lastOpenFiles": [
+    "Remote Thought/Services Running as Root.md",
+    "Tags/web.md",
+    "Remote Thought/Symbolic Link & brute force.md",
     "Untitled.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Privilege Escalation.md",
@@ -173,9 +175,6 @@
     "Remote Thought/cron job.md",
     "Remote Thought/LLM attacks.md",
     "Tags/ltrace.md",
-    "Tags/strace.md",
-    "Tags/strings.md",
-    "Tags/Find.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
