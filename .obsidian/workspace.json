@@ -150,6 +150,7 @@
   },
   "active": "b21e93fc35ef7c32",
   "lastOpenFiles": [
+    "Tags/ASLR.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/pwntools.md",
@@ -175,7 +176,6 @@
     "Tags/Find.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Tags/c.md",
-    "Tags/rootbash.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
