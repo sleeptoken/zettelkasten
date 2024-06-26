@@ -66,12 +66,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -148,13 +148,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b21e93fc35ef7c32",
+  "active": "0cc3d1be09e41370",
   "lastOpenFiles": [
-    "Tags/ASLR.md",
+    "Untitled.md",
     "Remote Thought/Binary exploit toolkit.md",
+    "Remote Thought/Privilege Escalation.md",
+    "privesc.md",
+    "Tags/ASLR.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/pwntools.md",
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Freq Analysis.md",
@@ -174,8 +176,6 @@
     "Tags/strace.md",
     "Tags/strings.md",
     "Tags/Find.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Tags/c.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
