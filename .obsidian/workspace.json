@@ -148,8 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "b21e93fc35ef7c32",
   "lastOpenFiles": [
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Tags/pwntools.md",
     "Remote Thought/Privilege Escalation.md",
@@ -175,7 +176,6 @@
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Tags/c.md",
     "Tags/rootbash.md",
-    "Tags/NFS.md",
     "Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
