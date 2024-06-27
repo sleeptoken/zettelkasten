@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Symbolic Link & brute force.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Symbolic Link & brute force.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Symbolic Link & brute force.md",
+                "file": "Remote Thought/Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Symbolic Link & brute force.md"
+                "file": "Remote Thought/Privilege Escalation.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "498a4f65d26e7d47",
   "lastOpenFiles": [
+    "Remote Thought/Symbolic Link & brute force.md",
     "Tags/shell.md",
     "Tags/Shell Escape.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
@@ -157,7 +158,6 @@
     "Tags/bash.md",
     "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
-    "Remote Thought/Symbolic Link & brute force.md",
     "Remote Thought/Don't use alert(1).md",
     "Images/Pasted image 20240627104732.png",
     "Tags/web.md",
