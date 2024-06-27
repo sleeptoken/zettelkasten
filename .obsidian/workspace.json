@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8ac7b4eb99cc9813",
+        "id": "6c8bce74e1fc5781",
         "type": "tabs",
         "children": [
           {
-            "id": "1c00224ae454e90a",
+            "id": "498a4f65d26e7d47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Don't use alert(1).md",
+                "file": "Remote Thought/Symbolic Link & brute force.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Don't use alert(1).md",
+                "file": "Remote Thought/Symbolic Link & brute force.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Don't use alert(1).md",
+                "file": "Remote Thought/Symbolic Link & brute force.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Don't use alert(1).md"
+                "file": "Remote Thought/Symbolic Link & brute force.md"
               }
             }
           }
@@ -148,18 +148,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c00224ae454e90a",
+  "active": "498a4f65d26e7d47",
   "lastOpenFiles": [
+    "Tags/shell.md",
+    "Tags/Shell Escape.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Tags/bash.md",
+    "Remote Thought/DOM-based XSS.md",
+    "Remote Thought/Linux Variables and Shell Escape.md",
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Remote Thought/Don't use alert(1).md",
     "Images/Pasted image 20240627104732.png",
     "Tags/web.md",
     "Tags/RDS.md",
     "Remote Thought/Appdata storage in windows.md",
-    "Remote Thought/Don't use alert(1).md",
     "Tags/XSS.md",
     "Overwriting variables on the stack.md",
     "Images/Pasted image 20240604110852.png",
     "Stream Cipher.md",
-    "Remote Thought/Symbolic Link & brute force.md",
     "Tags/ELF.md",
     "Remote Thought/Services Running as Root.md",
     "Remote Thought/Binary exploit toolkit.md",
@@ -171,12 +178,6 @@
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Freq Analysis.md",
-    "Remote Thought/Integrity Failure.md",
-    "Remote Thought/Insecure Design.md",
-    "pawntools.md",
-    "Remote Thought/CSRF.md",
-    "Tags/DNS.md",
-    "Remote Thought/Clickjacking.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
