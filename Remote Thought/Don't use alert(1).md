@@ -18,8 +18,8 @@ Google uses a range of sandbox domains to safely host user-generated content. Ma
 
 sometimes alert is blocked due to a sandboxed `iframe` in that case use `console.log("XSSTEST:"+window.origin)`
 
-
-When you have for example  an injection into a JSONP sandboxed iframe, the actual site usually  communicates with the iframe via postMessages. And so there could be a way to exploit  a message to get XSS on the actual site. Basically doing a sandbox escape. But in this case the vulnerability is NOT this first XSS,  the vulnerability is the ESCAPE out of it. So reporting the sandboxed XSS itself DOES  NOT qualify for a bounty. But it means, if you can somehow CHAIN other bugs, escalate  it, and execute javascript on the ACTUAL IN-SCOPE domain, then it would be a valid issue you can  report.
+![[Pasted image 20240627104732.png]]
+When you have for example  an injection into a JSONP sandboxed iframe, the actual site usually  communicates with the iframe via postMessages. And so there could be a way to exploit a message to get XSS on the actual site. Basically doing a sandbox escape. But in this case the vulnerability is **NOT** this first XSS, the vulnerability is the **ESCAPE** out of it. So reporting the sandboxed XSS itself **DOES  NOT** qualify for a bounty. But it means, if you can somehow **CHAIN** other bugs, escalate it, and execute JavaScript on the **ACTUAL IN-SCOPE** domain, then it would be a valid issue you can report.
 
 ### References 
 
