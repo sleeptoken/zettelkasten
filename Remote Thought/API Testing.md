@@ -65,8 +65,26 @@ To test for this vulnerability, add path traversal sequences to modify parameter
 - An attacker may be able to manipulate parameters to exploit vulnerabilities in the server's processing of other structured data formats, such as a `JSON` or `XML`.
 - To test for this, inject unexpected structured data into user inputs and see how the server responds. 
  Structured format injection can also occur in responses. For example, this can occur if user input is stored securely in a database, then embedded into a JSON response from a back-end API without adequate encoding. 
+## HTTP security headers 
 
+Below headers will either strength on weaken the security if they are added 
+
+| Strengthen Security     | Weaken Security |
+| ----------------------- | --------------- |
+| X-Frame-Options         | CORS            |
+| Content-Security-Policy |                 |
+| HSTS                    |                 |
+| HTTPOnly Cookie         |                 |
+CSP can protect websites from XSS attacks or other kind of attacks. But because CSP “just” protects, it doesn’t make it the fix for an issue. If there is an XSS CSP doesn’t fix it, it could just block exploitation. it’s a defense in depth strategy. So setting `script-src CSP` only matters in the context of an XSS issue existing in the first place. And that means, missing CSP in itself is not really a vulnerability.
+
+The Strict-Transport-Security header is ignored by the browser when your site is accessed using HTTP;  
+this is because an attacker may intercept HTTP connections and inject the header or remove it. "ONLY" When your site is accessed over HTTPS with no certificate errors, the browser knows your site is HTTPS capable and will honor the Strict-Transport-Security header.
 ### References
+
+cheat sheet for http headers - [HTTP Headers - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html)
 
 test cases - 
 https://www.evernote.com/shard/s433/client/snv?isnewsnv=true&noteGuid=588ed6bf-f893-4953-aeb2-d4f2260fd72f&noteKey=6fe301e3f61af998&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs433%2Fsh%2F588ed6bf-f893-4953-aeb2-d4f2260fd72f%2F6fe301e3f61af998&title=API%2BTest%2BCases%2BCreation%2B%2528API%2BTesting%2B-%2BPart%2B33%2529
+
+you can access a given policy - https://csp-evaluator.withgoogle.com/
+https://hstspreload.org/
