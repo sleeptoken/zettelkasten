@@ -1,8 +1,6 @@
 
 2024-06-27 20:15
 
-Source: #portswigger 
-
 Tags: [[web]]
 ## Recon
 #### Tools: 
@@ -52,9 +50,9 @@ To test for server-side parameter pollution in the query string, place query syn
 ###### Overriding existing parameters
 
 To confirm whether the application is vulnerable to server-side parameter pollution, you could try to override the original parameter. Do this by injecting a second parameter with the same name. This varies across different web technologies. For example: 
-- PHP parses the last parameter only. 
-- ASP.NET combines both parameters.
-- Node.js / express parses the first parameter only.
+- `PHP` parses the last parameter only. 
+- `ASP.NET` combines both parameters.
+- `Node.js / express` parses the first parameter only.
 If you're able to override the original parameter, you may be able to conduct an exploit.
 ##### Testing for server-side parameter pollution in REST paths
 
@@ -77,8 +75,20 @@ Below headers will either strength on weaken the security if they are added
 | HTTPOnly Cookie         |                 |
 CSP can protect websites from XSS attacks or other kind of attacks. But because CSP “just” protects, it doesn’t make it the fix for an issue. If there is an XSS CSP doesn’t fix it, it could just block exploitation. it’s a defense in depth strategy. So setting `script-src CSP` only matters in the context of an XSS issue existing in the first place. And that means, missing CSP in itself is not really a vulnerability.
 
-The Strict-Transport-Security header is ignored by the browser when your site is accessed using HTTP;  
-this is because an attacker may intercept HTTP connections and inject the header or remove it. "ONLY" When your site is accessed over HTTPS with no certificate errors, the browser knows your site is HTTPS capable and will honor the Strict-Transport-Security header.
+The Strict-Transport-Security header is ignored by the browser when your site is accessed using HTTP; this is because an attacker may intercept HTTP connections and inject the header or remove it. "ONLY" When your site is accessed over HTTPS with no certificate errors, the browser knows your site is HTTPS capable and will honor the Strict-Transport-Security header.
+
+Cookie Security Flags (HttpOnly)
+And the setting causes cookies to only be transmitted in HTTP request, but cannot be read from javascript. It often is considered a defense against XSS attacks stealing cookies, but it’s rather ineffective. Yes the cookie cannot be stolen, so you as the attacker cannot perform requests as the user, but when you have a XSS, the XSS can just send the requests you want for you. And those requests will be authenticated.
+#### from Internship Notes - 
+
+- X-frame-options : SAMEORIGIN - for clickjacking  
+- X-XSS- protection:1;mode=block- secures from pop ups  
+- Strict-transport-security- for enforcing http to https- HSTS  
+- Content-security-policy:default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';  
+- Access-Control-Allow-Origin - shouldn't be set to * this means that it allows anybody to send request to that api
+
+Try using successful login cookies to relogin with wrong creds  
+Line 1 ka get req ko slowly strip down karna by directory and then check kispe kya req aa raha hai
 ### References
 
 cheat sheet for http headers - [HTTP Headers - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html)

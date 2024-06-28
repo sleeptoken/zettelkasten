@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -150,8 +149,9 @@
   },
   "active": "22a62ceff74a4a35",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/API Testing.md",
+    "Untitled.md",
     "Overwriting variables on the stack.md",
     "Remote Thought/Privilege Escalation.md",
     "Remote Thought/cron job.md",
@@ -167,7 +167,6 @@
     "Images/Pasted image 20240627104732.png",
     "Tags/web.md",
     "Tags/RDS.md",
-    "Remote Thought/Appdata storage in windows.md",
     "Tags/XSS.md",
     "Images/Pasted image 20240604110852.png",
     "Stream Cipher.md",
