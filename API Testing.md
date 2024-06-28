@@ -4,6 +4,17 @@
 Source: #portswigger 
 
 Tags: [[web]]
+#### API Documentation 
+
+Even if API documentation isn't openly available, you may still be able to access it by browsing applications that use the API. To do this, you can use Burp Scanner to crawl the API.
+
+
+
+
+
+
+
+
 
 
 
