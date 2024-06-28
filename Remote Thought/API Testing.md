@@ -12,6 +12,7 @@ Tags: [[web]]
 - You can use the built-in **HTTP verbs list** in Burp Intruder to automatically cycle through a range of HTTP methods. 
 - You can use the **Content type converter BApp** to automatically convert data submitted within requests between XML and JSON.
 - The **Param miner BApp** enables you to automatically guess up to 65,536 param names per request. Param miner automatically guesses names that are relevant to the application, based on information taken from the scope. 
+- the **Backslash Powered Scanner BApp** identifies server-side injection vulnerabilities. The scanner classifies inputs as boring, interesting, or vulnerable. You'll need to investigate interesting inputs using the manual techniques
 #### API Documentation 
 
 Even if API documentation isn't openly available, you may still be able to access it by browsing applications that use the API. To do this, you can use Burp Scanner to crawl the Application.
@@ -61,8 +62,9 @@ A RESTful API may place parameter names and values in the URL path, rather than 
 To test for this vulnerability, add path traversal sequences to modify parameters and observe how the application responds. 
 ##### Testing for server-side parameter pollution in structured data formats
 
-An attacker may be able to manipulate parameters to exploit vulnerabilities in the server's processing of other structured data formats, such as a JSON or XML. To test for this, inject unexpected structured data into user inputs and see how the server responds. 
-
+- An attacker may be able to manipulate parameters to exploit vulnerabilities in the server's processing of other structured data formats, such as a `JSON` or `XML`.
+- To test for this, inject unexpected structured data into user inputs and see how the server responds. 
+ Structured format injection can also occur in responses. For example, this can occur if user input is stored securely in a database, then embedded into a JSON response from a back-end API without adequate encoding. 
 
 ### References
 
