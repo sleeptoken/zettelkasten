@@ -33,11 +33,35 @@ While browsing the application, look for patterns that suggest API endpoints in 
 Mass assignment (also known as auto-binding) can inadvertently create hidden parameters. It occurs when software frameworks automatically bind request parameters to fields on an internal object. Mass assignment may therefore result in the application supporting parameters that were never intended to be processed by the developer.
 
 For example, consider a `PATCH /api/users/` request, which enables users to update their username and email, A concurrent `GET /api/users/123` can be created 
+#### Sever side parameter pollution 
 
-##### Sever side parameter pollution 
+Server-side parameter pollution occurs when a website embeds user input in a server-side request to an internal API without adequate encoding. Attacker can - 
+    - Override existing parameters.
+    - Modify the application behavior.
+    - Access unauthorized data.
+##### Testing for server-side parameter pollution in the query string
 
-Server-side parameter pollution occurs when a website embeds user input in a server-side request to an internal API without adequate encoding.
+To test for server-side parameter pollution in the query string, place query syntax characters like `#,` `&,` and `=` in your input 
 
+- You can use a URL-encoded `#` character to attempt to truncate the server-side request
+	- *It's essential that you URL-encode the `#` character. Otherwise the front-end application will interpret it as a fragment identifier and it won't be passed to the internal API.* 
+	- if you see no change in the response after adding `#` then this possibly removes the significance of anything trailing `#` .
+
+- You can use an URL-encoded `&` character to attempt to add a second parameter to the server-side request. 
+###### Overriding existing parameters
+
+To confirm whether the application is vulnerable to server-side parameter pollution, you could try to override the original parameter. Do this by injecting a second parameter with the same name. This varies across different web technologies. For example: 
+- PHP parses the last parameter only. 
+- ASP.NET combines both parameters.
+- Node.js / express parses the first parameter only.
+If you're able to override the original parameter, you may be able to conduct an exploit.
+##### Testing for server-side parameter pollution in REST paths
+
+A RESTful API may place parameter names and values in the URL path, rather than the query string.
+To test for this vulnerability, add path traversal sequences to modify parameters and observe how the application responds. 
+##### Testing for server-side parameter pollution in structured data formats
+
+An attacker may be able to manipulate parameters to exploit vulnerabilities in the server's processing of other structured data formats, such as a JSON or XML. To test for this, inject unexpected structured data into user inputs and see how the server responds. 
 
 
 ### References
