@@ -32,6 +32,7 @@ gcc vuln.c -o vuln -fno-stack-protector -z execstack -no-pie -m32
 `gets()` shouldn't be used as it doesn't check if the value entered by the user is within the limits of the stack. instead use `fgets()`. 
 
 use **python2** when doing buffer overflow if using pwntools then py version doesn't matter
+### Manual Exploit 
 
 - we have a binary that has a stack with size 32 defined, a predefined key and the binary takes input. 
 - on inspecting the code we find out the binary has an if statement that allows entry only if the key is deadbeef
@@ -41,6 +42,9 @@ use **python2** when doing buffer overflow if using pwntools then py version doe
 - `python2 -c 'print 32 * "A" + "\xef\xbe\xad\xde"' > payload` use the stript to add the o/p to a payload and pass it to the binary    
 - `\xef\xbe\xad\xde` is for endianness 
 
+Alternate method is to debug with [[GDB]]-PwnDbg mentioned in the gdb file.
+
+
 
 
 ### References
@@ -49,7 +53,7 @@ https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101
 
 buffer overflow - https://avinetworks.com/glossary/buffer-overflow/
 Disassembler - [[Ghidra]]/IDA/Radare/BinaryNinja/Hopper : https://gist.github.com/liba2k/d522b4f20632c4581af728b286028f8f
-Debugger - [[GDB]]-PwnDBG/GEF/PEDA: https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8
+Debugger - GDB-PwnDBG/GEF/PEDA: https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8
 
 cheatsheet - 
 ghidra - https://ghidra-sre.org/CheatSheet.html

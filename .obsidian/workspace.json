@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overwriting variables on the stack.md",
+                "file": "Tags/GDB.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overwriting variables on the stack.md",
+                "file": "Tags/GDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overwriting variables on the stack.md",
+                "file": "Tags/GDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overwriting variables on the stack.md"
+                "file": "Tags/GDB.md"
               }
             }
           }
@@ -150,16 +150,16 @@
   },
   "active": "714633566aa0794c",
   "lastOpenFiles": [
-    "endianness.md",
     "Overwriting variables on the stack.md",
-    "Remote Thought/API Testing.md",
+    "Tags/GDB.md",
+    "Tags/endianness.md",
     "server-side parameter pollution.md",
+    "Remote Thought/API Testing.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Appdata storage in windows.md",
     "Tags/Binary Exploit.md",
     "Tags/Compiling binary.md",
     "Tags/Ghidra.md",
-    "Tags/GDB.md",
     "Images/buffer-overflow-diagram.png",
     "Remote Thought/cron job.md",
     "Remote Thought/Caesar Cipher.md",
