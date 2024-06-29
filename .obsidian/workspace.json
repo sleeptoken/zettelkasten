@@ -150,8 +150,9 @@
   },
   "active": "714633566aa0794c",
   "lastOpenFiles": [
-    "Remote Thought/API Testing.md",
+    "endianness.md",
     "Overwriting variables on the stack.md",
+    "Remote Thought/API Testing.md",
     "server-side parameter pollution.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Appdata storage in windows.md",
@@ -178,7 +179,6 @@
     "Tags/XSS.md",
     "Images/Pasted image 20240604110852.png",
     "Stream Cipher.md",
-    "Tags/ELF.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
