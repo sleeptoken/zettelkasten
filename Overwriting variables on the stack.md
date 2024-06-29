@@ -5,9 +5,6 @@ Source: #youtube
 
 Tags: [[Binary exploit toolkit]] [[binary exploit]]
 
-disassembler - ghidra 
-debugger - gdb/idapro/pwndebug
-
 ![[buffer-overflow-diagram.png]]
 if a buffer is overflowed then it tried to go up and overwrites everything that comes in its way
 ### Dynamically linked 
@@ -28,9 +25,9 @@ without protection
 gcc vuln.c -o vuln -fno-stack-protector -z execstack -no-pie -m32
 ```
 above code will output a 32 bit file  
-
-
-
+`-fno-stack-protector` --> no protections enabled, prevent it from adding canaries to the stack
+`-z execstac` --> makes sure the program is marked as executable 
+-no-pie --> means that the program will load at the same memory address each time
 
 
 
@@ -46,8 +43,8 @@ https://www.youtube.com/playlist?list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94
 https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101
 
 buffer overflow - https://avinetworks.com/glossary/buffer-overflow/
-Disassembler - Ghidra/IDA/Radare/BinaryNinja/Hopper : https://gist.github.com/liba2k/d522b4f20632c4581af728b286028f8f
-Debugger - GDB-PwnDBG/GEF/PEDA: https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8
+Disassembler - [[Ghidra]]/IDA/Radare/BinaryNinja/Hopper : https://gist.github.com/liba2k/d522b4f20632c4581af728b286028f8f
+Debugger - [[GDB]]-PwnDBG/GEF/PEDA: https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8
 
 tutorials - 
 Pwn.College: [https://pwn.college](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbV9raTJiX0dEOXRFMUtSTzFJZFVIRmZsOVgwUXxBQ3Jtc0trdUlvWkpxaEtNbVhaazN1OWMxbWdZYjBLdEVOR3hib0hCT0ZVNDIzWnFUdlVKcERSYnFaX3ZPRU45ZW1yMTkwaVp2SEVmWkFWbFdZeDJ3a2F4cklxR1RaN0NEMHRCbjBtSFpjSjBTMVdxanFTYW9YTQ&q=https%3A%2F%2Fpwn.college%2F&v=wa3sMSdLyHw)
