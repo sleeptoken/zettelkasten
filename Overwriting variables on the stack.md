@@ -31,13 +31,6 @@ gcc vuln.c -o vuln -fno-stack-protector -z execstack -no-pie -m32
 
 
 
-
-
-
-
-
-
-
 ### References
 https://www.youtube.com/playlist?list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94
 https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101
@@ -53,3 +46,6 @@ NightMare: [https://guyinatuxedo.github.io](https://www.youtube.com/redirect?eve
 Ir0nstone: [https://ir0nstone.gitbook.io/notes/ty...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbURYLXJ2Q08zQVBtaHZPSlRub2dGbkxBNkttUXxBQ3Jtc0ttRXFMLWlDamp5RUljUXBfYnJPRjIyQlJDX3NFVVZXVEhCcW9Rb29PM2R6dWVLdGFST1l3cVNDQzhqdFNqTll5TDhXNHlxWE13M1h2VmJMd2I4S010NzdOcG1BcVh1UDZjOU5HdzY1YVpkQ3VVMm9IOA&q=https%3A%2F%2Fir0nstone.gitbook.io%2Fnotes%2Ftypes%2Fstack&v=wa3sMSdLyHw) 
 PinkDraconian:    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon.png) • Pwn Zero To Hero](https://www.youtube.com/playlist?list=PLeSXUd883dhjmKkVXSRgI1nJEZUDzgLf_)   
 More: [https://github.com/Crypto-Cat/CTF#readme](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnhoMTY0a08zTjFTTXduZlFrakxJQkFDbXR2UXxBQ3Jtc0trR3BZemxLVE1DNFlMQzQ3bDgta2U3U29Db2NFU2xEcVlQdEl5RWZ3V3MzM0RWTjJyNDdqcU1kV3c5VmY4QngxSHhYVXhPVjJ6anVZSTRhMGlBLWlZWkQxMWJHN3FRbWwyRElLb1dzaEFWUmJvYVdsRQ&q=https%3A%2F%2Fgithub.com%2FCrypto-Cat%2FCTF%23readme&v=wa3sMSdLyHw)
+
+cheatsheet - 
+ghidra - https://ghidra-sre.org/CheatSheet.html
