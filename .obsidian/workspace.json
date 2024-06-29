@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/API Testing.md",
+                "file": "Overwriting variables on the stack.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/API Testing.md",
+                "file": "Overwriting variables on the stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/API Testing.md",
+                "file": "Overwriting variables on the stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/API Testing.md"
+                "file": "Overwriting variables on the stack.md"
               }
             }
           }
@@ -149,12 +149,15 @@
   },
   "active": "22a62ceff74a4a35",
   "lastOpenFiles": [
-    "Remote Thought/cron job.md",
+    "Tags/binary exploit.md",
+    "Overwriting variables on the stack.md",
+    "buffer-overflow-diagram.png",
+    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/API Testing.md",
+    "Remote Thought/cron job.md",
     "Remote Thought/Caesar Cipher.md",
     "Remote Thought/Appdata storage in windows.md",
     "Untitled.md",
-    "Overwriting variables on the stack.md",
     "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Symbolic Link & brute force.md",
     "Tags/shell.md",
@@ -173,10 +176,7 @@
     "Stream Cipher.md",
     "Tags/ELF.md",
     "Remote Thought/Services Running as Root.md",
-    "Remote Thought/Binary exploit toolkit.md",
     "privesc.md",
-    "Tags/ASLR.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
