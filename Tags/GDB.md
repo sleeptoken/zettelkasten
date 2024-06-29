@@ -23,7 +23,7 @@ example - continuation of the manual exploit mentioned in [[Overwriting variable
 	we can also use `disassemble 0x80491e0` to see the code at that address 
 - do a standard entry (something within the size of the stack). we hit the breakpoint & we've got this comparison and again it's checking `[ebp - 0xc], 0xdeadbeef`
 - to print what is at that location use `x $ebp - 0xc`
-- we can cheat by manipulating whats i
+- we can cheat by manipulating what's in the stack
 ```
 pwndbg> x $ebp - 0xc
 0xffffd03c: 0x12345678

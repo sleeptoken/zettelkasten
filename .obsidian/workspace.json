@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/GDB.md",
+                "file": "Remote Thought/Overwriting variables on the stack.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/GDB.md",
+                "file": "Remote Thought/Overwriting variables on the stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/GDB.md",
+                "file": "Remote Thought/Overwriting variables on the stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/GDB.md"
+                "file": "Remote Thought/Overwriting variables on the stack.md"
               }
             }
           }
@@ -150,11 +150,12 @@
   },
   "active": "714633566aa0794c",
   "lastOpenFiles": [
-    "Overwriting variables on the stack.md",
-    "Tags/GDB.md",
-    "Tags/endianness.md",
-    "server-side parameter pollution.md",
     "Remote Thought/API Testing.md",
+    "server-side parameter pollution.md",
+    "Remote Thought/Overwriting variables on the stack.md",
+    "Tags/GDB.md",
+    "Tags/pwntools.md",
+    "Tags/endianness.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Appdata storage in windows.md",
     "Tags/Binary Exploit.md",
@@ -178,7 +179,6 @@
     "Tags/RDS.md",
     "Tags/XSS.md",
     "Images/Pasted image 20240604110852.png",
-    "Stream Cipher.md",
     "Untitled.canvas",
     "Zettelkasten",
     "Template",
