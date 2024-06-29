@@ -3,7 +3,7 @@
 
 Source: #portswigger
 
-Tags: [[web]]
+Tags: [[web]] [[API]]
 ## Recon
 #### Tools: 
 
@@ -42,7 +42,7 @@ Server-side parameter pollution occurs when a website embeds user input in a ser
     - Access unauthorized data.
 ##### Testing for server-side parameter pollution in the query string
 
-To test for server-side parameter pollution in the query string, place query syntax characters like `#,` `&,` and `=` in your input 
+To test for [[server-side parameter pollution]] in the query string, place query syntax characters like `#,` `&,` and `=` in your input 
 
 - You can use a URL-encoded `#` character to attempt to truncate the server-side request
 	- *It's essential that you URL-encode the `#` character. Otherwise the front-end application will interpret it as a fragment identifier and it won't be passed to the internal API.* 
@@ -90,7 +90,7 @@ And the setting causes cookies to only be transmitted in HTTP request, but canno
 - Access-Control-Allow-Origin - shouldn't be set to * this means that it allows anybody to send request to that api
 
 Try using successful login cookies to relogin with wrong creds  
-Line 1 ka get req ko slowly strip down karna by directory and then check kispe kya req aa raha hai
+Line 1 ka get req ko slowly strip down karna by directory and then check kispe kya response aa raha hai
 ### References
 
 cheat sheet for http headers - [HTTP Headers - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html)
