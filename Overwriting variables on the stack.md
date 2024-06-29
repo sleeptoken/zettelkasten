@@ -38,7 +38,8 @@ use **python2** when doing buffer overflow if using pwntools then py version doe
 - in order to modify the predefined key we have to perform a buffer overflow 
 - on passing the payload generated from the following code `python2 -c 'print 32 * "A" + "deadbeef"'` we get the hex of dead printed in reverse order
 - basically this is the [[endianness]] we saw whenever we checked the `file` type that the program is `lsb` (least significant bit), you have `msb` and `lsb` and it just depends which bit is going to be the biggest and which bit is going to be the smallest what side of the byte that's going to be .
-- `python2 -c 'print 32 * "A" + "\xef\xbe\xad\xde"' > payload` use the stript to add the o/p to a payload and pass it to the binary     \xef\xbe\xad\xde is for endianess 
+- `python2 -c 'print 32 * "A" + "\xef\xbe\xad\xde"' > payload` use the stript to add the o/p to a payload and pass it to the binary    
+- `\xef\xbe\xad\xde` is for endianness 
 
 
 
