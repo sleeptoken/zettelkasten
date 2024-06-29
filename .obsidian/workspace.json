@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Overwriting variables on the stack.md",
+                "file": "Remote Thought/Clickjacking.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Overwriting variables on the stack.md",
+                "file": "Remote Thought/Clickjacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Overwriting variables on the stack.md",
+                "file": "Remote Thought/Clickjacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Overwriting variables on the stack.md"
+                "file": "Remote Thought/Clickjacking.md"
               }
             }
           }
@@ -150,9 +150,9 @@
   },
   "active": "714633566aa0794c",
   "lastOpenFiles": [
+    "Remote Thought/Overwriting variables on the stack.md",
     "Remote Thought/API Testing.md",
     "server-side parameter pollution.md",
-    "Remote Thought/Overwriting variables on the stack.md",
     "Tags/GDB.md",
     "Tags/pwntools.md",
     "Tags/endianness.md",
