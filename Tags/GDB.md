@@ -3,7 +3,7 @@
 
 Source: #youtube 
 
-Tags: [[binary exploit]] 
+Tags: [[Binary Exploit]] 
 
 **Debugger as well as a disassembler** 
 
