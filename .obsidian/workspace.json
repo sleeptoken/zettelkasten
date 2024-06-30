@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Return to Win.md",
+                "file": "CSRF.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -87,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Return to Win.md",
+                "file": "CSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Return to Win.md",
+                "file": "CSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Return to Win.md"
+                "file": "CSRF.md"
               }
             }
           }
@@ -150,20 +151,22 @@
   },
   "active": "60e774e1a855bf1b",
   "lastOpenFiles": [
+    "Return to Win.md",
+    "CSRF.md",
+    "Tags/server-side parameter pollution.md",
+    "Remote Thought/Spawning a TTY shell.md",
+    "Tags/Ghidra.md",
+    "Tags/pwntools.md",
+    "Remote Thought/Binary exploit toolkit.md",
+    "Tags/Binary Exploit.md",
+    "Tags/ASLR.md",
     "Remote Thought/Overwriting variables on the stack.md",
     "Tags/GDB.md",
-    "Tags/Ghidra.md",
-    "Return to Win.md",
-    "Tags/pwntools.md",
-    "Tags/Binary Exploit.md",
-    "CSRF.md",
     "Remote Thought/Clickjacking.md",
     "Remote Thought/API Testing.md",
     "Remote Thought/DOM-based XSS.md",
     "Tags/frame busters.md",
-    "server-side parameter pollution.md",
     "Tags/endianness.md",
-    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Appdata storage in windows.md",
     "Tags/Compiling binary.md",
     "Images/buffer-overflow-diagram.png",
@@ -175,8 +178,6 @@
     "Tags/Shell Escape.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
-    "Tags/bash.md",
-    "Remote Thought/Linux Variables and Shell Escape.md",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
     "Untitled.canvas",

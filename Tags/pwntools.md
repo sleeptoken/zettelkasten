@@ -1,7 +1,7 @@
 
 2024-06-29 18:04
 
-Tags: 
+Tags: [[Binary Exploit]]
 
 `p32(0xdeadbeef)` - specifying that we want to pack it as a 32-bit address
 or just simply set the `context.binary` use `pack()`

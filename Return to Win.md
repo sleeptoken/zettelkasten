@@ -39,8 +39,18 @@ rest of the process is to find where the breakpoint is and then fill the stack u
 
  we're launching the program and we're going to wait for the program to crash and then we're going to read the core dump that it creates and we're going to look in the core dump and see what was in the instruction pointer at the time of crashing and then we'll have a look and see what the offset of that is in this cyclic pattern
  further code is in the references section. 
- 
-Return 2 win using
+# Return 2 win function parameters 
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### References
