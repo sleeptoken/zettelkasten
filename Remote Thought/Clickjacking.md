@@ -20,5 +20,11 @@ in clickjaking you got to place an `iframe` in another website and align the but
  
 The XSS exploit is combined with the iframe target URL so that the user clicks on the button or link and consequently executes the DOM XSS attack. 
 
+#### Clickjacking with a DOM XSS attack
+
+if there is a form on a website and we want the form to be prepopulated with custom values then go to inspect element and see the names of the form fields and create a custom `GET` request from the `URL`
+
+
 ### References
+
 https://portswigger.net/web-security/learning-paths/clickjacking
