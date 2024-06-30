@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "714633566aa0794c",
+            "id": "60e774e1a855bf1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/CSRF.md",
+                "file": "Return to Win.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/CSRF.md",
+                "file": "Return to Win.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/CSRF.md",
+                "file": "Return to Win.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/CSRF.md"
+                "file": "Return to Win.md"
               }
             }
           }
@@ -148,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "714633566aa0794c",
+  "active": "60e774e1a855bf1b",
   "lastOpenFiles": [
+    "CSRF.md",
+    "Return to Win.md",
     "Remote Thought/Clickjacking.md",
     "Remote Thought/API Testing.md",
     "Remote Thought/DOM-based XSS.md",
@@ -175,9 +176,7 @@
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Tags/bash.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
-    "Remote Thought/Don't use alert(1).md",
     "Images/Pasted image 20240627104732.png",
-    "Tags/web.md",
     "Images/Pasted image 20240604110852.png",
     "Untitled.canvas",
     "Zettelkasten",
