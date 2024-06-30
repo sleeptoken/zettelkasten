@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -149,22 +150,22 @@
   },
   "active": "60e774e1a855bf1b",
   "lastOpenFiles": [
-    "CSRF.md",
+    "Remote Thought/Overwriting variables on the stack.md",
+    "Tags/GDB.md",
+    "Tags/Ghidra.md",
     "Return to Win.md",
+    "Tags/pwntools.md",
+    "Tags/Binary Exploit.md",
+    "CSRF.md",
     "Remote Thought/Clickjacking.md",
     "Remote Thought/API Testing.md",
     "Remote Thought/DOM-based XSS.md",
     "Tags/frame busters.md",
-    "Remote Thought/Overwriting variables on the stack.md",
     "server-side parameter pollution.md",
-    "Tags/GDB.md",
-    "Tags/pwntools.md",
     "Tags/endianness.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Appdata storage in windows.md",
-    "Tags/Binary Exploit.md",
     "Tags/Compiling binary.md",
-    "Tags/Ghidra.md",
     "Images/buffer-overflow-diagram.png",
     "Remote Thought/cron job.md",
     "Remote Thought/Caesar Cipher.md",

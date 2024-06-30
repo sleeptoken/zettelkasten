@@ -33,8 +33,17 @@ so when we get to the end of the function it's returning to the calling function
 - the offset will be the same each time the program loads the only difference is going to be this base address
 - the base address is going to change each time which means if pi was enabled we wouldn't just be able to provide the function address, we need to find out first of all what the base of the binary is and then go from there
 
+rest of the process is to find where the breakpoint is and then fill the stack up to the breakpoint with bogus data (payload) and then append the payload with the address of the function we want to call 
 
+[[pwntools]] method for ret2win- 
+
+ we're launching the program and we're going to wait for the program to crash and then we're going to read the core dump that it creates and we're going to look in the core dump and see what was in the instruction pointer at the time of crashing and then we'll have a look and see what the offset of that is in this cyclic pattern
+ further code is in the references section. 
+ 
+Return 2 win using
 
 
 ### References
 https://www.youtube.com/watch?v=E4ZWJsGySoY&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=4
+
+ret2win using pwntools - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/03-return_to_win/ropstar.py
