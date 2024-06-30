@@ -15,7 +15,10 @@ in clickjaking you got to place an `iframe` in another website and align the but
 
  - Clickjacking attacks are possible whenever websites can be framed. Therefore, preventative techniques are based upon restricting the framing capability for websites.
  - A common client-side protection enacted through the web browser is to use frame busting or frame breaking scripts. These can be implemented via proprietary browser JavaScript add-ons or extensions such as NoScript. 
- - As frame busters are JavaScript then the browser's security settings may prevent their operation or indeed the browser might not even support JavaScript. An effective attacker workaround against frame busters is to use the HTML5 iframe sandbox attribute. When this is set with the allow-forms or allow-scripts values and the allow-top-navigation value is omitted then the frame buster script can be neutralized as the iframe cannot check whether or not it is the top window: 
+ - As frame busters are JavaScript then the browser's security settings may prevent their operation or indeed the browser might not even support JavaScript.
+ - An effective attacker workaround against frame busters is to use the HTML5 `iframe` `sandbox` attribute. When this is set with the `allow-forms` or `allow-scripts` values and the `allow-top-navigation` value is omitted then the frame buster script can be neutralized as the iframe cannot check whether or not it is the top window: 
+ 
+The XSS exploit is combined with the iframe target URL so that the user clicks on the button or link and consequently executes the DOM XSS attack. 
 
 ### References
 https://portswigger.net/web-security/learning-paths/clickjacking
