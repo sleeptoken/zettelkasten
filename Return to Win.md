@@ -86,7 +86,12 @@ void hacked(long first, long second)
 void register_name()...... same as [1]
 ```
 in 32 bit notice that the `0xdeadbeef` was on the stack remember it was `ebp+8` and then `0xc0debabe` was on the stack `ebp+12`. if we have a look at the 64-bit edition it's actually using the registers namely `rdi` `rsi` `rdx` in that order
-essentially it means we're going to need to populate these registers we can't just send in the return address of the function followed by the parameters we need to send the return address to the function and then we need to put those parameters into these registers and in order to do that we need to find some `rop` gadgets
+
+Essentially it means we're going to need to populate these registers we can't just send in the return address of the function followed by the parameters we need to send the return address to the function and then we need to put those parameters into these registers and in order to do that we need to find some `rop` gadgets
+
+Notice that we would expect these bytes to have ended up in the `rip` (`eip` in 32bit) but they didn't and it's just the way 64-bit works if you try to give it an invalid memory address it won't even populate the `rip` so what we need to do in this case is take the values that we have from the `rsp`
+
+ 
 
 ### References
 https://www.youtube.com/watch?v=E4ZWJsGySoY&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=4
