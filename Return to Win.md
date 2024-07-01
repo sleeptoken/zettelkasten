@@ -41,7 +41,7 @@ rest of the process is to find where the breakpoint is and then fill the stack u
  further code is in the references section. 
 # Return 2 win function parameters 
 
-32 bit
+### 32 bit
 ```
 #include <stdio.h>
 void hacked(int first, int second)
@@ -60,12 +60,17 @@ above code is the only notable change in the code from [1]
 1. here we use cyclic find out how many of these bytes do we need to overwrite the return address and then we'll know the offset. 
 2. use python to craft a payload
 3. set up a breakpoint at the return address of the function running inside `main` and send the crafted payload 
+4. use `n` to cycle through operations one by one after the breakpoint 
+``` 
+//view of the disassembled code in gdb
+cmp      dword ptr [ebp+8], 0xdeadbeef
+jne        hacked+57
+```
+`cmp` is like an if statement that compares the content at the address of `ebp+8` with `0xdeadbeef` - print out `ebp+8` as hex using `x $ebp + 8`
+`jne` (jump not equal) is like an else statement that will jump to `hacked+57` if comparison fails
 
-
-
-
-
-
+if you're ever having a lot of problems with the payload try and do it with some automatic functionality in Pwntools and then have a look through what's actually in the payload. It's a good way to debug your manual payloads. 
+### 64 bit
 
 
 
@@ -74,3 +79,10 @@ above code is the only notable change in the code from [1]
 https://www.youtube.com/watch?v=E4ZWJsGySoY&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=4
 
 ret2win using pwntools - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/03-return_to_win/ropstar.py
+
+ret2win with params using pwntools:
+32 bit - w/o ROP - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/04-ret2win_with_params/32-bit/exploit.py
+With ROP - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/04-ret2win_with_params/32-bit/ropstar.py
+
+64 bit - w/o ROP - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/04-ret2win_with_params/64-bit/exploit.py
+with ROP - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/04-ret2win_with_params/64-bit/ropstar.py
