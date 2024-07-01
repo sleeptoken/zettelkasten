@@ -6,7 +6,7 @@ Source: #youtube
 Tags: [[Binary Exploit]] 
 
 essentially we're going to try to overflow the buffer and redirect the execution to a function of our choice or to an address of our choice and normally that function is called win or hacked or flag.
-[1]
+[1] - code referred later in the document
 ```
 #include <stdio.h>
 void hacked()
@@ -71,8 +71,21 @@ jne        hacked+57
 
 if you're ever having a lot of problems with the payload try and do it with some automatic functionality in Pwntools and then have a look through what's actually in the payload. It's a good way to debug your manual payloads. 
 ### 64 bit
+```
+#include <stdio.h>
 
+void hacked(long first, long second)
+{
+    if (first == 0xdeadbeefdeadbeef && second == 0xc0debabec0debabe){
+        printf("This function is TOP SECRET! How did you get in here?! :O\n");
+    }else{
+        printf("Unauthorised access to secret function detected, authorities have been alerted!!\n");
+    }
+}
 
+void register_name()...... same as [1]
+```
+in 32 bit notice that the `0xdeadbeef` was on the stack remember it was ebp+8 and then 0xc0debabe was on the stack ebp plus 12. if we have a look at the 64-bit edition it's actually using these registers instead so the registers are rdi rsi rdx
 
 
 ### References
