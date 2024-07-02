@@ -23,7 +23,7 @@ on seeing the source code we see a comment that suggests a possible user on the 
 ### Privilege Escalation 
 
 1. `sudo -l `works and tells us we can run `wget` with `sudo`
-2. `gtfobins` has a exploit of file upload for [[wget]] 
+2. `gtfobins` has a exploit of file upload for wget
 3. start listening using `nc` on port 9000 in a new terminal
 4. according to `gtfobins` we craft an attack to directly get the root flag- 
 ```

@@ -1,9 +1,9 @@
 
 2024-05-26 11:28
 
-Source: #tryhackme #owasp2021 
+Source: #tryhackme #owasp2021 #web 
 
-Tags: [[web]] [[owasp]] [[flat-file]] [[database]]
+Tags: [[owasp]] [[flat-file]] [[database]]
 
 #### Cryptographic Failures were ranked No. 2 on OWASP Top 10 2021
 

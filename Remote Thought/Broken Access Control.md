@@ -1,9 +1,9 @@
 
 2024-05-26 10:53
 
-Source: #tryhackme #owasp2021
+Source: #tryhackme #owasp2021 #web 
 
-Tags: [[web]] [[IDOR]] [[owasp]]
+Tags: [[IDOR]] [[owasp]]
 
 #### Broken Access Control was ranked No.1 on OWASP Top 10 2021
 

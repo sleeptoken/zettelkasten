@@ -1,9 +1,9 @@
 
 2024-06-04 11:34
 
-Source: 
+Source: #web
 
-Tags: [[web]]
+Tags: 
 
 #### Server-Side Request Forgery was ranked No. 10 on OWASP Top 10 2021
 

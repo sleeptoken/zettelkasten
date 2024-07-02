@@ -13,7 +13,7 @@ All Privilege Escalation are effectively examples of access control violations.
 - By default, a user’s primary group has the same name as their user account
 ##### File & Directory  
 - All files & directories have a single owner and a group.
-##### Special Permissions
+##### Special [[Permissions]]
 - **setuid (SUID)** bit When set, files will get executed with the privileges of the file owner.
 - **setgid (SGID)** bit When set on a file, the file will get executed with the privileges of the file group. 
 - When set on a directory, files created within that directory will inherit the group of the directory itself

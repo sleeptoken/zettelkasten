@@ -1,9 +1,9 @@
 
 2024-05-31 13:12
 
-Source: #portswigger
+Source: #portswigger #web 
 
-Tags: [[web]]
+Tags: 
 
 if the ../../ sequence is blocked then try using the desired directory path directly sometimes the app is misconfigured                 
 example. `/image?filename=/etc/passwd` 

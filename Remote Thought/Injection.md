@@ -1,9 +1,9 @@
 
 2024-06-01 15:27
 
-Source: #tryhackme #owasp2021 
+Source: #tryhackme #owasp2021 #web 
 
-Tags: [[owasp]] [[web]] [[sql]]
+Tags: [[owasp]]  [[sql]]
 
 #### Injection attacks were ranked No. 3 on OWASP Top 10 2021
 

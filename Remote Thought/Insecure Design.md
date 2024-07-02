@@ -1,9 +1,9 @@
 
 2024-06-04 10:19
 
-Source: #tryhackme #owasp2021 
+Source: #tryhackme #owasp2021 #web 
 
-Tags: [[web]] [[owasp]]
+Tags: [[owasp]]
 
 #### Insecure Design was ranked No. 4 on OWASP Top 10 2021
 

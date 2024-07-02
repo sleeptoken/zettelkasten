@@ -1,9 +1,9 @@
 
 2024-06-05 11:59
 
-Source: #tryhackme 
+Source: #tryhackme #web
 
-Tags: [[web]] [[Injection]] 
+Tags: [[Injection]] 
 
 XSS is a vulnerability that allows an attacker to inject malicious scripts into a web page viewed by another user. Consequently, they bypass the **Same-Origin Policy (SOP)**; SOP is a security mechanism implemented in modern web browsers to prevent a malicious script on one web page from obtaining access to sensitive data on another page. SOP defines origin based on the protocol, hostname, and port. Consequently, a malicious ad cannot access data or manipulate the page or its functionality on another origin, such as an online shop or bank page. XSS dodges SOP as it is executing from the same origin.
 - exploits are browser specific

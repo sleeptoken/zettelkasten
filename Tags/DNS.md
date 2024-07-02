@@ -1,9 +1,7 @@
 
 2024-06-24 16:51
 
-Source: #tryhackme  
-
-Tags: [[web]]
+Source: #tryhackme  #web 
 
 **TLD (Top-Level Domain)**
 A TLD is the most righthand part of a domain name. There are two types of TLD

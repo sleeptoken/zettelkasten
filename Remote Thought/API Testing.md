@@ -1,9 +1,9 @@
 
 2024-06-27 20:15
 
-Source: #portswigger
+Source: #portswigger #web
 
-Tags: [[web]] [[API]]
+Tags:  [[API]]
 ## Recon
 #### Tools: 
 

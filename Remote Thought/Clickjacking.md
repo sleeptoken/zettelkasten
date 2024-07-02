@@ -1,9 +1,9 @@
 
 2024-06-19 21:18
 
-Source: #portswigger 
+Source: #portswigger #web
 
-Tags: [[web]] [[API]]
+Tags:  [[API]]
 
 - Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
 - This attack **differs from a [[CSRF]]** attack in that the user is required to perform an action such as a button click whereas a CSRF attack depends upon forging an entire request without the user's knowledge or input. 
