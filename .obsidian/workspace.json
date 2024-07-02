@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/msfvenom.md",
+                "file": "CSRF.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/msfvenom.md",
+                "file": "CSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/msfvenom.md",
+                "file": "CSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/msfvenom.md"
+                "file": "CSRF.md"
               }
             }
           }
@@ -150,8 +150,8 @@
   },
   "active": "ad3cf3c87baa8f14",
   "lastOpenFiles": [
-    "Remote Thought/Privilege Escalation.md",
     "Tags/msfvenom.md",
+    "Remote Thought/Privilege Escalation.md",
     "Tags/NFS.md",
     "Injecting Shellcode.md",
     "msf.md",
