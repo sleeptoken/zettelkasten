@@ -150,6 +150,7 @@
   },
   "active": "ad3cf3c87baa8f14",
   "lastOpenFiles": [
+    "CSRF.md",
     "Tags/msfvenom.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/NFS.md",
@@ -171,7 +172,6 @@
     "Remote Thought/Insecure Design.md",
     "Remote Thought/Don't use alert(1).md",
     "Remote Thought/DOM-based XSS.md",
-    "CSRF.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Clickjacking.md",
     "Remote Thought/Caesar Cipher.md",
