@@ -26,8 +26,8 @@ we can find the jump `esp` gadget using `ropper`  -
 ropper --file <file_ name> --search "jmp esp"
 ```
 
-we are using shellcraft to generate a script than will help us get a shell and using that script in our pwntools script
+we are using `shellcraft` to generate a script than will help us get a shell and using that script in our `pwntools` script
 
-you'll see this time it's been sh that's pushing to the stack instead again if it was 64-bit this would be a parameter so the rdi parameter would be getting sorry it would be getting popped to the rdi register in order for the function to be called but in this case 32-bit
+you'll see this time it's` bin/sh` (from `shellcraft`) that's pushing to the stack instead again if it was 64-bit this would be getting popped to the `rdi` register in order for the function to be called 
 ### References
 https://www.youtube.com/watch?v=4zut2Mjgh5M&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=6
