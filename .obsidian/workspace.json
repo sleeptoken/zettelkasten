@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -147,10 +148,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad3cf3c87baa8f14",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Remote Thought/Privilege Escalation.md",
-    "Permissions.md",
+    "Tags/Permissions.md",
     "Injecting Shellcode.md",
     "Tags/DNS.md",
     "Tags/web.md",
