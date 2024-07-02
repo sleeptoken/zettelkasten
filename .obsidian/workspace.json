@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sudo wget.md",
+                "file": "run wget.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sudo wget.md",
+                "file": "run wget.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sudo wget.md",
+                "file": "run wget.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sudo wget.md"
+                "file": "run wget.md"
               }
             }
           }
@@ -150,7 +150,8 @@
   },
   "active": "db995e607170905a",
   "lastOpenFiles": [
-    "Sudo wget.md",
+    "wget.md",
+    "run wget.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/rootbash.md",
@@ -176,7 +177,6 @@
     "Tags/Compiling binary.md",
     "Images/buffer-overflow-diagram.png",
     "Remote Thought/cron job.md",
-    "Remote Thought/Caesar Cipher.md",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
     "Untitled.canvas",

