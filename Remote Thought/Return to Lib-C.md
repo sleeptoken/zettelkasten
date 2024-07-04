@@ -7,7 +7,7 @@ Tags: [[Binary Exploit]]
 
 # 32-Bit
 
-**This time we have NX enabled** 
+**This time we have NX enabled** (we will not be able to inject shell code)
 **File should be dynamically linked** 
 
 dynamically linked means that the functions that are called from `libc` for example `gets` and `puts` rather than including all of the code in the binary that code is stored in your `libc` library on your system and whenever the program wants to access one of those functions that's going to have a look at the global offset table
