@@ -39,5 +39,8 @@ we're going to need to pop the `/bin/sh` string into the `rdi` register so that 
 further its very similar to 32-bit see the `pwntools` script mentioned in references 
 ### References
 
-
 https://www.youtube.com/watch?v=0CFWHjc4B-I&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=7
+
+32bit - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/06-return_to_libc/32-bit/exploit.py
+
+64bit - https://github.com/Crypto-Cat/CTF/blob/main/pwn/binary_exploitation_101/06-return_to_libc/64-bit/exploit.py
