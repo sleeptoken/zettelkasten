@@ -16,7 +16,7 @@ here basically what's going to happen is whenever it calls ,for example `gets`, 
 
 on using `ldd` on the file we see that the address of `libc` keeps on changing every time we run the `ldd file_name` command this means that `ASLR` (address space layout randomization where basically binaries will have a random address to prevent buffer overflow attacks) is enabled
 
-use `readelf` to find `system` funtion from `libc`
+use `readelf` to find `system` function from `libc`
 ```
 readelf -s /lib/i386-linux-gnu/libc.so.6 | grep system
 ```
@@ -30,7 +30,7 @@ we gotta add the `libc` base address that we got from the `ldd` command to the a
 ```
 ropper --file file_name --search "pop rdi"
 ```
-above code to find address of `pop rdi`
+use [[ropper]] to find address of `pop rdi`
 
 we're going to need to pop the `/bin/sh` string into the `rdi` register so that when the system function is called it looks in the `rdi` for that string 
 1. `32-bit` we will look on the stack 

@@ -29,7 +29,7 @@ gcc vuln.c -o vuln -fno-stack-protector -z execstack -no-pie -m32
 `-z execstac` --> makes sure the program is marked as executable - NX Disabled 
 `-no-pie` --> means that the program will load at the same memory address each time
 
-`gets()` shouldn't be used as it doesn't check if the value entered by the user is within the limits of the stack. instead use `fgets()`. 
+[[gets]] shouldn't be used as it doesn't check if the value entered by the user is within the limits of the stack. instead use `fgets()`. 
 
 use **python2** when doing buffer overflow if using pwntools then py version doesn't matter
 ### Manual Exploit 
