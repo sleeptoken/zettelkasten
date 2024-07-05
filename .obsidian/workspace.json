@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Local File Inclusion & Command Injection.md",
+                "file": "Remote Thought/Local File Inclusion & Command Injection.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e7a4fd3c6228a9f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Format String Vulnerabilities (printf).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Local File Inclusion & Command Injection.md",
+                "file": "Remote Thought/Format String Vulnerabilities (printf).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Local File Inclusion & Command Injection.md",
+                "file": "Remote Thought/Format String Vulnerabilities (printf).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Local File Inclusion & Command Injection.md"
+                "file": "Remote Thought/Format String Vulnerabilities (printf).md"
               }
             }
           }
@@ -148,9 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99a21b56e145ae09",
+  "active": "e7a4fd3c6228a9f2",
   "lastOpenFiles": [
-    "Local File Inclusion & Command Injection.md",
+    "Remote Thought/Local File Inclusion & Command Injection.md",
+    "Tags/LFI.md",
     "Remote Thought/run only wget with sudo.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Remote Thought/Return to Lib-C.md",
@@ -175,7 +190,6 @@
     "Remote Thought/Privilege Escalation.md",
     "Tags/NFS.md",
     "msf.md",
-    "Tags/DNS.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",

@@ -3,7 +3,7 @@
 
 Source: #web #overthewire #natas
 
-Tags:
+Tags: [[LFI]]
 
 #### Natas 3
 
