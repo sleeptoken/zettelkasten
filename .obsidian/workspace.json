@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Local File Inclusion &.md",
+                "file": "Local File Inclusion & Command Injection.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Local File Inclusion &.md",
+                "file": "Local File Inclusion & Command Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Local File Inclusion &.md",
+                "file": "Local File Inclusion & Command Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Local File Inclusion &.md"
+                "file": "Local File Inclusion & Command Injection.md"
               }
             }
           }
@@ -150,7 +150,7 @@
   },
   "active": "99a21b56e145ae09",
   "lastOpenFiles": [
-    "Local File Inclusion &.md",
+    "Local File Inclusion & Command Injection.md",
     "Remote Thought/run only wget with sudo.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Remote Thought/Return to Lib-C.md",
