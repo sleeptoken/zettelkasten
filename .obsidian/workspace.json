@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "2e5d8838b0dd5379",
+        "id": "304c56479ffaa711",
         "type": "tabs",
         "children": [
           {
-            "id": "6b19d8042f6a6104",
+            "id": "9561f89f0ceea164",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leak PIE & Ret2Lib-C.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55b531ae14ebf2a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Return to Lib-C.md",
+                "file": "Remote Thought/Local File Inclusion & Command Injection.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Return to Lib-C.md",
+                "file": "Remote Thought/Local File Inclusion & Command Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Return to Lib-C.md",
+                "file": "Remote Thought/Local File Inclusion & Command Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Return to Lib-C.md"
+                "file": "Remote Thought/Local File Inclusion & Command Injection.md"
               }
             }
           }
@@ -162,10 +148,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55b531ae14ebf2a2",
+  "active": "9561f89f0ceea164",
   "lastOpenFiles": [
-    "Leak PIE & Ret2Lib-C.md",
+    "Tags/LFI.md",
     "Remote Thought/Return to Lib-C.md",
+    "Leak PIE & Ret2Lib-C.md",
     "Tags/Ghidra.md",
     "printf.md",
     "Tags/ASLR.md",
@@ -174,7 +161,6 @@
     "Remote Thought/Injecting Shellcode.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Tags/LFI.md",
     "Remote Thought/run only wget with sudo.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Remote Thought/Return to Win.md",

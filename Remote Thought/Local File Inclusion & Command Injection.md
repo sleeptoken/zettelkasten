@@ -36,5 +36,9 @@ if proper sanitization is done and the `;` is not working then try `url encoding
 
 ### References
 command injection - https://owasp.org/www-community/attacks/Command_Injection
+
 LFI - https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion
-cheatsheet - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html
+
+cheatsheet OS command injection - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html
+
+Command injection payload list - https://github.com/payloadbox/command-injection-payload-list
