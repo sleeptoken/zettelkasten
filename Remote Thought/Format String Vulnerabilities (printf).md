@@ -14,9 +14,9 @@ anytime you take input from a user and then `printf` with that input you need to
 
 in this problem if we fuzz with input with normal alphabets, the input just overflows over to the next input so it doesn't cause any segmentation faults it's not overflowing the buffer
 
-but if we use format specifiers (eg. %x, %c, %p), essentially what we're doing is we're leaking addresses off the stack
+but if we use format specifiers (eg. `%x, %c, %p`), essentially what we're doing is we're leaking addresses off the stack. for example if we did `%s` that would take the first element (eg. `stdin`) but if we do `%s %s %s %s` and keep doing that, it's not just going to print out the value that we've put into the stack, it's also going to start printing out all the other things that were on there, including the local variables and `libc` addresses.
 
-in **64-bit** we would actually want to print these as pointers to make sure we get the full 64-bit addresses, for example output of multiple `%p` might be a `libc` address then what we could do is use [[gdb]] to go and see what is this pointing to. If this is pointing to a `libc` function we can just subtract the offset to get back to the base and then we can do our Return to Libc attack
+in **64-bit** we would actually want to print these as pointers to make sure we get the full 64-bit addresses, for example output of multiple `%p` might be a `libc` address then what we could do is use [[gdb]] to go and see what is this pointing to. If this is pointing to a `libc` function we can just subtract the offset to get back to the base and then we can do our Return to `Libc` attack
 
 exploit code listed in the references works for 32bit as well as 64bit because we have that `context.binary` set it doesn't matter.
 
