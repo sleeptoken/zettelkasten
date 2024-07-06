@@ -15,6 +15,13 @@ Tags: [[Binary Exploit]]
 
 we want to overwrite an address of one of these functions (eg. `printf`) in the global offset table with a function that we want to call so for example the system function in `libc` so for example we've got this `printf`, if we were to enter in a value in the `printf(buffer)` to overwrite an element of the global offset table we could  find the address of `printf` in the global offset table and overwrite it with the address of system, and because this is a continuous loop (problem specific) what's going to happen is it's going to loop around again, it's going to take an input from us and then instead of calling `printf` with the buffer it's going to call system with the buffer so if we just enter `/bin/sh` this is going to call `/bin/sh`
 
+further to print the correct offset to write do the following - 
+what you're looking to find out is the characters that you enter what what place do they get put to on the stack because that's the that's the address that can then be used in the remainder of the right operation
+
+in this case because it's going to be an interactive shell we need to do it a little bit differently
+```
+(cat manual_payload ; cat) |  ./got_overwrite
+```
 ### References
 https://www.youtube.com/watch?v=KgDeMJNK5BU&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=10
 
@@ -24,4 +31,6 @@ GOT & PLT
 3. https://vickieli.dev/binary%20exploitation/format-string-vulnerabilities/
 4. https://codearcana.com/posts/2013/05/02/introduction-to-format-string-exploits.html
 5. https://axcheron.github.io/exploit-101-format-strings/  **
-6. https://docs.pwntools.com/en/stable/fmtstr.html
+
+
+Pwntools doc- https://docs.pwntools.com/en/stable/fmtstr.html
