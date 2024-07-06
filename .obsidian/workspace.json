@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Overwrite Global Offset Table (GOT) Entries with printf().md",
+                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overwrite Global Offset Table (GOT) Entries with printf().md",
+                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overwrite Global Offset Table (GOT) Entries with printf().md",
+                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overwrite Global Offset Table (GOT) Entries with printf().md"
+                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md"
               }
             }
           }
@@ -150,18 +150,22 @@
   },
   "active": "d55115d8b6e8add8",
   "lastOpenFiles": [
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Remote Thought/cron job.md",
+    "Remote Thought/Injection.md",
+    "Remote Thought/Injecting Shellcode.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+    "CSRF.md",
+    "Tags/printf.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Tags/Binary Exploit.md",
-    "Overwrite Global Offset Table (GOT) Entries with printf().md",
-    "Leak PIE & Ret2Lib-C.md",
+    "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Remote Thought/Return to Lib-C.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Tags/LFI.md",
     "Tags/Ghidra.md",
-    "printf.md",
     "Tags/ASLR.md",
     "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/Injecting Shellcode.md",
     "Remote Thought/run only wget with sudo.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Remote Thought/Return to Win.md",
@@ -172,10 +176,6 @@
     "Tags/endianness.md",
     "Tags/pwntools.md",
     "Tags/GDB.md",
-    "Tags/fgets.md",
-    "Tags/Permissions.md",
-    "CSRF.md",
-    "Tags/msfvenom.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
