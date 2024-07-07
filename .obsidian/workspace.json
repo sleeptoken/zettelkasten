@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "304c56479ffaa711",
+        "id": "dc8e6f20044ebc82",
         "type": "tabs",
         "children": [
           {
-            "id": "d55115d8b6e8add8",
+            "id": "07f135370b6e4916",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+                "file": "Bypassing Stack Canaries.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+                "file": "Bypassing Stack Canaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+                "file": "Bypassing Stack Canaries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md"
+                "file": "Bypassing Stack Canaries.md"
               }
             }
           }
@@ -148,17 +148,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d55115d8b6e8add8",
+  "active": "07f135370b6e4916",
   "lastOpenFiles": [
+    "Tags/Binary Exploit.md",
+    "Bypassing Stack Canaries.md",
+    "Tags/gets.md",
+    "Tags/printf.md",
+    "Pwn.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
     "Remote Thought/Symbolic Link & brute force.md",
     "Remote Thought/cron job.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Injecting Shellcode.md",
-    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
     "CSRF.md",
-    "Tags/printf.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Tags/Binary Exploit.md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Remote Thought/Return to Lib-C.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
@@ -172,10 +175,7 @@
     "Tags/shellcraft.md",
     "Tags/ropper.md",
     "Remote Thought/Overwriting variables on the stack.md",
-    "Tags/gets.md",
     "Tags/endianness.md",
-    "Tags/pwntools.md",
-    "Tags/GDB.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
