@@ -23,12 +23,7 @@ in terms of the `canary`, after fuzzing we can see that it'll typically look qui
 2. setup a breakpoint at the address of `printf` - `break *0x0804921f`
 3. run, give no input then type the`canary` command, it will show address of the found canaries
 4. so print 100 elements from the stack pointer - `x/100x %esp` 
-5. identify the offset of the canary by using the above output and comparing it address of found canaries
-
-
-
-
-
+5. identify the offset of the canary by using the above output and comparing with address of found canaries
 
 ### References
 https://www.youtube.com/watch?v=TOImpHQvmpo&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&index=11
