@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Authentication and Authorization Bugs.md",
+                "file": "Remote Thought/Authentication and Authorization Bugs.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "81927b854bbea8d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSRF Misconceptions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +53,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               }
             }
           },
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Authentication and Authorization Bugs.md",
+                "file": "SSRF Misconceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Authentication and Authorization Bugs.md",
+                "file": "SSRF Misconceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Authentication and Authorization Bugs.md"
+                "file": "SSRF Misconceptions.md"
               }
             }
           }
@@ -148,9 +162,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d7b576e7827b15a",
+  "active": "81927b854bbea8d2",
   "lastOpenFiles": [
-    "Authentication and Authorization Bugs.md",
+    "Remote Thought/SSRF.md",
+    "SSRF Misconceptions.md",
+    "Remote Thought/Authentication and Authorization Bugs.md",
+    "Remote Thought/Reflected XSS.md",
+    "Tags/XSS.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Don't use alert(1).md",
     "Tags/endianness.md",
@@ -172,10 +190,6 @@
     "Tags/Ghidra.md",
     "Tags/ASLR.md",
     "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/run only wget with sudo.md",
-    "Remote Thought/Linux Variables and Shell Escape.md",
-    "Remote Thought/Return to Win.md",
-    "Tags/shellcraft.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
