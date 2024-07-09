@@ -24,4 +24,5 @@ roles combine multiple permissions. For example the Owner role or editor role. T
 
 [Hunting for Authentication and Authorization Bugs – ft. LiveOverflow (youtube.com)](https://www.youtube.com/watch?v=9xU8j09SScQ)
 
+[Auth Bypass Bugs - Invalid Reports - Learn - Google Bug Hunters](https://bughunters.google.com/learn/invalid-reports/google-products/6121738632691712/auth-bypass-bugs#1-there-can-be-two-or-more-equivalent-permissions)
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSRF Misconceptions.md",
+                "file": "Remote Thought/Authentication and Authorization Bugs.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SSRF Misconceptions.md",
+                "file": "Remote Thought/SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SSRF Misconceptions.md",
+                "file": "Remote Thought/SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSRF Misconceptions.md"
+                "file": "Remote Thought/SSRF.md"
               }
             }
           }
@@ -161,13 +162,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d7b576e7827b15a",
+  "active": "81927b854bbea8d2",
   "lastOpenFiles": [
-    "Tags/DNS.md",
-    "SSRF Misconceptions.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
-    "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/SSRF.md",
+    "SSRF Misconceptions.md",
+    "Tags/DNS.md",
+    "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/XSS.md",
     "Remote Thought/Bypassing Stack Canaries.md",
