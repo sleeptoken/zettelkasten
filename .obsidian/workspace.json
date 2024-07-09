@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSRF Misconceptions.md",
+                "file": "Remote Thought/SSRF.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SSRF Misconceptions.md",
+                "file": "Remote Thought/SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SSRF Misconceptions.md",
+                "file": "Remote Thought/SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSRF Misconceptions.md"
+                "file": "Remote Thought/SSRF.md"
               }
             }
           }
@@ -164,8 +164,8 @@
   },
   "active": "81927b854bbea8d2",
   "lastOpenFiles": [
-    "Remote Thought/SSRF.md",
     "SSRF Misconceptions.md",
+    "Remote Thought/SSRF.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/XSS.md",
