@@ -7,7 +7,7 @@ Tags: [[SSRF]]
 
 you can get false positives in things like burp suite where you're receiving potential `ssrf` scenarios but it's only a [[dns]] callback 
 
-that burp suite told them that there was a  ssrf potential because burke collaborator had  a dns response that in itself lacks the impact  to be a business a business addressable impact the kind of finding that would typically have a  payment behind it it is the indication that you might want to go further but you are still at  the point where you don't quite have a finding you just have a lead to a fighting
+ burp suite told that there was a `ssrf` potential because burp collaborator had a `dns` response that in itself lacks the impact to be a business addressable impact the kind of finding that would typically have a  payment behind it it is the indication that you might want to go further but you are still at  the point where you don't quite have a finding you just have a lead to a fighting
 
 what can i do here what's the risk can i use this  request and make http requests with it if you can can you then use that to try and identify an  internal server that you can request against if that's not the case if you could only request  other servers on the internet is there a rate limit kind of element here or could this turn  this server into something that is going to cause resource exhaustion for itself for other servers  on the internet and at that point you'd stop
 
