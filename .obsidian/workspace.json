@@ -4,23 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "0030e5fd16377791",
+        "id": "95df6ec4576bf078",
         "type": "tabs",
         "children": [
           {
-            "id": "e0370ef21dd939e3",
+            "id": "8869ab7391ab83fe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Magic Numbers.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "517318d38c4d2606",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Magic Numbers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Magic Numbers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Magic Numbers.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e0370ef21dd939e3",
+  "active": "517318d38c4d2606",
   "lastOpenFiles": [
     "Magic Numbers.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
