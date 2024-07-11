@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1ef8a3b6062dc402",
+        "id": "d9c34167e61c9313",
         "type": "tabs",
         "children": [
           {
-            "id": "cfd3f7df6100621d",
+            "id": "9a37817f3348958d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stream Cipher.md",
+                "file": "Ultratech.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stream Cipher.md",
+                "file": "Ultratech.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stream Cipher.md",
+                "file": "Ultratech.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stream Cipher.md"
+                "file": "Ultratech.md"
               }
             }
           }
@@ -147,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cfd3f7df6100621d",
+  "active": "9a37817f3348958d",
   "lastOpenFiles": [
+    "Ultratech.md",
+    "Stream Cipher.md",
     "CSRF.md",
     "Remote Thought/SSRF Misconceptions.md",
     "Tags/Binary Exploit.md",
@@ -173,8 +175,6 @@
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Remote Thought/Return to Lib-C.md",
-    "Tags/LFI.md",
-    "Tags/Ghidra.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
