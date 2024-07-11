@@ -25,7 +25,14 @@ above command would otherwise be used to ping an IP address but here with comman
 
 since we have an API running we can use `/health` and `/status`
 
-in order to get the data of the db we try to return the value as a base64 encoding 
+in order to get the data of the [[database]] we try to return the value as a base64 encoding 
+```
+10.10.65.179:8081/ping?ip=`base64 -w 0 utech.db.sqlite`
+```
+`-w 0` to make it all one long line
+save the file with `.b64` extension z
+
+
 
 
 
