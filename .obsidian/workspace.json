@@ -4,27 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "95df6ec4576bf078",
+        "id": "1ef8a3b6062dc402",
         "type": "tabs",
         "children": [
           {
-            "id": "8869ab7391ab83fe",
+            "id": "cfd3f7df6100621d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "517318d38c4d2606",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Stream Cipher.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Stream Cipher.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Stream Cipher.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Stream Cipher.md"
+              }
             }
           }
         ]
@@ -147,12 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "517318d38c4d2606",
+  "active": "cfd3f7df6100621d",
   "lastOpenFiles": [
-    "Magic Numbers.md",
+    "CSRF.md",
+    "Remote Thought/SSRF Misconceptions.md",
+    "Tags/Binary Exploit.md",
+    "Remote Thought/Magic Numbers.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Remote Thought/SSRF.md",
-    "SSRF Misconceptions.md",
     "Tags/DNS.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Reflected XSS.md",
@@ -160,7 +162,6 @@
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Don't use alert(1).md",
     "Tags/endianness.md",
-    "Tags/Binary Exploit.md",
     "Tags/gets.md",
     "Tags/printf.md",
     "Pwn.md",
@@ -169,7 +170,6 @@
     "Remote Thought/cron job.md",
     "Remote Thought/Injection.md",
     "Remote Thought/Injecting Shellcode.md",
-    "CSRF.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Remote Thought/Return to Lib-C.md",
