@@ -30,11 +30,11 @@ in order to get the data of the [[database]] we try to return the value as a bas
 10.10.65.179:8081/ping?ip=`base64 -w 0 utech.db.sqlite`
 ```
 `-w 0` to make it all one long line
-save the file with `.b64` extension 
+save the file with `.b64` extension the decode it using `base64 -d file.b64
 
+check if a service is available on a machine or not by using - `which service_name`
 
-
-
+character escape 
 
 
 ### References
