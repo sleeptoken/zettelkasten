@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -149,6 +150,7 @@
   },
   "active": "9a37817f3348958d",
   "lastOpenFiles": [
+    "Remote Thought/Injection.md",
     "Ultratech.md",
     "Stream Cipher.md",
     "CSRF.md",
@@ -170,7 +172,6 @@
     "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
     "Remote Thought/Symbolic Link & brute force.md",
     "Remote Thought/cron job.md",
-    "Remote Thought/Injection.md",
     "Remote Thought/Injecting Shellcode.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",

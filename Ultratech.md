@@ -12,15 +12,20 @@ non-standard port in use?
 ```
 nmap -p- -v $IP
 ```
-we find 31331 
-8081 has a website hosted that isn't leading anywhere 
+1. we find 31331 
+2. 8081 has a website hosted that isn't leading anywhere so we try 31331, there we have a proper webpage of ultratech 
+3. going to robots.txt we find the site map
+#### Exploitation 
 
+we see there is an `api` running that helps in pinging 
+```
+curl 'http://<ip.address>:8081/ping?ip=`whoami`'
+```
+above command would otherwise be used to ping an IP address but here with command substitution we can perform command [[injection]] 
 
+since we have an API running we can use `/health` and `/status`
 
-
-
-
-
+in order to get the data of the db we try to return the value as a base64 encoding 
 
 
 
