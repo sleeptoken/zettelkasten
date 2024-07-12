@@ -1,9 +1,7 @@
 
 2024-07-11 20:46
 
-Source: #web #youtube #privesc 
-
-Tags: [[nmap]]
+Source: #web #youtube #privesc #CTF 
 #### Enumeration 
 ```
 nmap -sCV -v $IP 
@@ -25,7 +23,7 @@ above command would otherwise be used to ping an IP address but here with comman
 
 since we have an API running we can use `/health` and `/status`
 
-in order to get the data of the [[database]] we try to return the value as a base64 encoding 
+in order to get the data of the [[database]] we try to return the value as a [[base64]] encoding 
 ```
 10.10.65.179:8081/ping?ip=`base64 -w 0 utech.db.sqlite`
 ```
@@ -34,7 +32,7 @@ save the file with `.b64` extension the decode it using `base64 -d file.b64
 
 check if a service is available on a machine or not by using - `which service_name`
 
-we can try character escape by using `\|` 
+we can try [[character escape]] by using `\|` instead of `|`
 #### Escalation
 
 ```
