@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d9c34167e61c9313",
+        "id": "02745a1a1b6e6f99",
         "type": "tabs",
         "children": [
           {
-            "id": "9a37817f3348958d",
+            "id": "a6976ae13b913478",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ultratech.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -87,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ultratech.md",
+                "file": "Tags/base64.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ultratech.md",
+                "file": "Tags/base64.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ultratech.md"
+                "file": "Tags/base64.md"
               }
             }
           }
@@ -148,10 +143,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a37817f3348958d",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "base64.md",
+    "Tags/malware.md",
     "Ultratech.md",
+    "Tags/base64.md",
     "Tags/docker.md",
     "Tags/character escape.md",
     "Tags/nmap.md",
@@ -175,7 +171,6 @@
     "Tags/gets.md",
     "Tags/printf.md",
     "Pwn.md",
-    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
