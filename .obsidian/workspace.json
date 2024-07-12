@@ -11,8 +11,13 @@
             "id": "a6976ae13b913478",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tags/malware.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -82,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/base64.md",
+                "file": "Tags/malware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/base64.md",
+                "file": "Tags/malware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/base64.md"
+                "file": "Tags/malware.md"
               }
             }
           }
@@ -143,10 +148,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "a6976ae13b913478",
   "lastOpenFiles": [
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/malware.md",
-    "Ultratech.md",
+    "Remote Thought/Ultratech.md",
     "Tags/base64.md",
     "Tags/docker.md",
     "Tags/character escape.md",
@@ -170,7 +176,6 @@
     "Tags/endianness.md",
     "Tags/gets.md",
     "Tags/printf.md",
-    "Pwn.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
