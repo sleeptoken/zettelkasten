@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ef979b3cd8c5ff28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/malware.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/malware.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/malware.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -148,10 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6976ae13b913478",
+  "active": "ef979b3cd8c5ff28",
   "lastOpenFiles": [
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/malware.md",
+    "Untitled.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/Ultratech.md",
     "Tags/base64.md",
     "Tags/docker.md",
@@ -175,7 +190,6 @@
     "Remote Thought/Don't use alert(1).md",
     "Tags/endianness.md",
     "Tags/gets.md",
-    "Tags/printf.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
