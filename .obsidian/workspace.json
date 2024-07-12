@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a6976ae13b913478",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tags/malware.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ef979b3cd8c5ff28",
             "type": "leaf",
             "state": {
@@ -33,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
