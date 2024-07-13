@@ -11,8 +11,13 @@
             "id": "ef979b3cd8c5ff28",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CSRF.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CSRF.md"
+              }
             }
           }
         ]
@@ -141,6 +150,8 @@
   },
   "active": "ef979b3cd8c5ff28",
   "lastOpenFiles": [
+    "Cookie.md",
+    "CSRF.md",
     "Tags/malware.md",
     "Untitled.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
@@ -153,7 +164,6 @@
     "Tags/database.md",
     "Remote Thought/Injection.md",
     "Stream Cipher.md",
-    "CSRF.md",
     "Remote Thought/SSRF Misconceptions.md",
     "Tags/Binary Exploit.md",
     "Remote Thought/Magic Numbers.md",
@@ -166,7 +176,6 @@
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Don't use alert(1).md",
     "Tags/endianness.md",
-    "Tags/gets.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",

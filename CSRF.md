@@ -4,6 +4,7 @@
 Source: #portswigger #web 
 
 Tags:  [[API]]
+### Working 
 
 It allows an attacker to partly circumvent the `same origin policy`, which is designed to prevent different websites from interfering with each other. 
 
@@ -16,7 +17,12 @@ key conditions must be in place:
 
 `CSRF POC` - it gives us an html that an attacker could host to trick his victim into clicking his malicious form. 
 
-
+```
+<script>
+        document.forms[0].submit();
+</script>
+```
+the above code will quickly submit the form (if there is a form defined in the html) the moment it appears on the screen 
 ### References
 https://portswigger.net/web-security/learning-paths/csrf
 
