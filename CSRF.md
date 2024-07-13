@@ -73,11 +73,23 @@ The cookie-setting behavior does not even need to exist within the same web appl
 
 
 
-### Testing  
+### Testing  CSRF Token
 
 1. remove the `CSRF` Token and see if the application accepts requests
 2. change the request method from `POST` to `GET`
 3. see if `CSRF` token is tied to user session 
+
+### Testing CSRF Token and CSRF Cookies
+
+1. Check if the CSRF token is tied to the CSRF cookie 
+	- submit an invalid CSRF token
+	- submit a valid CSRF token from another user
+2. Submit valid CSRF token and cookie from another user
+#### Exploiting this vuln.
+
+- inject a `CSRF` key cookie in the users session ([[HTTP header injection]])
+find an injection point to execute the above.. most probably a search bar 
+
 
 
 ### References

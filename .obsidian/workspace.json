@@ -150,8 +150,9 @@
   },
   "active": "ef979b3cd8c5ff28",
   "lastOpenFiles": [
-    "Remote Thought/Reflected XSS.md",
+    "HTTP header injection.md",
     "CSRF.md",
+    "Remote Thought/Reflected XSS.md",
     "Cookie.md",
     "Tags/malware.md",
     "Untitled.md",
@@ -175,7 +176,6 @@
     "Tags/XSS.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Don't use alert(1).md",
-    "Tags/endianness.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
