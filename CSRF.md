@@ -45,6 +45,38 @@ A common way to share `CSRF tokens` with the client is to include them as a hidd
 Some applications correctly validate the token when the request uses the POST method but skip the validation when the GET method is used. 
 ##### Validation of CSRF token depends on token being present
 
+##### CSRF token is not tied to the user session
+
+Some applications do not validate that the token belongs to the same session as the user who is making the request. Instead, the application maintains a global pool of tokens that it has issued and accepts any token that appears in this pool.
+
+In this situation, the attacker can log in to the application using their own account, obtain a valid token, and then feed that token to the victim user in their CSRF attack.
+##### CSRF token is tied to a non-session cookie
+
+Some applications do tie the CSRF token to a cookie, but not to the same cookie that is used to track sessions. This can easily occur when an application employs two different frameworks, one for session handling and one for CSRF protection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Testing  
+
+1. remove the `CSRF` Token and see if the application accepts requests
+2. change the request method from `POST` to `GET`
+3. see if `CSRF` token is tied to user session 
 
 
 ### References
