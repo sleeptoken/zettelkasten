@@ -54,6 +54,7 @@ In this situation, the attacker can log in to the application using their own ac
 
 Some applications do tie the CSRF token to a cookie, but not to the same cookie that is used to track sessions. This can easily occur when an application employs two different frameworks, one for session handling and one for CSRF protection
 
+The cookie-setting behavior does not even need to exist within the same web application as the CSRF vulnerability. **Any other application within the same overall DNS domain can potentially be leveraged to set cookies in the application that is being targeted**, if the cookie that is controlled has suitable scope. For example, a cookie-setting function on `staging.demo.normal-website.com` could be leveraged to place a cookie that is submitted to `secure.normal-website.com`.
 
 
 
