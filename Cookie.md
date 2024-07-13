@@ -29,6 +29,10 @@ echo xor_encrypt(base64_decode($cookie))
 ```
 echo base64_encode(xor_encrypt(json_encode(array( "showpassword"=>"yes", "bgcolor"=>"#ffffff"))))
 ```
-
+we get a new cookie
+to change cookie open inspect element and type the following in the console
+```
+document.cookie="data=new_cookie"
+```
 ### References
 https://www.youtube.com/watch?v=blNRSTBfyVA
