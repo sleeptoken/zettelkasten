@@ -43,6 +43,9 @@ A common way to share `CSRF tokens` with the client is to include them as a hidd
 ##### Validation of CSRF token depends on request method
 
 Some applications correctly validate the token when the request uses the POST method but skip the validation when the GET method is used. 
+##### Validation of CSRF token depends on token being present
+
+
 
 ### References
 https://portswigger.net/web-security/learning-paths/csrf
