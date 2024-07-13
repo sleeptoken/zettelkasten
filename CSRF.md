@@ -38,6 +38,11 @@ Note that some simple CSRF exploits employ the `GET` method and can be fully sel
 
 A common way to share `CSRF tokens` with the client is to include them as a hidden parameter in an HTML form
 `CSRF` `tokens` don't have to be sent as hidden parameters in a `POST` request. Some applications place `CSRF` `tokens` in `HTTP` headers, for example.
+### Flaws in CSRF 
+
+##### Validation of CSRF token depends on request method
+
+Some applications correctly validate the token when the request uses the POST method but skip the validation when the GET method is used. 
 
 ### References
 https://portswigger.net/web-security/learning-paths/csrf
