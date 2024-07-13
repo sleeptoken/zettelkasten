@@ -40,28 +40,39 @@ A common way to share `CSRF tokens` with the client is to include them as a hidd
 `CSRF` `tokens` don't have to be sent as hidden parameters in a `POST` request. Some applications place `CSRF` `tokens` in `HTTP` headers, for example.
 ### Flaws in CSRF 
 
-##### Validation of CSRF token depends on request method
+#### Validation of CSRF token depends on request method
 
 Some applications correctly validate the token when the request uses the POST method but skip the validation when the GET method is used. 
-##### Validation of CSRF token depends on token being present
+#### Validation of CSRF token depends on token being present
 
-##### CSRF token is not tied to the user session
+#### CSRF token is not tied to the user session
 
 Some applications do not validate that the token belongs to the same session as the user who is making the request. Instead, the application maintains a global pool of tokens that it has issued and accepts any token that appears in this pool.
 
 In this situation, the attacker can log in to the application using their own account, obtain a valid token, and then feed that token to the victim user in their CSRF attack.
-##### CSRF token is tied to a non-session cookie
+#### CSRF token is tied to a non-session cookie
 
 Some applications do tie the CSRF token to a cookie, but not to the same cookie that is used to track sessions. This can easily occur when an application employs two different frameworks, one for session handling and one for CSRF protection
 
 The cookie-setting behavior does not even need to exist within the same web application as the CSRF vulnerability. **Any other application within the same overall DNS domain can potentially be leveraged to set cookies in the application that is being targeted**, if the cookie that is controlled has suitable scope. For example, a cookie-setting function on `staging.demo.normal-website.com` could be leveraged to place a cookie that is submitted to `secure.normal-website.com`.
+##### Exploiting CSRF token tied to a non-session cookie.
 
+- inject a `CSRF` key cookie in the users session ([[HTTP header injection]])
+1. find an injection point to execute the above.. most probably a search bar the reflects the input as a cookie 
+2. if we find a injection point then we could append this to the search output cookie
+```
+%0d$0aSet-Cookie:%20csrfkey=<attacker-csrf-key-cookie>
+```
+3. after doing this we create a CSRF poc with the attacker `csrf` key cookie attached and the send it to the victim 
+#### CSRF token is simply duplicated in a cookie
 
+Some applications do not maintain any server-side record of tokens that have been issued, but instead duplicate each token within a cookie and a request parameter. When the subsequent request is validated, the application simply verifies that the token submitted in the request parameter matches the value submitted in the cookie. 
 
+In this situation, the attacker can again perform a CSRF attack if the website contains any cookie setting functionality. Here, the attacker doesn't need to obtain a valid token of their own. They simply invent a token (perhaps in the required format, if that is being checked), leverage the cookie-setting behavior to place their cookie into the victim's browser, and feed their token to the victim in their CSRF attack. 
+This is sometimes called the `Double submit defense` and what that does is the `csrf` cookie and the `csrf` parameter are both sent to the backend and if they're equal then the request is accepted if their values are not equal the request is not accepted 
+usually see being used in stateless applications - the applications that don't store any session state or session cookies in the back end 
 
-
-
-
+here the csrf key and crsf token are checked if they are equal or not , we manipulated the csrf key via the search bar cookie then we messed with the csrf token 
 
 
 
@@ -78,19 +89,12 @@ The cookie-setting behavior does not even need to exist within the same web appl
 1. remove the `CSRF` Token and see if the application accepts requests
 2. change the request method from `POST` to `GET`
 3. see if `CSRF` token is tied to user session 
-
 ### Testing CSRF Token and CSRF Cookies
 
 1. Check if the CSRF token is tied to the CSRF cookie 
 	- submit an invalid CSRF token
 	- submit a valid CSRF token from another user
 2. Submit valid CSRF token and cookie from another user
-#### Exploiting this vuln.
-
-- inject a `CSRF` key cookie in the users session ([[HTTP header injection]])
-find an injection point to execute the above.. most probably a search bar 
-
-
 
 ### References
 https://portswigger.net/web-security/learning-paths/csrf
