@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ef979b3cd8c5ff28",
+            "id": "b12ebf17f10bd97d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSRF.md",
+                "file": "File Upload vuln. using py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSRF.md",
+                "file": "File Upload vuln. using py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSRF.md",
+                "file": "File Upload vuln. using py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSRF.md"
+                "file": "File Upload vuln. using py.md"
               }
             }
           }
@@ -148,14 +148,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef979b3cd8c5ff28",
+  "active": "b12ebf17f10bd97d",
   "lastOpenFiles": [
-    "HTTP header injection.md",
+    "Cookie.md",
+    "File Upload vuln. using py.md",
+    "Tags/HTTP header injection.md",
     "CSRF.md",
     "Remote Thought/Reflected XSS.md",
-    "Cookie.md",
     "Tags/malware.md",
-    "Untitled.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/Ultratech.md",
     "Tags/base64.md",
