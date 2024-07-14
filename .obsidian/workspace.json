@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "File Upload vuln. using py.md",
+                "file": "Remote Thought/File Upload vuln. using py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File Upload vuln. using py.md",
+                "file": "Remote Thought/File Upload vuln. using py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File Upload vuln. using py.md",
+                "file": "Remote Thought/File Upload vuln. using py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File Upload vuln. using py.md"
+                "file": "Remote Thought/File Upload vuln. using py.md"
               }
             }
           }
@@ -150,14 +150,15 @@
   },
   "active": "b12ebf17f10bd97d",
   "lastOpenFiles": [
+    "Remote Thought/Ultratech.md",
+    "Remote Thought/File Upload vuln. using py.md",
+    "Remote Thought/Local File Inclusion & Command Injection.md",
     "Cookie.md",
-    "File Upload vuln. using py.md",
     "Tags/HTTP header injection.md",
     "CSRF.md",
     "Remote Thought/Reflected XSS.md",
     "Tags/malware.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Remote Thought/Ultratech.md",
     "Tags/base64.md",
     "Tags/docker.md",
     "Tags/character escape.md",
@@ -172,7 +173,6 @@
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Remote Thought/SSRF.md",
     "Tags/DNS.md",
-    "Remote Thought/Local File Inclusion & Command Injection.md",
     "Tags/XSS.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Don't use alert(1).md",

