@@ -72,7 +72,7 @@ In this situation, the attacker can again perform a CSRF attack if the website c
 This is sometimes called the `Double submit defense` and what that does is the `csrf` cookie and the `csrf` parameter are both sent to the backend and if they're equal then the request is accepted if their values are not equal the request is not accepted 
 usually see being used in stateless applications - the applications that don't store any session state or session cookies in the back end 
 
-here the csrf key and crsf token are checked if they are equal or not , we manipulated the csrf key via the search bar cookie then we messed with the csrf token 
+here the csrf key and crsf token are checked if they are equal or not , we manipulated the csrf key via the search bar cookie then we messed with the csrf token with the help of CSRF poc 
 
 
 
