@@ -33,9 +33,11 @@ As long as the request involves a top-level navigation, the browser will still i
 Even if an ordinary `GET` request isn't allowed, some frameworks provide ways of overriding the method specified in the request line. For example, `Symfony` supports the `_method `parameter in forms, which takes precedence over the normal method for routing purposes
 #### Bypassing SameSite restrictions using on-site gadgets
 
-If a cookie is set with the` SameSite=Strict` attribute, browsers won't include it in any cross-site requests. You may be able to get around this limitation if you can find a gadget that results in a secondary request within the same site. 
-One possible gadget is a client-side redirect that dynamically constructs the redirection target using attacker-controllable input like URL parameters.
-Note that the equivalent attack is not possible with server-side redirects. 
+- If a cookie is set with the` SameSite=Strict` attribute, browsers won't include it in any cross-site requests. You may be able to get around this limitation if you can find a gadget that results in a secondary request within the same site. 
+- One possible gadget is a client-side redirect that dynamically constructs the redirection target using attacker-controllable input like URL parameters.
+- Note that the equivalent attack is not possible with server-side redirects. 
+If the site is redirecting then find a script that is doing the redirect, study the script, find a parameter that we can manipulate, then do directory traversal 
 
+#### Bypassing SameSite restrictions via vulnerable sibling domains
 
-### References
+In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site WebSocket hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
