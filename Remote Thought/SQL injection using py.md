@@ -26,6 +26,12 @@ injecting the following in the username will give the pass
 ```
 'anything" OR 1=1 #'
 ```
+## Natas 15
+
+[[BlindSQL]] 
+
+the anything character or the wild-card character in a SQL `like` statement is `%`
+
 
 
 ### References
