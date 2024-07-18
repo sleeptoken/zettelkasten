@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "07579539089fad23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/SQL injection using py.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/File Upload vuln. using py.md",
+                "file": "Remote Thought/SQL injection using py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/File Upload vuln. using py.md",
+                "file": "Remote Thought/SQL injection using py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/File Upload vuln. using py.md"
+                "file": "Remote Thought/SQL injection using py.md"
               }
             }
           }
@@ -147,17 +162,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7397865b8251d8be",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Remote Thought/File Upload vuln. using py.md",
+    "Remote Thought/SQL injection using py.md",
+    "Remote Thought/Local File Inclusion & Command Injection.md",
     "SameSite cookie.md",
     "Tags/image upload.md",
-    "Remote Thought/File Upload vuln. using py.md",
     "Remote Thought/Ultratech.md",
     "CSRF.md",
     "Tags/PHP.md",
     "Remote Thought/SSRF Misconceptions.md",
     "Remote Thought/Magic Numbers.md",
-    "Remote Thought/Local File Inclusion & Command Injection.md",
     "Cookie.md",
     "Tags/HTTP header injection.md",
     "Remote Thought/Reflected XSS.md",
@@ -174,7 +190,6 @@
     "Tags/Binary Exploit.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Remote Thought/SSRF.md",
-    "Tags/DNS.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
