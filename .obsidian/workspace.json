@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f490b7678ae2ef5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux server forensics.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux server forensics.md",
+                "file": "Remote Thought/SQL injection using py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux server forensics.md",
+                "file": "Remote Thought/SQL injection using py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux server forensics.md"
+                "file": "Remote Thought/SQL injection using py.md"
               }
             }
           }
@@ -162,10 +148,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f490b7678ae2ef5b",
+  "active": "7397865b8251d8be",
   "lastOpenFiles": [
-    "Remote Thought/SQL injection using py.md",
     "Linux server forensics.md",
+    "systemd.md",
+    "Remote Thought/SQL injection using py.md",
     "CSRF.md",
     "SameSite cookie.md",
     "BlindSQL.md",
@@ -189,7 +176,6 @@
     "Tags/database.md",
     "Remote Thought/Injection.md",
     "Stream Cipher.md",
-    "Tags/Binary Exploit.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
