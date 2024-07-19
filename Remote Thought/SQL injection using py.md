@@ -4,7 +4,7 @@
 Source: #overthewire #natas #web 
 
 Tags: [[Injection]]
-## Natas 14
+## Natas 14  ->  Basic SQL injection 
 
 ```
 import requests
@@ -26,12 +26,11 @@ injecting the following in the username will give the pass
 ```
 'anything" OR 1=1 #'
 ```
-## Natas 15
-
-[[BlindSQL]] 
+## Natas 15  ->  Blind SQL Injection 
 
 - the anything character or the wild-card character in a SQL `like` statement is `%`
 - putting `BINARY` right before the field in the Select statement we'll make that field case sensitive
+- we loop through all the characters for every position of the password [[BlindSQL]]
 
 ```
 import requests
@@ -60,7 +59,7 @@ while (True):
             break #break out of the for loop and start again 
 ```
 
-
+## Natas 16
 
 
 
