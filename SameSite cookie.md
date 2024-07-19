@@ -37,7 +37,6 @@ Even if an ordinary `GET` request isn't allowed, some frameworks provide ways of
 - One possible gadget is a client-side redirect that dynamically constructs the redirection target using attacker-controllable input like URL parameters.
 - Note that the equivalent attack is not possible with server-side redirects. 
 If the site is redirecting then find a script that is doing the redirect, study the script, find a parameter that we can manipulate, then do directory traversal 
-
 #### Bypassing SameSite restrictions via vulnerable sibling domains
 
 In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site WebSocket hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
