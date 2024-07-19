@@ -30,8 +30,8 @@ injecting the following in the username will give the pass
 
 [[BlindSQL]] 
 
-the anything character or the wild-card character in a SQL `like` statement is `%`
-
+- the anything character or the wild-card character in a SQL `like` statement is `%`
+- putting `BINARY` right before the field in the Select statement we'll make that field case sensitive
 
 
 ### References
