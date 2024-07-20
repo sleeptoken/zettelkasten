@@ -42,3 +42,4 @@ LFI - https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Applica
 cheatsheet OS command injection - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html
 
 Command injection payload list - https://github.com/payloadbox/command-injection-payload-list
+

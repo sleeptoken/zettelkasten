@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "79f658121a7c90fd",
+            "id": "0aac30d7c9e50f3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Blind Grep & RCE.md",
+                "file": "Remote Thought/Time attack SQL injection using py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#natas",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Blind Grep & RCE.md",
+                "file": "Remote Thought/Time attack SQL injection using py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Blind Grep & RCE.md",
+                "file": "Remote Thought/Time attack SQL injection using py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Blind Grep & RCE.md"
+                "file": "Remote Thought/Time attack SQL injection using py.md"
               }
             }
           }
@@ -147,34 +148,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79f658121a7c90fd",
+  "active": "0aac30d7c9e50f3c",
   "lastOpenFiles": [
-    "Remote Thought/Linux server forensics.md",
-    "Remote Thought/SQL injection using py.md",
-    "Remote Thought/File Upload vuln. using py.md",
-    "Remote Thought/Cookie Manipulation.md",
-    "SameSite cookie.md",
+    "Remote Thought/Time attack SQL injection using py.md",
     "Remote Thought/Blind Grep & RCE.md",
-    "BlindSQL.md",
-    "Tags/systemd.md",
+    "Remote Thought/SQL injection using py.md",
+    "Remote Thought/Linux server forensics.md",
+    "Tags/regex.md",
+    "Remote Thought/Cookie Manipulation.md",
+    "Remote Thought/File Upload vuln. using py.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
-    "CSRF.md",
-    "Tags/image upload.md",
+    "SameSite cookie.md",
     "Remote Thought/Ultratech.md",
-    "Tags/PHP.md",
-    "Remote Thought/SSRF Misconceptions.md",
     "Remote Thought/Magic Numbers.md",
-    "Tags/HTTP header injection.md",
-    "Remote Thought/Reflected XSS.md",
-    "Tags/malware.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Tags/base64.md",
-    "Tags/docker.md",
-    "Tags/character escape.md",
-    "Tags/nmap.md",
-    "db.md",
-    "Tags/database.md",
-    "Remote Thought/Injection.md",
+    "Remote Thought/SSRF Misconceptions.md",
+    "Remote Thought/Authentication and Authorization Bugs.md",
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+    "Remote Thought/Don't use alert(1).md",
+    "Remote Thought/Overwriting variables on the stack.md",
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Remote Thought/Linux Variables and Shell Escape.md",
+    "Remote Thought/Clickjacking.md",
+    "Remote Thought/cron job.md",
+    "Remote Thought/API Testing.md",
+    "Remote Thought/Return to Win.md",
+    "Remote Thought/run only wget with sudo.md",
+    "Remote Thought/Injecting Shellcode.md",
+    "Remote Thought/Return to Lib-C.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",

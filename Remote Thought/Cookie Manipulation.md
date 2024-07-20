@@ -35,3 +35,5 @@ document.cookie="data=new_cookie"
 ```
 ### References
 https://www.youtube.com/watch?v=blNRSTBfyVA
+
+https://github.com/JohnHammond/overthewire_natas_solutions/tree/master
