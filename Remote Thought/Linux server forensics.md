@@ -22,3 +22,6 @@ Malware can also maintain persistence using [[systemd]] as scripts run under sys
 
 
 ### References
+[TryHackMe | Linux Server Forensics](https://tryhackme.com/r/room/linuxserverforensics)
+
+https://www.youtube.com/watch?v=N99MfOPuh7s

@@ -59,12 +59,5 @@ while (True):
             break #break out of the for loop and start again 
 ```
 
-## Natas 16
-
-
-
-
-
-
 ### References
 https://www.youtube.com/watch?v=krp0qCOAnFE&list=PL1H1sBF1VAKWM3wMCn6H5Ql6OrgIivt2V&index=12
