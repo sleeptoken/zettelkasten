@@ -1,8 +1,6 @@
 
 2024-07-03 18:42
 
-Source: #youtube 
-
 Tags: [[Binary Exploit]]
 
 # 32-Bit

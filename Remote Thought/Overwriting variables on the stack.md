@@ -1,8 +1,6 @@
 
 2024-06-26 19:15
 
-Source: #youtube 
-
 Tags: [[Binary exploit toolkit]] [[Binary Exploit]]
 
 ![[buffer-overflow-diagram.png]]
@@ -43,9 +41,6 @@ use **python2** when doing buffer overflow if using pwntools then py version doe
 - `\xef\xbe\xad\xde` is for endianness 
 
 Alternate method is to debug with [[GDB]]-PwnDbg mentioned in the gdb file.
-
-
-
 
 ### References
 https://www.youtube.com/playlist?list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94

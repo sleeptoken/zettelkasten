@@ -1,7 +1,7 @@
 
 2024-07-18 20:49
 
-Source: #overthewire #natas #web 
+Source:  #natas #web #py 
 
 Tags: [[Injection]]
 ## Natas 14  ->  Basic SQL injection 

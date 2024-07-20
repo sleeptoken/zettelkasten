@@ -1,8 +1,6 @@
 
 2024-07-06 13:03
 
-Source: #youtube 
-
 Tags: [[Binary Exploit]]
 
 **PARTIAL RELRO**  -->  if this was set to full RELRO we wouldn't be able to overwrite the global offset table address this basically defines the readability and writability of the global offset table

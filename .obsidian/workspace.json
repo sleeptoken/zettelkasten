@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "02745a1a1b6e6f99",
+        "id": "2d0ff159713d9738",
         "type": "tabs",
         "children": [
           {
-            "id": "f9ede838ff2d5590",
+            "id": "f585980ad29d5d4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bruteforcing PHPSESSID.md",
+                "file": "Remote Thought/Bruteforcing PHPSESSID.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#natas",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bruteforcing PHPSESSID.md",
+                "file": "Remote Thought/Bruteforcing PHPSESSID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bruteforcing PHPSESSID.md",
+                "file": "Remote Thought/Bruteforcing PHPSESSID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bruteforcing PHPSESSID.md"
+                "file": "Remote Thought/Bruteforcing PHPSESSID.md"
               }
             }
           }
@@ -148,33 +147,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9ede838ff2d5590",
+  "active": "f585980ad29d5d4c",
   "lastOpenFiles": [
-    "Remote Thought/Time based SQL injection w py.md",
-    "Bruteforcing PHPSESSID.md",
-    "Remote Thought/Blind Grep & RCE w py.md",
+    "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/Linux server forensics.md",
-    "Tags/regex.md",
-    "Remote Thought/Cookie Manipulation.md",
+    "Remote Thought/Blind Grep & RCE w py.md",
+    "Remote Thought/Time based SQL injection w py.md",
+    "Remote Thought/Bruteforcing PHPSESSID.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
-    "SameSite cookie.md",
-    "Remote Thought/Ultratech.md",
-    "Remote Thought/Magic Numbers.md",
-    "Remote Thought/SSRF Misconceptions.md",
+    "Remote Thought/Polyalphabetic Ciphers.md",
+    "Stream Cipher.md",
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Tags/linux.md",
+    "Remote Thought/Linux Variables and Shell Escape.md",
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
+    "Remote Thought/Freq Analysis.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Remote Thought/Caesar Cipher.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Remote Thought/Bypassing Stack Canaries.md",
-    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
     "Remote Thought/Don't use alert(1).md",
-    "Remote Thought/Overwriting variables on the stack.md",
-    "Remote Thought/Symbolic Link & brute force.md",
-    "Remote Thought/Linux Variables and Shell Escape.md",
-    "Remote Thought/Clickjacking.md",
-    "Remote Thought/cron job.md",
-    "Remote Thought/API Testing.md",
-    "Remote Thought/Return to Win.md",
-    "Remote Thought/run only wget with sudo.md",
+    "Tags/GDB.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
+    "Tags/Ghidra.md",
     "Remote Thought/Injecting Shellcode.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

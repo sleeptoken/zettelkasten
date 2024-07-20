@@ -1,7 +1,7 @@
 
 2024-06-04 18:17
 
-Source: #overthewire #krypton
+Source:  #krypton
 
 Tags: [[Cryptography]] [[linux]]
 

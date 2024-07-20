@@ -1,7 +1,7 @@
 
 2024-06-20 19:42
 
-Source: #bandit #overthewire 
+Source: #bandit 
 
 Tags: [[Shell Escape]] [[linux]]
 

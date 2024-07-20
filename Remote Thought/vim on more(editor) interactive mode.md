@@ -1,7 +1,7 @@
 
 2024-05-22 11:32
 
-Source: #overthewire #bandit
+Source:  #bandit
 
 Tags: [[linux]] [[ssh]] [[more]] [[shell]] [[vim]]
 

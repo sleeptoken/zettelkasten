@@ -1,11 +1,9 @@
 
 2024-06-13 12:40
 
-Source: #youtube #google
-
 Tags: [[linux]]
 
-Often during pen tests you may obtain a shell without having tty, yet wish to interact further with the system. Here are some commands which will allow you to spawn a tty shell. Obviously some of this will depend on the system environment and installed packages.
+Often during pen tests you may obtain a shell without having `tty`, yet wish to interact further with the system. Here are some commands which will allow you to spawn a `tty` shell. Obviously some of this will depend on the system environment and installed packages.
 
 Shell Spawning\
 

@@ -1,8 +1,6 @@
 
 2024-06-29 10:52
 
-Source: #youtube 
-
 Tags: [[Binary Exploit]] 
 
 **Debugger as well as a disassembler** 

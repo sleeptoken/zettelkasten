@@ -1,7 +1,7 @@
 
 2024-05-25 13:04
 
-Source: #overthewire #bandit 
+Source:  #bandit 
 
 Tags: [[git]] [[ssh]] [[linux]]
 

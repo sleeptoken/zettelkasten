@@ -1,7 +1,7 @@
 
 2024-05-21 19:40
 
-Source: #overthewire #bandit
+Source:  #bandit
 
 Tags: [[netcat]] [[bash]] [[linux]]
 

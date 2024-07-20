@@ -1,8 +1,6 @@
 
 2024-07-02 11:05
 
-Source: #youtube 
-
 Tags: [[Binary Exploit]]
 
 to change owner of a file to root use -

@@ -1,11 +1,9 @@
 
 2024-07-07 19:57
 
-Source: #youtube 
-
 Tags: [[Binary Exploit]]
+### 32 Bit 
 
-**32 Bit** 
 **PARTIAL RELRO**
 **CANARY FOUND**
 **NX ENABLED** 

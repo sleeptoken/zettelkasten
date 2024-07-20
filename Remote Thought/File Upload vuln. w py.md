@@ -1,7 +1,7 @@
 
 2024-07-14 18:54
 
-Source:  #overthewire #natas #web 
+Source:   #natas #web #py 
 
 Tags: [[Local File Inclusion & Command Injection]]
 ## Natas12

@@ -1,7 +1,7 @@
 
 2024-06-29 11:01
 
-Source: #youtube #CTF 
+Source: #CTF 
 
 Tags: [[Binary Exploit]]
 

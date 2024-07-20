@@ -1,7 +1,7 @@
 
 2024-07-09 14:02
 
-Source: #web #youtube 
+Source: #web 
 
 you can get false positives in things like burp suite where you're receiving potential `ssrf` scenarios but it's only a [[dns]] callback 
 

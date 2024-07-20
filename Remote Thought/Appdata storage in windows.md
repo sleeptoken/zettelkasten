@@ -1,8 +1,6 @@
 
 2024-05-27 18:31
 
-Source: #youtube
-
 Tags: [[win]] 
 
 The **AppData** system folder in Windows is the default location for application data, settings, and caches.

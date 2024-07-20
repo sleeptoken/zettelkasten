@@ -1,8 +1,6 @@
 
 2024-06-26 17:51
 
-Source: #overthewire 
-
 Tags: [[linux]]
 ### Leviathan Level 0->2, 3->4
 

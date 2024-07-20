@@ -1,7 +1,7 @@
 
 2024-06-27 10:13
 
-Source: #youtube #web 
+Source: #web 
 
 Tags: [[XSS]] 
 

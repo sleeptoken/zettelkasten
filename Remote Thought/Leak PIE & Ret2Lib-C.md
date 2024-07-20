@@ -1,8 +1,6 @@
 
 2024-07-05 14:15
 
-Source: #youtube 
-
 Tags: [[Binary Exploit]]
 
 **PIE ENABLED**

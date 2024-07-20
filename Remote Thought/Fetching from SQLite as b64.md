@@ -1,7 +1,7 @@
 
 2024-07-11 20:46
 
-Source: #web #youtube #privesc #CTF 
+Source: #web #privesc #CTF 
 #### Enumeration 
 ```
 nmap -sCV -v $IP 
