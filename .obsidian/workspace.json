@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCAP analysis.md",
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCAP analysis.md",
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCAP analysis.md",
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCAP analysis.md"
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md"
               }
             }
           }
@@ -164,8 +164,9 @@
   },
   "active": "f9ec668af26df519",
   "lastOpenFiles": [
-    "Wireshark.md",
+    "Remote Thought/Spawning a TTY shell.md",
     "PCAP analysis.md",
+    "Wireshark.md",
     "Remote Thought/Bruteforcing PHPSESSID w py.md",
     "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/File Upload vuln. w py.md",
@@ -189,7 +190,6 @@
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Don't use alert(1).md",
     "Tags/GDB.md",
-    "Remote Thought/Format String Vulnerabilities (printf).md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
