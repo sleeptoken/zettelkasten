@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f9ec668af26df519",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PCAP analysis.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md",
+                "file": "PCAP analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md",
+                "file": "PCAP analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md"
+                "file": "PCAP analysis.md"
               }
             }
           }
@@ -148,15 +162,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f585980ad29d5d4c",
+  "active": "f9ec668af26df519",
   "lastOpenFiles": [
+    "Wireshark.md",
+    "PCAP analysis.md",
+    "Remote Thought/Bruteforcing PHPSESSID w py.md",
     "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/Linux server forensics.md",
     "Remote Thought/Blind Grep & RCE w py.md",
     "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/Bruteforcing PHPSESSID w py.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Polyalphabetic Ciphers.md",
     "Stream Cipher.md",
@@ -174,8 +190,6 @@
     "Remote Thought/Don't use alert(1).md",
     "Tags/GDB.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Tags/Ghidra.md",
-    "Remote Thought/Injecting Shellcode.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
