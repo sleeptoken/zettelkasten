@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Time attack SQL injection using py.md",
+                "file": "Remote Thought/Time based SQL injection using py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Time attack SQL injection using py.md",
+                "file": "Remote Thought/Time based SQL injection using py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Time attack SQL injection using py.md",
+                "file": "Remote Thought/Time based SQL injection using py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Time attack SQL injection using py.md"
+                "file": "Remote Thought/Time based SQL injection using py.md"
               }
             }
           }
@@ -150,7 +150,7 @@
   },
   "active": "0aac30d7c9e50f3c",
   "lastOpenFiles": [
-    "Remote Thought/Time attack SQL injection using py.md",
+    "Remote Thought/Time based SQL injection using py.md",
     "Remote Thought/Blind Grep & RCE.md",
     "Remote Thought/SQL injection using py.md",
     "Remote Thought/Linux server forensics.md",
