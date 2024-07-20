@@ -3,7 +3,7 @@
 
 Source: #overthewire #natas 
 
-similar to the [[BlindSQL]] problem in  [[SQL injection using py]] this problem also has one input field named username and a DB schema that defines username and password fields
+similar to the [[BlindSQL]] problem in  [[SQL injection w py]] this problem also has one input field named username and a DB schema that defines username and password fields
 the difference is that the echo statements are commented out, so we don't get to know if the username with a specified character exists or not .
 
 ```
@@ -41,6 +41,7 @@ while ( len(seen_password) < 32 ):
         # print content
 ```
 ## TLDR 
+
 - start timer before posting request and end timer after receiving the request 
 - in the response we create a delay of 1 second if we find the character in the password 
 - we then measure the difference between start time and end time 
