@@ -40,3 +40,4 @@ If the site is redirecting then find a script that is doing the redirect, study 
 #### Bypassing SameSite restrictions via vulnerable sibling domains
 
 In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site WebSocket hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
+
