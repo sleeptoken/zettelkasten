@@ -14,20 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Remote Thought/Bruteforcing PHPSESSID w py.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9ec668af26df519",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -164,10 +151,10 @@
   "active": "f585980ad29d5d4c",
   "lastOpenFiles": [
     "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/Bruteforcing PHPSESSID w py.md",
     "Remote Thought/Spawning a TTY shell.md",
     "PCAP analysis.md",
     "Wireshark.md",
-    "Remote Thought/Bruteforcing PHPSESSID w py.md",
     "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/SQL injection w py.md",
