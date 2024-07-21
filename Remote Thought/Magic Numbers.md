@@ -1,7 +1,7 @@
 
 2024-07-09 20:57
 
-Source: #google #linux
+Source:  [[linux]]
 
 `xxd` allows you to take a file and dump it in a hexadecimal (hex) format.
 use `xxd file_name | head` to see the leading bytes 
