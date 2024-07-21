@@ -62,6 +62,8 @@ for i in range(641):
 - we run a for loop ranging from 1 to 640 and we apply the loop in `<number>-admin` 
 - where `<number>` is cycled through and the whole thing is encoded in hex 
 - one of these encoded session id is gotta be the admin session id.
+## Natas 20
+
 
 ### References
 https://www.youtube.com/watch?v=C9yxUTQLbRI

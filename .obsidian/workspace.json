@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md",
+                "file": "Remote Thought/PHPSESSID & session handler w py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md",
+                "file": "Remote Thought/PHPSESSID & session handler w py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md",
+                "file": "Remote Thought/PHPSESSID & session handler w py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Bruteforcing PHPSESSID w py.md"
+                "file": "Remote Thought/PHPSESSID & session handler w py.md"
               }
             }
           }
@@ -151,7 +151,7 @@
   "active": "f585980ad29d5d4c",
   "lastOpenFiles": [
     "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Remote Thought/Bruteforcing PHPSESSID w py.md",
+    "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Spawning a TTY shell.md",
     "PCAP analysis.md",
     "Wireshark.md",
