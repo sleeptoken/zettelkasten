@@ -95,6 +95,10 @@ print("="*80)
 #this is just to check if we are still admin or not 
 ```
 they're just splitting up variables line by line and with a space in between each thing we could just as easily add a new line and change whatever session variables we really wanted to
+## Natas21
+
+
+
 ### References
 https://www.youtube.com/watch?v=C9yxUTQLbRI
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
+                "file": "Remote Thought/PHPSESSID & session handler w py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
+                "file": "Remote Thought/PHPSESSID & session handler w py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
+                "file": "Remote Thought/PHPSESSID & session handler w py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Cross-site Session Hijacking w py.md"
+                "file": "Remote Thought/PHPSESSID & session handler w py.md"
               }
             }
           }
@@ -150,8 +149,8 @@
   },
   "active": "89b84366e7d91c34",
   "lastOpenFiles": [
-    "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Cross-site Session Hijacking w py.md",
+    "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Blind Grep & RCE w py.md",
     "SameSite cookie.md",
     "Remote Thought/PCAP analysis.md",
