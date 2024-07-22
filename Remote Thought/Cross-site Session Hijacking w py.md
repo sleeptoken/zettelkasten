@@ -5,6 +5,8 @@ Source: #natas #web #py
 
 Tags: [[PHP]] 
 
+## Natas21
+
 - we have 2 domains 
 - 1st domain 
 	- only calls the print flag function and has text that mentions the other domain 

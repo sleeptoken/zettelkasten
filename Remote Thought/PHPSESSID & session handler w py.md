@@ -31,6 +31,7 @@ for session_id in range(1,641):
         print("trying", session_id)
 ```
 ### TLDR
+
 we gotta brute force all the possible session id's ranging from 1 to 640 and one of the session id is gotta be the admin session id
 
 ## Natas19
@@ -95,11 +96,8 @@ print("="*80)
 #this is just to check if we are still admin or not 
 ```
 they're just splitting up variables line by line and with a space in between each thing we could just as easily add a new line and change whatever session variables we really wanted to
-## Natas21
 
-
-
-### References
+### Reference
 https://www.youtube.com/watch?v=C9yxUTQLbRI
 
 phpsessid - https://stackoverflow.com/questions/1370951/what-is-phpsessid
