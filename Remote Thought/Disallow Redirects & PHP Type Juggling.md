@@ -16,6 +16,13 @@ response = session.get(url,auth=(username,password),allow_redirects=False)
 ```
 ### Natas 23 - PHP Type Juggling
 
+snippet of source code below
+```
+if(strstr($_REQUEST["passwd"],"iloveyou") && ($_REQUEST["passwd"] > 10 )){
+```
+`strstr()` function - find the first occurrence of a string
+PHP doesn't entirely care what your variable really is, it all depends on what context you're using it in there 
+because of the 2nd condition in the if statement we will add a number >10 at the start of our pass
 
 
 ### References
