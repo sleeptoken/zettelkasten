@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "172ee33701e3613c",
+            "id": "89b84366e7d91c34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SameSite cookie.md",
+                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SameSite cookie.md",
+                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SameSite cookie.md",
+                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SameSite cookie.md"
+                "file": "Remote Thought/Cross-site Session Hijacking w py.md"
               }
             }
           }
@@ -148,12 +148,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "172ee33701e3613c",
+  "active": "89b84366e7d91c34",
   "lastOpenFiles": [
     "Remote Thought/PHPSESSID & session handler w py.md",
-    "Remote Thought/PCAP analysis.md",
+    "Remote Thought/Cross-site Session Hijacking w py.md",
+    "Remote Thought/Blind Grep & RCE w py.md",
     "SameSite cookie.md",
-    "Untitled.md",
+    "Remote Thought/PCAP analysis.md",
     "Remote Thought/Magic Numbers.md",
     "Tags/BlindSQL.md",
     "Tags/Wireshark.md",
@@ -163,7 +164,6 @@
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/Linux server forensics.md",
-    "Remote Thought/Blind Grep & RCE w py.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Polyalphabetic Ciphers.md",

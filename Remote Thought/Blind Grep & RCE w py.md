@@ -43,7 +43,7 @@ while(len(seen) < 32):
             seen.append(ch)
             break
             
-#returned will be empty when we find the character because the server will try to grep the password string from the dictionary, which does not exist that is why we append the character in seen  
+# returned will be empty when we find the character because the server will try to grep the password string from the dictionary, which does not exist that is why we append the character in seen  
 ```
 ### References
 
