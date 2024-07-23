@@ -22,8 +22,8 @@ if(strstr($_REQUEST["passwd"],"iloveyou") && ($_REQUEST["passwd"] > 10 )){
 ```
 `strstr()` function - find the first occurrence of a string
 PHP doesn't entirely care what your variable really is, it all depends on what context you're using it in there 
-because of the 2nd condition in the if statement we will add a number >10 at the start of our pass
-
+because of the 2nd condition in the if statement we will add a number >10 at the start of our password 
+thus we will add `11iloveyou`  to retrieve the password
 
 ### References
 
