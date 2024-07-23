@@ -80,3 +80,9 @@ webSocket.onmessage = function(evt){
 </script>
 ```
 #### Bypassing SameSite Lax restrictions with newly issued cookies
+
+If a website doesn't include a `SameSite` attribute when setting a cookie, Chrome automatically applies Lax restrictions by default. However, to avoid breaking single sign-on (SSO) mechanisms, it doesn't actually enforce these restrictions for the first 120 seconds on top-level POST requests. As a result, there is a two-minute window in which users may be susceptible to cross-site attacks.
+
+This two-minute window does not apply to cookies that were explicitly set with the `SameSite=Lax` attribute.
+
+It's somewhat impractical to try timing the attack to fall within this short window. On the other hand, if you can find a gadget on the site that enables you to force the victim to be issued a new session cookie, you can preemptively refresh their cookie before following up with the main attack. For example, completing an OAuth-based login flow may result in a new session each time as the OAuth service doesn't necessarily know whether the user is still logged in to the target site. 
