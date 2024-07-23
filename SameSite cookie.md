@@ -86,3 +86,19 @@ If a website doesn't include a `SameSite` attribute when setting a cookie, Chrom
 This two-minute window does not apply to cookies that were explicitly set with the `SameSite=Lax` attribute.
 
 It's somewhat impractical to try timing the attack to fall within this short window. On the other hand, if you can find a gadget on the site that enables you to force the victim to be issued a new session cookie, you can preemptively refresh their cookie before following up with the main attack. For example, completing an OAuth-based login flow may result in a new session each time as the OAuth service doesn't necessarily know whether the user is still logged in to the target site. 
+
+ To trigger the cookie refresh without the victim having to manually log in again, you need to use a top-level navigation, which ensures that the cookies associated with their current OAuth session are included. This poses an additional challenge because you then need to redirect the user back to your site so that you can launch the CSRF attack.
+
+Alternatively, you can trigger the cookie refresh from a new tab so the browser doesn't leave the page before you're able to deliver the final attack. A minor snag with this approach is that browsers block popup tabs unless they're opened via a manual interaction. For example, the following popup will be blocked by the browser by default:
+```
+window.open('https://vulnerable-website.com/login/sso');
+```
+
+To get around this, you can wrap the statement in an onclick event handler as follows:
+```
+window.onclick = () => {
+    window.open('https://vulnerable-website.com/login/sso');
+}
+```
+
+This way, the `window.open()` method is only invoked when the user clicks somewhere on the page. 

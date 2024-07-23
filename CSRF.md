@@ -73,13 +73,18 @@ This is sometimes called the `Double submit defense` and what that does is the `
 usually see being used in stateless applications - the applications that don't store any session state or session cookies in the back end 
 
 here the csrf key and crsf token are checked if they are equal or not , we manipulated the csrf key via the search bar cookie then we messed with the csrf token with the help of CSRF poc 
+#### Bypassing Referer-based CSRF defenses
 
+Aside from defenses that employ CSRF tokens, some applications make use of the HTTP Referer header to attempt to defend against CSRF attacks, normally by verifying that the request originated from the application's own domain.
 
+The HTTP Referer header (which is inadvertently misspelled in the HTTP specification) is an optional request header that contains the URL of the web page that linked to the resource that is being requested.
+#### Validation of Referer depends on header being present
 
-
-
-
-
+Some applications validate the Referer header when it is present in requests but skip the validation if the header is omitted. 
+There are various ways to achieve this, but the easiest is using a META tag within the HTML page that hosts the CSRF attack:
+```
+<meta name="referrer" content="never">
+```
 
 
 
