@@ -33,7 +33,7 @@ http://attacker-website.com/csrf-attack?vulnerable-website.com
 
 Although you may be able to identify this behavior using Burp, you will often find that this approach no longer works when you go to test your proof-of-concept in a browser. In an attempt to reduce the risk of sensitive data being leaked in this way, many browsers now strip the query string from the Referer header by default.
 
-You can override this behavior by making sure that the response containing your exploit has the Referrer-Policy: unsafe-url header set (note that Referrer is spelled correctly in this case, just to make sure you're paying attention!). This ensures that the full URL will be sent, including the query string.
+You can override this behavior by making sure that the response containing your exploit has the `Referrer-Policy: unsafe-url` header set (note that Referrer is spelled correctly in this case, just to make sure you're paying attention!). This ensures that the full URL will be sent, including the query string.
 
 ##### Lab :
  
@@ -41,7 +41,7 @@ This lab's email change functionality is vulnerable to CSRF. It attempts to dete
 
 sometimes what applications do is they don't validate that this entire referrer header is equal to the domain of the application and instead just validate that the domain of the application is contained in the referrer header 
 
-when creating the CSRF POC use 
+when creating the CSRF POC use [[JavaScript]]
 ```
 history.pushState("", "", "/?YOUR-LAB-ID.web-security-academy.net")
 ```
@@ -55,7 +55,6 @@ If you store the exploit and test it, you may encounter the "invalid Referer hea
 ```
 Referrer-Policy: unsafe-url
 ```
-
 
 ### Testing CSRF via Referer Header
 

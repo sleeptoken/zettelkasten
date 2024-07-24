@@ -21,7 +21,7 @@ If the site is redirecting then find a script that is doing the redirect, study 
 
 ### Bypassing SameSite restrictions via vulnerable sibling domains
 
-In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site WebSocket hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
+In addition to classic `CSRF`, don't forget that if the target website supports `WebSockets`, this functionality might be vulnerable to cross-site [[WebSocket]] hijacking (CSWSH), which is essentially just a CSRF attack targeting a WebSocket handshake. 
 ##### Lab:
 in the lab we have a chat feature that uses websockets, when capturing the request on burp we see that we send a ready message and the websocket server responds with the entire chat history that is tied to our session cookie
 in http history find a response that mentions switching protocol in that corresponding request check if the request contains all the points for it to be CSRF vulnerable. 
@@ -64,7 +64,7 @@ webSocket.onmessage = function(evt){
 
 #### Bypassing SameSite Lax restrictions with newly issued cookies
 
-If a website doesn't include a `SameSite` attribute when setting a cookie, Chrome automatically applies Lax restrictions by default. However, to avoid breaking single sign-on (SSO) mechanisms, it doesn't actually enforce these restrictions for the first 120 seconds on top-level POST requests. As a result, there is a two-minute window in which users may be susceptible to cross-site attacks.
+If a website doesn't include a `SameSite` attribute when setting a cookie, Chrome automatically applies `Lax` restrictions by default. However, to avoid breaking single sign-on (SSO) mechanisms, it doesn't actually enforce these restrictions for the first 120 seconds on top-level POST requests. As a result, there is a two-minute window in which users may be susceptible to cross-site attacks.
 
 This two-minute window does not apply to cookies that were explicitly set with the `SameSite=Lax` attribute.
 
@@ -85,6 +85,5 @@ window.onclick = () => {
 ```
 
 This way, the `window.open()` method is only invoked when the user clicks somewhere on the page. 
-
 
 ### References
