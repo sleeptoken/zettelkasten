@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1a2879178846fab7",
+        "id": "f867b1c48a0e1924",
         "type": "tabs",
         "children": [
           {
-            "id": "0f693b50ead6a0df",
+            "id": "1415fa5b2adf1a86",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -147,9 +148,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f693b50ead6a0df",
+  "active": "1415fa5b2adf1a86",
   "lastOpenFiles": [
     "Remote Thought/Bypassing Referer-based CSRF defenses.md",
+    "Untitled.md",
+    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/CSRF Token.md",
     "Remote Thought/Bypassing SameSite restrictions.md",
     "WebSocket.md",
@@ -159,7 +162,6 @@
     "webhook.md",
     "Remote Thought/CSRF.md",
     "Remote Thought/SameSite cookie.md",
-    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Cross-site Session Hijacking w py.md",
     "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Blind Grep & RCE w py.md",
@@ -174,7 +176,6 @@
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/Linux server forensics.md",
-    "Remote Thought/Local File Inclusion & Command Injection.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
