@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f867b1c48a0e1924",
+        "id": "9312243a71a7cd0d",
         "type": "tabs",
         "children": [
           {
-            "id": "1415fa5b2adf1a86",
+            "id": "18003de193c532a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
+                "file": "Remote Thought/cron job.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
+                "file": "Remote Thought/cron job.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
+                "file": "Remote Thought/cron job.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Disallow Redirects & PHP Type Juggling.md"
+                "file": "Remote Thought/cron job.md"
               }
             }
           }
@@ -148,11 +147,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1415fa5b2adf1a86",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Remote Thought/Reflected XSS.md",
+    "Remote Thought/break RSA w public ky.md",
+    "Remote Thought/Insecure Design.md",
+    "Tags/shell.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Tags/Shell Escape.md",
+    "Tags/bash.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Bypassing Referer-based CSRF defenses.md",
     "Untitled.md",
-    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/CSRF Token.md",
     "Remote Thought/Bypassing SameSite restrictions.md",
     "WebSocket.md",
@@ -166,16 +175,6 @@
     "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Blind Grep & RCE w py.md",
     "Remote Thought/PCAP analysis.md",
-    "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/Magic Numbers.md",
-    "Tags/BlindSQL.md",
-    "Tags/Wireshark.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Cookie Manipulation.md",
-    "Remote Thought/File Upload vuln. w py.md",
-    "Remote Thought/SQL injection w py.md",
-    "Remote Thought/Linux server forensics.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
