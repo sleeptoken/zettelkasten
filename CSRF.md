@@ -86,7 +86,7 @@ There are various ways to achieve this, but the easiest is using a META tag with
 <meta name="referrer" content="never">
 ```
 
-Validation of Referer can be circumvented
+#### Validation of Referer can be circumvented
 
 Some applications validate the Referer header in a naive way that can be bypassed. For example, if the application validates that the domain in the Referer starts with the expected value, then the attacker can place this as a subdomain of their own domain:
 http://vulnerable-website.com.attacker-website.com/csrf-attack
