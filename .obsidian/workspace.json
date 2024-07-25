@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9312243a71a7cd0d",
+        "id": "7370ea65b5ef34e2",
         "type": "tabs",
         "children": [
           {
-            "id": "01f2e5a7098744d5",
+            "id": "54b600cb63a98cb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Mastering Traversal & Log based exploits.md",
+                "file": "Cross-origin resource sharing (CORS).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Mastering Traversal & Log based exploits.md",
+                "file": "Cross-origin resource sharing (CORS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Mastering Traversal & Log based exploits.md",
+                "file": "Cross-origin resource sharing (CORS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Mastering Traversal & Log based exploits.md"
+                "file": "Cross-origin resource sharing (CORS).md"
               }
             }
           }
@@ -149,10 +149,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "01f2e5a7098744d5",
+  "active": "54b600cb63a98cb0",
   "lastOpenFiles": [
-    "RCE.md",
+    "Tags/HTTP header injection.md",
+    "Cross-origin resource sharing (CORS).md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
+    "RCE.md",
     "Tags/LFI.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Bypassing SameSite restrictions.md",
@@ -176,8 +178,6 @@
     "Remote Thought/SSRF Misconceptions.md",
     "Tags/SMTP.md",
     "Tags/WAF.md",
-    "webhook.md",
-    "Remote Thought/CSRF.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",

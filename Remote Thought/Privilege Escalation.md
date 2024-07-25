@@ -56,7 +56,7 @@ A root shell can be spawned by simply executing the rootbash file with the -p co
 
 ##### Custom Executables
 
-There may be instances where some root process executes another process which you can control. In these cases, the following [[c]] code, once compiled, will spawn a Bash shell running as root:  
+There may be instances where some root process executes another process which you can control. In these cases, the following [[Tags/c]] code, once compiled, will spawn a Bash shell running as root:  
 ```
 int main() { 
 	setuid(0); 
@@ -323,7 +323,7 @@ starce /usr/local/bin/suid-so 2>&1 | grep -iE "open|access|no such file"
 ```
 2>&1 this means any errors will be redirected to stdout so that grep will match 
 them as well 
-we find that the script is trying to load a [[c]] file from users home directory if we create this file we can inject code into the process and spawn a root shell
+we find that the script is trying to load a [[Tags/c]] file from users home directory if we create this file we can inject code into the process and spawn a root shell
 ```
 #include <stdio.h>
 #include <stdlib.h>
