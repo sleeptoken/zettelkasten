@@ -3,7 +3,7 @@
 
 Source: #web  #natas
 
-Tags: [[LFI]]
+Tags: [[Tags/LFI]]
 
 #### Natas 3
 
