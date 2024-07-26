@@ -5,6 +5,8 @@ Source: #natas #web
 
 Tags: [[PHP]] 
 
+also known as - PHP object deserialization
+
 PHP object injection through the serialized and uncivilized PHP functions can be super dangerous especially **if there's complete user control over what data is being serialized**
 
 PHP code from the source shows that it is using object oriented programming as it has a class called `logger`
@@ -109,3 +111,4 @@ response = session.get(url+'img/winner.php',auth=(username,password))
 https://www.youtube.com/watch?v=IgxhtJQL-gY
 php magic methods - https://www.php.net/manual/en/language.oop5.magic.php
 php version 7.0.33 - https://onlinephp.io/
+php object injection  - https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection
