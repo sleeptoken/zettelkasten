@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "file": "Cross-origin resource sharing (CORS).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "file": "Cross-origin resource sharing (CORS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "file": "Cross-origin resource sharing (CORS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md"
+                "file": "Cross-origin resource sharing (CORS).md"
               }
             }
           }
@@ -151,11 +151,14 @@
   },
   "active": "52a5187934f022fd",
   "lastOpenFiles": [
-    "Remote Thought/Mastering Traversal & Log based exploits.md",
+    "Remote Thought/API Testing.md",
+    "Cross-origin resource sharing (CORS).md",
+    "CORS.md",
+    "Tags/webhook.md",
     "Remote Thought/PHP Object Injection & Serialization.md",
+    "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Remote Thought/Bypassing SameSite restrictions.md",
     "deserialization.md",
-    "Cross-origin resource sharing (CORS).md",
     "Tags/RCE.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Tags/HTTP header injection.md",
@@ -175,9 +178,6 @@
     "Tags/bash.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/Symbolic Link & brute force.md",
-    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
-    "Remote Thought/Bypassing Referer-based CSRF defenses.md",
-    "WebSocket.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",

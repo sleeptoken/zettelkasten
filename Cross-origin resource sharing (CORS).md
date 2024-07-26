@@ -15,6 +15,15 @@ The same-origin policy is very restrictive and consequently various approaches h
 
 The cross-origin resource sharing protocol uses a suite of HTTP headers that define trusted web origins and associated properties such as whether authenticated access is permitted. 
 
+CORS Header (shown in the response) -
+- `Access-Control-Allow-Origin: http://random-website.com`
+- `Access-Control-Allow-Credentials: true`
+Adding the origin header in the request - `origin : http://random-website.com`
+- if the application accepts it that means the application accepts any random origin on the internet to access its data 
+- if the application does not accept it or throws an error that means the application only accepts certain domains to access its data and it's usually just the domain of the site or the subdomains of the site
+
+- `Access-Control-Allow-Credentials` header which allows credentials to be passed in the request that could be either cookies or authorization headers or certificates but in this case the application makes use of a session cookie so what's going to get passed in the request is session cookies
+- having both headers is very dangerous because what that means is not only can you access public resources from the site but you could also access private resources  
 
 
 ### References

@@ -69,12 +69,12 @@ To test for this vulnerability, add path traversal sequences to modify parameter
 
 Below headers will either strength on weaken the security if they are added 
 
-| Strengthen Security     | Weaken Security |
-| ----------------------- | --------------- |
-| X-Frame-Options         | CORS            |
-| Content-Security-Policy |                 |
-| HSTS                    |                 |
-| HTTPOnly Cookie         |                 |
+| Strengthen Security     | Weaken Security                          |
+| ----------------------- | ---------------------------------------- |
+| X-Frame-Options         | [[Cross-origin resource sharing (CORS)]] |
+| Content-Security-Policy |                                          |
+| HSTS                    |                                          |
+| HTTPOnly Cookie         |                                          |
 CSP can protect websites from XSS attacks or other kind of attacks. But because CSP “just” protects, it doesn’t make it the fix for an issue. If there is an XSS CSP doesn’t fix it, it could just block exploitation. it’s a defense in depth strategy. So setting `script-src CSP` only matters in the context of an XSS issue existing in the first place. And that means, missing CSP in itself is not really a vulnerability.
 
 The Strict-Transport-Security header is ignored by the browser when your site is accessed using HTTP; this is because an attacker may intercept HTTP connections and inject the header or remove it. "ONLY" When your site is accessed over HTTPS with no certificate errors, the browser knows your site is HTTPS capable and will honor the Strict-Transport-Security header.
