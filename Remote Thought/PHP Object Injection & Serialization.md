@@ -1,13 +1,15 @@
 
 2024-07-26 12:51
 
-Source: #natas #web 
+Source: #natas #web #py 
 
 Tags: [[PHP]] 
 
-also known as - PHP object deserialization
+## Natas26
 
-PHP object injection through the serialized and uncivilized PHP functions can be super dangerous especially **if there's complete user control over what data is being serialized**
+also known as - PHP object [[deserialization]]
+
+PHP object injection through the serialized and unserialized PHP functions can be super dangerous especially **if there's complete user control over what data is being serialized**
 
 PHP code from the source shows that it is using object oriented programming as it has a class called `logger`
 

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7370ea65b5ef34e2",
+        "id": "5908c1939c7167b3",
         "type": "tabs",
         "children": [
           {
-            "id": "4505f6b123d6107f",
+            "id": "52a5187934f022fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -149,17 +149,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "52a5187934f022fd",
   "lastOpenFiles": [
-    "Cross-origin resource sharing (CORS).md",
-    "Remote Thought/PHP Object Injection & Serialization.md",
-    "Tags/RCE.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
+    "Remote Thought/PHP Object Injection & Serialization.md",
+    "Remote Thought/Bypassing SameSite restrictions.md",
+    "deserialization.md",
+    "Cross-origin resource sharing (CORS).md",
+    "Tags/RCE.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Tags/HTTP header injection.md",
     "Tags/LFI.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
-    "Remote Thought/Bypassing SameSite restrictions.md",
     "Remote Thought/CSRF Token.md",
     "Remote Thought/Insecure Design.md",
     "Untitled.canvas",
@@ -177,7 +178,6 @@
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Bypassing Referer-based CSRF defenses.md",
     "WebSocket.md",
-    "Remote Thought/SSRF Misconceptions.md",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
     "Images/Pasted image 20240604110852.png",
