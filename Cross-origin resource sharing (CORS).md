@@ -17,6 +17,6 @@ The cross-origin resource sharing protocol uses a suite of HTTP headers that def
 
 
 
-
+### References
 
 https://portswigger.net/web-security/learning-paths/cors
