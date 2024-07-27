@@ -4,6 +4,7 @@
 Source: #web #portswigger 
 
 Tags: 
+####  The response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS. 
 
 Cross-origin resource sharing (CORS) is a browser mechanism which enables controlled access to resources located outside of a given domain. It extends and adds flexibility to the same-origin policy (SOP). 
 ## Same-origin policy
@@ -30,7 +31,13 @@ Adding the origin header in the request - `origin : http://random-website.com`
 - having both headers is very dangerous because what that means is not only can you access public resources from the site but you could also access private resources  
 
 Some applications that support access from multiple origins do so by using a whitelist of allowed origins. When a CORS request is received, the supplied origin is compared to the whitelist. If the origin appears on the whitelist then it is reflected in the `Access-Control-Allow-Origin` header so that access is granted
+### Null origin 
 
+Browsers might send the value null in the Origin header in various unusual situations:
+    - Cross-origin redirects.
+    - Requests from serialized data.
+    - Request using the file: protocol.
+    - Sandboxed cross-origin requests.
 
 
 
