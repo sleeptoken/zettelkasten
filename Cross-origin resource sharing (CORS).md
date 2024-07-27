@@ -25,6 +25,20 @@ Adding the origin header in the request - `origin : http://random-website.com`
 - `Access-Control-Allow-Credentials` header which allows credentials to be passed in the request that could be either cookies or authorization headers or certificates but in this case the application makes use of a session cookie so what's going to get passed in the request is session cookies
 - having both headers is very dangerous because what that means is not only can you access public resources from the site but you could also access private resources  
 
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Testing for CORS Miscofig
 - change the origin of an arbitrary value/ True
 
