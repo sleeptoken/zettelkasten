@@ -6,7 +6,7 @@ Source: #portswigger #web
 Tags:  [[API]]
 ### Working 
 
-It allows an attacker to partly circumvent the `same origin policy`, which is designed to prevent different websites from interfering with each other. 
+It allows an attacker to partly circumvent the `same origin policy`([[SOP]]), which is designed to prevent different websites from interfering with each other. 
 
 key conditions must be in place: 
 1. A relevant action. There is an action within the application that the attacker has a reason to induce.

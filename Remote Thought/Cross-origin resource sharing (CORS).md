@@ -7,9 +7,9 @@ Tags:
 ####  The response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS. 
 
 Cross-origin resource sharing (CORS) is a browser mechanism which enables controlled access to resources located outside of a given domain. It extends and adds flexibility to the same-origin policy (SOP). 
-### Same-origin policy
+### Same-origin policy 
 
-The same-origin policy is a restrictive cross-origin specification that limits the ability for a website to interact with resources outside of the source domain. It generally allows a domain to issue requests to other domains, but not to access the responses. 
+The same-origin policy ([[SOP]]) is a restrictive cross-origin specification that limits the ability for a website to interact with resources outside of the source domain. It generally allows a domain to issue requests to other domains, but not to access the responses. 
 ### Relaxation of the same-origin policy
 
 The same-origin policy is very restrictive and consequently various approaches have been devised to circumvent the constraints. Many websites interact with subdomains or third-party sites in a way that requires full cross-origin access. A controlled relaxation of the same-origin policy is possible using cross-origin resource sharing (CORS).
@@ -67,12 +67,14 @@ https://subdomain.vulnerable-website.com/?xss=<script>cors-stuff-here</script>
 
 Suppose an application that rigorously employs HTTPS also whitelists a trusted subdomain that is using plain HTTP. 
 
-
+find a functionality on the website that redirects to a subdomain and try finding a xss vulnerability on the subdomain 
 
 ## Testing for CORS Miscofig
+
 - change the origin of an arbitrary value/ True
 - change the origin to a null value
-
+- change the origin header to one that begins with the origin of the site 
+- change the origin header to one that ends with the origin of the site (checks subdomains)
 ### References
 
 https://portswigger.net/web-security/learning-paths/cors
@@ -80,3 +82,5 @@ https://portswigger.net/web-security/learning-paths/cors
 Arbitrary value allowed in Origin JS exploit code  - [Web-Security-Academy-Series/cors/lab-01/cors-lab-01.html at main · rkhal101/Web-Security-Academy-Series · GitHub](https://github.com/rkhal101/Web-Security-Academy-Series/blob/main/cors/lab-01/cors-lab-01.html)
 
 Null Origin JS exploit code- https://github.com/rkhal101/Web-Security-Academy-Series/blob/main/cors/lab-02/cors-lab-02.html
+
+XSS on subdomain JS exploit - https://github.com/rkhal101/Web-Security-Academy-Series/blob/main/cors/lab-03/cors-lab-03.html - what the script is doing is it's exploiting an xss vulnerability in the product id parameter in the stock subdomain in order to invoke a request from this subdomain that extracts the api key of the user
