@@ -39,8 +39,11 @@ Browsers might send the value null in the Origin header in various unusual situa
     - Request using the file: protocol.
     - Sandboxed cross-origin requests.
 
+1. Try changing the origin to a arbitrary value `https://example.com `and see if it accepts it notice that we don't have the `access-control-allow-origin` header with our example url being added to it that means it doesn't accept arbitrary origins.
+2. Try changing the origin to `null` , it gives us the `access-control-allow-origin` header and it tells us that the null value or the null origin is allowed to access resources in their application and not only can it access public resources, it can also access private resources because the `access-control-allow-credentials` header is set to true
+### Exploiting XSS via CORS trust relationships
 
-
+Even "correctly" configured CORS establishes a trust relationship between two origins. If a website trusts an origin that is vulnerable to cross-site scripting (XSS), then an attacker could exploit the XSS to inject some JavaScript that uses CORS to retrieve sensitive information from the site that trusts the vulnerable application.
 
 
 
@@ -52,8 +55,12 @@ Browsers might send the value null in the Origin header in various unusual situa
 
 ## Testing for CORS Miscofig
 - change the origin of an arbitrary value/ True
-
+- change the origin to a null value
 
 ### References
 
 https://portswigger.net/web-security/learning-paths/cors
+
+Arbitrary value allowed in Origin JS exploit code  - [Web-Security-Academy-Series/cors/lab-01/cors-lab-01.html at main · rkhal101/Web-Security-Academy-Series · GitHub](https://github.com/rkhal101/Web-Security-Academy-Series/blob/main/cors/lab-01/cors-lab-01.html)
+
+Null Origin JS exploit code- https://github.com/rkhal101/Web-Security-Academy-Series/blob/main/cors/lab-02/cors-lab-02.html
