@@ -13,7 +13,11 @@ The same-origin policy is a restrictive cross-origin specification that limits t
 
 The same-origin policy is very restrictive and consequently various approaches have been devised to circumvent the constraints. Many websites interact with subdomains or third-party sites in a way that requires full cross-origin access. A controlled relaxation of the same-origin policy is possible using cross-origin resource sharing (CORS).
 
-The cross-origin resource sharing protocol uses a suite of HTTP headers that define trusted web origins and associated properties such as whether authenticated access is permitted. 
+The cross-origin resource sharing protocol uses a suite of HTTP headers that define trusted web origins and associated properties such as whether authenticated access is permitted. \
+### Server-generated ACAO header from client-specified Origin header
+
+ - Some applications need to provide access to a number of other domains. Maintaining a list of allowed domains requires ongoing effort, and any mistakes risk breaking functionality. So some applications take the easy route of effectively allowing access from any other domain.
+- One way to do this is by reading the Origin header from requests and including a response header stating that the requesting origin is allowed.
 
 CORS Header (shown in the response) -
 - `Access-Control-Allow-Origin: http://random-website.com`
@@ -25,7 +29,7 @@ Adding the origin header in the request - `origin : http://random-website.com`
 - `Access-Control-Allow-Credentials` header which allows credentials to be passed in the request that could be either cookies or authorization headers or certificates but in this case the application makes use of a session cookie so what's going to get passed in the request is session cookies
 - having both headers is very dangerous because what that means is not only can you access public resources from the site but you could also access private resources  
 
-##
+Some applications that support access from multiple origins do so by using a whitelist of allowed origins. When a CORS request is received, the supplied origin is compared to the whitelist. If the origin appears on the whitelist then it is reflected in the `Access-Control-Allow-Origin` header so that access is granted
 
 
 
