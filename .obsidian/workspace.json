@@ -153,6 +153,7 @@
   "lastOpenFiles": [
     "Tags/hydra.md",
     "Hydra username & pass.md",
+    "Remote Thought/Sudo Vulnerability.md",
     "Stream Cipher.md",
     "WebSocket.md",
     "deserialization.md",
@@ -176,7 +177,6 @@
     "Tags/RCE.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Tags/HTTP header injection.md",
-    "Tags/LFI.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
