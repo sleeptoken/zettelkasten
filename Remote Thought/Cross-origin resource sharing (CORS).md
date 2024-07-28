@@ -69,6 +69,17 @@ Suppose an application that rigorously employs HTTPS also whitelists a trusted s
 
 find a functionality on the website that redirects to a subdomain and try finding a xss vulnerability on the subdomain 
 
+---
+
+`Access-Control-Allow-Credentials: true`
+
+Without that header, the victim user's browser will refuse to send their cookies, meaning the attacker will only gain access to unauthenticated content, which they could just as easily access by browsing directly to the target website.
+
+However, there is one common situation where an attacker can't access a website directly: when it's part of an organization's intranet, and located within private IP address space. Internal websites are often held to a lower security standard than external sites, enabling attackers to find vulnerabilities and gain further access. 
+
+
+
+
 ## Testing for CORS Miscofig
 
 - change the origin of an arbitrary value/ True
