@@ -2,9 +2,7 @@
 2024-07-25 22:48
 
 Source: #web #portswigger 
-
-Tags: 
-####  The response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS. 
+#### The response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS. 
 
 Cross-origin resource sharing (CORS) is a browser mechanism which enables controlled access to resources located outside of a given domain. It extends and adds flexibility to the same-origin policy (SOP). 
 ### Same-origin policy 
@@ -76,11 +74,13 @@ find a functionality on the website that redirects to a subdomain and try findin
 Without that header, the victim user's browser will refuse to send their cookies, meaning the attacker will only gain access to unauthenticated content, which they could just as easily access by browsing directly to the target website.
 
 However, there is one common situation where an attacker can't access a website directly: when it's part of an organization's intranet, and located within private IP address space. Internal websites are often held to a lower security standard than external sites, enabling attackers to find vulnerabilities and gain further access. 
+### Prevent CORS-based attacks
 
-
-
-
-## Testing for CORS Miscofig
+- If a web resource contains sensitive information, the origin should be properly specified in the `Access-Control-Allow-Origin` header. 
+- Avoid using the header `Access-Control-Allow-Origin: null`. Cross-origin resource calls from internal documents and sandboxed requests can specify the null origin. 
+- Avoid using wildcards in internal networks. Trusting network configuration alone to protect internal resources is not sufficient when internal browsers can access untrusted external domains. 
+- CORS defines browser behaviors and is never a replacement for server-side protection of sensitive data. web servers should continue to apply protections over sensitive data, such as authentication and session management, in addition to properly configured CORS. 
+# Testing for CORS Miscofig
 
 - change the origin of an arbitrary value/ True
 - change the origin to a null value
