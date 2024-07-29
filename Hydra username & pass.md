@@ -1,7 +1,7 @@
 
 2024-07-28 20:06
 
-Source: #tryhackme 
+Source: #tryhackme #privesc 
 
 Tags:  [[Cryptography]]
 
