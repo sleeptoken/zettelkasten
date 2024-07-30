@@ -14,24 +14,24 @@ use [[Tags/hydra]] to brute force the password
 ```
 #### cracking rsa 
 
-after logging in the website we find a [[ssh]] `rsa` private key, `wget` it from the website  
-The special John the Ripper tool called **ssh2john.py** which can extract the crackable hash from the [[RSA]] private key. (don't save o/p in a text file)
+- after logging in the website we find a [[ssh]] `rsa` private key, `wget` it from the website  
+- The special John the Ripper tool called **ssh2john.py** which can extract the crackable hash from the [[RSA]] private key. (don't save o/p in a text file)
 ```
- /usr/share/john/ssh2john.py id_rsa  > rsa.hash
+/usr/share/john/ssh2john.py id_rsa  > rsa.hash
 ```
-then user `rockyou` wordlist with john to crack the pass 
-`chmod` the original `id_rsa` file - `chmod 600 id_rsa`
-use `ssh` to login as john
+- then user `rockyou` wordlist with john to crack the pass 
+- `chmod` the original `id_rsa` file - `chmod 600 id_rsa`
+- use `ssh` to login as john
 #### Priv esc
 
-`sudo -l` -> can run `cat` with sudo
-go to gtfobins and find exp. for `cat `
-since you can cat files using sudo you `cat /etc/shadow` and get a hash of the root pass which you further crack using john 
-Before we use John the Ripper to find out the root’s password we need to put it in a format that john will understand. To do this we will use the unshadow command. 
+- `sudo -l` -> can run `cat` with sudo
+- go to gtfobins and find exp. for `cat `
+- since you can cat files using sudo you `cat /etc/shadow` and get a hash of the root pass which you further crack using john 
+- Before we use John the Ripper to find out the root’s password we need to put it in a format that john will understand. To do this we will use the unshadow command. 
 ```
 unshadow passwd.txt shadow.txt > pass.txt
 ```
-`sudo cat` the `root/root.txt` and get the flag
+- `sudo cat` the `root/root.txt` and get the flag
 ### References
 
 [TryHackMe | Brute It](https://tryhackme.com/r/room/bruteit)
