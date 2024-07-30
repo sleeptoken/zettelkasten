@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Hydra & JohnTheRipper.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Hydra & JohnTheRipper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Hydra & JohnTheRipper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NOSQL.md"
+                "file": "Hydra & JohnTheRipper.md"
               }
             }
           }
@@ -151,7 +151,9 @@
   },
   "active": "36836d8d5db9cd8a",
   "lastOpenFiles": [
-    "Hydra username & pass.md",
+    "Tags/RSA.md",
+    "Hydra & JohnTheRipper.md",
+    "Tags/ssh.md",
     "NOSQL.md",
     "Tags/hydra.md",
     "Remote Thought/Sudo Vulnerability.md",
@@ -175,8 +177,6 @@
     "Tags/webhook.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Tags/RCE.md",
-    "Remote Thought/Fetching from SQLite as b64.md",
-    "Tags/HTTP header injection.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

