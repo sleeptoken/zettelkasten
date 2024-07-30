@@ -27,6 +27,10 @@ use `ssh` to login as john
 `sudo -l` -> can run `cat` with sudo
 go to gtfobins and find exp. for `cat `
 since you can cat files using sudo you `cat /etc/shadow` and get a hash of the root pass which you further crack using john 
+Before we use John the Ripper to find out the root’s password we need to put it in a format that john will understand. To do this we will use the unshadow command. 
+```
+unshadow passwd.txt shadow.txt > pass.txt
+```
 `sudo cat` the `root/root.txt` and get the flag
 ### References
 
