@@ -1,11 +1,14 @@
 
 2024-07-30 15:14
 
-Source: 
+Source: #htb 
+ 
+Tags: [[Binary Exploit]] [[Format String Vulnerabilities (printf)]]
 
-Tags: 
+We are given a binary that takes a bunch of Boolean inputs and if it matches a randomly generated value (referred to as winning) then it gives you an option to input some data that gets stored in the stack .
 
-
+now if you win then the code checks if a `flag.txt` exists in the working directory and if it doesn't then it throws an error.
+create a `flag.txt` in the working directory 
 
 
 ### References
