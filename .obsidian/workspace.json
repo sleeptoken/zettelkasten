@@ -165,6 +165,8 @@
   },
   "active": "817ba42851e64fa0",
   "lastOpenFiles": [
+    "Tags/fgets.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
     "Format String racecar.md",
     "Hydra & JohnTheRipper.md",
     "Tags/RSA.md",
@@ -189,8 +191,6 @@
     "Remote Thought/CSRF.md",
     "Remote Thought/SameSite cookie.md",
     "Tags/XSS.md",
-    "Tags/webhook.md",
-    "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
