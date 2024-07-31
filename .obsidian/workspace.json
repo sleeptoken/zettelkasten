@@ -11,8 +11,13 @@
             "id": "b649368bba8dd070",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/subdomain enum & chamilo exploit.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Remote Thought/subdomain enum & chamilo exploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Remote Thought/subdomain enum & chamilo exploit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Remote Thought/subdomain enum & chamilo exploit.md"
+              }
             }
           }
         ],
@@ -142,8 +150,8 @@
   },
   "active": "b649368bba8dd070",
   "lastOpenFiles": [
+    "Remote Thought/subdomain enum & chamilo exploit.md",
     "Tags/NFS.md",
-    "subdomain finding & chamilo exploit.md",
     "Tags/nmap.md",
     "Format String pwn.md",
     "Hydra & JohnTheRipper.md",
