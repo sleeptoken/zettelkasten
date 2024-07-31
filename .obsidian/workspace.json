@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/subdomain enum & chamilo exploit.md",
+                "file": "NOSQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/subdomain enum & chamilo exploit.md",
+                "file": "NOSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/subdomain enum & chamilo exploit.md",
+                "file": "NOSQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/subdomain enum & chamilo exploit.md"
+                "file": "NOSQL.md"
               }
             }
           }
@@ -150,12 +150,16 @@
   },
   "active": "b649368bba8dd070",
   "lastOpenFiles": [
+    "NOSQL.md",
+    "deserialization.md",
+    "Hydra & JohnTheRipper.md",
+    "Format String pwn.md",
+    "Tags/symbolic link.md",
     "Remote Thought/subdomain enum & chamilo exploit.md",
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Tags/sudo.md",
     "Tags/NFS.md",
     "Tags/nmap.md",
-    "Format String pwn.md",
-    "Hydra & JohnTheRipper.md",
-    "NOSQL.md",
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Tags/fgets.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
@@ -165,7 +169,6 @@
     "Remote Thought/Sudo Vulnerability.md",
     "Stream Cipher.md",
     "WebSocket.md",
-    "deserialization.md",
     "Remote Thought/Insecure Design.md",
     "Remote Thought/Cross-origin resource sharing (CORS).md",
     "Remote Thought/Privilege Escalation.md",
@@ -173,9 +176,6 @@
     "Tags/SOP.md",
     "CORS.md",
     "Remote Thought/API Testing.md",
-    "Same-Origin.md",
-    "Remote Thought/Bypassing SameSite restrictions.md",
-    "Remote Thought/Clickjacking.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

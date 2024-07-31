@@ -25,7 +25,7 @@ we have a binary that checks for `file.log` in `tmp` folder ( we can't change th
 ```
 ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log
 ```
-once the symbolic link is created we run the binary and get the password 
+once the [[symbolic link]] is created we run the binary and get the password 
 ### Level 6
 
 we have a binary that requires a 4 digit pass to unlock 

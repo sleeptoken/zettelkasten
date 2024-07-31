@@ -24,8 +24,8 @@ My input is printed at the [[printf]], but our input is not checked, hence we ca
 More information about format string attacks can be read here: [https://owasp.org/www-community/attacks/Format_string_attack](https://owasp.org/www-community/attacks/Format_string_attack).
 
 If I run the binary and give many `%p`’s, data on the stack will be leaked in hexadecimal.
-when doing this you will notice some addresses as `0x41414141` these will be the `AAAA` you added to your `flag.txt`999999
-### Mimick user input via pwntools
+when doing this you will notice some addresses as `0x41414141` these will be the `AAAA` you added to your `flag.txt`
+### Mimic user input via pwntools
 
 ```
 from pwn import *
