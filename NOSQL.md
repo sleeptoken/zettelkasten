@@ -4,7 +4,9 @@ https://unstop.com/competitions/1024247/register
 Source: #portswigger #web 
 
 Tags: [[Injection]]
-# Remember to URL Encode -> Ctrl + U
+
+> [!NOTE]
+>  Remember to URL Encode -> Ctrl + U
 
 #### There are two different types of NoSQL injection:
 
@@ -18,50 +20,59 @@ Tags: [[Injection]]
 NoSQL injection vulnerabilities can occur in a variety of contexts, and you need to adapt your fuzz strings accordingly. Otherwise, you may simply trigger validation errors that mean the application never executes your query. 
 
  To determine which characters are interpreted as syntax by the application, you can inject individual characters. 
-### Testing
-
-1. Determining which characters are processed
-	For example, you could submit `'`, which results in the following MongoDB query:
-	`this.category == '''`
-	
-	If this causes a change from the original response, this may indicate that the `'` character has broken the query syntax and caused a syntax error. You can confirm this by submitting a valid query string in the input, for example by escaping the quote:
-	`this.category == '\''`
-	
-	If this doesn't cause a syntax error, this may mean that the application is vulnerable to an injection attack.
-
-2. Confirming Conditional behavior - Determine whether you can influence boolean conditions using NoSQL syntax.
-	- To test this, send two requests, one with a false condition and one with a true condition. For example you could use the conditional statements `' && 0 && 'x` and `' && 1 && 'x` 
-	- If the application behaves differently, this suggests that the false condition impacts the query logic, but the true condition doesn't. This indicates that injecting this style of syntax impacts a server-side query. 
-
-3. Overriding existing conditions - 
-	 For example, you can inject a JavaScript condition that always evaluates to true, such as `'||1||'`
-	 
-	As the injected condition is always true, the modified query returns all items. This enables you to view all the products in any category, including hidden or unknown categories.
-	
-	*Take care when injecting a condition that always evaluates to true into a NoSQL query. Although this may be harmless in the initial context you're injecting into, it's common for applications to use data from a single request in multiple different queries. If an application uses it when updating or deleting data, for example, this can result in accidental data loss.
-	
-	You could also add a `null` character after the category value. `MongoDB` may ignore all characters after a `null` character. This means that any additional conditions on the `MongoDB` query are ignored.
+ 
+>  Testing
+> 
+> 1. Determining which characters are processed
+> 	For example, you could submit `'`, which results in the following MongoDB query:
+> 	`this.category == '''`
+> 	
+> 	If this causes a change from the original response, this may indicate that the `'` character has broken the query syntax and caused a syntax error. You can confirm this by submitting a valid query string in the input, for example by escaping the quote:
+> 	`this.category == '\''`
+> 	
+> 	If this doesn't cause a syntax error, this may mean that the application is vulnerable to an injection attack.
+> 
+> 2. Confirming Conditional behavior - Determine whether you can influence boolean conditions using NoSQL syntax.
+> 	- To test this, send two requests, one with a false condition and one with a true condition. For example you could use the conditional statements `' && 0 && 'x` and `' && 1 && 'x` 
+> 	- If the application behaves differently, this suggests that the false condition impacts the query logic, but the true condition doesn't. This indicates that injecting this style of syntax impacts a server-side query. 
+> 
+> 3. Overriding existing conditions - 
+> 	 For example, you can inject a JavaScript condition that always evaluates to true, such as `'||1||'`
+> 	 
+> 	As the injected condition is always true, the modified query returns all items. This enables you to view all the products in any category, including hidden or unknown categories.
+> 	
+> 	*Take care when injecting a condition that always evaluates to true into a NoSQL query. Although this may be harmless in the initial context you're injecting into, it's common for applications to use data from a single request in multiple different queries. If an application uses it when updating or deleting data, for example, this can result in accidental data loss.
+> 	
+> 	You could also add a `null` character after the category value. `MongoDB` may ignore all characters after a `null` character. This means that any additional conditions on the `MongoDB` query are ignored.
 #### Lab
 
-on submitting a `'` character in the category parameter. Notice that this causes a **JavaScript syntax error**. This may indicate that the user input was not filtered or sanitized correctly.
+1. on submitting a `'` character in the category parameter. Notice that this causes a **JavaScript syntax error**. This may indicate that the user input was not filtered or sanitized correctly.
 
-Submit a valid JavaScript payload in the value of the category query parameter. eg -> `Gifts'+'`
-Make sure to URL-encode the payload. Notice that it doesn't cause a syntax error. This indicates that a form of server-side injection may be occurring.
+2. Submit a valid JavaScript payload in the value of the category query parameter. eg -> `Gifts'+'`
+	 Make sure to URL-encode the payload. Notice that it doesn't cause a syntax error. This indicates that a form of server-side injection may be occurring.
 
-Insert a false condition in the category parameter. For example:
-    Gifts' && 0 && 'x
+```
+Insert a false condition in the category parameter
+Gifts' && 0 && 'x
 
-    Make sure to URL-encode the payload. Notice that no products are retrieved.
+Insert a true condition in the category parameter
+Gifts' && 1 && 'x
+```
+3. Make sure to URL-encode the payload. Notice that products in the Gifts category are retrieved.
 
-    Insert a true condition in the category parameter. For example:
-    Gifts' && 1 && 'x
+4. Submit a boolean condition that always evaluates to true in the category parameter. For example:
+`Gifts'||1||'`
+## NoSQL operator injection
 
-    Make sure to URL-encode the payload. Notice that products in the Gifts category are retrieved.
+in JSON messages, you can insert query operators as nested objects. For example, `{"username":"wiener"}` becomes `{"username":{"$ne":"invalid"}}`
 
-Submit a boolean condition that always evaluates to true in the category parameter. For example:
-Gifts'||1||'
+For URL-based inputs, you can insert query operators via URL parameters. For example,` username=wiener` becomes `username[$ne]=invalid`. If this doesn't work, you can try the following:
 
-
+>Testing 
+    1. Convert the request method from GET to POST.
+    2. Change the Content-Type header to application/json.
+    3. Add JSON to the message body.
+    4. Inject query operators in the JSON.
 
 
 
