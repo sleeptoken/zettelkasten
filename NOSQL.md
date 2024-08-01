@@ -68,11 +68,41 @@ in JSON messages, you can insert query operators as nested objects. For example,
 
 For URL-based inputs, you can insert query operators via URL parameters. For example,` username=wiener` becomes `username[$ne]=invalid`. If this doesn't work, you can try the following:
 
->Testing 
-    1. Convert the request method from GET to POST.
-    2. Change the Content-Type header to application/json.
-    3. Add JSON to the message body.
-    4. Inject query operators in the JSON.
+>**Testing** 
+    1. Convert the request method from `GET` to `POST`.
+    2. Change the `Content-Type` header to `application/json`.
+    3. Add `JSON` to the message body.
+    4. Inject query operators in the `JSON`.
+
+### Detecting operator injection in MongoDB
+
+Test each input with a range of operators. For example, to test whether the username input processes the query operator, you could try the following injection:
+```
+{"username":{"$ne":"invalid"},"password":{"peter"}}
+```
+
+If the `$ne` operator is applied, this queries all users where the username is not equal to invalid.
+
+If both the username and password inputs process the operator, it may be possible to bypass authentication using the following payload:
+```
+{"username":{"$ne":"invalid"},"password":{"$ne":"invalid"}}
+```
+
+This query returns all login credentials where both the username and password are not equal to invalid. As a result, you're logged into the application as the first user in the collection.
+
+To target an account, you can construct a payload that includes a known username, or a username that you've guessed. For example:
+```
+{"username":{"$in":["admin","administrator","superadmin"]},"password":{"$ne":""}}
+```
+#### *Lab*
+
+trying wiener as username which we know is a valid username 
+
+
+
+
+
+
 
 
 
