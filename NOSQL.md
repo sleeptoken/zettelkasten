@@ -107,7 +107,7 @@ if you don't find the username by guessing then use [[regex]]
 	"$regex" : "^a"
 }
 ```
-^a means anything that starts with a  -  we find a username named `admin7543`
+`^a `means anything that starts with `a`  -  we find a username named `admin7543`
 
 copy the cookie and replace you current cookies with the new ones 
 
