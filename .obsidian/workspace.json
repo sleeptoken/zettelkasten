@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b4975816c73a3edb",
+        "id": "bf7548d70d207e43",
         "type": "tabs",
         "children": [
           {
-            "id": "b649368bba8dd070",
+            "id": "16d08350224f60d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Tags/RFI.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Tags/RFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Tags/RFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NOSQL.md"
+                "file": "Tags/RFI.md"
               }
             }
           }
@@ -148,8 +148,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b649368bba8dd070",
+  "active": "16d08350224f60d3",
   "lastOpenFiles": [
+    "Tags/LFI.md",
+    "Tags/RFI.md",
     "NOSQL.md",
     "deserialization.md",
     "Hydra & JohnTheRipper.md",
@@ -174,8 +176,6 @@
     "Remote Thought/Privilege Escalation.md",
     "Tags/c.md",
     "Tags/SOP.md",
-    "CORS.md",
-    "Remote Thought/API Testing.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
