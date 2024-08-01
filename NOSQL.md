@@ -96,15 +96,20 @@ To target an account, you can construct a payload that includes a known username
 ```
 #### *Lab*
 
-trying wiener as username which we know is a valid username 
+trying wiener as username which we know is a valid username and password as `"$ne" : "peter"` which is a valid password but we are passing it with not equal to we get a `200 OK` . This confirms that password parameter is vulnerable 
 
+- if we get a `302` error then that means the condition in the parameters is true 
+- if we put administrator as username we get 200 that means user with that name does not exist
 
+if you don't find the username by guessing then use [[regex]]
+```
+"username":{
+	"$regex" : "^a"
+}
+```
+^a means anything that starts with a  -  we find a username named `admin7543`
 
-
-
-
-
-
+copy the cookie and replace you current cookies with the new ones 
 
 
 
