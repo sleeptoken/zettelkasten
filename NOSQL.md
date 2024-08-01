@@ -4,6 +4,8 @@ https://unstop.com/competitions/1024247/register
 Source: #portswigger #web 
 
 Tags: [[Injection]]
+# Remember to URL Encode -> Ctrl + U
+
 #### There are two different types of NoSQL injection:
 
 - **Syntax injection** - This occurs when you can break the NoSQL query syntax, enabling you to inject your own payload. The methodology is similar to that used in SQL injection
@@ -16,7 +18,6 @@ Tags: [[Injection]]
 NoSQL injection vulnerabilities can occur in a variety of contexts, and you need to adapt your fuzz strings accordingly. Otherwise, you may simply trigger validation errors that mean the application never executes your query. 
 
  To determine which characters are interpreted as syntax by the application, you can inject individual characters. 
-
 ### Testing
 
 1. Determining which characters are processed
@@ -40,6 +41,29 @@ NoSQL injection vulnerabilities can occur in a variety of contexts, and you need
 	*Take care when injecting a condition that always evaluates to true into a NoSQL query. Although this may be harmless in the initial context you're injecting into, it's common for applications to use data from a single request in multiple different queries. If an application uses it when updating or deleting data, for example, this can result in accidental data loss.
 	
 	You could also add a `null` character after the category value. `MongoDB` may ignore all characters after a `null` character. This means that any additional conditions on the `MongoDB` query are ignored.
+#### Lab
+
+on submitting a `'` character in the category parameter. Notice that this causes a **JavaScript syntax error**. This may indicate that the user input was not filtered or sanitized correctly.
+
+Submit a valid JavaScript payload in the value of the category query parameter. eg -> `Gifts'+'`
+Make sure to URL-encode the payload. Notice that it doesn't cause a syntax error. This indicates that a form of server-side injection may be occurring.
+
+Insert a false condition in the category parameter. For example:
+    Gifts' && 0 && 'x
+
+    Make sure to URL-encode the payload. Notice that no products are retrieved.
+
+    Insert a true condition in the category parameter. For example:
+    Gifts' && 1 && 'x
+
+    Make sure to URL-encode the payload. Notice that products in the Gifts category are retrieved.
+
+Submit a boolean condition that always evaluates to true in the category parameter. For example:
+Gifts'||1||'
+
+
+
+
 
 
 

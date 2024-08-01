@@ -37,7 +37,7 @@ for i in range(100):
     try:
         # Connect to server
         io = remote('94.237.59.199', 55496)
-        io.sendlineafter(b'Name: ', b'anas')
+        io.sendlineafter(b'Name: ', b'anything')
         io.sendlineafter(b'Nickname: ', b'something')
         io.sendlineafter(b'> ', b'2')
         io.sendlineafter(b'> ', b'2')
