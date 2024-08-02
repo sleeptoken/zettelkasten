@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "c3d43f0e76cc2f67",
+        "id": "4e59ece02043c41b",
         "type": "tabs",
         "children": [
           {
-            "id": "19e80e3fa3804bd9",
+            "id": "5b47deb90b25eddd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hydra & JohnTheRipper.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cfc42fd77b0bfb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Netcat w py.md",
+                "file": "Logic 2.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Netcat w py.md",
+                "file": "Logic 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Netcat w py.md",
+                "file": "Logic 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Netcat w py.md"
+                "file": "Logic 2.md"
               }
             }
           }
@@ -163,11 +149,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6cfc42fd77b0bfb9",
+  "active": "5b47deb90b25eddd",
   "lastOpenFiles": [
-    "Remote Thought/Blind Grep & RCE w py.md",
-    "Hydra & JohnTheRipper.md",
+    "Logic 2.md",
     "Netcat w py.md",
+    "Hydra & JohnTheRipper.md",
+    "Remote Thought/Blind Grep & RCE w py.md",
     "Remote Thought/Enlightenment SUID exploit.md",
     "Tags/SUID.md",
     "Tags/Find.md",
@@ -190,7 +177,6 @@
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Tags/fgets.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Tags/RSA.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
