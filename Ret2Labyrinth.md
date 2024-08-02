@@ -3,7 +3,7 @@
 
 Source: #htb #CTF 
 
-Tags: 
+Tags: [[Binary Exploit]]
 
 
 

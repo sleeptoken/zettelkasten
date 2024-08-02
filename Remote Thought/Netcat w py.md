@@ -3,11 +3,11 @@
 
 Source: #htb #py 
 
-Tags: [[pwntools]]
+Tags: [[pwntools]] [[Binary Exploit]]
 
 we are given a `docker` `ip` where a command line game is hosted that asks us to replace an occurring of a word w another word eg. if the question says `GORGE` the answer is `STOP`.
 
-this goes on for about 500 times so we automate it using python
+this goes on for about 500 more times so we automate it using python
 
 ```
 from pwn import *
