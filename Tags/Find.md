@@ -13,7 +13,7 @@ find / -type f -name user.txt 2> /dev/null
 ```
 find / -user root -perm /4000
 ```
-Search for files with SUID permission. It is looking for a file with SUID permission that can be run as root.
+Search for files with [[SUID]] permission. It is looking for a file with SUID permission that can be run as root.
 
 
 ### References
