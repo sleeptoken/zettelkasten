@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public SUID exploit.md",
+                "file": "Hydra & JohnTheRipper.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "public SUID exploit.md",
+                "file": "Hydra & JohnTheRipper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "public SUID exploit.md",
+                "file": "Hydra & JohnTheRipper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public SUID exploit.md"
+                "file": "Hydra & JohnTheRipper.md"
               }
             }
           }
@@ -151,10 +151,10 @@
   },
   "active": "19e80e3fa3804bd9",
   "lastOpenFiles": [
+    "Remote Thought/Enlightenment SUID exploit.md",
+    "Tags/SUID.md",
     "Tags/Find.md",
     "Remote Thought/Privilege Escalation.md",
-    "SUID.md",
-    "public SUID exploit.md",
     "Tags/ffuf.md",
     "fuff.md",
     "Remote Thought/subdomain enum & chamilo exploit.md",
