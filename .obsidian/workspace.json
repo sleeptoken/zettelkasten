@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Netcat w py.md",
+                "file": "Ret2Labyrinth.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Netcat w py.md",
+                "file": "Ret2Labyrinth.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Netcat w py.md",
+                "file": "Ret2Labyrinth.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Netcat w py.md"
+                "file": "Ret2Labyrinth.md"
               }
             }
           }
@@ -150,8 +151,8 @@
   },
   "active": "5b92345c91f5b525",
   "lastOpenFiles": [
-    "Untitled.md",
     "Remote Thought/Netcat w py.md",
+    "Ret2Labyrinth.md",
     "Hydra & JohnTheRipper.md",
     "Logic 2.md",
     "Remote Thought/Overwriting variables on the stack.md",
