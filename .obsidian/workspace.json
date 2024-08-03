@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NOSQL.md",
+                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NOSQL.md"
+                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md"
               }
             }
           }
@@ -150,6 +150,8 @@
   },
   "active": "7564fd565a37825b",
   "lastOpenFiles": [
+    "Remote Thought/Mastering Traversal & Log based exploits.md",
+    "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "NOSQL.md",
     "Hydra & JohnTheRipper.md",
     "Logic 2.md",
@@ -160,7 +162,6 @@
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Cross-site Session Hijacking w py.md",
     "Remote Thought/File Upload vuln. w py.md",
-    "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Return to Win.md",
@@ -175,7 +176,6 @@
     "Tags/deserialization.md",
     "Remote Thought/Overwriting variables on the stack.md",
     "Remote Thought/Linux Variables and Shell Escape.md",
-    "Tags/ASLR.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
