@@ -6,7 +6,7 @@ Source:  #natas #py
 similar to the [[BlindSQL]] problem in  [[SQL injection w py]] this problem also has one input field named username and a DB schema that defines username and password fields
 the difference is that the echo statements are commented out, so we don't get to know if the username with a specified character exists or not .
 
-```
+```python
 import requests
 import re
 import string

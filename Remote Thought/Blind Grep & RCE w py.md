@@ -14,7 +14,7 @@ passthru("grep -i \"$key\" dictionary.txt");  # snippet form website source c
 
 if we only send in `B` as input because `B` does exist in the password that command in the PHP code is filled in with the actual password an argument and it obviously can't find that in dictionary text so we don't see any output here
 
-```
+```python
 import requests
 import re
 import string

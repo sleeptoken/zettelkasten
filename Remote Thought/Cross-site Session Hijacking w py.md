@@ -16,7 +16,7 @@ Tags: [[PHP]]
 - since the websites are collocated the session id is assumed to not change
 we need the same session already occurring similar to [[PHPSESSID & session handler w py]] Natas20
 
-```
+```python
 import requests
 username = 'natas21'
 password = 'BPhv63cKE1lkQl04cE5CuFTzXe15NfiH'

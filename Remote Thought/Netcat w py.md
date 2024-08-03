@@ -9,7 +9,7 @@ we are given a `docker` `ip` where a command line game is hosted that asks us to
 
 this goes on for about 500 more times so we automate it using python
 
-```
+```python
 from pwn import *
 
 r = remote('94.237.59.63',46361)

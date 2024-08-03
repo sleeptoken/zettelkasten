@@ -10,7 +10,7 @@ Tags: [[PHP]]
 - If cookies are disabled, it uses the URL.
 here in the source we are given `maxid` as `640`
 
-```
+```python
 import requests
 username = 'natas18'
 password = '6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ'
@@ -39,7 +39,7 @@ we gotta brute force all the possible session id's ranging from 1 to 640 and one
 source code is similar to natas 18 the difference is that the `phpsessid` is  encoded in hex and the username is appended to the session id before encoding the whole .
 eg. `45-admin` is encoded and used as the session id 
 
-```
+```python
 import requests
 username = 'natas19'
 password = 'tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr'
@@ -72,7 +72,7 @@ for i in range(641):
 	- works with the same file name as read, it uses simply writes the output from the server to a file 
 Whole code is operating in a session thus we add more code to existing code
 
-```
+```python
 import requests
 username = 'natas20'
 password = 'p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw'
