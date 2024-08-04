@@ -6,7 +6,8 @@ Source: #natas #web #py
 Tags: [[sql]] [[PHP]]
 # aka SQL Buffer overflow 
 
-we have a login page 
+we have a login page
+Basically, this code will check if the user exists in the database and if you got the right password, it will display the password. If the user does not exists, it will be created in the database
 
 - HTML entities is PHP's notion and attempt to secure things down, like remove all the HTML entities if you were to try and do like cross-site scripting or inject HTML elements or JavaScript code into an input field's
 
@@ -30,10 +31,14 @@ function dumpData($link,$usr){
     return False; 
 } 
 ```
-it will return a number of rows and if it's greater than 0 we have multiple results, so what it does is it does this while loop that it iterates through every single row (this is peculiar right?) because we only expected it to return one result like if there's only one user we're trying to login as a specific user that would probably just be one, but what if we are in the case if there are multiple results if there are multiple rows to look through
+it will return a number of rows and if it's greater than 0 we have multiple results, so what it does is it does this ==while loop== that it iterates through every single row (this is peculiar right?) because we only expected it to return one result like if there's only one user we're trying to login as a specific user that would probably just be one, but what if we are in the case if there are multiple results if there are multiple rows to look through
 
 since the DB described has a 64 varchar size, we create a user named longer than the length that is setup.
+we input a word with spaces that are more than 64 size and append some character in the end
+the spaces are eventually truncated along with the character appended at the end 
 
+we create a user named `"natas28" + " "*58 + "x"` and in the next request we ask for `natas28` and give the password that we used for our user. since MySQL will truncate the input to match the maximum field size. the server returns original natas28's password.  
+##### In the old version of this level the above mentioned trick worked 
 
 ```python
 import requests
