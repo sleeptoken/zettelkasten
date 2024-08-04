@@ -3,12 +3,14 @@
 
 Source: #natas #web #py 
 
-Tags: [[sql]] 
+Tags: [[sql]] [[PHP]]
+# aka SQL Buffer overflow 
 
+we have a login page 
 
+- HTML entities is PHP's notion and attempt to secure things down, like remove all the HTML entities if you were to try and do like cross-site scripting or inject HTML elements or JavaScript code into an input field's
 
-
-
+- `mysql_real_escape_string` function is another PHP mitigation function that will try and lock down or protect a lot of regular sequel injection techniques
 
 
 
