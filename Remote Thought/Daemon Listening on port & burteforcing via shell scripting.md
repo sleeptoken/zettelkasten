@@ -8,13 +8,13 @@ Tags: [[netcat]] [[bash]] [[linux]]
 we connected to the port with netcat to see the script and its response.
 using localhost to essentially connect to the local machine (127.0.0.1) 
 
-```
+```sh
 $nc localhost 30002
 ```
 
 for loop in bash scripting 
 
-```
+```bash
 for i in {000..999}
 do 
 	whatever $i

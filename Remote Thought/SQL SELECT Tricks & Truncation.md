@@ -56,6 +56,8 @@ print(response.text)
 
 ### References
 
+awesome explanation - [OverTheWire Wargames :: Natas :: Level 27 (n0j.github.io)](https://n0j.github.io/2017/07/20/otw-natas-27.html)
+
 writeups with correct answers - 
 https://github.com/timruff/overthewire/blob/main/natas/natas27/exploit.py
 https://www.youtube.com/watch?v=87BKWwGEF1Q

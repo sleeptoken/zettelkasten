@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
+                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
+                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
+                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md"
+                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md"
               }
             }
           }
@@ -151,32 +150,32 @@
   },
   "active": "bdb8fe86b61bfe78",
   "lastOpenFiles": [
-    "Ret2dlresolve.md",
-    "Remote Thought/SQL SELECT Tricks & Truncation.md",
-    "Remote Thought/Mastering Traversal & Log based exploits.md",
-    "NOSQL.md",
-    "Hydra & JohnTheRipper.md",
-    "Logic 2.md",
-    "Remote Thought/Ret2Labyrinth.md",
-    "Remote Thought/Netcat w py.md",
-    "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/Blind Grep & RCE w py.md",
-    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
-    "Remote Thought/Cross-site Session Hijacking w py.md",
-    "Remote Thought/File Upload vuln. w py.md",
-    "Remote Thought/PHP Object Injection & Serialization.md",
-    "Remote Thought/PHPSESSID & session handler w py.md",
-    "Remote Thought/Return to Win.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
+    "Remote Thought/Broken Access Control.md",
+    "Remote Thought/Cryptographic Failures.md",
+    "Remote Thought/Flat-file Database.md",
+    "Remote Thought/Path Traversal.md",
+    "Remote Thought/Appdata storage in windows.md",
+    "Remote Thought/LLM attacks.md",
+    "Remote Thought/Security configs.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Authentication and Authorization Bugs.md",
+    "Remote Thought/SSRF Misconceptions.md",
+    "Remote Thought/Magic Numbers.md",
+    "Remote Thought/Fetching from SQLite as b64.md",
+    "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/Time based SQL injection w py.md",
+    "Remote Thought/PHPSESSID & session handler w py.md",
+    "Remote Thought/PCAP analysis.md",
+    "Remote Thought/Cross-site Session Hijacking w py.md",
+    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
+    "Remote Thought/Bypassing Referer-based CSRF defenses.md",
+    "Remote Thought/Bypassing SameSite restrictions.md",
+    "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Remote Thought/Cross-origin resource sharing (CORS).md",
-    "Remote Thought/Format String pwn.md",
-    "Remote Thought/subdomain enum & chamilo exploit.md",
-    "Remote Thought/Enlightenment SUID exploit.md",
-    "Stream Cipher.md",
-    "Tags/WebSocket.md",
-    "Tags/deserialization.md",
-    "Remote Thought/Overwriting variables on the stack.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
