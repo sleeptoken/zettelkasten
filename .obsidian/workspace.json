@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+                "file": "NOSQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+                "file": "NOSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+                "file": "NOSQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md"
+                "file": "NOSQL.md"
               }
             }
           }
@@ -151,6 +151,8 @@
   },
   "active": "bdb8fe86b61bfe78",
   "lastOpenFiles": [
+    "NOSQL.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Broken Access Control.md",
@@ -175,8 +177,6 @@
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Bypassing Referer-based CSRF defenses.md",
     "Remote Thought/Bypassing SameSite restrictions.md",
-    "Remote Thought/Mastering Traversal & Log based exploits.md",
-    "Remote Thought/Cross-origin resource sharing (CORS).md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
