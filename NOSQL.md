@@ -111,7 +111,7 @@ You can alternatively use NoSQL operator injection to extract field names charac
 
 ### *Lab*
 
-
+The user lookup functionality for this lab is powered by a MongoDB NoSQL database.
 
 
 
