@@ -211,6 +211,26 @@ the following payload checks whether the password begins with an a:
 ```json
 {"username":"admin","password":{"$regex":"^a*"}}
 ```
+#### *Lab*
+
+The user lookup functionality for this lab is powered by a MongoDB NoSQL database. It is vulnerable to NoSQL injection. we need to login as jake
+
+We receive an Invalid username or password error message. When attempting to log in to the application with username jake and password invalid. 
+
+change the value of the password parameter from `"invalid"` to `{"$ne":"invalid"}`, then send the request. Notice that you now receive an Account locked error message. You can't access Jake's account, but this response indicates that the `$ne` operator has been accepted and the application is vulnerable. 
+
+Add `"$where": "0"` as an additional parameter in the JSON data as follows: 
+```
+{"username":"carlos","password":{"$ne":"invalid"}, "$where": "0"}
+```
+Send the request. Notice that you receive an Invalid username or password error message.
+Change `"$where": "0"` to `"$where": "1"`, then resend the request. Notice that you receive an Account locked error message. This indicates that the JavaScript in the `$where` clause is being evaluated.
+
+
+
+
+
+
 
 
 
