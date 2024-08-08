@@ -12,7 +12,7 @@ Tags: [[Injection]]
 
 - **Syntax injection** - This occurs when you can break the NoSQL query syntax, enabling you to inject your own payload. The methodology is similar to that used in SQL injection
 - **Operator injection** - This occurs when you can use NoSQL query operators to manipulate queries.
-## NoSQL syntax injection
+# NoSQL syntax injection
 
 - You can potentially detect NoSQL injection vulnerabilities by attempting to break the query syntax. To do this, systematically test each input by submitting fuzz strings and special characters that trigger a database error or some other detectable behavior if they're not adequately sanitized or filtered by the application.
 - If you know the API language of the target database, use special characters and fuzz strings that are relevant to that language. Otherwise, use a variety of fuzz strings to target multiple API languages.
@@ -108,7 +108,6 @@ admin' && this.foo!='
 If the password field exists, you'd expect the response to be identical to the response for the existing field (username), but different to the response for the field that doesn't exist (foo).
 
 You can alternatively use NoSQL operator injection to extract field names character by character. This enables you to identify field names without having to guess or perform a dictionary attack.
-
 ### *Lab*
 
 The user lookup functionality for this lab is powered by a MongoDB NoSQL database.
@@ -116,25 +115,26 @@ we have a access control bug in the lookup functionality as we can see data for 
 we send the payload = `administrator'&&1=='1` -  and we are still able to retrieve account data i.e. it is vulnerable to injection 
 
 the parameter's trigger different responses for true and false conditions. we check this by using
-```
+```sql
 wiener' && '1'=='2   ->   Could not find user. 
 wiener' && '1'=='1   ->   retrieves the account details for the wiener user.
 ```
 
 Identify the password length: 
-```
+```sql
 administrator' && this.password.length < 30 || 'a'=='b
 ```
 Notice that the response retrieves the account details for the administrator user. This indicates that the condition is true because the password is less than 30 characters.
 Reduce the password length in the payload, then resend the request.
 
 putting the request in intruder [[burpsuite]] and by using a cluster bomb attack we could cycle through numbers in the index of the password, and also cycle the alphabets from a to z
-```
+```sql
 administrator' && this.password[§0§]=='§a§
 ```
 by seeing a sudden change in the length of the response we note that, that particular alphabet corresponding to the index is in the password
-sbpknkpr
-## NoSQL operator injection
+
+---
+# NoSQL operator injection
 
 in JSON messages, you can insert query operators as nested objects. For example, `{"username":"wiener"}` becomes `{"username":{"$ne":"invalid"}}`
 
@@ -182,6 +182,37 @@ if you don't find the username by guessing then use [[regex]]
 `^a `means anything that starts with `a`  -  we find a username named `admin7543`
 
 copy the cookie and replace you current cookies with the new ones 
+
+## Exploiting NoSQL operator injection to extract data
+
+You can use **Boolean** conditions to determine whether the application executes any JavaScript that you inject via this operator. 
+
+```json
+{"username":"wiener","password":"peter", "$where":"0"}
+{"username":"wiener","password":"peter", "$where":"1"}
+```
+If there is a difference between the responses, this may indicate that the JavaScript expression in the $where clause is being evaluated. 
+### Extracting field name 
+
+If you have injected an operator that enables you to run JavaScript, you may be able to use the keys() method to extract the name of data fields. 
+```json
+"$where":"Object.keys(this)[0].match('^.{0}a.*')"
+```
+This inspects the first data field in the user object and returns the first character of the field name.
+#### Using [[regex]]
+
+```json 
+{"username":"admin","password":{"$regex":"^.*"}}
+```
+
+If the response to this request is different to the one you receive when you submit an incorrect password, this indicates that the application may be vulnerable. 
+
+the following payload checks whether the password begins with an a:
+```json
+{"username":"admin","password":{"$regex":"^a*"}}
+```
+
+
 
 
 
