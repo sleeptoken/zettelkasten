@@ -220,19 +220,40 @@ We receive an Invalid username or password error message. When attempting to log
 change the value of the password parameter from `"invalid"` to `{"$ne":"invalid"}`, then send the request. Notice that you now receive an Account locked error message. You can't access Jake's account, but this response indicates that the `$ne` operator has been accepted and the application is vulnerable. 
 
 Add `"$where": "0"` as an additional parameter in the JSON data as follows: 
-```
+```json
 {"username":"carlos","password":{"$ne":"invalid"}, "$where": "0"}
 ```
 Send the request. Notice that you receive an Invalid username or password error message.
 Change `"$where": "0"` to `"$where": "1"`, then resend the request. Notice that you receive an Account locked error message. This indicates that the JavaScript in the `$where` clause is being evaluated.
 
+Update the `$where` parameter as follows: 
+```json
+"$where":"Object.keys(this)[1].match('^.{}.*')"
+```
+Add two payload positions. The first identifies the character position number, and the second identifies the character itself:
+```json
+"$where":"Object.keys(this)[1].match('^.{§§}§§.*')"
+```
 
+rest of the attack is better documented below - it involves obtaining the password reset token for `GET /forgot-password` request (a potentially interesting endpoint)  
+https://portswigger.net/web-security/learning-paths/nosql-injection/exploiting-nosql-operator-injection-to-extract-data/nosql-injection/lab-nosql-injection-extract-unknown-fields#
+### Timing based injection
 
+ Sometimes triggering a database error doesn't cause a difference in the application's response. In this situation, you may still be able to detect and exploit the vulnerability by using JavaScript injection to trigger a conditional time delay.
 
+To conduct timing-based NoSQL injection:
 
+> 1. Load the page several times to determine a baseline loading time.
+> 2. Insert a timing based payload into the input. A timing based payload causes an intentional delay in the response when executed. For example,` {"$where": "sleep(5000)"}` causes an intentional delay of `5000 ms` on successful injection.
+> 3. Identify whether the response loads more slowly. This indicates a successful injection.
 
+The following timing based payloads will trigger a time delay if the password beings with the letter a:
+```json
+admin'+function(x){var waitTill = new Date(new Date().getTime() + 5000);while((x.password[0]==="a") && waitTill > new Date()){};}(this)+'
 
+admin'+function(x){if(x.password[0]==="a"){sleep(5000)};}(this)+'
 
+```
 
 
 
