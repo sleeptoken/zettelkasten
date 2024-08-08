@@ -113,13 +113,25 @@ You can alternatively use NoSQL operator injection to extract field names charac
 
 The user lookup functionality for this lab is powered by a MongoDB NoSQL database.
 we have a access control bug in the lookup functionality as we can see data for other accounts that exist 
-we send the payload = `'administrator'&&1=='1'` -  and we are still able to retrieve account data i.e. it is vulnerable to injection 
+we send the payload = `administrator'&&1=='1` -  and we are still able to retrieve account data i.e. it is vulnerable to injection 
+
+the parameter's trigger different responses for true and false conditions. we check this by using
 ```
-'&&username[0]=='a  -  checks if 0th index of username == a
-'%26%26this.password[0]=='a  -  checks if 0th index of password == a
-'%26%26this.password.length=='1  -  checks if 0th index of username == a
+wiener' && '1'=='2   ->   Could not find user. 
+wiener' && '1'=='1   ->   retrieves the account details for the wiener user.
 ```
-putting the request in intruder[[burpsuite]] and by using a cluster bomb attack we could cycle through numbers in the index of the password, and also cycle the alphabets from a to z
+
+Identify the password length: 
+```
+administrator' && this.password.length < 30 || 'a'=='b
+```
+Notice that the response retrieves the account details for the administrator user. This indicates that the condition is true because the password is less than 30 characters.
+Reduce the password length in the payload, then resend the request.
+
+putting the request in intruder [[burpsuite]] and by using a cluster bomb attack we could cycle through numbers in the index of the password, and also cycle the alphabets from a to z
+```
+administrator' && this.password[§0§]=='§a§
+```
 by seeing a sudden change in the length of the response we note that, that particular alphabet corresponding to the index is in the password
 sbpknkpr
 ## NoSQL operator injection
