@@ -15,7 +15,7 @@ Tags:
 1. on uploading a php revshell, click on the image and open in new tab, the file name renamed and the file extension is removed, further the file downloads directly so we can't execute a shell directly.
 2. Next, let’s upload a valid image file and download the previewed file. We can see if the file using any software like `ImageMagick` by using `exiftool`.
 
-
+intercept the request on [[burpsuite]] 
 
 
 
