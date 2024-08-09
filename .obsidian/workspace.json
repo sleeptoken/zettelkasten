@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Race Condition.md",
+                "file": "Remote Thought/chamilo exploit & Good privesc.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Race Condition.md",
+                "file": "Remote Thought/chamilo exploit & Good privesc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Race Condition.md",
+                "file": "Remote Thought/chamilo exploit & Good privesc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Race Condition.md"
+                "file": "Remote Thought/chamilo exploit & Good privesc.md"
               }
             }
           }
@@ -136,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,11 +149,16 @@
   },
   "active": "460cbaa444098d20",
   "lastOpenFiles": [
-    "Remote Thought/NOSQL.md",
-    "Race Condition.md",
-    "Logic 2.md",
+    "Tags/ffuf.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
+    "Race Condition.md",
+    "Remote Thought/Enlightenment SUID exploit.md",
+    "Remote Thought/Netcat w py.md",
     "Remote Thought/Ret2Labyrinth.md",
+    "Stream Cipher.md",
+    "Logic 2.md",
+    "Ret2dlresolve.md",
+    "Remote Thought/NOSQL.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
@@ -172,11 +175,6 @@
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Remote Thought/SSRF Misconceptions.md",
     "Remote Thought/Magic Numbers.md",
-    "Remote Thought/Fetching from SQLite as b64.md",
-    "Remote Thought/Cookie Manipulation.md",
-    "Remote Thought/SQL injection w py.md",
-    "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/PHPSESSID & session handler w py.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

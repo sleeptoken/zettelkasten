@@ -4,7 +4,9 @@
 Source: #natas #web #py 
 
 Tags: [[sql]] [[PHP]]
-# aka SQL Buffer overflow 
+
+> [!NOTE]
+> ### aka SQL Buffer overflow 
 
 we have a login page
 Basically, this code will check if the user exists in the database and if you got the right password, it will display the password. If the user does not exists, it will be created in the database
@@ -39,6 +41,7 @@ the spaces are eventually truncated along with the character appended at the end
 
 we create a user named `"natas28" + " "*58 + "x"` and in the next request we ask for `natas28` and give the password that we used for our user. since MySQL will truncate the input to match the maximum field size. the server returns original natas28's password.  
 ##### In the old version of this level the above mentioned trick worked 
+below is the code that works on the newer version 
 
 ```python
 import requests
