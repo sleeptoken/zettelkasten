@@ -1,7 +1,7 @@
 
 2024-08-09 15:51
 
-Source: #htb #CTF 
+Source: #htb #CTF #privesc 
 
 Tags: 
 
@@ -20,21 +20,30 @@ Tags:
 2. Insert local address(127.0.0.1) in the url field. intercept the request on [[burpsuite]] - The response is showing a image directory location.
 3. This machine might have another port running locally, we can bruteforce the port by using burp intruder, and add a port number from 1–65535.
 4. we find that port 5000 has a different result 
+5. input the url as `http://127.0.0.1:5000` we get an extra response which contains a separate upload path 
+6. when opening the request with that path in it , we see a message .
+7. the message contains different API endpoints and their descriptions.
+8. input the url as `http://127.0.0.1:5000/api/latest/metadata/messages/authors`. Above appended endpoint was found in the message . 
+##### TLDR
+we have a input field named book url, this field has a ssrf vulnerability.
+when entering local address with port 5000 we are able to access some resources i.e. we tell the server to hit API's on our behalf. The resources that we get from the server has login creds for a user named dev. 
+### SSH as dev -> prod
 
+- we have a hidden directory named [[git]]
+ **do not open the .git folder and run the commands** 
+- run git commands from outside the .git directory or `This operation must be run in a work tree` error pops up \
 
+```
+`git log`               -> to see the commits
+`git show commit_id`    -> to view a particular commit 
+```
+we find a message in the commit that has creds to the user named `prod`
+### Privilege Escalation 
 
-
-
-
-
-
-
-
-
-
-
-
-
+user prod has a [[sudo]] privilege.  `sudo -l` 
+```
+(root) /usr/bin/python3 /opt/internal_apps/clone_changes/clone_prod_change.py *
+```
 
 
 
