@@ -14,6 +14,7 @@ notice how and where port number is added
 `git checkout commit-id` - to checkout a particular commit 
 `git tag` - to check the tags 
 `git show tag-name` - to see specific tags
+`git show commit-id`  - to see a particular commit
 
 To push to a remote repo 
 	- Check if .gitignore file exits and if it does then check what it is set to ignore 
