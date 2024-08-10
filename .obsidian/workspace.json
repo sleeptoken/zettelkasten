@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Remote Thought/SSRF & pylib exploit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Remote Thought/SSRF & pylib exploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Remote Thought/SSRF & pylib exploit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Remote Thought/SSRF & pylib exploit.md"
               }
             }
           }
@@ -151,14 +151,16 @@
   },
   "active": "f860fdd9df20b806",
   "lastOpenFiles": [
+    "Remote Thought/SSRF.md",
+    "Remote Thought/SSRF & pylib exploit.md",
+    "Race Condition.md",
+    "Tags/burpsuite.md",
+    "Tags/py.md",
     "Tags/git.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
-    "Untitled.md",
-    "Remote Thought/SSRF.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Tags/ffuf.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
-    "Race Condition.md",
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Netcat w py.md",
     "Remote Thought/Ret2Labyrinth.md",
@@ -175,8 +177,6 @@
     "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/LLM attacks.md",
     "Remote Thought/Security configs.md",
-    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
-    "Remote Thought/Bypassing Stack Canaries.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
