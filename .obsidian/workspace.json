@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "11970d3cf8108be9",
+        "id": "9879058572d2caf9",
         "type": "tabs",
         "children": [
           {
-            "id": "65b08d45e35cbaed",
+            "id": "6ae4dd063de874e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Enlightenment SUID exploit.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b09e1d7f3da8fa2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "Race Condition.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Enlightenment SUID exploit.md",
+                "file": "Race Condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Enlightenment SUID exploit.md",
+                "file": "Race Condition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Enlightenment SUID exploit.md"
+                "file": "Race Condition.md"
               }
             }
           }
@@ -162,10 +149,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "65b08d45e35cbaed",
+  "active": "6ae4dd063de874e9",
   "lastOpenFiles": [
-    "Remote Thought/Privilege Escalation.md",
+    "Remote Thought/LLM attacks.md",
+    "Remote Thought/SQL SELECT Tricks & Truncation.md",
+    "Race Condition.md",
     "Remote Thought/Enlightenment SUID exploit.md",
+    "Remote Thought/Privilege Escalation.md",
     "Tags/SUID.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Tags/scp.md",
@@ -175,21 +165,18 @@
     "Remote Thought/NOSQL.md",
     "Remote Thought/SSRF & pylib exploit.md",
     "Remote Thought/SSRF.md",
-    "Race Condition.md",
     "Tags/burpsuite.md",
     "Tags/py.md",
     "Tags/git.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Tags/ffuf.md",
-    "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/Netcat w py.md",
     "Remote Thought/Ret2Labyrinth.md",
     "Stream Cipher.md",
     "Logic 2.md",
     "Ret2dlresolve.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Remote Thought/vim on more(editor) interactive mode.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
