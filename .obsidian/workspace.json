@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Remote Thought/Stabilizing Shells and RootBash.md"
               }
             }
           }
@@ -151,6 +151,7 @@
   },
   "active": "ca7484de5b5b6f0c",
   "lastOpenFiles": [
+    "Remote Thought/Spawning a TTY shell.md",
     "Untitled.md",
     "OSCP resources.md",
     "Race Condition.md",
@@ -160,7 +161,6 @@
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/SUID.md",
-    "Remote Thought/Spawning a TTY shell.md",
     "Tags/scp.md",
     "Remote Thought/Freq Analysis.md",
     "Remote Thought/PHPSESSID & session handler w py.md",
