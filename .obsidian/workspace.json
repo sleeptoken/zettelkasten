@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "python3 -c",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,12 +66,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -149,7 +149,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca7484de5b5b6f0c",
+  "active": "0cc3d1be09e41370",
   "lastOpenFiles": [
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Spawning a TTY shell.md",
