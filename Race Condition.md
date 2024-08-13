@@ -23,6 +23,17 @@ Now consider what would happen if a user who has never applied this discount cod
 **Limit overruns are a subtype of so-called "time-of-check to time-of-use" (TOCTOU) flaws.** 
 ### Detecting and exploiting limit overrun race conditions 
 
+in high level terms all you need to do is - 
+- Identify a single-use or rate-limited endpoint that has some kind of security impact or other useful purpose.
+ - Issue multiple requests to this endpoint in quick succession to see if you can overrun this limit.
+The primary challenge is timing the requests so that at least two race windows line up, causing a collision. This window is often just milliseconds and can be even shorter. 
+
+The single-packet attack enables you to completely neutralize interference from network jitter by using a single TCP packet to complete 20-30 requests simultaneously. 
+Although you can often use just two requests to trigger an exploit, sending a large number of requests like this helps to mitigate internal latency, also known as server-side jitter. 
+#### *Lab*
+
+
+
 
 
 
