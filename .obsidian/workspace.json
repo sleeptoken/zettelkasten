@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Stabilizing Shells and RootBash.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -151,6 +151,7 @@
   },
   "active": "ca7484de5b5b6f0c",
   "lastOpenFiles": [
+    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Untitled.md",
     "OSCP resources.md",
@@ -176,7 +177,6 @@
     "Remote Thought/Netcat w py.md",
     "Remote Thought/Ret2Labyrinth.md",
     "Stream Cipher.md",
-    "Logic 2.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
