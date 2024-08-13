@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b75a328f2e35d640",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP resources.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Race Condition.md",
+                "file": "OSCP resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Race Condition.md",
+                "file": "OSCP resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Race Condition.md"
+                "file": "OSCP resources.md"
               }
             }
           }
@@ -148,10 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d8c6e916101aa31",
+  "active": "b75a328f2e35d640",
   "lastOpenFiles": [
-    "Remote Thought/API Testing.md",
     "Race Condition.md",
+    "OSCP resources.md",
+    "Remote Thought/API Testing.md",
     "Remote Thought/LLM attacks.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/Enlightenment SUID exploit.md",
@@ -161,7 +176,6 @@
     "Tags/scp.md",
     "Remote Thought/Freq Analysis.md",
     "Remote Thought/PHPSESSID & session handler w py.md",
-    "Untitled.md",
     "Remote Thought/NOSQL.md",
     "Remote Thought/SSRF & pylib exploit.md",
     "Remote Thought/SSRF.md",
