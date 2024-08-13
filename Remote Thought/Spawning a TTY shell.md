@@ -8,6 +8,8 @@ Often during pen tests you may obtain a shell without having `tty`, yet wish to 
 Shell Spawning\
 
 ```
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+
 python -c 'import pty; pty.spawn("/bin/sh")'
 
 echo os.system('/bin/bash') 
