@@ -32,6 +32,17 @@ The single-packet attack enables you to completely neutralize interference from 
 Although you can often use just two requests to trigger an exploit, sending a large number of requests like this helps to mitigate internal latency, also known as server-side jitter. 
 #### *Lab*
 
+> without the session cookie, you can only access an empty cart. From this, you can infer that:
+- The state of the cart is stored server-side in your session.
+- Any operations on the cart are keyed on your session ID or the associated user ID.
+This indicates that there is potential for a collision.
+##### Benchmark the behavior
+
+1. Make sure there is no discount code currently applied to your cart.
+2. Send the request for applying the discount code (`POST /cart/coupon`) to Repeater.
+3. In Repeater, create multiple instances of the request and add the new tabs to a group. 
+4. Select send group in parallel (single packet attack), effectively applying the discount code multiple times at once.
+
 
 
 
