@@ -9,7 +9,7 @@ Tags: [[CSRF]] [[SameSite cookie]]
 
 If servers also use `Lax` restrictions for their session cookies, either explicitly or due to the browser default, you may still be able to perform a CSRF attack by eliciting a `GET` request from the victim's browser. 
 As long as the request involves a top-level navigation, the browser will still include the victim's session cookie. 
-
+2
 Even if an ordinary `GET` request isn't allowed, some frameworks provide ways of overriding the method specified in the request line. For example, `Symfony` supports the `_method `parameter in forms, which takes precedence over the normal method for routing purposes
 
 ### Bypassing SameSite restrictions using on-site gadgets

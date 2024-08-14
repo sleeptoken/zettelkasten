@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Cookie Manipulation.md",
+                "file": "Remote Thought/PHP Object Injection & Serialization.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Cookie Manipulation.md",
+                "file": "Remote Thought/PHP Object Injection & Serialization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Cookie Manipulation.md",
+                "file": "Remote Thought/PHP Object Injection & Serialization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Cookie Manipulation.md"
+                "file": "Remote Thought/PHP Object Injection & Serialization.md"
               }
             }
           }
@@ -149,32 +149,32 @@
   },
   "active": "ca7484de5b5b6f0c",
   "lastOpenFiles": [
+    "Remote Thought/Mastering Traversal & Log based exploits.md",
+    "Remote Thought/NOSQL.md",
+    "Remote Thought/Sudo cat & JohnTheRipper.md",
+    "Remote Thought/Format String pwn.md",
+    "Remote Thought/Enlightenment SUID exploit.md",
+    "Remote Thought/Netcat w py.md",
+    "Remote Thought/Ret2Labyrinth.md",
+    "Remote Thought/SSRF & pylib exploit.md",
+    "Remote Thought/SQL SELECT Tricks & Truncation.md",
+    "Remote Thought/Bypassing SameSite restrictions.md",
+    "Remote Thought/SameSite cookie.md",
+    "Race Condition.md",
+    "Ret2dlresolve.md",
+    "Logic 2.md",
+    "Remote Thought/Pluck Exploit & Depix.md",
+    "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
-    "Remote Thought/SSRF & pylib exploit.md",
     "Tags/py.md",
     "Tags/stego.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "OSCP resources.md",
-    "Race Condition.md",
     "Remote Thought/API Testing.md",
     "Remote Thought/LLM attacks.md",
-    "Remote Thought/SQL SELECT Tricks & Truncation.md",
-    "Remote Thought/Enlightenment SUID exploit.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Tags/SUID.md",
-    "Tags/scp.md",
-    "Remote Thought/Freq Analysis.md",
-    "Remote Thought/PHPSESSID & session handler w py.md",
-    "Remote Thought/NOSQL.md",
-    "Remote Thought/SSRF.md",
-    "Tags/burpsuite.md",
-    "Tags/git.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
-    "Remote Thought/chamilo exploit & Good privesc.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
