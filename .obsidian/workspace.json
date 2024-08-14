@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md",
+                "file": "Remote Thought/Cookie Manipulation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md",
+                "file": "Remote Thought/Cookie Manipulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md",
+                "file": "Remote Thought/Cookie Manipulation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md"
+                "file": "Remote Thought/Cookie Manipulation.md"
               }
             }
           }
@@ -149,8 +149,11 @@
   },
   "active": "ca7484de5b5b6f0c",
   "lastOpenFiles": [
-    "Remote Thought/SSRF & pylib exploit.md",
+    "Remote Thought/Fetching from SQLite as b64.md",
+    "Remote Thought/File Upload vuln. w py.md",
+    "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Pluck Exploit & Depix.md",
+    "Remote Thought/SSRF & pylib exploit.md",
     "Tags/py.md",
     "Tags/stego.md",
     "Remote Thought/Spawning a TTY shell.md",
@@ -172,9 +175,6 @@
     "Tags/git.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
-    "Tags/ffuf.md",
-    "Remote Thought/Netcat w py.md",
-    "Remote Thought/Ret2Labyrinth.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
