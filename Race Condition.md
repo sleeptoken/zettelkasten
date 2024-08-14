@@ -52,9 +52,9 @@ Turbo Intruder is suited to more complex attacks, such as ones that require mult
 - Set the `engine=Engine.BURP2` and `concurrentConnections=1` configuration options for the request engine.
 - When queueing your requests, group them by assigning them to a named gate using the gate argument for the `engine.queue()` method.
 - To send all of the requests in a given group, open the respective gate with the `engine.openGate()` method.
+#### *Lab*
 
-
-
+This lab's login mechanism uses rate limiting to defend against brute-force attacks. However, this can be bypassed due to a race condition. 
 
 
 ### References
