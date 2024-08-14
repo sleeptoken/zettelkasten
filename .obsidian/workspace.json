@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "file": "Race Condition.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "file": "Race Condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "file": "Race Condition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/PHP Object Injection & Serialization.md"
+                "file": "Race Condition.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "ca7484de5b5b6f0c",
   "lastOpenFiles": [
+    "Remote Thought/PHP Object Injection & Serialization.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Remote Thought/NOSQL.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
@@ -174,7 +175,6 @@
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "OSCP resources.md",
     "Remote Thought/API Testing.md",
-    "Remote Thought/LLM attacks.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

@@ -42,8 +42,16 @@ This indicates that there is potential for a collision.
 2. Send the request for applying the discount code (`POST /cart/coupon`) to Repeater.
 3. In Repeater, create multiple instances of the request and add the new tabs to a group. 
 4. Select send group in parallel (single packet attack), effectively applying the discount code multiple times at once.
+### Detecting and exploiting limit overrun race conditions with Turbo Intruder
 
+Turbo Intruder is suited to more complex attacks, such as ones that require multiple retries, staggered request timing, or an extremely large number of requests.
 
+ To use the single-packet attack in Turbo Intruder:
+ 
+- Ensure that the target supports `HTTP/2`. The single-packet attack is incompatible with `HTTP/1`.
+- Set the `engine=Engine.BURP2` and `concurrentConnections=1` configuration options for the request engine.
+- When queueing your requests, group them by assigning them to a named gate using the gate argument for the `engine.queue()` method.
+- To send all of the requests in a given group, open the respective gate with the `engine.openGate()` method.
 
 
 
