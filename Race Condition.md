@@ -55,13 +55,19 @@ Turbo Intruder is suited to more complex attacks, such as ones that require mult
 #### *Lab*
 
 This lab's login mechanism uses rate limiting to defend against brute-force attacks. However, this can be bypassed due to a race condition. 
-1. Observe that if you enter the incorrect password more than three times, you're temporarily blocked from making any more login attempts for the same account.
-2. Try logging in using another arbitrary username and observe that you see the normal Invalid username or password message. This indicates that the rate limit is enforced per-username rather than per-session.
-3. Deduce that the number of failed attempts per username must be stored server-side.
-4. Consider that there may be a race window between:
-    1. When you submit the login attempt.
-    2. When the website increments the counter for the number of failed login attempts associated with a particular username.
 
+> 1. Observe that if you enter the incorrect password more than three times, you're temporarily blocked from making any more login attempts for the same account.
+> 2. Try logging in using another arbitrary username and observe that you see the normal Invalid username or password message. This indicates that the rate limit is enforced per-username rather than per-session.
+> 3. Deduce that the number of failed attempts per username must be stored server-side.
+> 4. Consider that there may be a race window between:
+	 - When you submit the login attempt.
+     - When the website increments the counter for the number of failed login attempts associated with a particular username. 
+
+ Gist - find a `POST /login` request containing an unsuccessful login attempt for your own account. create a group with 20 similar requests and send it in parallelly. Notice that all the all the responses have a invalid pass message
+ 
+Send the group of requests in sequence, using separate connections to reduce the chance of interference. For details on how to do this, see Sending requests in sequence.
+
+Observe that after two more failed login attempts, you're temporarily locked out as expected.
 
 
 for single packet attack we use the `race-single-packet-attack.py` template 
