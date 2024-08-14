@@ -55,7 +55,21 @@ Turbo Intruder is suited to more complex attacks, such as ones that require mult
 #### *Lab*
 
 This lab's login mechanism uses rate limiting to defend against brute-force attacks. However, this can be bypassed due to a race condition. 
+1. Observe that if you enter the incorrect password more than three times, you're temporarily blocked from making any more login attempts for the same account.
+2. Try logging in using another arbitrary username and observe that you see the normal Invalid username or password message. This indicates that the rate limit is enforced per-username rather than per-session.
+3. Deduce that the number of failed attempts per username must be stored server-side.
+4. Consider that there may be a race window between:
+    1. When you submit the login attempt.
+    2. When the website increments the counter for the number of failed login attempts associated with a particular username.
 
+
+
+for single packet attack we use the `race-single-packet-attack.py` template 
+change the username to `admin` and password to `%s`
+```python
+for password in wordlists.clipboard:
+    engine.queue(target.req, password, gate='1')
+```
 
 ### References
 https://portswigger.net/web-security/learning-paths/race-conditions
