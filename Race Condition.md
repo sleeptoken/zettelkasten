@@ -52,11 +52,10 @@ Turbo Intruder is suited to more complex attacks, such as ones that require mult
 - Set the `engine=Engine.BURP2` and `concurrentConnections=1` configuration options for the request engine.
 - When queueing your requests, group them by assigning them to a named gate using the gate argument for the `engine.queue()` method.
 - To send all of the requests in a given group, open the respective gate with the `engine.openGate()` method.
-#### *Lab*
+#### *Lab* - Turbo Intruder [[burpsuite]]
 
 This lab's login mechanism uses rate limiting to defend against brute-force attacks. However, this can be bypassed due to a race condition. 
-
-Predict a potential collision
+###### Predict a potential collision
 
 > 1. Observe that if you enter the incorrect password more than three times, you're temporarily blocked from making any more login attempts for the same account.
 > 2. Try logging in using another arbitrary username and observe that you see the normal Invalid username or password message. This indicates that the rate limit is enforced per-username rather than per-session.
@@ -64,28 +63,44 @@ Predict a potential collision
 > 4. Consider that there may be a race window between:
 	 - When you submit the login attempt.
      - When the website increments the counter for the number of failed login attempts associated with a particular username. 
-
-Benchmark the behavior
+###### Benchmark the behavior
 
 1. Send the group of requests in sequence, using separate connections to reduce the chance of interference. Observe that after two more failed login attempts, you're temporarily locked out as expected.
 
 2. Send the group of requests again, but this time in parallel. Study the responses. Notice that although you have triggered the account lock, more than three requests received the normal Invalid username and password response.
-
-Prove the concept
+###### Prove the concept
 
 1. Right-click on the `POST /login` and select Extensions > Turbo Intruder > Send to turbo intruder.
-2. In Turbo Intruder, in the request editor, mark the password parameter as a payload position with the %s placeholder.
-3. Change the username parameter to carlos.
-4. From the drop-down menu, select the examples/race-single-packet-attack.py template.
-
-TLDR 
-find a `POST /login` request containing an unsuccessful login attempt for your own account. create a group with 20 similar requests and send it in parallelly. Notice that all the all the responses have a invalid pass message
-
-
+2. In Turbo Intruder, in the request editor, mark the `password` parameter as a payload position with the `%s` placeholder.
+3. Change the `username` parameter to `carlos`.
+4. From the drop-down menu, select the `examples/race-single-packet-attack.py` template.
+5. copy the password list and replace the for loop with the one below
 ```python
 for password in wordlists.clipboard:
     engine.queue(target.req, password, gate='1')
 ```
 
+Alternate POC
+```python
+for word in open('/usr/share/wordlists/rockyou.txt').readlines()[0:20]:
+	# check for first 20 passwords 
+	engine......
+def handleResponse(req,interesting):
+	if req.status_coded == 302:      or    	if "successful" in req.response:
+		table.add(req)
+	# add them to the list only if they get 302
+```
+
+Essentially in the script we're queueing 20 requests into this gate and then at the end we're going to open a gate so they all get sent at once
+
+
+
+
+
+
 ### References
 https://portswigger.net/web-security/learning-paths/race-conditions
+
+turbo intruder - https://blog.intigriti.com/hacking-tools/hacker-tools-turbo-intruder
+
+config and uses Turbo Intruder - https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack
