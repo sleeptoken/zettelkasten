@@ -79,8 +79,8 @@ This lab's login mechanism uses rate limiting to defend against brute-force atta
 for password in wordlists.clipboard:
     engine.queue(target.req, password, gate='1')
 ```
+###### Alternate POC
 
-Alternate POC
 ```python
 for word in open('/usr/share/wordlists/rockyou.txt').readlines()[0:20]:
 	# check for first 20 passwords 

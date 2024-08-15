@@ -8,16 +8,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ca7484de5b5b6f0c",
+            "id": "90774bf47c9171a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Race Condition.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -70,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Race Condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Race Condition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Race Condition.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -149,8 +141,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca7484de5b5b6f0c",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Race Condition.md",
+    "Untitled.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/systemd.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
@@ -165,7 +159,6 @@
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/SSRF & pylib exploit.md",
     "Remote Thought/Pluck Exploit & Depix.md",
-    "Race Condition.md",
     "Ret2dlresolve.md",
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
@@ -176,7 +169,6 @@
     "Remote Thought/Netcat w py.md",
     "Remote Thought/Ret2Labyrinth.md",
     "Remote Thought/Bypassing SameSite restrictions.md",
-    "Remote Thought/SameSite cookie.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
