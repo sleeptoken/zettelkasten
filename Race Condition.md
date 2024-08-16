@@ -111,6 +111,27 @@ Next, send the same group of requests at once using the single-packet attack (or
 ##### 3 - Prove the concept
 
 It may help to think of each race condition as a structural weakness rather than an isolated vulnerability. 
+### Multi-endpoint race conditions
+
+Perhaps the most intuitive form of these race conditions are those that involve sending requests to multiple endpoints at the same time. 
+#### Aligning multi-endpoint race windows
+
+When testing for multi-endpoint race conditions, you may encounter issues trying to line up the race windows for each request, even if you send them all at exactly the same time using the single-packet technique.
+This common problem is primarily caused by the following two factors:
+
+- **Delays introduced by network architecture** - For example, there may be a delay whenever the front-end server establishes a new connection to the back-end. The protocol used can also have a major impact.
+ - **Delays introduced by endpoint-specific processing** - Different endpoints inherently vary in their processing times, sometimes significantly so, depending on what operations they trigger.
+#### Connection warming
+
+Back-end connection delays don't usually interfere with race condition attacks because they typically delay parallel requests equally, so the requests stay in sync.
+
+It's essential to be able to distinguish these delays from those caused by endpoint-specific factors. One way to do this is by "warming" the connection with one or more inconsequential requests to see if this smoothens out the remaining processing times. In Burp Repeater, you can try adding a GET request for the homepage to the start of your tab group, then using the Send group in sequence (single connection) option.
+
+- If the first request still has a longer processing time, but the rest of the requests are now processed within a short window, you can ignore the apparent delay and continue testing as normal.
+
+- If you still see inconsistent response times on a single endpoint, even when using the single-packet technique, this is an indication that the back-end delay is interfering with your attack. You may be able to work around this by using Turbo Intruder to send some connection warming requests before following up with your main attack requests.
+
+
 
 ### References
 https://portswigger.net/web-security/learning-paths/race-conditions
