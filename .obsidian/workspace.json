@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Building Android POC app.md",
+                "file": "Remote Thought/Git forensics & pushing to a remote repo.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Building Android POC app.md",
+                "file": "Remote Thought/Git forensics & pushing to a remote repo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Building Android POC app.md",
+                "file": "Remote Thought/Git forensics & pushing to a remote repo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Building Android POC app.md"
+                "file": "Remote Thought/Git forensics & pushing to a remote repo.md"
               }
             }
           }
@@ -150,6 +151,7 @@
   },
   "active": "90774bf47c9171a0",
   "lastOpenFiles": [
+    "Tags/git.md",
     "Building Android POC app.md",
     "Race Condition.md",
     "Remote Thought/Privilege Escalation.md",
@@ -175,7 +177,6 @@
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Netcat w py.md",
     "Remote Thought/Ret2Labyrinth.md",
-    "Remote Thought/Bypassing SameSite restrictions.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

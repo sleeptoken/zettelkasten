@@ -23,6 +23,9 @@ To push to a remote repo
 - `git commit -m "commit-message"`
 - `git push`
 
+If the git repo was deleted and was publicly accessible then try the following method -
+-  **Wayback Machine:** Visit the Wayback Machine and enter the repository URL. This site archives web pages over time, and if the repository was captured, you could find an older version there.
+
 ### References
 
 https://mayadevbe.me/posts/overthewire/bandit/level28/
