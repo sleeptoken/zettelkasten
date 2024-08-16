@@ -93,10 +93,24 @@ def handleResponse(req,interesting):
 
 Essentially in the script we're queueing 20 requests into this gate and then at the end we're going to open a gate so they all get sent at once
 
+### Hidden multi-step sequences
 
+In practice, a single request may initiate an entire multi-step sequence behind the scenes, transitioning the application through multiple hidden states that it enters and then exits again before request processing is complete. We'll refer to these as "sub-states".
 
+If you can identify one or more HTTP requests that cause an interaction with the same data, you can potentially abuse these sub-states to expose time-sensitive variations of the kinds of logic flaws that are common in multi-step workflows. 
+#### Methodology 
+refer - https://portswigger.net/research/smashing-the-state-machine
+##### 1 - Predict potential collisions 
+ask the following questions :
+- Is this endpoint security critical? Many endpoints don't touch critical functionality, 
+- Is there any collision potential? For a successful collision, you typically need two or more requests that trigger operations on the same record.
+##### 2 - Probe for clues
 
+To recognize clues, you first need to benchmark how the endpoint behaves under normal conditions. You can do this in Burp Repeater by grouping all of your requests and using the `Send group in sequence (separate connections)` option
+Next, send the same group of requests at once using the single-packet attack (or last-byte sync if HTTP/2 isn't supported) to minimize network jitter. just like we did in previous 2 labs
+##### 3 - Prove the concept
 
+It may help to think of each race condition as a structural weakness rather than an isolated vulnerability. 
 
 ### References
 https://portswigger.net/web-security/learning-paths/race-conditions
