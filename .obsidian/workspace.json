@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Git forensics & pushing to a remote repo.md",
+                "file": "Building Android POC app.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Git forensics & pushing to a remote repo.md",
+                "file": "Building Android POC app.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Git forensics & pushing to a remote repo.md",
+                "file": "Building Android POC app.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Git forensics & pushing to a remote repo.md"
+                "file": "Building Android POC app.md"
               }
             }
           }
@@ -151,6 +151,7 @@
   },
   "active": "90774bf47c9171a0",
   "lastOpenFiles": [
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Tags/git.md",
     "Building Android POC app.md",
     "Race Condition.md",
@@ -176,7 +177,6 @@
     "Remote Thought/Format String pwn.md",
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Netcat w py.md",
-    "Remote Thought/Ret2Labyrinth.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

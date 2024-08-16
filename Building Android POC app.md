@@ -4,7 +4,7 @@
 Source: #android
 
 Tags: 
-### Application Layout - to be able to display debug info in apps
+### Application Layout - updating text elements in the UI
 
 Entry point is the code that is executed when the app is launched, this is defined in the android manifest config file in the activity tag referencing the activity class
 
@@ -20,8 +20,8 @@ hometext.setText("welcome guys");
 ```
 As you can see the ID is not referenced by a string `"home_text"`, but as an identifier `R.id.home_text`. The resource reference class `R` is automatically generated based on various resources, including the IDs referenced in the layout .`xml` files.
 #### References
-
 [The Application Layout (hextree.io)](https://app.hextree.io/courses/first-android-app/building-a-clicker-app/the-application-layout)
 
+### Handling Button Clicks
 
-
+when developing POC attack apps, it often makes sense to add a button or multiple buttons to trigger the attack 
