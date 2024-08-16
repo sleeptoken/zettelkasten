@@ -15,7 +15,7 @@ in the `design view > (RHS) Attributes ` give the `TextView` a unique identifier
 
 ```java
 TextView hometext = findViewById(R.id.home_text);  
-hometext.setText("welcome guys");
+hometext.setText("welcome guys"); //show text in the app ui
 //setText is the method that will change the text
 ```
 As you can see the ID is not referenced by a string `"home_text"`, but as an identifier `R.id.home_text`. The resource reference class `R` is automatically generated based on various resources, including the IDs referenced in the layout .`xml` files.
@@ -25,3 +25,21 @@ As you can see the ID is not referenced by a string `"home_text"`, but as an id
 ### Handling Button Clicks
 
 when developing POC attack apps, it often makes sense to add a button or multiple buttons to trigger the attack 
+
+- in the layout editor we find multiple components, including a button. drag it into the component tree 
+- adjust the layout constraints in the constraint widget 
+- change the id as we need it later to reference the button in code 
+
+add the following in the text view 
+```java
+Button hommeButton = findViewById(R.id.home_button);  
+hommeButton.setOnClickListener(new View.OnClickListener() {  
+    @Override  
+    public void onClick(View view) {  //code that gets executed on each click
+        Log.i(tag:"HEXTREE", msg:"WELCOME from the button");  //print some text to logcat
+    }  
+});
+```
+#### References
+[Handling Button Clicks (hextree.io)](https://app.hextree.io/courses/first-android-app/building-a-clicker-app/handling-button-clicks)
+
