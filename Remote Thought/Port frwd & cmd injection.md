@@ -1,7 +1,7 @@
 
 2024-08-17 13:23
 
-Source: #htb #CTF 
+Source: #htb #CTF #privesc 
 ### Reconnaissance 
 
 - `nmap` scan shows `22/tcp ssh` & `80/tcp http`
@@ -74,7 +74,7 @@ we see a system monitoring page that is under development and we also see a anal
 keep [[burpsuite]] on for rest of the process
 
 - on capturing the request of analysis of the access.log we don't see anything useful
-- we try command injection in the field that specifies the path of the log file in the burp request and get an error that says `suspicious traffic patterns detected` 
+- we try command [[injection]] in the field that specifies the path of the log file in the burp request and get an error that says `suspicious traffic patterns detected` 
 
 below is the URL encoded payload
 ```shell

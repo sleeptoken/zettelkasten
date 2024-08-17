@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fb301758b3f38acd",
+        "id": "0d2364169453aaed",
         "type": "tabs",
         "children": [
           {
-            "id": "8474d78f31b91487",
+            "id": "fa2180a9c720db86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "htb sea.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "htb sea.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "htb sea.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "htb sea.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -149,10 +149,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8474d78f31b91487",
+  "active": "fa2180a9c720db86",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Remote Thought/Building Android POC app.md",
+    "Ret2dlresolve.md",
+    "Race Condition.md",
+    "Logic 2.md",
+    "OSCP resources.md",
+    "Remote Thought/Port frwd & cmd injection.md",
+    "Remote Thought/Injection.md",
     "Tags/ssh.md",
-    "htb sea.md",
     "Remote Thought/Port Forwarding.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/ffuf.md",
@@ -160,10 +167,8 @@
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Spawning a TTY shell.md",
-    "Race Condition.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/SSRF.md",
-    "Building Android POC app.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Tags/git.md",
     "Tags/systemd.md",
@@ -172,11 +177,6 @@
     "Remote Thought/Return to Win.md",
     "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Path Traversal.md",
-    "Remote Thought/Flat-file Database.md",
-    "OSCP resources.md",
-    "Remote Thought/SQL SELECT Tricks & Truncation.md",
-    "Remote Thought/SSRF & pylib exploit.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
