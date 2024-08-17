@@ -5,11 +5,18 @@ Source: #android
 
 Tags: 
 
-Intents and activities are a fundamental concept of Android. We need to understand how they work in order to look for vulnerabilities later
+``` java
+Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://hextree.io/"));
+startActivity(browserIntent); 
+```
+Activity creates the UI we see and so its farfetched to think that start activity will launch and display such an activity, but which activity will be shown depends on the parameter intent
+what do we intent to open 
+in the above code we intended to VIEW something and the data we pass is the URL 
 
-
-
-
+add the above code after the `counter++;` inside an `if(counter==10)` statement
+and after clicking on the button 10 times the app opens the browser and navigates to the URL we specified 
+#### Gist 
+we created an intent to view a URL and we start activity 
 
 
 
