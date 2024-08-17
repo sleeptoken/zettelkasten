@@ -59,11 +59,11 @@ john --format=bcrypt --wordlist=/usr/share/wordlists/rockyou.txt filename.txt
 
 Run `Linpeas`... we don't really find anything
 I then decided to check if there is anything on Amay’s local host. To do that there is a technique called [[Port Forwarding]]. It basically takes a user’s port and redirect it’s traffic to our port. run the following on your local machine 
-```
+```shell
 ssh -L 4444:localhost:8080 amay@sea.htb
 ```
 If you’re logged in, you’re good to go. If not, check what’s running on your localhost:4444 you can check that by this command:
-```
+```shell
 sudo lsof -i :4444
 ```
 If you see some other services, kill the PID and then try the [[ssh]] command again.
@@ -73,8 +73,14 @@ go to `localhost:4444` in your local browser and login with username as amay and
 we see a system monitoring page that is under development and we also see a analyze button that analyses the log files 
 keep [[burpsuite]] on for rest of the process
 
+- on capturing the request of analysis of the access.log we don't see anything useful
+- we try command injection in the field that specifies the path of the log file in the burp request and get an error that says `suspicious traffic patterns detected` 
 
-
+below is the URL encoded payload
+```shell
+log_file=/root/root.txt%3bcp/dev/shm/sudoers>+/etc/suoderskanalyze_log&analyze_log=
+```
+What this command did is that it inadvertently redirected the content of this file as output, which was then captured and displayed. The exposure occurred due to unintended side effects of the command’s syntax and execution.
 
 ### References
 https://app.hackthebox.com/competitive/6/overview
