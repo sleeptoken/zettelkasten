@@ -33,3 +33,5 @@ to check the hostname in mysql use
 
 ### References
 [[Privilege Escalation]]
+
+[How to Set up SSH Tunneling (Port Forwarding) | Linuxize](https://linuxize.com/post/how-to-setup-ssh-tunneling/)
