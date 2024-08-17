@@ -10,6 +10,7 @@ Tags: [[API]]
 | Authentication describes functionality that identifies a user                                                                | Authorization on the other hand is about what a user is allowed to do.                                                                                                                        |
 | For example your username and password can authenticate, so identify you, so Google can give you access to your Google Mail. | For example in google drive, authorization checks decide if you are allowed to access a certain document, or if you are only allowed to leave comments or even edit the document.             |
 |                                                                                                                              | authorization bugs are about the permissions certain users have, and in big complex applications, especially those used by a big company, you might have very complicated permission systems. |
+
  a lot of apps have certain default permissions for users, or have permissions that seem harmless, but are actually very powerful. In those cases it might be worth reporting it
 
 roles combine multiple permissions. For example the Owner role or editor role. They are massive roles and give you over 4000 individual permissions. While more fine-grained role like “Cloud Run Admin”, gives 20 permissions

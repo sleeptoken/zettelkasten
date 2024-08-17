@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Special Android Features.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Special Android Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Special Android Features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Special Android Features.md"
               }
             }
           }
@@ -151,7 +151,9 @@
   },
   "active": "fa2180a9c720db86",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Authentication and Authorization Bugs.md",
+    "Special Android Features.md",
     "Remote Thought/Building Android POC app.md",
     "Ret2dlresolve.md",
     "Race Condition.md",
@@ -175,8 +177,6 @@
     "Remote Thought/Blind Grep & RCE w py.md",
     "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/Return to Win.md",
-    "Remote Thought/DOM-based XSS.md",
-    "Remote Thought/Path Traversal.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
