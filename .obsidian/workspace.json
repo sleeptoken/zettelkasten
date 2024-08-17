@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "90774bf47c9171a0",
+            "id": "8474d78f31b91487",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Race Condition.md",
+                "file": "htb sea.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Race Condition.md",
+                "file": "htb sea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Race Condition.md",
+                "file": "htb sea.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Race Condition.md"
+                "file": "htb sea.md"
               }
             }
           }
@@ -149,10 +149,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "90774bf47c9171a0",
+  "active": "8474d78f31b91487",
   "lastOpenFiles": [
-    "Remote Thought/SSRF.md",
+    "Remote Thought/Spawning a TTY shell.md",
+    "htb sea.md",
     "Race Condition.md",
+    "Remote Thought/Cryptographic Failures.md",
+    "Remote Thought/SSRF.md",
     "Building Android POC app.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Tags/git.md",
@@ -174,9 +177,6 @@
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Remote Thought/NOSQL.md",
-    "Remote Thought/Sudo cat & JohnTheRipper.md",
-    "Remote Thought/Format String pwn.md",
-    "Remote Thought/Enlightenment SUID exploit.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
