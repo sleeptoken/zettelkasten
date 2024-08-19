@@ -6,6 +6,7 @@ Source: #android
 Tags: [[intent]]
 
 [[Building Android POC app]] sequel  
+### Sending Intents
 
 add the below code after the `counter++;` inside an `if(counter==10)` statement
 and after clicking on the button 10 times the app opens the browser and navigates to the URL we specified 
@@ -27,6 +28,8 @@ in the above code we intended to VIEW something and the data we pass is the URL
 5. but how does the OS know that chrome can handle this? 
 6. well it has to do with the android manifest 
 7. in the android manifest file of chrome in activity-alias -> intent filter which says that it can handle actions to view the following protocols example. http, https etc. 
+### Receiving Intents
+
 
 
 
