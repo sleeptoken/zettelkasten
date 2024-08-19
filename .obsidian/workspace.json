@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -136,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,11 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa2180a9c720db86",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Tags/intent.md",
+    "Special Android Features.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
-    "Special Android Features.md",
     "Remote Thought/Building Android POC app.md",
     "Ret2dlresolve.md",
     "Race Condition.md",
@@ -176,7 +175,6 @@
     "Tags/systemd.md",
     "Remote Thought/Blind Grep & RCE w py.md",
     "Remote Thought/Cookie Manipulation.md",
-    "Remote Thought/Return to Win.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
