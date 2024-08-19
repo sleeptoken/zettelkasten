@@ -4,8 +4,6 @@
 Source: #android 
 
 Tags: [[intent]]
-
-[[Building Android POC app]] sequel  
 ### Sending Intents
 
 add the below code after the `counter++;` inside an `if(counter==10)` statement
@@ -30,10 +28,28 @@ in the above code we intended to VIEW something and the data we pass is the URL
 7. in the android manifest file of chrome in activity-alias -> intent filter which says that it can handle actions to view the following protocols example. http, https etc. 
 ### Receiving Intents
 
+create a new empty view activity(name it `NewActivity`) by going to `new > activity > empty view activity`  
+this automatically adds new activity tag in the android manifest file 
+in order to receive intents we need to expose the activity by changing "false" to "true"
+> `android:exported="true"` - ***while reverse engineering keep an eye out for this***
 
+```xml
+<activity
+	android:name=".NewActivity"
+	android:exported="true">
+	<intent-filter>  
+	    <action android:name="android.intent.action.SEND" />  
+	    <data android:mimeType="text/plain"/>  
+	    <category android:name="android.intent.category.DEFAULT" />  
+	</intent-filter>
+</activity>
+```
 
+- `android:exported="true"`  ->   adding this will tell that we can only handle sent intents
+- `data android:mimeType="text/plain"`   ->   where the included data is just plain text 
+- `category android:name="android.intent.category.DEFAULT" ` ->   we use the category default. this means the app is happy to present itself to handle this kind of data as default app 
 
-
+Further create a text like in [[Building Android POC app]] and give it the id of debug_text
 ### References
 
 android manifest of chrome - [chrome/android/java/AndroidManifest.xml - chromium/src - Git at Google (googlesource.com)](https://chromium.googlesource.com/chromium/src/+/b71e98cdf14f18cb967a73857826f6e8c568cea0/chrome/android/java/AndroidManifest.xml#156)
