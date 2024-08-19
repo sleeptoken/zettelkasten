@@ -136,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,7 +148,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "fa2180a9c720db86",
   "lastOpenFiles": [
     "Tags/intent.md",
     "Special Android Features.md",

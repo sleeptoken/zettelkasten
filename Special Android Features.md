@@ -4,6 +4,8 @@
 Source: #android 
 
 Tags: [[intent]]
+
+[[Building Android POC app]] sequel  
 ### Sending Intents
 
 add the below code after the `counter++;` inside an `if(counter==10)` statement
@@ -49,7 +51,23 @@ in order to receive intents we need to expose the activity by changing "false" t
 - `data android:mimeType="text/plain"`   ->   where the included data is just plain text 
 - `category android:name="android.intent.category.DEFAULT" ` ->   we use the category default. this means the app is happy to present itself to handle this kind of data as default app 
 
-Further create a text like in [[Building Android POC app]] and give it the id of debug_text
+Further create a text like in [[Building Android POC app]] and give it the id of `debug_text`
+add the following code to the `NewActivity.java` file
+```java
+Intent receivedIntent = getIntent();  // access the incoming intent 
+String sharedText = receivedIntent.getStringExtra(Intent.EXTRA_TEXT);  
+if(sharedText!=null){  
+    TextView debugText = findViewById(R.id.debug_text);  
+    debugText.setText("Shared: "+sharedText);  
+}
+```
+
+#### How will we receive intents
+
+when you select a text and choose to share, our app will show up in the android sharesheet because of the code in the `intent-filter`
+#### Attack surface
+
+the fact that we have an exposed activity handling an incoming intent. this is a attack surface in itself. 
 ### References
 
 android manifest of chrome - [chrome/android/java/AndroidManifest.xml - chromium/src - Git at Google (googlesource.com)](https://chromium.googlesource.com/chromium/src/+/b71e98cdf14f18cb967a73857826f6e8c568cea0/chrome/android/java/AndroidManifest.xml#156)
