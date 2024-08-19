@@ -45,5 +45,6 @@ hommeButton.setOnClickListener(new View.OnClickListener() {
 ### Decompiling apps
 
 we use `jadx` for decomplication 
-- apk - this is a file that contains all the other files necessary to install and run our app
-- when publishing on play store we upload a .aad(Android App Bundle) these bundles are like .apks, but contain a lot more information. this allows the play store to generate optimized .apks for users. 
+- `.apk` - this is a file that contains all the other files necessary to install and run our app
+- when publishing on play store we upload a `.aad(Android App Bundle)` these bundles are like `.apks`, but contain a lot more information. this allows the play store to generate optimized `.apks` for users. 
+> look at android manifest files first cause that tells us about the exposed attack surface 
