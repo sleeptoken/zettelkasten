@@ -42,4 +42,8 @@ hommeButton.setOnClickListener(new View.OnClickListener() {
 ```
 #### References
 [Handling Button Clicks (hextree.io)](https://app.hextree.io/courses/first-android-app/building-a-clicker-app/handling-button-clicks)
+### Decompiling apps
 
+we use `jadx` for decomplication 
+- apk - this is a file that contains all the other files necessary to install and run our app
+- when publishing on play store we upload a .aad(Android App Bundle) these bundles are like .apks, but contain a lot more information. this allows the play store to generate optimized .apks for users. 
