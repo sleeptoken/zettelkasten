@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Building Android POC app.md",
+                "file": "Remote Thought/Special Android Features.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Building Android POC app.md",
+                "file": "Remote Thought/Special Android Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Building Android POC app.md",
+                "file": "Remote Thought/Special Android Features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Building Android POC app.md"
+                "file": "Remote Thought/Special Android Features.md"
               }
             }
           }
@@ -149,13 +149,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa2180a9c720db86",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Special Android Features.md",
+    "Remote Thought/Building Android POC app.md",
+    "Remote Thought/Special Android Features.md",
     "Tags/intent.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
-    "Remote Thought/Building Android POC app.md",
     "Ret2dlresolve.md",
     "Race Condition.md",
     "Logic 2.md",

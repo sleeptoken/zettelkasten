@@ -2,8 +2,6 @@
 2024-08-15 16:06
 
 Source: #android
-
-Tags: 
 ### Application Layout - updating text elements in the UI
 
 Entry point is the code that is executed when the app is launched, this is defined in the android manifest config file in the activity tag referencing the activity class
@@ -48,3 +46,9 @@ we use `jadx` for decomplication
 - `.apk` - this is a file that contains all the other files necessary to install and run our app
 - when publishing on play store we upload a `.aad(Android App Bundle)` these bundles are like `.apks`, but contain a lot more information. this allows the play store to generate optimized `.apks` for users. 
 > look at android manifest files first cause that tells us about the exposed attack surface 
+
+### Debugging
+
+- select the line number in android studio to set up a breakpoint and then  run the app in debug mode
+- hit the breakpoint then walkthrough the app execution line by line
+- we can modify variables by right clicking and selecting `set value`

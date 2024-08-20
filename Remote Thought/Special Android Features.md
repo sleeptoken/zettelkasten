@@ -61,7 +61,6 @@ if(sharedText!=null){
     debugText.setText("Shared: "+sharedText);  
 }
 ```
-
 #### How will we receive intents
 
 when you select a text and choose to share, our app will show up in the android sharesheet because of the code in the `intent-filter`
