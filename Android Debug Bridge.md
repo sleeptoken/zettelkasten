@@ -3,8 +3,6 @@
 
 Source: #android 
 
-Tags:  
-
 ADB consists of 3 parts
 - **Client**
 	- Both client and the server run on the computer 
@@ -72,5 +70,31 @@ adb uninstall <package_name>
 Uninstalls the specified application.
 
 You can find the full documentation for pm [here](https://developer.android.com/tools/adb#pm).
+### adb logcat
+
+```
+adb logcat -v <log_format>
+```
+Change the log format - for example using `brief` to get a more condensed version of the log.
+
+example on how to read a log message - 
+
+`I/WifiService( 324): startScan uid=10107`
+
+- `I` - indicated severity of the log line. There are 7 different severities
+- `WifiService` - tag of the log message, can be chosen by the app programmer and in most cases indicates the service or the activity from which the log message originated
+- `324` - process id of the logging process
+- the rest is the log message 
+### Log Filtering
+
+In some cases there can be lots of log entries which makes it hard to focus on the things that matter. For example if you are only interested in the logs produced by the `MainActivity`, you can use a log filter for that:
+
+```
+adb logcat "MainActivity:V *:S"
+```
+
+Filter format:
+- `MainActivity:V` ensures that logs from the tag `MainActivity` with a severity of Verbose and above are logged
+- `*:S` Ensures that all other Tags are ignored (as nothing will log with log-level Silent or above)
 ### References
 [Research Device & Emulator Setup (hextree.io)](https://app.hextree.io/courses/research-device-setup/the-android-debug-bridge-adb)
