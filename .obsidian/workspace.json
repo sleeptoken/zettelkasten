@@ -151,8 +151,9 @@
   },
   "active": "4d655531e43a5a14",
   "lastOpenFiles": [
-    "Remote Thought/Special Android Features.md",
+    "adb.md",
     "Android Debug Bridge.md",
+    "Remote Thought/Special Android Features.md",
     "Race Condition.md",
     "OSCP resources.md",
     "Remote Thought/Building Android POC app.md",
@@ -176,7 +177,6 @@
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Tags/git.md",
     "Tags/systemd.md",
-    "Remote Thought/Blind Grep & RCE w py.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
