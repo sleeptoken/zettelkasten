@@ -130,11 +130,19 @@ It's essential to be able to distinguish these delays from those caused by endpo
 - If the first request still has a longer processing time, but the rest of the requests are now processed within a short window, you can ignore the apparent delay and continue testing as normal.
 
 - If you still see inconsistent response times on a single endpoint, even when using the single-packet technique, this is an indication that the back-end delay is interfering with your attack. You may be able to work around this by using Turbo Intruder to send some connection warming requests before following up with your main attack requests.
+#### Abusing rate or resource limiting
+
+By sending a large number of dummy requests to intentionally trigger the rate or resource limit, you may be able to cause a suitable server-side delay. This makes the single-packet attack viable even when delayed execution is required. 
+##### *Lab*
+
+have something in the cart and on removing the cookies from the request we see our cart is empty this is telling us that the state of the cart is stored server side in our session and any operations on the cart will be keyed onto the session ID and that does indicate a potential Collision
+
+
 
 
 
 ### References
-https://portswigger.net/web-security/learning-paths/race-conditions
+https://portswigger.net/web-security/race-conditions
 
 turbo intruder - https://blog.intigriti.com/hacking-tools/hacker-tools-turbo-intruder
 
