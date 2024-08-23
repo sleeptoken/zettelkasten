@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fa2180a9c720db86",
+            "id": "4d655531e43a5a14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Race Condition.md",
+                "file": "Android Debug Bridge.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Race Condition.md",
+                "file": "Android Debug Bridge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Race Condition.md",
+                "file": "Android Debug Bridge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Race Condition.md"
+                "file": "Android Debug Bridge.md"
               }
             }
           }
@@ -149,16 +149,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa2180a9c720db86",
+  "active": "4d655531e43a5a14",
   "lastOpenFiles": [
-    "OSCP resources.md",
     "Remote Thought/Special Android Features.md",
+    "Android Debug Bridge.md",
+    "Race Condition.md",
+    "OSCP resources.md",
     "Remote Thought/Building Android POC app.md",
     "Tags/intent.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
     "Ret2dlresolve.md",
-    "Race Condition.md",
     "Logic 2.md",
     "Remote Thought/Port frwd & cmd injection.md",
     "Remote Thought/Injection.md",
@@ -176,7 +177,6 @@
     "Tags/git.md",
     "Tags/systemd.md",
     "Remote Thought/Blind Grep & RCE w py.md",
-    "Remote Thought/Cookie Manipulation.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
