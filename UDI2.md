@@ -1,9 +1,10 @@
 
 2024-08-24 16:30
 
-Source: 
+Source: #htb #CTF 
 
-Tags: 
+Tags: [[Binary Exploit]]
+
 
 
 

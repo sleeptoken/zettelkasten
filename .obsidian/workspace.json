@@ -135,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,8 +149,12 @@
   },
   "active": "af23fefde8580270",
   "lastOpenFiles": [
-    "Remote Thought/Android Debug Bridge.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Tags/netcat.md",
+    "Tags/bash.md",
     "UDI2.md",
+    "Remote Thought/Clickjacking.md",
+    "Remote Thought/Android Debug Bridge.md",
     "Tags/adb.md",
     "Remote Thought/Special Android Features.md",
     "Race Condition.md",
@@ -172,10 +175,6 @@
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Cryptographic Failures.md",
-    "Remote Thought/SSRF.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
-    "Tags/git.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
