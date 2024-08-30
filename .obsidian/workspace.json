@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UDI2.md",
+                "file": "How to Skip Illegal Instructions in Executables.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UDI2.md",
+                "file": "How to Skip Illegal Instructions in Executables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UDI2.md",
+                "file": "How to Skip Illegal Instructions in Executables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UDI2.md"
+                "file": "How to Skip Illegal Instructions in Executables.md"
               }
             }
           }
@@ -149,9 +149,10 @@
   },
   "active": "af23fefde8580270",
   "lastOpenFiles": [
+    "Tags/Ghidra.md",
+    "How to Skip Illegal Instructions in Executables.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/SameSite cookie.md",
-    "UDI2.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/netcat.md",
     "Tags/bash.md",
@@ -174,7 +175,6 @@
     "Tags/ffuf.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/Enlightenment SUID exploit.md",
-    "Remote Thought/Privilege Escalation.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
