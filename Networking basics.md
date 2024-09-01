@@ -28,8 +28,9 @@ that will send an http request to a URL then read the result and show the return
 in the logcat output we see an error exception that says cleartext http traffic not permitted
 
 > **If you are using default networking methods provided by android, then it actually tries to prevent you from making the mistake to allow clear text HTTP traffic.**
-### Apps need to explicitly ask for internet perms
+### INTERNET permissions
 
+Apps need to explicitly ask for internet perms
 - change the URL from http to https, app still doesn't work 
 - This time we have a security exception: Permission denied (missing INTERNET permission)
 
@@ -39,26 +40,32 @@ below tag written just before the application tag in android manifest
 ```
 > **In order for apps to be able to access the internet the application has to explicitly request this permission in their android manifest**
 
-### we can see insecure traffic perms in AndroidManifest
+unlike application level stuff, networking access through sockets, can be blocked on an operating system level,
+if that permission is not there and we try to create a TCP socket, in the logs we can see the security permission exception.
+### Cleartext Traffic 
 
 If we want to still allow http cleartext traffic then we need to add an application flag -
-```
+```json
 android:usesCleartextTraffic="true"
 ```
 this flag allows us to tell the application framework we would like to use cleartext traffic.
 
 > **If an app uses insecure http we probably can see that already in the android manifest** 
+#### Alternate method to see perms
 
-alternate
 using the `network_security_config.xml`, which is a separate XML file in the XML folder, 
-apps can be more explicit about these kind of exceptions for example only allowing cleartext traffic for a specific domain 
-search for `android:networkSecurityConfig="@xml/network_security_config"` in the android  manifest file 
+apps can be more explicit about these kind of exceptions 
+for example - only allowing cleartext traffic for a specific domain 
+
+> search for `android:networkSecurityConfig="@xml/network_security_config"` in the android manifest file 
+#### give perms w/o using the application flag 
 
 this cleartext traffic protection is an application level flag i.e. the app can honor it or not
-the developer can use TCP sockets directly 
+the developer can use TCP sockets directly to send cleartext traffic without having to allow it in the manifest 
 we can theoretically bypass this setting by using TCP sockets 
 
-unlike application level stuff, networking access through sockets, can be blocked on an operating system level 
+this flag isn't useless because if it is used then we know the app expects to use ClearText traffic. 
+
 
 ### References
 [The INTERNET Permission (hextree.io)](https://app.hextree.io/courses/network-interception/android-networking-basics/the-internet-permission)
