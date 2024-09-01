@@ -2,8 +2,6 @@
 2024-09-01 15:12
 
 Source: #android 
-
-Tags: 
 ### Android prevents you from accidently using unencrypted traffic 
 
 Replacing the button onclick handler with this code

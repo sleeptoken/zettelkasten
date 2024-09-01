@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
+                "file": "Internet perms & Networking.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -88,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
+                "file": "Internet perms & Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
+                "file": "Internet perms & Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md"
+                "file": "Internet perms & Networking.md"
               }
             }
           }
@@ -152,10 +151,10 @@
   },
   "active": "04f0bf1896ac9684",
   "lastOpenFiles": [
+    "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Building Android POC app.md",
     "Remote Thought/Special Android Features.md",
-    "Networking basics.md",
-    "Remote Thought/Android Debug Bridge.md",
+    "Internet perms & Networking.md",
     "How to Skip Illegal Instructions in Executables.md",
     "Tags/Ghidra.md",
     "Remote Thought/SameSite cookie.md",
