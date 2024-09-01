@@ -21,7 +21,10 @@ Referring to [Intel® 64 and IA-32 Architectures Software Developer Manual, Vol
  - let’s select the rest of the code that hasn’t been disassembled and disassemble it by pressing “D”. 
  - Next, let’s replace all occurrences of the `UD2` instruction with a `NOP`
  - After doing so, we can immediately see that there are 4 `strcmp`'s comparing the user input with string constants. And the flag seems to be a concatenation of these constants
+### Alternate
 
+open the file using `xxd` 
+After that it says `Itz._0n.Ly_.UD2`. I am not sure why those dots are there but if you remove them and try to use the cleaned up string `Itz_0nLy_UD2` as the password you will get the flag which is basically the same string.
 ## But how does it work?
 
 
