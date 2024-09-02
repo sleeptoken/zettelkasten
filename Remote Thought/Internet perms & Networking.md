@@ -67,10 +67,10 @@ this flag isn't useless because if it is used then we know the app expects to us
 in order to intercept these traffics see[[Packet logging with tcpdump]]
 
 ---
-
 ## Network Interception using burp
 
 most mobile apps use HTTP, we need to configure burpsuite so that we can see manipulate and replay requests
+#### Setup
 
 in burp 
 1. go to proxy settings
@@ -82,11 +82,17 @@ in emulator
 3. add the IP of the machine that has burp and the port where burp is listening on 
 
 this allows us to perform a MITM attack against our phone, we are proxying or redirecting HTTP traffic through burp 
+#### Event log for troubleshooting
 
-- bottom left has an event log that can log errors in [[burpsuite]]
+bottom left has an event log that can log errors in [[burpsuite]]
 - if we try to set up an HTTP proxy and it doesn't  seems to work, check if we see domains showing up in the event logs
 - if nothing shows up ,there's may be a connection problem between phone and our proxy 
+- if errors show up, it means that the app rejected to communicate with your proxy, usually due to certificate errors.
 
+this setup is a Machine in the Middle setup
+
+- if the app runs into some sort of timeout error while you intercept the response and manipulate it, then a turn around for this problem is to disable interception go to > proxy settings > match and replace rule
+- here set the type to Response body and change the match and replace parameters accordingly.
 
 ### References
 [The INTERNET Permission (hextree.io)](https://app.hextree.io/courses/network-interception/android-networking-basics/the-internet-permission)
