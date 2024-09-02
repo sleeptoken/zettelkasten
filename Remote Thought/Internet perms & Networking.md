@@ -64,6 +64,5 @@ we can theoretically bypass this setting by using TCP sockets
 
 this flag isn't useless because if it is used then we know the app expects to use ClearText traffic. 
 
-
 ### References
 [The INTERNET Permission (hextree.io)](https://app.hextree.io/courses/network-interception/android-networking-basics/the-internet-permission)
