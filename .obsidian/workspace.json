@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "04f0bf1896ac9684",
+            "id": "91befdfd4e90f73b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Internet perms & Networking.md",
+                "file": "Remote Thought/Packet logging with tcpdump.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Internet perms & Networking.md",
+                "file": "Remote Thought/Packet logging with tcpdump.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Internet perms & Networking.md",
+                "file": "Remote Thought/Packet logging with tcpdump.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Internet perms & Networking.md"
+                "file": "Remote Thought/Packet logging with tcpdump.md"
               }
             }
           }
@@ -148,14 +149,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "91befdfd4e90f73b",
   "lastOpenFiles": [
-    "Tags/OSINT.md",
     "Remote Thought/Internet perms & Networking.md",
+    "Remote Thought/Packet logging with tcpdump.md",
+    "Race Condition.md",
+    "OSCP resources.md",
+    "How to Skip Illegal Instructions in Executables.md",
+    "Tags/OSINT.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Building Android POC app.md",
     "Remote Thought/Special Android Features.md",
-    "How to Skip Illegal Instructions in Executables.md",
     "Tags/Ghidra.md",
     "Remote Thought/SameSite cookie.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
@@ -163,8 +167,6 @@
     "Tags/bash.md",
     "Remote Thought/Clickjacking.md",
     "Tags/adb.md",
-    "Race Condition.md",
-    "OSCP resources.md",
     "Tags/intent.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
@@ -175,7 +177,6 @@
     "Tags/ssh.md",
     "Remote Thought/Port Forwarding.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
-    "Tags/ffuf.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

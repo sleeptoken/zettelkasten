@@ -27,8 +27,6 @@ open the file using `xxd`
 After that it says `Itz._0n.Ly_.UD2`. I am not sure why those dots are there but if you remove them and try to use the cleaned up string `Itz_0nLy_UD2` as the password you will get the flag which is basically the same string.
 ## But how does it work?
 
-
-
 ### References
 https://app.hackthebox.com/challenges/Behind%20the%20Scenes
 writeups- 
