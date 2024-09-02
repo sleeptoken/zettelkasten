@@ -36,5 +36,6 @@ This means that if we would see an attacked sending and receiving sensitive data
 - Android itself sends a clear text HTTP request, but just to check whether internet access works, for example, to check whether there is a WiFi captive portal or not. And you couldn't do that with HTTPS traffic due to various things that can go wrong there. 
 - So this clear text traffic is not a vulnerability, but we could argue that our example app is vulnerable because an active attacker performing a machine in the middle attack who is sitting in the network, who can modify the clear text responses, they could change the response here and that is displayed to the user. 
 
+
 ### References
 [Packet Logging with tcpdump (hextree.io)](https://app.hextree.io/courses/network-interception/android-networking-basics/packet-logging-with-tcpdump)

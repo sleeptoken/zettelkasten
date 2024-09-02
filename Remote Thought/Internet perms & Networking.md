@@ -64,5 +64,29 @@ we can theoretically bypass this setting by using TCP sockets
 
 this flag isn't useless because if it is used then we know the app expects to use ClearText traffic. 
 
+in order to intercept these traffics see[[Packet logging with tcpdump]]
+
+---
+
+## Network Interception using burp
+
+most mobile apps use HTTP, we need to configure burpsuite so that we can see manipulate and replay requests
+
+in burp 
+1. go to proxy settings
+2. change the interface the proxy will listen on from local host to all interface ,i.e. any device on my local network can reach burp including my physical phone 
+
+in emulator
+1. go to settings > network & internet > internet > Wi-Fi / network details 
+2. then edit the Wi-Fi > change proxy to manual 
+3. add the IP of the machine that has burp and the port where burp is listening on 
+
+this allows us to perform a MITM attack against our phone, we are proxying or redirecting HTTP traffic through burp 
+
+- bottom left has an event log that can log errors in [[burpsuite]]
+- if we try to set up an HTTP proxy and it doesn't  seems to work, check if we see domains showing up in the event logs
+- if nothing shows up ,there's may be a connection problem between phone and our proxy 
+
+
 ### References
 [The INTERNET Permission (hextree.io)](https://app.hextree.io/courses/network-interception/android-networking-basics/the-internet-permission)
