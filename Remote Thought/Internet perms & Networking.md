@@ -91,8 +91,12 @@ bottom left has an event log that can log errors in [[burpsuite]]
 
 this setup is a Machine in the Middle setup
 
-- if the app runs into some sort of timeout error while you intercept the response and manipulate it, then a turn around for this problem is to disable interception go to > proxy settings > match and replace rule
+- if the app runs into some sort of timeout error while you intercept the response and manipulate it, then a turn around for this problem is to > disable interception and go to > proxy settings > match and replace rule.
 - here set the type to Response body and change the match and replace parameters accordingly.
 
+Apps can bypass proxy setting by using TCP sockets 
+when apps do ignore the proxy settings we have to use techniques like - 
+- Patching with apktool
+- Dynamic instrumentation 
 ### References
 [The INTERNET Permission (hextree.io)](https://app.hextree.io/courses/network-interception/android-networking-basics/the-internet-permission)
