@@ -165,8 +165,12 @@ By sending a large number of dummy requests to intentionally trigger the rate or
  For this attack to work, the different operations performed by each process must occur in just the right order. It would likely require multiple attempts, or a bit of luck, to achieve the desired outcome.
 
 Email address confirmations, or any email-based operations, are generally a good target for single-endpoint race conditions. Emails are often sent in a background thread after the server issues the HTTP response to the client, making race conditions more likely. 
+##### *Lab*
 
-
+you send an email change request to `admin@email` and an email change request link is sent to `admin@email `
+we don't have access to `admin@email`
+we only have access to our exploit mail server that receives emails from any user using the exploit server subdomain.
+###### Predict a potential collision
 
 
 
