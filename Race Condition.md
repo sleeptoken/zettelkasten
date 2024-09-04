@@ -162,10 +162,9 @@ in the last step try changing the quantity of the cheaper item if the cheaper it
 By sending a large number of dummy requests to intentionally trigger the rate or resource limit, you may be able to cause a suitable server-side delay. This makes the single-packet attack viable even when delayed execution is required. 
 ### Single-endpoint race conditions
 
-Sending parallel requests with different values to a single endpoint can sometimes trigger powerful race conditions. 
-Consider a password reset mechanism that stores the user ID and reset token in the user's session.
-In this scenario, sending two parallel password reset requests from the same session, but with two different usernames, could potentially cause a collision
+ For this attack to work, the different operations performed by each process must occur in just the right order. It would likely require multiple attempts, or a bit of luck, to achieve the desired outcome.
 
+Email address confirmations, or any email-based operations, are generally a good target for single-endpoint race conditions. Emails are often sent in a background thread after the server issues the HTTP response to the client, making race conditions more likely. 
 
 
 
