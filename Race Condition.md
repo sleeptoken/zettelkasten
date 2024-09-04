@@ -169,12 +169,29 @@ Email address confirmations, or any email-based operations, are generally a good
 
 you send an email change request to `admin@email` and an email change request link is sent to `admin@email `
 we don't have access to `admin@email`
-we only have access to our exploit mail server that receives emails from any user using the exploit server subdomain.
+we have access to our exploit mail server that receives emails from any user using the exploit server subdomain.
 ###### Predict a potential collision
 
+- Try submitting two different email addresses in succession, then go to the email client w same subdomain.
+- Notice that if you try to use the first confirmation link you received, this is no longer valid. From this, you can infer that the website only stores one pending email address at a time. As submitting a new email address edits this entry in the database rather than appending to it, there is potential for a collision.
+###### Benchmark the behavior\
 
+- create a group of `POST /my-account/change-email` requests in Repeater, duplicate it with a different email id w same subdomain 
+- Send the group of requests in sequence over separate connections. 
+- we see that in the email server we have a confirmation link for all the emails we added, as expected
+###### Probe for clues
 
+1. in Repeater, send the group of requests again, but this time in parallel, effectively attempting to change the pending email address to multiple different values at the same time. 
+2. Go to the email client and study the new set of confirmation emails you've received. Notice that, this time, the recipient address doesn't always match the pending new email address.
+3. Consider that there may be a race window between when the website:
+    - Kicks off a task that eventually sends an email to the provided address.
+    - Retrieves data from the database and uses this to render the email template.
+4. Deduce that when a parallel request changes the pending email address stored in the database during this window, this results in confirmation emails being sent to the wrong address.
+###### Prove the concept
 
+- create a new group of only 2 requests of `POST /my-account/change-email`
+- one having the email of the admin and the other having the email w our email server domain 
+- send the group in parallel, we get an email asking us to confirm to change the email to `admin@email`
 ### References
 https://portswigger.net/web-security/race-conditions
 
