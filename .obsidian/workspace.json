@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -150,6 +151,7 @@
   },
   "active": "3f608f18b06f79d0",
   "lastOpenFiles": [
+    "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/How to Skip Illegal Instructions in Executables.md",
@@ -165,7 +167,6 @@
     "Tags/nmap.md",
     "Remote Thought/Pluck Exploit & Depix.md",
     "Ret2dlresolve.md",
-    "Remote Thought/Internet perms & Networking.md",
     "Tags/burpsuite.md",
     "Tags/OSINT.md",
     "Remote Thought/Android Debug Bridge.md",
