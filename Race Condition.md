@@ -143,10 +143,23 @@ have something in the cart and on removing the session cookies from the request 
 we should also notice that whenever we made the successful purchase it was also part of **a single request response cycle** and that creates the opportunity for race condition
 ###### Probe - benchmark the behavior  
 
-get the POST request in repeater that is made just before the purchase, that shows the productid & quantity and the checkout request, create a group
+- get the POST request in repeater that is made to add items in the cart, that shows the productid & quantity and also add the checkout request, then create a group 
+- send the single connection request, we see that the 1st req. came back in 441 milliseconds the second one came back in 137
+- This is known as warming the connection so to do that we could potentially add a request to our repeater group of the homepage 
 
-
+> essentially we added that inconsequential request at the beginning just making a call to the home home page and that warmed the connection meaning that the time between the second and third requests were a lot smaller, it created a smaller window and this is an indication that the delay is caused by the backend Network architecture rather than the respective processing time of each endpoint and therefore it's not likely to interfere with the attack
 ###### Prove - Exploit the race condition 
+
+when we change the productid in the 2nd request from the group to an expensive product and send the group as single connection then we see the last checkout response says insufficient funds which is exactly what we expected 
+
+- add the cheaper item in the cart and remove everything else
+- and having the same group of requests in repeater we change the product id to the expensive item's product id 
+- and send the whole groups request in parallel
+
+what happened there we had the cheaper item in our carts and we purchased the cheaper item using the `POST cart/checkout` but at the same time we sent another request , it didn't change the item because we still had the cheaper item there but it added the expensive leather jacket to the cart and we basically exploited that race window so in between the time of it checking the cart and then actually making the purchase we were able to update the cart's contents
+##### Alternate 
+
+in the last step try changing the quantity of the cheaper item if the cheaper item is a gift card, then buy sufficient gift cards (its usually limited to 3 digits to 2 digits so change quantity to `99`) and buy the expensive item.
 
 ### References
 https://portswigger.net/web-security/race-conditions
