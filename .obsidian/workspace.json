@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -135,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,6 +151,7 @@
   },
   "active": "663d634744868594",
   "lastOpenFiles": [
+    "Race Condition.md",
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/Special Android Features.md",
     "SMB shares.md",
@@ -158,7 +161,6 @@
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Tags/nmap.md",
     "Remote Thought/Pluck Exploit & Depix.md",
-    "Race Condition.md",
     "Ret2dlresolve.md",
     "OSCP resources.md",
     "How to Skip Illegal Instructions in Executables.md",
