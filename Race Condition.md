@@ -130,12 +130,7 @@ It's essential to be able to distinguish these delays from those caused by endpo
 - If the first request still has a longer processing time, but the rest of the requests are now processed within a short window, you can ignore the apparent delay and continue testing as normal.
 
 - If you still see inconsistent response times on a single endpoint, even when using the single-packet technique, this is an indication that the back-end delay is interfering with your attack. You may be able to work around this by using Turbo Intruder to send some connection warming requests before following up with your main attack requests.
-#### Abusing rate or resource limiting
-
-if connection warming doesn't make any difference there are various solutions to the problem using turbo Intruder you can introduce a short client side delay however as this involves splitting your actual attack results across multiple `TCP` packets you won't be able to use a single packet attack technique as a result on **high jittered** targets the attack is unlikely to work reliably regardless of what delay you set.
-
-By sending a large number of dummy requests to intentionally trigger the rate or resource limit, you may be able to cause a suitable server-side delay. This makes the single-packet attack viable even when delayed execution is required. 
-##### *Lab*
+##### *Lab* - connection warming
 
 ###### Predict - identify potential collision 
 
@@ -160,6 +155,22 @@ what happened there we had the cheaper item in our carts and we purchased the ch
 ##### Alternate 
 
 in the last step try changing the quantity of the cheaper item if the cheaper item is a gift card, then buy sufficient gift cards (its usually limited to 3 digits to 2 digits so change quantity to `99`) and buy the expensive item.
+#### Abusing rate or resource limiting
+
+***if connection warming doesn't make any difference*** there are various solutions to the problem using turbo Intruder you can introduce a short client side delay however as this involves splitting your actual attack results across multiple `TCP` packets you won't be able to use a single packet attack technique as a result on **high jittered** targets the attack is unlikely to work reliably regardless of what delay you set.
+
+By sending a large number of dummy requests to intentionally trigger the rate or resource limit, you may be able to cause a suitable server-side delay. This makes the single-packet attack viable even when delayed execution is required. 
+### Single-endpoint race conditions
+
+Sending parallel requests with different values to a single endpoint can sometimes trigger powerful race conditions. 
+Consider a password reset mechanism that stores the user ID and reset token in the user's session.
+In this scenario, sending two parallel password reset requests from the same session, but with two different usernames, could potentially cause a collision
+
+
+
+
+
+
 
 ### References
 https://portswigger.net/web-security/race-conditions
