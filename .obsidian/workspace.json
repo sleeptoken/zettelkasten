@@ -136,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,8 +150,8 @@
   },
   "active": "3f608f18b06f79d0",
   "lastOpenFiles": [
-    "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/SSL Interception.md",
+    "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/How to Skip Illegal Instructions in Executables.md",
     "OSCP resources.md",

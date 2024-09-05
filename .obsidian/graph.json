@@ -11,14 +11,21 @@
       "query": "tag:#android  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16741749
       }
     },
     {
       "query": "path:Tags  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 16109183
+      }
+    },
+    {
+      "query": "tag:#web  ",
+      "color": {
+        "a": 1,
+        "rgb": 8709797
       }
     }
   ],
@@ -32,6 +39,6 @@
   "repelStrength": 7.50519750519751,
   "linkStrength": 0.857588357588358,
   "linkDistance": 363,
-  "scale": 0.13335953896583508,
+  "scale": 0.0951220868509718,
   "close": false
 }
