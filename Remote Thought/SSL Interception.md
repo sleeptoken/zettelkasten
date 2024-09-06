@@ -122,15 +122,29 @@ chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*
 #### Downloading apps on the rooted device 
 
 This android system doesn't have any google apps Installed, but we can use our other emulator with installed play services and a Google account to install, for example, Google Translate
-download google translate from the play store 
+
+**on emulator w play**
+- download google translate from the play store  
 ```bash
-pm list packages -f | grep translate 
+PS D:\tmp\proxy> adb -t 3 shell 
+
+emu64xa:/$ pm list packages -f | grep translate
+package:/data/app/~~Hxuj4pDzuh0IPCbO9MPSA==/com.google.android.apps.translate-t7DgX-LDU7kzC-GRMR-9bw==/base.apk=com.google.apps.translate
+
+emu64xa:/$ ^D
+
+PS D:\tmp\proxy> adb -t 3 pull/data/app/~~Hxuj4pDz-uh0IPCb09MPSA==/com.google.android.apps.translate-t7DgX-LDU7kzC-GRMR-9bw==/base.apk
+/data/app/~~Hxuj4pDz-uh@IPCbO9MPSA-/com.google.android.apps.transla...apk: 1 file pulled, e skipped 
 ```
-with PM packages -f. We can find the path to the translate APK, 
-then we can use a ADB to pull download the APK onto our machine so we can then ADB install it onto our new emulator. 
+- with PM packages -f. We can find the path to the translate APK, 
+- then we can use ADB pull to download the APK onto our machine so we can then ADB install it onto our new emulator. 
 
+**on emulator w/o play**
+
+```powershell
+PS D:\tmp\proxy> adb -t 1 install .\base.apk
+```
 By the way, if you have multiple emulator instances running, you have to use `-t` with the transport ID to specify which device you wanna interact with. 
-
 ###### Transport ID 
 if we have multiple devices connected then we can address them with the transport ID `-t`
 ```powershell
@@ -140,24 +154,8 @@ emulator-5554    device product:..:..:..:1
 emulator-5556    device product:..:..:..:2
 ```
 
-
-And if we did everything right,
-
-04:23
-
-we can have a look at bur rún, translate, enter some text, and the API requests will show up. In the HDP history,
-
-04:30
-
-we just successfully performed SSL interception on a Google app that only trusts system certificates. Now before we move on, just a few words on
-
-04:39
-
-this specific example. If you look closely in the HDP log, then you can see that the API requests contain an API key.
-
-04:48
-
-This API key is necessary to be able to use the translate. API Google offers an official way how you can use Google translate with your own API key.
+ just a few words on this specific example. If you look closely in the HTTP log, then you can see that the API requests contain an API key. This API key is necessary to be able to use the translate. API Google offers an official way how you can use Google translate with your own API key.
+ we can't possibly abuse the use of this API key as google regularly blocks API keys that have suspicious activity, and rotates new keys.
 
 ### References
 [Installing Certificate in User Store (hextree.io)](https://app.hextree.io/courses/network-interception/ssl-interception/installing-certificate-in-user-store)
