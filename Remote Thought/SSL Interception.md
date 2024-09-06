@@ -68,7 +68,23 @@ So if an app doesn't specify network security config, by default -
 
 if we install the certificate from a proxy tool, it is considered a "user" certificate
 from the android documentation we know that by default apps only trust "system" certificates.
-in order to install a cert as a system certificate 
+in order to install a cert as a system certificate we need to be root but we get a root shell directly on a phone w google services unless the device is rooted
+### Rooting android 
+
+ways to get root access - 
+1. root a physical android device (do this on a spare android device)
+2. rooting the google play emulator (lots of tutorials about this on YouTube)
+3. using a non-google emulator image (download an emulator w/o google services)
+#### Setting up the device
+
+- in the device manager of android studio. We can create a new emulator, but we need to make sure we select one that doesn't have Google Play installed
+> - But not only that, there has been a major change in the way how certificates are handled between Android 13 and Android 14 (A14 blocks modification of system certificates, even as root) .This method only works for Android 13 and before.
+ 
+- go to x86 image and select Tiramisu API 33 Android 13.0 (default android system image)
+
+This is clean Android with any of the special Google services installed, there's not even the Chrome browser,
+
+So let's quickly set up the proxy stuff as we have learned before going into the settings, install a certificate, I drag and drop the Burp certificate onto the phone and then we can find it in the downloads folder. And after installation we can confirm this. Here is the user certificate and of course we want to disable LTE
 
 ### References
 [Installing Certificate in User Store (hextree.io)](https://app.hextree.io/courses/network-interception/ssl-interception/installing-certificate-in-user-store)
