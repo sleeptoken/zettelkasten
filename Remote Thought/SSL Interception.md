@@ -66,7 +66,9 @@ So if an app doesn't specify network security config, by default -
 
 ## Installing Certificate in System Store
 
-
+if we install the certificate from a proxy tool, it is considered a "user" certificate
+from the android documentation we know that by default apps only trust "system" certificates.
+in order to install a cert as a system certificate 
 
 ### References
 [Installing Certificate in User Store (hextree.io)](https://app.hextree.io/courses/network-interception/ssl-interception/installing-certificate-in-user-store)
