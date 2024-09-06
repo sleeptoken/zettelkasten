@@ -38,7 +38,6 @@ The cert might be grayed out. That's because it expects another file format. In 
 openssl x509 -inform DER -in cacert.der -out cacert.pem
 ```
 - import the file to our system and install the cert 
-
 ### Useful logcat errors
 
 if we try to intercept traffic of another app like google translate or the weather app, nothing happens or even we get errors. I wanted to mention that errors can be very helpful if you keep an eye on logcat. The apps might print out valuable information, maybe even the full URLs that you are interested in, so it can actually make sense to provoke as SSL errors. Intentionally. It can be a neat trick, but of course we want to intercept traffic,
@@ -57,7 +56,6 @@ So if an app doesn't specify network security config, by default -
 	- clear text traffic was allowed, but it still trusted only system certificates 
 - Only with Android 6 and before 
 	- apps trusted user credentials by default. 
-
 ### Custom SSL verification 
 
 - For example, we could try to install our certificate as a system certificate. Maybe that works.
@@ -89,8 +87,77 @@ So let's quickly set up the proxy stuff, going into the settings, install a cert
 `adb root` - to restart adb as root
 `adb shell` - to get the root shell
 
+```shell
+ls -lah /data/misc/user/0/cacerts-added/
 ```
-la -lah /data/misc/user/0/cacerts-added/
+here's the folder that contains the user added certificates
+
+```shell
+ls -lah /system/etc/security/cacerts
 ```
+here's the folder w system certificates
+
+```shell
+cp /data/misc/user/0/cacerts-added/9a5ba575.0 /system/etc/security/cacerts
+```
+Can we just copy our certificate into that folder? Unfortunately, no. The file system is mounted to read only, but there's a trick.
+
+1. Ensure you are root (`adb root`), and execute the following commands in `adb shell`:
+
+```bash
+# Backup the existing system certificates to the user certs folder
+cp /system/etc/security/cacerts/* /data/misc/user/0/cacerts-added/
+
+# Create the in-memory mount on top of the system certs folder
+mount -t tmpfs tmpfs /system/etc/security/cacerts
+
+# copy all system certs and our user cert into the tmpfs system certs folder
+cp /data/misc/user/0/cacerts-added/* /system/etc/security/cacerts/
+
+# Fix any permissions & selinux context labels
+chown root:root /system/etc/security/cacerts/*
+chmod 644 /system/etc/security/cacerts/*
+chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*
+```
+#### Downloading apps on the rooted device 
+
+This android system doesn't have any google apps Installed, but we can use our other emulator with installed play services and a Google account to install, for example, Google Translate
+download google translate from the play store 
+```bash
+pm list packages -f | grep translate 
+```
+with PM packages -f. We can find the path to the translate APK, 
+then we can use a ADB to pull download the APK onto our machine so we can then ADB install it onto our new emulator. 
+
+By the way, if you have multiple emulator instances running, you have to use `-t` with the transport ID to specify which device you wanna interact with. 
+
+###### Transport ID 
+if we have multiple devices connected then we can address them with the transport ID `-t`
+```powershell
+D:\tmp\proxy> adb devices -l
+List of devices attached 
+emulator-5554    device product:..:..:..:1
+emulator-5556    device product:..:..:..:2
+```
+
+
+And if we did everything right,
+
+04:23
+
+we can have a look at bur rún, translate, enter some text, and the API requests will show up. In the HDP history,
+
+04:30
+
+we just successfully performed SSL interception on a Google app that only trusts system certificates. Now before we move on, just a few words on
+
+04:39
+
+this specific example. If you look closely in the HDP log, then you can see that the API requests contain an API key.
+
+04:48
+
+This API key is necessary to be able to use the translate. API Google offers an official way how you can use Google translate with your own API key.
+
 ### References
 [Installing Certificate in User Store (hextree.io)](https://app.hextree.io/courses/network-interception/ssl-interception/installing-certificate-in-user-store)
