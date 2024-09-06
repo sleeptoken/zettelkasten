@@ -166,26 +166,25 @@ Starting in Android 14 Root Trust certificates are stored in the conscript modul
 
 Turns out under the hood, the new Apex system is using namespace. The same technology that is used for Docker or Kubernetes apps are living in different namespace, and so they have their own mount namespace, which means it's not Impossible to mess with system certificates. It's just more annoying. 
 
-Luckily for us, Tim Perry from HTTP toolkit has created the following script to automate the whole process (linked in references).
-If we just briefly look at it, we can see there are some similarities to methods used in android 13 shown it's exactly the same. We mount the temp s over the system search folder,
+Luckily for us, Tim Perry from HTTP toolkit has created the following script to automate the whole process (article linked in references).
+If we just briefly look at it, we can see there are some similarities to methods used in android 13 the new part which goes a bit deeper into how Android and even Linux works.
+#### Actually doing it 
 
-01:21
+Here we have an Android 14 emulator without play services. Then we install a proxy certificate as a user cert and configure the proxy in the Wi-Fi settings.
+After that, we can now run our script using
+```powershell
+adb push .\certs.sh /data/local/tmp/
+```
+We can push this script into a temporary folder on the phone, and then we can run it. Of course, this method also only works if we have root access 
+#### Alternate 
 
-copy our user certificate into it, and make sure the file permissions are all correct. But then comes a new part which goes a bit deeper into
+HTTP toolkit is an alternative HTTP proxy with less tools and features than Burp, This tool uses ADB to install an app on the emulator that helps to configure the proxy for interception.
 
-01:28
+Let's wipe the data off the emulator to completely reset it. Blank slate, nothing configured, and let's say we want to intercept traffic from the translate APK,
 
-how Android and even Linux works. Simply speaking, we get the PID of every process, so basically we get the process ID
-
-01:36
-
-of all the running Android apps, and then we loop through all those process IDs and use NS enter to enter the mount name space
-
-01:43
-
-of the app process, and then create a bind mount from the system certificate folder to the Apex certificate folder.
-
-
+- In HTTP toolkit go to intercept tab and select android device via ADB 
+- wait a moment 
+- HTTP tool kit automatically installed an app on the phone and configured everything .
 
 
 

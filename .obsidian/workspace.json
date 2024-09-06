@@ -151,6 +151,7 @@
   },
   "active": "3f608f18b06f79d0",
   "lastOpenFiles": [
+    "Tags/DNS.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/XSS.md",
@@ -176,7 +177,6 @@
     "Tags/Ghidra.md",
     "Remote Thought/SameSite cookie.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Tags/netcat.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
