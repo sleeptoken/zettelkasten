@@ -84,7 +84,13 @@ ways to get root access -
 
 This is clean Android with any of the special Google services installed, there's not even the Chrome browser,
 
-So let's quickly set up the proxy stuff as we have learned before going into the settings, install a certificate, I drag and drop the Burp certificate onto the phone and then we can find it in the downloads folder. And after installation we can confirm this. Here is the user certificate and of course we want to disable LTE
+So let's quickly set up the proxy stuff, going into the settings, install a certificate, I drag and drop the Burp certificate onto the phone and then we can find it in the downloads folder. And after installation we can confirm this. Here is the user certificate and of course we want to disable LTE
 
+`adb root` - to restart adb as root
+`adb shell` - to get the root shell
+
+```
+la -lah /data/misc/user/0/cacerts-added/
+```
 ### References
 [Installing Certificate in User Store (hextree.io)](https://app.hextree.io/courses/network-interception/ssl-interception/installing-certificate-in-user-store)
