@@ -2,8 +2,6 @@
 2024-09-04 15:19
 
 Source: #android 
-
-Tags: 
 ## Installing Certificate in User Store
 
 In order to be able to intercept TLS/SSL communication, we need the certificate of our proxy tool to be trusted by the device. Via the android settings we can easily install a certificate into the "user" CA store.
@@ -72,7 +70,7 @@ in order to install a cert as a system certificate we need to be root but we get
 ways to get root access - 
 1. root a physical android device (do this on a spare android device)
 2. rooting the google play emulator (lots of tutorials about this on YouTube)
-3. using a non-google emulator image (download an emulator w/o google services)
+3. **using a non-google emulator image (download an emulator w/o google services)**
 #### Setting up the device
 
 - in the device manager of android studio. We can create a new emulator, but we need to make sure we select one that doesn't have Google Play installed
@@ -156,6 +154,42 @@ emulator-5556    device product:..:..:..:2
 
  just a few words on this specific example. If you look closely in the HTTP log, then you can see that the API requests contain an API key. This API key is necessary to be able to use the translate. API Google offers an official way how you can use Google translate with your own API key.
  we can't possibly abuse the use of this API key as google regularly blocks API keys that have suspicious activity, and rotates new keys.
+### Android 14 CA System Store Changes
+
+With the release of Android 14 API level 34, there have been changes to the way the system certificates are handled, which break the previous methods of inserting our own certificate into the system certificates. 
+
+> previously certs were read from `/system/etc/security/cacerts` directory this new approach reads certificates from `/apex/com.android.conscript/cacerts` when it exists.
+
+Before Android 14, Android stored certificates in the system partition and updated them with every Android release, and of course, this is quite slow, so they created a new system that allowed them to more easily update the list of system certificates. 
+
+Starting in Android 14 Root Trust certificates are stored in the conscript module APEX. The Android Pony Express APEX container format was introduced in Android 10, and it's used in the install flow for lower level system modules. 
+
+Turns out under the hood, the new Apex system is using namespace. The same technology that is used for Docker or Kubernetes apps are living in different namespace, and so they have their own mount namespace, which means it's not Impossible to mess with system certificates. It's just more annoying. 
+
+Luckily for us, Tim Perry from HTTP toolkit has created the following script to automate the whole process (linked in references).
+If we just briefly look at it, we can see there are some similarities to methods used in android 13 shown it's exactly the same. We mount the temp s over the system search folder,
+
+01:21
+
+copy our user certificate into it, and make sure the file permissions are all correct. But then comes a new part which goes a bit deeper into
+
+01:28
+
+how Android and even Linux works. Simply speaking, we get the PID of every process, so basically we get the process ID
+
+01:36
+
+of all the running Android apps, and then we loop through all those process IDs and use NS enter to enter the mount name space
+
+01:43
+
+of the app process, and then create a bind mount from the system certificate folder to the Apex certificate folder.
+
+
+
+
 
 ### References
 [Installing Certificate in User Store (hextree.io)](https://app.hextree.io/courses/network-interception/ssl-interception/installing-certificate-in-user-store)
+
+Android 14 CA System Store Changes - [New ways to inject system CA certificates in Android 14 (httptoolkit.com)](https://httptoolkit.com/blog/android-14-install-system-ca-certificate/)
