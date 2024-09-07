@@ -192,6 +192,16 @@ we have access to our exploit mail server that receives emails from any user usi
 - create a new group of only 2 requests of `POST /my-account/change-email`
 - one having the email of the admin and the other having the email w our email server domain 
 - send the group in parallel, we get an email asking us to confirm to change the email to `admin@email`
+
+### Session-based locking mechanisms
+
+Some frameworks attempt to prevent accidental data corruption by using some form of request locking. For example, PHP's native session handler module only processes one request per session at a time.
+If you notice that all of your requests are being processed sequentially, try sending each of them using a different session token.
+
+
+
+
+
 ### References
 https://portswigger.net/web-security/race-conditions
 
