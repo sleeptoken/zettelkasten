@@ -216,8 +216,13 @@ we have a similar setup as the previous lab, a known email, pass and its email s
 
 let's go and try and reset our password straight away, we send the request for the known user and we get an email with the link to reset the password and we'll see that we do have this token it's quite a long token doesn't look like something that we'd easily be able to guess or predict 
 
-taking the POST /for request in repeater we see that it has a phpsessionid, a csrf token and a username .
+taking the `POST /forgot-password` request in repeater we see that it has a [[PHPSESSID & session handler w py]]`phpsessionid`, a [[CSRF Token]] and a username. we duplicate the request (6,7 times) and add it in a group, send it in parallel
+the timing of the responses we receive have big variations in them so its nothing to do with timing
+when we see the email client we see all the emails with the reset links and the tokens, we basically want to see is there any kind of pattern to the Token, does it increment each time does it decrement each time. the problem is it looks like some kind of hash so maybe the Time stamp is hashed but that could be combined with the username or it could be combined with a email or with a random salt or with anything we really don't know how it's generated now. 
 ###### Bypass the per-session locking restriction
+
+we can't use the token we got in the mail for admin user(carlos) because of the time variation and also because of the phpsessionid 
+in order to get a new session token we need to duplicate the `POST /forgot-password`  request 
 
 ###### Exploit timing issue to reset password
 

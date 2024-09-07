@@ -151,7 +151,9 @@
   },
   "active": "3f608f18b06f79d0",
   "lastOpenFiles": [
+    "Remote Thought/PHPSESSID & session handler w py.md",
     "Race Condition.md",
+    "Remote Thought/CSRF Token.md",
     "OSCP resources.md",
     "Remote Thought/SSL Interception.md",
     "Tags/DNS.md",
@@ -175,8 +177,6 @@
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Building Android POC app.md",
     "Tags/Ghidra.md",
-    "Remote Thought/SameSite cookie.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
