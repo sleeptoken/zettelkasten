@@ -92,7 +92,6 @@ def handleResponse(req,interesting):
 ```
 
 Essentially in the script we're queueing 20 requests into this gate and then at the end we're going to open a gate so they all get sent at once
-
 ### Hidden multi-step sequences
 
 In practice, a single request may initiate an entire multi-step sequence behind the scenes, transitioning the application through multiple hidden states that it enters and then exits again before request processing is complete. We'll refer to these as "sub-states".
@@ -212,9 +211,18 @@ When high-resolution timestamps are used instead of cryptographically secure ran
 Consider a password reset token that is only randomized using a timestamp. In this case, it might be possible to trigger two password resets for two different users, which both use the same token. All you need to do is time the requests so that they generate the same timestamp.
 ##### *Lab*
 
+we have a similar setup as the previous lab, a known email, pass and its email server and a privileged user whose password we don't know
+###### Explore password reset functionality
 
+let's go and try and reset our password straight away, we send the request for the known user and we get an email with the link to reset the password and we'll see that we do have this token it's quite a long token doesn't look like something that we'd easily be able to guess or predict 
 
-### References
+taking the POST /for request in repeater we see that it has a phpsessionid, a csrf token and a username .
+###### Bypass the per-session locking restriction
+
+###### Exploit timing issue to reset password
+
+### How to prevent race condition vulnerabilities
+### References 
 https://portswigger.net/web-security/race-conditions
 
 turbo intruder - https://blog.intigriti.com/hacking-tools/hacker-tools-turbo-intruder
