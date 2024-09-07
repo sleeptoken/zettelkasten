@@ -210,6 +210,9 @@ It's possible to cause similar partial construction collisions with a password r
 When high-resolution timestamps are used instead of cryptographically secure random strings to generate security tokens.
 
 Consider a password reset token that is only randomized using a timestamp. In this case, it might be possible to trigger two password resets for two different users, which both use the same token. All you need to do is time the requests so that they generate the same timestamp.
+##### *Lab*
+
+
 
 ### References
 https://portswigger.net/web-security/race-conditions
