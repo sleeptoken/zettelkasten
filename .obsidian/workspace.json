@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3f608f18b06f79d0",
+            "id": "4fcfc7d66b735a64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Race Condition.md",
+                "file": "GraphQL API vulnerability.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Race Condition.md",
+                "file": "GraphQL API vulnerability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Race Condition.md",
+                "file": "GraphQL API vulnerability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Race Condition.md"
+                "file": "GraphQL API vulnerability.md"
               }
             }
           }
@@ -136,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f608f18b06f79d0",
+  "active": "4fcfc7d66b735a64",
   "lastOpenFiles": [
+    "Remote Thought/Race Condition.md",
+    "GraphQL API vulnerability.md",
     "Remote Thought/PHPSESSID & session handler w py.md",
-    "Race Condition.md",
     "Remote Thought/CSRF Token.md",
     "OSCP resources.md",
     "Remote Thought/SSL Interception.md",
@@ -176,7 +175,6 @@
     "Tags/OSINT.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Building Android POC app.md",
-    "Tags/Ghidra.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

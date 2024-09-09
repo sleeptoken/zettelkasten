@@ -222,14 +222,29 @@ when we see the email client we see all the emails with the reset links and the 
 ###### Bypass the per-session locking restriction
 
 we can't use the token we got in the mail for admin user(carlos) because of the time variation and also because of the phpsessionid 
-in order to get a new session token we need to duplicate the `POST /forgot-password`  request 
+1. in order to get a new session token we need to duplicate the `POST /forgot-password`  request and change the username to carlos 
+2. change the request method to GET 
+3. remove the cookie w sessionid from the request 
+sending the GET request gives us a new session id and csrf token in the response (pretty) 
 
+now in the repeater make a group of 2 requests of the `POST /forgot-password` and change the sessionid and csrf token for one of them with the new one that we got from the GET request (do not change username to carlos, keep the username same on both)
+>on sending the requests in parallel we see the response time is same for both the requests
+> that's obviously because we use different sessions so it's tied to the session.
 ###### Exploit timing issue to reset password
 
+now for the final exploit have the same setup as before but change the username to carlos for the request with new sessionid and send the request in parallel,
+we get the email with the reset link, click on the link and change the user in the URL to carlos and hit enter
+now change the password to a desired one and that's it we have changed carlos's password
+
 ### How to prevent race condition vulnerabilities
+
+To secure an application properly, we recommend eliminating sub-states from all sensitive endpoints by applying the following strategies listed on: 
+https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-preventing-vulnerabilities/race-conditions/how-to-prevent-race-condition-vulnerabilities
 ### References 
 https://portswigger.net/web-security/race-conditions
 
 turbo intruder - https://blog.intigriti.com/hacking-tools/hacker-tools-turbo-intruder
 
 config and uses Turbo Intruder - https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack
+
+Web Shell Upload via Race Condition - https://www.youtube.com/watch?v=UaQKMR5XOXk
