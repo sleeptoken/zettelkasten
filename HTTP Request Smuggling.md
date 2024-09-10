@@ -112,9 +112,9 @@ isadmin=true
 ```
 - In the above payload, the front-end server sees the `Transfer-Encoding: chunked` header and processes the request as chunked. The `78` (hexadecimal for 120) indicates that the next 120 bytes are part of the current request's body. The front-end server considers everything up to the `0` (indicating the end of the chunked message) as part of the body of the first request.
 - The back-end server, however, uses the Content-Length header, which is set to 4. It processes only the first 4 bytes of the request, not including the entire smuggled request `POST /update`. The remaining part of the request, starting from **POST /update**, is then interpreted by the back-end server as a separate, new request.
-### Transfer Encoding Obfuscation
+### Transfer Encoding Obfuscation (TE.TE)
 
-
+**Transfer Encoding Obfuscation,** also known as **TE.TE** stands for **Transfer-Encoding/Transfer-Encoding**. Unlike the CL.TE or TE.CL methods, the TE.TE technique arises when both the front-end and the back-end servers use the Transfer-Encoding header. 
 
 
 
