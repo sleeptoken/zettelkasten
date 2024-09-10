@@ -59,9 +59,31 @@ HTTP Request Smuggling primarily occurs due to discrepancies in how different s
 ### Request Smuggling CL.TE
 
 **CL.TE** stands for **Content-Length/Transfer-Encoding**. 
-Example - 
-- The proxy uses the Content-Length header to determine the end of a request.
-- The back-end server uses the Transfer-Encoding header.
+
+ Imagine sending a request with both `Content-Length` and `Transfer-Encoding` headers. The front-end server might use the Content-Length header and think the request ends at a certain point due to the provided number of bytes. In contrast, the back-end server, relying on the Transfer-Encoding header, might interpret the request differently, leading to unexpected behavior.
+#### Exploiting CL.TE for Request Smuggling
+
+craft a request that includes both headers, ensuring that the front-end and back-end servers interpret the request boundaries differently. For example, an attacker sends a request like:
+```shell-session
+POST /search HTTP/1.1
+Host: example.com
+Content-Length: 130
+Transfer-Encoding: chunked
+
+0
+
+POST /update HTTP/1.1
+Host: example.com
+Content-Length: 13
+Content-Type: application/x-www-form-urlencoded
+
+isadmin=true
+```
+Here, the front-end server sees the `Content-Length` of 130 bytes and believes the request ends after  `isadmin=true`. However, the back-end server sees the `Transfer-Encoding: chunked` and interprets the `0` as the end of a chunk, making the second request the start of a new chunk. This can lead to the back-end server treating the `POST /update HTTP/1.1` as a separate, new request, potentially giving the attacker unauthorized access.
+#### Incorrect Content-Length
+
+
+
 
 
 ### References

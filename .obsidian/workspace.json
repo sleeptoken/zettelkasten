@@ -19,14 +19,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ee40a3d5e41869d5",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
         ]
       }
@@ -157,7 +149,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "2095d6d1961b6bc3",
   "lastOpenFiles": [
     "HTTP Request Smuggling.md",
     "Remote Thought/SSL Interception.md",
