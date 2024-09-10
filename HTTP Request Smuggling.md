@@ -59,6 +59,8 @@ HTTP Request Smuggling primarily occurs due to discrepancies in how different s
 ### Request Smuggling CL.TE
 
 **CL.TE** stands for **Content-Length/Transfer-Encoding**. 
+- The proxy uses the Content-Length header to determine the end of a request.
+- The back-end server uses the Transfer-Encoding header.
 
  Imagine sending a request with both `Content-Length` and `Transfer-Encoding` headers. The front-end server might use the Content-Length header and think the request ends at a certain point due to the provided number of bytes. In contrast, the back-end server, relying on the Transfer-Encoding header, might interpret the request differently, leading to unexpected behavior.
 #### Exploiting CL.TE for Request Smuggling
@@ -81,6 +83,38 @@ isadmin=true
 ```
 Here, the front-end server sees the `Content-Length` of 130 bytes and believes the request ends after  `isadmin=true`. However, the back-end server sees the `Transfer-Encoding: chunked` and interprets the `0` as the end of a chunk, making the second request the start of a new chunk. This can lead to the back-end server treating the `POST /update HTTP/1.1` as a separate, new request, potentially giving the attacker unauthorized access.
 #### Incorrect Content-Length
+
+When creating a request smuggling payload, if the `Content-Length` is not equal to the actual length of the content, several problems might arise. First, the server might process only the portion of the request body that matches the `Content-Length`. For example - when the Content-Length is set to less than the actual size of the body `username=test&query=test` (which is 24 bytes), the back-end server will only read part of the request body based on the specified Content-Length. For instance, setting Content-Length to 10 bytes means the server will only consider the first 10 bytes of the body, leading to incomplete data being processed.
+### Request Smuggling TE.CL
+
+The TE.CL technique arises when 
+- the proxy prioritizes the `Transfer-Encoding` header 
+- the back-end server prioritizes the `Content-Length` header.
+
+**TE.CL** stands for **Transfer-Encoding/Content-Length**, the discrepancy in header interpretation is flipped because the front-end server uses the Transfer-Encoding header to determine the end of a request, and the back-end server uses the Content-Length header.
+#### Exploiting TE.CL for Request Smuggling
+
+For example, an attacker sends a request like:
+```shell-session
+POST / HTTP/1.1
+Host: example.com
+Content-Length: 4
+Transfer-Encoding: chunked
+
+78
+POST /update HTTP/1.1
+Host: example.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+
+isadmin=true
+0
+```
+- In the above payload, the front-end server sees the `Transfer-Encoding: chunked` header and processes the request as chunked. The `78` (hexadecimal for 120) indicates that the next 120 bytes are part of the current request's body. The front-end server considers everything up to the `0` (indicating the end of the chunked message) as part of the body of the first request.
+- The back-end server, however, uses the Content-Length header, which is set to 4. It processes only the first 4 bytes of the request, not including the entire smuggled request `POST /update`. The remaining part of the request, starting from **POST /update**, is then interpreted by the back-end server as a separate, new request.
+### Transfer Encoding Obfuscation
+
+
 
 
 
