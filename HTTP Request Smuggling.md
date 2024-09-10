@@ -35,13 +35,33 @@ The Content-Length header indicates the request or response body size in bytes. 
 #### Transfer-Encoding Header
 
 The Transfer-Encoding header is used to specify the form of encoding applied to the message body of an HTTP request or response. A commonly used value for this header is "chunked", indicating that the message body is divided into a series of chunks, each preceded by its size in hexadecimal format. Other possible values for the Transfer-Encoding header include "compress", "deflate", and "gzip", each indicating a different type of encoding.
+
 ```shell-session
+POST /submit HTTP/1.1
+Host: good.com
+Content-Type: application/x-www-form-urlencoded 
+Transfer-Encoding: chunked
+
 b
 q=smuggledData 
 0
 ```
 In this example, "b" (in hexadecimal, equivalent to 11 in decimal) specifies the size of the following chunk. The chunk `q=smuggledData` is the actual data, followed by a new line. The request is terminated with a "0" line, indicating the end of the message body. Each chunk size is given in hexadecimal format, and the end of the chunked body is signified by a chunk of size 0.
+### HTTP Request Smuggling Origin
 
+HTTP Request Smuggling primarily occurs due to discrepancies in how different servers (like a front-end server and a back-end server) interpret HTTP request boundaries. For example:
+
+1. If both Content-Length and Transfer-Encoding headers are present, ambiguities can arise.
+2. Some components prioritize Content-Length, while others prioritize Transfer-Encoding.
+3. This discrepancy can lead to one component believing the request has ended while another thinks it's still ongoing, leading to smuggling.
+
+ Suppose a front-end server uses the Content-Length header to determine the end of a request while a back-end server uses the Transfer-Encoding header. An attacker can craft a request that appears to have one boundary to the front-end server but a different boundary to the back-end server. This can lead to one request being "smuggled" inside another, causing unexpected behavior and potential vulnerabilities.
+### Request Smuggling CL.TE
+
+**CL.TE** stands for **Content-Length/Transfer-Encoding**. 
+Example - 
+- The proxy uses the Content-Length header to determine the end of a request.
+- The back-end server uses the Transfer-Encoding header.
 
 
 ### References
