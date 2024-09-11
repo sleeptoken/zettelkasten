@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#android",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -151,6 +151,7 @@
   },
   "active": "1bbcf4be4be44701",
   "lastOpenFiles": [
+    "HTTP toolkit.md",
     "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/SSL Interception.md",
     "HTTP Request Smuggling.md",
@@ -177,7 +178,6 @@
     "Remote Thought/Symbolic Link & brute force.md",
     "Tags/bash.md",
     "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",

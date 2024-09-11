@@ -166,7 +166,7 @@ Starting in Android 14 Root Trust certificates are stored in the conscript modul
 
 Turns out under the hood, the new Apex system is using namespace. The same technology that is used for Docker or Kubernetes apps are living in different namespace, and so they have their own mount namespace, which means it's not Impossible to mess with system certificates. It's just more annoying. 
 
-Luckily for us, Tim Perry from HTTP toolkit has created the following script to automate the whole process (article linked in references).
+Luckily for us, Tim Perry from [[HTTP toolkit ]]has created the following script to automate the whole process (article linked in references).
 If we just briefly look at it, we can see there are some similarities to methods used in android 13 the new part which goes a bit deeper into how Android and even Linux works.
 #### Actually doing it 
 
