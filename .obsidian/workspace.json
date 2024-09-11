@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Patching Network Security Config with apktool.md",
+                "file": "Remote Thought/Advanced Interception Tricks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Patching Network Security Config with apktool.md",
+                "file": "Remote Thought/Advanced Interception Tricks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Patching Network Security Config with apktool.md",
+                "file": "Remote Thought/Advanced Interception Tricks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Patching Network Security Config with apktool.md"
+                "file": "Remote Thought/Advanced Interception Tricks.md"
               }
             }
           }
@@ -151,7 +151,7 @@
   },
   "active": "1bbcf4be4be44701",
   "lastOpenFiles": [
-    "Patching Network Security Config with apktool.md",
+    "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/SSL Interception.md",
     "HTTP Request Smuggling.md",
     "GraphQL API vulnerability.md",
