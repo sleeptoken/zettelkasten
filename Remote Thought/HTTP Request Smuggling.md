@@ -113,10 +113,31 @@ isadmin=true
 ### Transfer Encoding Obfuscation (TE.TE)
 
 **Transfer Encoding Obfuscation,** also known as **TE.TE** stands for **Transfer-Encoding/Transfer-Encoding**. Unlike the CL.TE or TE.CL methods, the TE.TE technique arises when both the front-end and the back-end servers use the Transfer-Encoding header. 
+#### Exploiting TE.TE for Request Smuggling
 
+To exploit the TE.TE technique, an attacker may craft a request that includes Transfer-Encoding headers that use different encodings. 
 
+```shell-session
+POST / HTTP/1.1
+Host: example.com
+Content-length: 4
+Transfer-Encoding: chunked
+Transfer-Encoding: chunked1
 
+4e
+POST /update HTTP/1.1
+Host: example.com
+Content-length: 15
 
+isadmin=true
+0
+```
+
+In the above payload, the front-end server encounters two `Transfer-Encoding` headers. The first one is a standard chunked encoding, but the second one, `chunked1`, is non-standard. Depending on its configuration, the front-end server might process the request based on the first `Transfer-Encoding: chunked` header and ignore the malformed `chunked1`, interpreting the entire request up to the `0` as a single chunked message.
+
+The back-end server, however, might handle the malformed `Transfer-Encoding: chunked1` differently. It could either reject the malformed part and process the request similarly to the front-end server or interpret the request differently due to the presence of the non-standard header. If it processes only the first 4 bytes as indicated by the `Content-length: 4`, the remaining part of the request starting from `POST /update` is then treated as a separate, new request.
+
+The smuggled request with the `isadmin=true` parameter is processed by the back-end server as if it were a legitimate, separate request. This could lead to unauthorized actions or data modifications, depending on the server's functionality and the nature of the /update endpoint.
 
 ### References
 [TryHackMe | HTTP Request Smuggling](https://tryhackme.com/r/room/httprequestsmuggling)
