@@ -71,10 +71,6 @@ VPNs can be applied to specific apps. This makes it a lot more versatile than Wi
 Now we can start the VPN.
 
 As you can see, the Android VPN features are really useful for interception, and by the way, that's also what the [[HTTP toolkit]] uses. 
-### DNS Spoofing and Transparent Proxy
-
-
-
 
 ### References
 [Patching Network Security Config with apktool (hextree.io)](https://app.hextree.io/courses/network-interception/advanced-interception-tricks/patching-network-security-config-with-ap)
