@@ -2,7 +2,7 @@
 2024-09-10 22:34
 
 Source: #android 
-### Patching Network Security Config with apktool
+### Patching Network Security Config with [[apktool]]
 
 We have used [apktool](https://apktool.org/) before to unpack and repack an android app. So let's use it in order to inject a permissive [network security config](https://developer.android.com/privacy-and-security/security-config).
 
