@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "74c52b603b626389",
+        "id": "01145db2f743b8a0",
         "type": "tabs",
         "children": [
           {
-            "id": "7bccd6f8cc0497d3",
+            "id": "b10893d936df25f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/SSL Interception.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6155962ffde35783",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
+                "file": "Hypervisors Internals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
+                "file": "Hypervisors Internals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
+                "file": "Hypervisors Internals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Android Debug Bridge.md"
+                "file": "Hypervisors Internals.md"
               }
             }
           }
@@ -163,10 +149,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6155962ffde35783",
+  "active": "b10893d936df25f8",
   "lastOpenFiles": [
-    "Remote Thought/SSL Interception.md",
+    "Hypervisors Internals.md",
     "Remote Thought/Android Debug Bridge.md",
+    "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/Packet logging with tcpdump.md",
@@ -191,7 +178,6 @@
     "Remote Thought/CSRF Token.md",
     "Tags/DNS.md",
     "Remote Thought/Privilege Escalation.md",
-    "Tags/XSS.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
