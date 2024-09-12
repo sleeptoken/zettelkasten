@@ -96,5 +96,29 @@ adb logcat "MainActivity:V *:S"
 Filter format:
 - `MainActivity:V` ensures that logs from the tag `MainActivity` with a severity of Verbose and above are logged
 - `*:S` Ensures that all other Tags are ignored (as nothing will log with log-level Silent or above)
+
+---
+
+#### Porting APK's from one device to another
+
+to see how to **Downloading apps on the rooted device** go to [[SSL Interception]]
+
+```shell
+# list all 3rd party packages
+adb shell pm list packages -3   
+
+# show the path for a specific package
+adb shell pm path <package-name>
+
+# pull a specific package
+adb pull <package-name>
+```
+use the above code to pull an APK
+
+**Not all APKs can be pulled**
+- Some applications will prevent pulling the APK from the device, however there are a lot of APK mirroring websites on which you can find most APKs. But beware of malware! by checking file signatures
+
+
+
 ### References
 [Research Device & Emulator Setup (hextree.io)](https://app.hextree.io/courses/research-device-setup/the-android-debug-bridge-adb)

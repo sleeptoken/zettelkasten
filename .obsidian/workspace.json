@@ -8,19 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bbb24ea990b21512",
+            "id": "7bccd6f8cc0497d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md",
+                "file": "Remote Thought/SSL Interception.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6155962ffde35783",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Android Debug Bridge.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "adb shell pm ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md",
+                "file": "Remote Thought/Android Debug Bridge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md",
+                "file": "Remote Thought/Android Debug Bridge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md"
+                "file": "Remote Thought/Android Debug Bridge.md"
               }
             }
           }
@@ -149,18 +163,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbb24ea990b21512",
+  "active": "6155962ffde35783",
   "lastOpenFiles": [
+    "Remote Thought/SSL Interception.md",
+    "Remote Thought/Android Debug Bridge.md",
+    "Remote Thought/Special Android Features.md",
+    "Remote Thought/Internet perms & Networking.md",
+    "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/Advanced Interception Tricks.md",
-    "Tags/apktool.md",
     "Remote Thought/Reverse Engineering Android apps.md",
+    "Tags/apktool.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/Injecting Shellcode.md",
     "Tags/Binary Exploit.md",
     "Tags/Reverse Proxies.md",
     "Tags/HTTP toolkit.md",
-    "Remote Thought/SSL Interception.md",
     "GraphQL API vulnerability.md",
     "OSCP resources.md",
     "Stream Cipher.md",
@@ -174,10 +192,6 @@
     "Tags/DNS.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/XSS.md",
-    "Remote Thought/Internet perms & Networking.md",
-    "Remote Thought/Packet logging with tcpdump.md",
-    "Remote Thought/How to Skip Illegal Instructions in Executables.md",
-    "Tags/SMB shares.md",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
     "Images/Pasted image 20240627104732.png",
