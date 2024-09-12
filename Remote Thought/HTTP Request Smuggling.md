@@ -136,8 +136,10 @@ isadmin=true
 In the above payload, the front-end server encounters two `Transfer-Encoding` headers. The first one is a standard chunked encoding, but the second one, `chunked1`, is non-standard. Depending on its configuration, the front-end server might process the request based on the first `Transfer-Encoding: chunked` header and ignore the malformed `chunked1`, interpreting the entire request up to the `0` as a single chunked message.
 
 The back-end server, however, might handle the malformed `Transfer-Encoding: chunked1` differently. It could either reject the malformed part and process the request similarly to the front-end server or interpret the request differently due to the presence of the non-standard header. If it processes only the first 4 bytes as indicated by the `Content-length: 4`, the remaining part of the request starting from `POST /update` is then treated as a separate, new request.
+#### Lab
 
-The smuggled request with the `isadmin=true` parameter is processed by the back-end server as if it were a legitimate, separate request. This could lead to unauthorized actions or data modifications, depending on the server's functionality and the nature of the /update endpoint.
+The vulnerable environment has ATS (Apache Traffic Server) as the front-end proxy, Nginx as the web server back-end, and PHP processing the dynamic content. Due to differences in how ATS and Nginx prioritizes `Content-Length` and `Transfer-Encoding` headers,
 
+better read this from tryhackme directly linked in references
 ### References
 [TryHackMe | HTTP Request Smuggling](https://tryhackme.com/r/room/httprequestsmuggling)
