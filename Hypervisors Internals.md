@@ -51,6 +51,7 @@ QEMU, also known as Quick EMUlator, is another open-source Hypervisor. This Hype
 - However, with that said, front-end interfaces have been created that can be used. 
 - These two technologies (QEMU & KVM) are often used in cloud environments due to their performance and compatibility.
 
+Adversaries and APT groups are increasingly focusing their efforts on Hypervisors because they form the backbone of modern computing today. For example, why ransomware one host when you can ransomware a Hypervisor and take down n+1 systems?
 ### References
 
 [TryHackMe | Hypervisor Internals](https://tryhackme.com/r/room/hypervisorinternals)
