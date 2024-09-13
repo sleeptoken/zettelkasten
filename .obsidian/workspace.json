@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/apktool.md",
+                "file": "Remote Thought/Reverse Engineering Android apps.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4f4376022683804",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Android Debug Bridge.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/apktool.md",
+                "file": "Remote Thought/Reverse Engineering Android apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tags/apktool.md",
+                "file": "Remote Thought/Reverse Engineering Android apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/apktool.md"
+                "file": "Remote Thought/Reverse Engineering Android apps.md"
               }
             }
           }
@@ -151,15 +164,15 @@
   },
   "active": "f57413a7f3ef7264",
   "lastOpenFiles": [
+    "Tags/apktool.md",
+    "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/Reverse Engineering Android apps.md",
-    "Remote Thought/Android Debug Bridge.md",
     "Hypervisors Internals.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/Packet logging with tcpdump.md",
-    "Tags/apktool.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/Injecting Shellcode.md",
