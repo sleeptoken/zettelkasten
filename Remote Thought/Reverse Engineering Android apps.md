@@ -17,7 +17,7 @@ Source: #android
 3. The resources such as pictures and so on, 
 4. Cryptographic signatures
 gets packaged together into a zip file and this zip file is already an APK we can just change the extension to `.apk` then we basically have an android application.  
-
+	
 The best place to start when looking at a new Android application is to look at the Android manifest.
 The first thing we want to check out are the exported activities. These are basically the activities that can be started by other apps or even can be started by us using ADB.
 
