@@ -3,8 +3,8 @@
 
 Source: #android 
 
-Tags: 
-
+APKtool is an open source tool written in Java
+Now apktool cannot just extract our APK. It'll also disassemble it and even better, we can reassemble APKs and so we can, for example, patch something in our disassembly or even in the manifest or so, and then repack the APK
 
 
 
