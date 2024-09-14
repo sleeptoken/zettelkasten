@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md",
+                "file": "Remote Thought/Android Debug Bridge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md",
+                "file": "Remote Thought/Android Debug Bridge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Reverse Engineering Android apps.md"
+                "file": "Remote Thought/Android Debug Bridge.md"
               }
             }
           }
@@ -162,12 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f57413a7f3ef7264",
+  "active": "d4f4376022683804",
   "lastOpenFiles": [
+    "Remote Thought/Reverse Engineering Android apps.md",
     "Tags/apktool.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Advanced Interception Tricks.md",
-    "Remote Thought/Reverse Engineering Android apps.md",
     "Hypervisors Internals.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
