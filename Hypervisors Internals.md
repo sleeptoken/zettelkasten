@@ -83,6 +83,7 @@ Hypervisors such as KVM use a combination of full virtualisation and paravirtual
 
 Nested virtualisation allows for virtual machines within virtual machines. For example, running VirtualBox within a guest. This is achieved by using hardware-supported virtualisation such as Intel VT-x or AMD-V. These technologies are features within the CPU that manage virtual machine operations directly rather than using the Hypervisor as the middle-person.
 The use of Intel VT-x and AMD-V improves performance because the instructions are handled on the hardware directly rather than through software.
+
 ### References
 
 [TryHackMe | Hypervisor Internals](https://tryhackme.com/r/room/hypervisorinternals)
