@@ -73,6 +73,16 @@ There are multiple types of networking with virtual machines namely
 | NAT       | With this type, all guest network activity appears as if it originates from the host.                                                                                                 |
 | Host-only | Host-only will only allow the guest to be accessible from the host itself.                                                                                                            |
 | Specific  | The "specific" type allows you to manually assign what vNIC is used by the guest. Hypervisors allow you to create vNICs, where you can specify what subnet and address range is used. |
+
+### Paravirtualisation
+
+Unlike full virtualisation, guest virtual machines using paravirtualisation are aware that they are operating on virtualised hardware. (the guest knows that the CPU, RAM, storage and network are virtualised.) This allows the guest virtual machine to make direct calls to the Hypervisor.
+
+Hypervisors such as KVM use a combination of full virtualisation and paravirtualisation to achieve its performance. For example, KVM uses paravirtualisation for I/O (disk read/writes and network activity) for its performance increase whilst using full virtualisation for components such as CPU & RAM for compatibility.
+### Nested Virtualisation
+
+Nested virtualisation allows for virtual machines within virtual machines. For example, running VirtualBox within a guest. This is achieved by using hardware-supported virtualisation such as Intel VT-x or AMD-V. These technologies are features within the CPU that manage virtual machine operations directly rather than using the Hypervisor as the middle-person.
+The use of Intel VT-x and AMD-V improves performance because the instructions are handled on the hardware directly rather than through software.
 ### References
 
 [TryHackMe | Hypervisor Internals](https://tryhackme.com/r/room/hypervisorinternals)
