@@ -65,11 +65,11 @@ This error occurs with some versions of [[apktool]] if the app contains native-l
 
 **INSTALL_FAILED_UPDATE_INCOMPATIBLE:** Package `io.hextree.reversingexample` signatures do not match previously installed version; ignoring!
 
-You will get this message if a version of the app signed with a different key is installed on the device. The simple solution is to delete the existing app.
+You will get this message if a version of the app signed with a different key is installed on the device. The simple solution is to delete the existing app. 
 
 **Failed parse during installPackageLI:**
 
-> Targeting R+ (version 30 and above) requires the resources.arsc of installed APKs to be stored uncompressed and aligned on a 4-byte boundary'
+> Targeting R+ (version 30 and above) requires the `resources.arsc` of installed APKs to be stored uncompressed and aligned on a 4-byte boundary'
 
 This happens on newer apps, try this alternative method using `zipalign` and `apksigner` coming with the specific version build tools:
 
