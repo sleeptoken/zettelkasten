@@ -4,33 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "01145db2f743b8a0",
+        "id": "c7d970da34d23ed9",
         "type": "tabs",
         "children": [
           {
-            "id": "f57413a7f3ef7264",
+            "id": "acd691cb7d87d0e4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hypervisors Internals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4f4376022683804",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Android Debug Bridge.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -100,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hypervisors Internals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hypervisors Internals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Hypervisors Internals.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -162,13 +139,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f57413a7f3ef7264",
+  "active": "acd691cb7d87d0e4",
   "lastOpenFiles": [
-    "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Android Debug Bridge.md",
+    "Hypervisors Internals.md",
+    "Remote Thought/Reverse Engineering Android apps.md",
     "Tags/apktool.md",
     "Remote Thought/Advanced Interception Tricks.md",
-    "Hypervisors Internals.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Internet perms & Networking.md",

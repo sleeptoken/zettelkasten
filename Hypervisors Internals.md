@@ -49,7 +49,7 @@ QEMU, also known as Quick EMUlator, is another open-source Hypervisor. This Hype
 - These two technologies (QEMU & KVM) are often used in cloud environments due to their performance and compatibility.
 
 Adversaries and APT groups are increasingly focusing their efforts on Hypervisors because they form the backbone of modern computing today. For example, why ransomware one host when you can ransomware a Hypervisor and take down n+1 systems?
-### how hardware components are virtualised.
+### how hardware components are virtualized.
 
 #### CPU & Memory Virtualization
 
@@ -76,7 +76,7 @@ There are multiple types of networking with virtual machines namely
 
 ### Paravirtualisation
 
-Unlike full virtualisation, guest virtual machines using paravirtualisation are aware that they are operating on virtualised hardware. (the guest knows that the CPU, RAM, storage and network are virtualised.) This allows the guest virtual machine to make direct calls to the Hypervisor.
+Unlike full virtualisation, guest virtual machines using paravirtualisation are aware that they are operating on virtualized hardware. (the guest knows that the CPU, RAM, storage and network are virtualized.) This allows the guest virtual machine to make direct calls to the Hypervisor.
 
 Hypervisors such as KVM use a combination of full virtualisation and paravirtualisation to achieve its performance. For example, KVM uses paravirtualisation for I/O (disk read/writes and network activity) for its performance increase whilst using full virtualisation for components such as CPU & RAM for compatibility.
 ### Nested Virtualisation
