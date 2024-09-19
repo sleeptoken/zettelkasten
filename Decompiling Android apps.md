@@ -10,32 +10,46 @@ Because of features such as `reflection`, Java applications generally retain all
 - Double click the name of the activity and it will automatically bring you to that class
 - **Add a comment** -  semicolon or right click then `comment`
 
-and we can also already see that if the password is correct, the second password activity will be started. Let's try to double click secret two.
+we have an if statement where an input string is compared to `R.string.secret2` on clicking secret2 it brings us to a class where the variable is defined with a number assigned to it. These strings being retrieved from the compiled in resources and so we need to somehow find those. 
+- **search function** - just right click secret2 and say Global search. By default, the global search will only search through the code, and so we also want to enable resource here. and we get the flag
+- we can switch to `Smali` code from bottom left 
+### JNI - Java Native Interface
 
-00:18
+Used to call into native code, commonly used to embedded C or C++ code or libraries into an application.
 
-Unfortunately, this just brings us to a class where the variable is defined with a number assigned to it. These strings being retrieved from the compiled in resources
+This time the password is compared to `secretFromJNI()`
+```java
+package io.hextree.example_nativelib;
+public class NativeLib {
+	public native String secretFromJNI();
+	static {
+		System.loadLibrary("example_nativelib");
+	} 
+}
+```
 
-00:26
+JNI allows us to call into native platform and CPU dependent code, and so for example, Into `C` or `C++` code.
 
-and so we need to somehow find those. Luckily, jet X has a very powerful search function and so we can just right click secret two
+There are a lot of different reasons for why somebody would use JNI.
+1. One is performance. 
+2. The other one is to write cross-platform code that also runs, for example, on iOS 
+3. sometimes also just the toolkit that was used or the library that was used is only available as `C` or `C++` library. We can find the native libraries under resources slip,
 
-00:35
+and you can see that for each platfo Army AB X 85 X 80, 60, 64, ha detind shared object here.
 
-and say Global search. By default, the global search will only search through the code, and so we also want
+We can't analyze this shared ob
 
-00:43
+but we can, for example, load it in
 
-to enable resource here, and after this search has finished, we can see that we have four findings including one
+just run strings on the shared objec
 
-00:49
+to see whether we can find the string
 
-that is in rest values strings that xml, and so let's double click that result and we can see that we found the string.
+after a lot of strolling, indeed, here's our
 
-Nobody will ever find this seems to be the password. Let's give it a try. And yes, we are in. Awesome.
+password. Let's go give a native attempt
 
-And now It's your turn. Can you find the second password for the application in the IPK
-
+secret,
 ### References
 [Reverse Engineering Android Apps (hextree.io)](https://app.hextree.io/courses/reverse-android-apps/decompiling-android-applications)
 
