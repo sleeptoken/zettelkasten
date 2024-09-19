@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hypervisors Internals.md",
+                "file": "Decompiling Android apps.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hypervisors Internals.md",
+                "file": "Decompiling Android apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hypervisors Internals.md",
+                "file": "Decompiling Android apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hypervisors Internals.md"
+                "file": "Decompiling Android apps.md"
               }
             }
           }
@@ -151,9 +151,10 @@
   },
   "active": "d927053f4b057add",
   "lastOpenFiles": [
-    "Decompiling Android apps.md",
-    "Hypervisors Internals.md",
     "Authentication vulnerabilities.md",
+    "Decompiling Android apps.md",
+    "GraphQL API vulnerability.md",
+    "Remote Thought/Hypervisors Internals.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Android Debug Bridge.md",
     "Tags/apktool.md",
@@ -168,7 +169,6 @@
     "Tags/Binary Exploit.md",
     "Tags/Reverse Proxies.md",
     "Tags/HTTP toolkit.md",
-    "GraphQL API vulnerability.md",
     "OSCP resources.md",
     "Stream Cipher.md",
     "Ret2dlresolve.md",
