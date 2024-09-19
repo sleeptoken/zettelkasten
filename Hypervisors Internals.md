@@ -83,7 +83,33 @@ Hypervisors such as KVM use a combination of full virtualisation and paravirtual
 
 Nested virtualisation allows for virtual machines within virtual machines. For example, running VirtualBox within a guest. This is achieved by using hardware-supported virtualisation such as Intel VT-x or AMD-V. These technologies are features within the CPU that manage virtual machine operations directly rather than using the Hypervisor as the middle-person.
 The use of Intel VT-x and AMD-V improves performance because the instructions are handled on the hardware directly rather than through software.
+### Guest Additions
 
+Guest additions are drivers and software that are used to enhance the functionality and performance of a virtual machine. They are installed on the guest machine and provide additional functionality
+
+Guest additions are generally installed after the VM's OS has been set up.
+
+ However, guest additions can be installed at any time. To do so, you will need to mount the guest additions ISO in the guest's DVD/CD tray. Hypervisors store these ISOs in different locations, but they are generally stored in the same place where the Hypervisor program is installed.
+
+For VMware Workstation, with Windows as the host, these are stored in  `C:\Program Files (x86)\VMware\VMware Workstation` on a default installation.
+#### Shared Folders
+
+Please note that it is possible to specify the shared folder as "read only" when specifying it in the options. This is useful when you want the guest to see the files within the host folder but cannot write to it.
+#### Improved Graphics
+
+Hypervisors can use guest additions to improve graphical performance. In VMware, 3D acceleration can be enabled.
+#### USB Devices
+
+To attach a USB device to a VMware Workstation, left-click on the USB device located at the bottom right of the display pane of the guest VM.
+We can now see that the USB device has been disconnected from the host and attached to the guest.
+#### Guest Perspective
+
+﻿Once guest additions are installed, services, drivers and processes are added to the guest. The names of these will vary across Hypervisors; however, for VMware, you can see the processes named "VMware Tools" on the guest.
+#### Vulnerabilities
+
+While guest additions add multiple useful features to a guest VM, they do potentially increase the risk of attack. For example, ransomware can potentially escape onto the host in the case of shared folders, or a data leak can occur.
+
+Additionally, guest additions can serve as an opportunity for attackers to escalate their privileges. As these additions run with elevated privileges due to their nature, a vulnerability within them can serve as a potential method for an attacker to obtain administrative privileges within the guest.
 ### References
 
 [TryHackMe | Hypervisor Internals](https://tryhackme.com/r/room/hypervisorinternals)
