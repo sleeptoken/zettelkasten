@@ -33,23 +33,25 @@ JNI allows us to call into native platform and CPU dependent code, and so for ex
 There are a lot of different reasons for why somebody would use JNI.
 1. One is performance. 
 2. The other one is to write cross-platform code that also runs, for example, on iOS 
-3. sometimes also just the toolkit that was used or the library that was used is only available as `C` or `C++` library. We can find the native libraries under resources slip,
+3. sometimes also just the toolkit that was used or the library that was used is only available as `C` or `C++` library. 
+ 
+We can find the native libraries under resources lib, and you can see that for each platform `arm64`, `armeabi`,` x86`,` x86_64` there is a shared object here.
 
-and you can see that for each platfo Army AB X 85 X 80, 60, 64, ha detind shared object here.
+We can't analyze this shared objects in JADX directly but we can, for example, load it into [[Ghidra]] or just [[strings]] on shared object
+### Saving in JADX
 
-We can't analyze this shared ob
+When Saving a JADX project, it's stored as a `.jadx`file, and this file will contain all the decompiled sources of the APK. It's a good file format if you want to send your reverse project to somebody else.
 
-but we can, for example, load it in
+If you have done **modifications** to **symbols** in jadx, you can also export your mappings as `Tiny v2` or as `Enigma` file.
+You can also save all the decompiled sources to a folder. You can then, for example, load it into other tools.
 
-just run strings on the shared objec
+You can export the entire project as a `Gradle` project. 
+Gradle projects are especially useful when you want to import the project into a different IDE and read the code there. So, for example, Android Studio natively supports Gradle projects.
+Often when you import a project, there will be errors and warnings. In a lot of cases, you can Just Ignore those but sometimes something goes wrong and you wanna check the error log to see whether you can spot what's going on.
 
-to see whether we can find the string
+If you prefer to use a different IDE, you can also export the entire decompiled source, even as a Gradle project (but it's buggy and often doesn't work).
 
-after a lot of strolling, indeed, here's our
-
-password. Let's go give a native attempt
-
-secret,
+Jadx also has a powerful CLI that you can use to decompile APKs headless. You can find the CLI option documentation [here](https://github.com/skylot/jadx?tab=readme-ov-file#usage).
 ### References
 [Reverse Engineering Android Apps (hextree.io)](https://app.hextree.io/courses/reverse-android-apps/decompiling-android-applications)
 
