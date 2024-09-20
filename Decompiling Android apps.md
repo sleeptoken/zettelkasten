@@ -52,6 +52,16 @@ Often when you import a project, there will be errors and warnings. In a lot of 
 If you prefer to use a different IDE, you can also export the entire decompiled source, even as a Gradle project (but it's buggy and often doesn't work).
 
 Jadx also has a powerful CLI that you can use to decompile APKs headless. You can find the CLI option documentation [here](https://github.com/skylot/jadx?tab=readme-ov-file#usage).
+### Important steps for Reverse engineering 
+
+- **Define clear research goals** - for our weather app we want to find the API endpoint from where the app is fetching data - we will directly search for "`http`" in global search
+- Break research goals into smaller goals, much like in life. 
+
+> **Focus on your goal, not the code.** If you know you are looking for a specific functionality it's often best to search for that functionality directly instead of trying to understand the overall code & structure of the application.
+
+
+
+
 ### References
 [Reverse Engineering Android Apps (hextree.io)](https://app.hextree.io/courses/reverse-android-apps/decompiling-android-applications)
 
