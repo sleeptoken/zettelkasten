@@ -1,7 +1,9 @@
 
 2024-07-19 16:47
 
-Source: #tryhackme #forensics 
+Source: #tryhackme 
+
+Tags: [[Forensics]]
 
 check `/var/log/apache2` for `access.log` file for analyzing tool operations performed in the past 
 the Apache access log keeps a history of all of the requests sent to the webserver

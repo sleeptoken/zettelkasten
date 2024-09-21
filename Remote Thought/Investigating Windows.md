@@ -1,9 +1,9 @@
 
 2024-06-15 11:21
 
-Source: #forensics #tryhackme 
+Source:  #tryhackme 
 
-Tags: [[win]]
+Tags: [[win]] [[Forensics]]
 
 EventViewer is the best source to go to in order to see **user login history**. User logins are included in EventViewer under Windows Logs > Security
 

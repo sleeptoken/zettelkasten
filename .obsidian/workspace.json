@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dff5c6fc5f238983",
+            "id": "c7f2eec5551a8afd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Useful Tools.md",
+                "file": "Volatility.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "adb shell pm ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Useful Tools.md",
+                "file": "Volatility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Useful Tools.md",
+                "file": "Volatility.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Useful Tools.md"
+                "file": "Volatility.md"
               }
             }
           }
@@ -148,9 +149,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "c7f2eec5551a8afd",
   "lastOpenFiles": [
+    "Volatility.md",
+    "Remote Thought/Hypervisors Internals.md",
     "Remote Thought/Useful Tools.md",
+    "Tags/Forensics.md",
+    "Remote Thought/Linux server forensics.md",
+    "Remote Thought/Investigating Windows.md",
     "Remote Thought/Cookie Manipulation.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Integrity Failure.md",
@@ -159,13 +165,11 @@
     "Decompiling Android apps.md",
     "Authentication vulnerabilities.md",
     "SQL injection.md",
-    "Remote Thought/Linux server forensics.md",
     "Stream Cipher.md",
     "Tags/nmap.md",
     "Tags/strings.md",
     "Tags/Ghidra.md",
     "GraphQL API vulnerability.md",
-    "Remote Thought/Hypervisors Internals.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Android Debug Bridge.md",
     "Tags/apktool.md",
@@ -173,9 +177,6 @@
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Internet perms & Networking.md",
-    "Remote Thought/Packet logging with tcpdump.md",
-    "Remote Thought/HTTP Request Smuggling.md",
-    "Remote Thought/Injecting Shellcode.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
