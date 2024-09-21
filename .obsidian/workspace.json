@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "844ba6b91a206ab9",
+        "id": "64de993152dfc18e",
         "type": "tabs",
         "children": [
           {
-            "id": "7ac9fa93558e8ed7",
+            "id": "b719999a296b9cb9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Ruby SSTI.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ruby SSTI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ruby SSTI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ruby SSTI.md"
+              }
             }
           }
         ],
@@ -139,8 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ac9fa93558e8ed7",
+  "active": "b719999a296b9cb9",
   "lastOpenFiles": [
+    "Ruby SSTI.md",
     "Tags/Volatility.md",
     "Remote Thought/Hypervisors Internals.md",
     "Remote Thought/Useful Tools.md",
@@ -166,7 +176,6 @@
     "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
-    "Remote Thought/Internet perms & Networking.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",
