@@ -6,7 +6,7 @@ Use scripts to check for vulnerabilities.
 ```
 nmap --script smb-enum-shares -p 445 192.168.1.1
 ```
-Enumerates SMB shares using Nmap script.
+Enumerates [[SMB shares]] using Nmap script.
 
 ```
 nmap --script http-enum -p 80 192.168.1.1
@@ -26,7 +26,7 @@ Checks for registry service DoS vulnerability.
 ```
 nmap --script http-sql-injection --script args='http-sql-injection.args' -p 80 192.168.1.1
 ```
-Checks for SQL injection vulnerabilities using Nmap script.
+Checks for [[SQL injection]] vulnerabilities using Nmap script.
 
 ```
 nmap -sL 192.168.1.0/24

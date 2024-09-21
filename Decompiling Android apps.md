@@ -58,7 +58,9 @@ Jadx also has a powerful CLI that you can use to decompile APKs headless. You ca
 - Break research goals into smaller goals, much like in life. 
 
 > **Focus on your goal, not the code.** If you know you are looking for a specific functionality it's often best to search for that functionality directly instead of trying to understand the overall code & structure of the application.
-
+### Case study of the Weather app
+ 
+After a bit of reverse engineering we can see that the API key is hidden in a string resource `res>values>strings.xml`- something you will commonly see in applications in the wild.
 
 
 
