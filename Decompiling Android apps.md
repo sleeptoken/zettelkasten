@@ -84,8 +84,26 @@ We can find three places in main activity. And when we go through them one by on
 we look up the text of the error message. search for Whether updates using search feature
 #### crafting the API request \
 
-in the cpde
+in the code we see this 
+```java
+new e(str, this.f402a).start();
+```
+First, `this` value turns out to be the `MainActivity` object.
 
+It's actually somewhat common to see activity objects passed around in Android apps.
+- The reason for that is that several Android APIs or functions require a context and the activity is such a context.
+
+For example, the `toast` message used here for the error message, it requires a context and it got passed in `this`.
+```java
+if (!b2.equals("13337") && !b2.equals("42")) {
+    Toast.makeText(this, "Weather Updates Disabled", 0).show();
+    return;
+}
+```
+
+And `this` is the main activity. 
+
+Keep in mind the app is obfuscated with `proguard`. So normal method names should be obfuscated and shortened. So the fact that it says in clear `start` this can tell us that this might be a standard library call, which we can actually confirm if we follow the chain.
 
 
 ### References
