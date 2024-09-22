@@ -122,24 +122,19 @@ the Jadx DECOMPILER also has a command line tool which can be used to decompile 
  - then go to the extension and select the second folder. 
  
 this method of Diffing app updates can be quite useful to find interesting areas to investigate, especially in apps you have never looked into. It can guide you to interesting new areas
+#### Function with native keyword  
 
- Just directly search for the X-API key in the updated app, which brings us here and this shows us that the API key seems to be returned by this function `getKey` and a weird string. And where is that function? Well, It's not here. The function appears empty. The reason for that is the native keyword.
+Just directly search for the X-API key in the updated app, which brings us here and this shows us that the API key seems to be returned by this function `getKey` and a weird string. And where is that function? Well, It's not here. The function appears empty. The reason for that is the native keyword.
 
 This function is Implemented in native code in a binary, which we can also see here at the top of the class here.
 
 Native libraries In an app can be found in the lib folder and in this case it contains binaries for four different architectures. all these libraries contain the same code, just Compiled for different architectures
 
  I can generally identify three different strategies how to do that.
-
-First you could use a disassembler tool like Ghidra tool, reverse engineer the assembly code and figure out what this parameter is used for
-
-and what the function returns. But reverse engineering binary code is an entire field of its own. Another strategy is network Interception.
-
-You could try to run the app on your phone or emulator, Intercept the HDP request and grab the key that way.
-
-This is something we will look into another course but for
-
-
+- First you could use a disassembler tool like Ghidra tool, 
+- Another strategy is network Interception. 
+- Just run the library code
+#### Just run the library code
 
 
 ### References
