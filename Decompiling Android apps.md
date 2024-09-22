@@ -108,7 +108,36 @@ And `this` is the main activity.
 Keep in mind the app is obfuscated with `proguard`. So normal method names should be obfuscated and shortened. So the fact that it says in clear `start` this can tell us that this might be a standard library call, which we can actually confirm if we follow the chain.
 ### Diffing Application Updates
 
+Updates usually include new features which could introduce new security issues or an update fixes an issue of a previous version
 
+and to figure out what has changed can be done with **diffing**
+the Jadx DECOMPILER also has a command line tool which can be used to decompile into a folder.
+```shell 
+./bin/jadx io.hextree.weatherusa.apk -d app1
+./bin/jadx io.hextree.weatherusa_update1.apk -d app2
+```
+
+ enable an extension for VS. Code `Compare Folders`.
+ - It works by opening one of the folders in VS code 
+ - then go to the extension and select the second folder. 
+ 
+this method of Diffing app updates can be quite useful to find interesting areas to investigate, especially in apps you have never looked into. It can guide you to interesting new areas
+
+ Just directly search for the X-API key in the updated app, which brings us here and this shows us that the API key seems to be returned by this function `getKey` and a weird string. And where is that function? Well, It's not here. The function appears empty. The reason for that is the native keyword.
+
+This function is Implemented in native code in a binary, which we can also see here at the top of the class here.
+
+Native libraries In an app can be found in the lib folder and in this case it contains binaries for four different architectures. all these libraries contain the same code, just Compiled for different architectures
+
+ I can generally identify three different strategies how to do that.
+
+First you could use a disassembler tool like Ghidra tool, reverse engineer the assembly code and figure out what this parameter is used for
+
+and what the function returns. But reverse engineering binary code is an entire field of its own. Another strategy is network Interception.
+
+You could try to run the app on your phone or emulator, Intercept the HDP request and grab the key that way.
+
+This is something we will look into another course but for
 
 
 
