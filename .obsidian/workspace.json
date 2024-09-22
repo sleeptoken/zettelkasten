@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby SSTI.md",
+                "file": "Remote Thought/Ruby SSTI.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby SSTI.md",
+                "file": "Remote Thought/Ruby SSTI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby SSTI.md",
+                "file": "Remote Thought/Ruby SSTI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby SSTI.md"
+                "file": "Remote Thought/Ruby SSTI.md"
               }
             }
           }
@@ -148,9 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b719999a296b9cb9",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Ruby SSTI.md",
+    "Remote Thought/Ruby SSTI.md",
     "Tags/Volatility.md",
     "Remote Thought/Hypervisors Internals.md",
     "Remote Thought/Useful Tools.md",
