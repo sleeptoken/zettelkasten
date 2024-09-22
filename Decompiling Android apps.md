@@ -82,6 +82,11 @@ We can find three places in main activity. And when we go through them one by on
 ##### Method 2 (Find Error Message) 
 
 we look up the text of the error message. search for Whether updates using search feature
+#### crafting the API request \
+
+in the cpde
+
+
 
 ### References
 [Reverse Engineering Android Apps (hextree.io)](https://app.hextree.io/courses/reverse-android-apps/decompiling-android-applications)
