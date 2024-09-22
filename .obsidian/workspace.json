@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Ruby SSTI.md",
+                "file": "Decompiling Android apps.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Ruby SSTI.md",
+                "file": "Decompiling Android apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Ruby SSTI.md",
+                "file": "Decompiling Android apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Ruby SSTI.md"
+                "file": "Decompiling Android apps.md"
               }
             }
           }
@@ -148,8 +149,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "b719999a296b9cb9",
   "lastOpenFiles": [
+    "Decompiling Android apps.md",
     "Remote Thought/Ruby SSTI.md",
     "Tags/Volatility.md",
     "Remote Thought/Hypervisors Internals.md",
@@ -162,7 +164,6 @@
     "Remote Thought/Integrity Failure.md",
     "OSCP resources.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "Decompiling Android apps.md",
     "Authentication vulnerabilities.md",
     "SQL injection.md",
     "Stream Cipher.md",

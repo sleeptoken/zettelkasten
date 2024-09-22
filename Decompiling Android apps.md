@@ -61,7 +61,12 @@ Jadx also has a powerful CLI that you can use to decompile APKs headless. You ca
 ### Case study of the Weather app
  
 After a bit of reverse engineering we can see that the API key is hidden in a string resource `res>values>strings.xml`- something you will commonly see in applications in the wild.
+#### Identifying the Correct ZIP Code
 
+Like always in reverse engineering there are many paths that can lead to the goal 
+##### Method1
+
+start from UI and try to trace where the entered zip code goes 
 
 
 ### References
