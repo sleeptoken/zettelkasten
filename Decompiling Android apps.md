@@ -82,13 +82,14 @@ We can find three places in main activity. And when we go through them one by on
 ##### Method 2 (Find Error Message) 
 
 we look up the text of the error message. search for Whether updates using search feature
-#### crafting the API request \
+#### Crafting the API request 
 
 in the code we see this 
 ```java
 new e(str, this.f402a).start();
 ```
 First, `this` value turns out to be the `MainActivity` object.
+##### this.f402a
 
 It's actually somewhat common to see activity objects passed around in Android apps.
 - The reason for that is that several Android APIs or functions require a context and the activity is such a context.
@@ -102,8 +103,14 @@ if (!b2.equals("13337") && !b2.equals("42")) {
 ```
 
 And `this` is the main activity. 
+##### .start()
 
 Keep in mind the app is obfuscated with `proguard`. So normal method names should be obfuscated and shortened. So the fact that it says in clear `start` this can tell us that this might be a standard library call, which we can actually confirm if we follow the chain.
+### Diffing Application Updates
+
+
+
+
 
 
 ### References
