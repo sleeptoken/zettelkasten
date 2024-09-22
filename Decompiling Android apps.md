@@ -64,54 +64,24 @@ After a bit of reverse engineering we can see that the API key is hidden in a st
 #### Identifying the Correct ZIP Code
 
 Like always in reverse engineering there are many paths that can lead to the goal 
-##### Method1
+##### Method 1 (Trace "Done" button click)
 
 start from UI and try to trace where the entered zip code goes 
 further down the line we find a method (`m.e()`) getting called, this method gets a reference to the shared preferences.
-\
 ###### Shared preferences.
 These are application specific preferences that the app wants to persist and store even when the app is killed. So this is kind of like a database intended for user preferences.
 
-So we get the shared preferences and then we store the zip code in it. Looks like this whole class is related to preferences. So we can rename the class now and of course we can start renaming all the other things to make it clearer. For example, here we get this string out of the preferences. So this string is the zip code and this function returns it, meaning we can rename this whole method to get zip. So just by reading the functions,
+So we get the shared preferences and then we store the zip code in it. Looks like this whole class is related to preferences. So we can rename the class now
 
-02:25
+> Renaming classes and variables during reverse engineering always helps
 
-we can deduct their intention and we can come up with fitting names. Of course, these are not the real names of the source code.
+if the zip code is stored in the preferences. Where's the zip code? Read and used?
+Select the method that loads the zip code from the preferences and with `Find Usage(x)` we can see where it gets used. 
+We can find three places in main activity. And when we go through them one by one, we eventually see an if case, checking whether the zip code is 1, 3, 3, 3, 7, or 42.
 
-02:32
+##### Method 2 (Find Error Message) 
 
-These are just names we give them. Sometimes our assumption can be wrong, but here I have a good feeling these names make sense.
-And this is also the end of the button click. But this gives us new goals to follow if the zip code
-
-02:58
-
-Is stored in the preferences. Where's the zip code? Red and used? Well, here's the method that loads the zip code from the preferences
-
-and with X we can see where it gets used. We can find three places in main activity. And when we go through them one by one,
-
-03:06
-
-we eventually end up here. Here we get the zip code string followed by an if case, checking whether the zip code is 1, 3, 3, 3, 7, or 42.
-
-03:14
-
-By the way, if we had chosen a different research strategy, instead of starting with the zip input field, we looked up the text of the error message.
-
-03:26
-
-Whether updates this enabled, we could have immediately found this code, but we obviously didn't know this at the start.
-
-03:33
-
-Both approaches are perfectly valid. In one case, we would have found the answer about the zip code Immediately. With the other we didn't.
-
-03:40
-
-But along the way, we reverse engineered a few classes and functions and learned about the shared preferences used by this app.
-
-03:47
-
-So both paths have their advantages and disadvantages. Now the moment of truth, let's go
+we look up the text of the error message. search for Whether updates using search feature
 
 ### References
 [Reverse Engineering Android Apps (hextree.io)](https://app.hextree.io/courses/reverse-android-apps/decompiling-android-applications)
