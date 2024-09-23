@@ -140,14 +140,39 @@ The ideas now that we simply integrate the native libraries into our own app and
 
 - switch to the project view , create a `jniLibs` folder in `app>src>main` and populate it with the files in `lib` we talked about in the earlier section about the "native" keyword.
 
-Now let's go back to the DECOMPILE code and we want to copy the class as closely as possible. This includes the package name and that is actually very important.
-So we create the new class and we provide the complete name, the package part plus the class name. The reason for that is it has to do with how these native libraries work when you develop them.
+Now let's go back to the DECOMPILE code and we want to copy the class as closely as possible. This includes the package name.
+So we create the new class and we provide the complete name, the package part plus the class name.
+The reason for that is it has to do with how these native libraries work when you develop them.
 
-You have to create function names that match the Java names. 
-So the names in the binary and the Java class must match so that Android can map them to each other.
+> You have to create function names that match the Java names. 
+> So the names in the binary and the Java class must match so that Android can map them to each other.
 
-That's why we have to create the same package name, class name and native method name, but that's also all that has to match.
+create file - `Intenetutil.java` w contents
+```java
+package io.hextree.weatherusa;
 
+public class InternetUtil {
+	private static native String getKey(String str);
+
+	public static String solve() {
+		System.loadLibrary(libname: "native-lib");
+		return getKey(str:"moibalcybar8smart4sheriff4securi");
+	}
+}
+```
+That's why we have to create the same package name, class name and native method name, 
+```java
+public class MainActivity extends AppCompatActivity {
+	int counter = 0;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		TextView homeText = findViewById(R.id.home_text);
+		homeText.setText("API: "+ InternetUtil.solve());
+	}
+}
+```
 We are now free to write other code as we wish, and I simply create a soft method where we call load library
 
 with the name of the loaded library to actually now load it and we call get key with the parameter
