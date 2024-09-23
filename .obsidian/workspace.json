@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Injection.md",
+                "file": "Decompiling Android apps.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Injection.md",
+                "file": "Decompiling Android apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Injection.md",
+                "file": "Decompiling Android apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Injection.md"
+                "file": "Decompiling Android apps.md"
               }
             }
           }
@@ -151,7 +151,9 @@
   },
   "active": "b719999a296b9cb9",
   "lastOpenFiles": [
+    "JNI.md",
     "Decompiling Android apps.md",
+    "Remote Thought/Injection.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Ruby SSTI.md",
     "Tags/Volatility.md",
@@ -175,8 +177,6 @@
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Android Debug Bridge.md",
     "Tags/apktool.md",
-    "Remote Thought/Advanced Interception Tricks.md",
-    "Remote Thought/Special Android Features.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Untitled.canvas",
     "Images/buffer-overflow-diagram.png",

@@ -13,7 +13,7 @@ Because of features such as `reflection`, Java applications generally retain all
 we have an if statement where an input string is compared to `R.string.secret2` on clicking secret2 it brings us to a class where the variable is defined with a number assigned to it. These strings being retrieved from the compiled in resources and so we need to somehow find those. 
 - **search function** - just right click secret2 and say Global search. By default, the global search will only search through the code, and so we also want to enable resource here. and we get the flag
 - we can switch to `Smali` code from bottom left 
-### JNI - Java Native Interface
+### [[JNI]] - Java Native Interface
 
 Used to call into native code, commonly used to embedded C or C++ code or libraries into an application.
 
@@ -78,7 +78,6 @@ So we get the shared preferences and then we store the zip code in it. Looks lik
 if the zip code is stored in the preferences. Where's the zip code? Read and used?
 Select the method that loads the zip code from the preferences and with `Find Usage(x)` we can see where it gets used. 
 We can find three places in main activity. And when we go through them one by one, we eventually see an if case, checking whether the zip code is 1, 3, 3, 3, 7, or 42.
-
 ##### Method 2 (Find Error Message) 
 
 we look up the text of the error message. search for Whether updates using search feature
@@ -122,7 +121,7 @@ the Jadx DECOMPILER also has a command line tool which can be used to decompile 
  - then go to the extension and select the second folder. 
  
 this method of Diffing app updates can be quite useful to find interesting areas to investigate, especially in apps you have never looked into. It can guide you to interesting new areas
-#### Function with native keyword  
+#### Function with "native" keyword  
 
 Just directly search for the X-API key in the updated app, which brings us here and this shows us that the API key seems to be returned by this function `getKey` and a weird string. And where is that function? Well, It's not here. The function appears empty. The reason for that is the native keyword.
 
@@ -134,7 +133,29 @@ Native libraries In an app can be found in the lib folder and in this case it co
 - First you could use a disassembler tool like Ghidra tool, 
 - Another strategy is network Interception. 
 - Just run the library code
-#### Just run the library code
+##### Just run the library code
+
+Use the POC app from [[Building Android POC app]] as our base project. 
+The ideas now that we simply integrate the native libraries into our own app and call it like the weather app did. 
+
+- switch to the project view , create a `jniLibs` folder in `app>src>main` and populate it with the files in `lib` we talked about in the earlier section about the "native" keyword.
+
+Now let's go back to the DECOMPILE code and we want to copy the class as closely as possible. This includes the package name and that is actually very important.
+So we create the new class and we provide the complete name, the package part plus the class name. The reason for that is it has to do with how these native libraries work when you develop them.
+
+You have to create function names that match the Java names. 
+So the names in the binary and the Java class must match so that Android can map them to each other.
+
+That's why we have to create the same package name, class name and native method name, but that's also all that has to match.
+
+We are now free to write other code as we wish, and I simply create a soft method where we call load library
+
+with the name of the loaded library to actually now load it and we call get key with the parameter
+
+and then the solve function. We can now integrate into our
+
+
+
 
 
 ### References
