@@ -139,6 +139,7 @@ Use the POC app from [[Building Android POC app]] as our base project.
 The ideas now that we simply integrate the native libraries into our own app and call it like the weather app did. 
 
 - switch to the project view , create a `jniLibs` folder in `app>src>main` and populate it with the files in `lib` we talked about in the earlier section about the "native" keyword.
+###### Why we have to create the same package name, class name and native method name,
 
 Now let's go back to the DECOMPILE code and we want to copy the class as closely as possible. This includes the package name.
 So we create the new class and we provide the complete name, the package part plus the class name.
@@ -160,7 +161,8 @@ public class InternetUtil {
 	}
 }
 ```
-That's why we have to create the same package name, class name and native method name, 
+
+create file - `MainActivity.java` w contents
 ```java
 public class MainActivity extends AppCompatActivity {
 	int counter = 0;
@@ -173,14 +175,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 }
 ```
-We are now free to write other code as we wish, and I simply create a soft method where we call load library
-
-with the name of the loaded library to actually now load it and we call get key with the parameter
-
-and then the solve function. We can now integrate into our
-
-
-
 
 
 ### References
