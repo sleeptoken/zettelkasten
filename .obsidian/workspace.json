@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "64de993152dfc18e",
+        "id": "d7f8421263f7fff5",
         "type": "tabs",
         "children": [
           {
-            "id": "b719999a296b9cb9",
+            "id": "32b7ad959f12bdc8",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,6 +141,8 @@
   },
   "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
+    "Remote Thought/create venv in python.md",
     "Remote Thought/Linux server forensics.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
@@ -171,11 +167,8 @@
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Remote Thought/CSRF.md",
     "Remote Thought/Freq Analysis.md",
-    "Remote Thought/DOM-based XSS.md",
-    "Remote Thought/Caesar Cipher.md",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
-    "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/buffer-overflow-diagram.png",
     "Untitled.canvas",
     "Zettelkasten",
