@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ea14a86577ca1cec",
+        "id": "e94b94f9149ee00c",
         "type": "tabs",
         "children": [
           {
-            "id": "07e1d9076b6ca26e",
+            "id": "f64b7707318f2930",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dynamic Instrumentation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dynamic Instrumentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dynamic Instrumentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Dynamic Instrumentation.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,7 +138,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07e1d9076b6ca26e",
+  "active": "f64b7707318f2930",
   "lastOpenFiles": [
     "Dynamic Instrumentation.md",
     "Authentication vulnerabilities.md",

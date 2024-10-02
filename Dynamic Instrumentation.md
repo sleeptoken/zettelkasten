@@ -4,7 +4,7 @@
 Source: #android 
 ### Setup
 
-To install frida & also want to install Objection, run:
+To install Frida & also want to install Objection, run:
 ```
 pip3 install frida-tools
 pip3 install objection
@@ -38,7 +38,7 @@ The `-U` here specifies that we want to connect by USB.
 - An alternative to patching the APK is to run Frida server on our device. ( Frida server requires a root device )
 - makes interfacing with applications very easy 'cause you don't have to patch every single APK you want to work on 
 
-If you have a rooted device, you can also run `frida-server` instead of patching the APK. You can download frida-server on the [Github Releases Page of Frida](https://github.com/frida/frida/releases) ([frida-server-16.5.2-android-arm64.xz](https://github.com/frida/frida/releases/download/16.5.2/frida-server-16.5.2-android-arm64.xz)). Note that it comes `xz` compressed, so you have to extract it (`xz -d` on unixoid systems, 7zip on for example Windows).
+If you have a rooted device, you can also run `frida-server` instead of patching the APK. You can download Frida-server on the [Github Releases Page of Frida](https://github.com/frida/frida/releases) ([frida-server-16.5.2-android-arm64.xz](https://github.com/frida/frida/releases/download/16.5.2/frida-server-16.5.2-android-arm64.xz)). Note that it comes `xz` compressed, so you have to extract it (`xz -d` on unixoid systems, 7zip on for example Windows).
 
 To install it in an emulator we can `adb push` the server over:
 
