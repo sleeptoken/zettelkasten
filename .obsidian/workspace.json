@@ -8,11 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f64b7707318f2930",
+            "id": "7bb14cbaabaac63c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Go SSTI.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Remote Thought/Go SSTI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Remote Thought/Go SSTI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Remote Thought/Go SSTI.md"
+              }
             }
           }
         ],
@@ -138,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f64b7707318f2930",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Remote Thought/Go SSTI.md",
+    "Remote Thought/Ruby SSTI.md",
     "Dynamic Instrumentation.md",
     "Authentication vulnerabilities.md",
     "DNS Spoofing and Transparent Proxy.md",
@@ -165,8 +176,6 @@
     "Remote Thought/break RSA w public ky.md",
     "Remote Thought/Injecting Shellcode.md",
     "Remote Thought/Don't use alert(1).md",
-    "Remote Thought/Overwriting variables on the stack.md",
-    "Remote Thought/Symbolic Link & brute force.md",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
     "Images/buffer-overflow-diagram.png",
