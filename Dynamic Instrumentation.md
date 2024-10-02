@@ -38,25 +38,11 @@ The `-U` here specifies that we want to connect by USB.
 - An alternative to patching the APK is to run Frida server on our device. ( Frida server requires a root device )
 - makes interfacing with applications very easy 'cause you don't have to patch every single APK you want to work on 
 
-And then we scroll down to Frida server and download Frida server for our architecture. So I'm 64 in my case.
-
-Next we have to uncompress the Frida server as it comes XZ compressed and so I'm just gonna say XC dash D.
-
-And then we need to run a DB as route. And so I'm gonna type a DB route which will restart the A
-
-DB server as root. Next we push the Frida server to data local temp.  Next we drop into an A DB shell and go to data local temp.
-
-Next we do change mod plus X to make the executable actually executable and then we just run it with dot slash reader server
-
-and then we just tap complete the version. And now we can go into our Android emulator. And I've got the unmodified a PK in start here here.
-
-
-
-If you have a rooted device, you can also run `frida-server` instead of patching the APK. You can download frida-server on the [Github Releases Page of Frida](https://github.com/frida/frida/releases). Note that it comes xz compressed, so you have to extract it (`xz -d` on unixoid systems, 7zip on for example Windows).
+If you have a rooted device, you can also run `frida-server` instead of patching the APK. You can download frida-server on the [Github Releases Page of Frida](https://github.com/frida/frida/releases) ([frida-server-16.5.2-android-arm64.xz](https://github.com/frida/frida/releases/download/16.5.2/frida-server-16.5.2-android-arm64.xz)). Note that it comes `xz` compressed, so you have to extract it (`xz -d` on unixoid systems, 7zip on for example Windows).
 
 To install it in an emulator we can `adb push` the server over:
 
-```
+```shell
 adb push frida-server /data/local/tmp/
 ```
 
@@ -64,7 +50,7 @@ The reason we use this specific directory is that other path such as `/sdcard` a
 
 Afterwards we want to run adb as root, and also make the server executable:
 
-```
+```shell
 adb root
 adb shell
 cd /data/local/tmp
