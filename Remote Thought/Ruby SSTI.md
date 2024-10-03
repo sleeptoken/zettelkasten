@@ -1,7 +1,9 @@
 
 2024-09-21 18:51
 
-Source: #htb 
+Source: #htb #web 
+
+Tags: [[SSTI]]
 
 Source Code Snippet - 
 ```ruby

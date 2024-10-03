@@ -1,40 +1,46 @@
 
 2024-10-02 23:16
 
-Source: #web 
+Source: #web #htb 
+
+Tags: [[SSTI]]
 ## Reconnaissance
 
 We notice the `go` source code that seems to execute code from remote templates.
 
 ```go
-if remote == "true" {
-		tmplFile, err = readRemoteFile(page)
-
+	if remote == "true" {
+			tmplFile, err = readRemoteFile(page)
+	
+			if err != nil {
+				http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+				return
+			}
+		} else {
+165			tmplFile, err = readFile(TEMPLATE_DIR+"/"+page, "./")
+	
+			if err != nil {
+				http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+				return
+			}
+		}
+	
+180		tmpl, err := template.New("page").Parse(tmplFile)
 		if err != nil {
 			http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 			return
 		}
-	} else {
-		tmplFile, err = readFile(TEMPLATE_DIR+"/"+page, "./")
-
+	
+		err = tmpl.Execute(w, reqData)
 		if err != nil {
 			http.Error(w, "Internal Server Error", http.StatusInternalServerError)
 			return
 		}
-	}
-
-	tmpl, err := template.New("page").Parse(tmplFile)
-	if err != nil {
-		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
-		return
-	}
-
-	err = tmpl.Execute(w, reqData)
-	if err != nil {
-		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
-		return
-	}
 ```
+The function `readRemoteFile` allows the application to fetch a remote resource 
+**Notice how this function does not do any sort of sanitization and simply fetches & returns the contents of the remote page**
+
+On **line 180** a new template is generated and displayed using the contents of `tmplFile`, which we control through the `page`query parameter. This essentially exposes the application to **SSTI** because we could host a harmful file for the application to fetch and render.
 
 We also notice that there is a method that executes system commands.
 
