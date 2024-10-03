@@ -147,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "7bb14cbaabaac63c",
   "lastOpenFiles": [
+    "Tags/ngork.md",
     "Remote Thought/Go SSTI.md",
     "Remote Thought/Ruby SSTI.md",
     "Dynamic Instrumentation.md",
@@ -175,7 +176,6 @@
     "Remote Thought/Injection.md",
     "Remote Thought/break RSA w public ky.md",
     "Remote Thought/Injecting Shellcode.md",
-    "Remote Thought/Don't use alert(1).md",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
     "Images/buffer-overflow-diagram.png",
