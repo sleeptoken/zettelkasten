@@ -68,8 +68,85 @@ Now we can connect to the application by running:
 ```
 frida -U FridaTarget
 ```
-
 ### Frida REPL
+
+The Frida REPL (Read-Eval-Print-Loop) is a JavaScript interpreter, and so we can directly run JavaScript statements:
+
+```js
+for(var i=0; i < 5; i++) { console.log(i); }
+```
+
+To create multi-line statements, suffix each line with a `\` backslash:
+
+```js
+for(var i=0; i < 5; i++) {\
+    console.log(i);\
+}
+```
+
+You can also search through your command history by pressing` Ctrl+ R`, 
+for example type `for`, and then it will find all lines that you've executed that contain `for`.
+
+If you want to find an earlier command, just hit `Ctrl+R`. Again, 
+
+There are also a couple of built-in non JavaScript commands, and those can be accessed by typing `%`.
+You can, for example, say `%help` to get a list of all available commands. 
+### Frida Script
+
+To load scripts with Frida, we can just start Frida with the `-l` option:
+
+```js
+frida -U -l test.js FridaTarget
+```
+
+We can enable and disable auto-reload by doing:
+999
+%autoreload on/off
+```
+
+To manually reload all scripts, we can just run `%reload` in the REPL.
+
+In most cases, instead of using the Ripple, we will write a script to use with Freeda. These scripts are regular java script,
+
+and so we can, for example, just say console dot lock hello from a script, and then we will just save it as script js.
+
+Now let's run freeda dash help two, see how we can actually load a script. And down here we can find the dash L
+
+or dash dash load argument, which allows us to specify a script to load further down. We can also find the dash dash artery load
+
+Text
+
+and dash dash no artery load arguments, which allow us to enable respectively disable artery loading of scripts when they change.
+
+So let's skip that a try. I'm gonna say free dash U dash I scripter is and then specify freeda target.
+
+And as you can see, we see the hello from a script message. Now if we edit our script and for example, add a second log message
+
+and hit save, then you can see that our script is automatically reloaded. Now depending on your combination of editor
+
+and operating system, you will see that sometimes Frida will auto reload the script multiple times. And so in my case, for example, four times,
+
+we can disable the auto reloading by adding dash dash no auto reload to the arguments of Frida. This will still execute our script on startup,
+
+but now if we change something in our script, so for example, we get rid of the second lock line
+
+and it's safe, nothing happens. The regular free Apple will still stay active when we load a script. And so we can also just say percent reload
+
+سل
+
+to reload our script at runtime. We can also turn auto reload on and off by just saying percent ought reload
+
+on or off, respectively. And now if we change the script, you can see that our changes get automatically loaded.
+
+Again, functions that we define in our script. So for example, let's say we create a function test that will just lock out.
+
+Test will be available in our, and so if we reload the script here manually and now we call test with parentheses, you can see
+
+that the function we just defined can be executed. This is really useful because you often write some smart functions that you want
+
+to run during exploration of the application. Now let's add a simple if condition to our script. In the last video, we looked at Java, Androld version,
+
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
+Check-out the full Frida JavaScript API documentation [here](https://frida.re/docs/examples/javascript/)! Note that the number in parenthesis after each command Indicates the number of expected arguments. 
