@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Authentication vulnerabilities.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Authentication vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Authentication vulnerabilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dynamic Instrumentation.md"
+                "file": "Authentication vulnerabilities.md"
               }
             }
           }
@@ -151,12 +151,12 @@
   },
   "active": "7bb14cbaabaac63c",
   "lastOpenFiles": [
+    "Dynamic Instrumentation.md",
     "Remote Thought/Go SSTI.md",
     "Tags/SSTI.md",
     "Remote Thought/Ruby SSTI.md",
     "Remote Thought/venv in python.md",
     "Tags/ngork.md",
-    "Dynamic Instrumentation.md",
     "Authentication vulnerabilities.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/Decompiling Android apps.md",
