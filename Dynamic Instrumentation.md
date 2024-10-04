@@ -100,51 +100,24 @@ frida -U -l test.js FridaTarget
 ```
 
 We can enable and disable auto-reload by doing:
-999
+
+```js
 %autoreload on/off
 ```
 
 To manually reload all scripts, we can just run `%reload` in the REPL.
 
-In most cases, instead of using the Ripple, we will write a script to use with Freeda. These scripts are regular java script,
+if we edit our script and for example, add a second log message and hit save, then you can see that our script is automatically reloaded. 
+**Now depending on your combination of editor and operating system, you will see that sometimes Frida will auto reload the script multiple times.**
+we can disable the auto reloading by adding `--no-auto-reload` to the arguments of Frida. 
 
-and so we can, for example, just say console dot lock hello from a script, and then we will just save it as script js.
+we can also just say `%reload` to reload our script at runtime.  
 
-Now let's run freeda dash help two, see how we can actually load a script. And down here we can find the dash L
+functions that we define in our script will be available in our Frida REPL. So for example, let's say we create a function test. if we reload the script here manually (`%reload`) and now we call `test()` you can see that the function we just defined can be executed. 
 
-or dash dash load argument, which allows us to specify a script to load further down. We can also find the dash dash artery load
+### Instantiating Objects and calling methods 
 
-Text
 
-and dash dash no artery load arguments, which allow us to enable respectively disable artery loading of scripts when they change.
-
-So let's skip that a try. I'm gonna say free dash U dash I scripter is and then specify freeda target.
-
-And as you can see, we see the hello from a script message. Now if we edit our script and for example, add a second log message
-
-and hit save, then you can see that our script is automatically reloaded. Now depending on your combination of editor
-
-and operating system, you will see that sometimes Frida will auto reload the script multiple times. And so in my case, for example, four times,
-
-we can disable the auto reloading by adding dash dash no auto reload to the arguments of Frida. This will still execute our script on startup,
-
-but now if we change something in our script, so for example, we get rid of the second lock line
-
-and it's safe, nothing happens. The regular free Apple will still stay active when we load a script. And so we can also just say percent reload
-
-سل
-
-to reload our script at runtime. We can also turn auto reload on and off by just saying percent ought reload
-
-on or off, respectively. And now if we change the script, you can see that our changes get automatically loaded.
-
-Again, functions that we define in our script. So for example, let's say we create a function test that will just lock out.
-
-Test will be available in our, and so if we reload the script here manually and now we call test with parentheses, you can see
-
-that the function we just defined can be executed. This is really useful because you often write some smart functions that you want
-
-to run during exploration of the application. Now let's add a simple if condition to our script. In the last video, we looked at Java, Androld version,
 
 ### References
 
