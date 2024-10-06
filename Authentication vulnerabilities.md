@@ -41,7 +41,8 @@ Sometimes the returned error message is different depending on whether both the 
 For example, a website might only check whether the password is correct if the username is valid. This extra step might cause a slight increase in the response time. 
 This may be subtle, but an attacker can make this delay more obvious by entering an excessively long password that the website takes noticeably longer to handle.
 
-
+in [[burpsuite]] while setting the payload position in intruder 
+Click on the Settings tab to open the Settings side panel. Under `Grep - Extract`, click Add. In the dialog that appears, scroll down through the response until you find the error message `Invalid username or password.` Use the mouse to highlight the text content of the message. The other settings will be automatically adjusted. Click `OK` and then start the attack. 
 
 
 ### References
