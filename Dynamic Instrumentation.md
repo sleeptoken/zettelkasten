@@ -9,8 +9,8 @@ To install Frida & also want to install Objection, run:
 pip3 install frida-tools
 pip3 install objection
 ```
+#### Troubleshooting
 
-**Troubleshooting**
 - add the user path variable in the environment variables if `frida --version` doesn't work 
 - make sure [[apktool]] is installed
 - if we get an error asking us to install `aapt` add` C:\Users\Keshav\AppData\Local\Android\Sdk\build-tools\35.0.0`(location of `aapt` and `appt2`) to user path 
@@ -114,11 +114,49 @@ we can disable the auto reloading by adding `--no-auto-reload` to the arguments 
 we can also just say `%reload` to reload our script at runtime.  
 
 functions that we define in our script will be available in our Frida REPL. So for example, let's say we create a function test. if we reload the script here manually (`%reload`) and now we call `test()` you can see that the function we just defined can be executed. 
-
 ### Instantiating Objects and calling methods 
 
+#### Java.use
 
+we can get a Java script wrapper for a Java class. This wrapper even allows us to instantiate instances of that class. 
 
+```js
+var sc =  Java.use("java.lang.String")
+```
+This will give the class `Java.lang.String` or the regular string class of Java as a JavaScript wrapper
+
+```js
+sc.$new("I am a Java String!")
+```
+`$new` - which is the Frida way of calling the constructor.
+`I'm a Java string`-  as my first argument to the constructor.
+this will create an instant of `Java.lang.String`.
+
+we will assign the instance to a variable `si`.
+```js
+var si = sc.$new("I am a Java String!")
+si.toString() //take a look at the contents of the string Instance
+si.charAt(0) // let's call one of the instance methods
+si.$dispose() //if we don't need our Instance anymore, we can dispose of It, maybe if you're in a situation where your Instance takes up a lot of memory or so
+```
+
+If we want to know which classes are actually available, we can call `Java.enumerateLoadedClasses()`. Note that there are two different versions of this function.
+
+One will call a callback for each class that is loaded - `enumerateLoadedClasses()`
+one will return an array of all classes that are loaded. - `enumerateLoadedClassesSync()`
+#### Replace the implementation of a certain function
+
+What's also really cool is that we can actually replace the implementation of a certain function. 
+for example, if we want to replace the charAt implementation
+
+```js
+sc.charAt.implementation = (c) => {\
+... console.log("Custom charAt!");\
+... return "X";\
+... }
+```
+
+try to again call `charAt()`, on our previously created string instance and We get our custom log message and just an "`X`" is returned. 
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
