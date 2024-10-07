@@ -118,7 +118,7 @@ functions that we define in our script will be available in our Frida REPL. So f
 
 #### Java.use
 
-we can get a Java script wrapper for a Java class. This wrapper even allows us to instantiate instances of that class. 
+We can get JavaScript wrappers for Java classes by using `Java.use` This wrapper even allows us to instantiate instances of that class. 
 
 ```js
 var sc =  Java.use("java.lang.String")
@@ -137,7 +137,7 @@ we will assign the instance to a variable `si`.
 var si = sc.$new("I am a Java String!")
 si.toString() //take a look at the contents of the string Instance
 si.charAt(0) // let's call one of the instance methods
-si.$dispose() //if we don't need our Instance anymore, we can dispose of It, maybe if you're in a situation where your Instance takes up a lot of memory or so
+si.$dispose() //We can dispose of instances (for example to free up memory) using `$dispose()`, however this is almost never required, as the Garbage Collector should collect unused instances.
 ```
 
 If we want to know which classes are actually available, we can call `Java.enumerateLoadedClasses()`. Note that there are two different versions of this function.
@@ -157,6 +157,9 @@ sc.charAt.implementation = (c) => {\
 ```
 
 try to again call `charAt()`, on our previously created string instance and We get our custom log message and just an "`X`" is returned. 
+
+
+
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
