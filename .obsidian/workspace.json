@@ -136,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,8 +151,8 @@
   },
   "active": "7bb14cbaabaac63c",
   "lastOpenFiles": [
-    "Authentication vulnerabilities.md",
     "Dynamic Instrumentation.md",
+    "Authentication vulnerabilities.md",
     "Remote Thought/Go SSTI.md",
     "Tags/SSTI.md",
     "Remote Thought/Ruby SSTI.md",
