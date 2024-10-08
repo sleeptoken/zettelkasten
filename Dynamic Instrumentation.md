@@ -187,6 +187,42 @@ Java.perform(() =>{
 	console.log(ExampleInstance.returnDecryptedStringIfPasswordCorrect("verysecret")); //for function w parqameter
 }) 
 ```
+### Tracing Activities
+
+ Let's write ourselves a useful frida script that will always tell us which activity is currently in the foreground.
+
+To do that, let's start by looking at the documentation for activity. If we scroll down on this page, we can find the lifecycle documentation for activities. `onResume()` is called when the app is for example, brought forward from the background or when activity is switched. And so it would be the perfect function to customize to look out which activity is currently active.
+
+a script to trace the active Activity:
+
+```javascript
+Java.perform(() => {
+    let ActivityClass = Java.use("android.app.Activity");
+    //replace the implementation of the on resume function.
+    ActivityClass.onResume.implementation = function() {
+        console.log("Activity resumed:", this.getClass().getName());
+        // Call original onResume method
+        this.onResume();
+    }
+})
+```
+
+
+
+And so we also want to add the original on Rezum call. And to do so we can just say this dot on resume.
+
+This will call the original implementation. And with that our script is already ready to be tested and so we can just save Frida dash U dash L trace activities
+
+and Frida target hit return and we see that our main activity gets locked away. Awesome. Also, every time we go out of the app
+
+and come back into it, the on resume function will be called. And so we already see which activity is the latest one.
+
+However, if we switch to the different screens of the application, we don't get any new activity logs. This is because these different screens
+
+are based on fragments. But if we check the documentation for fragment, we can see that they have similar lifecycle functionalities.
+
+And so which should be easy to write a similar script, but for fragments. And to do that, we first need to find the full class name
+
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
