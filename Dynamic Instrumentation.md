@@ -191,7 +191,7 @@ Java.perform(() =>{
 
  Let's write ourselves a useful frida script that will always tell us which activity is currently in the foreground.
 
-To do that, let's start by looking at the documentation for activity. If we scroll down on this page, we can find the lifecycle documentation for activities. `onResume()` is called when the app is for example, brought forward from the background or when activity is switched. And so it would be the perfect function to customize to look out which activity is currently active.
+To do that, let's start by looking at the ([documentation](https://developer.android.com/reference/android/app/Activity#activity-lifecycle)) for activity. If we scroll down on this page, we can find the lifecycle documentation for activities. `onResume()` is called when the app is for example, brought forward from the background or when activity is switched. And so it would be the perfect function to customize to look out which activity is currently active.
 
 a script to trace the active Activity:
 
@@ -200,29 +200,32 @@ Java.perform(() => {
     let ActivityClass = Java.use("android.app.Activity");
     //replace the implementation of the on resume function.
     ActivityClass.onResume.implementation = function() {
-        console.log("Activity resumed:", this.getClass().getName());
+        console.log("Activity resumed:", this.getClass().getName()); // log activity name to us
         // Call original onResume method
         this.onResume();
     }
 })
 ```
+### Tracing Fragments
 
+However, if we switch to the different screens of the application, we don't get any new activity logs. This is because these different screens are based on `fragments`. 
+But if we check the ([Documentation](https://developer.android.com/reference/androidx/fragment/app/Fragment)) for fragment, we can see that they have similar lifecycle functionalities. And so which should be easy to write a similar script, but for `fragments`. And to do that, we first need to find the full class name for the fragment 
 
+`fragments` have been deprecated on API level 28, but there is a new replacement that has the same API
+on clicking [view source](https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:fragment/fragment/src/main/java/androidx/fragment/app/Fragment.java?q=file:androidx%2Ffragment%2Fapp%2FFragment.java%20class:androidx.fragment.app.Fragment)we can see the full path as `androidx.fragment.app`
 
-And so we also want to add the original on Rezum call. And to do so we can just say this dot on resume.
+The finished script to trace the active fragments:
 
-This will call the original implementation. And with that our script is already ready to be tested and so we can just save Frida dash U dash L trace activities
-
-and Frida target hit return and we see that our main activity gets locked away. Awesome. Also, every time we go out of the app
-
-and come back into it, the on resume function will be called. And so we already see which activity is the latest one.
-
-However, if we switch to the different screens of the application, we don't get any new activity logs. This is because these different screens
-
-are based on fragments. But if we check the documentation for fragment, we can see that they have similar lifecycle functionalities.
-
-And so which should be easy to write a similar script, but for fragments. And to do that, we first need to find the full class name
-
+```javascript
+Java.perform(() => {
+    let FragmentClass = Java.use("androidx.fragment.app.Fragment");
+    FragmentClass.onResume.implementation = function() {
+        console.log("Fragment resumed:", this.getClass().getName());
+        // Call original onResume method
+        this.onResume();
+    }
+})
+```
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
