@@ -226,6 +226,10 @@ Java.perform(() => {
     }
 })
 ```
+### Tracing with Frida
+
+
+
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
