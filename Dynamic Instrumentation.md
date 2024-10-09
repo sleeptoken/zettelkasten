@@ -228,8 +228,31 @@ Java.perform(() => {
 ```
 ### Tracing with Frida
 
+#### Frida-trace
 
+With Frida Trace you can trace function calls in the application 
 
+We use the fully qualified class name, then exclamation mark, and then the method name.
+```js
+classname!methodname 
+
+io.hextree.Class!button_click_handler //to trace the button click handler
+io.hextree.*!* //match all methods on all classes under io.hextree.
+*!*passsword* //match on all functions that include password
+```
+
+starts tracing most of the functions - 
+```js
+frida-trace -U -j 'io.hextree.*!*' FridaTarget
+```
+
+ if we switch to the tracing menu item and then click a button, weirdly enough, nothing happens. Even though this fragment is definitely in io.hextree. The reason for this is that the fragment wasn't loaded when we started Frida Trace. And so if we terminate Frida Trace now and start it again w the same command we can see the functions that were called
+ 
+Now let's hit the second button and unfortunately, an annoying class spams our Frida Trace output. Luckily, Frida Trace also lets us exclude classes and methods by just specifying them with the upper cased argument. The SY index is the same, and so we can just say star annoying, class star,
+
+exclamation mark, star. And now if we Try this again, all the entries for no class are gone and we can nicely find our F flag again.
+
+And now It's your turn. You will see that you can even trace the J and I calls. And so Frida Trace is really, really powerful.
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
