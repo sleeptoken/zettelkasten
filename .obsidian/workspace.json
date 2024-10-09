@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6d6097315ca62037",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Printer hacking.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apache Proxy Server.md",
+                "file": "Printer hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apache Proxy Server.md",
+                "file": "Printer hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apache Proxy Server.md"
+                "file": "Printer hacking.md"
               }
             }
           }
@@ -148,10 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd15e99f0b182afd",
+  "active": "6d6097315ca62037",
   "lastOpenFiles": [
-    "Remote Thought/Ruby SSTI.md",
     "Apache Proxy Server.md",
+    "Printer hacking lmao.md",
+    "Remote Thought/Ruby SSTI.md",
     "Remote Thought/Go SSTI.md",
     "Remote Thought/venv in python.md",
     "Dynamic Instrumentation.md",
@@ -176,7 +191,6 @@
     "Remote Thought/Return to Win.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Broken Access Control.md",
-    "Remote Thought/LLM attacks.md",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
     "Images/buffer-overflow-diagram.png",
