@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Remote Thought/Ruby SSTI.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Remote Thought/Ruby SSTI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Remote Thought/Ruby SSTI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dynamic Instrumentation.md"
+                "file": "Remote Thought/Ruby SSTI.md"
               }
             }
           }
@@ -151,13 +150,13 @@
   },
   "active": "7bb14cbaabaac63c",
   "lastOpenFiles": [
-    "[Activity.md",
-    "Dynamic Instrumentation.md",
-    "Authentication vulnerabilities.md",
     "Remote Thought/Go SSTI.md",
+    "Remote Thought/venv in python.md",
+    "Dynamic Instrumentation.md",
+    "[Activity.md",
+    "Authentication vulnerabilities.md",
     "Tags/SSTI.md",
     "Remote Thought/Ruby SSTI.md",
-    "Remote Thought/venv in python.md",
     "Tags/ngork.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/Decompiling Android apps.md",
