@@ -143,3 +143,5 @@ The vulnerable environment has ATS (Apache Traffic Server) as the front-end prox
 better read this from tryhackme directly linked in references
 ### References
 [TryHackMe | HTTP Request Smuggling](https://tryhackme.com/r/room/httprequestsmuggling)
+
+[mod_proxy vulnerable configuration on Apache HTTP Server versions 2.4.0 - 2.4.55 leads to HTTP Request Smuggling vulnerability.](https://github.com/dhmosfunk/CVE-2023-25690-POC)
