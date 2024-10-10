@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/HTTP Request Smuggling.md",
+                "file": "Remote Thought/Go SSTI.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -163,10 +163,10 @@
   },
   "active": "ea8487cf16464ee0",
   "lastOpenFiles": [
+    "Remote Thought/Go SSTI.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Apache Proxy Server.md",
     "Printer hacking.md",
-    "Remote Thought/Go SSTI.md",
     "Remote Thought/venv in python.md",
     "Dynamic Instrumentation.md",
     "Tags/linux.md",
