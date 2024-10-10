@@ -255,6 +255,43 @@ Now let's hit the second button and unfortunately, an annoying class spams our F
 ```js
 frida-trace -U -j 'io.hextree.*!*' -J '*AnnonyingClass*!*' FridaTarget //all entries of AnnoyingClass are gone
 ```
+### Tracing into JNI
+
+We can see the native calls, however, we don't by default see the calls that actually happen in the native library. 
+
+Let's try to change that in Jadx.
+we will try to trace a native library named libhextree.so > arm64-v8a > lib > Resources We can check out IO dot text three dot native lip and in here we can see that the library name is just H three
+
+2
+
+and under resources lip arm 64, we can see a lip H three. So let's try to trace that native library.
+
+And so just as before, I would say FREEDA trace dash U, but this time I will also specify dash uppercase I
+
+for include module and then specify lip H three doso. Then I just add my dash j io, H three star and so on.
+
+And now the instrumentation takes quite a while because it has to instrument all the functions that are in the native library,
+
+which includes the entire standard library. And once it's done it says that it's tracing 304 functions. Now let's see what happens when we click the JNI button.
+
+Now there is a lot more output here. Previously the last call we saw was this native lip do string from JNI.
+
+And this time we even see the call to java unders lo unders square hex three underscore native lip unders string from JNI,
+
+which is the actual symbol in the native library. The weird function ames following that are mangled c plus plus names.
+
+And so underscores at NST six and so on is just stuff of the standard library, uh, related to string allocation and so on and so forth.
+
+If you want to learn more about that, check out our name mangling course. If we compare to the output without tracing the native
+
+library, you can see that a lot of detail is missing and so you, this sometimes is really useful, but in a lot of cases it's also really, really noisy.
+
+And so it always depends on what you're reversing and what is exposed in the JNI. Frida Trace has a lot more options
+
+for filtering and so on and so forth. And so I can really recommend that you check the free trace documentation that I've linked
+
+below.
+
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
