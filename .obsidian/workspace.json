@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Printer hacking.md",
+                "file": "Tags/linux.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Printer hacking.md",
+                "file": "Tags/linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Printer hacking.md",
+                "file": "Tags/linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Printer hacking.md"
+                "file": "Tags/linux.md"
               }
             }
           }
@@ -164,12 +164,14 @@
   },
   "active": "6d6097315ca62037",
   "lastOpenFiles": [
+    "Remote Thought/Privilege Escalation.md",
+    "Dynamic Instrumentation.md",
+    "Printer hacking.md",
     "Apache Proxy Server.md",
     "Printer hacking lmao.md",
     "Remote Thought/Ruby SSTI.md",
     "Remote Thought/Go SSTI.md",
     "Remote Thought/venv in python.md",
-    "Dynamic Instrumentation.md",
     "[Activity.md",
     "Authentication vulnerabilities.md",
     "Tags/SSTI.md",
@@ -185,12 +187,10 @@
     "Remote Thought/Spawning a TTY shell.md",
     "Remote Thought/Polyalphabetic Ciphers.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Remote Thought/Privilege Escalation.md",
     "Remote Thought/Services Running as Root.md",
     "Remote Thought/run only wget with sudo.md",
     "Remote Thought/Return to Win.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
-    "Remote Thought/Broken Access Control.md",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
     "Images/buffer-overflow-diagram.png",
