@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Forward Proxy.md",
+                "file": "Remote Thought/Forward Proxy.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,14 +26,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse proxy.md",
+                "file": "Remote Thought/Reverse Proxy.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Forward Proxy.md",
+                "file": "Remote Thought/Reverse Proxy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Forward Proxy.md",
+                "file": "Remote Thought/Reverse Proxy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Forward Proxy.md"
+                "file": "Remote Thought/Reverse Proxy.md"
               }
             }
           }
@@ -162,15 +163,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9908a596d254f46",
+  "active": "fd0584f3cc4b9be9",
   "lastOpenFiles": [
-    "Reverse proxy.md",
-    "Forward Proxy.md",
-    "Remote Thought/Apache Proxy Server.md",
+    "Remote Thought/Forward Proxy.md",
+    "Remote Thought/Reverse Proxy.md",
+    "Tags/Reverse Proxies.md",
+    "Remote Thought/HTTP Request Smuggling.md",
+    "Remote Thought/Apache Proxy Server CVE.md",
     "Remote Thought/Go SSTI.md",
     "Printer hacking.md",
     "Remote Thought/Useful Tools.md",
-    "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/venv in python.md",
     "Dynamic Instrumentation.md",
     "Tags/linux.md",
@@ -190,7 +192,6 @@
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Remote Thought/Local File Inclusion & Command Injection.md",
     "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Polyalphabetic Ciphers.md",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
     "Images/buffer-overflow-diagram.png",
