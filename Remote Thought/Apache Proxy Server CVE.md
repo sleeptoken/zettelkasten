@@ -2,6 +2,8 @@
 2024-10-09 21:06
 
 Source: #web #htb 
+
+basically we want to access the content behind [[Reverse Proxy]] 
 ### Reconnaissance
 
 Upon submitting the URL, I encountered a specific requirement stating that the page will exclusively open under the host `“dev.apacheblaze.local.”`
@@ -17,6 +19,8 @@ The configuration entails Apache’s administration to intercept requests arrivi
 > X-Forwarded-For      > The IP address of the client.  
 > X-Forwarded-Host    > The original host requested by the client in the Host HTTP request header.  
 > X-Forwarded-Server > The hostname of the proxy server.
+
+because we need all 3 headers and we only have one of them we will need to find an exploit which is the CVE 
 
 Upon thorough examination, it becomes apparent that there exist two virtual hosts operating at ports `1337` and `8080`, serving as reverse proxies and load balancers. These hosts intercept incoming requests and augment them with pertinent information contained within the `X-Forwarded-Host` request header, including host and port details.
 
@@ -39,9 +43,6 @@ GET /api/games/click_topia HTTP/1.1\r\nHost: dev.apacheblaze.local\r\n\r\nGET /H
 ```
 GET /api/games/click_topia%20HTTP/1.1%0d%0aHost:%20dev.apacheblaze.local%0d%0a%0d%0aGET%20/ HTTP/1.1
 ```
-
-
-
 
 
 ### References
