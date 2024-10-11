@@ -18,11 +18,9 @@ The configuration entails Apache’s administration to intercept requests arrivi
 > X-Forwarded-Host    > The original host requested by the client in the Host HTTP request header.  
 > X-Forwarded-Server > The hostname of the proxy server.
 
-Upon thorough examination, it becomes apparent that there exist two virtual hosts operating at ports 1337 and 8080, serving as reverse proxies and load balancers. These hosts intercept incoming requests and augment them with pertinent information contained within the X-Forwarded-Host request header, including host and port details.
+Upon thorough examination, it becomes apparent that there exist two virtual hosts operating at ports `1337` and `8080`, serving as reverse proxies and load balancers. These hosts intercept incoming requests and augment them with pertinent information contained within the `X-Forwarded-Host` request header, including host and port details.
 
 However, a vulnerability known as [[HTTP Request Smuggling]] Attack (CVE-2023–25690) has been identified, posing a potential threat to the system’s security. A detailed GitHub repository elucidates the exploitation of CVE-2023–25690, outlining the method to leverage the vulnerability. This exploit facilitates the concealment of a secondary request within the initial one, utilizing the `\r\n\r` splitting technique. Consequently, it becomes feasible to dispatch the request directly from the reverse proxy, bypassing any additional appended data to the X-Forwarded-Host header.
-
-This newfound vulnerability underscores the critical importance of implementing robust security measures to safeguard against potential exploits and ensure the integrity and confidentiality of the system’s operations.
 
 ```
 URL encoded values  
@@ -52,6 +50,5 @@ https://app.hackthebox.com/challenges/ApacheBlaze/activity
 Walkthrough
 https://motasem-notes.net/apache-proxy-servers-explained-http-request-smuggling-hackthebox-apacheblaze/
 https://medium.com/@syed_dawood/fuel-your-innovation-ignite-possibilities-with-apacheblaze-579778982b4d
-https://www.reddit.com/r/hackthebox/comments/198yh3w/apache_proxy_servers_explained_hackthebox/
 https://github.com/dhmosfunk/CVE-2023-25690-POC/tree/main#internal-http-request-smuggling-via-header-injection
 [HTB ApacheBlaze.mp4 - Google Drive](https://drive.google.com/file/d/1hKrlqEkamuUjj0UQHGRJTUlZbFk1hRlz/view?t=25)
