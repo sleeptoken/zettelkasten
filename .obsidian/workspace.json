@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Forward Proxy.md",
+                "file": "Dynamic Instrumentation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Forward Proxy.md",
+                "file": "Dynamic Instrumentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Forward Proxy.md",
+                "file": "Dynamic Instrumentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Forward Proxy.md"
+                "file": "Dynamic Instrumentation.md"
               }
             }
           }
@@ -159,8 +159,8 @@
   },
   "active": "b9908a596d254f46",
   "lastOpenFiles": [
-    "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Forward Proxy.md",
+    "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Tags/Reverse Proxies.md",
     "Remote Thought/HTTP Request Smuggling.md",

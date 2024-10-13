@@ -271,6 +271,9 @@ And now the instrumentation takes quite a while because it has to instrument all
 Now let's see what happens when we click the JNI button. Now there is a lot more output here. The weird function names following that are mangled c++ names.
 
 this sometimes is really useful, but in a lot of cases it's also really, really noisy.
+### Replace function arguments 
+
+
 
 ### References
 
