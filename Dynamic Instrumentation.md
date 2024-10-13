@@ -273,29 +273,33 @@ Now let's see what happens when we click the JNI button. Now there is a lot more
 this sometimes is really useful, but in a lot of cases it's also really, really noisy.
 ### Replace function arguments / return values returned by functions
 
-This can be used to bypass security controls such as license checks or even change different modes of the application, for example, into a developer mode Instead of a production mode. 
-We can also often use it to bypass functionality such as SSL pinning.
+- This can be used to bypass security controls such as license checks 
+- even change different modes of the application, for example, into a developer mode Instead of a production mode. 
+- We can also often use it to bypass functionality such as SSL pinning.
 
 Interceptor does not really work with Java code, and so we basically have to build our own interceptor 
 
-Let's see what actually happens when we press the example function,
-we can see that the `function_to_intercept` under `Interceptoinfragment` 
+We can use Frida to intercept function calls and return values. For example, to replace the return value of `InterceptionFragment.function_to_intercept`, we can just write a simple script:
 
-So let's run our script. So Freeda, UL Intercept, js, freeda target.
+```javascript
+Java.perform(() => {
+    var InterceptionFragment = Java.use("io.hextree.fridatarget.ui.InterceptionFragment");
+    InterceptionFragment.function_to_intercept.implementation = function(argument) {
+        this.function_to_intercept(argument);
+        return "SOMETHING DIFFERENT";
+    }
+})
+```
 
-And now if we press the button, we can see that it indeed says something else now. And that's how easy it is
-
-to replace function arguments with Frida. Now let's try to replace the returnable view instead. And so we'll just get rid of all of this here,
-
-and then we will still call the function to intercept just in case it has some, you know, side effects.
-
-And then we just return something different. Let's give this a try. So we again, run the script and click the button
-
-and it indeed says something different Now, super simple. Now on the same page, you can find two more challenges
-
-for you, two basic license checks. Use free trace to figure out what they do and what they call and what they return, and try to bypass them
-
-by Intercepting either the arguments or the return values. Good luck.
+#### Alternate
+``` js
+InterceptionFragment.function_to_intercept.implementation = function(argument){
+        console.log("fuctioncalled: ",argument);
+        argument = "something else";
+        return this.function_to_intercept(argument);
+    }
+```
+ 
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
