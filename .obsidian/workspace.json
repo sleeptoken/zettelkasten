@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Apache Proxy Server CVE.md",
+                "file": "Remote Thought/Forward Proxy.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -165,9 +165,9 @@
   },
   "active": "fd0584f3cc4b9be9",
   "lastOpenFiles": [
-    "Remote Thought/Apache Proxy Server CVE.md",
-    "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Forward Proxy.md",
+    "Remote Thought/Reverse Proxy.md",
+    "Remote Thought/Apache Proxy Server CVE.md",
     "Tags/Reverse Proxies.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/Go SSTI.md",

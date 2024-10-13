@@ -21,8 +21,5 @@ when we use apache server with reverse proxy mode we have 3 headers set
 > X-Forwarded-For      > The IP address of the client.  
 > X-Forwarded-Host    > The original host requested by the client in the Host HTTP request header.  
 > X-Forwarded-Server > The hostname of the proxy server.(reverse proxy)
-
-### Exploitation 
-
-
 ### References
+[[Apache Proxy Server CVE]]

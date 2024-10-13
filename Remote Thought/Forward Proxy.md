@@ -3,8 +3,6 @@
 
 Source: #web 
 
-Tags: 
-
 proxy that sits betwn u and the server acts as middleman
 
 client        ->        proxy          ->         sever
@@ -17,6 +15,5 @@ PC                  localhost:8080          google.com
 ### Exploitation 
 
 if we find multiple virtual hosts then chances are the apache server is running proxy servers weather it is Forward proxy or [[Reverse Proxy]] we have to inspect it
-
-
 ### References
+[[Apache Proxy Server CVE]]
