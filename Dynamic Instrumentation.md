@@ -271,41 +271,17 @@ And now the instrumentation takes quite a while because it has to instrument all
 Now let's see what happens when we click the JNI button. Now there is a lot more output here. The weird function names following that are mangled c++ names.
 
 this sometimes is really useful, but in a lot of cases it's also really, really noisy.
-### Replace function arguments 
+### Replace function arguments / return values returned by functions
 
-One of the most common use cases for Frida is to use it to replace the arguments given to your function
+This can be used to bypass security controls such as license checks or even change different modes of the application, for example, into a developer mode Instead of a production mode. 
+We can also often use it to bypass functionality such as SSL pinning.
 
-or to replace the return values returned by functions. In a lot of cases, this can be used to bypass
+Interceptor does not really work with Java code, and so we basically have to build our own interceptor 
 
-security controls such as license checks or even change different modes of the application, for example, into a developer mode
+Let's see what actually happens when we press the example function,
+we can see that the `function_to_intercept` under `Interceptoinfragment` 
 
-Instead of a production mode. We can also often use it to bypass functionality such as this opening. And so it's really good to have a good understanding on how
-
-to deal with Intercepting values. If you have used Frida on other platforms, you might be familiar with the interceptor.
-
-Interceptor does not really work with Java code, and so we basically have to build our own interceptor on the interception page
-
-of the freeda target, we have a couple of interception challenges, and at the top there's also an example function,
-
-and if we click it, we can see that the return value gets displayed in line in the view. Now let's start by tracing this button.
-
-And so I'm gonna use Freeda Trace with IO text three star, exclamation mark, star, and let's see what actually happens.
-
-When we press the example function, we can see that the function to intercept under interceptive fragment was called with the lowercase example argument,
-
-and that the function returned uppercase example argument. So it looks like this functions simply uppercase the string that's given into it.
-
-Let's try to intercept and replace the value that goes into the function by writing a smart script. We start with our standard Java perform block,
-
-and then we get the Java script wrapper for interception fragment. Next, we replace the implementation for function to intercept by just saying intercept fragment function
-
-to intercept implementation equals function. And this function takes in one argument. Let's for debugging purposes also luck out that argument.
-
-And in the next line we just replaced the argument with something else. Now we just have to call the original function with this
-
-function to intercept and our argument. And then next we just need to add a return in front of this line to make sure that we
-
-also actually return that value. And with that, we are already ready to test. So let's run our script. So Freeda, UL Intercept, js, freeda target.
+So let's run our script. So Freeda, UL Intercept, js, freeda target.
 
 And now if we press the button, we can see that it indeed says something else now. And that's how easy it is
 
