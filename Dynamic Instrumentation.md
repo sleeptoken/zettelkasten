@@ -299,7 +299,7 @@ InterceptionFragment.function_to_intercept.implementation = function(argument){
         return this.function_to_intercept(argument);
     }
 ```
- 
+
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation

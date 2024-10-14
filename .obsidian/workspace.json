@@ -19,14 +19,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fd0584f3cc4b9be9",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
         ]
       }
@@ -159,6 +151,7 @@
   },
   "active": "b9908a596d254f46",
   "lastOpenFiles": [
+    "Dynamic Instrumentation.md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
@@ -168,7 +161,6 @@
     "Printer hacking.md",
     "Remote Thought/Useful Tools.md",
     "Remote Thought/venv in python.md",
-    "Dynamic Instrumentation.md",
     "Tags/linux.md",
     "Remote Thought/Privilege Escalation.md",
     "Printer hacking lmao.md",
