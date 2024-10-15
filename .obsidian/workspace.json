@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -136,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,6 +149,7 @@
   },
   "active": "b9908a596d254f46",
   "lastOpenFiles": [
+    "Remote Thought/venv in python.md",
     "Dynamic Instrumentation.md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Reverse Proxy.md",
@@ -160,7 +159,6 @@
     "Remote Thought/Go SSTI.md",
     "Printer hacking.md",
     "Remote Thought/Useful Tools.md",
-    "Remote Thought/venv in python.md",
     "Tags/linux.md",
     "Remote Thought/Privilege Escalation.md",
     "Printer hacking lmao.md",
