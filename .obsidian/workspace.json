@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "Remote Thought/Useful Tools.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RELRO",
+                "query": "eml",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "Remote Thought/Useful Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "Remote Thought/Useful Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md"
+                "file": "Remote Thought/Useful Tools.md"
               }
             }
           }
@@ -148,8 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9908a596d254f46",
+  "active": "0cc3d1be09e41370",
   "lastOpenFiles": [
+    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
     "Remote Thought/Ret2Labyrinth.md",
@@ -175,7 +176,6 @@
     "Remote Thought/Privilege Escalation.md",
     "Printer hacking lmao.md",
     "Remote Thought/Ruby SSTI.md",
-    "[Activity.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
