@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Useful Tools.md",
+                "file": "Remote Thought/Pluck Exploit & Depix.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "eml",
+                "query": "depix",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Useful Tools.md",
+                "file": "Remote Thought/Pluck Exploit & Depix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Useful Tools.md",
+                "file": "Remote Thought/Pluck Exploit & Depix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Useful Tools.md"
+                "file": "Remote Thought/Pluck Exploit & Depix.md"
               }
             }
           }
@@ -148,8 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0cc3d1be09e41370",
+  "active": "b9908a596d254f46",
   "lastOpenFiles": [
+    "Remote Thought/Useful Tools.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
@@ -159,7 +160,6 @@
     "Tags/Ghidra.md",
     "Remote Thought/Return to Win.md",
     "Remote Thought/Return to Lib-C.md",
-    "Remote Thought/Useful Tools.md",
     "Remote Thought/How to Skip Illegal Instructions in Executables.md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Tags/pwntools.md",
