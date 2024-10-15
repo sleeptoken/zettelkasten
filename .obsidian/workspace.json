@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Reverse Proxy.md",
+                "file": "Remote Thought/Binary exploit toolkit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "RELRO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Reverse Proxy.md",
+                "file": "Remote Thought/Binary exploit toolkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Reverse Proxy.md",
+                "file": "Remote Thought/Binary exploit toolkit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Reverse Proxy.md"
+                "file": "Remote Thought/Binary exploit toolkit.md"
               }
             }
           }
@@ -149,21 +150,22 @@
   },
   "active": "b9908a596d254f46",
   "lastOpenFiles": [
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+    "Remote Thought/Ret2Labyrinth.md",
+    "Remote Thought/Reverse Proxy.md",
     "Tags/Binary Exploit.md",
     "Tags/Ghidra.md",
     "Remote Thought/Return to Win.md",
     "Remote Thought/Return to Lib-C.md",
     "Remote Thought/Useful Tools.md",
     "Remote Thought/How to Skip Illegal Instructions in Executables.md",
-    "Remote Thought/Ret2Labyrinth.md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Tags/pwntools.md",
-    "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Overwriting variables on the stack.md",
     "Dynamic Instrumentation.md",
     "Remote Thought/venv in python.md",
     "Remote Thought/Forward Proxy.md",
-    "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Tags/Reverse Proxies.md",
     "Remote Thought/HTTP Request Smuggling.md",
@@ -174,7 +176,6 @@
     "Printer hacking lmao.md",
     "Remote Thought/Ruby SSTI.md",
     "[Activity.md",
-    "Authentication vulnerabilities.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
