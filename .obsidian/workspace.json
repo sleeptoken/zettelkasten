@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "Dynamic Instrumentation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "Dynamic Instrumentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "Dynamic Instrumentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md"
+                "file": "Dynamic Instrumentation.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "b9908a596d254f46",
   "lastOpenFiles": [
+    "Printer hacking.md",
+    "Remote Thought/Privilege Escalation.md",
     "Tags/Find.md",
     "Remote Thought/Pluck Exploit & Depix.md",
     "Remote Thought/Useful Tools.md",
@@ -172,9 +174,7 @@
     "Tags/Reverse Proxies.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/Go SSTI.md",
-    "Printer hacking.md",
     "Tags/linux.md",
-    "Remote Thought/Privilege Escalation.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
