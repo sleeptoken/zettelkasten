@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Tags/Find.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Tags/Find.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dynamic Instrumentation.md",
+                "file": "Tags/Find.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dynamic Instrumentation.md"
+                "file": "Tags/Find.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "b9908a596d254f46",
   "lastOpenFiles": [
+    "Dynamic Instrumentation.md",
     "Printer hacking.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/Find.md",
@@ -167,7 +168,6 @@
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Tags/pwntools.md",
     "Remote Thought/Overwriting variables on the stack.md",
-    "Dynamic Instrumentation.md",
     "Remote Thought/venv in python.md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
