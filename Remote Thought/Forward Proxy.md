@@ -3,7 +3,7 @@
 
 Source: #web 
 
-proxy that sits betwn u and the server acts as middleman
+proxy that sits between u and the server acts as middleman
 
 client        ->        proxy          ->         sever
 PC                  localhost:8080          google.com
