@@ -8,18 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c8d5831a121c4dd1",
+            "id": "a7f5bd005cb3b331",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Reflected XSS.md",
+                "file": "Remote Thought/ChaCha20 Encryption.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reflected XSS"
+              "title": "ChaCha20 Encryption"
             }
           }
         ]
@@ -162,8 +162,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8d5831a121c4dd1",
+  "active": "a7f5bd005cb3b331",
   "lastOpenFiles": [
+    "Authentication vulnerabilities.md",
+    "Dynamic Instrumentation.md",
+    "Printer hacking.md",
+    "Remote Thought/ChaCha20 Encryption.md",
+    "Tags/Cryptography.md",
+    "Tags/GDB.md",
+    "Remote Thought/Caesar Cipher.md",
+    "Stream Cipher.md",
+    "Tags/Binary Exploit.md",
+    "Tags/pwntools.md",
+    "Remote Thought/Binary exploit toolkit.md",
+    "Remote Thought/Reflected XSS.md",
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
@@ -174,22 +186,10 @@
     "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Remote Thought/Overwriting variables on the stack.md",
-    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/CSRF.md",
-    "Printer hacking.md",
-    "Dynamic Instrumentation.md",
     "Tags/linux.md",
     "Remote Thought/venv in python.md",
-    "Authentication vulnerabilities.md",
     "Remote Thought/Hypervisors Internals.md",
-    "Remote Thought/cron job.md",
-    "Remote Thought/Appdata storage in windows.md",
-    "Tags/Binary Exploit.md",
-    "Tags/Volatility.md",
-    "Tags/server-side parameter pollution.md",
-    "Tags/Find.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
