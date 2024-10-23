@@ -5,6 +5,13 @@ Source: #htb
 
 Tags: [[Stream Cipher]] [[Cryptography]]
 
+This challenge serves as an introduction to reversing encryption programs, and shows us how we do not need a complete & in-detail understanding to reverse it and get the flag.
+
+This challenge contains two files, a program for encryption and an encrypted version of the flag
+> we can create a file and run it through the encryptor to observe the behavior 
+
+now, on decompiling the program we see
+
 
 
 
