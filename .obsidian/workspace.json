@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Apache Proxy Server CVE.md",
+                "file": "Remote Thought/Forward Proxy.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apache Proxy Server CVE"
+              "title": "Forward Proxy"
             }
           }
         ]
@@ -164,12 +164,12 @@
   },
   "active": "a7f5bd005cb3b331",
   "lastOpenFiles": [
-    "Remote Thought/Forward Proxy.md",
+    "Remote Thought/Reverse Proxy.md",
     "Remote Thought/ChaCha20 Encryption.md",
+    "Remote Thought/Apache Proxy Server CVE.md",
+    "Remote Thought/Forward Proxy.md",
     "Stream Cipher.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "Remote Thought/Apache Proxy Server CVE.md",
-    "Remote Thought/Reverse Proxy.md",
     "Tags/Cryptography.md",
     "Authentication vulnerabilities.md",
     "Dynamic Instrumentation.md",
