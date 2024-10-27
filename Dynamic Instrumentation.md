@@ -241,7 +241,7 @@ io.hextree.*!* //match all methods on all classes under io.hextree.
 *!*passsword* //match on all functions that include password
 ```
 
-##### To trace all calls on `io.hextree.*` - 
+##### To trace all calls on `io.hextree.*` 
 ```js
 frida-trace -U -j 'io.hextree.*!*' FridaTarget
 ```
@@ -299,6 +299,11 @@ InterceptionFragment.function_to_intercept.implementation = function(argument){
         return this.function_to_intercept(argument);
     }
 ```
+### SSL Validation Bypasses
+
+#### SSLContext & Network-Security-Config Bypass
+
+
 
 
 

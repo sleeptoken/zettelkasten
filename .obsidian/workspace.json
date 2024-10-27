@@ -138,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Binary Exploit.md"
+                "file": "Dynamic Instrumentation.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Binary Exploit"
+              "title": "Outline of Dynamic Instrumentation"
             }
           }
         ],
@@ -149,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
