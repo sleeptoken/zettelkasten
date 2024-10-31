@@ -303,11 +303,13 @@ InterceptionFragment.function_to_intercept.implementation = function(argument){
 
 #### SSLContext & Network-Security-Config Bypass
 
-A way to disable SSL validation and also to bypass certificate pinning is to use frida to just disable it.
+A way to disable SSL validation and also to bypass certificate pinning is to use Frida to just disable it.
 
 Now the way we bypass SSL pining on Android depends on how it's implemented. 
 - one of the implementation methods is to explicitly set up a key store with a single trusted certificate. This key store is then used to create a trust manager and that one will only validate this single certificate.
-#### *Lab*
+
+> - go to the android developer documentation and check the docs for `X509TrustManager` and see how the checkservertrusted method works 
+##### *Lab*
 
 Now let's start by using Frida Trace to find Invocations to the function check server trusted
 ```js
@@ -316,32 +318,27 @@ frida-trace -U -j  '*!*checkServerTrusted*' FridaTarget
 
 - on clicking button 1 we see that platform check server trusted is called and that it has quite a long signature. This will be the implementation that we will try to replace, but unfortunately the package name is missing here (the stuff that comes before the platform)
 
-to get the package name Drop in the frida repl using  `frida -U FridaTarget` then type - 
+to get the package name Drop in the Frida repl using  `frida -U FridaTarget` then type - 
 ```js
 Java.enumerateMethods("*Platform!*checkServerTrusted*")
 ```
 In the results I can see that the package name is `com.android.org.conscrypt.Platform`.
-'m gonna copy that one and then we will write a small script. We start by just our typical Java platform
 
-and then we will get the JavaScript Rev hub for the platform class. Next, we simply try to replace the check server trusted
+now replace the `checkServerTrusted` Implementation by writing a script
+```js
+Java.perform(() => {
+    var PlatformClass = Java.use("com.android.org.conscrypt.Platform");
+    PlatformClass.chechServerTrusted.implementation = function(){
+        console.log("check server trusted");
+    }
+})
+```
+on running our script and we get an error message. There are two different overloads for Check Server Trusted, and so we have to tell Frida which one we want to use.
 
-function with our own implementation. And then we are already ready to test. So let's use three.run our script and we get an error message.
-
-There are two different overloads for Check Server Trusted, and so we have to tell Frida which one we want to use.
-
-Now, nicely enough, Frida shows us bot available overloads and we can just copy paste this code in. I will just try the first one and hope that it works.
-
-So let's add the overload call in here and I will hit save and just restart the script. And now there's no error message.
-
-And so let's try the SSL context pinning function and it tums green. Nice. We just bypass the SSL validation just
-
-by replacing the checks server, trusted implementation and making sure that it doesn't throw the certificate exception. Another way to set up SSL putting
-
-and validation is to use the network security config. And down here you can see how, for example, a certificate might be pinned.
-
-Now I thought that this might need a different bypass, but if wa imet tru it with our avleting errint
+Now, nicely enough, Frida shows us both available overloads and we can just copy paste this code in.
 
 
+another way to set up ssl pinning & validation is to use the network security config. And in the developer docs here you can see how a certificate might be pinned.
 
 
 ### References

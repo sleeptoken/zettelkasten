@@ -137,9 +137,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Dynamic Instrumentation.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Dynamic Instrumentation"
             }
           }
         ],
@@ -147,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
