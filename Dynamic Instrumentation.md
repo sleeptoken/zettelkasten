@@ -303,38 +303,24 @@ InterceptionFragment.function_to_intercept.implementation = function(argument){
 
 #### SSLContext & Network-Security-Config Bypass
 
-If you have looked at our Android network analysis course, you encountered a lot of SSL validation and different ways to bypass or modify that validation.
+A way to disable SSL validation and also to bypass certificate pinning is to use frida to just disable it.
 
-Another way to disable SSL validation and also to bypass certificate pinning is to use free data to just disable it.
+Now the way we bypass SSL pining on Android depends on how it's implemented. 
+- one of the implementation methods is to explicitly set up a key store with a single trusted certificate. This key store is then used to create a trust manager and that one will only validate this single certificate.
+#### *Lab*
 
-Now the way we bypass SSL opening on Android depends on how it's implemented. One common way to implement a opening
+Now let's start by using Frida Trace to find Invocations to the function check server trusted
+```js
+frida-trace -U -j  '*!*checkServerTrusted*' FridaTarget
+```
 
-and validation is to explicitly set up a key store with a single trusted certificate. This key store is then used to create a trust manager
+- on clicking button 1 we see that platform check server trusted is called and that it has quite a long signature. This will be the implementation that we will try to replace, but unfortunately the package name is missing here (the stuff that comes before the platform)
 
-and that one will only validate this single certificate. If we check the documentation for X 50 9 trust manager,
-
-we can find this check server trusted method right here. And this method seems to validate the certificate chain and we'll throw an exception if the certificate is not
-
-trusted by the trust manager. So it sounds like the perfect function to replace to disable SSL opening and even SSL validation altogether in our free data target,
-
-we have an SSL opening view, and in here we have three buttons that will all create a network request
-
-and they all use a different method for pinning the certificate. Our goal will be to bypass all three of these.
-essentially they currently have the wrong certificate pinned and so the request falls if we manage to bypass the SSL opening
-
-or SSL validation altogether, the buttons should turn green. Now let's start by using Frida Trace to find Invocations to the function check server.
-
-Trusted that we saw earlier. If we click the first request, now we can see that platform check server trusted is called
-
-and that it has quite a long signature. This will be the implementation that we will try to replace, but unfortunately the package name is missing here.
-
-So the stuff that comes before the platform, luckily Frida comes with a nice way to enumerate all classes and methods and so on.
-
-And so let's drop into Frida Apple and then we just do Java, do enumerate methods, and then we can use the same features
-
-and text that we also can use for Free Trace. And so I will just filter for Star Platform exclamation mark,
-
-star check server, trusted Star. And in the results I can see that the package name is com.androld.org dot conscript do platform.
+to get the package name Drop in the frida repl using  `frida -U FridaTarget` then type - 
+```js
+Java.enumerateMethods("*Platform!*checkServerTrusted*")
+```
+In the results I can see that the package name is `com.android.org.conscrypt.Platform`.
 'm gonna copy that one and then we will write a small script. We start by just our typical Java platform
 
 and then we will get the JavaScript Rev hub for the platform class. Next, we simply try to replace the check server trusted
