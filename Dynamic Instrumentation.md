@@ -313,7 +313,7 @@ Now the way we bypass SSL pining on Android depends on how it's implemented.
 
 Now let's start by using Frida Trace to find Invocations to the function check server trusted
 ```js
-frida-trace -U -j  '*!*checkServerTrusted*' FridaTarget
+frida-trace -U -j '*!*checkServerTrusted*' FridaTarget
 ```
 
 - on clicking button 1 we see that platform check server trusted is called and that it has quite a long signature. This will be the implementation that we will try to replace, but unfortunately the package name is missing here (the stuff that comes before the platform)
