@@ -338,7 +338,7 @@ Now, nicely enough, Frida shows us both available overloads and we can just copy
 
 ``` js
 Java.perform(() => { 
-	var PlatformClass = Java.use("com.android.org.conscrypt.Platform");           PlatformClass.checkServerTrusted.overload('javax.net.ssl.X509TrustManager', '[Ljava.security.cert.X509Certificate;', 'java.lang.String', 'com.android.org.conscrypt.AbstractConscryptSocket').implementation = function() { 
+	var PlatformClass = Java.use("com.android.org.conscrypt.Platform");          PlatformClass.checkServerTrusted.overload('javax.net.ssl.X509TrustManager', '[Ljava.security.cert.X509Certificate;', 'java.lang.String', 'com.android.org.conscrypt.AbstractConscryptSocket').implementation = function() { 
 		console.log("Check server trusted"); 
 	} 
 })
@@ -349,25 +349,29 @@ another way to set up ssl pinning & validation is to use the network security co
 
 I commonly used HTTP Library for Android is OKHTTP3 and it has its own support for certificate pinning and in the documentation we can see that there's an `OKHTTPClient.Builder()` and that one can be provided with a certificate pinner.
 
-And so to bypass certificate pinning,  we could just replace the certificate pinner function with our own implementation.
+> And so to bypass certificate pinning,  we could just replace the certificate pinner function with our own implementation.
 
-Now first we need to find the full package name and class name for this O-K-H-D-P builder and so we'll use Java to
+to find the full package name and class name for this OKHTTP builder  run `frida -U FridaTarget` then run -
+```js
+Java.enumerateMethods('*okhttp*Builder!*')
+//('*okhttp*Builder!*') means filter for all OKHTTP classes that contain builder.
+```
 
-generate methods
+```js
+Java.perform(() => {
+	var BuilderClass = Java.use("okhttp3.OkHttpClient$Builder"); 
+	BuilderClass.certificatePinner.implementation = function() { 
+		console.log("Certificate pinner called"); 
+		return this; // when we return this we are essentially doing nothing thereby disabling ssl pinner
+	}
+})
+```
 
-and filter for all KHDP classes that contain builder. There are quite a few of these, but after scrolling up a bit,
 
-I found the okay HTP client builder, which is exactly the one that we saw in the documentation. I'm gonna copy that class name
+it doesn't work well. We just disabled the SSL pinner but we didn't outright disable SSL validation 
+so it turns out that OKHTTP3 will still use the trust manager
 
-and then we can start writing our script. As always, we start with Java, do perform, and then we get the JavaScript for the builder class
-
-and now we can replace the Implementation for certificate pin with our own and we will just return this. So essentially doing nothing
-
-and so let's give our new script a try and it doesn't work well. We just disabled the SSL pinner
-
-but we didn't outright disable SSL validation and so it turnsout that OKHP three will still use the trust manager
-
-and so we can just run both our trust manager script and our O-K-H-G-P script to bypass the pinning and now it works.
+and so we can just run both our trust manager script and our OKHTTP3P script to bypass the pinning and now it works.
 
 Awesome. We just wrote two very simple but very effective as SL validation and as SL opening bypasses. Now from time to time the API will change
 
