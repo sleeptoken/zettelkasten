@@ -337,6 +337,13 @@ on running our script and we get an error message. There are two different overl
 
 Now, nicely enough, Frida shows us both available overloads and we can just copy paste this code in.
 
+``` js
+Java.perform(() => { 
+	var PlatformClass = Java.use("com.android.org.conscrypt.Platform");           PlatformClass.checkServerTrusted.overload('javax.net.ssl.X509TrustManager', '[Ljava.security.cert.X509Certificate;', 'java.lang.String', 'com.android.org.conscrypt.AbstractConscryptSocket').implementation = function() { 
+		console.log("Check server trusted"); 
+	} 
+})
+```
 
 another way to set up ssl pinning & validation is to use the network security config. And in the developer docs here you can see how a certificate might be pinned.
 
