@@ -301,11 +301,10 @@ InterceptionFragment.function_to_intercept.implementation = function(argument){
 ```
 ### SSL Validation Bypasses
 
+A way to disable SSL validation and also to bypass certificate pinning is to use Frida to just disable it.
+Now the way we bypass SSL pining on Android depends on how it's implemented. 
 #### SSLContext & Network-Security-Config Bypass
 
-A way to disable SSL validation and also to bypass certificate pinning is to use Frida to just disable it.
-
-Now the way we bypass SSL pining on Android depends on how it's implemented. 
 - one of the implementation methods is to explicitly set up a key store with a single trusted certificate. This key store is then used to create a trust manager and that one will only validate this single certificate.
 
 > - go to the android developer documentation and check the docs for `X509TrustManager` and see how the checkservertrusted method works 
@@ -335,7 +334,7 @@ Java.perform(() => {
 ```
 on running our script and we get an error message. There are two different overloads for Check Server Trusted, and so we have to tell Frida which one we want to use.
 
-Now, nicely enough, Frida shows us both available overloads and we can just copy paste this code in.
+Now, nicely enough, Frida shows us both available overloads and we can just copy paste one of this code in.
 
 ``` js
 Java.perform(() => { 
@@ -346,6 +345,39 @@ Java.perform(() => {
 ```
 
 another way to set up ssl pinning & validation is to use the network security config. And in the developer docs here you can see how a certificate might be pinned.
+### OKHTTP3 Bypass
+
+I commonly used HTTP Library for Android is OKHTTP3 and it has its own support for certificate pinning and in the documentation we can see that there's an `OKHTTPClient.Builder()` and that one can be provided with a certificate pinner.
+
+And so to bypass certificate pinning,  we could just replace the certificate pinner function with our own implementation.
+
+Now first we need to find the full package name and class name for this O-K-H-D-P builder and so we'll use Java to
+
+generate methods
+
+and filter for all KHDP classes that contain builder. There are quite a few of these, but after scrolling up a bit,
+
+I found the okay HTP client builder, which is exactly the one that we saw in the documentation. I'm gonna copy that class name
+
+and then we can start writing our script. As always, we start with Java, do perform, and then we get the JavaScript for the builder class
+
+and now we can replace the Implementation for certificate pin with our own and we will just return this. So essentially doing nothing
+
+and so let's give our new script a try and it doesn't work well. We just disabled the SSL pinner
+
+but we didn't outright disable SSL validation and so it turnsout that OKHP three will still use the trust manager
+
+and so we can just run both our trust manager script and our O-K-H-G-P script to bypass the pinning and now it works.
+
+Awesome. We just wrote two very simple but very effective as SL validation and as SL opening bypasses. Now from time to time the API will change
+
+and so you will have to regularly upgrade your SS L opening bypasses for modern Android versions and so on and so forth.
+
+There's also co-chair free re where people share their own free scripts and so often you will be able to find a good SS L bypass there.
+
+And now It's your tum bypass, KHGB three SS opening on your APK and you should get a flag.
+
+Good luck.
 
 
 ### References
