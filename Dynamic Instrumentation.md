@@ -33,6 +33,12 @@ frida -U FridaTarget
 
 The `-U` here specifies that we want to connect by USB. 
 `FridaTarget` is the name of the app or the PID of our application
+
+```shell
+frida-ps -Uai
+```
+
+Run `frida-ps -Uai` to list all processes along with architecture information.
 ###  Running the Frida Server
 
 - An alternative to patching the APK is to run Frida server on our device. ( Frida server requires a root device )
@@ -260,7 +266,7 @@ frida-trace -U -j 'io.hextree.*!*' -J '*AnnonyingClass*!*' FridaTarget //all ent
 We can see the native calls, however, we don't by default see the calls that actually happen in the native library. 
 
 Let's try to change that
-in Jadx we will try to trace a native library named `libhextree.so` located at `Resources > lib > arm64-v8a`  
+in Jadx we will try to trace a native library named `libhextree.so` located at `Resources > lib > arm64-v8a` 
 
 ```js
 frida-trace -U -I 'libhextree.so' -j 'io.hextree.*!*' FridaTarget
@@ -290,7 +296,6 @@ Java.perform(() => {
     }
 })
 ```
-
 #### Alternate
 ``` js
 InterceptionFragment.function_to_intercept.implementation = function(argument){
@@ -367,21 +372,9 @@ Java.perform(() => {
 })
 ```
 
+if the above script doesn't work that because we just disabled the SSL pinner but we didn't outright disable SSL validation so it turns out that OKHTTP3 will still use the trust manager
 
-it doesn't work well. We just disabled the SSL pinner but we didn't outright disable SSL validation 
-so it turns out that OKHTTP3 will still use the trust manager
-
-and so we can just run both our trust manager script and our OKHTTP3P script to bypass the pinning and now it works.
-
-Awesome. We just wrote two very simple but very effective as SL validation and as SL opening bypasses. Now from time to time the API will change
-
-and so you will have to regularly upgrade your SS L opening bypasses for modern Android versions and so on and so forth.
-
-There's also co-chair free re where people share their own free scripts and so often you will be able to find a good SS L bypass there.
-
-And now It's your tum bypass, KHGB three SS opening on your APK and you should get a flag.
-
-Good luck.
+and so we can just run both our `X509TrustManager` script and our `OKHTTP3` script to bypass the pinning and now it works.
 
 
 ### References
