@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "Pluck Exploit & Depix"
             }
+          },
+          {
+            "id": "37321f303cf5c94a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sqlpad exp.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sqlpad exp"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "python host",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +90,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md"
+                "file": "Sqlpad exp.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pluck Exploit & Depix"
+              "title": "Outline of Sqlpad exp"
             }
           }
         ],
@@ -162,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d6abf90ed26029a2",
+  "active": "37321f303cf5c94a",
   "lastOpenFiles": [
     "File transfer.md",
     "Remote Thought/Pluck Exploit & Depix.md",

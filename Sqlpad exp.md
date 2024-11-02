@@ -8,4 +8,7 @@ Tags:
 get linpeas in your system via wget 
 [[File transfer]]
 
+
+jabhi wget use kar raha hai file transfer ke liye toh apne kali mei hi karna server shuru windows mei nhi
+
 ### References
