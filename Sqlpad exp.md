@@ -12,3 +12,7 @@ get linpeas in your system via wget
 jabhi wget use kar raha hai file transfer ke liye toh apne kali mei hi karna server shuru windows mei nhi
 
 ### References
+https://app.hackthebox.com/machines/624
+
+
+https://thecybersecguru.com/ctf-walkthroughs/mastering-sightless-beginners-guide-from-hackthebox/
