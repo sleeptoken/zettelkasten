@@ -8,7 +8,7 @@ Tags: [[linux]] [[Cryptography]]
 #### Level 3-4
 
 create a temp dir on the ssh'ed machine
-use [[scp]](secure copy) command in Linux system to copy file(s) between servers in a secure way.
+use [[scp]](secure copy) command in Linux system to [[File transfer]] between servers in a secure way.
 `scp -P port source_file user@hostname:destination_file`
 here source file is the file you wanna transfer and destination file is the directory path where you wanna transfer the file to 
 

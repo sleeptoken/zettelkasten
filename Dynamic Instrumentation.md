@@ -348,7 +348,7 @@ Java.perform(() => {
 ```
 
 another way to set up ssl pinning & validation is to use the network security config. And in the developer docs here you can see how a certificate might be pinned.
-### OKHTTP3 Bypass
+#### OKHTTP3 Bypass
 
 I commonly used HTTP Library for Android is OKHTTP3 and it has its own support for certificate pinning and in the documentation we can see that there's an `OKHTTPClient.Builder()` and that one can be provided with a certificate pinner.
 
@@ -373,7 +373,7 @@ Java.perform(() => {
 if the above script doesn't work that because we just disabled the SSL pinner but we didn't outright disable SSL validation so it turns out that OKHTTP3 will still use the trust manager
 
 and so we can just run both our `X509TrustManager` script and our `OKHTTP3` script to bypass the pinning and now it works.
-### Bypassing SSL Pinning with Objection
+#### Bypassing SSL Pinning with Objection
 
 ```shell
 objection explore
