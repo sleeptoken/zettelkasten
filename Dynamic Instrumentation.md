@@ -373,9 +373,24 @@ Java.perform(() => {
 if the above script doesn't work that because we just disabled the SSL pinner but we didn't outright disable SSL validation so it turns out that OKHTTP3 will still use the trust manager
 
 and so we can just run both our `X509TrustManager` script and our `OKHTTP3` script to bypass the pinning and now it works.
+### Bypassing SSL Pinning with Objection
+
+```shell
+objection explore
+# will connect to our FRIDA target and then drop us into an objection CLI.
+
+# once we get the shell type the following 
+android sslpinning disable 
+```
+
+It's also able to bypass the network config pinning, but OKHTTP3 seems to not work.
+Objection will probably fix the OKHTTP3 support, and so it might work on your machine.
+
 
 
 ### References
 
 https://app.hextree.io/courses/android-dynamic-instrumentation
 Check-out the full Frida JavaScript API documentation [here](https://frida.re/docs/examples/javascript/)! Note that the number in parenthesis after each command Indicates the number of expected arguments. 
+
+[Network security configuration  |  Security  |  Android Developers](https://developer.android.com/privacy-and-security/security-config)
