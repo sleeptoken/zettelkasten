@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sqlpad exp.md",
+                "file": "Exploiting Chrome Remote Debugger.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sqlpad exp"
+              "title": "Exploiting Chrome Remote Debugger"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sqlpad exp.md"
+                "file": "Exploiting Chrome Remote Debugger.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Sqlpad exp"
+              "title": "Outline of Exploiting Chrome Remote Debugger"
             }
           }
         ],
@@ -180,7 +180,7 @@
   "active": "37321f303cf5c94a",
   "lastOpenFiles": [
     "Dynamic Instrumentation.md",
-    "Sqlpad exp.md",
+    "Exploiting Chrome Remote Debugger.md",
     "Tags/File transfer.md",
     "Tags/scp.md",
     "Remote Thought/Freq Analysis.md",
