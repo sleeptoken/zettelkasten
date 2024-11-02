@@ -16,3 +16,4 @@ https://app.hackthebox.com/machines/624
 
 
 https://thecybersecguru.com/ctf-walkthroughs/mastering-sightless-beginners-guide-from-hackthebox/
+https://www.youtube.com/watch?v=DWX6Fp6fWt4
