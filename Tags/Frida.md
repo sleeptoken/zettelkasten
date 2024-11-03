@@ -16,3 +16,17 @@ This command will return the device’s CPU architecture, which may show options
 frida-ps -Uai
 ```
 Run `frida-ps -Uai` to list all processes along with architecture information.
+
+### Change Frida version 
+
+the agent, the server, the client frida version and the frida-tools versions all need to be compatible with each other 
+
+```powershell
+pip3 install "frida-tools==9.2.5"
+```
+
+download the correct frida server version if you are using server method
+is using objection u can specify the frida version that objection uses when patching a apk.
+```
+objection patchapk -V 14.2.8 -s 2048.apk
+```
