@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -163,14 +164,14 @@
   },
   "active": "d6abf90ed26029a2",
   "lastOpenFiles": [
+    "Tags/Frida.md",
+    "Dynamic Instrumentation.md",
     "Printer hacking.md",
     "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Pluck Exploit & Depix.md",
-    "Dynamic Instrumentation.md",
     "Tags/File transfer.md",
     "Tags/scp.md",
     "Remote Thought/Freq Analysis.md",
-    "Tags/Frida.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/HTTP Request Smuggling.md",
