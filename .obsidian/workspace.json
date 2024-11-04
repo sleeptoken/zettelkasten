@@ -8,18 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "28f1358713732465",
+            "id": "3a8005bf3514298c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DJ CTF.md",
+                "file": "Printer Hacking.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DJ CTF"
+              "title": "Printer Hacking"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#ctf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DJ CTF.md"
+                "file": "Printer Hacking.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DJ CTF"
+              "title": "Outline of Printer Hacking"
             }
           }
         ],
@@ -162,24 +161,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "28f1358713732465",
+  "active": "3a8005bf3514298c",
   "lastOpenFiles": [
+    "Printer Hacking.md",
+    "Authentication vulnerabilities.md",
+    "Printer hacking.md",
+    "DNS Spoofing and Transparent Proxy.md",
+    "Stream Cipher.md",
+    "OSCP resources.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Remote Thought/Tracing with Frida.md",
+    "Remote Thought/SSL Validation Bypasses.md",
+    "Remote Thought/Disable JavaScript.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/Enlightenment SUID exploit.md",
-    "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Tags/Ghidra.md",
-    "DJ CTF.md",
     "Untitled 1.md",
-    "OSCP resources.md",
-    "Stream Cipher.md",
-    "Authentication vulnerabilities.md",
-    "DNS Spoofing and Transparent Proxy.md",
-    "Remote Thought/SSL Validation Bypasses.md",
-    "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Privilege Escalation.md",
-    "Printer hacking.md",
     "Tags/Frida.md",
     "Remote Thought/Pluck Exploit & Depix.md",
     "Tags/File transfer.md",
@@ -189,7 +189,6 @@
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/SSL Interception.md",
-    "Remote Thought/Decompiling Android apps.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",

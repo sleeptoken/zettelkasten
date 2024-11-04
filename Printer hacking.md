@@ -1,5 +1,5 @@
 
-2024-10-10 00:07
+2024-11-04 11:58
 
 Source: 
 
@@ -8,7 +8,5 @@ Tags:
 
 
 
-### References
-https://app.hackthebox.com/challenges/Gawk
 
-https://github.com/jon-brandy/hackthebox/blob/main/Categories/Hardware/Gawk/README.md
+### References
