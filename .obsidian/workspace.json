@@ -8,34 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3a8005bf3514298c",
+            "id": "52469b46b7b3d3ed",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DNS Spoofing and Transparent Proxy.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DNS Spoofing and Transparent Proxy"
-            }
-          },
-          {
-            "id": "013ac0121d5f6ac0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.5"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,24 +157,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "013ac0121d5f6ac0",
+  "active": "52469b46b7b3d3ed",
   "lastOpenFiles": [
+    "Remote Thought/Disable JavaScript.md",
+    "Remote Thought/Extract ab files.md",
+    "DNS Spoofing and Transparent Proxy.md",
+    "Authentication vulnerabilities.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Tags/adb.md",
     "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/SSL Interception.md",
-    "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Decompiling Android apps.md",
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Printer Hacking.md",
-    "Authentication vulnerabilities.md",
     "Printer hacking.md",
     "Stream Cipher.md",
     "OSCP resources.md",
-    "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Tracing with Frida.md",
     "Remote Thought/SSL Validation Bypasses.md",
-    "Remote Thought/Disable JavaScript.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Fetching from SQLite as b64.md",
@@ -201,8 +185,6 @@
     "Remote Thought/Privilege Escalation.md",
     "Tags/Frida.md",
     "Remote Thought/Pluck Exploit & Depix.md",
-    "Tags/File transfer.md",
-    "Tags/scp.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
