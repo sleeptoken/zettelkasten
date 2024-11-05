@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2fd052cf8af1d8a9",
+        "id": "f944426a54b17054",
         "type": "tabs",
         "children": [
           {
-            "id": "52469b46b7b3d3ed",
+            "id": "c65765ed39451179",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "RCE via SSRF.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RCE via SSRF"
             }
           }
         ]
@@ -157,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52469b46b7b3d3ed",
+  "active": "c65765ed39451179",
   "lastOpenFiles": [
+    "RCE via SSRF.md",
     "Remote Thought/Disable JavaScript.md",
     "Remote Thought/Extract ab files.md",
     "DNS Spoofing and Transparent Proxy.md",
@@ -184,7 +190,6 @@
     "Untitled 1.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/Frida.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
