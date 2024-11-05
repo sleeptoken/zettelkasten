@@ -37,7 +37,6 @@ ensure the .apk is zipaligned, zipalign tool is a part of the installed built to
 [...]/build-tools/34.0.0/zipalign -p -f -v 4 ./dist/translate.apk translate2.apk
 ```
 
-
 sign the APK with apksigner (also part of the build-tools )
 ```
 [...]/build-tools/34.0.0/apksigner sign --ks ./research.keystore ./translate2.apk
@@ -51,6 +50,7 @@ but the request doesn't have an API key and we get an error 400
 - the process of patching can break things or there are components relying on the correct signature of the app and now that it's self-signed, their permissions fail.
 
 - This method can also be used to get around pinning and even patch other custom verification code if necessary. And this is really cool because it means we can intercept apps on devices without root access.
+
 ### Advanced HTTP Interception with VPN
 
 In the Wi-Fi connection setting, we are able to set an HTTP proxy, but applications might ignore that setting. In some apps `NO_PROXY` is set (This HTTP request ignores system proxy settings). 

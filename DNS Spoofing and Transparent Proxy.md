@@ -5,7 +5,7 @@ Source: #android
 
 Continuation of [[Advanced Interception Tricks]]
 
-When an application wants to do an HDP request or connect with any other protocol for that matter, it first has to resolve the domain to an IP address.
+When an application wants to do an HTTP request or connect with any other protocol for that matter, it first has to resolve the domain to an IP address.
 
 So what happens if we spoof the DNS response and retum our own ip? Well, this is a great way to intercept any kind of traffic.
 

@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "DNS Spoofing and Transparent Proxy"
             }
+          },
+          {
+            "id": "013ac0121d5f6ac0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.5"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -163,9 +175,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a8005bf3514298c",
+  "active": "013ac0121d5f6ac0",
   "lastOpenFiles": [
     "Remote Thought/Advanced Interception Tricks.md",
+    "Remote Thought/SSL Interception.md",
+    "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Decompiling Android apps.md",
     "Remote Thought/Dynamic Instrumentation.md",
@@ -173,7 +187,6 @@
     "Printer Hacking.md",
     "Authentication vulnerabilities.md",
     "Printer hacking.md",
-    "DNS Spoofing and Transparent Proxy.md",
     "Stream Cipher.md",
     "OSCP resources.md",
     "Exploiting Chrome Remote Debugger.md",
@@ -190,7 +203,6 @@
     "Remote Thought/Pluck Exploit & Depix.md",
     "Tags/File transfer.md",
     "Tags/scp.md",
-    "Remote Thought/Freq Analysis.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
