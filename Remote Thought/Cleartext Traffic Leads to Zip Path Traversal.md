@@ -32,8 +32,7 @@ find / | grep pocket
 # grab for any file parts containing pocket map
 ```
 we can find the downloaded map here **This shows us that the app does indeed unpack the map zip**
-
-### Dynamic test setup
+### MITM setup
 
 We are going to create a dynamic test setup to simulate a machine in the middle attacker in order to exploit the pocket text map.
 
@@ -41,7 +40,7 @@ head over to Burp and see the two important requests.
 - One loads the available maps 
 - the other is the GHZ zip archive download. 
 
-And keep in mind, our goal is to attack this app by simulating a machine in the middle attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file.
+And keep in mind, our goal is to attack this app by simulating a machine in the middle[[m]] attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file.
 #### HTTP mock extension 
 
 First, I'm going to Install a burp extension called HTTP Mock. This extension gives us a lot more freedom in the way how we can change and manipulate the responses to certain requests.
@@ -56,56 +55,11 @@ replace the contents of the response to `http://127.0.0.1:1234/map.json`
 we are actually sending a request to this Local server, URL, I'm also removing part of the URL matching in order to match any file that we download (append `/.*`)
 change some other fields (eg. change host & Port to `.*`) so they match anything. This way we can make sure our rules really get applied to all the incoming requests.
 
-
 we could search for map download related code or we go straight to zip functionality searching for typical Android Java classes related to zip files such as ZipEntry.
 
-We can find the relevant code section here. So this function apparently takes a zip file path and creates a zip input stream.
+> The entry name of a zip file can contain a path traversal. for this current app
 
-This is basic code to read files from a zip archive. Then the code enters a wire loop, it gets an entry from the zip.
-
-An entry is a file stored in the zip file, and then it gets the name of that file. This map file name is then taken
-
-and a file path is assembled. If the path happened to be a folder, it will simply create that folder, but if it's a regular file,
-
-it will call this E function. And this e function reads the data of the file from the zip and writes it to the file path.
-
-So can you see the vulnerability? Feel free to pause the video and think about this code for a little bit.
-
-Can you find the Issue? Otherwise, let me tell you now. The entry name of a zip file can contain a path traversal.
-
-For example, the name could be dot slash dot slash hacks, and if then the file path is assembled and the path is resolved out of the folder path,
-
-pocket maps, maps Australia, where it is intended to be written to the actual file path will become pocket maps hacks.
-
-This means we just have to create a zip file with an entry that contains such a path traversal. To be specific, we would want do slash dot slash to get up
-
-to the pocket maps folder and then downloads hacks, because if we manage to write the hacks file there, then we solve this lab.
-
-The code for this in Python is actually also surprisingly simple. Using the zip file module, we can simply create a zip file in a memory buffer
-
-and then we can insert an entry or a file entry with this file name and this content. That's it. Now we just have to return this file
-
-as an HGDP response. With flask sent file, we can now simulate our machine in the middle attack where we as the attacker manipulate the map download.
-
-When a user tries to download any map, the unzipping code will run and will write our malicious hacks file into an arbitrary
-
-folder that it was not intended to write into. This kind of Issue is really serious depending on the target app. An arbitrary file, right, like this one could even lead to arbitrary code execution. In our case, it might not be that serious,
-
-but it does give us a flag to solve this lab for completeness sake. We could think now about how we could create the report for this issue.
-
-Here is how I would do it. Here's the title, clear text Traffic leads to a Zip Path Traversal. We have
-
-Identified two issues which lead to a quite serious security issue in the pocket text map. The first issue makes the attack
-
-realistic in the first place. It turns out that the app uses insecure clear text HDP in order to download map data.
-
-Then we show some excerpts from the network security config and maybe the A-P-I-U-R-L and then we can continue. This insecure setup allows an attacker
-
-to perform a machine in the middle attack and could manipulate the downloaded map data. The second issue was found in how the map unzip code works.
-
-Na techer can craft a malicious map zip file, including a path traversal that can be used to write arbitrary files and arbitrary file locations.
-
-It's recommended to sanitize the zip entry name, so they cannot include path traversals and the API should use SSL instead.
+This means we just have to create a zip file with an entry that contains such a path traversal (the app creates a directory if it doesn't exists . 
 
 ```python
 from flask import Flask, jsonify, send_file
@@ -132,14 +86,24 @@ def serve_map():
 def map_archive():
 # create a malicious zip file that leads to an arbitrary file. Specifically try to write the hex file into the pocket maps download folder.
     buffer = io.BytesIO()
-    with zipfile.ZipFile(buffer, 'w') as zipf:
-        zipf.writestr('../../downloads/hax','test path traversal')
+    with zipfile.ZipFile(buffer, 'w') as zipf: # create a zip file in a memory buffer
+        zipf.writestr('../../downloads/hax','test path traversal') # using the zipfile module we can create arbitrary zip file entries with any name and content
     buffer.seek(0)
     return send_file(buffer, as_attachment=True,download_name='map.ghz')
 
 if __name__ == '__main__':
     app.run(debug=True, port=1234)
 ```
+
+we can now simulate our machine in the middle attack where we as the attacker manipulate the map download. When a user tries to download any map, the unzipping code will run and will write our malicious hacks file into an arbitrary folder that it was not intended to write into. 
+
+### Report 
+
+We have Identified two issues which lead to a quite serious security issue in the pocket text map.
+- The first issue makes the attack possible in the first place. It turns out that the app uses insecure clear text HTTP in order to download map data. This insecure setup allows an attacker to perform a machine in the middle attack and could manipulate the downloaded map data.
+- The second issue was found in how the map unzip code works. an attacker can craft a malicious map zip file, including a path traversal that can be used to write arbitrary files and arbitrary file locations.
+
+It's recommended to sanitize the zip entry name, so they cannot include path traversals and the API should use SSL instead.
 
 ### References
 [Static vs. Dynamic Analysis](https://app.hextree.io/courses/network-interception/case-study-pockethexmap)
