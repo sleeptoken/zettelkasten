@@ -5,9 +5,9 @@ Source: #android
 
 Continuation of [[Advanced Interception Tricks]]
 
-When an application wants to do an HTTP request or connect with any other protocol for that matter, it first has to resolve the domain to an IP address.
-
-So what happens if we spoof the DNS response and retum our own ip? Well, this is a great way to intercept any kind of traffic.
+> When an application wants to do an HTTP request or connect with any other protocol for that matter, **it first has to resolve the domain to an IP address.**
+> 
+> So what happens if we spoof the DNS response and return our own IP? Well, this is a **great way to intercept any kind of traffic.**
 
 In order to make this work, we first have to create a setup that allows us to manipulate the DNS response.
 
