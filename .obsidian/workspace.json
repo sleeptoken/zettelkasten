@@ -8,18 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c65765ed39451179",
+            "id": "738cc04ad3fbaee1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DNS Spoofing and Transparent Proxy.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "DNS Spoofing and Transparent Proxy"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -163,13 +157,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c65765ed39451179",
+  "active": "738cc04ad3fbaee1",
   "lastOpenFiles": [
+    "Untitled.md",
+    "DNS Spoofing and Transparent Proxy.md",
     "RCE via SSRF.md",
     "Authentication vulnerabilities.md",
     "Exploiting Chrome Remote Debugger.md",
     "OSCP resources.md",
-    "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/Disable JavaScript.md",
     "Remote Thought/Extract ab files.md",
     "Tags/adb.md",
@@ -190,7 +185,6 @@
     "Tags/Ghidra.md",
     "Untitled 1.md",
     "Remote Thought/Privilege Escalation.md",
-    "Tags/Frida.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
