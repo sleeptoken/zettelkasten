@@ -23,24 +23,15 @@ we can see the application does indeed use HTTP Clear Text Communication.
 This allows a machine in the middle attacker to not only see the traffic that is sent and received, but also to manipulate the traffic. 
 
 When we download a map, we see the request for it in Burp, which turns out to be a `ghz` file. which actually is just a zip archive. 
-this zip archive contains a lot of files that you can see when you unpack it locally. (right click on the request and copy URL and paste it in the browser)
+this zip archive contains a lot of files that you can see when you unpack it locally. 
+(right click on the request and `copy URL` and paste it in the browser, replace the domain name to `storage.googleapis.com`)
 
-d
+Now let's try to find this content on the phone using ADB shell and make sure you have root access we can use
+``` sh
+find / | grep pocket 
+# grab for any file parts containing pocket map
+```
 
-Now let's try to find this content on the phone using a DB shell and make sure you have root access we can use
-
-find and then grab. For any file parts containing pocket map, there's lots of output, but looking around a bit,
-
-we can find the downloaded map here. This shows us that the app does indeed unpack the map zip, so we should check whether this part is safe.
-
-Could an attacker provide a malicious map archive, which contains a HX file that somehow gets written to a different folder?
-
-Now you have two choices to proceed. Either you are statically looking at the code in jx, is the unzipping code safe?
-
-Or you could already create a test setup to try it dynamically. Could you create a malicious zip file and test It to create such a test setup can be quite tricky.
-
-So feel free to try it yourself, but if you get stuck, move on
-
-
+we can find the downloaded map here **This shows us that the app does indeed unpack the map zip**
 ### References
 [Static vs. Dynamic Analysis](https://app.hextree.io/courses/network-interception/case-study-pockethexmap)
