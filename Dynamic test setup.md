@@ -39,19 +39,14 @@ We are going to create a dynamic test setup to simulate a machine in the middle 
 
 head over to Burp and see the two important requests.
 - One loads the available maps 
-- the other is the GH set zip archive download. 
+- the other is the GHZ zip archive download. 
 
-And keep in mind, our goal is to attack this app by simulating a machine in the middle attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with Burp
+And keep in mind, our goal is to attack this app by simulating a machine in the middle attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file 
+#### Install HTTP mock extension 
 
-or even use match and replace rules, but all of that fails once we try to handle binary data such
+First, I'm going to Install a burp extension called HTTP Mock. This extension gives us a lot more freedom in the way how we can change and manipulate the responses to certain requests.
 
-as the zip file and also we have to create the malicious zip file in the first place as well.
-
-That's why we need a different solution. There are lots of ways how you could set up a testing environment now, but I'm going
-
-to show you how I would do it. First, I'm going to Install a burp extension called HCDP Mock. This extension gives us a lot more freedom in the way how we can change and manipulate the responses to certain requests. To do that, we can right click our URLs
-
-and select extension HGDP, mock, mock HGDP response and send these details over to the extension. Over there. We can now change the details.
+To do that, we can right click our URLs and select extension HTTP mock - -> mock HTTP response and send these details over to the extension. Over there. We can now change the details.
 
 Here we have the mock rules using regular expressions. Different parts of the requests are matched. Basically it works this way.
 
