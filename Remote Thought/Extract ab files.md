@@ -3,7 +3,7 @@
 
 Source: #android 
 
-ab file = android backup file. Users create AB files using Android Debug Bridge ([[adb]])
+ab file = android backup file. Users create AB files using [[Android Debug Bridge]] (ADB)
 
 ```bash
 ( printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" ; tail -c +25 backup.ab ) |  tar xfvz -

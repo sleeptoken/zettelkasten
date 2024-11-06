@@ -11,10 +11,15 @@
             "id": "738cc04ad3fbaee1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Static vs Dynamic analysis.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Static vs Dynamic analysis"
             }
           }
         ]
@@ -133,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DNS Spoofing and Transparent Proxy.md"
+                "file": "Static vs Dynamic analysis.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DNS Spoofing and Transparent Proxy"
+              "title": "Outline of Static vs Dynamic analysis"
             }
           }
         ],
@@ -159,6 +164,11 @@
   },
   "active": "738cc04ad3fbaee1",
   "lastOpenFiles": [
+    "Remote Thought/Extract ab files.md",
+    "Tags/SSTI.md",
+    "Tags/adb.md",
+    "Static vs Dynamic analysis.md",
+    "Remote Thought/Internet perms & Networking.md",
     "Untitled.md",
     "DNS Spoofing and Transparent Proxy.md",
     "RCE via SSRF.md",
@@ -166,8 +176,6 @@
     "Exploiting Chrome Remote Debugger.md",
     "OSCP resources.md",
     "Remote Thought/Disable JavaScript.md",
-    "Remote Thought/Extract ab files.md",
-    "Tags/adb.md",
     "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Reverse Engineering Android apps.md",
@@ -182,9 +190,6 @@
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/Enlightenment SUID exploit.md",
     "Remote Thought/Fetching from SQLite as b64.md",
-    "Tags/Ghidra.md",
-    "Untitled 1.md",
-    "Remote Thought/Privilege Escalation.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
