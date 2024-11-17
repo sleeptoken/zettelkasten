@@ -40,7 +40,7 @@ head over to Burp and see the two important requests.
 - One loads the available maps 
 - the other is the GHZ zip archive download. 
 
-And keep in mind, our goal is to attack this app by simulating a machine in the middle[[m]] attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file.
+And keep in mind, our goal is to attack this app by simulating a machine in the middle [[MITM]] attacker who can manipulate the clear text request or responses. Of course, we could simply intercept the traffic with [[burpsuite]] or even use match and replace rules, but all of that fails once we try to handle binary data such as the zip file.
 #### HTTP mock extension 
 
 First, I'm going to Install a burp extension called HTTP Mock. This extension gives us a lot more freedom in the way how we can change and manipulate the responses to certain requests.
@@ -54,12 +54,15 @@ But we are going one step further. Now we are actually going to use the redirect
 replace the contents of the response to `http://127.0.0.1:1234/map.json`
 we are actually sending a request to this Local server, URL, I'm also removing part of the URL matching in order to match any file that we download (append `/.*`)
 change some other fields (eg. change host & Port to `.*`) so they match anything. This way we can make sure our rules really get applied to all the incoming requests.
+### Static analysis 
 
 we could search for map download related code or we go straight to zip functionality searching for typical Android Java classes related to zip files such as ZipEntry.
 
 > The entry name of a zip file can contain a path traversal. for this current app
 
 This means we just have to create a zip file with an entry that contains such a path traversal (the app creates a directory if it doesn't exists . 
+
+create a python file names `server.py`
 
 ```python
 from flask import Flask, jsonify, send_file
@@ -96,7 +99,6 @@ if __name__ == '__main__':
 ```
 
 we can now simulate our machine in the middle attack where we as the attacker manipulate the map download. When a user tries to download any map, the unzipping code will run and will write our malicious hacks file into an arbitrary folder that it was not intended to write into. 
-
 ### Report 
 
 We have Identified two issues which lead to a quite serious security issue in the pocket text map.
