@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "913e3a1990b6fdba",
+            "id": "9da33bb1ff3f2cbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -162,13 +161,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "913e3a1990b6fdba",
+  "active": "9da33bb1ff3f2cbb",
   "lastOpenFiles": [
-    "Chrome dev tools.md",
-    "Proxy Setup script.md",
     "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
-    "Tags/MITM.md",
+    "Proxy Setup script.md",
+    "Chrome dev tools.md",
     "Remote Thought/SSL Interception.md",
+    "RCE via SSRF.md",
+    "Remote Thought/Extract ab files.md",
+    "Remote Thought/Disable JavaScript.md",
+    "Remote Thought/SSL Validation Bypasses.md",
+    "Tags/MITM.md",
     "Remote Thought/Decompiling Android apps.md",
     "Remote Thought/Advanced Interception Tricks.md",
     "Remote Thought/Packet logging with tcpdump.md",
@@ -177,19 +180,15 @@
     "Remote Thought/Building Android POC app.md",
     "Remote Thought/Internet perms & Networking.md",
     "Tags/burpsuite.md",
-    "Remote Thought/Extract ab files.md",
     "Tags/SSTI.md",
     "Tags/adb.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "RCE via SSRF.md",
     "Authentication vulnerabilities.md",
     "Exploiting Chrome Remote Debugger.md",
     "OSCP resources.md",
-    "Remote Thought/Disable JavaScript.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Apache Proxy Server CVE.md",
-    "Printer Hacking.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",

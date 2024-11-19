@@ -3,10 +3,8 @@
 
 Source: #android 
 
-Tags: 
-
-documented in [[SSL Interception]]
-current method shows a shortcut 
+documented in detail -> [[SSL Interception]]
+current method shows a shortcut to setup a MITM for [[Cleartext Traffic Leads to Zip Path Traversal]]
 
 
 So let's get started with Burp Suite as our proxy tool of choice. We are going to visit the local proxy port in order
