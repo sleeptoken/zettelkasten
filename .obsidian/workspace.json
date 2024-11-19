@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "HTTP toolkit",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 317.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -149,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,11 +166,11 @@
   },
   "active": "9da33bb1ff3f2cbb",
   "lastOpenFiles": [
-    "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
+    "RCE via SSRF.md",
     "Proxy Setup script.md",
+    "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
     "Chrome dev tools.md",
     "Remote Thought/SSL Interception.md",
-    "RCE via SSRF.md",
     "Remote Thought/Extract ab files.md",
     "Remote Thought/Disable JavaScript.md",
     "Remote Thought/SSL Validation Bypasses.md",
