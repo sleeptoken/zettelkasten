@@ -75,13 +75,8 @@ for PID in $APP_PIDS; do
  wait # Launched in parallel wait for completion here
  echo "System certificate injected"
 ```
+### set up our proxy using Rethink DNS app.
 
-### set up our proxy using the VPN Trick with the Rethink DNS app.
-
-First, configure the DNS to use the system DNS
-
-and then specify A-H-D-P-S Connect proxy pointing at the IP of our computer where Burp is running. Then that start the VPN and we should be ready to Intercept network request, which we can confirm using the web view test app. If this site doesn't load
-
-and remains wide, your proxy set up falled somewhere. 
-
+configure > DNS > System DNS
+proxy > Setup HTTP(S) CONNECT Proxy   ->    enter hostname pointing at the IP of our computer where Burp is running. (`http://192.168.178.38:8080`) 
 ### References
