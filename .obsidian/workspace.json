@@ -11,10 +11,15 @@
             "id": "69d7aa50bc325850",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Tags/Find.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Find"
             }
           }
         ]
@@ -159,6 +164,9 @@
   },
   "active": "69d7aa50bc325850",
   "lastOpenFiles": [
+    "Tags/netcat.md",
+    "Tags/Find.md",
+    "ELK.md",
     "Remote Thought/inspect .lnk files.md",
     "Intents and Activities.md",
     "Untitled 1.md",
@@ -182,9 +190,6 @@
     "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
     "Remote Thought/Extract ab files.md",
     "Remote Thought/SSL Interception.md",
-    "Remote Thought/Disable JavaScript.md",
-    "Remote Thought/SSL Validation Bypasses.md",
-    "Tags/MITM.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",

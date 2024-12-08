@@ -15,6 +15,15 @@ find / -user root -perm /4000
 ```
 Search for files with [[SUID]] permission. It is looking for a file with SUID permission that can be run as root.
 
+```
+find / -writable -type  f 2>/dev/null | grep -v "/proc/"
+```
+Helpful in privilege escalation attempts used to find files with writable permissions
+
+``` 
+find / -perm -4000 -type f 2>/dev/null
+```
+Finds SUID (Set User ID) files, useful in privilege escalation attempts as it can sometimes be leveraged to execute binary with privileges of its owner (which is often root)
 
 ### References
 [RootMe — TryHackMe CTF Walkthrough | by WiktorDerda | Medium](https://medium.com/@wiktorderda/rootme-tryhackme-ctf-walkthrough-656232b4c901)
