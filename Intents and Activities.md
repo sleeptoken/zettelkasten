@@ -29,7 +29,8 @@ But a more intuitive description could be: _"Declaring an intention to do somet
 
 Activities are responsible to render the screen of an app. So if your app has multiple screens, you can use `startActivity()` to start another activity. To do that you have to create an Intent object and target a specific activity class.
 
-we can start a non exported activity from WITHIN the same app 
+the `SecondActivity` cannot be started from another app. Only the app itself can start this "Internal" activity
+we can start a non exported (exported="false") activity from WITHIN the same app 
 
 ```java
 Intent intent = new Intent();
