@@ -11,10 +11,15 @@
             "id": "75ffe9901b6bbf4d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Intents and Activities.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Intents and Activities"
             }
           }
         ]
@@ -73,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 316.5
   },
   "right": {
     "id": "32d401c624765afb",

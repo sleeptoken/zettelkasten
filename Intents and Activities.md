@@ -17,6 +17,37 @@ In order to attack an app, we need to understand what can we even interact with.
 `android:exported="true"` tells us weather other apps can interact with this app directly or not 
 
 `android:exported="true"` is interesting to us ,`android:exported="false"` can be ignored
+### Intent
+
+Here is how the official documentation describes [Intent](https://developer.android.com/reference/android/content/Intent):
+
+> _"An intent is an abstract description of an operation to be performed."_
+
+But a more intuitive description could be: _"Declaring an intention to do something, and let Android figure out the app that can handle it"_
+
+### Starting Activities
+
+Activities are responsible to render the screen of an app. So if your app has multiple screens, you can use `startActivity()` to start another activity. To do that you have to create an Intent object and target a specific activity class.
+
+```java
+Intent intent = new Intent();
+intent.setComponent(new ComponentName("io.hextree.activitiestest", "io.hextree.activitiestest.SecondActivity"));
+startActivity(intent);
+```
+
+An alternative syntax to specify the target package and activity is also:
+
+```java
+Intent intent = new Intent();
+intent.setClassName("io.hextree.activitiestest", "io.hextree.activitiestest.SecondActivity");
+startActivity(intent);
+```
+
+An app can always start any of its own activities, but in order to allow other apps to start your activity, they have to be exported. There is also one exported activity by default, which is the "launcher activity" that is used as a main entry point into the app. This allows the home screen or launcher application to start your app when you click it.
+
+### Incoming Intent
+
+The intent object that was used to start an activity, is available to the app via `getIntent()`. This feature is used to pass data to other apps, and thus it becomes a major attack surface. Does the app handle the incoming intent securely?
 
 
 ### References
