@@ -31,6 +31,7 @@ Activities are responsible to render the screen of an app. So if your app has mu
 
 the `SecondActivity` cannot be started from another app. Only the app itself can start this "Internal" activity
 we can start a non exported (exported="false") activity from WITHIN the same app 
+- how we generally prepare intents to call other apps
 
 ```java
 Intent intent = new Intent();
@@ -39,6 +40,7 @@ startActivity(intent);
 ```
 
 An alternative syntax to specify the target package and activity is also: **Typical Internal Intent** 
+typically code you see inside of apps starting their own internal activities
 
 ```java
 Intent intent = new Intent();
@@ -50,8 +52,14 @@ An app can always start any of its own activities, but in order to allow other a
 
 ### Incoming Intent
 
-The intent object that was used to start an activity, is available to the app via `getIntent()`. This feature is used to pass data to other apps, and thus it becomes a major attack surface. Does the app handle the incoming intent securely?
+The intent object that was used to start an activity, is available to the app via `getIntent()`.This feature is used to pass data to other apps, and thus it becomes a major attack surface.
+#### Intent Attack surface
 
+- `Activity.getIntent()`
+- `onActivityResult(int requestCode, int resultCode, Intent data)`
+- `onNewIntent(Intent data)`
+
+we can add things to an intent by using `intent.putExtra("hextree",1337);`
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
