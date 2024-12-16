@@ -3,7 +3,7 @@
 
 Source: #AOC24
 
-Tags: 
+Tags: [[win]]
 
 "MS Windows shortcut", also known as a `.lnk` file. This file type is used in Windows to link to another file, folder, or application.
 
