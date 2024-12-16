@@ -33,14 +33,22 @@ DTD is a set of **rules** that defines the structure of an XML document.
 - Entities in XML are placeholders that allow the insertion of large chunks of data or referencing internal or external files. 
 - Entities can be defined internally within the XML document or externally, referencing data from an outside source.
 
-```
+```xml
 <!DOCTYPE people [
-	<!ENTITY ext SYSTEM "http://tryhackme.com/robots.txt"> 
+	<!ENTITY thmFile SYSTEM "file:///etc/passwd">
 ]>
 <people>
 	<name>Glitch</name> 
-	<address>&ext;</address>
+	<address>&thmFile;</address>
 </people>
 ```
+### XML External Entity (XXE)
+
+- XXE is an attack that takes advantage of **how** **XML parsers handle external entities**.
+- When a web application processes an XML file that contains an external entity, the parser attempts to load or execute whatever resource the entity points to. If necessary sanitization is not in place, the attacker may point the entity to any malicious source/code causing the undesired behavior of the web app.
+
+
+
+
 ### References
 DAY 5 
