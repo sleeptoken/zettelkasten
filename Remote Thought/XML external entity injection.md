@@ -46,9 +46,25 @@ DTD is a set of **rules** that defines the structure of an XML document.
 
 - XXE is an attack that takes advantage of **how** **XML parsers handle external entities**.
 - When a web application processes an XML file that contains an external entity, the parser attempts to load or execute whatever resource the entity points to. If necessary sanitization is not in place, the attacker may point the entity to any malicious source/code causing the undesired behavior of the web app.
+### Lab
 
+we can wish list items and it assigns a wish number to every wish list 
+Now, when you visit the URL, `http://MACHINE_IP/product.php`, and click `Add to Wishlist`, an AJAX call is made to `wishlist.php`
 
+This `wishlist.php` accepts the request and parses the request using the following code:
 
+```javascript
+<?php
+..
+...
+libxml_disable_entity_loader(false);
+$wishlist = simplexml_load_string($xml_data, "SimpleXMLElement", LIBXML_NOENT);
+
+...
+..
+echo "Item added to your wishlist successfully.";
+?>
+```
 
 ### References
 DAY 5 
