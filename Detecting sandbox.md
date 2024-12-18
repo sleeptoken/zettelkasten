@@ -74,6 +74,8 @@ void registryCheck() {
 
 other tools include floss 
 this works similar to the strings command in Linux but is optimized for malware 
+### Sysmon 
 
+**Sysmon**, a tool from Microsoft's Sysinternals suite, continuously monitors and logs system activity across reboots. This Windows service provides detailed event data on process creation, network connections, and file changes—valuable insights when tracing malware behaviour.
 ### References
 Day 6 
