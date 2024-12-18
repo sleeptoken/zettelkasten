@@ -3,9 +3,7 @@
 
 Source: #AOC24 
 
-Tags:
-
-There are different types of anti-malware techniques used by malwares 
+There are different types of anti-malware techniques used by [[malware]] 
 
 we are checking a technique, which checks if the directory `C:\Program Files` is present by querying the Registry path
 This directory is often absent on sandboxes or other virtualized environments, which could indicate that the malware is running in a sandbox.
@@ -71,9 +69,10 @@ void registryCheck() {
 	int result = system(command);
     ..//same as before.....
 ```
+### Floss 
 
-other tools include floss 
-this works similar to the strings command in Linux but is optimized for malware 
+This works similar to the strings command in Linux but is optimized for malware analysis 
+download the cli tool for windows and run it in PowerShell
 ### Sysmon 
 
 **Sysmon**, a tool from Microsoft's Sysinternals suite, continuously monitors and logs system activity across reboots. This Windows service provides detailed event data on process creation, network connections, and file changes—valuable insights when tracing malware behaviour.
