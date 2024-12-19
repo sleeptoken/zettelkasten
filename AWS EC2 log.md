@@ -3,9 +3,7 @@
 
 Source: #AOC24 
 
-Tgas
-
- AWS CloudWatch
+ AWS CloudWatch is a monitoring and observability platform that gives us greater insight into our AWS environment by monitoring applications at multiple levels
 
 
 
