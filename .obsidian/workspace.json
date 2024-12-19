@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5
+    "width": 319.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -163,6 +163,10 @@
   },
   "active": "beacb31e189efe85",
   "lastOpenFiles": [
+    "Remote Thought/Forward Proxy.md",
+    "Remote Thought/Reverse Proxy.md",
+    "Remote Thought/Apache Proxy Server CVE.md",
+    "Remote Thought/HTTP Request Smuggling.md",
     "AWS EC2 log.md",
     "AEM Misconfig.md",
     "Intents and Activities.md",
@@ -185,10 +189,6 @@
     "Tags/Forensics.md",
     "Tags/Find.md",
     "Tags/netcat.md",
-    "Tags/ffuf.md",
-    "Remote Thought/Enlightenment SUID exploit.md",
-    "Tags/Bug Bounty.md",
-    "Remote Thought/Reverse Proxy.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
