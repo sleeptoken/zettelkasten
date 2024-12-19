@@ -5,7 +5,7 @@ Source: #htb
 
 Tags: [[pwntools]]
 
-```
+```python
 from pwn import * 
 import re
 context.log_level = 'ERROR' 
@@ -36,6 +36,26 @@ print()
     - `[0-9]{1,3}`: Matches 1 to 3 digits (e.g., 0, 12, or 109).
     - `(.*)`: Captures everything after the colon and space, i.e., the character we are interested in.
 - **`match`**: A list containing the captured character(s) (only one character in this case).
+
+### Stop Drop Roll
+
+check out https://ctftime.org/writeup/38985
+
+Gist of the solution is listed below 
+```python
+while True:
+    try:
+        got = r.recvline().decode()
+        payload = got.replace(", ", "-").replace("GORGE", "STOP").replace("PHREAK", "DROP").replace("FIRE", "ROLL").strip()
+
+        r.sendlineafter(b'What do you do?', payload.encode())
+        tries = tries + 1
+        log.info(f'{tries}: {payload}')
+    except EOFError:
+        log.success(got.strip())
+        r.close()
+        break 
+```
 
 ### References
 https://infosecwriteups.com/htb-cyber-apocalypse-ctf-2024-misc-9d3d512900b4
