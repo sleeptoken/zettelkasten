@@ -24,7 +24,7 @@ commands for taking a look at aws logs using jq looks like
 ```sh
 jq -r '["Event_Time", "Event_type", "Event_Name", "User_Name", "Source_IP", "User_Agent"],(.Records[] | select(.userIdentity.userName == "glitch") | [.eventTime,.eventType, .eventName, .userIdentity.userName //"N/A",.sourceIPAddress //"N/A", .userAgent //"N/A"]) | @tsv' cloudtrail_log.json | column -t -s $'\t'
 ```
-- The **-r** flag tells **jq** to output the results in RAW format instead of JSON.`
+- The **-r** flag tells **jq** to output the results in RAW format instead of JSON.
 
 ### References
 Day 7
