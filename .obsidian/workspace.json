@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Analyze AWS logs using JQ.md",
+                "file": "Remote Thought/XML external entity injection.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Analyze AWS logs using JQ"
+              "title": "XML external entity injection"
             }
           }
         ]
@@ -138,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Analyze AWS logs using JQ.md"
+                "file": "Remote Thought/XML external entity injection.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Analyze AWS logs using JQ"
+              "title": "Outline of XML external entity injection"
             }
           }
         ],
@@ -161,13 +161,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "beacb31e189efe85",
   "lastOpenFiles": [
+    "Remote Thought/Analyze AWS logs using JQ.md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Remote Thought/HTTP Request Smuggling.md",
-    "Remote Thought/Analyze AWS logs using JQ.md",
     "AEM Misconfig.md",
     "Intents and Activities.md",
     "Remote Thought/Detecting sandbox.md",

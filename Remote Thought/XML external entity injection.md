@@ -1,7 +1,7 @@
 
 2024-12-10 14:57
 
-Source: #AOC24 
+Source: #AOC24 #htb 
 
 Tags: [[Injection]]
 
@@ -84,4 +84,6 @@ inject this payload in the `wishlists.php` request
 ```
 
 ### References
-DAY 5 
+
+THM AOC24 - DAY 5 
+HTB - Jailbreak from CTF tryout
