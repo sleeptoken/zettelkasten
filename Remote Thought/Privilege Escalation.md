@@ -77,7 +77,7 @@ This reverse shell can be caught using netcat or Metasploit’s own multi/handle
 
 ##### Native Reverse Shells
 
-There are multiple ways to spawn [[revshell]] natively on many Linux distributions. A good tool for suggesting these is: https://github.com/mthbernardes/rsg 
+There are multiple ways to spawn [[Tags/revshell]] natively on many Linux distributions. A good tool for suggesting these is: https://github.com/mthbernardes/rsg 
 
 #### Privilege Escalation Tools
 
