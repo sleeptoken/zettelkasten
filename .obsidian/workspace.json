@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phishing Macros.md",
+                "file": "Remote Thought/Phishing Macros.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Phishing Macros.md"
+                "file": "Remote Thought/Phishing Macros.md"
               },
               "icon": "lucide-list",
               "title": "Outline of Phishing Macros"
@@ -179,7 +179,7 @@
   },
   "active": "2b2620a113ad09a2",
   "lastOpenFiles": [
-    "Phishing Macros.md",
+    "Remote Thought/Phishing Macros.md",
     "Apache velocity cve.md",
     "Remote Thought/Revshell by Shellcode Injection.md",
     "Cast.md",
