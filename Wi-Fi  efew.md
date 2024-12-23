@@ -92,18 +92,28 @@ BSS 02:00:00:00:00:00(on wlan2)
 
 
 ```shell
-glitch@wifi:~$ sudo ip link set dev wlan2 down
-glitch@wifi:~$ sudo iw dev wlan2 set type monitor
-glitch@wifi:~$ sudo ip link set dev wlan2 up
+glitch@wifi:~$ sudo ip link set dev wlan2 down # turn our device off
+glitch@wifi:~$ sudo iw dev wlan2 set type monitor # change wlan2 to monitor mode
+glitch@wifi:~$ sudo ip link set dev wlan2 up # turn our device back on
 ```
 
-We can confirm that our interface is in monitor mode with the command `sudo iw dev wlan2 info`.
+We can confirm that our interface is in monitor mode with the command `sudo iw dev wlan2 info`.\
 
-Terminal
+**Note:** By default, `airodump-ng` will automatically switch the selected wireless interface into monitor mode if the interface supports it.
 
-```shell-session
-glitch@wifi:~$ sudo iw dev wlan2 info
+1st Terminal
+
+we start by capturing Wi-Fi traffic in the area, specifically targeting the WPA handshake packets
+
+```sh
+sudo airodump-ng wlan2 # provides a list of nearby Wi-Fi networks (SSIDs) and shows important details
 ```
+
+```sh
+sudo airodump-ng -c 6 --bssid 02:00:00:00:00:00 -w output-file wlan2 # This command targets the specific network channel and MAC address (BSSID) of the access point for which you want to capture the traffic
+```
+
+
 
 
 ### References
