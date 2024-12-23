@@ -52,8 +52,7 @@ phy#2
 1. The `addr` is the **MAC/BSSID** of our device. BSSID stands for Basic Service Set Identifier, and it's a unique identifier for a wireless device or access point's physical address.
 2. The `type` is shown as **managed**. This is the standard mode used by most Wi-Fi devices (like laptops, phones, etc.) to connect to Wi-Fi networks. In managed mode, the device acts as a client, connecting to an access point to join a network.
 
-
-```shell-session
+```shell
 glitch@wifi:~$ sudo iw dev wlan2 scan
 BSS 02:00:00:00:00:00(on wlan2)
 	last seen: 520.388s [boottime]
@@ -81,18 +80,16 @@ BSS 02:00:00:00:00:00(on wlan2)
 		 * Operating Mode Notification                                                                               
 ```
 
-There is a lot of information to dissect here, but here are the most important details that indicate this device is an access point:
-
 - The **BSSID** and **SSID** of the device are `02:00:00:00:00:00` and `MalwareM_AP` respectively. Since the SSID is shown, this means the device is advertising a network name, which access points do to allow clients to discover and connect to the network.
 - The presence of **RSN (Robust Security Network)** indicates the network is using WPA2, as RSN is a part of the WPA2 standard. WPA2 networks typically use RSN to define the encryption and authentication settings.
 - The `Group and Pairwise ciphers` are **CCMP**. Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP) is the encryption method used by WPA2.
 - The `Authentication suites` value inside RSN is **PSK** indicating that this is a WPA2-Personal network, where a shared password is used for authentication.
-- Another important detail is the `DS Parameter set` value, which shows **channel 6**. The channel, in terms of Wi-Fi, refers to a specific frequency range within the broader Wi-Fi spectrum that allows wireless devices to communicate with each other. There are various Wi-Fi channels, and they all help distribute network traffic across various frequency ranges, which reduces interference. The two most common Wi-Fi channels are 2.4 GHz and 5GHz. In the 2.4 GHz band, channels 1, 6, and 11 are commonly used because they don’t overlap, minimising interference. In the 5 GHz band, there are many more channels available, allowing more networks to coexist without interference.
+- Another important detail is the `DS Parameter set` value, which shows **channel 6**. The channel, in terms of Wi-Fi, refers to a specific frequency range within the broader Wi-Fi spectrum that allows wireless devices to communicate with each other. There are various Wi-Fi channels, and they all help distribute network traffic across various frequency ranges, which reduces interference. The two most common Wi-Fi channels are 2.4 GHz and 5GHz. In the 2.4 GHz band, channels 1, 6, and 11 are commonly used because they don’t overlap, minimizing interference. In the 5 GHz band, there are many more channels available, allowing more networks to coexist without interference.
 
 #### Switching to monitor mode 
 
 
-```shell-session
+```shell
 glitch@wifi:~$ sudo ip link set dev wlan2 down
 glitch@wifi:~$ sudo iw dev wlan2 set type monitor
 glitch@wifi:~$ sudo ip link set dev wlan2 up
