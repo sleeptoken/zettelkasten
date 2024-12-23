@@ -15,15 +15,18 @@ access points (often the routers) that are broadcasting Wi-Fi signals with a uni
 #### Rogue access point
 
 - objective is similar to that of the evil twin attack. 
-- In this attack, the attacker sets up an open Wi-Fi access point near or inside the organisation's physical premises to make it available to users with good signal strength. 
+- In this attack, the attacker sets up an open Wi-Fi access point near or inside the organization's physical premises to make it available to users with good signal strength. 
 #### WPS attack
 
-Wi-Fi Protected Setup (WPS) was created to allow users to connect to their Wi-Fi using an 8-digit PIN without remembering complex passwords. However, this 8-digit PIN is vulnerable in some networks due to its insecure configuration. The attack is made by initiating a WPS handshake with the router and capturing the router's response, which contains some data related to the PIN and is vulnerable to brute-force attacks. Some of the captured data is brute-forced, and the PIN is successfully extracted along with the Pre-Shared Key (PSK).
+- The attack is made by initiating a WPS (Wi-Fi Protected Setup) handshake with the router and capturing the router's response, which contains some data related to the PIN and is vulnerable to brute-force attacks. 
 #### WPA/WPA2 cracking
 
-Wi-Fi Protected Access (WPA) was created to secure wireless communication. It uses a strong encryption algorithm. However, the security of this protocol is heavily influenced by the length and complexity of the Pre-Shared Key (PSK). While cracking WPA, attackers start by sending de-authentication packets to a legitimate user of the Wi-Fi network. Once the user disconnects, they try to reconnect to the network, and a 4-way handshake with the router takes place during this time. Meanwhile, the attacker turns its adaptor into monitor mode and captures the handshake. After the handshake is captured, the attacker can crack the password by using brute-force or dictionary attacks on the captured handshake file.
+- While cracking WPA, attackers start by sending de-authentication packets to a legitimate user of the Wi-Fi network.
+- Once the user disconnects, they try to reconnect to the network, and a 4-way handshake with the router takes place during this time.
+- Meanwhile, the attacker turns its adaptor into monitor mode and captures the handshake. 
+- After the handshake is captured, the attacker can crack the password by using brute-force or dictionary attacks on the captured handshake file.
 
-
+The WPA 4-way handshake is a process that helps a client device (like your phone or laptop) and a Wi-Fi router confirm they both have the right "password" or Pre-Shared Key (PSK) before securely connecting. Here's a simplified rundown of what happens:
 
 
 ### References
