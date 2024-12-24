@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wi-Fi  efew.md",
+                "file": "Remote Thought/Wi-Fi  crack.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wi-Fi  efew"
+              "title": "Wi-Fi  crack"
             }
           }
         ]
@@ -138,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wi-Fi  efew.md"
+                "file": "Remote Thought/Wi-Fi  crack.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Wi-Fi  efew"
+              "title": "Outline of Wi-Fi  crack"
             }
           }
         ],
@@ -161,9 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "684ea37cbc543f70",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Wi-Fi  efew.md",
+    "Images/AoC-Day-11---Wifi-Animation-2.gif",
+    "Remote Thought/Wi-Fi  crack.md",
     "Apache velocity cve.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Authentication vulnerabilities.md",
@@ -195,7 +196,6 @@
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Remote Thought/HTTP Request Smuggling.md",
-    "Intents and Activities.md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",

