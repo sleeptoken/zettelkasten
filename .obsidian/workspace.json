@@ -8,18 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5dd2f0e8dfbf46ef",
+            "id": "2d42c4d0908b75b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Port frwd & cmd injection.md",
+                "file": "Remote Thought/chamilo exploit & Good privesc.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Port frwd & cmd injection"
+              "title": "chamilo exploit & Good privesc"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#CTF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Port frwd & cmd injection.md"
+                "file": "Remote Thought/chamilo exploit & Good privesc.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Port frwd & cmd injection"
+              "title": "Outline of chamilo exploit & Good privesc"
             }
           }
         ],
@@ -161,11 +161,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5dd2f0e8dfbf46ef",
+  "active": "2d42c4d0908b75b5",
   "lastOpenFiles": [
-    "Tags/ffuf.md",
+    "Remote Thought/How to Skip Illegal Instructions in Executables.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
+    "Tags/Ghidra.md",
+    "Remote Thought/Fetching from SQLite as b64.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Remote Thought/Disable JavaScript.md",
+    "Tags/SNMP (161 UDP port).md",
+    "Remote Thought/Sudo Vulnerability.md",
+    "Remote Thought/Sudo cat & JohnTheRipper.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/SSRF & pylib exploit.md",
+    "Remote Thought/Ret2Labyrinth.md",
+    "RCE via SSRF.md",
+    "Remote Thought/Port frwd & cmd injection.md",
+    "Remote Thought/Pluck Exploit & Depix.md",
     "Remote Thought/Enlightenment SUID exploit.md",
+    "Tags/ffuf.md",
     "Remote Thought/WebSocket Message Manipulation.md",
     "Tags/WebSocket.md",
     "Remote Thought/Race Condition.md",
@@ -176,12 +190,6 @@
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/Useful Tools.md",
-    "Remote Thought/venv in python.md",
-    "Remote Thought/Go SSTI.md",
-    "Tags/Wi-Fi Hacking.md",
-    "Remote Thought/Phishing Macros.md",
-    "Remote Thought/Revshell by Shellcode Injection.md",
-    "AEM Misconfig.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 6.canvas",
@@ -189,14 +197,6 @@
     "Untitled 4.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
-    "Tags/msfvenom.md",
-    "Remote Thought/overflow buff & overwrite the return address.md",
-    "Tags/shellcraft.md",
-    "Remote Thought/Return to Lib-C.md",
-    "Remote Thought/Return to Win.md",
-    "Remote Thought/Analyze AWS logs using JQ.md",
-    "Remote Thought/Remote Connection using pwn.md",
-    "Remote Thought/Detecting sandbox (anti-malware).md",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Images/Pasted image 20240604110852.png",
     "Images/Pasted image 20240627104732.png",
