@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apache velocity cve.md",
+                "file": "Remote Thought/Wi-Fi crack.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apache velocity cve"
+              "title": "Wi-Fi crack"
             }
           }
         ]
@@ -138,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apache velocity cve.md"
+                "file": "Remote Thought/Wi-Fi crack.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Apache velocity cve"
+              "title": "Outline of Wi-Fi crack"
             }
           }
         ],
@@ -163,10 +163,10 @@
   },
   "active": "684ea37cbc543f70",
   "lastOpenFiles": [
+    "Apache velocity cve.md",
     "Cast.md",
     "Remote Thought/Wi-Fi crack.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",
-    "Apache velocity cve.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/Useful Tools.md",

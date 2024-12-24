@@ -108,15 +108,22 @@ we start by capturing Wi-Fi traffic in the area, specifically targeting the WPA
 ```sh
 sudo airodump-ng wlan2 # provides a list of nearby Wi-Fi networks (SSIDs) and shows important details
 ```
+The output reveals the information such as the BSSID, SSID, and the channel. However, in this particular output, we are also given the channel where our target SSID is listening (channel 6).
 
 ```sh
 sudo airodump-ng -c 6 --bssid 02:00:00:00:00:00 -w output-file wlan2 # This command targets the specific network channel and MAC address (BSSID) of the access point for which you want to capture the traffic
 ```
+**Note** that the `STATION` section shows the device's BSSID (MAC) of `02:00:00:00:01:00` that is connected to the access point.
+
 goal of this command is to capture the 4-way handshake. It will first check for any clients that may be connected to the access point. If a client is already connected, then we can perform a deauthentication attack; otherwise, for any new client that connects, we will capture the 4-way handshake.
 
 2nd Terminal 
 
 We will launch the deauthentication attack. Because the client is already connected, we want to force them to reconnect to the access point, forcing it to send the handshake packets
+
+1. **Deauthentication packets:** The tool `aireplay-ng` sends deauthentication packets to either a specific client (targeted attack) or to all clients connected to an access point (broadcast attack). These packets are essentially "disconnect" commands that force the client to drop its current Wi-Fi connection.
+2. **Forcing a reconnection:** When the client is disconnected, it automatically tries to reconnect to the Wi-Fi network. During this reconnection, the client and access point perform the 4-way handshake as part of the reauthentication process.
+3. **Capturing the handshake:** This is where `airodump-ng` comes into play because it will capture this handshake as it happens, providing the data needed to attempt the WPA/WPA2 cracking.
 
 ``` sh
 sudo aireplay-ng -0 1 -a 02:00:00:00:00:00 -c 02:00:00:00:01:00 wlan2
