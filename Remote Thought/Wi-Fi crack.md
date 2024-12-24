@@ -25,11 +25,11 @@ access points (often the routers) that are broadcasting Wi-Fi signals with a uni
 - Once the user disconnects, they try to reconnect to the network, and a 4-way handshake with the router takes place during this time.
 - Meanwhile, the attacker turns its adaptor into monitor mode and captures the handshake. 
 - After the handshake is captured, the attacker can crack the password by using brute-force or dictionary attacks on the captured handshake file.
+
+**We are going to look at only WPA/WPA2 cracking**
 ### 4-way handshake
 
 The WPA 4-way handshake is a process that helps a client device (like your phone or laptop) and a Wi-Fi router confirm they both have the right "password" or Pre-Shared Key (PSK) before securely connecting.
-
-![[AoC-Day-11---Wifi-Animation-2.gif]]
 
 Here's a simplified rundown of what happens:
 - **Router sends a challenge:** The router (or access point) sends a challenge" to the client, asking it to prove it knows the network's password without directly sharing it.
@@ -39,7 +39,7 @@ Here's a simplified rundown of what happens:
 
 ### The Vulnerability
 
-The vulnerability lies in the fact that an attacker can capture this 4-way handshake if they’re listening when a device connects. With the handshake data, they can use it as a basis to attempt offline brute-force or dictionary attacks. Essentially, they try different possible passwords and test each one to see if it would produce the captured handshake data, eventually cracking the PSK if they get a match.
+The vulnerability lies in the fact that an attacker can capture this 4-way handshake if they’re listening when a device connects. With the handshake data, they can use it as a basis to attempt offline brute-force or dictionary attacks. Essentially, they try different possible passwords and test each one to see if it would produce the captured handshake data, eventually cracking the PSK if they get a match.![[AoC-Day-11---Wifi-Animation-2.gif]]
 ### Lab
 
 ```sh
