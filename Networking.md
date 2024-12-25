@@ -48,6 +48,28 @@ An IP address is _**meaningless without a network mask**_. Given only an IP add
 
 > The **/8, /12, /16** are called **CIDR notation** or **CIDR blocks**. The number appearing after the slash ( `**/**` ) directly correlates to the sum of `1`  bits in the binary notation of subnet mask. So **/8** indicates that eight bits have been switched on.
 
+Given a subnet mask, you can calculate the _**total number of possible networks**_ the following ways:
+
+1. Find the _**partial network mask**_
+    - A fully masked network ID is _**8 bits**_ -- `11111111`
+    - `/8` , `/16` , `/24` , `/32` represent CIDR masks where network ID octets are fully masked
+        - `11111111.00000000.00000000.00000000` = `/8`
+        - `11111111.11111111.00000000.00000000` = `/16`
+        - `11111111.11111111.11111111.00000000` = `/24`
+    - `/12` is _**between**_ `/8` and `/16`
+        - `11111111.11110000.00000000.0000000`  
+                 full          partial         host         host
+2. Then...
+    - Use the _**decimal value**_ of the network mask
+    - Or, use the **_number of host bits_** as an exponent
+further listed here - https://notes.benheater.com/link/376#bkmrk-exploring-private-ip
+## **Subnetting**
+
+### Why Do We Subnet? 
+
+**A)** To shrink the size of a network  
+**B)** To make multiple networks from a single network block
+
 
 
 
