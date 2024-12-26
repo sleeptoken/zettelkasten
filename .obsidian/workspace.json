@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Certificate mismgmt.md",
+                "file": "CA Certificates.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Certificate mismgmt"
+              "title": "CA Certificates"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Certificate mismgmt.md"
+                "file": "CA Certificates.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Certificate mismgmt"
+              "title": "Outline of CA Certificates"
             }
           }
         ],
@@ -180,7 +180,7 @@
   "active": "1cf78a94ac61899f",
   "lastOpenFiles": [
     "Ping IPv6 address.md",
-    "Certificate mismgmt.md",
+    "CA Certificates.md",
     "Tags/Networking.md",
     "Underpass htb.md",
     "Apache velocity cve.md",
