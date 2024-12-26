@@ -22,6 +22,10 @@ use [[Tags/hydra]] to brute force the password
 - then user `rockyou` wordlist with john to crack the pass 
 - `chmod` the original `id_rsa` file - `chmod 600 id_rsa`
 - use `ssh` to login as john
+
+
+
+
 #### Priv esc
 
 - `sudo -l` -> can run `cat` with sudo

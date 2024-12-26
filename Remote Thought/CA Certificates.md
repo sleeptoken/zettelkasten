@@ -23,6 +23,10 @@ The process of acquiring a certificate with a CA is long, you create the certifi
 - **Trusted CA certificates**, on the other hand, are verified by a CA, which acts as a trusted third party to confirm the website’s identity.
 
 If you want to test a development environment, it can make sense to use self-signed certificates. Ideally, this is an internal, air-gapped environment with no connection to the public Internet. Otherwise, it defeats the purpose of a certificate: the entire system of secure communication relies on the fact that both parties (the browser and the server) can trust the data being exchanged and that no one in the middle can intercept or modify it without detection.
+### Certificate Transparency 
+
+
 
 ### References
 Day 14
+[Certificate Transparency : Certificate Transparency](https://certificate.transparency.dev/)
