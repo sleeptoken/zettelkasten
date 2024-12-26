@@ -22,9 +22,17 @@ use [[Tags/hydra]] to brute force the password
 - then user `rockyou` wordlist with john to crack the pass 
 - `chmod` the original `id_rsa` file - `chmod 600 id_rsa`
 - use `ssh` to login as john
+#### using John
 
+Adding the option `--rules=wordlist` to your [[john]] command line generates multiple passwords from each one. For instance, it appends and prepends single digits, use this if the password isn't cracked by using a wordlist (its like data augmentation)
 
+```sh
+john --format=raw-sha256 --rules=wordlist --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt
+```
 
+- if a password protected pdf is there use `pdf2john.pl private.pdf > pdf.hash` to convert the pdf to a hash
+- further crack the hash 
+- in order to open a pdf file we can convert it into text  `pdftotext private.pdf -upw <password>`
 
 #### Priv esc
 
