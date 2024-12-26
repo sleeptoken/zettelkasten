@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking.md",
+                "file": "Tags/Networking.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networking.md"
+                "file": "Tags/Networking.md"
               },
               "icon": "lucide-list",
               "title": "Outline of Networking"
@@ -176,10 +176,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "80292a167e69b560",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Ping IPv6 address.md",
-    "Networking.md",
+    "Tags/Networking.md",
     "Underpass htb.md",
     "Apache velocity cve.md",
     "Template/Full Note.md",

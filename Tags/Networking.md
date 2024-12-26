@@ -70,10 +70,50 @@ further listed here - https://notes.benheater.com/link/376#bkmrk-exploring-priva
 **A)** To shrink the size of a network  
 **B)** To make multiple networks from a single network block
 
+to learn to do these go to - https://notes.benheater.com/link/376#bkmrk-why-do-we-subnet%3F
+## MAC Addressing 
+
+Media Access Control Address
+- Identifies the physical network interface of a host
+    - Hexadecimal addressing: `0-F`
+    - 48 bits (6 bytes)
+In early, primitive networks, computers were often on a shared "media" and needed a way to address each other  
+- On a shared medium, all computers will receive the data
+- Network interfaces _**are supposed to**_ (see promiscuous mode) ignore anything not addressed to them
+### Broadcast Domain vs Collision Domain
+
+- the **broadcast domain** is designated as the **entire** Local Area Network (LAN)
+    - When a host sends a layer 2 broadcast -- `FF:FF:FF:FF:FF:FF` -- every host on the LAN receives it
+- the **collision domain** is designated as the **shared media** between hosts, the cable
+    - Traffic from both switches can be on the cable in duplex, and therefore has the possibility to collide
+## Address Resolution Protocol (ARP)
+
+- IP addressing is the primary way we identify hosts belonging to a network
+    - It's easier to remember than a MAC address
+- When preparing to transmit data, to another host on the network, the sender needs to know two things:
+    - The recipient IP address
+    - The recipient MAC address
+- ARP is the protocol that is used to look up a MAC address for any given IP address
+	- Send a layer 2 broadcast -- `FF:FF:FF:FF:FF:FF`
+## Virtual Local Area Networks
+
+- VLANs are a _**layer 2**_ concept
+    - `802.1q` is the protocol that defines VLAN
+    - The `802.1q` header is injected into the Ethernet frame of a packet
+    - A `802.1q` ID can range from `1` to `4094`, due to limits on the maximum size of an Ethernet frame
+- Not going to do a deep dive on VLANs, but hope to clear some things up
+    - [How Do VLANs Work? Exploring the 802.1q Protocol (benheater.com)](https://benheater.com/how-do-vlans-work/)
+    
+## Encapsulation Visualization
+
+**[WildPackets Protocol Family Encapsulations (lmi.net)](http://users.lmi.net/canepa/subdir/encasulation_chart.pdf?ref=benheater.com)**
+## OSI Model Visualization
+
+- **[OSI Model Visualization (benheater.com)](https://benheater.com/osi-model-visualization/)**
 
 
 
-### References
+## References
 [Computer Networking | 0xBEN | Notes](https://notes.benheater.com/books/computer-networking)
 
 [IP Address Converter: Dotted-decimal, Binary, Octal, Hexadecimal, Dword/Decimal](https://web.archive.org/web/20230924142818/https://www.hacksparrow.com/tools/converters/ip-address.html)
