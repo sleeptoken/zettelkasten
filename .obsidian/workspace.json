@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CA Certificates.md",
+                "file": "Remote Thought/CA Certificates.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CA Certificates.md"
+                "file": "Remote Thought/CA Certificates.md"
               },
               "icon": "lucide-list",
               "title": "Outline of CA Certificates"
@@ -177,10 +177,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cf78a94ac61899f",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Ping IPv6 address.md",
-    "CA Certificates.md",
+    "Remote Thought/CA Certificates.md",
     "Tags/Networking.md",
     "Underpass htb.md",
     "Apache velocity cve.md",
