@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f6f745cb45fff5c3",
+        "id": "542f18c52dbe9be7",
         "type": "tabs",
         "children": [
           {
-            "id": "70a5957044d5165c",
+            "id": "9846f5d75eebf50a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -161,10 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "70a5957044d5165c",
+  "active": "9846f5d75eebf50a",
   "lastOpenFiles": [
-    "Tags/Networking.md",
+    "Tags/Hardware.md",
     "MQTT.md",
+    "Tags/Networking.md",
     "Remote Thought/CA Certificates.md",
     "Remote Thought/WebSocket Message Manipulation.md",
     "Remote Thought/Wi-Fi crack.md",
@@ -188,7 +189,6 @@
     "Remote Thought/Disable JavaScript.md",
     "Tags/SNMP (161 UDP port).md",
     "Remote Thought/Sudo Vulnerability.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",
     "Untitled.canvas",
     "Untitled 1.canvas",
