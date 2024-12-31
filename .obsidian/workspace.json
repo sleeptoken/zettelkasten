@@ -161,12 +161,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a61dd82ede3e542c",
+  "active": "9846f5d75eebf50a",
   "lastOpenFiles": [
-    "Tags/Hardware.md",
-    "MQTT.md",
-    "Tags/Networking.md",
     "Remote Thought/CA Certificates.md",
+    "MQTT.md",
+    "Tags/Hardware.md",
+    "Tags/Networking.md",
     "Remote Thought/WebSocket Message Manipulation.md",
     "Remote Thought/Wi-Fi crack.md",
     "Remote Thought/Phishing Macros.md",
