@@ -17,9 +17,15 @@ For example,
 **MQTT Topics:** Topics are used to classify the different types of messages. Clients can subscribe to messages based on their topics of interest. 
 ### Lab
 
-- keep the IoT device running.
-- on seeing the mqtt filtered traffic in wireshark we see a lot of messages which have publish and subscribe messages 
+- keep the IoT device running. 
+- on seeing the MQTT filtered traffic in Wireshark we see a lot of messages which have publish and subscribe messages 
+- we find the topic name and the message that means "on" from the Wireshark dump
 
-
+to publish a message to the MQTT broker in order to turn on something.
+```
+mosquitto_pub -h localhost -t "some_topic" -m "message"
+```
+- `mosquitto_pub` is the command-line utility to publish an MQTT message
+- `-h localhost` refers to the MQTT broker, which is `localhost` in this task
 ### References
 Task 30
