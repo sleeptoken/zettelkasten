@@ -18,6 +18,15 @@ Types of XSS-
 - Various repositories can be consulted to build your custom XSS payload.  [Payload List](https://github.com/payloadbox/xss-payload-list)
 - sometimes, there are filters blocking XSS payloads. If there is a limitation based on the payload length, then [Tiny Payloads](https://github.com/terjanq/Tiny-XSS-Payloads)
 - If XSS payloads are blocked based on specific blocklists, there are various tricks for evasion. For instance, a horizontal tab, a new line, or a carriage return can break up the payload, based on the [XSS Filter Evasion Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html), we can break up the payload.
+### Payloads
 
+ - app filters out `script` tags:  
+	 - `<SCRIPT>alert(1)</SCRIPT>`
+ - strictly disable the dangerous tag `script`, and its alternate variant `SCRIPT`. 
+	 - `<ScRipT>alert(1)</ScRipT>`
+ - Since there are too many HTML tags to blacklist, we use a smart white list approach, in which we allow only `b`, `i`, and `br`  
+	 - `<Img/SrC/onerror=alert('LOL')>` 
+	 - `<b onmouseover=alert(1)>click me!</b>`
+	 
 ### References
 [TryHackMe | XSS](https://tryhackme.com/r/room/axss)
