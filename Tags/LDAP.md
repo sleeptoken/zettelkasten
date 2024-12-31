@@ -1,0 +1,1 @@
+**Directory Services,** which map and provide access to network resources within an organization. The **Lightweight Directory Access Protocol (LDAP)** forms the core of Directory Services.

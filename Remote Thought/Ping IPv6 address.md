@@ -28,3 +28,4 @@ $ ping6 -I en1 2a03:2880:f12f:83:face:b00c::25de
 
 In case, you get "ping6: sendmsg: No route to host", something in your system or router needs to be configured for IPv6. Once configured, you will be able to ping IPv6 addresses using `ping6`.
 ### References
+[How to ping IPv6 addresses](https://web.archive.org/web/20231011052555/https://www.hacksparrow.com/networking/ping-ipv6-address.html)
