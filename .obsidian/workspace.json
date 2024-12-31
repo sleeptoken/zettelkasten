@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MQTT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for MQTT"
             }
           },
           {
@@ -144,8 +145,7 @@
               "title": "Outline of MQTT"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -161,7 +161,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9846f5d75eebf50a",
+  "active": "a61dd82ede3e542c",
   "lastOpenFiles": [
     "Tags/Hardware.md",
     "MQTT.md",
