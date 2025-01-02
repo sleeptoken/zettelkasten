@@ -11,7 +11,7 @@ Request splitting or HTTP desync attacks are possible because of the nature of k
 
 ### Modern Infrastructure
 
-[[Load balancing]] for web servers is often done by reverse proxies\
+[[Load balancing]] for web servers is often done by reverse proxies
 
 **[[Reverse Proxy]]**: A reverse proxy sits before one or more web servers and forwards client requests to the appropriate web server. While they can also perform load balancing, their primary purpose is to provide a single access point and control for back-end servers. Examples include NGINX, Apache with mod_proxy, and Varnish.
 
