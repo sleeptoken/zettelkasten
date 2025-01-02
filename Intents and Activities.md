@@ -72,11 +72,14 @@ The intent object that was used to start an activity, is available to the app vi
 we can add things to an intent by using `intent.putExtra("hextree",1337);`
 ### Journey of an Intent 
 
+#### Parcels
+
 [[Parcels]] are a way to serialize and de-serialize objects. We are serializing the intent object, which contains target activity string and lots of different values
 
 Android documentation definition - 
 
 A parcel is a container for a message that can be sent through IBinder. A parcel can contain flattened data that will be unflattened on the other side of the IPC. So it's similar in concept to an intent. Intents are also just like a message, but they are higher level Java objects. parcels are really low level involved in the actual inter process communication between the different apps. 
+#### Binder
 
 Binder is a kernel driver. It sits deep in the Android operating system. If you access your phone or emulator with ADB and search for anything binder related using
 ```sh
@@ -85,14 +88,21 @@ find / 2>/dev/null | grep binder
 
 There are binder related device files. These are fancy Linux files that actually expose the driver and you have native libraries that implement the interaction with these.
 
-Now, if you run the apps on a phone or emulator with root access, you can also check the processes of your apps. So first of all, you see here the Android apps are running as their own Linux process. This is the user id, the process runs it, so you can see they run as different Separate Linux users. And here's the process ID which we need next in /proc. With the process id, we can find the memory map of this app process. This uploads lots of stuff into memory and if you look through it, you will find libbinder, the native code library implementing the interaction
+Now, if you run the apps on a phone or emulator with root access, you can also check the processes of your apps. 
+```sh
+su root
+ps -A | grep hextree
+```
 
-with the binder driver, which allows the app to send data to other app process such as the intent when we call start activity.
+So first of all, you see here the Android apps are running as their own Linux process. 
+
+```sh
+cat /proc/2417(process-id)/maps
+```
+With the process id, we can find the memory map of this app process. This app lots of stuff into memory and if you look through it, you will find `libbinder`,
+> the native code library implementing the interaction with the binder driver, which allows the app to send data to other app process such as the intent when we call start activity.
 
 Luckily we don't really have to interact with any of the low level stuff directly. That's the beauty of Android and the development SDK.
 
-So we can come back up into the Java application code and just imagine that with start activity, we send this intent object to the target app
-
-and adjust magically works.
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
