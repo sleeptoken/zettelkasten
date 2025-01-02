@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory.md",
+                "file": "Remote Thought/Active Directory.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory.md"
+                "file": "Remote Thought/Active Directory.md"
               },
               "icon": "lucide-list",
               "title": "Outline of Active Directory"
@@ -150,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 290.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,13 +162,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "80a78b311090a32e",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Intents and Activities.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Reverse Engineering Android apps.md",
-    "Active Directory.md",
+    "Remote Thought/Active Directory.md",
     "Tags/LDAP.md",
     "Remote Thought/Ping IPv6 address.md",
     "Tags/Networking.md",
