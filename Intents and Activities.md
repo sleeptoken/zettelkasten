@@ -27,6 +27,8 @@ But a more intuitive description could be: _"Declaring an intention to do somet
 
 ### Starting Activities
 
+#### Basic exported activity
+
 Activities are responsible to render the screen of an app. So if your app has multiple screens, you can use `startActivity()` to start another activity. To do that you have to create an Intent object and target a specific activity class.
 
 the `SecondActivity` cannot be started from another app. Only the app itself can start this "Internal" activity
@@ -49,6 +51,14 @@ startActivity(intent);
 ```
 
 An app can always start any of its own activities, but in order to allow other apps to start your activity, they have to be exported. There is also one exported activity by default, which is the "launcher activity" that is used as a main entry point into the app. This allows the home screen or launcher application to start your app when you click it.
+##### Using adb shell
+
+```powershell
+adb shell am start-activity -n io.hextree.attacksurface/io.hextree.attacksurface.activities.Flag1Activity
+```
+#### Intent with extras 
+
+actions are mentioned in the android manifest then use -a tag in the adb shell command 
 
 ### Incoming Intent
 
