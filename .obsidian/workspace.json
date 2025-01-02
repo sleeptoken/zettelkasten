@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intents and Activities.md",
+                "file": "Active Directory.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intents and Activities"
+              "title": "Active Directory"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intents and Activities.md"
+                "file": "Active Directory.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Intents and Activities"
+              "title": "Outline of Active Directory"
             }
           }
         ],
@@ -164,10 +164,10 @@
   },
   "active": "80a78b311090a32e",
   "lastOpenFiles": [
+    "Intents and Activities.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Reverse Engineering Android apps.md",
-    "Intents and Activities.md",
     "Active Directory.md",
     "Tags/LDAP.md",
     "Remote Thought/Ping IPv6 address.md",
