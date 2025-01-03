@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Entra ID.md",
+                "file": "Intents and Activities.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Entra ID"
+              "title": "Intents and Activities"
             }
           }
         ],
@@ -155,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Entra ID.md"
+                "file": "Intents and Activities.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Entra ID"
+              "title": "Outline of Intents and Activities"
             }
           }
         ],
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5,
-    "collapsed": true
+    "width": 290.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,16 +178,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "19da57da3e280921",
   "lastOpenFiles": [
-    "Remote Thought/Azure Key Vault.md",
-    "Tags/Entra ID.md",
-    "Remote Thought/Active Directory.md",
-    "Remote Thought/Ret2Labyrinth.md",
+    "Cast.md",
     "Intents and Activities.md",
     "Underpass htb.md",
-    "Tags/Parcels.md",
     "Apache velocity cve.md",
+    "Remote Thought/Active Directory.md",
+    "Remote Thought/Azure Key Vault.md",
+    "Tags/Entra ID.md",
+    "Remote Thought/Ret2Labyrinth.md",
+    "Tags/Parcels.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Tracing with Frida.md",
@@ -204,7 +204,6 @@
     "Remote Thought/inspect .lnk files.md",
     "Tags/win.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Cast.md",
     "Remote Thought/MQTT.md",
     "Remote Thought/CA Certificates.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",

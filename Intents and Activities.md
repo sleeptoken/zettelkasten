@@ -104,5 +104,7 @@ With the process id, we can find the memory map of this app process. This app lo
 
 Luckily we don't really have to interact with any of the low level stuff directly. That's the beauty of Android and the development SDK.
 
+
+
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
