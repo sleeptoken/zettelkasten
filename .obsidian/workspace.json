@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Azure.md",
+                "file": "Remote Thought/Azure Key Vault.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Azure"
+              "title": "Azure Key Vault"
+            }
+          },
+          {
+            "id": "19da57da3e280921",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tags/Entra ID.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entra ID"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5,
-    "collapsed": true
+    "width": 297.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -140,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Azure.md"
+                "file": "Tags/Entra ID.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Azure"
+              "title": "Outline of Entra ID"
             }
           }
         ],
@@ -164,9 +179,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3391d496bf34c276",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Azure.md",
+    "Remote Thought/Azure Key Vault.md",
+    "Tags/Entra ID.md",
     "Remote Thought/Active Directory.md",
     "Remote Thought/Ret2Labyrinth.md",
     "Intents and Activities.md",
@@ -191,7 +207,6 @@
     "Cast.md",
     "Remote Thought/MQTT.md",
     "Remote Thought/CA Certificates.md",
-    "Tags/Hardware.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",
     "Untitled.canvas",
     "Untitled 1.canvas",
