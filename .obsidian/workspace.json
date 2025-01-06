@@ -164,8 +164,9 @@
   },
   "active": "07fd94bed91022e4",
   "lastOpenFiles": [
-    "Intents and Activities.md",
+    "Remote Thought/SSRF.md",
     "URL format bypass.md",
+    "Intents and Activities.md",
     "Remote Thought/Active Directory.md",
     "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/Azure Key Vault.md",
@@ -189,7 +190,6 @@
     "Tags/Networking.md",
     "Tags/XSS.md",
     "Remote Thought/inspect .lnk files.md",
-    "Tags/win.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",
     "Untitled.canvas",
     "Untitled 1.canvas",
