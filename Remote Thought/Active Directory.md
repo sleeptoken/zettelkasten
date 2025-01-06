@@ -77,7 +77,7 @@ To mitigate against the exploitation of Group Policy, GPOs need to be regularly 
 #### Skeleton Key Attack
 
 In a **Skeleton Key** attack, attackers install a malware backdoor to log into any account using a master password. The legitimate password for each account would remain unchanged, but attackers can bypass it using the skeleton key password.
-### Commands
+### GPO
 
  we will use PowerShell to audit our GPOs. First, we can use the `Get-GPO` cmdlet to list all GPOs installed on the domain controller.
  
@@ -86,9 +86,28 @@ export a GPO to an HTML file for further investigation
 Get-GPOReport -Name "SetWallpaper" -ReportType HTML -Path ".\SetWallpaper.html"
 ```
 
+list only those GPOs that were recently modified
+```
+Get-GPO -All | Where-Object { $_.ModificationTime } | Select-Object DisplayName, ModificationTime
+```
+### User Auditing
 
+ view all locked accounts (password spraying will eventually result in user accounts being locked out)
+```
+Search-ADAccount -LockedOut | Select-Object Name, SamAccountName, LockedOut, LastLogonDate, DistinguishedName
+```
 
+ quickly review the user accounts present on a domain, as well as their group membership
+```
+Get-ADUser -Filter * -Properties MemberOf | Select-Object Name, SamAccountName, @{Name="Groups";Expression={$_.MemberOf}}
+```
+### Reviewing PowerShell History and Logs
 
+this history file is located at `%APPDATA%\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt`
 
+Additionally, logs are recorded for every PowerShell process executed on a system. These logs are located within the Event Viewer under
+`Application and Services Logs -> Microsoft -> Windows -> PowerShell -> Operational`
+or also under 
+`Application and Service Logs -> Windows PowerShell`
 ### References
 Day 15
