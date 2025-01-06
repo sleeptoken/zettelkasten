@@ -36,9 +36,9 @@ Combining all these components allows us to establish the **Distinguished Name 
 
 **Group Policy**
 
-One of Active Directory's most powerful features is **Group Policy**, which allows administrators to enforce policies across the domain. Group Policies can be applied to users and computers to enforce password policies, software deployment, firewall settings, and more.
+Allows administrators to enforce policies across the domain. Group Policies can be applied to users and computers to enforce password policies, software deployment, firewall settings, and more For attackers, Group Policy is a lucrative means of spreading malicious scripts to multiple devices.
 
-**Group Policy Objects (GPOs)** are the containers that hold these policies. A GPO can be linked to the entire domain, an OU, or a site, giving the flexibility in applying policies.x
+**Group Policy Objects (GPOs)** are the containers that hold these policies. A GPO can be linked to the entire domain, an OU, or a site, giving the flexibility in applying policies.
 ### Common Active Directory Attacks
 
 #### Golden Ticket Attack
@@ -77,6 +77,14 @@ To mitigate against the exploitation of Group Policy, GPOs need to be regularly 
 #### Skeleton Key Attack
 
 In a **Skeleton Key** attack, attackers install a malware backdoor to log into any account using a master password. The legitimate password for each account would remain unchanged, but attackers can bypass it using the skeleton key password.
+### Commands
+
+ we will use PowerShell to audit our GPOs. First, we can use the `Get-GPO` cmdlet to list all GPOs installed on the domain controller.
+ 
+export a GPO to an HTML file for further investigation
+```
+Get-GPOReport -Name "SetWallpaper" -ReportType HTML -Path ".\SetWallpaper.html"
+```
 
 
 
