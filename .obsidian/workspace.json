@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "URL format bypass.md",
+                "file": "Remote Thought/URL format bypass.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "URL format bypass.md"
+                "file": "Remote Thought/URL format bypass.md"
               },
               "icon": "lucide-list",
               "title": "Outline of URL format bypass"
@@ -162,10 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07fd94bed91022e4",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Remote Thought/SSRF.md",
-    "URL format bypass.md",
+    "Remote Thought/URL format bypass.md",
     "Intents and Activities.md",
     "Remote Thought/Active Directory.md",
     "Remote Thought/Appdata storage in windows.md",
