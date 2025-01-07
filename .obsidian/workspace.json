@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/URL format bypass.md",
+                "file": "Remote Thought/LLM attacks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "URL format bypass"
+              "title": "LLM attacks"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/URL format bypass.md"
+                "file": "Remote Thought/LLM attacks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of URL format bypass"
+              "title": "Outline of LLM attacks"
             }
           }
         ],
@@ -150,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,10 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "07fd94bed91022e4",
   "lastOpenFiles": [
-    "Remote Thought/SSRF.md",
+    "Remote Thought/SSL Interception.md",
+    "Remote Thought/LLM attacks.md",
     "Remote Thought/URL format bypass.md",
+    "Remote Thought/SSRF.md",
     "Intents and Activities.md",
     "Remote Thought/Active Directory.md",
     "Remote Thought/Appdata storage in windows.md",
@@ -182,14 +184,12 @@
     "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Atom Red.md",
-    "Remote Thought/SSL Interception.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Tags/LDAP.md",
     "Remote Thought/Ping IPv6 address.md",
     "Tags/Networking.md",
     "Tags/XSS.md",
-    "Remote Thought/inspect .lnk files.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",
     "Untitled.canvas",
     "Untitled 1.canvas",
