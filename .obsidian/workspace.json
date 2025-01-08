@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/API Testing.md",
+                "file": "Exploiting Chrome Remote Debugger.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API Testing"
+              "title": "Exploiting Chrome Remote Debugger"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "intent",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/API Testing.md"
+                "file": "Exploiting Chrome Remote Debugger.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of API Testing"
+              "title": "Outline of Exploiting Chrome Remote Debugger"
             }
           }
         ],
@@ -164,18 +164,20 @@
   },
   "active": "07fd94bed91022e4",
   "lastOpenFiles": [
-    "Apache velocity cve.md",
-    "Underpass htb.md",
-    "Intents and Activities.md",
-    "AEM Misconfig.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Stream Cipher.md",
     "OSCP resources.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "Printer Hacking.md",
+    "Exploiting Chrome Remote Debugger.md",
     "RCE via SSRF.md",
-    "Remote Thought/Chrome dev tools.md",
+    "AEM Misconfig.md",
+    "Intents and Activities.md",
     "Cast.md",
+    "Underpass htb.md",
+    "Apache velocity cve.md",
+    "Remote Thought/API Testing.md",
+    "Tags/ffuf.md",
+    "Stream Cipher.md",
+    "Printer Hacking.md",
+    "Remote Thought/Chrome dev tools.md",
     "Remote Thought/URL format bypass.md",
     "Remote Thought/Azure Key Vault.md",
     "Tags/SSTI.md",
@@ -188,8 +190,6 @@
     "Remote Thought/SSL Interception.md",
     "Remote Thought/SSRF.md",
     "Remote Thought/Active Directory.md",
-    "Remote Thought/Appdata storage in windows.md",
-    "Tags/Entra ID.md",
     "Images/AoC-Day-11---Wifi-Animation-2.gif",
     "Untitled.canvas",
     "Untitled 1.canvas",
