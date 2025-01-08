@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/SSTI.md",
+                "file": "Remote Thought/Azure Key Vault.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSTI"
+              "title": "Azure Key Vault"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/SSTI.md"
+                "file": "Remote Thought/Azure Key Vault.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of SSTI"
+              "title": "Outline of Azure Key Vault"
             }
           }
         ],
@@ -164,9 +164,9 @@
   },
   "active": "07fd94bed91022e4",
   "lastOpenFiles": [
-    "Remote Thought/Go SSTI.md",
-    "Tags/SSTI.md",
     "Remote Thought/URL format bypass.md",
+    "Tags/SSTI.md",
+    "Remote Thought/Go SSTI.md",
     "Remote Thought/Ruby SSTI.md",
     "Remote Thought/Wi-Fi crack.md",
     "Remote Thought/CA Certificates.md",
