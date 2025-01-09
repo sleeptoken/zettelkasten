@@ -33,5 +33,6 @@ Phase 5 : Clearing Tracks
 
 ### CyberKill Chain Methodology
 
+is a component of intelligence driven defense for the identification and prevention of malicious intrusion activities
 
 ### References
