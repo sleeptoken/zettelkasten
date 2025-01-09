@@ -18,11 +18,20 @@ If you know yourself but no the enemy, for every victory gained, you will also s
 - AutoGPT - automate task exec and data processing 
 - ShellGPT - Generate shell cmds, creating comments & docs 
 - WormGPT - automate the generation of worm like scripts & payloads
-- ChatGPT with DAN prompt - do anything now 
-- FreedomGPT
-- FraudGPT 
-- ChaosGPT
-- PoisionGPT
+- ChatGPT with DAN prompt - (do anything now) prompt
+- FreedomGPT - bypass traditional content filters and restrictions 
+- FraudGPT - designed to detect and prevent fraud activities  
+- ChaosGPT - to stimulate and understand chaotic and unpred behavior
+- PoisionGPT - introduces malicious models into otherwise trusted AI
+### Ethical Hacking Framework
+
+Phase 1 : Reconnaissance - Footprinting - Scanning - Enumeration
+Phase 2 : Vulnerability Scanning 
+Phase 3 : Gaining Access - Escalate Privileges
+Phase 4 : Maintaining Access 
+Phase 5 : Clearing Tracks
+
+### CyberKill Chain Methodology
 
 
 ### References
