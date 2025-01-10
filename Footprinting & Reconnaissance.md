@@ -11,7 +11,9 @@ Source: #CEHv13
 
 ![[Screenshot 2025-01-10 190743.png]]
 
+### Google Dorking 
 
+once a vulnerable site is identified, attackers attempt to launch various possible attacks, such as buffer overflow and SQL injection, which compromise information security
 
 
 
