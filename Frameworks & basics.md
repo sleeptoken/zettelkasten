@@ -34,5 +34,18 @@ Phase 5 : Clearing Tracks
 ### CyberKill Chain Methodology
 
 is a component of intelligence driven defense for the identification and prevention of malicious intrusion activities
+![[Screenshot 2025-01-09 225801.png]]
+Tactics, Techniques and Procedures (TTPs)
+
+Adversary Behavioral Identification involves the identification of the common methods or techniques followed by an adversary to launch attacks to penetrate an organization's network
+
+
+
+
+
+
+
+
 
 ### References
+CEH v13 M1
