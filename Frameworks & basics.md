@@ -69,7 +69,22 @@ Given below are some of the behaviors of an adversary that can be used to enhanc
 	Security professionals can detect data staging by monitoring network traffic for malicious file transfers, file integrity monitoring, and event logs.
 #### Indicators of Compromise 
 
-IoC are the clues, artifacts, and p
+IoC are the clues, artifacts, and pieces of forensic data that are found on a network or OS.
+However IoCs are not intelligence; rather, IoCs act as a good source of information about threats that serve as data points in the intelligence process 
+
+IoCs are divided into 4 categories:
+- Email Indicators
+- Network Indicators
+- Host-Based Indicators
+- Behavioral Indicators
+### MITRE ATT&CK Framework
+
+- MITRE ATT&CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations 
+- The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, government, and the cybersecurity product and service community 
+- The 14 tactic categories within ATT&CK for Enterprise are derived from the later stages (exploit, control, maintain, and execute) of the seven stages of the Cyber Kill Chain
+### Diamond Model of Intrusion Analysis
+
+![[Screenshot 2025-01-10 152555.png]]
 
 
 ### References
