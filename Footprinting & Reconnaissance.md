@@ -59,6 +59,37 @@ Example prompt with ShellGPT
 ### Footprinting Through Shodan 
 
 A search in Shodan for VoIP and VPN will help gather VPN and VoIP related information 
+IoT search engines such as `Shodan`, `Censys` and `ZoomEye` attackers can obtain information such as the manufacturer details, geographic location, IP address & open ports on the IoT device. 
+### Meta search engines
+
+These search engines do not have their own search indexes; instead, they take the inputs from the users and simultaneously send out the queries to the third-party search engines to obtain the results. Once sufficient results are gathered, they are ranked according to their relevance and presented to the user through the web interface.
+> Using meta search engines, such as `Startpage`, `MetaGer`, and `eTools.ch`, attackers can send multiple search queries to several search engines simultaneously and gather substantially detailed information 
+### FTP search engines
+
+FTP search engines are used to search for files located on FTP servers that contain valuable information regarding the target organization. A special client such as [FileZilla](https://filezilla-project.org) can be used to access FTP accounts; it also supports functionalities such as uploading, downloading, and renaming files. 
+> Using FTP search engines such as `NAPALM FTP Indexer`, `FreewareWeb FTP File Search`, `Mamont`, and `Globalfilesearch.com`, attackers can search for critical files and directories containing valuable information 
+
+| Google Dork                                                                                                   | Description                              |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| site:.in .com \| .net intitle:"index of" ftp                                                                  | Finds files containing juicy information |
+| intitle:"index of" "*/ftp.txt"                                                                                | Finds files containing juicy information |
+| intext:"index of" "ftp"                                                                                       | Finds files containing juicy information |
+| inurl:WS_FTP.log                                                                                              | Finds files containing juicy information |
+| intitle:index.of /cftp/robots.txt                                                                             | Finds files containing juicy information |
+| intitle: "Index of ftp passwords"                                                                             | Finds files containing passwords         |
+| inurl: /ftp intitle:"office"                                                                                  | Detects the web server                   |
+| inurl:/web-ftp.cgi                                                                                            | Finds pages containing login portals     |
+| site:sftp.*.*/ intext:"login" intitle:"server login"                                                          | Finds pages containing login portals     |
+| intitle:"Index of" ws_ftp.ini                                                                                 |                                          |
+| inurl:ftp-inurl:(http\|https) intext:"@gmail.com" intext:subject fwd confidential \| important \| CARD \| cvv |                                          |
+| allintitle:"CrushFTP WebInterface"                                                                            |                                          |
+| "ws_ftp.log" ext:log                                                                                          |                                          |
+| intitle:"Monsta ftp" intext:"Lock session to IP"                                                              |                                          |
+| "index of" /ftp/logs                                                                                          |                                          |
+| intitle:"index of" inurl:ftp intext:admin                                                                     |                                          |
+
+
+
 
 ### References
 CEH v13 M2
