@@ -13,7 +13,7 @@ Source: #CEHv13
 
 ### Google Dorking 
 
-	 Google Hacking Database
+[Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
 once a vulnerable site is identified, attackers attempt to launch various possible attacks, such as buffer overflow and SQL injection, which compromise information security
 #### Dorking with AI
 
@@ -26,6 +26,8 @@ The following shell command is designed to conduct advanced Google hacking using
 ```sh
 lynx --dump "http://www.google.com/search?q=site:eccouncil.org+filetype:pdf" | grep "http" | cut -d "=" -f2 | grep -o "http[^&]*" > reconl.txt 
 ```
+### VPN footprinting through google hacking database 
+
 
 ### References
 CEH v13 M2
