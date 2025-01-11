@@ -69,24 +69,37 @@ These search engines do not have their own search indexes; instead, they take th
 FTP search engines are used to search for files located on FTP servers that contain valuable information regarding the target organization. A special client such as [FileZilla](https://filezilla-project.org) can be used to access FTP accounts; it also supports functionalities such as uploading, downloading, and renaming files. 
 > Using FTP search engines such as `NAPALM FTP Indexer`, `FreewareWeb FTP File Search`, `Mamont`, and `Globalfilesearch.com`, attackers can search for critical files and directories containing valuable information 
 
-| Google Dork                                                                                                   | Description                              |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| site:.in .com \| .net intitle:"index of" ftp                                                                  | Finds files containing juicy information |
-| intitle:"index of" "*/ftp.txt"                                                                                | Finds files containing juicy information |
-| intext:"index of" "ftp"                                                                                       | Finds files containing juicy information |
-| inurl:WS_FTP.log                                                                                              | Finds files containing juicy information |
-| intitle:index.of /cftp/robots.txt                                                                             | Finds files containing juicy information |
-| intitle: "Index of ftp passwords"                                                                             | Finds files containing passwords         |
-| inurl: /ftp intitle:"office"                                                                                  | Detects the web server                   |
-| inurl:/web-ftp.cgi                                                                                            | Finds pages containing login portals     |
-| site:sftp.*.*/ intext:"login" intitle:"server login"                                                          | Finds pages containing login portals     |
-| intitle:"Index of" ws_ftp.ini                                                                                 |                                          |
-| inurl:ftp-inurl:(http\|https) intext:"@gmail.com" intext:subject fwd confidential \| important \| CARD \| cvv |                                          |
-| allintitle:"CrushFTP WebInterface"                                                                            |                                          |
-| "ws_ftp.log" ext:log                                                                                          |                                          |
-| intitle:"Monsta ftp" intext:"Lock session to IP"                                                              |                                          |
-| "index of" /ftp/logs                                                                                          |                                          |
-| intitle:"index of" inurl:ftp intext:admin                                                                     |                                          |
+| Google Dork                                                                                                   | Description                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| site:.in .com \| .net intitle:"index of" ftp                                                                  | Finds files containing juicy information                                                                                                   |
+| intitle:"index of" "*/ftp.txt"                                                                                | Finds files containing juicy information                                                                                                   |
+| intext:"index of" "ftp"                                                                                       | Finds files containing juicy information                                                                                                   |
+| inurl:WS_FTP.log                                                                                              | Finds files containing juicy information                                                                                                   |
+| intitle:index.of /cftp/robots.txt                                                                             | Finds files containing juicy information                                                                                                   |
+| intitle: "Index of ftp passwords"                                                                             | Finds files containing passwords                                                                                                           |
+| inurl: /ftp intitle:"office"                                                                                  | Detects the web server                                                                                                                     |
+| inurl:/web-ftp.cgi                                                                                            | Finds pages containing login portals                                                                                                       |
+| site:sftp.*.*/ intext:"login" intitle:"server login"                                                          | Finds pages containing login portals                                                                                                       |
+| intitle:"Index of" ws_ftp.ini                                                                                 | Finds the "ws_ftp.ini" file, which contain usernames and passwords of FTP users                                                            |
+| inurl:ftp-inurl:(http\|https) intext:"@gmail.com" intext:subject fwd confidential \| important \| CARD \| cvv | Finds archived email conversations, at times revealing full credit-card numbers and customer information as well as private company emails |
+| allintitle:"CrushFTP WebInterface"                                                                            | Detects various pages of CrushFTP WebInterface, which includes login portals as well password reset/recovery page                          |
+| "ws_ftp.log" ext:log                                                                                          | Finds sensitive directories                                                                                                                |
+| intitle:"Monsta ftp" intext:"Lock session to IP"                                                              | Shows websites that use the FTP service of Monsta FTP                                                                                      |
+| "index of" /ftp/logs                                                                                          | Finds potential log files                                                                                                                  |
+| intitle:"index of" inurl:ftp intext:admin                                                                     | Lists admin folders on FTP servers                                                                                                         |
+### Find subdomains 
+
+#### Google Dork
+
+Google dork to identify all the sub-domains of the target
+```
+site:microsoft.com -inurl:www
+```
+#### Online Tools 
+
+[Netcraft](https://www.netcraft.com) - provides internet security services and analysis the various parameters of the internet 
+[DNSDumpster - Find & lookup dns records for recon & research](https://dnsdumpster.com/) - Domain research tool
+[Penetration testing toolkit](https://pentest-tools.com/) - Freemium
 
 
 
