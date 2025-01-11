@@ -26,6 +26,13 @@ The following shell command is designed to conduct advanced Google hacking using
 ```sh
 lynx --dump "http://www.google.com/search?q=site:eccouncil.org+filetype:pdf" | grep "http" | cut -d "=" -f2 | grep -o "http[^&]*" > reconl.txt 
 ```
+lynx is a text based web browser 
+#### Advanced Google Image Search 
+
+[Advanced image search](https://www.google.com/advanced_image_search)
+[Advanced search](https://www.google.com/advanced_search)
+[reverse image search](https://www.google.com/imghp)
+
 ### VPN footprinting through Google Hacking Database 
 
 Google dorks can be used to footprint virtual private networks. 
@@ -49,7 +56,9 @@ Google dorks can be used to footprint virtual private networks.
 
 Example prompt with ShellGPT
 "`Use inurl serach operator to obtain the Fortinet VPN login pages`"
+### Footprinting Through Shodan 
 
+A search in Shodan for VoIP and VPN will help gather VPN and VoIP related information 
 
 ### References
 CEH v13 M2
