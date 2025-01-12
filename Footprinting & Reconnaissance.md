@@ -97,7 +97,7 @@ site:microsoft.com -inurl:www
 ```
 #### Online Tools 
 
-[Netcraft](https://www.netcraft.com) - provides internet security services and analysis the various parameters of the internet 
+[Netcraft](https://www.netcraft.com) - provides internet security services and analysis the various parameters of the internet / can also do OS foot printing.  
 [DNSDumpster - Find & lookup dns records for recon & research](https://dnsdumpster.com/) - Domain research tool
 [Penetration testing toolkit](https://pentest-tools.com/) - Freemium
 
@@ -113,6 +113,7 @@ python3 photon.py -u <URL of the target website> -l 3 -t 200 --wayback
 online people search servies such as `Spokeo`, `intelius`, `pipl`, `BeenVerified`, `Whitepages`, `Instant Checkmate`, & `PeekYou` provide details about people
 
 Also search Job sites such as Linkedin, Glassdoor, Dice
+
 
 ### References
 CEH v13 M2
