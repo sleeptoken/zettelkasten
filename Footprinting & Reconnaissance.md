@@ -101,8 +101,18 @@ site:microsoft.com -inurl:www
 [DNSDumpster - Find & lookup dns records for recon & research](https://dnsdumpster.com/) - Domain research tool
 [Penetration testing toolkit](https://pentest-tools.com/) - Freemium
 
+### Web archieve
 
+[archive](https://archive.org)
+CLI - Photon to retrieve achieved URLs of the target website from `archive.org`
+```
+python3 photon.py -u <URL of the target website> -l 3 -t 200 --wayback
+```
+### Public search services 
 
+online people search servies such as `Spokeo`, `intelius`, `pipl`, `BeenVerified`, `Whitepages`, `Instant Checkmate`, & `PeekYou` provide details about people
+
+Also search Job sites such as Linkedin, Glassdoor, Dice
 
 ### References
 CEH v13 M2
