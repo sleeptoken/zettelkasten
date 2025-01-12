@@ -113,6 +113,17 @@ python3 photon.py -u <URL of the target website> -l 3 -t 200 --wayback
 online people search servies such as `Spokeo`, `intelius`, `pipl`, `BeenVerified`, `Whitepages`, `Instant Checkmate`, & `PeekYou` provide details about people
 
 Also search Job sites such as Linkedin, Glassdoor, Dice
+### Dark Web
+
+Queries to find sensitive info on the dark web.
+
+![[Pasted image 20250112133453.png]]
+
+
+
+
+
+
 
 
 ### References
