@@ -214,8 +214,15 @@ when we obtain an IP address or a range of IP addresses, we can use these tools 
 
 **Dnsrecon**
 - example cmd
-	- `dnsrecon -r 10.10.10.0-10.10.10.255`
-	
+	- `dnsrecon -r 10.10.10.0 - 10.10.10.255`
+		`-r` = specifies the IP address for a reverse lookup by brute force
+
+[MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)
+
+### Network and Email Footprinting 
+
+next step after retrieving DNS information is to gather network-related info and track email communications
+
 
 
 
