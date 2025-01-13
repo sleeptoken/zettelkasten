@@ -118,12 +118,18 @@ Also search Job sites such as Linkedin, Glassdoor, Dice
 Queries to find sensitive info on the dark web.
 
 ![[Pasted image 20250112133453.png]]
+### Internet research services 
 
+![[Pasted image 20250113104721.png]]
+### Public Source-code repo 
 
+Recon-ng - it assists attackers in gathering information from public source code repositories.
+### Social networking sites
 
+Attackers use social media as a medium to perform social engineering attacks
+#### Linkedin 
 
-
-
+use theHarvester tool to perform enumeration on Linkedin
 
 
 ### References
