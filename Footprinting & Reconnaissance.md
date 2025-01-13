@@ -205,14 +205,17 @@ to scan all the discovered records of the target domain i.e. a full detailed sca
 ```
 fierce --domain certifiedhacker.com  --wide
 ```
+### Reverse DNS lookup
 
+DNS Lookup is used to find the IP address for a given domain name, and a reverse DNS operation is performed to obtain the domain name of a given IP address 
 
+Attackers perform a reverse DNS lookup on IP ranges in an attempt to locate a DNS PTR record for those IP addresses.
+when we obtain an IP address or a range of IP addresses, we can use these tools to obtain the domain name
 
-
-
-
-
-
+**Dnsrecon**
+- example cmd
+	- `dnsrecon -r 10.10.10.0-10.10.10.255`
+	
 
 
 
