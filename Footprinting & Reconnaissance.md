@@ -127,6 +127,8 @@ Recon-ng - it assists attackers in gathering information from public source code
 ### Social networking sites
 
 Attackers use social media as a medium to perform social engineering attacks
+`sherlock` - search websites with a target username - available via cli
+[Social Searcher](https://www.social-searcher.com/)search for content on social networks in real time 
 #### LinkedIn 
 
 use `theHarvester` tool to perform enumeration on LinkedIn
@@ -136,18 +138,24 @@ theHarvester -d eccouncil -l 200 -b linkedin
 # -d = domain or company name
 # -l = number of results to be retrieved
 # -b = data source
-
 ```
 #### Email lists
 
 use automated tools such as `theHarvester` and `Email Spider` to collect publicly available email addresses.  
+```sh
+theharvester -d microsoft.com -l 200 -b baidu -f output.xml
+# -f specifies the output file
 ```
-theharvester -d microsoft.com -l 200 -b baidu 
-```
+#### Social media presence 
 
+use tools like [BuzzSumo ](https://buzzsumo.com/) , `Google Trends` to locate information on social media sites
+### Whois
 
+Whois is a query and response protocol used for querying databases that store the registered users or assignees of an internet resource, such as domain name 
+This protocol listens on port 43(TCP)  
+Regional Internet Registries maintain `whois` databases
 
-
+Three types of data models exist to store and lookup `whois` information 
 
 
 ### References
