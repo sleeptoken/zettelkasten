@@ -168,8 +168,49 @@ batch IP converter available at [SABSOFT](http://sabsoft.com/) , provides inform
 IP geolocation lookup tools, such as [IP Address to IP Location and Proxy Information | IP2Location](https://www.ip2location.com/) and `IP Location Finder`
 ### DNS
 
-- After collecting the `Whois` records of the target, comes the DNS foot printing part 
+ After collecting the `Whois` records of the target, comes the DNS foot printing part 
 - DNS records provide important information about the location and types of servers 
+
+![[Pasted image 20250113151440.png]]
+### DNS Interrogation tools
+
+Attackers use DNS interrogation tools such as
+[SecurityTrails: Data Security, Threat Hunting, and Attack Surface Management Solutions for Security Teams](https://securitytrails.com/) , DNSChecker
+
+#### Fierce CLI
+
+is a DNS recon tool used to enumerate subdomains related to the target 
+
+Run the following command to start basic scan on the target domain 
+```
+fierce --domain certifiedhacker.com
+```
+
+to scan the target domain to obtain specific subdomains
+```
+fierce --domain certifiedhacker.com  -subdommains write admin mail
+```
+
+to scan domains near the discovered records of the targeted domain 
+```
+fierce --domain certifiedhacker.com  -subdomains mail -traverse 10
+```
+
+to attempt an HTTP connection on the discovered domains of the target 
+```
+fierce --domain certifiedhacker.com  --subdomains mail --connect
+```
+
+to scan all the discovered records of the target domain i.e. a full detailed scan 
+```
+fierce --domain certifiedhacker.com  --wide
+```
+
+
+
+
+
+
 
 
 

@@ -151,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 279.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,6 +166,7 @@
   },
   "active": "ab182f9cfbe39939",
   "lastOpenFiles": [
+    "Images/Pasted image 20250113151440.png",
     "Tags/DNS.md",
     "Footprinting & Reconnaissance.md",
     "DNS Spoofing and Transparent Proxy.md",
@@ -198,7 +200,6 @@
     "Remote Thought/Wi-Fi crack.md",
     "Remote Thought/CA Certificates.md",
     "Remote Thought/MQTT.md",
-    "Remote Thought/LLM attacks.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 6.canvas",
