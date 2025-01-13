@@ -163,5 +163,13 @@ Three types of data models exist to store and lookup `whois` information
 `whois` services such as [TamoSoft](https://www.tamos.com/), [Whois Lookup, Domain Availability & IP Search - DomainTools](https://whois.domaintools.com/) can help perform `whois` lookups
 
 batch IP converter available at [SABSOFT](http://sabsoft.com/) , provides information about the IP and a lot of other juicy information. 
+### Geolocation information 
+
+IP geolocation lookup tools, such as [IP Address to IP Location and Proxy Information | IP2Location](https://www.ip2location.com/) and `IP Location Finder`
+### DNS
+
+After collecting the `Whois` records of the target, comes the DNS footprinting part 
+
+
 ### References
 CEH v13 M2
