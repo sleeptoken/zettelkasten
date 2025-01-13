@@ -127,9 +127,27 @@ Recon-ng - it assists attackers in gathering information from public source code
 ### Social networking sites
 
 Attackers use social media as a medium to perform social engineering attacks
-#### Linkedin 
+#### LinkedIn 
 
-use theHarvester tool to perform enumeration on Linkedin
+use `theHarvester` tool to perform enumeration on LinkedIn
+example cmd to obtain employee details via linkedin - 
+```sh
+theHarvester -d eccouncil -l 200 -b linkedin
+# -d = domain or company name
+# -l = number of results to be retrieved
+# -b = data source
+
+```
+#### Email lists
+
+use automated tools such as `theHarvester` and `Email Spider` to collect publicly available email addresses.  
+```
+theharvester -d microsoft.com -l 200 -b baidu 
+```
+
+
+
+
 
 
 ### References
