@@ -156,7 +156,12 @@ This protocol listens on port 43(TCP)
 Regional Internet Registries maintain `whois` databases
 
 Three types of data models exist to store and lookup `whois` information 
+- **Thick Whois (Distributed Model)** - Stores the complete Whois information from all the registrars for a particular set of data
+- **Thin Whois (Centralized Model)** - Stores only the name of the Whois server of the registrar of a domain, which in turn holds complete details on the data being looked up.
+- **Decentralized Whois** - stores complete Whois information and has multiple independent entities to manage the Whois database 
 
+`whois` services such as [TamoSoft](https://www.tamos.com/), [Whois Lookup, Domain Availability & IP Search - DomainTools](https://whois.domaintools.com/) can help perform `whois` lookups
 
+batch IP converter available at [SABSOFT](http://sabsoft.com/) , provides information about the IP and a lot of other juicy information. 
 ### References
 CEH v13 M2
