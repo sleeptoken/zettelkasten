@@ -229,7 +229,11 @@ next step after retrieving DNS information is to gather network-related info and
 - If an attacker traces a route to a machine, it could be possible to obtain the internal IP address of the gateway, which can be useful 
 #### Traceroute 
 
-Uses the ICMP protocol and Time to Live (TTL) field of the IP header to find the path of the target host in the network. 
+> Uses the ICMP protocol and Time to Live (TTL) field of the IP header to find the path of the target host in the network. 
+
+The Traceroute utility can detail the path through which IP packets travel between two systems. The utility can trace the number of routers the packets travel through, the round-trip time (duration in transiting between two routers), and, if the routers have DNS entries, the names of the routers and their network affiliation.
+
+It can also trace geographic locations. It works by exploiting a feature of the Internet Protocol called [[TTL]]. The TTL field indicates the maximum number of routers a packet may traverse. Each router that handles a packet decrements the TTL count field in the ICMP header by one. When the count reaches zero, the router discards the packet and transmits an ICMP error message to the originator of the packet
 
 ![[Pasted image 20250114120109.png]]
 

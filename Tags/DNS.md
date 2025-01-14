@@ -32,7 +32,7 @@ These records resolve to another domain name
 - They can also be used to verify ownership of the domain name when signing up for third party services.
 - write a little about SPF records
 
-DNS records all come with a TTL (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. (i.e. this field specifies how long a DNS record should be cached for) Caching saves on having to make a DNS request every time you communicate with a server.
+DNS records all come with a [[TTL]] (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. (i.e. this field specifies how long a DNS record should be cached for) Caching saves on having to make a DNS request every time you communicate with a server.
 
 
 ### References

@@ -162,12 +162,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "ab182f9cfbe39939",
   "lastOpenFiles": [
+    "Tags/DNS.md",
+    "TTL.md",
+    "Footprinting & Reconnaissance.md",
     "Images/Pasted image 20250114120109.png",
     "Images/Pasted image 20250113151440.png",
-    "Tags/DNS.md",
-    "Footprinting & Reconnaissance.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Images/Pasted image 20250112133453.png",
     "Images/Pasted image 20250113104721.png",
@@ -206,7 +207,6 @@
     "Untitled 4.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
-    "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
     "Zettelkasten",
     "Template",
     "Images",
