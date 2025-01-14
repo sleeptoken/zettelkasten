@@ -221,8 +221,12 @@ when we obtain an IP address or a range of IP addresses, we can use these tools 
 
 ### Network and Email Footprinting 
 
-next step after retrieving DNS information is to gather network-related info and track email communications
+next step after retrieving DNS information is to gather network-related info and track email communications 
+#### Locate the network range
 
+- detailed information regarding IP allocation and the nature of allocation is available with the appropriate regional registry database
+- To find the network range of the target network, one must enter the server IP address in the ARIN Whois database search tool. A user can also visit the [American Registry for Internet Numbers](https://www.arin.net/)  website and enter the server IP in to the SEARCH site or `Whois` text box.
+- If an attacker traces a route to a machine, it could be possible to obtain the internal IP address of the gateway, which can be useful 
 
 
 
