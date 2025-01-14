@@ -237,6 +237,13 @@ It can also trace geographic locations. It works by exploiting a feature of the 
 
 ![[Pasted image 20250114120109.png]]
 
+- The utility records the IP address and DNS name of the router and sends out another packet with a TTL value of two. This packet makes it through the first router and then times-out at the next router in the path.
+- This second router also sends an error message back to the originating host.
+- Traceroute continues to do this and records the IP address and name of each router until a packet finally reaches the target host or until it decides that the host is unreachable.
+- In the process, it records the time taken for each packet to make a round trip to each router. 
+- Finally, when it reaches the destination, the normal ICMP ping response will be sent back to the sender. 
+- The utility helps to reveal the IP addresses of the intermediate hops in the route to the target host from the source
+
 - ICMP Traceroute 
 	windows OS by default uses the ICMP traceroute 
 	- `C:\>tracert 216.239.36.10`
@@ -248,6 +255,19 @@ It can also trace geographic locations. It works by exploiting a feature of the 
 - UDP traceroute
 	Like windows, Linux also has a built in traceroute ability, but it uses UDP protocol for tracing the route 
 	- in linux - `traceroute www.google.com`
+
+***Traceroute Tools**
+
+[Netscantools pro](https://www.netscantools.com/index.html) - Pro version isn't free
+[Pingplotter](https://www.pingplotter.com/) - Best for visualization 
+#### Email Tracking Tools
+
+MXToolbox, 
+DNS Checker Mail Header Analyzer, 
+social catfish 
+[eMailTrackerPro](https://emailtrackerpro.en.softonic.com/)
+[IP Address to IP Location and Proxy Information | IP2Location](https://www.ip2location.com/)
+
 
 ### References
 CEH v13 M2
