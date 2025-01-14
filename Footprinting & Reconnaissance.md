@@ -227,8 +227,23 @@ next step after retrieving DNS information is to gather network-related info and
 - detailed information regarding IP allocation and the nature of allocation is available with the appropriate regional registry database
 - To find the network range of the target network, one must enter the server IP address in the ARIN Whois database search tool. A user can also visit the [American Registry for Internet Numbers](https://www.arin.net/)  website and enter the server IP in to the SEARCH site or `Whois` text box.
 - If an attacker traces a route to a machine, it could be possible to obtain the internal IP address of the gateway, which can be useful 
+#### Traceroute 
 
+Uses the ICMP protocol and Time to Live (TTL) field of the IP header to find the path of the target host in the network. 
 
+![[Pasted image 20250114120109.png]]
+
+- ICMP Traceroute 
+	windows OS by default uses the ICMP traceroute 
+	- `C:\>tracert 216.239.36.10`
+	
+- TCP Traceroute
+	Many devices in any network are generally configured to block ICMP traceroute messages. In this scenario, an attacker uses TCP and UDP traceroute, also known as layer 4 traceroute 
+	- in linux - `sudo tcptraceroute www.google.com`
+
+- UDP traceroute
+	Like windows, Linux also has a built in traceroute ability, but it uses UDP protocol for tracing the route 
+	- in linux - `traceroute www.google.com`
 
 ### References
 CEH v13 M2

@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5,
-    "collapsed": true
+    "width": 323.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -151,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5,
-    "collapsed": true
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab182f9cfbe39939",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Images/Pasted image 20250114120109.png",
     "Images/Pasted image 20250113151440.png",
     "Tags/DNS.md",
     "Footprinting & Reconnaissance.md",
@@ -208,7 +207,6 @@
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Images/adaa5ac3ca48557bdf12e4b7758fd429.svg",
-    "Images/Pasted image 20240604110852.png",
     "Zettelkasten",
     "Template",
     "Images",
