@@ -361,7 +361,15 @@ python3 website_footprinting.py
 
 ### Foot printing Countermeasure 
 
-Limit the information that is public facing inclusive of social media content and employee 
+- Develop and enforce security policies to regulate the information that employees can reveal to third parties 
+- Set apart internal and external DNS or use split DNS, and restrict zone transfer to authorized servers 
+- Disable directory listings in the web servers 
+- Opt for privacy services on a Whois Lookup database 
+- Avoid domain-level cross-linking for critical assets 
+- Place critical documents, such as business plans and proprietary documents offline to prevent exploitation 
+- Sanitize the details provided to Internet registrars to hide the direct contact details of the organization 
+- Disable the geo-tagging functionality on cameras to prevent geolocation tracking 
+
 
 ### References
 CEH v13 M2
