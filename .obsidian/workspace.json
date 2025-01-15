@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Footprinting & Reconnaissance.md",
+                "file": "Remote Thought/Footprinting & Reconnaissance.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5,
-    "collapsed": true
+    "width": 323.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -164,12 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "875e3c5fb8f879ae",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Pasted image 20250115123012.png",
+    "Images/Pasted image 20250115123012.png",
     "Underpass htb.md",
     "Frameworks & basics.md",
-    "Footprinting & Reconnaissance.md",
+    "Remote Thought/Footprinting & Reconnaissance.md",
     "Tags/nmap.md",
     "Tags/Rustscan.md",
     "Tags/DNS.md",
