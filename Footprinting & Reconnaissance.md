@@ -268,6 +268,21 @@ social catfish
 [eMailTrackerPro](https://emailtrackerpro.en.softonic.com/)
 [IP Address to IP Location and Proxy Information | IP2Location](https://www.ip2location.com/)
 
+### Social Engineering 
+
+**Eavesdropping** 
+	Unauthorized listening of conversations or reading of messages
+	It is the Interception of any form of communication, such as audio, video, or text
+	
+**Shoulder Surfing** 
+	Secretly observing the target to gather critical information, such as passwords, personal identification number, account numbers, and credit card information
+
+**Dumpster Diving**
+	Looking for treasure in someone else's trash It involves the collection of phone bills, contact information, financial information, operations-related information, etc. from the target company's trash bins, printer trash bins, user desk for sticky notes, etc.
+
+**Impersonation** 
+	Pretending to be a legitimate or authorized person and using the phone or other communication medium to mislead targets and trick them into revealing information
+
 
 ### References
 CEH v13 M2
