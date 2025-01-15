@@ -283,6 +283,40 @@ social catfish
 **Impersonation** 
 	Pretending to be a legitimate or authorized person and using the phone or other communication medium to mislead targets and trick them into revealing information
 
+### Advanced footprinting tools
+
+#### [Maltego](https://www.maltego.com/)
+
+is an automated tool that can be used to determine the relationship and real world links between people, group of people, websites etc 
+#### [FOCA](https://github.com/ElevenPaths)
+
+Fingerprinting Organizations with Collected Archives (FOCA) is a tool used mainly to find metadata and hidden information in the documents that its scans.
+
+Features involve:
+- Web Search - Searches for hosts and domain names through URLs associated with the main domain.
+- DNS Search - Checks each domain to ascertain the host names configured in NS, MX, and SPF servers to discover the new host and domain names. 
+- IP Resolution -  performs analysis against the organization's internal DNS.
+- PTR Scanning - Finds more servers in the same segment of a determined address
+- Common Names - Perform dictionary attacks against the DNS.
+
+Attackers search the target domain and obtain the file information stored in it. The extracted files can be viewed on the web browser. 
+#### [subfinder](https://github.com/projectdiscovery/subfinder)
+
+Subdomain discovery tool that uses passive online sources for discovery.
+#### [OSINT Framework](https://osintframework.com/)
+
+#### [ReconDog](https://github.com/s0md3v/ReconDog)
+
+ALL in one tool for all basic information gathering, uses APIs to collect information about the target 
+#### [BillCipher](https://github.com/bahatiphill/BillCipher)
+
+For website and IP address, needs python2, python3 & ruby 
+
+### Ai Powered OSINT tools
+
+#### [Taranis AI](https://taranis.ai/)
+
+uses Ai to enhance information gathering and situational analysis. uses NLP to improve the data received from data sources 
 
 ### References
 CEH v13 M2
