@@ -8,18 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a89ca1d3cfefe82e",
+            "id": "09deb57d35cc2d16",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tags/burpsuite.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "burpsuite"
+              "title": "New tab"
             }
           }
         ]
@@ -164,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a89ca1d3cfefe82e",
+  "active": "09deb57d35cc2d16",
   "lastOpenFiles": [
+    "Tags/burpsuite.md",
     "Tags/Screenshot.md",
     "Tags/ssh.md",
     "Remote Thought/Disable JavaScript.md",
@@ -201,7 +197,6 @@
     "Remote Thought/Chrome dev tools.md",
     "Remote Thought/URL format bypass.md",
     "Remote Thought/Azure Key Vault.md",
-    "Tags/SSTI.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 6.canvas",
