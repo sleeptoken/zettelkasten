@@ -317,6 +317,51 @@ For website and IP address, needs python2, python3 & ruby
 #### [Taranis AI](https://taranis.ai/)
 
 uses Ai to enhance information gathering and situational analysis. uses NLP to improve the data received from data sources 
+#### [OSS Insight](https://ossinsight.io/)
+
+enables users to query GitHub data using natural languages, generate SQL queries, and present the results visually, basically can compare stats of different repos
+#### Develop custom scripts
+
+The following script is designed to perform website foot printing including DNS lookup, WHOIS records retrieval, email  enumeration and more.
+
+change domain in script to desired target domain	
+```sh
+cat <<< EOF > website_footprinting.py 
+import subprocess 
+
+def dns_lookup(domain): 
+	return subprocess.getoutput(f"dig {domain} ANY +noall +answer")
+
+def whois_lookup(domain):
+	return subprocess.getoutput(f"whois (domain)") 
+
+def email enumeration (domain): 
+	return subprocess.getoutput (f"theHarvester -d {domain} -b all -1 100") 
+
+def run_footprinting(domain): 
+	print("Performing DNS Lookup...") 
+	dns_info = dns_lookup(domain) 
+	print(dns_info)
+	
+	print("\nPerforming Whois Lookup...")
+	whois_info = whois_lookup(domain)
+	print(whois_info) 
+	
+	print("\nEnumerating Emails...") 
+	emails = email_enumeration(domain)
+	print(emails) 
+	
+	domain = 'www.microsoft.com' 
+	run_footprinting(domain)
+
+EOF
+
+python3 website_footprinting.py
+```
+
+### Foot printing Countermeasure 
+
+Limit the information that is public facing inclusive of social media content and employee 
 
 ### References
 CEH v13 M2
