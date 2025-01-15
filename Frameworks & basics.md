@@ -3,7 +3,7 @@
 
 Source: #CEHv13
 
-If you know yourself but no the enemy, for every victory gained, you will also suffer a defeat - Sun Tzu
+If you know yourself but not the enemy, for every victory gained, you will also suffer a defeat - Sun Tzu
 
 ### Classification of Attacks
 
