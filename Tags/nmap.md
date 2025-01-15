@@ -1,3 +1,15 @@
+
+`nmap -A` takes a lot of time so to evade this do this - 
+```
+nmap -p- silverplatter.thm -Pn -T5 -v
+```
+above command tells you what ports are open, then do a targeted scan on those ports
+```
+nmap -p 80,8080,22 -A silverplatter.thm -Pn -v
+```
+
+---
+
 ```
 nmap --script vuln 192.168.1.1
 ```
@@ -47,3 +59,4 @@ Retrieve HTTP headers from the server.
 nmap -p80 --script http-auth 192.168.1.1
 ```
 Test for HTTP authentication methods.
+
