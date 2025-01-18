@@ -11,7 +11,7 @@ For some reason we were not able to run the [[mysql]] client from the debian VM 
 
 - Determine which port mysql listening on using `netstat -nl`
 - Since 3306 is default port for mysql our desired local address is shown as `127.0.0.1:3306`
-- Note that it is bound to the localhost address meaning we can't access it externally we can fix this by using [[ssh]] port forwarding .
+- Note that it is bound to the localhost address meaning we can't access it externally we can fix this by using [[ssh (22 port)]] port forwarding .
 ```
 ssh -R 4444:127.0.0.1:3306 root@<kali-ip>
 

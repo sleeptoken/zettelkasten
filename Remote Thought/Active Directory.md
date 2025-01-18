@@ -29,7 +29,7 @@ Combining all these components allows us to establish the **Distinguished Name 
 	- Domain Controllers are the servers that host Active Directory services. They store the AD database and handle authentication and authorization requests, such as logging in users or verifying access to resources. Multiple DCs can exist within a domain for redundancy. When changes are made to AD (such as adding users or updating passwords), these changes are replicated across all DCs, ensuring that the directory remains consistent.
 - **Global Catalog:** 
 	- The Global Catalog (GC) is a searchable database within AD that contains a subset of information from all objects in the directory. This allows users and services to locate objects in any domain in the forest, even if those objects reside in different domains.
-- **[[LDAP]] (Lightweight Directory Access Protocol):**
+- **[[LDAP (389 TCP port)]] (Lightweight Directory Access Protocol):**
 	- AD uses this protocol to query and modify the directory. The protocol allows for fast searching and retrieving of information about objects such as users, computers, and groups.
 - **Kerberos Authentication:** 
 	- The default authentication protocol used by AD provides secure authentication by using tickets rather than passwords.

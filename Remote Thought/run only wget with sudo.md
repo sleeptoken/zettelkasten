@@ -19,7 +19,7 @@ on seeing the source code we see a comment that suggests a possible user on the 
 
 1. copy the content of the key to a file
 2. run `chmod 600 file` to give the file appropriate permissions
-3. login via [[ssh]] as the user found in the source code, using the file as a private key (use -i to specify key)
+3. login via [[ssh (22 port)]] as the user found in the source code, using the file as a private key (use -i to specify key)
 ### Privilege Escalation 
 
 1. `sudo -l `works and tells us we can run `wget` with `sudo`

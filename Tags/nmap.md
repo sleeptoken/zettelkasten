@@ -18,7 +18,7 @@ Use scripts to check for vulnerabilities.
 ```
 nmap --script smb-enum-shares -p 445 192.168.1.1
 ```
-Enumerates [[SMB shares]] using Nmap script.
+Enumerates [[SMB shares (445 port)]] using Nmap script.
 
 ```
 nmap --script http-enum -p 80 192.168.1.1

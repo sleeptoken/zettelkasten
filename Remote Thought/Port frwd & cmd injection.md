@@ -66,7 +66,7 @@ If you’re logged in, you’re good to go. If not, check what’s running on yo
 ```shell
 sudo lsof -i :4444
 ```
-If you see some other services, kill the PID and then try the [[ssh]] command again.
+If you see some other services, kill the PID and then try the [[ssh (22 port)]] command again.
 
 go to `localhost:4444` in your local browser and login with username as amay and password as mychemicalromance(cracked hash password)
 
