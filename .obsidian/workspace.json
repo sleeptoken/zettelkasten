@@ -11,10 +11,15 @@
             "id": "09deb57d35cc2d16",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Silverpea CVE's.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Silverpea CVE's"
             }
           }
         ]
@@ -161,6 +166,7 @@
   },
   "active": "09deb57d35cc2d16",
   "lastOpenFiles": [
+    "Silverpea CVE's.md",
     "Tags/burpsuite.md",
     "Tags/Screenshot.md",
     "Tags/ssh.md",
@@ -196,7 +202,6 @@
     "Printer Hacking.md",
     "Remote Thought/Chrome dev tools.md",
     "Remote Thought/URL format bypass.md",
-    "Remote Thought/Azure Key Vault.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 6.canvas",
