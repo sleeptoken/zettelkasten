@@ -8,18 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3c54a86773784a44",
+            "id": "ba1059f34949076c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TLS 1.3 better than TLS 1.2.md",
+                "file": "Encryption using python.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TLS 1.3 better than TLS 1.2"
+              "title": "Encryption using python"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 323.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -163,8 +164,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3c54a86773784a44",
+  "active": "ba1059f34949076c",
   "lastOpenFiles": [
+    "Encryption using python.md",
     "TLS 1.3 better than TLS 1.2.md",
     "Tags/ssh (22 port).md",
     "Tags/RDS.md",
@@ -190,7 +192,6 @@
     "Tags/SSTI.md",
     "Tags/ELK.md",
     "Tags/LDAP (389 TCP port).md",
-    "Remote Thought/Footprinting & Reconnaissance.md",
     "Images/Pasted image 20250115123012.png",
     "Images/Pasted image 20250114120109.png",
     "Images/Pasted image 20250113151440.png",
