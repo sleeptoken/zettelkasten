@@ -8,13 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38c43013650a8903",
+            "id": "a9ff59bfde1d472a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Scanning and Networks.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Scanning and Networks"
             }
           }
         ]
@@ -134,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Footprinting & Reconnaissance.md"
+                "file": "Scanning and Networks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Footprinting & Reconnaissance"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -145,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5,
-    "collapsed": true
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,10 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38c43013650a8903",
+  "active": "a9ff59bfde1d472a",
   "lastOpenFiles": [
-    "Encryption using python.md",
     "TLS 1.3 better than TLS 1.2.md",
+    "Frameworks & basics.md",
+    "Scanning and Networks.md",
+    "Encryption using python.md",
     "Tags/ssh (22 port).md",
     "Tags/RDS.md",
     "Tags/API.md",
@@ -184,8 +190,6 @@
     "Tags/SQL injection.md",
     "Tags/JNI.md",
     "Tags/SSTI.md",
-    "Tags/ELK.md",
-    "Tags/LDAP (389 TCP port).md",
     "Images/Pasted image 20250115123012.png",
     "Images/Pasted image 20250114120109.png",
     "Images/Pasted image 20250113151440.png",
