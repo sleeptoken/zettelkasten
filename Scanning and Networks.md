@@ -20,6 +20,24 @@ Vulnerability Scanning - Shows the presence of a weakness
 - the other 2 flags (PSH, URG) provide instructions to the system 
 The size of each flag is 1 bit
 when the flag value is 1 it is turned on 
+### TCP/IP connection 
+
+![[Pasted image 20250121150849.png]]
+
+TCP is connection oriented, i.e. it prioritizes connection establishment before data transfer between applications 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### References
 M3 - CEHv13
