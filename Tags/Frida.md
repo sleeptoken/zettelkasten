@@ -1,3 +1,4 @@
+Frida creates a thread in the target process; that thread will execute some bootstrap code that allows the interaction. This interaction, known as the agent, permits the injection of JavaScript code, controlling the application's behavior in real-time.
 ## Verify the architecture 
 
 Verify the architecture of your device to ensure you’re using the correct Frida server version. Run:
