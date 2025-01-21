@@ -55,9 +55,23 @@ Interceptor.attach(Module.findExportByName(null, "say_hello"), {
 frida-trace ./main -i 'say*'
 ```
 The parameter `-i` tells Frida which library to hook, and it can filter using the wildcard, tracing all the functions in all the libraries loaded.
-
 ### Lab
 
+#### Bypass OTP 
+
+a function was being called that generated the OTP
+
+execute the following Frida command to intercept all the functions in the `libaocgame.so` library where some of the game logic is present
+```sh
+frida-trace ./TryUnlockMe -i 'libaocgame.so!*'
+```
+
+access the file with `.so` extension - `/home/ubuntu/Desktop/TryUnlockMe/__handlers__/libaocgame.so/`
+
+To get the parameter value, you can use the `log` function, specifying the first elements of the array `args` on the `onEnter` function:
+```javascript
+log("Parameter:" + args[0].toInt32());
+```
 
 
 ### References
