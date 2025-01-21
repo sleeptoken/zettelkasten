@@ -14,6 +14,7 @@ Hello, 1
 ```
   
 What we want to achieve is replacing that value with an arbitrary one, let's say 1337.
+#### Frida Handlers
 
 Before proceeding, we will run [[Tracing with Frida]] `frida-trace` for the first time so that it creates **handlers** for each library function used by the game. 
 By editing the handler files, we can tell Frida what to do with the intercepted values of a function call. 
@@ -28,6 +29,8 @@ You will now see the `__handlers__` directory, containing JavaScript files for
 Each handler will have two functions known as `hooks` since they are hooked into the function respectively before and after the function call : `onEnter`, `onLeave`
 
 We have pointers and not just variables because if we change any value, it has to be permanent; otherwise, we will modify a copy of the value
+
+we want to set the parameter with 1337. To do so, we must replace the first arguments of the args array: `args[0]` with a pointer to a variable containing 1337.
 
 Frida has a function called `ptr()` that does exactly what we need: allocate some space for a variable and return its pointer. We also want to log the value of the original argument, and we have to use the function `toInt32()`, which reads the value of that pointer.
 
@@ -52,5 +55,9 @@ Interceptor.attach(Module.findExportByName(null, "say_hello"), {
 frida-trace ./main -i 'say*'
 ```
 The parameter `-i` tells Frida which library to hook, and it can filter using the wildcard, tracing all the functions in all the libraries loaded.
+
+### Lab
+
+
 
 ### References
