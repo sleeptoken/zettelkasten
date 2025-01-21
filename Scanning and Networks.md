@@ -16,9 +16,10 @@ Vulnerability Scanning - Shows the presence of a weakness
 ![[Pasted image 20250121113334.png]]
 
 6 TCP control flags manage the connection between hosts and give instructions to the system.
-4 of these govern the eslablishment, maintance, and termination of a connection,
-the other 2 flags (PSH & provide instructions to the system 
-
+- 4 of these (SYN, ACK, FIN, RST) govern the establishment, maintanace, and termination of a connection,
+- the other 2 flags (PSH, URG) provide instructions to the system 
+The size of each flag is 1 bit
+when the flag value is 1 it is turned on 
 
 ### References
 M3 - CEHv13
