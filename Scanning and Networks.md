@@ -25,10 +25,10 @@ when the flag value is 1 it is turned on
 ![[Pasted image 20250121150849.png]]
 
 TCP is connection oriented, i.e. it prioritizes connection establishment before data transfer between applications 
+### Host Discovery Techniques
 
-
-
-
+![[Pasted image 20250121152932.png]]
+#### ARP Ping scan
 
 
 
