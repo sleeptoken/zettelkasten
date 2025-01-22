@@ -77,6 +77,31 @@ in nmap ->  `-sn -PE`
 in zenmap -> `-PE` option with a list of IP address is used to perform ICMP ECHO ping sweep.
 #### ICMP Timestamp ping scan
 
+Attackers query a timestamp message to acquire the information related to the current time from the target host machine. The target machine responds with a timestamp reply to each timestamp query that is received. 
+However, the response from the destination host is conditional, and it may or may not respond with the time value depending on its configuration by the administrator at the target's end. 
+This ICMP timestamp pinging is generally used for time synchronization.
+> Such a ping method is effective in identifying whether the destination host machine is active, specifically in the condition where the administrator blocks the traditional ICMP ECHO ping requests.
+
+Note:
+In Zenmap, the `-PP` option is used to perform an ICMP timestamp ping scan
+#### ICMP address mask ping scan 
+
+Attackers send an ICMP address mask query to the target host to acquire information related to the subnet mask. 
+However, the address mask response from the destination host is conditional, and it may or may not respond with the appropriate subnet value depending on its configuration by the administrator at the target's end. This type of ping method is also effective in identifying the active hosts similarly to the ICMP timestamp ping, specifically when the administrator blocks the traditional ICMP Echo ping. 
+
+Note:
+In Zenmap, the `-PM` option is used to perform an ICMP address mask ping scan.
+#### TCP SYN ping scan 
+
+TCP SYN ping is a host discovery technique for probing different ports to determine if the port is online and to check if it encounters any firewall rule sets. 
+In this type of host discovery technique, an attacker uses the Nmap tool to initiate the three-way handshake by sending the empty TCP SYN flag to the target host. After receiving SYN, the target host acknowledges the receipt with an ACK flag. After reception of the ACK flag, the attacker confirms that the target host is active and terminates the connection by sending an RST flag to the target host machine.
+- Port 80 is used as the default destination port
+
+> TCP SYN ping can be used to determine if a host is active without creating any connection. Hence logs are not recorded on the system level
+
+Note:
+A range of ports can also be specified in this type of pinging format without inserting a space between `-PS` and the port number (e.g., PS22-25,80,113,1050,35000), where the probe will be performed against each port parallelly. In Zenmap, the PS option is used to perform a TCP SYN ping scan
+#### TCP ACK Ping scan 
 
 
 
