@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game hacking w Frida.md",
+                "file": "Scanning and Networks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Game hacking w Frida"
+              "title": "Scanning and Networks"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game hacking w Frida.md"
+                "file": "Scanning and Networks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Game hacking w Frida"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -164,8 +164,8 @@
   },
   "active": "382ee16bb545d362",
   "lastOpenFiles": [
+    "Remote Thought/Game hacking w Frida.md",
     "Remote Thought/Tracing with Frida.md",
-    "Game hacking w Frida.md",
     "Tags/Frida.md",
     "Remote Thought/Active Directory.md",
     "Remote Thought/Azure Key Vault.md",
