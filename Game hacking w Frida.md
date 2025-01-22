@@ -72,6 +72,15 @@ To get the parameter value, you can use the `log` function, specifying the fir
 ```javascript
 log("Parameter:" + args[0].toInt32());
 ```
+#### changing value of an arg
 
+find out what argument corresponds to what value by using the following 
+`log("Parameter1:" + args[0].toInt32())`  
+`log("Parameter2:" + args[1].toInt32())`  
+`log("Parameter3:" + args[2].toInt32())`
 
+By simple inspection, we can determine that the first parameter is the Item ID, the second is the price, and the third is the player's coins. If you manipulate the price and set it as zero, you can buy any item that you want:
+
+`args[1] = ptr(0)`
+#### change Boolean values 
 ### References
