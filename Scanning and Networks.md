@@ -103,6 +103,24 @@ Note:
 A range of ports can also be specified in this type of pinging format without inserting a space between `-PS` and the port number (e.g., PS22-25,80,113,1050,35000), where the probe will be performed against each port parallelly. In Zenmap, the PS option is used to perform a TCP SYN ping scan
 #### TCP ACK Ping scan 
 
+Attacker sends empty TCP ACK packet to the target host directly. Since there is no prior connection between the attacker and the target host, after receiving the ACK packet, the target host responds with an RST flag to terminate the request.
+
+firewalls are mostly configured to block the SYN ping packets, as they are the most common pinging technique. In such cases, the ACK probe can be effectively used to bypass these firewall rule sets easily. 
+
+Note: 
+in Zenmap, the `-PA` option is used to perform a TCP ACK ping scan.
+#### IP protocol ping scan
+
+IP protocol ping is the latest host discovery option that sends IP ping packets with the IP header of any specified protocol number
+It has the same format as the TCP and UDP ping. 
+This technique tries to send different packets using different IP protocols, hoping to get a response indicating that a host is online. 
+
+Multiple IP packets for ICMP (protocol 1), IGMP (protocol 2), and IP-in-IP (protocol 4) are sent by default when no protocols are specified. 
+
+For configuring the default protocols, change `DEFAULT_PROTO_PROBE_PORT_SPEC` in `nmap` during compile time. For specific protocols such as ICMP, IGMP, TCP (protocol 6), and UDP (protocol 17), the packets are to be sent with proper protocol headers, and for the remaining protocols, only the IP header data is to be sent with the packets.
+
+Note:
+in Zenmap the -PO option is used to perform an IP protocol ping scan.
 
 
 ### References
