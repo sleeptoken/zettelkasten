@@ -83,4 +83,15 @@ By simple inspection, we can determine that the first parameter is the Item ID, 
 
 `args[1] = ptr(0)`
 #### change Boolean values 
+
+You can log the return value of the function by adding the following log instruction in the `onLeave` function:
+```javascript
+ log("The return value is: " + retval);
+ 
+ //output
+ 69399931 ms The return value is: 0x0
+```
+the value returned is 0, which may indicate that it is a Boolean flag set to False.
+in order to switch the flag 
+`retval.replace(ptr(1))`
 ### References
