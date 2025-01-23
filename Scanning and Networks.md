@@ -121,6 +121,9 @@ For configuring the default protocols, change `DEFAULT_PROTO_PROBE_PORT_SPEC` in
 
 Note:
 in Zenmap the -PO option is used to perform an IP protocol ping scan.
+### Port scanning techniques 
+
+![[Pasted image 20250123103744.png]]
 
 
 ### References
