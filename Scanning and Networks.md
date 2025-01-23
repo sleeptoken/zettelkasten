@@ -158,5 +158,36 @@ All closed ports on the targeted host will send an RST/ACK response. Since OSs s
 
 These types of scan are most effective against hosts using a BSD - derived TCP/IP stack 
 
+Note: Inverse TCP flag scanning is known as FIN, URG, and PSH scanning based on the flag set in the probe packet. If there is no flag set, it is known as NULL scanning. If only the FIN flag is set, it is known as FIN scanning, and if all of FIN, URG, and PSH are set, it is known as Xmas scanning.
+##### Xmas Scan 
+
+Xmas scan is a type of inverse TCP scanning technique with the FIN, URG, and PUSH flags set to send a TCP frame to a remote device. 
+- If the target has opened the port, then you will receive no response from the remote system. 
+- If the target has closed the port, then you will receive a remote system reply with an RST. 
+This scan only works when systems are compliant with RFC 793- based TCP/IP implementation. It will not work against any current version of Microsoft Windows.
+###### BSD Networking code
+
+This method relies on the BSD networking code. Thus, you can use this only for UNIX hosts; it does not support Windows NT. If the user scan for Microsoft system, it will show that all the ports on the host are open. 
+
+Note:
+In zenmap, the `-sX` option is used to perform Xmas scan whereas the `-sF` and `-sN` options are used to perform `FIN` and `NULL` scans.
+##### TCP Maimon scan
+
+This scan technique is very similar to NULL, FIN, and Xmas scan, but the probe used here is FIN/ACK. In most cases, to determine if the port is open or closed, the RST packet should be generated as a response to a probe request. However, in many BSD systems, the port is open if the packet gets dropped in response to a probe. 
+
+Nmap interprets a port as open | filtered when there is no response from the Maimon scan probe even after many retransmissions. 
+- The port is closed if the probe gets a response as an RST packet. 
+- The port is filtered when the ICMP unreachable error (type 3, code 1, 2, 3, 9, 10, or 13) is returned from the target host.
+
+Note: In Zenmap, the `-sM` option is used to perform the TCP Maimon scan.
+##### ACK flag Probe scan 
+
+Attackers send TCP probe packets with the ACK flag set to a remote device and then analyze the header information (TTL and WINDOW field) of the received RST packets to find out if the port is open or closed. 
+The ACK flag probe scan exploits the vulnerabilities within the BSD-derived TCP/IP stack. Thus, such scanning is effective only on those OSs and platforms on which the BSD derives TCP/IP stacks.
+Categories of ACK flag probe scanning include:
+TTL-Based ACK Flag Probe scanning
+In this scanning technique, you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the TTL field value of the RST packets received. In Zenmap, the syntaxnmap -ttl [time] [target] is used to perform TTL- based scan.
+
+
 ### References
 M3 - CEHv13
