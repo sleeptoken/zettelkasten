@@ -134,6 +134,29 @@ TCP connect scan completes a three way handshake with the target machine
 Making a separate `connect()` call for every targeted port in a linear manner would take a long time over a slow connection. The attacker can accelerate the scan using many sockets in parallel. Using non-blocking, I/O allows the attacker to set a short time out period and watch all the sockets simultaneously. 
 
 Note:
-in zenmap, the -sT p[]
+in zenmap, the `-sT` option is used to perform TCP connect / full open scan.
+#### Stealth TCP scanning methods
+
+##### Half open scan 
+
+- The stealth scan involves resetting the TCP connection between the client and the server abruptly before completion of the three-way handshake signals, hence making the connection half-open. A stealth scan sends a single frame to a TCP port without any TCP handshaking or additional packet transfers.
+- This type of scan sends a single frame with the expectation of a single response. The half-open scan partially opens a connection but stops halfway through. 
+- The stealth scan is also called a "SYN scan," because it only sends the SYN packet. This prevents the service from notifying the incoming connection.
+- Attackers use stealth scanning techniques to bypass firewall rules and logging mechanisms
+
+Note:
+in Zenmap, the `-sS` option is used to perform the stealth scan / TCP half open scan. 
+##### Inverse TCP flag scan
+
+Attackers send TCP probe packets with a TCP flag (FIN, URG, PSH) set or with no flags. 
+- When the port is open, the attacker does not get any response from the host, 
+- when the port is closed, he or she receives the RST from the target host.
+
+Security mechanisms such as firewalls and IDS detect the SYN packets sent to the sensitive ports of the targeted hosts. Programs such as `Syslog` are available to log half-open SYN flag scan attempts. At times, the probe packets enabled with TCP flags can pass through filters undetected, depending on the security mechanisms installed.
+
+All closed ports on the targeted host will send an RST/ACK response. Since OSs such as Windows completely ignore the RFC 793 standard, you cannot see the RST/ACK response when connected to a closed port on the target host. However, this technique is effective when used with UNIX- based OSs.
+
+These types of scan are most effective against hosts using a BSD - derived TCP/IP stack 
+
 ### References
 M3 - CEHv13
