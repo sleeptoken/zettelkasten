@@ -124,7 +124,16 @@ in Zenmap the -PO option is used to perform an IP protocol ping scan.
 ### Port scanning techniques 
 
 ![[Pasted image 20250123103744.png]]
+#### TCP Connect / Full-open Scan
 
+TCP Connect / Full Open Scan is one of the most reliable forms of TCP scanning.
+In TCP connect scanning, the OS's TCP `connect()` system call tries to open a connection to every port of interest on the target system. 
 
+TCP connect scan completes a three way handshake with the target machine
+
+Making a separate `connect()` call for every targeted port in a linear manner would take a long time over a slow connection. The attacker can accelerate the scan using many sockets in parallel. Using non-blocking, I/O allows the attacker to set a short time out period and watch all the sockets simultaneously. 
+
+Note:
+in zenmap, the -sT p[]
 ### References
 M3 - CEHv13
