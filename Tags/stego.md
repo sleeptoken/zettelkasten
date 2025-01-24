@@ -5,5 +5,4 @@
 binwalk -e file.pdf  # extract files 
 ```
 
-
-[Aperi'Solve (aperisolve.com)](https://www.aperisolve.com/) for stego
+[Aperi'Solve (aperisolve.com)](https://www.aperisolve.com/) for stego 

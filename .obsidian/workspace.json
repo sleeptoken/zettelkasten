@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/stego.md",
+                "file": "Tags/JavaScript.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "stego"
+              "title": "JavaScript"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/stego.md"
+                "file": "Tags/JavaScript.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of stego"
+              "title": "Outline of JavaScript"
             }
           }
         ],
@@ -162,8 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "bf7958fe11350c01",
   "lastOpenFiles": [
+    "Regular expression Denial of Service - ReDoS.md",
+    "Scanning and Networks.md",
+    "Tags/JavaScript.md",
+    "Tags/stego.md",
     "Remote Thought/PCAP analysis.md",
     "Tags/Wireshark.md",
     "Remote Thought/Packet logging with tcpdump.md",
@@ -173,11 +177,9 @@
     "Remote Thought/Magic Bytes.md",
     "Tags/png.md",
     "Pem file.md",
-    "Regular expression Denial of Service - ReDoS.md",
     "Tags/regex.md",
     "Tags/Find.md",
     "Remote Thought/Blind Grep & RCE w py.md",
-    "Scanning and Networks.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "Tags/ftp (21 port).md",
@@ -191,8 +193,6 @@
     "Tags/Frida.md",
     "Remote Thought/Active Directory.md",
     "Remote Thought/Azure Key Vault.md",
-    "Remote Thought/CA Certificates.md",
-    "Remote Thought/Phishing Macros.md",
     "Images/Pasted image 20250121152932.png",
     "Images/Pasted image 20250121150849.png",
     "Images/Pasted image 20250121113334.png",
