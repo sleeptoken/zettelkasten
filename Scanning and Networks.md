@@ -184,9 +184,21 @@ Note: In Zenmap, the `-sM` option is used to perform the TCP Maimon scan.
 
 Attackers send TCP probe packets with the ACK flag set to a remote device and then analyze the header information (TTL and WINDOW field) of the received RST packets to find out if the port is open or closed. 
 The ACK flag probe scan exploits the vulnerabilities within the BSD-derived TCP/IP stack. Thus, such scanning is effective only on those OSs and platforms on which the BSD derives TCP/IP stacks.
+
 Categories of ACK flag probe scanning include:
-TTL-Based ACK Flag Probe scanning
-In this scanning technique, you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the TTL field value of the RST packets received. In Zenmap, the syntaxnmap -ttl [time] [target] is used to perform TTL- based scan.
+###### TTL-Based ACK Flag Probe scanning
+
+In this scanning technique, you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the TTL field value of the RST packets received.
+
+Note: In Zenmap, the syntax `nmap -ttl [time] [target]` is used to perform TTL based scan.
+
+If the TTL value of the RST packet on a particular port is less than the boundary value of 64, then that port is open 
+###### Window-based ACK Flag probe scanning 
+
+you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the window field value of the RST packets received. The user can use this scan when all the ports return the same TTL value. 
+
+Note: In zenmap, the `-sW` option is used to perform a window scan.
+
 
 
 ### References
