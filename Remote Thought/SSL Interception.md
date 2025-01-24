@@ -31,7 +31,7 @@ Example `xml/network_security_config.xml` which trusts "user" certificates:
 #### On older Android versions (Android 11 - API level 30)  
 
 The cert might be grayed out. That's because it expects another file format. In that case, you have to follow some basic steps to convert it, and then you can install the ca.
-- take the file on a `linux` machine and run the following 
+- take the file on a `linux` machine and run the following [[Pem files]]
 ```bash
 openssl x509 -inform DER -in cacert.der -out cacert.pem
 ```

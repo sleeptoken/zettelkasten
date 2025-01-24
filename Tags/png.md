@@ -1,0 +1,1 @@
+[PNG (Portable Network Graphics) Specification](http://www.libpng.org/pub/png/spec/1.2/PNG-Contents.html)
