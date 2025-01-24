@@ -7,7 +7,7 @@ Tags:  [[API]]
 ## Recon
 #### Tools: 
 
-- You can use **Burp Scanner** to crawl the application, then manually investigate interesting attack surface.
+- You can use [[burpsuite]] **Burp Scanner** to crawl the application, then manually investigate interesting attack surface.
 - Burp Scanner automatically extracts some endpoints during crawls, but for a more heavyweight extraction, use the **JS Link Finder BApp**.
 - You can use the built-in **HTTP verbs list** in Burp Intruder to automatically cycle through a range of HTTP methods. 
 - You can use the **Content type converter BApp** to automatically convert data submitted within requests between XML and JSON.
