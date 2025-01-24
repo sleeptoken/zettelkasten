@@ -3,7 +3,7 @@
 
 Source: #tryhackme #owasp2021 #web 
 
-Tags:  [[owasp]] [[hashing]] [[JWT]]
+Tags:  [[owasp]] [[hashing]] [[JSON web tokens]]
 
 
 #### Integrity Failure was ranked No.8 on OWASP Top 10 2021

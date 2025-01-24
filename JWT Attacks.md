@@ -3,7 +3,7 @@
 
 Source: 
 
-Tags: [[JWT]]
+Tags: [[JSON web tokens]]
 
 
 
