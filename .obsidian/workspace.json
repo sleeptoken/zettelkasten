@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/PCAP analysis.md",
+                "file": "Tags/stego.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PCAP analysis"
+              "title": "stego"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/PCAP analysis.md"
+                "file": "Tags/stego.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of PCAP analysis"
+              "title": "Outline of stego"
             }
           }
         ],
@@ -162,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bf7958fe11350c01",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Remote Thought/PCAP analysis.md",
     "Tags/Wireshark.md",
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/MQTT.md",
@@ -192,7 +193,6 @@
     "Remote Thought/Azure Key Vault.md",
     "Remote Thought/CA Certificates.md",
     "Remote Thought/Phishing Macros.md",
-    "Remote Thought/URL format bypass.md",
     "Images/Pasted image 20250121152932.png",
     "Images/Pasted image 20250121150849.png",
     "Images/Pasted image 20250121113334.png",
