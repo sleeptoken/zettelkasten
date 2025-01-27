@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Silverpeas CVE's.md",
+                "file": "Weaponize XSS to Privesc.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Silverpeas CVE's"
+              "title": "Weaponize XSS to Privesc"
             }
           }
         ]
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Silverpeas CVE's.md"
+                "file": "Weaponize XSS to Privesc.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Silverpeas CVE's"
+              "title": "Outline of Weaponize XSS to Privesc"
             }
           }
         ],
@@ -151,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 279.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,7 +172,7 @@
     "AWS S3.md",
     "portlets.md",
     "Remote Thought/Game hacking w Frida.md",
-    "Silverpeas CVE's.md",
+    "Weaponize XSS to Privesc.md",
     "Frameworks & basics.md",
     "TLS 1.3 better than TLS 1.2.md",
     "Underpass htb.md",
