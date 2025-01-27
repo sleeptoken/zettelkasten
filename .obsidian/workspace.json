@@ -8,37 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f069b04e377a3f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JWT Attacks.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JWT Attacks"
-            }
-          },
-          {
             "id": "4f19cb9e9ce54237",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS S3.md",
+                "file": "Silverpea CVE's.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS S3"
+              "title": "Silverpea CVE's"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 323.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -155,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS S3.md"
+                "file": "Silverpea CVE's.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of AWS S3"
+              "title": "Outline of Silverpea CVE's"
             }
           }
         ],
@@ -166,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 279.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,6 +167,7 @@
   "active": "4f19cb9e9ce54237",
   "lastOpenFiles": [
     "JWT Attacks.md",
+    "Silverpea CVE's.md",
     "AWS S3.md",
     "Tags/JSON web tokens.md",
     "Remote Thought/Game hacking w Frida.md",
@@ -207,7 +194,6 @@
     "Images/Pasted image 20250123103744.png",
     "Tags/ftp (21 port).md",
     "Tags/TCP.md",
-    "Tags/Screenshot.md",
     "TCP",
     "Images/Pasted image 20250121152932.png",
     "Images/Pasted image 20250121150849.png",

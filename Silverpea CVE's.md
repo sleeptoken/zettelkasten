@@ -1,10 +1,8 @@
 
 2025-01-15 23:29
 
-Source: 
-
-Tags: 
-
+Confirmed Vulnerable Version: 6.3.1 - Linux application 
+### CVE-2023-47324: Stored XSS in Messaging Feature
 
 
 
