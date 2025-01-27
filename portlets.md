@@ -1,0 +1,2 @@
+[Servlets Vs Portlets « Fanatech](https://fanatech.wordpress.com/servlets-vs-portlets/)
+[java - what is the difference between a portlet and a servlet? - Stack Overflow](https://stackoverflow.com/questions/1480528/what-is-the-difference-between-a-portlet-and-a-servlet)
