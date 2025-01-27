@@ -151,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5,
-    "collapsed": true
+    "width": 248.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,13 +165,14 @@
   },
   "active": "4f19cb9e9ce54237",
   "lastOpenFiles": [
+    "Tags/XSS.md",
+    "Weaponize XSS to Privesc.md",
     "Scanning and Networks.md",
     "Regular expression Denial of Service - ReDoS.md",
     "JWT Attacks.md",
     "AWS S3.md",
     "portlets.md",
     "Remote Thought/Game hacking w Frida.md",
-    "Weaponize XSS to Privesc.md",
     "Frameworks & basics.md",
     "TLS 1.3 better than TLS 1.2.md",
     "Underpass htb.md",
@@ -191,7 +191,6 @@
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/MQTT.md",
     "Tags/Pem files.md",
-    "Remote Thought/SSL Interception.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
