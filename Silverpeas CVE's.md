@@ -9,10 +9,10 @@ Confirmed Vulnerable Version: 6.3.1 - Linux application
 
 After logging in as a low privileged user, go to this URL [http://localhost:8080/silverpeas/RjobStartPagePeas/jsp/ActivateMaintenance?allIntranet=1](http://localhost:8080/silverpeas/RjobStartPagePeas/jsp/ActivateMaintenance?allIntranet=1). This places the application in "Maintenance Mode" and makes it unavailable to all users.
 
-##### 2. [CVE-2023-47321: Broken Access Control Allows Attacker to Access Portlet Deployer](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47321)
+#### 2. [CVE-2023-47321: Broken Access Control Allows Attacker to Access Portlet Deployer](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47321)
 
 Silverpeas Core 6.3.1 is vulnerable to Incorrect Access Control via the "Portlet Deployet" which allows administrators to deploy .WAR [[portlets]].
-###### Exploitation 
+##### Exploitation 
 
 To exploit this vulnerability, an authenticated user needs to navigate directly to this URL: [http://localhost:8080/silverpeas/portletDeployer](http://localhost:8080/silverpeas/portletDeployer)
 
@@ -30,10 +30,20 @@ The notification/messaging feature of Silverpeas Core 6.3.1 does not enforce acc
 
 To exploit this vulnerability, an attacker can use a script or Burp Suite Intruder to view all messages by attacking the ID parameter in this URL: `http://localhost:8080/silverpeas/RSILVERMAIL/jsp/ReadMessage.jsp?ID=[messageID] `- the messages begin at "1" and increase in intervals of 1.
 
-4. [CVE-2023-47324: Stored XSS in Messaging Feature](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47324)
-5. [CVE-2023-47325: Broken Access Control on “Bin” Allows Modification by Attacker](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47325)
-6. [CVE-2023-47326: CSRF Leading to Domain Creation](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47326)
-7. [CVE-2023-47327: Broken Access Control Allows Attacker to Create Spaces](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47327)
+#### 5. [CVE-2023-47324: Stored XSS in Messaging Feature](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47324)
+
+The notification/messaging feature of Silverpeas Core 6.3.1 is vulnerable to Stored Cross-Site Scripting (XSS).
+##### Exploitation
+
+To exploit this vulnerability, the following payload can be sent in a message to another user: `<img/src/onerror=prompt(1)>`. When the user opens it, it successfully executes Javascript in the user's browser.
+
+
+1. [CVE-2023-47325: Broken Access Control on “Bin” Allows Modification by Attacker](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47325)
+
+
+
+1. [CVE-2023-47326: CSRF Leading to Domain Creation](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47326)
+2. [CVE-2023-47327: Broken Access Control Allows Attacker to Create Spaces](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47327)
 
 ### References
 https://rhinosecuritylabs.com/research/silverpeas-file-read-cves/
