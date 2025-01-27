@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Silverpea CVE's.md",
+                "file": "Silverpeas CVE's.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Silverpea CVE's"
+              "title": "Silverpeas CVE's"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Silverpea CVE's.md"
+                "file": "Silverpeas CVE's.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Silverpea CVE's"
+              "title": "Outline of Silverpeas CVE's"
             }
           }
         ],
@@ -166,7 +166,7 @@
   "active": "4f19cb9e9ce54237",
   "lastOpenFiles": [
     "portlets.md",
-    "Silverpea CVE's.md",
+    "Silverpeas CVE's.md",
     "Frameworks & basics.md",
     "TLS 1.3 better than TLS 1.2.md",
     "Underpass htb.md",

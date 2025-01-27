@@ -28,7 +28,7 @@ To exploit this vulnerability, an attacker must host `CVE-2023-47322.html` on 
 The notification/messaging feature of Silverpeas Core 6.3.1 does not enforce access control on the ID parameter. This allows an attacker to read all messages sent between other users; including those sent only to administrators.
 ##### Exploitation
 
-To exploit this vulnerability, an attacker can use a script or Burp Suite Intruder to view all messages by attacking the ID parameter in this URL: [http://localhost:8080/silverpeas/RSILVERMAIL/jsp/ReadMessage.jsp?ID=[messageID]](http://localhost:8080/silverpeas/RSILVERMAIL/jsp/ReadMessage.jsp?ID=%5BmessageID%5D) - the messages begin at "1" and increase in intervals of 1.
+To exploit this vulnerability, an attacker can use a script or Burp Suite Intruder to view all messages by attacking the ID parameter in this URL: `http://localhost:8080/silverpeas/RSILVERMAIL/jsp/ReadMessage.jsp?ID=[messageID] `- the messages begin at "1" and increase in intervals of 1.
 
 4. [CVE-2023-47324: Stored XSS in Messaging Feature](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47324)
 5. [CVE-2023-47325: Broken Access Control on “Bin” Allows Modification by Attacker](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47325)
