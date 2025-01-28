@@ -217,7 +217,7 @@ The attacker performs this scan by impersonating another computer via spoofing. 
 
 Note: 
 In Zenmap, the `-sI` option is used to perform an IDLE scan.
-##### UDP Scan
+#### UDP Scan
 
 You can use one ICMP that checks for open or closed ports. If you send a UDP packet to a port without an application bound to it, the IP stack will return an ICMP port unreachable packet.
 If any port returns an ICMP error, it will be closed, leaving the ports that did not answer if they are open or filtered through the firewall.
@@ -228,9 +228,38 @@ UDP scanners interpret lost traffic as open ports.
 
 Note:
 In zenmap, the `-sU` option is used to perform a `UDP` scan
-
-###### UDP RECVFORM() & WRITE() Scanning
+##### UDP RECVFORM() & WRITE() Scanning
 
 Although non-root users cannot read unreachable port errors directly, Linux informs u indirectly when it receives messages.
+
+UDP scan provides port information only. If additional information of the version is needed, the scan must be supplemented with a version detection scan `-sV` or the OS fingerprinting option `-O`.
+
+#### SCTP Scanning
+
+##### SCTP INIT Scanning
+
+Stream Control Transport Protocol is a reliable message oriented transport layer protocol. 
+SCTP is specifically used to perform multi-homing and multi streaming activities.
+
+SCTP INIT is similar to TCP SYN scan, comparatively it is also stealthy and unobtrusive, as it cannot complete SCTP associations, hence making the connection half-open.
+
+- Attackers send INIT chunk to the target host. if the port is listening or open, it sends an acknowledgement as an INIT+ACK chunk
+- If the target is inactive and it is not listening, then it send an acknowledgement as an ABORT chunk
+After several retransmissions, if there is no response, then the port is indicated as a filtered port. 
+The port is also indicated as a filtered port if the target sever responds with an ICMP unreachable exception (type 3, code 0, 1, 2, 3, 9, 10 or 13)
+
+Note:
+in Zen
+
+
+##### SCTP Cookie / ECHO Scanning
+
+
+#### SSDP and List scanning 
+
+
+#### IPv6 Scanning
+
+
 ### References
 M3 - CEHv13
