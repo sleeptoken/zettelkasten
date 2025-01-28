@@ -8,6 +8,7 @@ Source: #AOC24 #web
 - **Private key**: The private key remains secret and is used by the website or server to decrypt the data.
 - **Metadata**: Along with the key, it includes metadata that provides additional information about the certificate holder (the website) and the certificate.
 ### Certificate Authority (CA)?
+
 A CA is a trusted entity that issues certificates
 
 Here is a breakdown of what happens with a certificate:
