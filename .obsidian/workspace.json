@@ -23,7 +23,7 @@
             }
           },
           {
-            "id": "0f62c991c87258de",
+            "id": "c2a97cbdcb1568fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -37,8 +37,7 @@
               "title": "CA Certificates"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/CA Certificates.md"
+                "file": "Tags/Pem files.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of CA Certificates"
+              "title": "Outline of Pem files"
             }
           }
         ],
@@ -180,8 +179,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f62c991c87258de",
+  "active": "4f19cb9e9ce54237",
   "lastOpenFiles": [
+    "Remote Thought/CA Certificates.md",
     "Tags/Pem files.md",
     "Tags/TCP.md",
     "Tags/png.md",
@@ -207,7 +207,6 @@
     "Tags/XSS.md",
     "Regular expression Denial of Service - ReDoS.md",
     "JWT Attacks.md",
-    "AWS S3.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
