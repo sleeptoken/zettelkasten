@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "portlets.md",
+                "file": "JWT Attacks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "portlets"
+              "title": "JWT Attacks"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 323.5,
+    "collapsed": true
   },
   "right": {
     "id": "32d401c624765afb",
@@ -139,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "portlets.md"
+                "file": "JWT Attacks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of portlets"
+              "title": "Outline of JWT Attacks"
             }
           }
         ],
@@ -163,8 +164,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "4142e62528d82536",
   "lastOpenFiles": [
+    "portlets.md",
     "Tags/SSDP.md",
     "Tags/SCTP.md",
     "Remote Thought/Active Directory.md",
@@ -174,7 +176,6 @@
     "Regular expression Denial of Service - ReDoS.md",
     "JWT Attacks.md",
     "AWS S3.md",
-    "portlets.md",
     "Remote Thought/CA Certificates.md",
     "Tags/Pem files.md",
     "Tags/TCP.md",
