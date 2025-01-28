@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/JSON web tokens.md",
+                "file": "JWT Attacks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JSON web tokens"
+              "title": "JWT Attacks"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5,
-    "collapsed": true
+    "width": 323.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -166,12 +165,12 @@
   },
   "active": "4142e62528d82536",
   "lastOpenFiles": [
+    "Tags/JSON web tokens.md",
     "JWT Attacks.md",
     "portlets.md",
     "Tags/SSDP.md",
     "Tags/SCTP.md",
     "Remote Thought/Active Directory.md",
-    "Tags/JSON web tokens.md",
     "Scanning and Networks.md",
     "Tags/nmap.md",
     "Regular expression Denial of Service - ReDoS.md",

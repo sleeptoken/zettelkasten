@@ -1,9 +1,12 @@
 
 2025-01-24 11:59
 
-Source: 
+Source: #portswigger 
 
 Tags: [[JSON web tokens]]
+
+## Exploiting flawed JWT signature verification
+
 
 
 
