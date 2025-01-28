@@ -4,37 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8ac2cea335cc0de0",
+        "id": "844cff17c8ac8609",
         "type": "tabs",
         "children": [
           {
-            "id": "4f19cb9e9ce54237",
+            "id": "6093961f92b5e533",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Pem files.md",
+                "file": "Scanning and Networks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pem files"
-            }
-          },
-          {
-            "id": "c2a97cbdcb1568fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/CA Certificates.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CA Certificates"
+              "title": "Scanning and Networks"
             }
           }
         ]
@@ -155,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Pem files.md"
+                "file": "Scanning and Networks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pem files"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -179,8 +164,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4f19cb9e9ce54237",
+  "active": "6093961f92b5e533",
   "lastOpenFiles": [
+    "Regular expression Denial of Service - ReDoS.md",
+    "JWT Attacks.md",
+    "AWS S3.md",
+    "portlets.md",
     "Remote Thought/CA Certificates.md",
     "Tags/Pem files.md",
     "Tags/TCP.md",
@@ -203,10 +192,6 @@
     "Remote Thought/Atom Red.md",
     "Remote Thought/Chrome dev tools.md",
     "TLS 1.3 better than TLS 1.2.md",
-    "Scanning and Networks.md",
-    "Tags/XSS.md",
-    "Regular expression Denial of Service - ReDoS.md",
-    "JWT Attacks.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",

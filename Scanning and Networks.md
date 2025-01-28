@@ -198,6 +198,11 @@ If the TTL value of the RST packet on a particular port is less than the boundar
 you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the window field value of the RST packets received. The user can use this scan when all the ports return the same TTL value. 
 
 Note: In zenmap, the `-sW` option is used to perform a window scan.
+##### Checking the filtering systems of target networks
+
+Sending an ACK probe packet with a random sequence number and 
+- getting no response from the target - the port is filtered (Stateful firewall is present);
+- an RST response from the target - the port is not filtered (no firewall is present.)
 
 
 
