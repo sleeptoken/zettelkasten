@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Weaponize XSS to Privesc.md",
+                "file": "TLS 1.3 better than TLS 1.2.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weaponize XSS to Privesc"
+              "title": "TLS 1.3 better than TLS 1.2"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5,
-    "collapsed": true
+    "width": 323.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -140,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Weaponize XSS to Privesc.md"
+                "file": "TLS 1.3 better than TLS 1.2.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Weaponize XSS to Privesc"
+              "title": "Outline of TLS 1.3 better than TLS 1.2"
             }
           }
         ],
@@ -165,9 +164,9 @@
   },
   "active": "4f19cb9e9ce54237",
   "lastOpenFiles": [
-    "Tags/XSS.md",
-    "Weaponize XSS to Privesc.md",
     "Scanning and Networks.md",
+    "Remote Thought/Weaponize XSS to Privesc.md",
+    "Tags/XSS.md",
     "Regular expression Denial of Service - ReDoS.md",
     "JWT Attacks.md",
     "AWS S3.md",
