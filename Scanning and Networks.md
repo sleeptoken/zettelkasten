@@ -215,10 +215,12 @@ Every IP packet on the Internet has an "IP identifier" (IPID) that uniquely iden
 
 The attacker performs this scan by impersonating another computer via spoofing. The attacker does not send a packet from their IP address; instead, they use another host, often called a "zombie," to scan the remote host and identify open ports. In this attack, the attacker expects the sequence numbers of the zombie host, and if the remote host checks the IP of the scanning party, the IP of the zombie machine is displayed
 
-
-
-
 Note: 
 In Zenmap, the `-sI` option is used to perform an IDLE scan.
+##### UDP Scan
+
+ 
+
+
 ### References
 M3 - CEHv13
