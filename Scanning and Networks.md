@@ -198,13 +198,27 @@ If the TTL value of the RST packet on a particular port is less than the boundar
 you will first need to send ACK probe packets (several thousands) to different TCP ports and then analyze the window field value of the RST packets received. The user can use this scan when all the ports return the same TTL value. 
 
 Note: In zenmap, the `-sW` option is used to perform a window scan.
-##### Checking the filtering systems of target networks
+###### Checking the filtering systems of target networks
 
 Sending an ACK probe packet with a random sequence number and 
 - getting no response from the target - the port is filtered (Stateful firewall is present);
 - an RST response from the target - the port is not filtered (no firewall is present.)
 
+Note:
+in Zenmap, the `-sA` option is used to perform an ACK flag probe scan
+##### IDLE/ IPID Header scan 
+
+This method can be used to send a spoofed source address to a computer to determine what services are available. 
+
+A machine that receives an unsolicited `SYN | ACK` packet responds with an `RST`. An unsolicited RST is ignored.
+Every IP packet on the Internet has an "IP identifier" (IPID) that uniquely identifies fragments of an original IP datagram. The OS increases the IPID for each packet sent. Thus, probing an IPID reveals to an attacker the number of packets sent since the last probe. 
+
+The attacker performs this scan by impersonating another computer via spoofing. The attacker does not send a packet from their IP address; instead, they use another host, often called a "zombie," to scan the remote host and identify open ports. In this attack, the attacker expects the sequence numbers of the zombie host, and if the remote host checks the IP of the scanning party, the IP of the zombie machine is displayed
 
 
+
+
+Note: 
+In Zenmap, the `-sI` option is used to perform an IDLE scan.
 ### References
 M3 - CEHv13
