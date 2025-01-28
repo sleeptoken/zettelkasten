@@ -219,8 +219,18 @@ Note:
 In Zenmap, the `-sI` option is used to perform an IDLE scan.
 ##### UDP Scan
 
- 
+You can use one ICMP that checks for open or closed ports. If you send a UDP packet to a port without an application bound to it, the IP stack will return an ICMP port unreachable packet.
+If any port returns an ICMP error, it will be closed, leaving the ports that did not answer if they are open or filtered through the firewall.
+##### UDP packets
 
+When you send a packet to a closed UDP port, most of the hosts send an `ICMP_PORT_UNREACH` error. Thus, you can determine whether a port is open if UDP packets or ICMP errors are not guaranteed to arrive. 
+UDP scanners interpret lost traffic as open ports.
 
+Note:
+In zenmap, the `-sU` option is used to perform a `UDP` scan
+
+###### UDP RECVFORM() & WRITE() Scanning
+
+Although non-root users cannot read unreachable port errors directly, Linux informs u indirectly when it receives messages.
 ### References
 M3 - CEHv13
