@@ -239,7 +239,7 @@ UDP scan provides port information only. If additional information of the versio
 ##### SCTP INIT Scanning
 
 Stream Control Transport Protocol is a reliable message oriented transport layer protocol. 
-SCTP is specifically used to perform multi-homing and multi streaming activities.
+[[SCTP]] is specifically used to perform multi-homing and multi streaming activities.
 
 SCTP INIT is similar to TCP SYN scan, comparatively it is also stealthy and unobtrusive, as it cannot complete SCTP associations, hence making the connection half-open.
 
@@ -249,16 +249,40 @@ After several retransmissions, if there is no response, then the port is indicat
 The port is also indicated as a filtered port if the target sever responds with an ICMP unreachable exception (type 3, code 0, 1, 2, 3, 9, 10 or 13)
 
 Note:
-in Zen
-
-
+in Zenmap, the `-sY` option is used to perform the SCTP INIT scan 
 ##### SCTP Cookie / ECHO Scanning
 
+In this type of scan, attackers send the COOKIE ECHO chunk to the target, and 
+- if the target port is open, it will silently drop the packets onto the port and you will not receive any response from the target.
+- If the target sends back the ABORT chunk response, then the port is considered as a closed port.
 
-#### SSDP and List scanning 
+The COOKIE ECHO chunk is not blocked by non-stateful firewall rule sets as in the INIT scan. Only an advanced IDS can detect the SCTP COOKIE ECHO scan
 
+Note:
+In Zenmap, the `-sZ` option is used to perform the SCTP COOKIE ECHO scan.
+#### SSDP scanning 
 
+Simple Service Discovery Protocol ([[SSDP]]) is a network protocol that generally communicates with machines when querying them with routable IPv4 or IPv6 multicast addresses. 
+The SSDP service controls communication for the Universal Plug and Play (UPnP) feature.
+
+It generally works when the machine is not firewalled; however, it can sometimes work through a firewall. 
+The SSDP service will respond to a query sent over IPv4 or IPv6 broadcast addresses. This response includes information about the UPnP feature associated with it. 
+
+The attacker uses SSDP scanning to detect UPnP vulnerabilities that may allow him/her to launch buffer overflow or DoS attacks
+
+The attacker may use the UPnP SSDP M-SEARCH information discovery tool to check whether the machine is vulnerable to UPnP exploits. 
+#### List Scan 
+
+In a list scan, the discovery of the active network host is indirect. A list scan simply generates and prints a list of IPs/Names without actually pinging or scanning the hosts. As a result, the list scan shows all IP addresses as "not scanned" (0 hosts up). By default, a reverse DNS resolution is still carried out on each host by Nmap to learn their names
+
+Note:
+in Zenmap, the `-sL` option is used to perform a list scan
 #### IPv6 Scanning
+
+IPv6 increases the size of the IP address space from 32 bits to 128 bits to support higher levels of the addressing hierarchy. Traditional network scanning techniques are computationally less feasible because of the larger search space (64 bits of host address space, or 264 addresses) provided by IPv6 in a subnet. Scanning the IPv6 network is more difficult and complex compared to IPv4. Additionally, a number of scanning tools do not support ping sweeps on IPv6 networks. [[Ping IPv6 address]]
+
+Note:
+In Zenmap, the `-6` option is used to perform the IPv6 scan.
 
 
 ### References

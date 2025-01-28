@@ -151,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5,
-    "collapsed": true
+    "width": 248.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,6 +165,10 @@
   },
   "active": "6093961f92b5e533",
   "lastOpenFiles": [
+    "Tags/nmap.md",
+    "Scanning and Networks.md",
+    "SCTP.md",
+    "SSDP.md",
     "Regular expression Denial of Service - ReDoS.md",
     "JWT Attacks.md",
     "AWS S3.md",
@@ -188,10 +191,6 @@
     "Tags/Bug Bounty.md",
     "Remote Thought/Detecting sandbox (anti-malware).md",
     "Remote Thought/Remote Connection using pwn.md",
-    "Remote Thought/XML external entity injection.md",
-    "Remote Thought/Atom Red.md",
-    "Remote Thought/Chrome dev tools.md",
-    "TLS 1.3 better than TLS 1.2.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
