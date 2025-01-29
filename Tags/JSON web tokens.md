@@ -17,6 +17,4 @@ If you change the payload, the web application can verify that the signature won
 
 Notice that each of the 3 parts of the token is simply plaintext encoded with base64
 
-
-
 ### References

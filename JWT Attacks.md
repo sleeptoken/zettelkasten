@@ -19,10 +19,16 @@ JWT authentication bypass via unverified signature
 - In the same request change the username form `admin` to `admin/delete?username=carlos` and remember to change the jwt token to suit that of the administrator  
 ### Accepting tokens with no signature
 
-This is inherently flawed because the server has no option but to implicitly trust user-controllable input from the token which, at this point, hasn't been verified at all. In other words, an attacker can directly influence how the server checks whether the token is trustworthy.
+`alg` parameter in the JWT header is inherently flawed because the server has no option but to implicitly trust user-controllable input from the token which, at this point, hasn't been verified at all. In other words, an attacker can directly influence how the server checks whether the token is trustworthy.
 
-JWTs can be signed using a range of different algorithms, but can also be left unsigned. In this case, the `alg` parameter is set to `none`, which indicates a so-called "unsecured JWT". 
+JWTs can be signed using a range of different algorithms, but can also be left unsigned. In this case, the `alg` parameter is set to `none` [[API Testing]], which indicates a so-called "unsecured JWT". 
 Due to the obvious dangers of this, servers usually reject tokens with no signature. However, as this kind of filtering relies on string parsing, you can sometimes bypass these filters using classic obfuscation techniques, such as mixed capitalization and unexpected encodings.
+#### Lab
+
+Follow the same method as in the previous lab but this time change the `alg` parameter from the header to `none`, change the username to `administrator`. In the message editor, remove the signature from the JWT, but remember to leave the trailing dot after the payload.
+## Brute-forcing secret keys
+
+
 
 
 ### References
