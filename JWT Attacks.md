@@ -40,5 +40,6 @@ hashcat -a 0 -m 16500 <jwt> <wordlist>
 [[Hashcat]] signs the header and payload from the JWT using each secret in the wordlist, then compares the resulting signature with the original one from the server.
 
 
+
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
