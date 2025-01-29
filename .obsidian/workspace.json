@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Tags/JSON web tokens.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JWT Attacks"
+              "title": "JSON web tokens"
             }
           }
         ]
@@ -150,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5,
-    "collapsed": true
+    "width": 248.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,8 +164,8 @@
   },
   "active": "4142e62528d82536",
   "lastOpenFiles": [
-    "Tags/JSON web tokens.md",
     "JWT Attacks.md",
+    "Tags/JSON web tokens.md",
     "portlets.md",
     "Tags/SSDP.md",
     "Tags/SCTP.md",
