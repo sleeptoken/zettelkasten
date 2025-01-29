@@ -283,6 +283,25 @@ IPv6 increases the size of the IP address space from 32 bits to 128 bits to supp
 
 Note:
 In Zenmap, the `-6` option is used to perform the IPv6 scan.
+### OS Discovery / Banner Grabbing
+
+Banner grabbing or OS fingerprinting is the method used to determine the OS running on a remote target system.
+
+There are 2 methods for banner grabbing
+1. Spotting the banner while trying to connect to a service, such as an `FTP` site
+2. Downloading the binary file/bin/ls to check the system architecture. 
+
+A more advanced fingerprinting technique depends on stack querying, which transfers the packets to the network host and evaluates them by the reply. The first stack-querying method designed with regard to the TCP mode of communication evaluates the response to connection requests. 
+
+The next method, known as initial sequence number (ISN) analysis, identifies the differences in random number generators found in the TCP stack. 
+ICMP response analysis is another method used to fingerprint an OS. It consists of sending ICMP messages to a remote host and evaluating the reply.
+#### Active Banner Grabbing
+
+Active banner grabbing applies the principle that an OS's IP stack has a unique way of responding to specially crafted TCP packets. This happens because of different interpretations that vendors apply while implementing the TCP/IP stack on a particular OS.
+
+In active banner grabbing, the attacker sends a variety of malformed packets to the remote host, and the responses are compared with a database. Responses from different OSs vary because of differences in TCP/IP stack implementation.
+
+
 
 
 ### References
