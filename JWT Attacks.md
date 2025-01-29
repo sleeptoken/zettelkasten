@@ -28,7 +28,16 @@ Due to the obvious dangers of this, servers usually reject tokens with no signat
 Follow the same method as in the previous lab but this time change the `alg` parameter from the header to `none`, change the username to `administrator`. In the message editor, remove the signature from the JWT, but remember to leave the trailing dot after the payload.
 ## Brute-forcing secret keys
 
+Some signing algorithms, such as HS256 (HMAC + SHA-256), use an arbitrary, standalone string as the secret key. Just like a password, Attackers may be able to create JWTs with any header and payload values they like, then use the key to re-sign the token with a valid signature.
+#### Brute-forcing secret keys using hashcat
 
+You just need a valid, signed JWT from the target server and a wordlist of well-known secrets. You can then run the following command, passing in the JWT and wordlist as arguments:
+
+```
+hashcat -a 0 -m 16500 <jwt> <wordlist>
+```
+
+[[Hashcat]] signs the header and payload from the JWT using each secret in the wordlist, then compares the resulting signature with the original one from the server.
 
 
 ### References
