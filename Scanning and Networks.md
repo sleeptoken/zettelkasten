@@ -299,10 +299,11 @@ ICMP response analysis is another method used to fingerprint an OS. It consists 
 
 Active banner grabbing applies the principle that an OS's IP stack has a unique way of responding to specially crafted TCP packets. This happens because of different interpretations that vendors apply while implementing the TCP/IP stack on a particular OS.
 
-In active banner grabbing, the attacker sends a variety of malformed packets to the remote host, and the responses are compared with a database. Responses from different OSs vary because of differences in TCP/IP stack implementation.
+In active banner grabbing, the attacker sends a variety of malformed packets to the remote host, and the responses are compared with a database. Responses from different OSs vary because of differences in TCP/IP stack implementation. For example, NMAP uses 9 tests to determine an OS fingerprint or banner grabbing. [OS Detection | Nmap Network Scanning](https://nmap.org/book/man-os-detection.html)
+- Windows boxes use a "time-dependent" model in which the ISN is incremented by a fixed amount for each occurrence.
+#### Passive Banner Grabbing
 
-
-
+Like active banner grabbing, passive banner grabbing also depends on the differential implementation of the stack and the various ways in which an OS responds to packets. However, instead of relying on scanning the target host, passive fingerprinting captures packets from the target host via sniffing to study telltale signs that can reveal an OS.
 
 ### References
 M3 - CEHv13
