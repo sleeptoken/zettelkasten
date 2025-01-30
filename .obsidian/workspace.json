@@ -11,10 +11,15 @@
             "id": "eb35d70678910664",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "LFI and crack.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LFI and crack"
             }
           },
           {
@@ -148,9 +153,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "LFI and crack.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of LFI and crack"
             }
           }
         ],
