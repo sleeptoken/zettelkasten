@@ -18,6 +18,7 @@ to login as admin logout and click on `forgot_password`
 
 - Admin portal has input field that exposes files 
 - Get hold of `id_rsa` - remember to do proper directory traversal
+- make sure to give proper permissions  to id_rsa - `chmod 600 id_rsa`
 - Login as user(hacker) from the [[ssh (22 port)]] key we got from  
 ### Privilege Escalation
 
