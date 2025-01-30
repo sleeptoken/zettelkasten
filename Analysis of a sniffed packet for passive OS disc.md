@@ -16,6 +16,7 @@ Fragment Offset: 0
 Differentiated Service Field: 0x00 (DSC, CSO, ECN, NOT-ECT)
 Ack: 0xE3C65D7 Win: 0x7D78 
 ```
+
 According to the four criteria, the following are identified: 
 - TTL: 45 
 - Window Size: 0x7D78 (or 32120 in decimal) 
