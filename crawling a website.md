@@ -3,10 +3,11 @@
 
 Source: #CTF 
 
-Tags: 
-
 if directory busting and subdirectory discovery doesn't show anything interesting then try this
+### Gospider
 
-
+```sh
+gospider -s http://vulnnet.thm -c 10 -d 0 -w -t 10 — robots -a -r -v
+```
 
 ### References
