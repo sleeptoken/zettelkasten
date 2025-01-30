@@ -303,7 +303,21 @@ In active banner grabbing, the attacker sends a variety of malformed packets to 
 - Windows boxes use a "time-dependent" model in which the ISN is incremented by a fixed amount for each occurrence.
 #### Passive Banner Grabbing
 
-Like active banner grabbing, passive banner grabbing also depends on the differential implementation of the stack and the various ways in which an OS responds to packets. However, instead of relying on scanning the target host, passive fingerprinting captures packets from the target host via sniffing to study telltale signs that can reveal an OS.
+Like active banner grabbing, passive banner grabbing also depends on the differential implementation of the stack and the various ways in which an OS responds to packets
+However, instead of relying on scanning the target host, passive fingerprinting captures packets from the target host via sniffing to study telltale signs that can reveal an OS.
+
+passive banner grabbing includes
+1. **Banner grabbing from error messages**: Error messages provide information, such as type of server, type of OS, and SSL. tools used by the target remote system. 
+2. **Sniffing the network traffic**: Capturing and analyzing packets from the target enables an attacker to determine the OS used by the remote system. 
+3. **Banner grabbing from page extensions**: Looking for an extension in the URL may help in determining the application version. For example, `.aspx` => IIS server and Windows platform
+
+The four areas that typically determine the OS are given below:
+- TTL (time to live) of the packets: What does the OS sets as the Time To Live on the outbound packet? 
+- Window Size: What is the Window size set by the OS? 
+- Whether the DF (Don't Fragment) bit is set: Does the OS set the DF bit?
+- TOS (Type of Service): Does the OS set the TOS, and if so, what setting is it?
+
+
 
 ### References
 M3 - CEHv13
