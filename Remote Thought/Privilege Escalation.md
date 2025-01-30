@@ -1,8 +1,6 @@
 
 2024-06-13 15:33
 
-Source: #privesc 
-
 Tags: [[linux]]
 
 All Privilege Escalation are effectively examples of access control violations.
