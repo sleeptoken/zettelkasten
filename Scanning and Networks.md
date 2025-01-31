@@ -323,5 +323,30 @@ Take a look at how to [[Analysis of a sniffed packet for passive OS disc]]
 
 Attackers can identify the OS running on the target machine by looking at the Time To Live (TTL) and TCP window size in the IP header of the first packet in a TCP session. 
 
+Sniff/capture the response generated from the target machine using packet-sniffing tools like Wireshark and observe the TTL and TCP window size fields
+
+The TTL field determines the maximum time that a packet can remain in a network, and the TCP window size determines the length of the packet reported
+
+These values vary among OSs, as described in the following table:
+
+| OS            | TTL | TCP window size            |
+| ------------- | --- | -------------------------- |
+| Linux         | 64  | 5840                       |
+| FreeBSD       | 64  | 65,535                     |
+| OpenBSD       | 255 | 16,384                     |
+| Windows       | 128 | 65,535 bytes to 1 Gigabyte |
+| Cisco Routers | 255 | 4128                       |
+| Solaris       | 255 | 8760                       |
+| AIX           | 255 | 16,384                     |
+### OS disc using nmap 
+
+Note:
+In Zenmap, the `-O` option is used to perform OS discovery.
+
+`smb-os-discovery` is an inbuilt script that can be used for collecting OS information on the target machine through SMB protocol.
+
+IPV6 Fingerprinting 
+The difference between IPV4 and IPV6 fingerprinting is that, IPv6 uses several additional advanced IPv6 specific probes along with a separate IPv6 specific OS detection engine. Nmap send nearly 18 probes in the following order to identify the target OS usign t
+
 ### References
 M3 - CEHv13
