@@ -345,8 +345,21 @@ In Zenmap, the `-O` option is used to perform OS discovery.
 
 `smb-os-discovery` is an inbuilt script that can be used for collecting OS information on the target machine through SMB protocol.
 
-IPV6 Fingerprinting 
-The difference between IPV4 and IPV6 fingerprinting is that, IPv6 uses several additional advanced IPv6 specific probes along with a separate IPv6 specific OS detection engine. Nmap send nearly 18 probes in the following order to identify the target OS usign t
+##### IPV6 Fingerprinting 
+
+The difference between IPV4 and IPV6 fingerprinting is that, IPv6 uses several additional advanced IPv6 specific probes along with a separate IPv6 specific OS detection engine. Nmap send nearly 18 probes  to identify the target OS using the IPv6 fingerprinting method
+
+In Zenmap, the `-6` along with the `-O` option is used to perform OS disc using IPv6 Fingerprinting method.
+##### Automation
+
+The following bash script is designed to automate network scanning efforts on the target IP range 10.10.1.0/24:
+```
+#!/bin/bash 
+nmap -sP 10.10.1.0/24 -OG | awk '/Up$/{print $2}' > live_hosts.txt && 
+nmap -il live_hosts.txt -SV -OA scan_results && 
+cat scan_results.nmap
+```
+
 
 ### References
 M3 - CEHv13
