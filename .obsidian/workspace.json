@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "LFI and crack"
             }
-          },
-          {
-            "id": "588536bbdd4e26f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/crawling a website.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "crawling a website"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tags/XSS.md",
+                "file": "LFI and crack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +114,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for XSS"
+              "title": "Backlinks for LFI and crack"
             }
           },
           {
@@ -148,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "LFI and crack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from crawling a website"
+              "title": "Outgoing links from LFI and crack"
             }
           },
           {
@@ -177,17 +152,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "LFI and crack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of crawling a website"
+              "title": "Outline of LFI and crack"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -203,13 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba2d209036744181",
+  "active": "d68586e74cb14541",
   "lastOpenFiles": [
+    "Remote Thought/crawling a website.md",
     "LFI and crack.md",
     "Apache velocity cve.md",
     "Tags/LFI.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
-    "Remote Thought/crawling a website.md",
     "Remote Thought/Tools for CTFs.md",
     "Analysis of a sniffed packet for passive OS disc.md",
     "Directory busting.md",
