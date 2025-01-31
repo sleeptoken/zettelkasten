@@ -317,7 +317,11 @@ The four areas that typically determine the OS are given below:
 - Whether the DF (Don't Fragment) bit is set: Does the OS set the DF bit?
 - TOS (Type of Service): Does the OS set the TOS, and if so, what setting is it?
 
+Take a look at how to [[Analysis of a sniffed packet for passive OS disc]]
 
+##### How to identify target system OS
+
+Attackers can identify the OS running on the target machine by looking at the Time To Live (TTL) and TCP window size in the IP header of the first packet in a TCP session. 
 
 ### References
 M3 - CEHv13
