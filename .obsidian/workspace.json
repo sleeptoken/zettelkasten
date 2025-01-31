@@ -15,11 +15,32 @@
               "state": {
                 "file": "LFI and crack.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "LFI and crack"
+            }
+          },
+          {
+            "id": "ed2165f1f238b697",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.3"
             }
           },
           {
@@ -37,7 +58,8 @@
               "title": "crawling a website"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +78,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "byCreatedTime",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -154,10 +177,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LFI and crack.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LFI and crack"
+              "title": "Outline"
             }
           }
         ],
@@ -177,9 +202,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb35d70678910664",
+  "active": "ed2165f1f238b697",
   "lastOpenFiles": [
+    "Apache velocity cve.md",
     "LFI and crack.md",
+    "Tags/LFI.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/crawling a website.md",
     "Remote Thought/Tools for CTFs.md",
@@ -194,7 +221,6 @@
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Port Forwarding.md",
     "Remote Thought/Disable JavaScript.md",
-    "Apache velocity cve.md",
     "Tags/ffuf.md",
     "Regular expression Denial of Service - ReDoS.md",
     "JWT Attacks.md",
@@ -204,7 +230,6 @@
     "AWS S3.md",
     "Tags/JSON web tokens.md",
     "Tags/Hashcat.md",
-    "Tags/portlets.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
