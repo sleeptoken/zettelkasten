@@ -1,7 +1,7 @@
 
 2024-07-28 20:06
 
-Source: #tryhackme #privesc #CTF 
+Source: #tryhackme #privesc #Boot2root 
 
 Tags:  [[Cryptography]]
 #### Hydra brute force

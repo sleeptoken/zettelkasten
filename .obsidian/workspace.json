@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "22e0997532cc39e0",
+        "id": "be8ec00b73fdac64",
         "type": "tabs",
         "children": [
           {
-            "id": "eb35d70678910664",
+            "id": "884a73ebee25942f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Port frwd & cmd injection.md",
+                "file": "Directory busting.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Port frwd & cmd injection"
-            }
-          },
-          {
-            "id": "e98382cffb15d88e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LFI and crack.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "LFI and crack"
+              "title": "Directory busting"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#CTF",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -130,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LFI and crack.md",
+                "file": "Directory busting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +114,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for LFI and crack"
+              "title": "Backlinks for Directory busting"
             }
           },
           {
@@ -149,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LFI and crack.md",
+                "file": "Directory busting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from LFI and crack"
+              "title": "Outgoing links from Directory busting"
             }
           },
           {
@@ -178,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LFI and crack.md",
+                "file": "Directory busting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LFI and crack"
+              "title": "Outline of Directory busting"
             }
           }
         ],
@@ -192,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5
+    "width": 257.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,12 +178,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e98382cffb15d88e",
+  "active": "884a73ebee25942f",
   "lastOpenFiles": [
-    "Remote Thought/Port frwd & cmd injection.md",
     "LFI and crack.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
+    "Underpass htb.md",
+    "Remote Thought/Sudo Vulnerability.md",
+    "Remote Thought/Sudo cat & JohnTheRipper.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/Ret2Labyrinth.md",
     "Remote Thought/How to Skip Illegal Instructions in Executables.md",
+    "Remote Thought/SSRF & pylib exploit.md",
+    "RCE via SSRF.md",
+    "Remote Thought/Port frwd & cmd injection.md",
+    "Remote Thought/Privilege Escalation.md",
+    "Remote Thought/Pluck Exploit & Depix.md",
     "Remote Thought/Fetching from SQLite as b64.md",
     "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Enlightenment SUID exploit.md",
@@ -224,14 +206,6 @@
     "Tags/LFI.md",
     "Remote Thought/Tools for CTFs.md",
     "Analysis of a sniffed packet for passive OS disc.md",
-    "Untitled.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Tags/nmap.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
-    "Remote Thought/Port Forwarding.md",
-    "Tags/ffuf.md",
-    "Regular expression Denial of Service - ReDoS.md",
-    "JWT Attacks.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",

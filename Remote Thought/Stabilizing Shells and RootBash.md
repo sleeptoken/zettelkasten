@@ -1,9 +1,10 @@
 
 2024-06-12 19:21
 
-Source: #tryhackme #CTF #privesc 
+Source: #tryhackme #privesc #Boot2root 
 
 Tags: [[shell]] [[linux]] 
+### Foothold
 
 `searchsploit -x path` - use this to see details about the exploit and then configure that exploit according to the current machine
 
@@ -36,7 +37,7 @@ use the above to upgrade the shell using py
 
 when ever you get a [[Tags/revshell]] don't `cd` into dir's instead use `ls` to check out content and then cat out the desired content - because sometimes the machine might take time to change dirs
 #### Privilege escalation 
-\
+
 always run `sudo -l` to check if [[sudo]] entry is available 
 
 if you are `www-data` on a linux machine then you should check sudo for privesc

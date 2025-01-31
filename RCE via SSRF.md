@@ -1,7 +1,7 @@
 
 2024-11-05 20:23
 
-Source: #CTF 
+Source: #Boot2root 
 
 Nmap scan the IP
 Directory Bursting on Website

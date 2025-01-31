@@ -1,7 +1,7 @@
 
 2024-12-24 23:16
 
-Source: #CTF 
+Source: #Boot2root 
 
 Tags: [[SNMP (161 UDP port)]]
 
