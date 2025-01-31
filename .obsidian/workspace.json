@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "ed2165f1f238b697",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.3"
-            }
-          },
-          {
             "id": "588536bbdd4e26f1",
             "type": "leaf",
             "state": {
@@ -51,8 +39,17 @@
               "state": {
                 "file": "Remote Thought/crawling a website.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "crawling a website"
@@ -151,11 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Remote Thought/crawling a website.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from crawling a website"
             }
           },
           {
@@ -165,7 +163,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -177,16 +177,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Remote Thought/crawling a website.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of crawling a website"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -202,10 +203,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed2165f1f238b697",
+  "active": "ba2d209036744181",
   "lastOpenFiles": [
-    "Apache velocity cve.md",
     "LFI and crack.md",
+    "Apache velocity cve.md",
     "Tags/LFI.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
     "Remote Thought/crawling a website.md",
