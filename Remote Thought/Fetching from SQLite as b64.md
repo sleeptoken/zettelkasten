@@ -1,7 +1,7 @@
 
 2024-07-11 20:46
 
-Source: #web #privesc #CTF 
+Source: #web #privesc #Boot2root 
 #### Enumeration 
 ```
 nmap -sCV -v $IP 

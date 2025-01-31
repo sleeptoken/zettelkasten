@@ -266,7 +266,7 @@ $ sudo LD_LIBRARY_PATH=. apache2
 - Cron table files (crontabs) store the configuration for cron jobs
 - User crontabs are usually located in` /var/spool/cron/` or `/var/spool/cron/crontabs/`
 - The system-wide crontab is located at `/etc/crontab`
-Examples of privesc found in [[cron job]]
+Examples of privesc found in [[cronjob]]
 
 - The crontab PATH environment variable is by default set to `/usr/bin:/bin`
 - The PATH variable can be overwritten in the crontab file

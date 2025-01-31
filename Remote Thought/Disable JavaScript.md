@@ -1,7 +1,7 @@
 
 2024-11-03 22:09
 
-Source: #CTF 
+Source: #Boot2root 
 ### Recon
 
 - Nmap scan reveals port 22, 3000 

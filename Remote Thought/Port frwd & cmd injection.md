@@ -1,7 +1,7 @@
 
 2024-08-17 13:23
 
-Source: #htb #CTF #privesc 
+Source: #htb  #privesc #Boot2root 
 ### Reconnaissance 
 
 - `nmap` scan shows `22/tcp ssh` & `80/tcp http`
