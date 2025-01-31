@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scanning and Networks.md",
+                "file": "Remote Thought/API Testing.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Scanning and Networks"
+              "title": "API Testing"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scanning and Networks.md",
+                "file": "Remote Thought/API Testing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Scanning and Networks"
+              "title": "Outline of API Testing"
             }
           }
         ],
@@ -180,9 +180,11 @@
   },
   "active": "8d1bbf32dce39b13",
   "lastOpenFiles": [
+    "JWT Attacks.md",
+    "AWS S3.md",
+    "Scanning and Networks.md",
     "Remote Thought/Analyze AWS logs using JQ.md",
     "Remote Thought/HTTP Request Smuggling.md",
-    "Scanning and Networks.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
     "Remote Thought/LFI and crack.md",
@@ -204,8 +206,6 @@
     "Remote Thought/Disable JavaScript.md",
     "Remote Thought/crawling a website.md",
     "Remote Thought/chamilo exploit & Good privesc.md",
-    "Remote Thought/cronjob.md",
-    "Tags/ssh (22 port).md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",

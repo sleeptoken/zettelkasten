@@ -15,12 +15,12 @@ Tags:  [[API]]
 - the **Backslash Powered Scanner BApp** identifies server-side injection vulnerabilities. The scanner classifies inputs as boring, interesting, or vulnerable. You'll need to investigate interesting inputs using the manual techniques
 #### API Documentation 
 
-Even if API documentation isn't openly available, you may still be able to access it by browsing applications that use the API. To do this, you can use Burp Scanner to crawl the Application.
+Even if API documentation isn't openly available, you may still be able to access it by browsing applications that use the API. To do this, you can use Burp Scanner to [[crawling a website]] 
 
 While browsing the application, look for patterns that suggest API endpoints in the URL structure, such as `/api/`. Also look out for JavaScript files. These can contain references to API endpoints that you haven't triggered directly via the web browser. 
 ##### Interacting with API endpoints
 
-- observe the API's behavior and discover additional attack surface eg. you could investigate how the API responds to changing the HTTP method and media type. 
+- Observe the API's behavior and discover additional attack surface eg. you could investigate how the API responds to changing the HTTP method and media type. 
 - **review error messages and other responses closely.** Sometimes these include information that you can use to construct a valid HTTP request. 
 - **Identifying supported HTTP methods** - GET,POST,OPTIONS etc.
 - **Identifying supported content types** -
@@ -83,7 +83,7 @@ The Strict-Transport-Security header is ignored by the browser when your site is
 
 Cookie Security Flags (HttpOnly)
 And the setting causes cookies to only be transmitted in HTTP request, but cannot be read from javascript. It often is considered a defense against XSS attacks stealing cookies, but it’s rather ineffective. Yes the cookie cannot be stolen, so you as the attacker cannot perform requests as the user, but when you have a XSS, the XSS can just send the requests you want for you. And those requests will be authenticated.
-#### from Internship Notes - 
+#### Internship Notes - 
 
 - X-frame-options : SAMEORIGIN - for clickjacking  
 - X-XSS- protection:1;mode=block- secures from pop ups  
