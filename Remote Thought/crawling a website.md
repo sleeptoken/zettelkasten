@@ -3,7 +3,7 @@
 
 Source: #CTF 
 
-if directory busting and subdirectory discovery doesn't show anything interesting then try this
+If directory busting and subdirectory discovery doesn't show anything interesting then try this
 ### Gospider
 
 ```sh
@@ -17,5 +17,11 @@ pip3 install -r requirements.txt
 python3 linkfinder.py -d -i http://vulnnet.thm/ -o cli
 ```
 Now we use [LinkFinder](https://github.com/GerbenJavado/LinkFinder) to find links in JavaScript files
+
+## How crawlers works 
+
+
+
+
 
 ### References

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d6495d7e09351ec6",
+        "id": "b2f7df9edb72e9b6",
         "type": "tabs",
         "children": [
           {
-            "id": "8d1bbf32dce39b13",
+            "id": "bbee541322951cbc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/API Testing.md",
+                "file": "Remote Thought/crawling a website.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "API Testing"
+              "title": "crawling a website"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/API Testing.md",
+                "file": "Remote Thought/crawling a website.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of API Testing"
+              "title": "Outline of crawling a website"
             }
           }
         ],
@@ -178,34 +178,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d1bbf32dce39b13",
+  "active": "bbee541322951cbc",
   "lastOpenFiles": [
-    "Remote Thought/API Testing.md",
-    "JWT Attacks.md",
-    "AWS S3.md",
+    "Remote Thought/LFI and crack.md",
+    "Remote Thought/crawling a website.md",
     "Scanning and Networks.md",
-    "Remote Thought/Analyze AWS logs using JQ.md",
-    "Remote Thought/HTTP Request Smuggling.md",
+    "Intents and Activities.md",
+    "Underpass htb.md",
+    "TLS 1.3 better than TLS 1.2.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
-    "Remote Thought/LFI and crack.md",
+    "Untitled.md",
+    "DNS Spoofing and Transparent Proxy.md",
+    "Printer Hacking.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "RCE via SSRF.md",
+    "AEM Misconfig.md",
+    "Cast.md",
+    "Apache velocity cve.md",
+    "Frameworks & basics.md",
+    "AWS S3.md",
+    "JWT Attacks.md",
+    "Remote Thought/API Testing.md",
+    "Remote Thought/Analyze AWS logs using JQ.md",
+    "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/Directory busting.md",
-    "Underpass htb.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Remote Thought/Ret2Labyrinth.md",
-    "Remote Thought/How to Skip Illegal Instructions in Executables.md",
-    "Remote Thought/SSRF & pylib exploit.md",
-    "RCE via SSRF.md",
-    "Remote Thought/Port frwd & cmd injection.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
-    "Remote Thought/Fetching from SQLite as b64.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Remote Thought/Enlightenment SUID exploit.md",
-    "Remote Thought/Disable JavaScript.md",
-    "Remote Thought/crawling a website.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
