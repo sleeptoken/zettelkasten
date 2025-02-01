@@ -85,11 +85,11 @@ Cookie Security Flags (HttpOnly)
 And the setting causes cookies to only be transmitted in HTTP request, but cannot be read from javascript. It often is considered a defense against XSS attacks stealing cookies, but it’s rather ineffective. Yes the cookie cannot be stolen, so you as the attacker cannot perform requests as the user, but when you have a XSS, the XSS can just send the requests you want for you. And those requests will be authenticated.
 #### Internship Notes - 
 
-- X-frame-options : SAMEORIGIN - for clickjacking  
-- X-XSS- protection:1;mode=block- secures from pop ups  
-- Strict-transport-security- for enforcing http to https- HSTS  
+- X-frame-options : SAMEORIGIN  -> for clickjacking  
+- X-XSS- protection:1;mode=block  -> secures from pop ups  
+- Strict-transport-security  -> for enforcing http to https- HSTS  
 - Content-security-policy:default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';  
-- Access-Control-Allow-Origin - shouldn't be set to * this means that it allows anybody to send request to that api
+- Access-Control-Allow-Origin  -> shouldn't be set to * this means that it allows anybody to send request to that api
 
 Try using successful login cookies to relogin with wrong creds  
 Line 1 ka get req ko slowly strip down karna by directory and then check kispe kya response aa raha hai
