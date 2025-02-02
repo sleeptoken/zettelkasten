@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "crawling a website"
             }
+          },
+          {
+            "id": "4327d787d66e7b52",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +165,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of crawling a website"
+              "title": "Outline"
             }
           }
         ],
@@ -178,7 +190,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbee541322951cbc",
+  "active": "4327d787d66e7b52",
   "lastOpenFiles": [
     "Remote Thought/LFI and crack.md",
     "Remote Thought/crawling a website.md",
