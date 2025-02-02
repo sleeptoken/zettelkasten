@@ -360,6 +360,12 @@ nmap -il live_hosts.txt -SV -OA scan_results &&
 cat scan_results.nmap
 ```
 
+### Scanning beyond IDS & Firewall
+
+Though Firewalls and IDSs can prevent malicious traffic (packets) from entering a networking, attackers can manage to send intended packets to the target by evading an IDS or firewall through the following techniques:
+
+
+
 
 ### References
 M3 - CEHv13

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "Scanning and Networks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,23 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "crawling a website"
-            }
-          },
-          {
-            "id": "4327d787d66e7b52",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
+              "title": "Scanning and Networks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Scanning and Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -190,17 +178,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4327d787d66e7b52",
+  "active": "bbee541322951cbc",
   "lastOpenFiles": [
-    "Remote Thought/LFI and crack.md",
+    "Regular expression Denial of Service - ReDoS.md",
+    "JWT Attacks.md",
+    "AWS S3.md",
+    "Untitled.md",
     "Remote Thought/crawling a website.md",
+    "Remote Thought/LFI and crack.md",
     "Scanning and Networks.md",
     "Intents and Activities.md",
     "Underpass htb.md",
     "TLS 1.3 better than TLS 1.2.md",
-    "Regular expression Denial of Service - ReDoS.md",
     "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
-    "Untitled.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Printer Hacking.md",
     "Exploiting Chrome Remote Debugger.md",
@@ -209,8 +199,6 @@
     "Cast.md",
     "Apache velocity cve.md",
     "Frameworks & basics.md",
-    "AWS S3.md",
-    "JWT Attacks.md",
     "Remote Thought/API Testing.md",
     "Remote Thought/Analyze AWS logs using JQ.md",
     "Remote Thought/HTTP Request Smuggling.md",

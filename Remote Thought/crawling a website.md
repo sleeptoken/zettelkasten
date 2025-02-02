@@ -25,10 +25,11 @@ Now we use [LinkFinder](https://github.com/GerbenJavado/LinkFinder) to find li
 - when a user searches a keyword, the browser will check if that that keyword exists in the dictionary and if exists then return then show the domain corresponding to the word in the dictionary 
 
 similar words might be used in multiple website, in this case SEO is used to decide the hierarchy for displaying the website 
+There is a lot of complexity in how the various search engines individually "point-score" or rank these domains - including vast algorithms.
 
+[SEO Checkup tool](https://pagespeed.web.dev/)
 
-
-
-
-
+- sitemap of a website is located at `/sitemap.xml`
+- robots.txt of a website is located at `/robots.txt`
 ### References
+[TryHackMe | Google Dorking](https://tryhackme.com/r/room/googledorking)
