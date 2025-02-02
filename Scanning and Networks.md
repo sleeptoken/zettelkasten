@@ -389,7 +389,22 @@ Note:
 SYN/FIN scan using the Zenmap tool.  ->  `nmap -sS -T4 -A -f -v <ip>`
 #### Source Routing 
 
+An IP datagram contains various fields, including the IP options field, which stores source routing information and includes a list of IP addresses through which the packet travels to its destination. 
 
+The routers in the path of a packet hop might include configured firewalls and IDS that block such packets. To avoid them, attackers enforce a loose or strict source routing mechanism, in which they manipulate the IP address path in the IP options field so that the packet takes the attacker-defined path (without firewall-/IDS-configured routers) to reach the destination, thereby evading firewalls and IDS. 
+#### Source Port manipulation
+
+The actual port numbers are manipulated with common port numbers for evading certain IDS and firewall rules. 
+
+The administrator mostly configures the firewall by allowing the incoming traffic from well-known ports such as HTTP, DNS, FTP, etc. The firewall can simply allow the incoming traffic from the packets sent by the attackers using such common ports.
+
+Although the firewalls can be made secure using application-level proxies or protocol-parsing firewall elements, this technique helps the attacker to bypass the firewall rules easily. The attacker tries to manipulate the original port number with the common port numbers, which can easily bypass the IDS/firewall. 
+
+Note:
+In Zenmap, the `-g` or `--source-port` option is used to perform source port manipulation. ->`nmap -g 80 <ip>`
+#### IP address Decoy
+
+The IP address decoy technique refers to generating or manually specifying IP addresses of the decoys to evade IDS/firewalls. It appears to the target that the decoys as well as the host(s) are scanning the network. This technique makes it difficult for the IDS/firewall to determine which IP address is actually scanning the network and which IP addresses are decoys. The Nmap scanning tool comes with a built-in scan function called a decoy scan, which cloaks a scan with decoys. This technique generates multiple IP addresses to perform a scan, thus making it difficult for the target security mechanisms such as IDS, firewalls, etc., to identify the original source from the registered logs. The target IDS might report scanning from 5-0 IP addresses; however, it cannot differentiate between the actual scanning IP address and the innocuous decoy IPS
 
 
 ### References
