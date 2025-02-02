@@ -364,8 +364,23 @@ cat scan_results.nmap
 
 Though Firewalls and IDSs can prevent malicious traffic (packets) from entering a networking, attackers can manage to send intended packets to the target by evading an IDS or firewall through the following techniques:
 
+#### Packet Fragmentation 
 
+Packet fragmentation refers to the splitting of a probe packet into several smaller packets (fragments) while sending it to a network.
 
+**Why**
+When these packets reach a host, the IDS and firewalls behind the host generally queue all of them and process them one by one, the configuration of most IDS cause them to skip fragmented packets during port scans, as this involves greater CPU and network resource consumption.
 
+**How**
+Therefore, attackers use packet fragmentation tools such as Nmap to split the probe packet into smaller packets that circumvent the port-scanning techniques employed by IDS. Once these fragments reach the destined host, they are reassembled to form a single packet. 
+##### SYN/FIN Scanning Using IP Fragments 
+
+SYN/FIN scanning using IP fragments is not a new scanning method but a modification of previous techniques. 
+- The TCP header splits into several packets to evade the packet filter. For any transmission, every TCP header must have the source and destination port for the initial packet (8-octet, 64-bit).
+- The initialized flags in the next packet allow the remote host to reassemble the packets upon receipt via an Internet protocol module that detects the fragmented data packets using field-equivalent values of the source, destination, protocol, and identification.
+
+In this scan, the system splits the TCP header into several fragments and transmits them over the network. However, IP reassembly on the server side may result in unpredictable and abnormal results, such as fragmentation of the IP header data. Some hosts may fail to parse and reassemble the fragmented packets, which may lead to crashes, reboots, or even network device monitoring dumps. 
+Some firewalls might have rule sets that block IP fragmentation queues in the kernel (e.g., CONFIG_IP_ALWAYS_DEFRAG option in the Linux kernel), although this is not widely implemented because of its adverse effects on performance. Since many IDS use signature-based methods to indicate scanning attempts on IP and/or TCP headers, the use of fragmentation will often evade this type of packet filtering and detection, resulting in a high probability of causing problems on the target network. Attackers use the SYN/FIN scanning method with IP fragmentation to evade this type of filtering and detection. 
+The screenshot below shows the SYN/FIN scan using the Zenmap tool.
 ### References
 M3 - CEHv13
