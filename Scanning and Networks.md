@@ -404,7 +404,41 @@ Note:
 In Zenmap, the `-g` or `--source-port` option is used to perform source port manipulation. ->`nmap -g 80 <ip>`
 #### IP address Decoy
 
-The IP address decoy technique refers to generating or manually specifying IP addresses of the decoys to evade IDS/firewalls. It appears to the target that the decoys as well as the host(s) are scanning the network. This technique makes it difficult for the IDS/firewall to determine which IP address is actually scanning the network and which IP addresses are decoys. The Nmap scanning tool comes with a built-in scan function called a decoy scan, which cloaks a scan with decoys. This technique generates multiple IP addresses to perform a scan, thus making it difficult for the target security mechanisms such as IDS, firewalls, etc., to identify the original source from the registered logs. The target IDS might report scanning from 5-0 IP addresses; however, it cannot differentiate between the actual scanning IP address and the innocuous decoy IPS
+The IP address decoy technique refers to generating or manually specifying IP addresses of the decoys to evade IDS/firewalls.
+It appears to the target that the decoys as well as the host(s) are scanning the network. This technique makes it difficult for the IDS/firewall to determine which IP address is actually scanning the network and which IP addresses are decoys. 
+The Nmap scanning tool comes with a built-in scan function called a decoy scan, which cloaks a scan with decoys. 
+##### Decoy scan using nmap
+
+`nmap -D RND:10 10.10.10.01`
+`nmap -D decoy1,decoy2,decoy3,.. <target>`  -  manually specify IP address ,separate each decoy w a comma 
+
+This isn't successful if the target employs active mechanism such as router path tracing, response dropping etc.
+#### IP address spoofing 
+
+Most firewalls filter packets based on the source IP address. These firewalls examine the source IP address and determine whether the packet is coming from a legitimate source or an illegitimate source. 
+
+IP address spoofing is a hijacking technique in which an attacker obtains a computer's IP address, alters the packet headers, and sends request packets to a target machine, pretending to be a legitimate host.
+- The packets appear to be sent from a legitimate machine but are actually sent from the attacker's machine, while his/her machine's IP address is concealed. 
+- When the victim replies to the address, it goes back to the spoofed address and not to the attacker's real address. 
+
+Attackers mostly use IP address spoofing to perform DoS attacks. 
+
+When spoofing a nonexistent address, the target replies to a nonexistent system and then hangs until the session times out, thus consuming a significant amount of its own resources.
+
+Note:
+`Hping3 www.certified.com -a 7.7.7.7` -> you can use Hping3 to perform IP spoofing.
+You will not be able to complete the 3 way handshake and open a successful TCP connection with spoofed IP address.
+#### MAC address spoofing
+
+Network firewalls filter packets based on the source media access control (MAC) address. They examine the MAC address in the packet header using MAC filtering rules and determine whether the packets originate from a legitimate source.
+The MAC address spoofing technique allows attackers to send request packets to the target machine/network, pretending to be a legitimate host. Attackers use the Nmap tool to evade firewalls via MAC address spoofing. 
+
+Attackers use the-spoof-mac Nmap option to choose or set a specific MAC address for packets and send them to the target system/network
+- `nmap -ST-Pn-spoof-mac 0 [Target IP]`
+The above command automatically generates a random MAC address and attaches it to the packets in place of the original MAC address while performing host scanning. Here, `-spoof-mac 0` represents the randomization of the MAC address.
+
+
+
 
 
 ### References
