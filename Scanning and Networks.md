@@ -434,9 +434,9 @@ Network firewalls filter packets based on the source media access control (MAC) 
 The MAC address spoofing technique allows attackers to send request packets to the target machine/network, pretending to be a legitimate host. Attackers use the Nmap tool to evade firewalls via MAC address spoofing. 
 
 Attackers use the-spoof-mac Nmap option to choose or set a specific MAC address for packets and send them to the target system/network
-- `nmap -ST-Pn-spoof-mac 0 [Target IP]`
+- `nmap -ST -Pn --spoof-mac 0 [Target IP]`
 The above command automatically generates a random MAC address and attaches it to the packets in place of the original MAC address while performing host scanning. Here, `-spoof-mac 0` represents the randomization of the MAC address.
-
+#### Creating custom Packet
 
 
 
