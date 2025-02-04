@@ -88,7 +88,5 @@ IoCs are divided into 4 categories:
 
 Extended Diamond model also includes necessary features such as socio-political meta-features to determine the relationship between the adversary and the victim 
 
-
-
 ### References
 CEH v13 M1
