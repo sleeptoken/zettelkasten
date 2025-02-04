@@ -2,6 +2,8 @@
 2025-02-04 11:28
 
 Source: #CTF  
+
+Tags: [[stego]]
 ### Web request dump
 
 Its displays — GET Requests, Path, HTTP version, Status code (404 & 200) & Apache - HTTPCilent Server.
@@ -19,9 +21,12 @@ Replace with the repeated word with empty space you are most likely to get the f
 
 when running strings on the given pdf we find interesting hexadecimal value, So I pasted it into Cyberchef and decoded it with hex; the output gave out a PNG file, save the output file (top right of the output tab)
 and that gives the flag.
+### Analyzing multiple JSON files.
 
-
-
+directly search for what you want
+```sh
+cat * | grep "HQ8"
+```
 
 
 ### References
