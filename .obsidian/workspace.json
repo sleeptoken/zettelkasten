@@ -11,10 +11,24 @@
             "id": "4a9d49e4f0b9be07",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Tags/stego.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "stego"
             }
           },
           {
@@ -23,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Txt dumps.md",
+                "file": "Remote Thought/Txt dumps.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -74,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#CTF",
+                "query": "pdf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Txt dumps.md",
+                "file": "Remote Thought/Txt dumps.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -192,7 +206,13 @@
   },
   "active": "cde41bcb2d56e4d5",
   "lastOpenFiles": [
-    "Txt dumps.md",
+    "Tags/stego.md",
+    "Remote Thought/Sudo cat & JohnTheRipper.md",
+    "Remote Thought/Pluck Exploit & Depix.md",
+    "Tags/Networking.md",
+    "Remote Thought/PHPSESSID & session handler w py.md",
+    "Remote Thought/Footprinting & Reconnaissance.md",
+    "Remote Thought/Txt dumps.md",
     "Printer Hacking.md",
     "DNS Spoofing and Transparent Proxy.md",
     "AEM Misconfig.md",
@@ -212,12 +232,6 @@
     "Remote Thought/crawling a website.md",
     "Remote Thought/LFI and crack.md",
     "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Remote Thought/API Testing.md",
-    "Remote Thought/Analyze AWS logs using JQ.md",
-    "Remote Thought/HTTP Request Smuggling.md",
-    "Remote Thought/Directory busting.md",
-    "Remote Thought/Sudo Vulnerability.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",

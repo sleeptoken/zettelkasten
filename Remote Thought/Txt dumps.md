@@ -10,7 +10,15 @@ Its displays — GET Requests, Path, HTTP version, Status code (404 & 200) &
 > 
 > HTTP 200 means “OK” .
 
-Take all the 200 status codes and replace  
+all the 200 status codes were having user and pass in the URL and the user was changing with every request 
+Joining all the users from the URL we get the flag
+### Repeated words
+
+Replace with the repeated word with empty space you are most likely to get the flag 
+### Hexdump from pdf
+
+when running strings on the given pdf we find interesting hexadecimal value, So I pasted it into Cyberchef and decoded it with hex; the output gave out a PNG file, save the output file (top right of the output tab)
+and that gives the flag.
 
 
 
