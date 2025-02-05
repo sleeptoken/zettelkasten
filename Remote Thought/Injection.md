@@ -3,7 +3,7 @@
 
 Source: #tryhackme #owasp2021 #web 
 
-Tags: [[owasp]]  [[sql]]
+Tags: [[owasp]]  [[SQL injection]]
 
 #### Injection attacks were ranked No. 3 on OWASP Top 10 2021
 

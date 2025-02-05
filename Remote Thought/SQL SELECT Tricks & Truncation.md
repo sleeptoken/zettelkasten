@@ -3,7 +3,7 @@
 
 Source: #natas #web #py 
 
-Tags: [[sql]] [[PHP]]
+Tags: [[SQL injection]] [[PHP]]
 
 > [!NOTE]
 > ### aka SQL Buffer overflow 

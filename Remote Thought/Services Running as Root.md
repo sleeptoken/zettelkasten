@@ -3,8 +3,6 @@
 
 Source: #privesc 
 
-Tags: [[sql]]
-
 Firstly run the linux smart enumeration script to find entry points 
 check the services that can run as root, in the current machine we can connect to `mysql` w/o password and `mysqld` is running as root
 
@@ -18,10 +16,6 @@ exit
 
 /tmp/rootbsah -p
 ```
-
-
-
-
 
 ### References
 [[Privilege Escalation]]
