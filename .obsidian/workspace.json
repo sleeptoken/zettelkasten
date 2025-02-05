@@ -11,10 +11,24 @@
             "id": "28cd28d499e935b4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Scanning and Networks.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Scanning and Networks"
             }
           }
         ]
@@ -138,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stream Cipher.md",
+                "file": "Scanning and Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Stream Cipher"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -164,8 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "28cd28d499e935b4",
   "lastOpenFiles": [
+    "Tags/nmap.md",
     "DNS Spoofing and Transparent Proxy.md",
     "OSCP resources.md",
     "Stream Cipher.md",
@@ -192,7 +207,6 @@
     "Remote Thought/PHPSESSID & session handler w py.md",
     "Remote Thought/Footprinting & Reconnaissance.md",
     "Apache velocity cve.md",
-    "Underpass htb.md",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
