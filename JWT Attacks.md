@@ -73,7 +73,10 @@ A JWK Set is a JSON object containing an array of JWKs representing different ke
 JWK Sets like this are sometimes exposed publicly via a standard endpoint, such as `/.well-known/jwks.json`
 #### Lab
 
-here we have a exploit server here which 
+Here we have a exploit server here, change the Content-Type: 
+
+
+
 
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
