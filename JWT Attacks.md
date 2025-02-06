@@ -39,7 +39,25 @@ hashcat -a 0 -m 16500 <jwt> <wordlist>
 
 [[Hashcat]] signs the header and payload from the JWT using each secret in the wordlist, then compares the resulting signature with the original one from the server.
 
-you can change the jwt token using [JSON Web Tokens - jwt.io](https://jwt.io/)
-or use burp extension - jwt editor
+you can change the JWT token using [JSON Web Tokens - jwt.io](https://jwt.io/)
+or use burp extension - JWT editor
+## JWT header parameter injections
+
+According to the JWS specification, only the `alg` header parameter is mandatory. In practice, however, JWT headers (also known as JOSE headers) often contain several other parameters. The following ones are of particular interest to attackers.
+
+- `jwk` (JSON Web Key) - Provides an embedded JSON object representing the key.
+    
+- `jku` (JSON Web Key Set URL) - Provides a URL from which servers can fetch a set of keys containing the correct key.
+    
+- `kid` (Key ID) - Provides an ID that servers can use to identify the correct key in cases where there are multiple keys to choose from. Depending on the format of the key, this may have a matching `kid` parameter.
+### Injecting self-signed JWTs via the jwk parameter
+
+`jwk` header parameter, which servers can use to embed their public key directly within the token itself in JWK format.
+
+Ideally, servers should only use a limited whitelist of public keys to verify JWT signatures. However, misconfigured servers sometimes use any key that's embedded in the `jwk` parameter.
+
+
+
+
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
