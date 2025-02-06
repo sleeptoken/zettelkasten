@@ -73,10 +73,21 @@ A JWK Set is a JSON object containing an array of JWKs representing different ke
 JWK Sets like this are sometimes exposed publicly via a standard endpoint, such as `/.well-known/jwks.json`
 #### Lab
 
-Here we have a exploit server here, change the Content-Type: 
+Here we have a exploit server here, in the header section change the `Content-Type: application/json`
+we capture the JWT token, it has the `kid` and `alg` parameter set.
+1. Go to the JWT editor tab and click `new RSA key`, directly generate and click `OK` to save the key Note that you don't need to select a key size as this will automatically be updated later.
+2. In the browser, go to the exploit server.
+3. Replace the contents of the **Body** section with an empty JWK Set as follows:
+    `{ "keys": [ ] }`
+4. Back on the **JWT Editor Keys** tab, right-click on the entry for the key that you just generated, then select **Copy Public Key as JWK**.
+5. Paste the JWK into the `keys` array on the exploit server, then store the exploit. 
 
-
-
+in the repeater JSON Web Token tab:
+1. In the header of the JWT, replace the current value of the `kid` parameter with the `kid` of the JWK that you uploaded to the exploit server
+2. Add a new `jku` parameter to the header of the JWT. Set its value to the URL of your JWK Set on the exploit server.
+3. in the payload, change the value of the `sub` claim to `administrator`.
+4. At the bottom of the tab, click **Sign**, then select the RSA key that you generated in the previous section.
+5. Make sure that the **Don't modify header** option is selected, then click **OK**. The modified token is now signed with the correct signature.
 
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
