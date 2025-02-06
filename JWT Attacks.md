@@ -39,7 +39,7 @@ hashcat -a 0 -m 16500 <jwt> <wordlist>
 
 [[Hashcat]] signs the header and payload from the JWT using each secret in the wordlist, then compares the resulting signature with the original one from the server.
 
-
-
+you can change the jwt token using [JSON Web Tokens - jwt.io](https://jwt.io/)
+or use burp extension - jwt editor
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
