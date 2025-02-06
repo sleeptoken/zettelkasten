@@ -56,7 +56,10 @@ According to the JWS specification, only the `alg` header parameter is mandato
 
 Ideally, servers should only use a limited whitelist of public keys to verify JWT signatures. However, misconfigured servers sometimes use any key that's embedded in the `jwk` parameter.
 
+You can also perform this attack manually by adding the `jwk` header yourself. However, you may also need to update the JWT's `kid` header parameter to match the `kid` of the embedded key. The extension's built-in attack takes care of this step for you.
+#### Lab
 
+you get a tojen
 
 
 ### References
