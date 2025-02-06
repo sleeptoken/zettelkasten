@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Remote Thought/crawling a website.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JWT Attacks"
+              "title": "crawling a website"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Remote Thought/crawling a website.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JWT Attacks"
+              "title": "Outline of crawling a website"
             }
           }
         ],
@@ -180,8 +180,8 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
-    "Remote Thought/SSRF.md",
     "JWT Attacks.md",
+    "Remote Thought/SSRF.md",
     "Cheese ctf.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Remote Thought/HTTP Methods.md",
