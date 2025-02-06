@@ -10,3 +10,4 @@ Simply speaking a SSRF is an issue in a website, where you can somehow make a s
 
 ### References
 [TryHackMe | OWASP Top 10 - 2021](https://tryhackme.com/r/room/owasptop102021)
+[What is SSRF (Server-side request forgery)? Tutorial & Examples | Web Security Academy](https://portswigger.net/web-security/ssrf)

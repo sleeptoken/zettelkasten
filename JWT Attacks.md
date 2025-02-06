@@ -59,7 +59,18 @@ Ideally, servers should only use a limited whitelist of public keys to verify JW
 You can also perform this attack manually by adding the `jwk` header yourself. However, you may also need to update the JWT's `kid` header parameter to match the `kid` of the embedded key. The extension's built-in attack takes care of this step for you.
 #### Lab
 
-you get a tojen
+The captured JWT of a normal user has a `kid` parameter and the `alg : RS256` parameter 
+1. Go to the JWT editor tab and click `new RSA key`, directly generate and click `OK` to save the key
+2. Go back to the `GET /admin` request in Burp Repeater and switch to the extension-generated `JSON Web Token` tab.
+3. In the payload, change the value of the `sub` claim to `administrator`.
+4. At the bottom of the **JSON Web Token** tab, click **Attack**, then select **Embedded JWK**. When prompted, select your newly generated RSA key and click **OK**.
+5. In the header of the JWT, observe that a `jwk` parameter has been added containing your public key.
+### Injecting self-signed JWTs via the jku parameter
+
+Instead of embedding public keys directly using the `jwk` header parameter, some servers let you use the `jku` (JWK Set URL) header parameter to reference a JWK Set containing the key. When verifying the signature, the server fetches the relevant key from this URL.
+
+A JWK Set is a JSON object containing an array of JWKs representing different keys.
+JWK Sets like this are sometimes exposed publicly via a standard endpoint, such as `/.well-known/jwks.json`
 
 
 ### References

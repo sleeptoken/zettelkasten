@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 322.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -180,9 +180,10 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
+    "Remote Thought/SSRF.md",
+    "JWT Attacks.md",
     "Cheese ctf.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
-    "JWT Attacks.md",
     "Remote Thought/HTTP Methods.md",
     "Tags/SQL injection.md",
     "Tags/sql.md",
@@ -205,7 +206,6 @@
     "Tags/stego.md",
     "Tags/burpsuite.md",
     "Remote Thought/AWS S3.md",
-    "Remote Thought/Txt dumps.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
