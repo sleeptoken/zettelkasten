@@ -10,13 +10,18 @@ on visiting the IP we find a website and it has a login page
 
 > Try to open images in new tabs and see if directory listing works - try going to a upper directory 
 > sometimes directory listing reveals sensitive information, including version disclosure [[Bug Bounty]]
-### username enum
+### Username enum
 
-you can run burp intruder and try brute forcing the username using this wordlists [[and we find that we get a `302` code for a 
-particular username 
-we can login with that username and a random password 
+- you can run burp intruder and try brute forcing the username using this wordlists [[SQL injection]] and we find that we get a `302` code for a particular username 
+- we can login with that username and a random password 
 
+we could have also used dirsearch and it would have showed us the hidden `messages.html` directly 
 
+the url reads -> `cheese.thm/secret-script/php?file=php://filter/resource=/etc/passwd`
+- appending `/etc/passwd` does confirm directory traversal 
+### LFI 2 RCE - PHP Filter 
+
+since the URL shows php filter in it, we can try this attack using the [python tool](https://github.com/synacktiv/php_filter_chain_generator))
 
 ### References
 [TryHackMe | Cyber Security Training](https://tryhackme.com/room/cheesectfv10)

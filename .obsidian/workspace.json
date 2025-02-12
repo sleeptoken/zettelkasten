@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "username ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,14 +180,14 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
+    "Tags/SQL injection.md",
+    "Cheese ctf.md",
     "JWT Attacks.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
-    "Cheese ctf.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/SQL injection w py.md",
-    "Tags/SQL injection.md",
     "Tags/Bug Bounty.md",
     "Remote Thought/Disable JavaScript.md",
     "Tags/Directory Traversal.md",
