@@ -88,6 +88,18 @@ in the repeater JSON Web Token tab:
 3. in the payload, change the value of the `sub` claim to `administrator`.
 4. At the bottom of the tab, click **Sign**, then select the RSA key that you generated in the previous section.
 5. Make sure that the **Don't modify header** option is selected, then click **OK**. The modified token is now signed with the correct signature.
+### Injecting self-signed JWTs via the kid parameter
 
+Servers may use several cryptographic keys for signing different kinds of data, not just JWTs. For this reason, the header of a JWT may contain a `kid` (Key ID) parameter, which helps the server identify which key to use when verifying the signature.
+
+The JWS specification doesn't define a concrete structure for this ID - it's just an arbitrary string of the developer's choosing. For example, they might use the `kid` parameter to point to a particular entry in a database, or even the name of a file. [[Directory Traversal]]
+
+This is especially dangerous if the server also supports JWTs signed using a [symmetric algorithm](https://portswigger.net/web-security/jwt/algorithm-confusion#symmetric-vs-asymmetric-algorithms). In this case, an attacker could potentially point the `kid` parameter to a predictable, static file, then sign the JWT using a secret that matches the contents of this file.
+
+> You could theoretically do this with any file, but one of the simplest methods is to use `/dev/null`, which is present on most Linux systems. As this is an empty file, reading it returns an empty string. Therefore, signing the token with a empty string will result in a valid signature.
+#### Lab
+
+If you're using the JWT Editor extension, note that this doesn't let you sign tokens using an empty string. However, due to a bug in the extension, you can get around this by using a Base64-encoded null byte.
+ 
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
