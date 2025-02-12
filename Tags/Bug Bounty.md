@@ -1,8 +1,19 @@
+no rate limit in a login page can lead to enumeration
+
+
+
+
+
+
+
+
+
+
+
 
 ### Websites
 
 Find the Latest Bug Bounty Programs below. Programs auto-refresh every 7 mins. https://bbradar.io/ 
-
 
 ### Extension 
 
