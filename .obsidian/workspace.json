@@ -178,9 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b601c2e795ae1e66",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Directory Traversal.md",
+    "Tags/Directory Traversal.md",
     "JWT Attacks.md",
     "Cheese ctf.md",
     "Hijacking OAuth flows via Cookie Tossing.md",

@@ -99,7 +99,26 @@ This is especially dangerous if the server also supports JWTs signed using a [s
 > You could theoretically do this with any file, but one of the simplest methods is to use `/dev/null`, which is present on most Linux systems. As this is an empty file, reading it returns an empty string. Therefore, signing the token with a empty string will result in a valid signature.
 #### Lab
 
-If you're using the JWT Editor extension, note that this doesn't let you sign tokens using an empty string. However, due to a bug in the extension, you can get around this by using a Base64-encoded null byte.
- 
+**TLDR**
+similar to previous labs, instead here u generate a Symmetric key with parameter `K` set to null. then replace the `kid` parameter in repeater to the path traversal `../../../../../../../dev/null` 
+
+1. After capturing the JWT token then change the path to `/admin` 
+2. go to the **JWT Editor Keys** tab in Burp's main tab bar. Click **New Symmetric Key**. Generate a new key in JWK format. Note that you don't need to select a key size as this will automatically be updated later. 
+3. Replace the generated value for the `k` property with a Base64-encoded null byte (`AA==`)
+4. Go to Burp Repeater and switch to the extension-generated **JSON Web Token** message editor tab.
+5. In the header of the JWT, change the value of the `kid` parameter to a path traversal sequence pointing to the `/dev/null` file:
+    `../../../../../../../dev/null`
+6. In the JWT payload, change the value of the `sub` claim to `administrator`.
+7. At the bottom of the tab, click **Sign**, then select the symmetric key that you generated in the previous section.
+
+> If you're using the JWT Editor extension, note that this doesn't let you sign tokens using an empty string. However, due to a bug in the extension, you can get around this by using a Base64-encoded null byte.
+## Other JWT header parameters
+
+- `cty` (Content Type) - Sometimes used to declare a media type for the content in the JWT payload. 
+- This is usually omitted from the header, but the underlying parsing library may support it anyway.
+- If you have found a way to bypass signature verification, you can try injecting a `cty` header to change the content type to `text/xml` or `application/x-java-serialized-object`, which can potentially enable new vectors for [XXE](https://portswigger.net/web-security/xxe) and [deserialization](https://portswigger.net/web-security/deserialization) attacks.
+## Prevention 
+
+
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
