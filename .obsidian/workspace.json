@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Cheese ctf.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JWT Attacks"
+              "title": "Cheese ctf"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Cheese ctf.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JWT Attacks"
+              "title": "Outline of Cheese ctf"
             }
           }
         ],
@@ -178,12 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
-    "Tags/Directory Traversal.md",
-    "JWT Attacks.md",
-    "Cheese ctf.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
+    "JWT Attacks.md",
+    "Tags/Directory Traversal.md",
+    "Cheese ctf.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Scanning and Networks.md",
     "Remote Thought/Txt dumps.md",
