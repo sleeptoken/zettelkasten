@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "Tags/Find.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "crawling a website"
+              "title": "Find"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "Tags/Find.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of crawling a website"
+              "title": "Outline of Find"
             }
           }
         ],
@@ -180,9 +180,14 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
-    "JWT Attacks.md",
-    "Remote Thought/SSRF.md",
+    "Remote Thought/Txt dumps.md",
+    "Scanning and Networks.md",
     "Cheese ctf.md",
+    "JWT Attacks.md",
+    "Regular expression Denial of Service - ReDoS.md",
+    "Remote Thought/run only wget with sudo.md",
+    "Remote Thought/crawling a website.md",
+    "Remote Thought/SSRF.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Remote Thought/HTTP Methods.md",
     "Tags/SQL injection.md",
@@ -190,7 +195,6 @@
     "Remote Thought/Services Running as Root.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/Injection.md",
-    "Scanning and Networks.md",
     "Tags/nmap.md",
     "DNS Spoofing and Transparent Proxy.md",
     "OSCP resources.md",
@@ -202,10 +206,6 @@
     "Intents and Activities.md",
     "Cast.md",
     "TLS 1.3 better than TLS 1.2.md",
-    "Regular expression Denial of Service - ReDoS.md",
-    "Tags/stego.md",
-    "Tags/burpsuite.md",
-    "Remote Thought/AWS S3.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",

@@ -29,12 +29,12 @@ find / -perm -4000 -type f 2>/dev/null
 Finds SUID (Set User ID) files, useful in privilege escalation attempts as it can sometimes be leveraged to execute binary with privileges of its owner (which is often root)
 
 ---
-```
+```sh
 grep -iRl "flag"
+
+grep -R "flag" //recursively search
 ```
 return file names that contain the string "flag" in the content of the file.
-
-
 
 ### References
 [RootMe — TryHackMe CTF Walkthrough | by WiktorDerda | Medium](https://medium.com/@wiktorderda/rootme-tryhackme-ctf-walkthrough-656232b4c901)

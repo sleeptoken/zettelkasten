@@ -27,7 +27,11 @@ directly search for what you want
 ```sh
 cat * | grep "HQ8"
 ```
+### Mirror a website 
 
+```sh
+wget -m https://planet.com
+```
 
 ### References
  
