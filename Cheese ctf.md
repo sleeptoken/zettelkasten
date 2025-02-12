@@ -21,7 +21,12 @@ the url reads -> `cheese.thm/secret-script/php?file=php://filter/resource=/etc/p
 - appending `/etc/passwd` does confirm directory traversal 
 ### LFI 2 RCE - PHP Filter 
 
-since the URL shows php filter in it, we can try this attack using the [python tool](https://github.com/synacktiv/php_filter_chain_generator))
+since the URL shows php filter in it, we can try PHP filter chain attack using the [python tool](https://github.com/synacktiv/php_filter_chain_generator)
+follow the commands in [PHP Filters Chain | Exploit Notes](https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/) -  in order for these to work open a web server `python3 -m http.server 80`
+### www-data to user 
+
+
+
 
 ### References
 [TryHackMe | Cyber Security Training](https://tryhackme.com/room/cheesectfv10)
