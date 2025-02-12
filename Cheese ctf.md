@@ -12,4 +12,4 @@ Tags:
 [TryHackMe | Cyber Security Training](https://tryhackme.com/room/cheesectfv10)
 
 #### walkthrough 
-[Cheese CTF: TryHackMe Walkthrough | by Fardinzindran | Medium](https://medium.com/@fardinzindran/cheese-ctf-tryhackme-walkthrough-a029ff082904)
+[Cheese CTF TryHackMe Walk-through | by Nawaz | Medium](https://medium.com/@nonawaz/tryhackme-cheese-ctf-walkthrough-73c555d94f4a)
