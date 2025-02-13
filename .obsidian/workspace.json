@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheese ctf.md",
+                "file": "PHP filter chain &.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Cheese ctf"
+              "title": "PHP filter chain &"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheese ctf.md",
+                "file": "PHP filter chain &.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cheese ctf"
+              "title": "Outline of PHP filter chain &"
             }
           }
         ],
@@ -181,7 +181,7 @@
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
     "Tags/SQL injection.md",
-    "Cheese ctf.md",
+    "PHP filter chain &.md",
     "JWT Attacks.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Remote Thought/Time based SQL injection w py.md",
