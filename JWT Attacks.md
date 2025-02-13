@@ -119,6 +119,13 @@ similar to previous labs, instead here u generate a Symmetric key with parameter
 - If you have found a way to bypass signature verification, you can try injecting a `cty` header to change the content type to `text/xml` or `application/x-java-serialized-object`, which can potentially enable new vectors for [XXE](https://portswigger.net/web-security/xxe) and [deserialization](https://portswigger.net/web-security/deserialization) attacks.
 ## Prevention 
 
+1. Use an up-to-date library for handling JWTs and make sure your developers fully understand how it works, along with any security implications. 
+2. Make sure that you perform robust signature verification on any JWTs that you receive, and account for edge-cases such as JWTs signed using unexpected algorithms.
+3. Enforce a strict whitelist of permitted hosts for the `jku` header.
+4. Make sure that you're not vulnerable to path traversal or SQL injection via the `kid` header parameter.
+5. Always set an expiration date for any tokens that you issue.
+6. Avoid sending tokens in URL parameters where possible.
+
 
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
