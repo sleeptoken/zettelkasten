@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHP filter chain &.md",
+                "file": "JWT Attacks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PHP filter chain &"
+              "title": "JWT Attacks"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PHP filter chain &.md",
+                "file": "JWT Attacks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of PHP filter chain &"
+              "title": "Outline of JWT Attacks"
             }
           }
         ],
@@ -180,10 +180,10 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
-    "Tags/SQL injection.md",
-    "PHP filter chain &.md",
-    "JWT Attacks.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
+    "Remote Thought/PHP filter chain & ssh-keygen.md",
+    "Tags/SQL injection.md",
+    "JWT Attacks.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",

