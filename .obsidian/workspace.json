@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Remote Thought/JWT Attacks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JWT Attacks.md",
+                "file": "Remote Thought/JWT Attacks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,12 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b601c2e795ae1e66",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
     "Tags/SQL injection.md",
-    "JWT Attacks.md",
+    "Remote Thought/JWT Attacks.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",

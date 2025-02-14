@@ -126,6 +126,5 @@ similar to previous labs, instead here u generate a Symmetric key with parameter
 5. Always set an expiration date for any tokens that you issue.
 6. Avoid sending tokens in URL parameters where possible.
 
-
 ### References
 [JWT attacks | Web Security Academy](https://portswigger.net/web-security/jwt)
