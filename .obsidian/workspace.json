@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Revshell via User-Agent.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Revshell via User-Agent"
+              "title": "Spawning a TTY shell"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Revshell via User-Agent.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Revshell via User-Agent"
+              "title": "Outline of Spawning a TTY shell"
             }
           }
         ],
