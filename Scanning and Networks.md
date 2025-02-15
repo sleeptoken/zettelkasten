@@ -474,7 +474,30 @@ Internet anonymity depends on the number of proxies used for fetching the target
 Proxy tools are intended to allow users to surf the internet anonymously by keeping the IP hidden through a chain of SOCKS or HTTP proxies. Below are the tools - 
 
 [Anonymous Browsing via Proxy Servers with Proxy Switcher](https://www.proxyswitcher.com/)
+### Anonymizers
 
+An anonymizer is an intermediate server placed between an end user and a website that accesses the website on their behalf and makes web surfing activities untraceable. Anonymizers allow users to bypass Internet censorship. An anonymizer eliminates all identifying inform ation (IP address) from the system while surfing the Internet, thereby ensuring privacy. It encrypts the data transferred from a computer to the Internet service provider (ISP). Most anonymizers can anonymize web (HTTP), File Transfer Protocol (FTP), and gopher (gopher) Internet services. 
+#### Networked anonymizers
 
+A networked anonymizer first transfers your information through a network of Internet-connected computers before passing it on to the website. Because the information passes through several Internet computers, it becomes cumbersome for anyone trying to track your information to establish the connection between you and the anonymizer. 
+- Disadvantage: Any multi-node network communication incurs some degree of risk of compromising confidentiality at each node.
+#### Single-Point Anonymizers
+ 
+Single-point anonymizers first transfer your information through a website before sending it to the target website and then pass back the information gathered from the target website to you via the website to protect your identity. 
+- Advantage: Arms-length communication hides the IP address and related identifying information. 
+- Disadvantage: It offers less resistance to sophisticated traffic analysis. 
+
+Anonymizer tools use various techniques such as SSH, VPN, and HTTP proxies, which allow access to blocked or censored content on the Internet with advertisements omitted. 
+##### Whonix 
+
+Source: https://www.whonix.org 
+Whonix is a desktop OS designed for advanced security and privacy. It mitigates the threat of common attack vectors while maintaining usability. Online anonymity is realized via fail-safe, automatic, and desktop-wide use of the Tor network. It consists of a heavily reconfigured Debian base that is run inside multiple virtual machines, providing a substantial layer of protection from malware and IP address leaks.
+
+### Censorship Circumventing tools 
+
+- [Fast, Secure & Anonymous VPN | Astrill VPN](https://www.astrill.com/)
+- [Tails](https://tails.net/)
+
+###
 ### References
 M3 - CEHv13

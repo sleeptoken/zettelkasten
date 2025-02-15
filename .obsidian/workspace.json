@@ -4,40 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "55c68a9c4a7d9b45",
-        "type": "tabs",
-        "dimension": 48.45261121856866,
-        "children": [
-          {
-            "id": "53c3f4f73cff22eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Forward Proxy.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Forward Proxy"
-            }
-          }
-        ]
-      },
-      {
         "id": "10db048ec9764ed7",
         "type": "tabs",
-        "dimension": 51.54738878143134,
         "children": [
           {
             "id": "b601c2e795ae1e66",
