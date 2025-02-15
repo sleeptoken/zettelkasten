@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arch.md",
+                "file": "Revshell via User-Agent.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Arch"
+              "title": "Revshell via User-Agent"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arch.md",
+                "file": "Revshell via User-Agent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Arch"
+              "title": "Outline of Revshell via User-Agent"
             }
           }
         ],
@@ -180,7 +180,7 @@
   },
   "active": "08ea90b2f7a4970b",
   "lastOpenFiles": [
-    "Arch.md",
+    "Revshell via User-Agent.md",
     "Remote Thought/Directory busting.md",
     "Tags/Rustscan.md",
     "Tags/nmap.md",
