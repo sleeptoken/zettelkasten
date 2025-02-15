@@ -469,6 +469,12 @@ In this process, the proxy receives the communication between the client and the
 
 Internet anonymity depends on the number of proxies used for fetching the target application; the larger the number of proxy servers used, the greater is the attacker's anonymity  
 
+**Proxy tools** 
+
+Proxy tools are intended to allow users to surf the internet anonymously by keeping the IP hidden through a chain of SOCKS or HTTP proxies. Below are the tools - 
+
+[Anonymous Browsing via Proxy Servers with Proxy Switcher](https://www.proxyswitcher.com/)
+
 
 ### References
 M3 - CEHv13
