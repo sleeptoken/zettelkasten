@@ -439,7 +439,28 @@ The above command automatically generates a random MAC address and attaches it t
 #### Creating custom Packet
 
 The attacker creates and sends custom TCP packets to scan the intended target beyond the IDS/Firewall 
-various packet crafting tools can be used namely, Colasoft packet builder, NetScanTools Pro etc. Packet crafting tools craft and send packet streams using different protocols at different transfer rates.
+- various packet crafting tools can be used namely, Colasoft packet builder, NetScanTools Pro etc. 
+- Packet crafting tools craft and send packet streams using different protocols at different transfer rates.
+#### Randomizing Host Order 
+
+The attacker scans the number of hosts in the target network in a random order to scan the intended target that is lying beyond the firewall. The option used by Nmap to scan with a random host order is `--randomize-hosts`. 
+
+This technique instructs Nmap to shuffle each group of 16384 hosts before scanning with slow timing options, thus making the scan less notable to network monitoring systems and firewalls. If larger group sizes are randomized, the `PING_GROUP_SZ` should be increased in `nmap.h` and it should be compiled again. 
+
+Another method can be followed by generating the target IP list with the list scan command `-sL -n -oN <filename>` and then randomizing it with a Perl script and providing the whole list to Nmap using the `-iL` command.
+### Sending Bad checksums
+
+The attacker sends packets with bad or bogus TCP/UDP checksums to the intended target to avoid certain firewall rule sets.
+- TCP/UDP checksums are used to ensure data integrity.
+Sending packets with incorrect checksums can help attackers to acquire information from improperly configured systems by checking for any response. 
+- If there is a response, then it is from the IDS or firewall, which did not verify the obtained checksum.
+- If there is no response or the packets are dropped, then it can be inferred that the system is configured. 
+
+Note: 
+This technique instructs Nmap to send packets with invalid TCP, UDP, or SCTP checksums to the target host. The option used by Nmap is `--badsum`
+### Proxy servers
+
+
 
 ### References
 M3 - CEHv13
