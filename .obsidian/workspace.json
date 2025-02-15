@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hijacking OAuth flows via Cookie Tossing.md",
+                "file": "Scanning and Networks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hijacking OAuth flows via Cookie Tossing"
+              "title": "Scanning and Networks"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hijacking OAuth flows via Cookie Tossing.md",
+                "file": "Scanning and Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hijacking OAuth flows via Cookie Tossing"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -180,8 +180,8 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
-    "Scanning and Networks.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
+    "Scanning and Networks.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Frameworks & basics.md",
     "TLS 1.3 better than TLS 1.2.md",

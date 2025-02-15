@@ -438,8 +438,8 @@ Attackers use the-spoof-mac Nmap option to choose or set a specific MAC address 
 The above command automatically generates a random MAC address and attaches it to the packets in place of the original MAC address while performing host scanning. Here, `-spoof-mac 0` represents the randomization of the MAC address.
 #### Creating custom Packet
 
-
-
+The attacker creates and sends custom TCP packets to scan the intended target beyond the IDS/Firewall 
+various packet crafting tools can be used namely, Colasoft packet builder, NetScanTools Pro etc. Packet crafting tools craft and send packet streams using different protocols at different transfer rates.
 
 ### References
 M3 - CEHv13
