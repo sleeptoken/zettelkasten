@@ -180,8 +180,9 @@
   },
   "active": "b601c2e795ae1e66",
   "lastOpenFiles": [
-    "Regular expression Denial of Service - ReDoS.md",
     "Scanning and Networks.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Regular expression Denial of Service - ReDoS.md",
     "Frameworks & basics.md",
     "TLS 1.3 better than TLS 1.2.md",
     "Underpass htb.md",
@@ -190,7 +191,6 @@
     "Printer Hacking.md",
     "Intents and Activities.md",
     "Cast.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
     "Remote Thought/JWT Attacks.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
     "Tags/SQL injection.md",
