@@ -1,7 +1,7 @@
 
 2024-10-09 21:06
 
-Source: #web #htb 
+Source: #web #htb #CTF 
 
 basically we want to access the content behind [[Reverse Proxy]] 
 ### Reconnaissance

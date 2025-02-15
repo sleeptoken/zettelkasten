@@ -6,6 +6,38 @@
       {
         "id": "55c68a9c4a7d9b45",
         "type": "tabs",
+        "dimension": 48.45261121856866,
+        "children": [
+          {
+            "id": "53c3f4f73cff22eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Forward Proxy.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Forward Proxy"
+            }
+          }
+        ]
+      },
+      {
+        "id": "10db048ec9764ed7",
+        "type": "tabs",
+        "dimension": 51.54738878143134,
         "children": [
           {
             "id": "b601c2e795ae1e66",
@@ -88,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5
+    "width": 200
   },
   "right": {
     "id": "32d401c624765afb",
@@ -182,6 +214,7 @@
   "lastOpenFiles": [
     "Remote Thought/Forward Proxy.md",
     "Scanning and Networks.md",
+    "Remote Thought/Apache Proxy Server CVE.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Frameworks & basics.md",
@@ -205,7 +238,6 @@
     "Remote Thought/Txt dumps.md",
     "Remote Thought/HTTP Methods.md",
     "Tags/Find.md",
-    "Remote Thought/run only wget with sudo.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
