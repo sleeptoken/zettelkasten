@@ -549,9 +549,18 @@ The IPID increases incrementally each time a system sends a packet. Every IP pac
 This method is effective even when both the attacker and the target are on the same subnet.
 #### TCP Flow Control
 
-The TCP can optimize the flow control on both the sender's and the receiver's end with its algorithm.
-The algorithm accomplishes flow control using the sliding window principle
-The user can control the flow of IP packets by the window size field in the TCP header. This field represents the maximum amount of data that the recipient can receive and the maximum amount of data that the sender can transmit without acknowledgement. Thus, this field helps to control data flow. The sender should stop sending data whenever the window size is set to zero. In general flow control, the sender should stop sending data once the initial window size is exhausted. The attacker, who is unaware of the ACK packet containing window size information, might continue to send data to the victim. If the victim receives data packets beyond the window size, they are spoofed packets. For effective flow control and early detection of spoofing, the initial window size must be very small. Most spoofing attacks occur during the handshake, as it is challenging to build multiple spoofing replies with the correct sequence number. Therefore, apply the flow control spoofed packet detection method to the handshake. In a TCP handshake, the host sending the initial SYN packet waits for SYN-ACK before sending the ACK packet. To check whether you are getting the SYN request from a genuine client or a spoofed one, set SYN-ACK to zero. If the sender sends an ACK with any data, it means that the sender is a spoofed one. This is because when SYN-ACK is set to zero, the sender must respond to it only with the ACK packet, without additional data
+- The TCP can optimize the flow control on both the sender's and the receiver's end with its algorithm.
+- The algorithm accomplishes flow control using the sliding window principle.
+- The user can control the flow of IP packets by the window size field in the TCP header.
+- This field represents the maximum amount of data that the recipient can receive and the maximum amount of data that the sender can transmit without acknowledgement.
+- Thus, this field helps to control data flow. The sender should stop sending data whenever the window size is set to zero. 
+
+In general flow control, the sender should stop sending data once the initial window size is exhausted. The attacker, who is unaware of the ACK packet containing window size information, might continue to send data to the victim. 
+If the victim receives data packets beyond the window size, they are spoofed packets. 
+
+> For effective flow control and early detection of spoofing, the initial window size must be very small. 
+
+Most spoofing attacks occur during the handshake, as it is challenging to build multiple spoofing replies with the correct sequence number.
 
 ### References
 M3 - CEHv13
