@@ -510,11 +510,24 @@ Whonix is a desktop OS designed for advanced security and privacy. It mitigates 
 1. Configure firewall and IDS rules to detect and block probes and are updated to their latest releases/versions .
 2. Run port scanning tools against hosts on the network to determine whether the firewall properly detects port scanning activity 
 3. Ensure that the mechanisms used for routing and filtering at the routers and firewalls, respectively, cannot be bypassed using a particular source port or source routing methods 
-4. Use a custom rule set to lock down the network and block unwanted ports at the firewall / block unwanted ports
+4. Use a custom rule set to lock down the network and block unwanted ports at the firewall
 5. Filter all ICMP messages (i.e. inbound ICMP message types and outbound ICMP type 3 unreachable messages) at the firewalls and routers 
 6. Perform TCP and UDP scanning along with ICMP probes against your organization's IP address space to check the network configuration and its available ports 
+### Banner Grabbing Countermeasures
 
+#### Disabling or changing banner
 
+1. Display false banners to mislead or deceive attackers 
+2. Turn off unnecessary services on the network host to limit the disclosure of information 
+3. Use server masking tools to disable or change banner information 
+4. For Apache 2.x with the `mod_headers` module, use a directive in the `httpd.conf` file to change the banner information header and set the server as `New Server Name `
+5. Alternatively, change the `ServerSignature` line to `ServerSignatureoff` in the `httpd.conf` file 
+#### Hiding file extensions from web pages 
+
+1. File extensions reveal information about the underlying server technology that an attacker can utilize to launch attacks. It is preferable to not use file extensions at all. 
+2. Replace application mappings such as .asp with.htm or .foo, etc. to disguise the identities of servers 
+3. Apache users can use mod_negotiation directives
+### IP Spoofing detection techniques : Direct TTL Probes
 
 
 
