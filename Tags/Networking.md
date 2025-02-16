@@ -77,6 +77,7 @@ Media Access Control Address
 - Identifies the physical network interface of a host
     - Hexadecimal addressing: `0-F`
     - 48 bits (6 bytes)
+    - The first 3 bytes (24 bits) of the address denote the vendor or manufacturer of the physical network interface.
 In early, primitive networks, computers were often on a shared "media" and needed a way to address each other  
 - On a shared medium, all computers will receive the data
 - Network interfaces _**are supposed to**_ (see promiscuous mode) ignore anything not addressed to them
