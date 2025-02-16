@@ -527,10 +527,27 @@ Whonix is a desktop OS designed for advanced security and privacy. It mitigates 
 1. File extensions reveal information about the underlying server technology that an attacker can utilize to launch attacks. It is preferable to not use file extensions at all. 
 2. Replace application mappings such as .asp with.htm or .foo, etc. to disguise the identities of servers 
 3. Apache users can use mod_negotiation directives
-### IP Spoofing detection techniques : Direct TTL Probes
+### IP Spoofing detection techniques 
 
-In this technique, you initially send a packet (ping request) to the legitimate host and wait for a reply. Check whether the TTL value in the reply matches with that of the packet you are checking. Both will have the same TTL if they are using the same protocol. Although the initial TTL values vary according to the protocol used, a few initial TTL values are commonly used. For TCP/UDP, the values are 64 and 128; for ICMP, they are 128 and 255.
-If the reply is from a different protocol, then you should check the actual hop count to detect the spoofed packets. Deduct the TTL value in the reply from the initial TTL value to determine the hop count. The packet is a spoofed packet if the reply TTL does not match the TTL of the packet. It will be very easy to launch an attack if the attacker knows the hop count between the source and the host. In this case, the test result is a false negative. This technique is successful when the attacker is in a different subnet from that of the victim.
+#### Direct TTL Probes
+
+- In this technique, you initially send a packet (ping request) to the legitimate host and wait for a reply. 
+Check whether the TTL value in the reply matches with that of the packet you are checking. Both will have the same TTL if they are using the same protocol. Although the initial TTL values vary according to the protocol used. For TCP/UDP, the values are 64 and 128; for ICMP, they are 128 and 255.
+
+- If the reply is from a different protocol, then you should check the actual hop count to detect the spoofed packets. 
+The packet is a spoofed packet if the reply TTL does not match the TTL of the packet.
+This technique is successful when the attacker is in a different subnet from that of the victim.
+#### IP Identification number
+
+Users can identify spoofed packets by monitoring the IP identification (IPID) number in the IP packet headers
+The IPID increases incrementally each time a system sends a packet. Every IP packet on the network has a unique "IP identification" number, which is increased by one for every packet transmission.
+
+- To identify whether a packet is spoofed, send a probe packet to the source IP address of the packet and observe the IPID number in the reply. 
+- The IPID value in the response packet must be close to but slightly greater than the IPID value of the probe packet. 
+- The source address of the IP packet is spoofed if the IPID of the response packet is not close to that of the probe packet. 
+
+This method is effective even when both the attacker and the target are on the same subnet.
+
 
 ### References
 M3 - CEHv13
