@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Revshell via User-Agent.md",
+                "file": "Scanning and Networks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Revshell via User-Agent"
+              "title": "Scanning and Networks"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 287.5
   },
   "right": {
     "id": "32d401c624765afb",
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Revshell via User-Agent.md",
+                "file": "Scanning and Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Revshell via User-Agent"
+              "title": "Outline of Scanning and Networks"
             }
           }
         ],
@@ -180,8 +180,8 @@
   },
   "active": "08ea90b2f7a4970b",
   "lastOpenFiles": [
-    "Remote Thought/Spawning a TTY shell.md",
     "Revshell via User-Agent.md",
+    "Remote Thought/Spawning a TTY shell.md",
     "Remote Thought/Directory busting.md",
     "Tags/Rustscan.md",
     "Tags/nmap.md",
