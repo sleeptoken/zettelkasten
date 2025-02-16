@@ -499,22 +499,24 @@ Whonix is a desktop OS designed for advanced security and privacy. It mitigates 
 - [Tails](https://tails.net/)
 ### Ping Sweep Countermeasures
 
-- Configure firewalls to block incoming ICMP echo requests from unknown or untrusted sources 
-- Use intrusion detection systems (IDSes) and intrusion prevention systems (IPSes), such as Snort to detect and prevent ping sweep attempts 
-- Carefully evaluate the type of ICMP traffic flowing through enterprise networks 
-- Terminate the connection with any host sending more than 10 ICMP ECHO requests 
-- Use a  demilitarized zone (DMZ) and allow only commands such as ICMP ECHO_REPLY, HOST UNREACHABLE, and TIME EXCEEDED in the DMZ 
-- Limit ICMP traffic with access-control lists (ACLs) to the ISP's specific IP addresses
+1. Configure firewalls to block incoming ICMP echo requests from unknown or untrusted sources 
+2. Use intrusion detection systems (IDSes) and intrusion prevention systems (IPSes), such as Snort to detect and prevent ping sweep attempts 
+3. Carefully evaluate the type of ICMP traffic flowing through enterprise networks 
+4. Terminate the connection with any host sending more than 10 ICMP ECHO requests 
+5. Use a  demilitarized zone (DMZ) and allow only commands such as ICMP ECHO_REPLY, HOST UNREACHABLE, and TIME EXCEEDED in the DMZ 
+6. Limit ICMP traffic with access-control lists (ACLs) to the ISP's specific IP addresses
 ### Port Scanning Countermeasures 
 
-1 Configure firewall and IDS rules to detect and block probes 
-2 Run port scanning tools against hosts on the network to determine whether the firewall properly detects port scanning activity 
-Ensure that the mechanisms used for routing and 3 filtering at the routers and firewalls, respectively, cannot be bypassed using a particular source port or source routing methods 
-Ensure that the router, IDS, and firewall firmware are 4 updated to their latest releases/versions 
-5 Use a custom rule set to lock down the network and block unwanted ports at the firewall 
-6 Filter all ICMP messages (i.e., inbound ICMP message types and outbound ICMP type 3 unreachable messages) at the firewalls and routers 
-Perform TCP and UDP scanning along with ICMP 7 probes against your organization's IP address space to check the network configuration and its available ports 
-Ensure that anti-scanning and anti-spoofing rules are 8 properly configured
+1. Configure firewall and IDS rules to detect and block probes and are updated to their latest releases/versions .
+2. Run port scanning tools against hosts on the network to determine whether the firewall properly detects port scanning activity 
+3. Ensure that the mechanisms used for routing and filtering at the routers and firewalls, respectively, cannot be bypassed using a particular source port or source routing methods 
+4. Use a custom rule set to lock down the network and block unwanted ports at the firewall / block unwanted ports
+5. Filter all ICMP messages (i.e. inbound ICMP message types and outbound ICMP type 3 unreachable messages) at the firewalls and routers 
+6. Perform TCP and UDP scanning along with ICMP probes against your organization's IP address space to check the network configuration and its available ports 
+
+
+
+
 
 ### References
 M3 - CEHv13
