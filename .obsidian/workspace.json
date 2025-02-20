@@ -8,27 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5fe24a172609af30",
+            "id": "011e1f39158de603",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Scanning and Networks.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Scanning and Networks"
+              "title": "New tab"
             }
           }
         ]
@@ -152,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scanning and Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Scanning and Networks"
+              "title": "Outline"
             }
           }
         ],
@@ -178,11 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5fe24a172609af30",
+  "active": "011e1f39158de603",
   "lastOpenFiles": [
+    "Tags/SFTP (22 Port).md",
+    "Scanning and Networks.md",
     "Revshell via User-Agent.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
-    "Scanning and Networks.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Tags/Networking.md",
     "Remote Thought/Spawning a TTY shell.md",
@@ -205,7 +191,6 @@
     "Remote Thought/PHP filter chain & ssh-keygen.md",
     "Tags/SQL injection.md",
     "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
