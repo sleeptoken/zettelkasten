@@ -11,10 +11,24 @@
             "id": "011e1f39158de603",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Hijacking OAuth flows via Cookie Tossing.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Hijacking OAuth flows via Cookie Tossing"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Hijacking OAuth flows via Cookie Tossing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Hijacking OAuth flows via Cookie Tossing"
             }
           }
         ],
@@ -165,10 +180,10 @@
   },
   "active": "011e1f39158de603",
   "lastOpenFiles": [
-    "Tags/SFTP (22 Port).md",
-    "Scanning and Networks.md",
     "Revshell via User-Agent.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
+    "Tags/SFTP (22 Port).md",
+    "Scanning and Networks.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Tags/Networking.md",
     "Remote Thought/Spawning a TTY shell.md",
