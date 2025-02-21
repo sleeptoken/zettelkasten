@@ -79,7 +79,8 @@ Android documentation definition -
 A parcel is a container for a message that can be sent through IBinder. A parcel can contain flattened data that will be unflattened on the other side of the IPC. So it's similar in concept to an intent. Intents are also just like a message, but they are higher level Java objects. parcels are really low level involved in the actual inter process communication between the different apps. 
 #### Binder
 
-Binder is a kernel driver. It sits deep in the Android operating system. If you access your phone or emulator with ADB and search for anything binder related using
+Binder is a kernel driver. It sits deep in the Android operating system. 
+If you access your phone or emulator with ADB and search for anything binder related using
 ```sh
 find / 2>/dev/null | grep binder
 ```

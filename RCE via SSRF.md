@@ -8,7 +8,7 @@ Directory Bursting on Website
 ### SSRF on /status/index.php
 
 in the captured burp suite request we have an IP field 
-on changing the ip field we get etc/passwd in return 
+on changing the ip field we get `etc/passwd` in return 
 ```
 ip=file:///etc/passwd
 ```
