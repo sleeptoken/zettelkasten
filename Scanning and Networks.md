@@ -44,7 +44,7 @@ Since Nmap uses ARP ping scan as the default ping scan, to disable it and perfor
 #### UDP Ping scan
 
 In UDP ping scan, Nmap sends UDP packets to the target host. The default port number used by [[nmap]] for UDP ping scan is `40,125 `
-UDP ping scans have a advantage of detecting systems behind firewalls with strict TCP filtering, leaving the UDP traffic forgotten. 
+	UDP ping scans have a advantage of detecting systems behind firewalls with strict TCP filtering, leaving the UDP traffic forgotten. 
 
 Note:
 in nmap use `-sU` for UDP scan
