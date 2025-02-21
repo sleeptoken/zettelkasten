@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intents and Activities.md",
+                "file": "Frameworks & basics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Intents and Activities"
+              "title": "Frameworks & basics"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intents and Activities.md",
+                "file": "Frameworks & basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intents and Activities"
+              "title": "Outline of Frameworks & basics"
             }
           }
         ],
@@ -180,6 +180,11 @@
   },
   "active": "2bca554faa4a9d31",
   "lastOpenFiles": [
+    "TLS 1.3 better than TLS 1.2.md",
+    "Underpass htb.md",
+    "Apache velocity cve.md",
+    "Cast.md",
+    "Intents and Activities.md",
     "AEM Misconfig.md",
     "RCE via SSRF.md",
     "Exploiting Chrome Remote Debugger.md",
@@ -201,11 +206,6 @@
     "Tags/SMB shares (445 port).md",
     "Remote Thought/Forward Proxy.md",
     "Remote Thought/Apache Proxy Server CVE.md",
-    "Frameworks & basics.md",
-    "TLS 1.3 better than TLS 1.2.md",
-    "Underpass htb.md",
-    "Apache velocity cve.md",
-    "Intents and Activities.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
