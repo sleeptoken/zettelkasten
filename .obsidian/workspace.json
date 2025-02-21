@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "JWT Attacks"
             }
-          },
-          {
-            "id": "d81ce8797e6e0121",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tags/JSON web tokens.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "JSON web tokens"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/JSON web tokens.md",
+                "file": "Remote Thought/JWT Attacks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JSON web tokens"
+              "title": "Outline of JWT Attacks"
             }
           }
         ],
@@ -203,14 +178,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d81ce8797e6e0121",
+  "active": "2bca554faa4a9d31",
   "lastOpenFiles": [
+    "Tags/File transfer.md",
     "Remote Thought/JWT Attacks.md",
+    "Remote Thought/Pluck Exploit & Depix.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Remote Thought/Freq Analysis.md",
+    "Remote Thought/Directory busting.md",
+    "Remote Thought/LFI and crack.md",
+    "Tags/JSON web tokens.md",
     "Remote Thought/AWS S3.md",
     "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
     "Remote Thought/crawling a website.md",
-    "Remote Thought/Directory busting.md",
-    "Remote Thought/LFI and crack.md",
     "Remote Thought/Txt dumps.md",
     "Remote Thought/HTTP Methods.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
@@ -226,11 +206,6 @@
     "Intents and Activities.md",
     "AEM Misconfig.md",
     "RCE via SSRF.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Printer Hacking.md",
-    "DNS Spoofing and Transparent Proxy.md",
-    "OSCP resources.md",
-    "Stream Cipher.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
