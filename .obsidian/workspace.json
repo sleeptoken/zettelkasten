@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "Remote Thought/JWT Attacks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "crawling a website"
+              "title": "JWT Attacks"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/crawling a website.md",
+                "file": "Remote Thought/JWT Attacks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of crawling a website"
+              "title": "Outline of JWT Attacks"
             }
           }
         ],
@@ -178,8 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2bca554faa4a9d31",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Remote Thought/AWS S3.md",
+    "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
+    "Remote Thought/crawling a website.md",
     "Remote Thought/Directory busting.md",
     "Remote Thought/LFI and crack.md",
     "Remote Thought/Txt dumps.md",
@@ -203,9 +206,6 @@
     "OSCP resources.md",
     "Stream Cipher.md",
     "Tags/SFTP (22 Port).md",
-    "Tags/Networking.md",
-    "Remote Thought/Spawning a TTY shell.md",
-    "Tags/Rustscan.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
