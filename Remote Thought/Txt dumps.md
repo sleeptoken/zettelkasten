@@ -25,7 +25,7 @@ and that gives the flag.
 
 directly search for what you want
 ```sh
-cat * | grep "HQ8"
+cat * | grep "Flag"
 ```
 ### Mirror a website 
 
