@@ -4,7 +4,7 @@
 Source: #CEHv13 
 ## Scanning
 
-purpose if to discover exploitable communication channels, probe as many listeners as possible, and track the ones that are responsive.
+purpose is to discover exploitable communication channels, probe as many listeners as possible, and track the ones that are responsive.
 
 Types of Scanning :
 
