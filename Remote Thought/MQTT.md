@@ -1,7 +1,7 @@
 
 2024-12-28 22:55
 
-Source: #AOC24 
+Source: #AOC24 #hardware
 
 Tags: [[Networking]] [[Wireshark]] [[Hardware]]
 

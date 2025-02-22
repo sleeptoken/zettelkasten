@@ -14,7 +14,7 @@ Tags: [[win]]
 The building blocks of an AD architecture include:
 
 - **Domains**:
-	- Logical groupings of network resources such as users, computers, and services. They serve as the main boundary for AD administration and can be identified by their **D****omain Component and Domain Controller** name. Everything inside a domain is subject to the same security policies and permissions.
+	- Logical groupings of network resources such as users, computers, and services. They serve as the main boundary for AD administration and can be identified by their **Domain Component and Domain Controller** name. Everything inside a domain is subject to the same security policies and permissions.
 - **Organizational Units (OUs)**: 
 	- OUs are containers within a domain that help group objects based on departments, locations or functions for easier management. Administrators can apply Group Policy settings to specific OUs, allowing more granular control of security settings or access permissions.
 - **Forest**: 
