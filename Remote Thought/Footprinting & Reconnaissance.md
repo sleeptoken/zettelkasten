@@ -168,7 +168,7 @@ batch IP converter available at [SABSOFT](http://sabsoft.com/) , provides inform
 IP geolocation lookup tools, such as [IP Address to IP Location and Proxy Information | IP2Location](https://www.ip2location.com/) and `IP Location Finder`
 ### DNS
 
- After collecting the `Whois` records of the target, comes the DNS foot printing part 
+ After collecting the `Whois` records of the target, comes the [[DNS (53 port)]] foot printing part 
 - DNS records provide important information about the location and types of servers 
 
 ![[Pasted image 20250113151440.png]]
