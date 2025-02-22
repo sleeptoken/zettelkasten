@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Wi-Fi crack.md",
+                "file": "Remote Thought/Revshell by Shellcode Injection.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Wi-Fi crack"
+              "title": "Revshell by Shellcode Injection"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Wi-Fi crack.md",
+                "file": "Remote Thought/Revshell by Shellcode Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Wi-Fi crack"
+              "title": "Outline of Revshell by Shellcode Injection"
             }
           }
         ],
@@ -180,32 +180,32 @@
   },
   "active": "2bca554faa4a9d31",
   "lastOpenFiles": [
-    "Remote Thought/WebSocket Message Manipulation.md",
     "Remote Thought/Ping IPv6 address.md",
-    "Remote Thought/CA Certificates.md",
-    "Remote Thought/MQTT.md",
-    "Remote Thought/Active Directory.md",
-    "Remote Thought/Azure Key Vault.md",
-    "Remote Thought/URL format bypass.md",
-    "Remote Thought/Footprinting & Reconnaissance.md",
-    "Tags/DNS (53 port).md",
     "Remote Thought/Weaponize XSS to Privesc.md",
-    "Remote Thought/Game hacking w Frida.md",
-    "Remote Thought/JWT Attacks.md",
-    "Tags/File transfer.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Remote Thought/Freq Analysis.md",
     "Remote Thought/Directory busting.md",
-    "Remote Thought/LFI and crack.md",
-    "Tags/JSON web tokens.md",
-    "Remote Thought/AWS S3.md",
+    "Remote Thought/Netcat w py.md",
+    "Remote Thought/Format String pwn.md",
+    "Remote Thought/Enlightenment SUID exploit.md",
+    "Remote Thought/Magic Bytes.md",
+    "Remote Thought/cronjob.md",
+    "Remote Thought/Clickjacking.md",
+    "Remote Thought/SSRF.md",
+    "Remote Thought/Detecting sandbox (anti-malware).md",
+    "Remote Thought/Footprinting & Reconnaissance.md",
+    "Remote Thought/URL format bypass.md",
+    "Remote Thought/JWT Attacks.md",
+    "Tags/Networking.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Template/Full Note.md",
     "Remote Thought/Analysis of a sniffed packet for passive OS disc.md",
-    "Remote Thought/crawling a website.md",
-    "Remote Thought/Txt dumps.md",
-    "Remote Thought/HTTP Methods.md",
-    "Remote Thought/PHP filter chain & ssh-keygen.md",
-    "Revshell via User-Agent.md",
+    "Remote Thought/LFI and crack.md",
+    "Remote Thought/Path Traversal.md",
+    "Remote Thought/Injection.md",
+    "Remote Thought/CSRF.md",
+    "Remote Thought/Linux Variables and Shell Escape.md",
+    "Remote Thought/API Testing.md",
+    "Remote Thought/Symbolic Link & brute force.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
