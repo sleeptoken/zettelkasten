@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/JWT Attacks.md",
+                "file": "Remote Thought/Footprinting & Reconnaissance.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JWT Attacks"
+              "title": "Footprinting & Reconnaissance"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Directory busting.md",
+                "file": "Remote Thought/Footprinting & Reconnaissance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Directory busting"
+              "title": "Backlinks for Footprinting & Reconnaissance"
             }
           },
           {
@@ -123,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Directory busting.md",
+                "file": "Remote Thought/Footprinting & Reconnaissance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Directory busting"
+              "title": "Outgoing links from Footprinting & Reconnaissance"
             }
           },
           {
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/JWT Attacks.md",
+                "file": "Remote Thought/Footprinting & Reconnaissance.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JWT Attacks"
+              "title": "Outline of Footprinting & Reconnaissance"
             }
           }
         ],
@@ -178,10 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2bca554faa4a9d31",
+  "active": "d68586e74cb14541",
   "lastOpenFiles": [
-    "Tags/File transfer.md",
+    "Remote Thought/Weaponize XSS to Privesc.md",
+    "Remote Thought/Game hacking w Frida.md",
     "Remote Thought/JWT Attacks.md",
+    "Tags/File transfer.md",
     "Remote Thought/Pluck Exploit & Depix.md",
     "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Freq Analysis.md",
@@ -204,8 +206,6 @@
     "Apache velocity cve.md",
     "Cast.md",
     "Intents and Activities.md",
-    "AEM Misconfig.md",
-    "RCE via SSRF.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
