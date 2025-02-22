@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Revshell by Shellcode Injection.md",
+                "file": "Remote Thought/CSRF.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Revshell by Shellcode Injection"
+              "title": "CSRF"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Revshell by Shellcode Injection.md",
+                "file": "Remote Thought/CSRF.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Revshell by Shellcode Injection"
+              "title": "Outline of CSRF"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "2bca554faa4a9d31",
   "lastOpenFiles": [
+    "Remote Thought/Revshell by Shellcode Injection.md",
     "Remote Thought/Ping IPv6 address.md",
     "Remote Thought/Weaponize XSS to Privesc.md",
     "Remote Thought/Directory busting.md",
@@ -205,7 +206,6 @@
     "Remote Thought/Linux Variables and Shell Escape.md",
     "Remote Thought/API Testing.md",
     "Remote Thought/Symbolic Link & brute force.md",
-    "Remote Thought/Format String Vulnerabilities (printf).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
