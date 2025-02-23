@@ -33,7 +33,7 @@ function dumpData($link,$usr){
     return False; 
 } 
 ```
-it will return a number of rows and if it's greater than 0 we have multiple results, so what it does is it does this ==while loop== that it iterates through every single row (this is peculiar right?) because we only expected it to return one result like if there's only one user we're trying to login as a specific user that would probably just be one, but what if we are in the case if there are multiple results if there are multiple rows to look through
+it will return a number of rows and if it's greater than 0 we have multiple results, so what it does is it does this while loop that it iterates through every single row (this is peculiar right?) because we only expected it to return one result like if there's only one user we're trying to login as a specific user that would probably just be one, but what if we are in the case if there are multiple results if there are multiple rows to look through
 
 since the DB described has a 64 varchar size, we create a user named longer than the length that is setup.
 we input a word with spaces that are more than 64 size and append some character in the end

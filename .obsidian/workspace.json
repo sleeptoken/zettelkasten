@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md",
+                "file": "Remote Thought/Authentication and Authorization Bugs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Pluck Exploit & Depix"
+              "title": "Authentication and Authorization Bugs"
+            }
+          },
+          {
+            "id": "0a6a73369ae0a755",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/run only wget with sudo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "run only wget with sudo"
             }
           },
           {
@@ -79,7 +103,8 @@
               "title": "HTTP Request Smuggling"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#portswigger",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -200,13 +225,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Pluck Exploit & Depix.md",
+                "file": "Remote Thought/run only wget with sudo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pluck Exploit & Depix"
+              "title": "Outline of run only wget with sudo"
             }
           }
         ],
@@ -226,34 +251,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f790641d18e5dde7",
+  "active": "0a6a73369ae0a755",
   "lastOpenFiles": [
-    "Remote Thought/Building Android POC app.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
-    "Remote Thought/PHP filter chain & ssh-keygen.md",
-    "Remote Thought/Port frwd & cmd injection.md",
-    "Remote Thought/Port Forwarding.md",
-    "Remote Thought/Special Android Features.md",
-    "Remote Thought/Android Debug Bridge.md",
-    "Remote Thought/How to Skip Illegal Instructions in Executables.md",
-    "Remote Thought/Internet perms & Networking.md",
-    "Remote Thought/Packet logging with tcpdump.md",
-    "Remote Thought/SSL Interception.md",
-    "Remote Thought/HTTP Request Smuggling.md",
-    "Remote Thought/Advanced Interception Tricks.md",
-    "Remote Thought/Reverse Engineering Android apps.md",
-    "Remote Thought/Hypervisors Internals.md",
-    "Remote Thought/Decompiling Android apps.md",
-    "Remote Thought/Authentication vulnerabilities.md",
-    "Remote Thought/Tools for CTFs.md",
-    "Remote Thought/Ruby SSTI.md",
-    "Remote Thought/venv in python.md",
-    "Remote Thought/Dynamic Instrumentation.md",
-    "Remote Thought/Go SSTI.md",
-    "Remote Thought/Apache Proxy Server CVE.md",
-    "Remote Thought/Forward Proxy.md",
-    "Remote Thought/Reverse Proxy.md",
-    "Remote Thought/ChaCha20 Encryption.md",
+    "Remote Thought/overflow buff & overwrite the return address.md",
+    "Remote Thought/Return to Lib-C.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
+    "Remote Thought/Leak PIE & Ret2Lib-C.md",
+    "Remote Thought/Local File Inclusion & Command Injection.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Authentication and Authorization Bugs.md",
+    "Remote Thought/SSRF Misconceptions.md",
+    "Remote Thought/Magic Bytes.md",
+    "Remote Thought/Fetching from SQLite as b64.md",
+    "Remote Thought/Cookie Manipulation.md",
+    "Remote Thought/File Upload vuln. w py.md",
+    "Remote Thought/SameSite cookie.md",
+    "Remote Thought/SQL injection w py.md",
+    "Remote Thought/Linux server forensics.md",
+    "Remote Thought/Blind Grep & RCE w py.md",
+    "Remote Thought/Time based SQL injection w py.md",
+    "Remote Thought/PHPSESSID & session handler w py.md",
+    "Remote Thought/PCAP analysis.md",
+    "Remote Thought/Cross-site Session Hijacking w py.md",
+    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
+    "Remote Thought/Bypassing Referer-based CSRF defenses.md",
+    "Remote Thought/CSRF Token.md",
+    "Remote Thought/Bypassing SameSite restrictions.md",
+    "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
