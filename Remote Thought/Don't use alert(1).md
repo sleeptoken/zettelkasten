@@ -6,7 +6,7 @@ Source: #web
 Tags: [[XSS]] 
 
 advantages of using alert - 
-- alert is a function, that is part of the ` window object`. And the `window object` holds the most critical data an attacker might be  interested in. For example the `localStorage`, which might contain session tokens. Or the  famous `window.document.cookies`
+- alert is a function, that is part of the `window object`. And the `window object` holds the most critical data an attacker might be  interested in. For example the `localStorage`, which might contain session tokens. Or the famous `window.document.cookies`
 
 `alert(document.domain)` - tells on which domain `xss` is actually executed on
 

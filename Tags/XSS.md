@@ -13,7 +13,7 @@ XSS is a vulnerability that allows an attacker to inject malicious scripts into
 Types of XSS- 
 - [[Reflected XSS]]
 - [[Stored XSS]]
-- [[DOM-based XSS]]
+- [[Remote Thought/DOM-based XSS|DOM-based XSS]]
 
 - Various repositories can be consulted to build your custom XSS payload.  [Payload List](https://github.com/payloadbox/xss-payload-list)
 - sometimes, there are filters blocking XSS payloads. If there is a limitation based on the payload length, then [Tiny Payloads](https://github.com/terjanq/Tiny-XSS-Payloads)

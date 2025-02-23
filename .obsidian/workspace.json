@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/run only wget with sudo.md",
+                "file": "Remote Thought/Broken Access Control.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "run only wget with sudo"
+              "title": "Broken Access Control"
             }
           },
           {
@@ -225,13 +225,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/run only wget with sudo.md",
+                "file": "Remote Thought/Broken Access Control.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of run only wget with sudo"
+              "title": "Outline of Broken Access Control"
             }
           }
         ],
@@ -253,32 +253,32 @@
   },
   "active": "0a6a73369ae0a755",
   "lastOpenFiles": [
-    "Remote Thought/overflow buff & overwrite the return address.md",
-    "Remote Thought/Return to Lib-C.md",
-    "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Remote Thought/Leak PIE & Ret2Lib-C.md",
-    "Remote Thought/Local File Inclusion & Command Injection.md",
-    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
-    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Cryptographic Failures.md",
+    "Remote Thought/Broken Access Control.md",
+    "Remote Thought/Flat-file Database.md",
+    "Remote Thought/Appdata storage in windows.md",
+    "Remote Thought/Path Traversal.md",
+    "Remote Thought/LLM attacks.md",
+    "Remote Thought/Injection.md",
+    "Remote Thought/Security configs.md",
+    "Remote Thought/break RSA w public ky.md",
+    "Remote Thought/Insecure Design.md",
+    "Remote Thought/Integrity Failure.md",
+    "Remote Thought/SSRF.md",
+    "Remote Thought/Caesar Cipher.md",
+    "Remote Thought/Reflected XSS.md",
+    "Remote Thought/Stored XSS.md",
+    "Remote Thought/DOM-based XSS.md",
     "Remote Thought/Authentication and Authorization Bugs.md",
-    "Remote Thought/SSRF Misconceptions.md",
-    "Remote Thought/Magic Bytes.md",
-    "Remote Thought/Fetching from SQLite as b64.md",
-    "Remote Thought/Cookie Manipulation.md",
-    "Remote Thought/File Upload vuln. w py.md",
-    "Remote Thought/SameSite cookie.md",
-    "Remote Thought/SQL injection w py.md",
-    "Remote Thought/Linux server forensics.md",
-    "Remote Thought/Blind Grep & RCE w py.md",
-    "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/PHPSESSID & session handler w py.md",
-    "Remote Thought/PCAP analysis.md",
-    "Remote Thought/Cross-site Session Hijacking w py.md",
-    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
-    "Remote Thought/Bypassing Referer-based CSRF defenses.md",
-    "Remote Thought/CSRF Token.md",
-    "Remote Thought/Bypassing SameSite restrictions.md",
-    "Remote Thought/Mastering Traversal & Log based exploits.md",
+    "Tags/XSS.md",
+    "DOM-based XSS 2.md",
+    "DOM-based XSS 1.md",
+    "Remote Thought/Sudo Vulnerability.md",
+    "Remote Thought/Polyalphabetic Ciphers.md",
+    "Remote Thought/Freq Analysis.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
+    "Remote Thought/Spawning a TTY shell.md",
+    "Remote Thought/Privilege Escalation.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
