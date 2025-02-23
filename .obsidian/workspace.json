@@ -8,54 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f790641d18e5dde7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Authentication and Authorization Bugs.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Authentication and Authorization Bugs"
-            }
-          },
-          {
-            "id": "0a6a73369ae0a755",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Broken Access Control.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Broken Access Control"
-            }
-          },
-          {
             "id": "2bca554faa4a9d31",
             "type": "leaf",
             "state": {
@@ -225,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Broken Access Control.md",
+                "file": "Remote Thought/HTTP Request Smuggling.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Broken Access Control"
+              "title": "Outline of HTTP Request Smuggling"
             }
           }
         ],
@@ -251,10 +203,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a6a73369ae0a755",
+  "active": "154206b5c74c30bc",
   "lastOpenFiles": [
-    "Remote Thought/Cryptographic Failures.md",
+    "Remote Thought/Authentication vulnerabilities.md",
+    "Remote Thought/Authentication and Authorization Bugs.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/Broken Access Control.md",
+    "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/Path Traversal.md",
@@ -269,16 +226,11 @@
     "Remote Thought/Reflected XSS.md",
     "Remote Thought/Stored XSS.md",
     "Remote Thought/DOM-based XSS.md",
-    "Remote Thought/Authentication and Authorization Bugs.md",
     "Tags/XSS.md",
     "DOM-based XSS 2.md",
     "DOM-based XSS 1.md",
     "Remote Thought/Sudo Vulnerability.md",
     "Remote Thought/Polyalphabetic Ciphers.md",
-    "Remote Thought/Freq Analysis.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Privilege Escalation.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
