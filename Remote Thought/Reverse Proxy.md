@@ -3,6 +3,8 @@
 
 Source: #web 
 
+nginx is a reverse proxy 
+
   .- - - - - - - - - - - - - - - - - - - - - -.
   |                                                     |
 client                proxy                   sever

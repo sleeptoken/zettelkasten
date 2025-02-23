@@ -2,8 +2,6 @@
 2024-11-03 12:48
 
 Source: #android 
-
-Tags: 
 #### Frida-trace
 
 With Frida Trace you can trace function calls in the application 
