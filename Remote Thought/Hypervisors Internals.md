@@ -18,7 +18,7 @@ Hypervisors are divided into two categories, which define their position (abstra
 - These Hypervisors, also known as hosted Hypervisors, because they run on top of an existing operating system (such as Windows or Linux)
 - Examples of hosted Hypervisors included VirtualBox and VMware Workstation/Player.
 
-### Examples of hypervisors 
+### Examples of Hypervisors 
 #### Hyper-V
 
 - Microsoft's take on virtualization is Hyper-V, which comes in several forms. 
@@ -55,7 +55,7 @@ Adversaries and APT groups are increasingly focusing their efforts on Hypervisor
 
 Hypervisors use virtual CPUs (vCPUs) to virtualize the CPU, which are mapped to the cores available on the physical CPU.
 In modern Hypervisors, a vCPU is not permanently assigned to a core on the physical  CPU. Instead, the Hypervisor will take the instructions coming from the VM and spread these across the physical cores as needed.
-#### Storage  Virtualization
+#### Storage Virtualization
 
 Known as a virtual storage device, a Hypervisor uses virtual disks to create the illusion of a virtual machine having its own physical storage drive. When, in fact, it is sharing the host's physical storage device (such as a hard drive).
 
