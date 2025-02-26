@@ -563,9 +563,9 @@ If the victim receives data packets beyond the window size, they are spoofed pac
 Most spoofing attacks occur during the handshake, as it is challenging to build multiple spoofing replies with the correct sequence number.
 ### IP Spoofing Countermeasures
 
-- Avoid Trust Relationships 
-- Use Firewalls and filtering mechanisms
-- Use Random Initial Sequence number
+- Avoid Trust Relationships - Do not rely on IP-based auth. Test all packets even when they originate from trusted hosts
+- Use Firewalls and filtering mechanisms 
+	- Use Random Initial Sequence number - Initial sequence numbers should not be based on timed counters, this makes it predictable for the attackers 
 - Ingress Filtering
 - Egress Filtering
 - Use Encryption
