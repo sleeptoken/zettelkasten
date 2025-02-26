@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LFI to RCE via log poisoning.md",
+                "file": "Remote Thought/LFI to RCE via log poisoning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LFI to RCE via log poisoning.md",
+                "file": "Remote Thought/LFI to RCE via log poisoning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,7 +178,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ffb02bf2f421fc34",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "RCE via SSRF.md",
     "Printer Hacking.md",
@@ -193,7 +193,7 @@
     "TLS 1.3 better than TLS 1.2.md",
     "Scanning and Networks.md",
     "Regular expression Denial of Service - ReDoS.md",
-    "LFI to RCE via log poisoning.md",
+    "Remote Thought/LFI to RCE via log poisoning.md",
     "Types of API.md",
     "Remote Thought/HTTP Methods.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",

