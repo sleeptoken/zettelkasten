@@ -561,6 +561,17 @@ If the victim receives data packets beyond the window size, they are spoofed pac
 > For effective flow control and early detection of spoofing, the initial window size must be very small. 
 
 Most spoofing attacks occur during the handshake, as it is challenging to build multiple spoofing replies with the correct sequence number.
+### IP Spoofing Countermeasures
+
+- Avoid Trust Relationships 
+- Use Firewalls and filtering mechanisms
+- Use Random Initial Sequence number
+- Ingress Filtering
+- Egress Filtering
+- Use Encryption
+- SYN Flooding Countermeasures
+
+
 
 ### References
 M3 - CEHv13
