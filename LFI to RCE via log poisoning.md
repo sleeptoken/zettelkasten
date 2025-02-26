@@ -36,7 +36,7 @@ curl -s http://mafialive.thm/test.php?view=php://filter/convert.base64-encode/re
 
 above URL returns a base64 encoded string, decoding the string reveals code of `test.php`
 
-
+From the access logs it can be seen that along with the path that we are trying to access our User-Agent is also getting logged. We can add a PHP code in the User-Agent header using Burp Suite and with the help of that gain a reverse shell.
 
 
 
