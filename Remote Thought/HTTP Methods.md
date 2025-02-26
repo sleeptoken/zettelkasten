@@ -1,8 +1,6 @@
 
 2025-02-04 12:41
 
-Source: 
-
 Tags: [[burpsuite]]
 ### PATCH
 
