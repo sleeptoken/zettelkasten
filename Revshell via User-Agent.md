@@ -20,6 +20,30 @@ echo "10.10.93.69 mafialive.thm" | sudo tee -a /etc/hosts
 dirsearch finds a `robots.txt`, the `robots.txt` tells us that `test.php` is disallowed for robots to crawl
 
 On `test.php` page, we can't see much except a button which when clicked prints "Control is an illusion". But if we see closely, then when we click on the button the parameter `?view=/var/www/html/development_testing/mrrobot.php` gets added to the URL. The entire path of the page `mrrobot.php` is provided over here which appears to be a bit odd because normally relative paths can be used.
+### Gaining access
+
+Unfortunately, it seems we can’t read the code in `test.php`, probably due to a protection in the script.
+
+However, if we try to include other files, e.g. `/etc/passwd`, we will get an error saying: ‘Sorry, That's not allowed’. To understand the code logic that filters out certain inputs, we can use PHP wrappers to include the source code of the page as base64 encoded text, then decode it. Info on PHP wrappers that can be used for LFI/RFI [https://book.hacktricks.xyz/pentesting-web/file-inclusion#lfi-rfi-using-php-wrappers](https://book.hacktricks.xyz/pentesting-web/file-inclusion#lfi-rfi-using-php-wrappers)
+
+```sh
+http://***DOMAIN***.thm/***PAGE***?view=php://filter/convert.base64-encode/resource=/var/www/html/development_testing/***PAGE***
+```
+
+```sh
+curl -s http://mafialive.thm/test.php?view=php://filter/convert.base64-encode/resource=/var/www/html/development_testing/test.php
+```
+
+above URL returns a base64 encoded string, decoding the string reveals code of `test.php`
+
+
+
+
+
+
+
+
+
 ### References
 [TryHackMe | Cyber Security Training](https://tryhackme.com/room/archangel)
 
