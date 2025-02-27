@@ -565,11 +565,11 @@ Most spoofing attacks occur during the handshake, as it is challenging to build 
 
 - Avoid Trust Relationships - Do not rely on IP-based auth. Test all packets even when they originate from trusted hosts
 - Use Firewalls and filtering mechanisms 
-	- Use Random Initial Sequence number - Initial sequence numbers should not be based on timed counters, this makes it predictable for the attackers 
-- Ingress Filtering
-- Egress Filtering
-- Use Encryption
-- SYN Flooding Countermeasures
+- Use Random Initial Sequence number - Initial sequence numbers should not be based on timed counters, this makes it predictable for the attackers 
+- Ingress Filtering - enhances the functionality of the routers and blocks spoofed traffic 
+- Egress Filtering - blocking outgoing packets with a source address from the outside
+- Use Encryption 
+- SYN Flooding Countermeasures - Against SYN flooding attacks 
 
 
 
