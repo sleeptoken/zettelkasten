@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploiting Chrome Remote Debugger.md",
+                "file": "RCE via SSRF.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Exploiting Chrome Remote Debugger"
+              "title": "RCE via SSRF"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploiting Chrome Remote Debugger.md",
+                "file": "RCE via SSRF.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Exploiting Chrome Remote Debugger"
+              "title": "Outline of RCE via SSRF"
             }
           }
         ],
@@ -180,8 +180,8 @@
   },
   "active": "4f35e6644fa58ccc",
   "lastOpenFiles": [
-    "Printer Hacking.md",
     "Exploiting Chrome Remote Debugger.md",
+    "Printer Hacking.md",
     "OSCP resources.md",
     "DNS Spoofing and Transparent Proxy.md",
     "RCE via SSRF.md",

