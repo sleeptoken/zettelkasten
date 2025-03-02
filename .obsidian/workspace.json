@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RCE via SSRF.md",
+                "file": "Remote Thought/RCE via SSRF & nmap privesc.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "RCE via SSRF"
+              "title": "RCE via SSRF & nmap privesc"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RCE via SSRF.md",
+                "file": "Remote Thought/RCE via SSRF & nmap privesc.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RCE via SSRF"
+              "title": "Outline of RCE via SSRF & nmap privesc"
             }
           }
         ],
@@ -184,7 +184,7 @@
     "Printer Hacking.md",
     "OSCP resources.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "RCE via SSRF.md",
+    "Remote Thought/RCE via SSRF & nmap privesc.md",
     "Tags/shellspawn.md",
     "Remote Thought/Tools for CTFs.md",
     "Remote Thought/Scanning and Networks.md",

