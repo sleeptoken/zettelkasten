@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/RCE via SSRF & nmap privesc.md",
+                "file": "Regular expression Denial of Service - ReDoS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "RCE via SSRF & nmap privesc"
+              "title": "Regular expression Denial of Service - ReDoS"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/RCE via SSRF & nmap privesc.md",
+                "file": "Regular expression Denial of Service - ReDoS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RCE via SSRF & nmap privesc"
+              "title": "Outline of Regular expression Denial of Service - ReDoS"
             }
           }
         ],
@@ -178,13 +178,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4f35e6644fa58ccc",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Remote Thought/RCE via SSRF & nmap privesc.md",
     "Exploiting Chrome Remote Debugger.md",
     "Printer Hacking.md",
     "OSCP resources.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "Remote Thought/RCE via SSRF & nmap privesc.md",
     "Tags/shellspawn.md",
     "Remote Thought/Tools for CTFs.md",
     "Remote Thought/Scanning and Networks.md",
@@ -205,7 +206,6 @@
     "Tags/hashing.md",
     "Remote Thought/Integrity Failure.md",
     "Remote Thought/Authentication vulnerabilities.md",
-    "Remote Thought/HTTP Request Smuggling.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
