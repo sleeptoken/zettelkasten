@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "904cefe9cd914702",
+        "id": "2cb9e42be745bf5b",
         "type": "tabs",
         "children": [
           {
-            "id": "5485029dcada80a4",
+            "id": "d76940204a1e4cb4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
         ]
@@ -152,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline"
             }
           }
         ],
@@ -178,11 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5485029dcada80a4",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Regular expression Denial of Service - ReDoS.md",
+    "Remote Thought/Steal cookie via xss using requestbin.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
+    "Types of API.md",
+    "Regular expression Denial of Service - ReDoS.md",
     "Remote Thought/RCE via SSRF & nmap privesc.md",
     "Exploiting Chrome Remote Debugger.md",
     "Printer Hacking.md",
@@ -192,7 +178,6 @@
     "Remote Thought/Tools for CTFs.md",
     "Remote Thought/Scanning and Networks.md",
     "Remote Thought/crawling a website.md",
-    "Types of API.md",
     "Remote Thought/LFI to RCE via log poisoning.md",
     "AEM Misconfig.md",
     "Intents and Activities.md",
