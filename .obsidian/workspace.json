@@ -11,10 +11,24 @@
             "id": "01c399b7e3bc0d9b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Chrome Policies.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Chrome Policies"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Chrome Policies.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Chrome Policies"
             }
           }
         ],
@@ -165,8 +180,8 @@
   },
   "active": "01c399b7e3bc0d9b",
   "lastOpenFiles": [
+    "Chrome Policies.md",
     "Types of API.md",
-    "Untitled.md",
     "Remote Thought/Path Traversal.md",
     "Remote Thought/Go SSTI.md",
     "DNS Spoofing and Transparent Proxy.md",
