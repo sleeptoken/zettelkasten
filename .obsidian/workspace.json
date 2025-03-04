@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2cb9e42be745bf5b",
+        "id": "67037fb1449504ef",
         "type": "tabs",
         "children": [
           {
-            "id": "d76940204a1e4cb4",
+            "id": "1ec12c94d224e6f0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -163,22 +163,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "1ec12c94d224e6f0",
   "lastOpenFiles": [
-    "Remote Thought/Steal cookie via xss using requestbin.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
     "Types of API.md",
-    "Regular expression Denial of Service - ReDoS.md",
-    "Remote Thought/RCE via SSRF & nmap privesc.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Printer Hacking.md",
-    "OSCP resources.md",
     "DNS Spoofing and Transparent Proxy.md",
-    "Tags/shellspawn.md",
-    "Remote Thought/Tools for CTFs.md",
-    "Remote Thought/Scanning and Networks.md",
-    "Remote Thought/crawling a website.md",
-    "Remote Thought/LFI to RCE via log poisoning.md",
+    "Exploiting Chrome Remote Debugger.md",
     "AEM Misconfig.md",
     "Intents and Activities.md",
     "Cast.md",
@@ -186,6 +175,17 @@
     "Underpass htb.md",
     "Frameworks & basics.md",
     "TLS 1.3 better than TLS 1.2.md",
+    "Regular expression Denial of Service - ReDoS.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Remote Thought/Steal cookie via xss using requestbin.md",
+    "Remote Thought/RCE via SSRF & nmap privesc.md",
+    "Printer Hacking.md",
+    "OSCP resources.md",
+    "Tags/shellspawn.md",
+    "Remote Thought/Tools for CTFs.md",
+    "Remote Thought/Scanning and Networks.md",
+    "Remote Thought/crawling a website.md",
+    "Remote Thought/LFI to RCE via log poisoning.md",
     "Remote Thought/HTTP Methods.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
     "Remote Thought/Txt dumps.md",
