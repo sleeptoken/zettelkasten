@@ -2,6 +2,8 @@
 2024-11-17 17:16
 
 Source: #web 
+
+Tags: [[browser]]
 ### Network Tab
 in DevTools to see what resources were being called.
 
