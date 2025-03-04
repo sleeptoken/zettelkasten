@@ -24,7 +24,16 @@ to avoid passing user-supplied input to filesystem APIs altogether
 If you can't avoid passing user-supplied input to filesystem APIs, then -
 - Compare the user input with a whitelist of permitted values
 - verify that the input contains only permitted content, such as alphanumeric characters only. 
-- append the input to the base directory and use a platform filesystem API to canonicalize the path. 
+- asourppend the input to the base directory and use a platform filesystem API to canonicalize the path. 
+### IrisCTF
+
+In the source code we see -> Written in GO. 
+I saw the concatenation with `fullPath` and the reference to `http.ServeFile` and realized that whatever path we passed would be literally served. Next, I noticed the `PathReplacer` and saw its source
+
+So I figured this would only do a single replace of `../` and we could bypass by nesting this as `..././` and next we just needed to figure out where the flag was.
+
+Well, the source file references a `users.json` where presumably credentials are stored. Sending a `GET /..././users.json`
 
 ### References
 https://portswigger.net/web-security/learning-paths/path-traversal
+https://ireland.re/posts/irisctf_2025/ - irisctf

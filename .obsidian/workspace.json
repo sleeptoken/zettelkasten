@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "67037fb1449504ef",
+        "id": "ba770b1e682adf9f",
         "type": "tabs",
         "children": [
           {
-            "id": "1ec12c94d224e6f0",
+            "id": "01c399b7e3bc0d9b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -163,9 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ec12c94d224e6f0",
+  "active": "01c399b7e3bc0d9b",
   "lastOpenFiles": [
     "Types of API.md",
+    "Untitled.md",
+    "Remote Thought/Path Traversal.md",
+    "Remote Thought/Go SSTI.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Exploiting Chrome Remote Debugger.md",
     "AEM Misconfig.md",
@@ -188,9 +191,6 @@
     "Remote Thought/LFI to RCE via log poisoning.md",
     "Remote Thought/HTTP Methods.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
-    "Remote Thought/Txt dumps.md",
-    "Tags/hashing.md",
-    "Remote Thought/Integrity Failure.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
