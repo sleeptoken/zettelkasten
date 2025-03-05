@@ -101,21 +101,40 @@ Secure Shell (SSH) is a command-level protocol mainly used for managing various 
 SSH uses the client/server communication model, and the SSH server, by default, listens to its client on TCP port 22. 
 - Attackers may exploit the SSH protocol by brute-forcing SSH login credentials. 
 
-SFTP, by default, uses port 22, facilitating the secure exchange of data over a single Internet connection. This designated port for SFTP enhances its security and simplicity compared to protocols such as FTP/S that require multiple ports for operation. SFTP's reliance on just one port makes its use more straightforward while it continues to secure data transfers through SSH encryption. Attackers enumerate SFTP to gather information about user accounts, file and directory permissions, and the server's configuration.
+SFTP, by default, uses port 22, facilitating the secure exchange of data over a single Internet connection. This designated port for SFTP enhances its security and simplicity compared to protocols such as FTP/S that require multiple ports for operation. SFTP's reliance on just one port makes its use more straightforward while it continues to secure data transfers through SSH encryption. 
+- Attackers enumerate SFTP to gather information about user accounts, file and directory permissions, and the server's configuration.
  
 #### TCP/UDP 3268: Global Catalog Service 
 
-Microsoft's Global Catalog server, a domain controller that stores extra information, uses port 3268. Its database contains rows for every object in the entire organization, instead of rows for only the objects in one domain. Global Catalog allows one to locate objects from any domain without having to know the domain name. LDAP in the Global Catalog server uses port 3268. This service listens to port 3268 through a TCP connection. Administrators use port 3268 for troubleshooting issues in the Global Catalog by connecting to it using LDP. 
-TCP/UDP 5060, 5061: Session Initiation Protocol (SIP) 
+- Microsoft's Global Catalog server, a domain controller that stores extra information, uses port 3268. 
+- Its database contains rows for every object in the entire organization, instead of rows for only the objects in one domain. 
+- Global Catalog allows one to locate objects from any domain without having to know the domain name. 
+
+LDAP in the Global Catalog server uses port 3268. This service listens to port 3268 through a TCP connection. Administrators use port 3268 for troubleshooting issues in the Global Catalog by connecting to it using LDP. 
+
+#### TCP/UDP 5060, 5061: Session Initiation Protocol (SIP) 
+ 
 The Session Initiation Protocol (SIP) is a protocol used in Internet telephony for voice and video calls. It typically uses TCP/UDP port 5060 (non-encrypted signaling traffic) or 5061 (encrypted traffic with TLS) for SIP to servers and other endpoints. 
-TCP 20/21: File Transfer Protocol 
-FTP is a connection-oriented protocol used for transferring files over the Internet and private networks. FTP is controlled on TCP port 21, and for data transmission, FTP uses TCP port 20 or some dynamic port numbers depending on the server configuration. If attackers identify that FTP server ports are open, then they perform enumeration on FTP to find information such as the software version and state of existing vulnerabilities to perform further exploitations such as the sniffing of FTP traffic and FTP brute-force attacks. 
-TCP 23: Telnet 
-The Telnet protocol is used for managing various networked devices remotely. It is an unsecure protocol because it transmits login credentials in the cleartext format. Therefore, it is mostly used in private networks. The Telnet server listens to its clients on port 23. Attackers can take advantage of the Telnet protocol to perform banner grabbing on other protocols such as SSH and SMTP, brute-forcing attacks on login credentials, port-forwarding attacks, etc. 
-UDP 69: Trivial File Transfer Protocol (TFTP) 
-TFTP is a connectionless protocol used for transferring files over the Internet. TFTP depends on connectionless UDP; therefore, it does not guarantee the proper transmission of the file to the destination. TFTP is mainly used to update or upgrade software and firmware on remote networked devices. It uses UDP port 69 for transferring files to a remote host. Attackers may exploit TFTP to install malicious software or firmware on remote devices. 
-TCP 179: Border Gateway Protocol (BGP) 
-BGP is widely used by Internet service providers (ISPs) to maintain huge routing tables and for efficiently processing Internet traffic. BGP routers establish sessions on TCP port 179. The misconfiguration of BGP may lead to various attacks such as dictionary attacks, resource-exhaustion attacks, flooding attacks, and hijacking attacks.
+
+#### TCP 20/21: File Transfer Protocol 
+
+FTP is a connection-oriented protocol used for transferring files over the Internet and private networks. FTP is controlled on TCP port 21, and for data transmission, FTP uses TCP port 20 or some dynamic port numbers depending on the server configuration. 
+If attackers identify that FTP server ports are open, then they perform enumeration on FTP to find information such as the software version and state of existing vulnerabilities to perform further exploitations such as the sniffing of FTP traffic and FTP brute-force attacks. 
+
+#### TCP 23: Telnet 
+
+The Telnet protocol is used for managing various networked devices remotely. It is an unsecure protocol because it transmits login credentials in the cleartext format. Therefore, it is mostly used in private networks. The Telnet server listens to its clients on port 23.
+Attackers can take advantage of the Telnet protocol to perform banner grabbing on other protocols such as SSH and SMTP, brute-forcing attacks on login credentials, port-forwarding attacks, etc. 
+
+#### UDP 69: Trivial File Transfer Protocol (TFTP) 
+
+TFTP is a connectionless protocol used for transferring files over the Internet. TFTP depends on connectionless UDP; therefore, it does not guarantee the proper transmission of the file to the destination. TFTP is mainly used to update or upgrade software and firmware on remote networked devices. It uses UDP port 69 for transferring files to a remote host
+- Attackers may exploit TFTP to install malicious software or firmware on remote devices. 
+
+#### TCP 179: Border Gateway Protocol (BGP) 
+
+BGP is widely used by Internet service providers (ISPs) to maintain huge routing tables and for efficiently processing Internet traffic. BGP routers establish sessions on TCP port 179. 
+- The misconfiguration of BGP may lead to various attacks such as dictionary attacks, resource-exhaustion attacks, flooding attacks, and hijacking attacks.
 
 ### References
 CEH v13 M4
