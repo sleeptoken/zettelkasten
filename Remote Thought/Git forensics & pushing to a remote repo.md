@@ -3,7 +3,7 @@
 
 Source:  #bandit 
 
-Tags: [[git]] [[ssh (22 port)]] [[linux]]
+Tags: [[git]] [[SSH (22 port)]] [[linux]]
 
 A git repository at `ssh://bandit30-git@localhost/home/bandit30-git/repo` via the port `2220`
 to clone the repo use git clone `ssh://bandit30-git@localhost:2220/home/bandit30-git/repo`

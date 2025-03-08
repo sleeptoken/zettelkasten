@@ -59,7 +59,7 @@ The RPC Endpoint Mapper enables RPC clients to determine the port number current
 
 NBNS, also known as the Windows Internet Name Service (WINS), provides a name-resolution service for computers running NetBIOS. NetBIOS name servers maintain a database of the NetBIOS names for hosts and the corresponding IP address the host is using.
 - NBNS aims to match IP addresses with NetBIOS names and queries. 
-Attackers usually attack the name service first. Typically, [[NetBIOS Name Service (port 137)]] uses UDP 137 as its transport protocol. It can also use TCP 137 as its transport protocol for a few operations, though this might never occur in practice. 
+Attackers usually attack the name service first. Typically, [[NBNS (port 137)]] uses UDP 137 as its transport protocol. It can also use TCP 137 as its transport protocol for a few operations, though this might never occur in practice. 
 
 #### TCP 139: NetBIOS Session Service (SMB over NetBIOS) 
 
@@ -82,14 +82,14 @@ Windows supports file- and printer-sharing traffic using the SMB protocol direct
 
 #### TCP 2049: Network File System (NFS) 
 
-NFS protocol is used to mount file systems on a remote host over a network, and users can interact with the file systems as if they are mounted locally. NFS servers listen to its client systems on TCP port 2049. If NFS services should be properly configured to prevent privesc and backdoor injection, etc.
+NFS protocol is used to mount file systems on a remote host over a network, and users can interact with the file systems as if they are mounted locally. [[NFS (2049 port)]] servers listen to its client systems on TCP port 2049. If NFS services should be properly configured to prevent privesc and backdoor injection, etc.
 
 #### TCP 25: Simple Mail Transfer Protocol (SMTP) 
 
 [[SMTP (25 port)]] is a TCP/IP mail delivery protocol. It transfers email across the Internet and across local networks. It runs on the connection-oriented service provided by TCP and uses the well-known port number 25. 
 #### TCP/UDP 162: SNMP Trap 
 
-An SNMP trap uses TCP/UDP port 162 to send notifications such as optional variable bindings and the sysUpTime value from an agent to a manager. 
+An SNMP trap uses TCP/UDP port 162 to send notifications such as optional variable bindings and the sysUpTime value from an agent to a manager. [[SNMP TRAP (162 port)]]
 
 #### UDP 500: Internet Security Association and Key Management Protocol (ISAKMP)/Internet Key Exchange (IKE) 
 
@@ -97,7 +97,7 @@ Internet Security Association and Key Management Protocol (ISAKMP)/Internet Key 
 
 #### TCP 22: Secure Shell (SSH) / Secure File Transfer Protocol (SFTP) 
 
-Secure Shell ([[ssh (22 port)]]) is a command-level protocol mainly used for managing various networked devices securely. It is generally used as an alternative protocol to the unsecure Telnet protocol. 
+Secure Shell ([[SSH (22 port)]]) is a command-level protocol mainly used for managing various networked devices securely. It is generally used as an alternative protocol to the unsecure Telnet protocol. 
 SSH uses the client/server communication model, and the SSH server, by default, listens to its client on TCP port 22. 
 - Attackers may exploit the SSH protocol by brute-forcing SSH login credentials. 
 
@@ -114,7 +114,7 @@ LDAP in the Global Catalog server uses port 3268. This service listens to port 3
 
 #### TCP/UDP 5060, 5061: Session Initiation Protocol (SIP) 
  
-The Session Initiation Protocol (SIP) is a protocol used in Internet telephony for voice and video calls. It typically uses TCP/UDP port 5060 (non-encrypted signaling traffic) or 5061 (encrypted traffic with TLS) for SIP to servers and other endpoints. 
+The [[SIP (5060,5061 port)]] is a protocol used in Internet telephony for voice and video calls. It typically uses TCP/UDP port 5060 (non-encrypted signaling traffic) or 5061 (encrypted traffic with TLS) for SIP to servers and other endpoints. 
 
 #### TCP 20/21: File Transfer Protocol 
 
@@ -133,7 +133,7 @@ Attackers can take advantage of the Telnet protocol to perform banner grabbing o
 
 #### TCP 179: Border Gateway Protocol (BGP) 
 
-[[Border Gateway Protocol (BGP) (port 179)]] is widely used by Internet service providers (ISPs) to maintain huge routing tables and for efficiently processing Internet traffic. BGP routers establish sessions on TCP port 179. 
+[[BGP (port 179)]] is widely used by Internet service providers (ISPs) to maintain huge routing tables and for efficiently processing Internet traffic. BGP routers establish sessions on TCP port 179. 
 - The misconfiguration of BGP may lead to various attacks such as dictionary attacks, resource-exhaustion attacks, flooding attacks, and hijacking attacks.
 
 ### References

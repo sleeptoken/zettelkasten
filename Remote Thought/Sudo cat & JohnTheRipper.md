@@ -14,7 +14,7 @@ use [[Tags/hydra]] to brute force the password
 ```
 #### cracking rsa 
 
-- after logging in the website we find a [[ssh (22 port)]] `rsa` private key, `wget` it from the website  
+- after logging in the website we find a [[SSH (22 port)]] `rsa` private key, `wget` it from the website  
 - The special John the Ripper tool called **ssh2john.py** which can extract the crackable hash from the [[RSA]] private key. (don't save o/p in a text file)
 ```
 /usr/share/john/ssh2john.py id_rsa  > rsa.hash

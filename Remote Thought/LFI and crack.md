@@ -65,7 +65,7 @@ then crack the hash using john
 
 ## [[Privilege Escalation]] Cronjon with wildcard
 
-after gettting the hash [[ssh (22 port)]] as the user 
+after gettting the hash [[SSH (22 port)]] as the user 
 ```sh
 ssh -i id_rsa server-management@vulnnet.thm
 ```
