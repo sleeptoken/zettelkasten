@@ -10,7 +10,7 @@
 
 #### A note about safe-fetch
 
-The challenge uses a wrapper over `fetch` called safe_fetch, which enforces every URL passed be
+The challenge uses a wrapper over `fetch` called `safe_fetch`, which enforces every URL passed be
 
 - on a valid domain
 - not in a private IP range
