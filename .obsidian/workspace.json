@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OpenID Connect.md",
+                "file": "Tags/OSINT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "OpenID Connect"
+              "title": "OSINT"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OpenID Connect.md",
+                "file": "Tags/OSINT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OpenID Connect"
+              "title": "Outline of OSINT"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "0765b5f37cd16ff0",
   "lastOpenFiles": [
+    "OpenID Connect.md",
     "Types of API.md",
     "Enumeration.md",
     "Tags/SNMP TRAP (162 port).md",
@@ -195,7 +196,6 @@
     "LDAP (port 389).md",
     "Tags/RPC Endpoint Mapper (port 135).md",
     "Tags/DNS (53 port).md",
-    "OpenID Connect.md",
     "Tags/UDP.md",
     "Tags/TCP.md",
     "Remote Thought/Active Directory.md",
