@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/OpenID Connect & less sanitization.md",
+                "file": "Enumeration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "OpenID Connect & less sanitization"
+              "title": "Enumeration"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/OpenID Connect & less sanitization.md",
+                "file": "Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OpenID Connect & less sanitization"
+              "title": "Outline of Enumeration"
             }
           }
         ],
@@ -178,12 +178,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "0765b5f37cd16ff0",
   "lastOpenFiles": [
-    "Tags/OSINT.md",
-    "Remote Thought/OpenID Connect & less sanitization.md",
-    "Types of API.md",
+    "Tags/RPC Endpoint Mapper (port 135).md",
     "Enumeration.md",
+    "Underpass htb.md",
+    "Frameworks & basics.md",
+    "TLS 1.3 better than TLS 1.2.md",
+    "Regular expression Denial of Service - ReDoS.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Remote Thought/OpenID Connect & less sanitization.md",
+    "Tags/OSINT.md",
+    "Types of API.md",
     "Tags/SNMP TRAP (162 port).md",
     "Tags/BGP (port 179).md",
     "Tags/SSH (22 port).md",
@@ -195,17 +201,11 @@
     "Tags/NetBIOS Session Service (port 139).md",
     "Tags/LDAP (port 389).md",
     "LDAP (port 389).md",
-    "Tags/RPC Endpoint Mapper (port 135).md",
     "Tags/DNS (53 port).md",
     "Tags/UDP.md",
     "Tags/TCP.md",
     "Remote Thought/Active Directory.md",
-    "Frameworks & basics.md",
     "Remote Thought/Chrome Policies.md",
-    "Tags/browser.md",
-    "Remote Thought/Chrome dev tools.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Remote Thought/Path Traversal.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
