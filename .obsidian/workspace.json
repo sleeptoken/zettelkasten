@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OpenID Connect.md",
+                "file": "Remote Thought/OpenID Connect & less sanitization.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "OpenID Connect"
+              "title": "OpenID Connect & less sanitization"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OpenID Connect.md",
+                "file": "Remote Thought/OpenID Connect & less sanitization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OpenID Connect"
+              "title": "Outline of OpenID Connect & less sanitization"
             }
           }
         ],
@@ -178,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0765b5f37cd16ff0",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Tags/OSINT.md",
-    "OpenID Connect.md",
+    "Remote Thought/OpenID Connect & less sanitization.md",
     "Types of API.md",
     "Enumeration.md",
     "Tags/SNMP TRAP (162 port).md",

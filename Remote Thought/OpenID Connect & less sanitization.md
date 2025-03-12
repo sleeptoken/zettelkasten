@@ -47,9 +47,9 @@ This gives us a response with an `access_token` and `token_type` which we th
 This to-do list app makes use of a “database-per-user” architecture, an approach popular with apps that are built on SQLite. In that approach, every user has their own on-disk database. This is implemented in `storage.js` in the challenge handout.
 
 The base vulnerability is insufficient validation and sanitization of the `sub` for naming a file on disk. This vulnerability has 2 parts to it:
-[[saniti]]
+
 - `sanitizePath` only checks if the path is within the `STORAGE_LOCATION`, not within a specific directory for a given identity provider. This allows for accessing data stored by other users.
-- `getStoragePath` relies on `encodeURIComponent` to remove any slashes from the user-controlled input, but _also_ splits it (for storage optimization reasons - you don’t want all files in one directory). This allows you to set the first 2 characters of your `sub` to `..` and get a relative path.
+- `getStoragePath` relies on `encodeURIComponent` to remove any slashes from the user-controlled input, but _also_ splits it (for storage optimization reasons - you don’t want all files in one directory). This allows you to set the first 2 characters of your `sub` to `..` and get a relative path [[Path Traversal]].
 
 Therefore, by setting our sub to `..flag`, we can access the “backed up” database of the admin user. Doing so allows us to log in and read the admin’s todo
 
