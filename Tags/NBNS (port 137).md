@@ -1,4 +1,7 @@
 
+Note: 
+NetBIOS name resolution is not supported by Microsoft for Internet Protocol Version 6 (IPv6)
+
 The first step in enumerating a Windows system is to take advantage of the NetBIOS API. #CTF 
 
 NetBIOS was originally developed as an API for client software to access local area network (LAN) resources. 
@@ -16,7 +19,7 @@ Attackers use NetBIOS enumeration to obtain the following:
 
 An attacker who finds a Windows system with port 139 open can check to see which resources can be accessed or viewed on a remote system. However, to enumerate the NetBIOS names, the remote system must have enabled file and printer sharing. NetBIOS enumeration may allow an attacker to read or write to a remote computer system, depending on the availability of shares, or launch a DoS attack.
 
-### Nbtstat Utility 
+#### Nbtstat Utility 
 
 Nbtstat is a Windows utility that helps in troubleshooting NETBIOS name resolution problems. The nbtstat command removes and corrects preloaded entries using several case-sensitive switches. 
 
@@ -26,8 +29,23 @@ Attackers use Nbtstat to enumerate information such as NetBIOS over TCP/IP (NetB
 nbtstat -a 10.10.10.10
 ```
 above code can be used to obtain the NetBIOS name table of a remote computer 
-### NetBIOS Enumerator 
 
+#### NetBIOS Enumerator 
 
-Note: 
-NetBIOS name resolution is not supported by Microsoft for Internet Protocol Version 6 (IPv6)
+[NetBIOS Enumerator](https://nbtenum.sourceforge.net/) to enumerate details such as NetBIOS names, username, domain name, and MAC  addresses for a given range of IP address.
+
+#### Nmap
+
+[[nmap]] script for discovering NetBIOS shares on a network 
+```sh
+nmap -sV -v --script nbstat.nse <targetIPaddress>
+```
+
+#### Enumerating shared resources using NetView 
+
+Displays a list of computer in a specific workgroup or shared resources available on a specified computer 
+
+```
+net view \\<computername_or_IP> /ALL
+```
+above cmd displays all the shares on the specified remote computer, along w hidden shares 
