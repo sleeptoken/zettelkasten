@@ -16,10 +16,17 @@ Attackers use NetBIOS enumeration to obtain the following:
 
 An attacker who finds a Windows system with port 139 open can check to see which resources can be accessed or viewed on a remote system. However, to enumerate the NetBIOS names, the remote system must have enabled file and printer sharing. NetBIOS enumeration may allow an attacker to read or write to a remote computer system, depending on the availability of shares, or launch a DoS attack.
 
-##### Nbtstat Utility 
+### Nbtstat Utility 
 
-used to troubleshoot NETBIOS name resolution problems
+Nbtstat is a Windows utility that helps in troubleshooting NETBIOS name resolution problems. The nbtstat command removes and corrects preloaded entries using several case-sensitive switches. 
 
+Attackers use Nbtstat to enumerate information such as NetBIOS over TCP/IP (NetBT) protocol statistics, NetBIOS name tables for both local and remote computers, and the NetBIOS name cache
+
+```
+nbtstat -a 10.10.10.10
+```
+above code can be used to obtain the NetBIOS name table of a remote computer 
+### NetBIOS Enumerator 
 
 
 Note: 
