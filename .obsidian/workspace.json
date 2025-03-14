@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/NBNS (port 137).md",
+                "file": "Enumeration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "NBNS (port 137)"
+              "title": "Enumeration"
+            }
+          },
+          {
+            "id": "ad1459dd567bdc08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tags/SNMP (161 UDP port).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SNMP (161 UDP port)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/NBNS (port 137).md",
+                "file": "Tags/SNMP (161 UDP port).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of NBNS (port 137)"
+              "title": "Outline of SNMP (161 UDP port)"
             }
           }
         ],
@@ -178,10 +203,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ddad9d984400d41",
+  "active": "ad1459dd567bdc08",
   "lastOpenFiles": [
     "Tags/NBNS (port 137).md",
     "Enumeration.md",
+    "Tags/SNMP (161 UDP port).md",
     "Tags/RPC Endpoint Mapper (port 135).md",
     "Underpass htb.md",
     "Frameworks & basics.md",
@@ -205,7 +231,6 @@
     "Tags/UDP.md",
     "Tags/TCP.md",
     "Remote Thought/Active Directory.md",
-    "Remote Thought/Chrome Policies.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",

@@ -1,4 +1,6 @@
 
+## Enumeration 
+
 Note: 
 NetBIOS name resolution is not supported by Microsoft for Internet Protocol Version 6 (IPv6)
 
