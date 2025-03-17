@@ -6,7 +6,7 @@ Web cache deception exploits cache rules to trick the cache into storing sensiti
 It's caused by discrepancies between how the cache server and origin server handle requests.
 
 In a web cache deception attack, an attacker persuades a victim to visit a malicious URL, inducing the victim's browser to make an ambiguous request for sensitive content. The cache misinterprets this as a request for a static resource and stores the response. The attacker can then request the same URL to access the cached response, gaining unauthorized access to private information.
-### Web caches
+## Web caches
 
 A web cache is a system that sits between the origin server and the user. When a client requests a static resource, the request is first directed to the cache. If the cache doesn't contain a copy of the resource (known as a cache miss), the request is forwarded to the origin server, which processes and responds to the request. The response is then sent to the cache before being sent to the user. The cache uses a preconfigured set of rules to determine whether to store the response.
 
@@ -32,21 +32,39 @@ Web cache deception attacks exploit how cache rules are applied, so it's importa
 - File name rules - These rules match specific file names to target files that are universally required for web operations and change rarely, such as `robots.txt` and `favicon.ico`.
 ## Constructing a web cache deception attack
 
-Generally speaking, constructing a basic web cache deception attack involves the following steps:
-
 1. Identify a target endpoint that returns a dynamic response containing sensitive information. Review responses in Burp, as some sensitive information may not be visible on the rendered page. Focus on endpoints that support the `GET`, `HEAD`, or `OPTIONS` methods as requests that alter the origin server's state are generally not cached.
+
 2. Identify a discrepancy in how the cache and origin server parse the URL path. This could be a discrepancy in how they:
-    
     - Map URLs to resources.
     - Process delimiter characters.
     - Normalize paths.
+
 3. Craft a malicious URL that uses the discrepancy to trick the cache into storing a dynamic response. When the victim accesses the URL, their response is stored in the cache. Using Burp, you can then send a request to the same URL to fetch the cached response containing the victim's data. Avoid doing this directly in the browser as some applications redirect users without a session or invalidate local data, which could hide a vulnerability.
+### Using a cache buster
 
+While testing for discrepancies and crafting a web cache deception exploit, make sure that each request you send has a different cache key. Otherwise, you may be served cached responses, which will impact your test results.
 
+As both URL path and any query parameters are typically included in the cache key, you can change the key by adding a query string to the path and changing it each time you send a request.
 
+Automate this process using the `Param Miner extension.` To do this, once you've installed the extension, click on the top-level **Param miner > Settings** menu, then select **Add dynamic cachebuster**. Burp now adds a unique query string to every request that you make. You can view the added query strings in the **Logger** tab.
+### Detecting cached responses
 
+During testing, it's crucial that you're able to identify cached responses. To do so, look at response headers and response times.
 
+- The `X-Cache` header provides information about whether a response was served from the cache. Typical values include:
+    - `X-Cache: hit` - The response was served from the cache.
+    - `X-Cache: miss` - The cache did not contain a response for the request's key, so it was fetched from the origin server. In most cases, the response is then cached. To confirm this, send the request again to see whether the value updates to hit.
+    - `X-Cache: dynamic` - The origin server dynamically generated the content. Generally this means the response is not suitable for caching.
+    - `X-Cache: refresh` - The cached content was outdated and needed to be refreshed or revalidated.
+- The `Cache-Control` header may include a directive that indicates caching, like `public` with a `max-age` higher than `0`. Note that this only suggests that the resource is cacheable. It isn't always indicative of caching, as the cache may sometimes override this header.
 
+If you notice a big difference in response time for the same request, this may also indicate that the faster response is served from the cache.
+
+## Exploiting static extension cache rules
+
+Cache rules often target static resources by matching common file extensions like `.css` or `.js`. This is the default behavior in most CDNs.
+
+If there are discrepancies in how the cache and origin server map the URL path to resources or use delimiters, an attacker may be able to craft a request for a dynamic resource with a static extension that is ignored by the origin server but viewed by the cache.
 
 
 ### References
