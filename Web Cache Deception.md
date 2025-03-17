@@ -107,6 +107,7 @@ Caches may have rules based on specific static extensions. Try a range of extens
 > [!tip]
 > 
 > Burp Scanner automatically detects web cache deception vulnerabilities that are caused by path mapping discrepancies during audits. You can also use the [Web Cache Deception Scanner](https://portswigger.net/bappstore/7c1ca94a61474d9e897d307c858d52f0) BApp to detect misconfigured web caches.
+#### Lab
 
 
 
