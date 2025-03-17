@@ -93,14 +93,20 @@ Concept similar to [[HTTP Request Smuggling]]
 
 To test how the origin server maps the URL path to resources, add an arbitrary path segment to the URL of your target endpoint. If the response still contains the same sensitive data as the base response, it indicates that the origin server abstracts the URL path and ignores the added segment. For example, this is the case if modifying `/api/orders/123` to `/api/orders/123/foo` still returns order information.
 
-To test how the cache maps the URL path to resources, you'll need to modify the path to attempt to match a cache rule by adding a static extension. For example, update `/api/orders/123/foo` to `/api/orders/123/foo.js`. If the response is cached, this indicates:
+To test how the cache maps the URL path to resources, you'll need to modify the path to attempt to match a cache rule by adding a static extension. 
+- For example, update `/api/orders/123/foo` to `/api/orders/123/foo.js`.
+If the response is cached, this indicates:
 
 - That the cache interprets the full URL path with the static extension.
 - That there is a cache rule to store responses for requests ending in `.js`.
 
 Caches may have rules based on specific static extensions. Try a range of extensions, including `.css`, `.ico`, and `.exe`.
 
-You can then craft a URL that returns a dynamic response that is stored in the cache. Note that this attack is limited to the specific endpoint that you tested, as the origin server often has different abstraction rules for different endpoints.
+> [!tip]
+> 
+> Burp Scanner automatically detects web cache deception vulnerabilities that are caused by path mapping discrepancies during audits. You can also use the [Web Cache Deception Scanner](https://portswigger.net/bappstore/7c1ca94a61474d9e897d307c858d52f0) BApp to detect misconfigured web caches.
+
+
 
 ### References
 [Web cache deception | Web Security Academy](https://portswigger.net/web-security/web-cache-deception)
