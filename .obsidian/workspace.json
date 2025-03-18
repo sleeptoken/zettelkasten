@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Cache Deception.md",
+                "file": "Hijacking OAuth flows via Cookie Tossing.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Web Cache Deception"
+              "title": "Hijacking OAuth flows via Cookie Tossing"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Cache Deception.md",
+                "file": "Hijacking OAuth flows via Cookie Tossing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Web Cache Deception"
+              "title": "Outline of Hijacking OAuth flows via Cookie Tossing"
             }
           }
         ],
@@ -180,21 +180,21 @@
   },
   "active": "1444591ab3e5d785",
   "lastOpenFiles": [
-    "Apache velocity cve.md",
-    "Web Cache Deception.md",
-    "Remote Thought/HTTP Request Smuggling.md",
+    "Regular expression Denial of Service - ReDoS.md",
+    "TLS 1.3 better than TLS 1.2.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Types of API.md",
     "Enumeration.md",
+    "Web Cache Deception.md",
+    "Apache velocity cve.md",
+    "Remote Thought/HTTP Request Smuggling.md",
     "Tags/SNMP (161 UDP port).md",
     "Tags/NBNS (port 137).md",
     "Tags/RPC Endpoint Mapper (port 135).md",
     "Underpass htb.md",
     "Frameworks & basics.md",
-    "TLS 1.3 better than TLS 1.2.md",
-    "Regular expression Denial of Service - ReDoS.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
     "Remote Thought/OpenID Connect & less sanitization.md",
     "Tags/OSINT.md",
-    "Types of API.md",
     "Tags/SNMP TRAP (162 port).md",
     "Tags/BGP (port 179).md",
     "Tags/SSH (22 port).md",

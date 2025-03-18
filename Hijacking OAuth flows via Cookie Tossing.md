@@ -9,4 +9,4 @@ Tags:
 
 
 ### References
-**https://portswigger.net/research/top-10-web-hacking-techniques-of-2024**
+**https://portswigger.net/research/top-10-web-hacking-techniques-of-2024
