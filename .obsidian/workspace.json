@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hijacking OAuth flows via Cookie Tossing.md",
+                "file": "Enumeration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hijacking OAuth flows via Cookie Tossing"
+              "title": "Enumeration"
+            }
+          },
+          {
+            "id": "e3c3270ea9b1a8ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tags/SNMP (161 UDP port).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SNMP (161 UDP port)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hijacking OAuth flows via Cookie Tossing.md",
+                "file": "Tags/SNMP (161 UDP port).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hijacking OAuth flows via Cookie Tossing"
+              "title": "Outline of SNMP (161 UDP port)"
             }
           }
         ],
@@ -178,14 +203,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1444591ab3e5d785",
+  "active": "e3c3270ea9b1a8ae",
   "lastOpenFiles": [
+    "Enumeration.md",
+    "Types of API.md",
+    "Web Cache Deception.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
     "Regular expression Denial of Service - ReDoS.md",
     "TLS 1.3 better than TLS 1.2.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
-    "Types of API.md",
-    "Enumeration.md",
-    "Web Cache Deception.md",
     "Apache velocity cve.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Tags/SNMP (161 UDP port).md",
