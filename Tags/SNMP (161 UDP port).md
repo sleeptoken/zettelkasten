@@ -56,13 +56,10 @@ The communication process between an SNMP manager and SNMP agent is as follows.
 
 MIB is a virtual database containing a formal description of all the network objects that SNMP manages. It is a collection of hierarchically organized information. It provides a standard representation of the SNMP agent's information and storage. MIB elements are recognized using object identifiers (OIDs). An OID is the numeric name given to an object and begins with the root of the MIB tree. The OID can uniquely identify the object in the MIB hierarchy. 
 MIB-managed objects include scalar objects, which define a single object instance, and tabular objects, which define a group of related object instances. OIDs include the object's type (such as counter, string, or address), access level (such as read or read/write), size restrictions, and range information. The SNMP manager converts the OIDs into a human-readable display using the MIB as a codebook. 
-A user can access the contents of the MIB by using a web browser either by entering the IP address and Lseries.mib or by entering the DNS library name and Lseries.mib. For example, http://IP.Address/Lseries.mib or http://library_name/Lseries.mib.Microsoft provides the list of MIBs that are installed with the SNMP service in the Windows resource kit. The major MIBs are as follows: 
-DHCP.MIB: Monitors network traffic between DHCP servers and remote hosts. 
-HOSTMIB.MIB: Monitors and manages host resources 
-LNMIB2.MIB: Contains object types for workstation and server services 
-MIB_II.MIB: Manages TCP/IP-based Internet using a simple architecture and system 
-WINS.MIB: For the Windows Internet Name Service (WINS) 
-.
+
+A user can access the contents of the MIB by using a web browser either by entering the IP address and Lseries.mib or by entering the DNS library name and `Lseries.mib`. For example, `http://IP.Address/Lseries.mib `or `http://library_name/Lseries.mib.Microsoft` provides the list of MIBs that are installed with the SNMP service in the Windows resource kit
+
+
 
 
 ## Enumeration 
