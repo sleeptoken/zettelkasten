@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b76291dbf34d7621",
+        "id": "652f7043bbd83e3b",
         "type": "tabs",
         "children": [
           {
-            "id": "1444591ab3e5d785",
+            "id": "ae80af669bd79b02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumeration.md",
+                "file": "Titanic HTB.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Enumeration"
+              "title": "Titanic HTB"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Enumeration.md",
+                "file": "Titanic HTB.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Enumeration"
+              "title": "Outline of Titanic HTB"
             }
           }
         ],
@@ -178,13 +178,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1444591ab3e5d785",
+  "active": "ae80af669bd79b02",
   "lastOpenFiles": [
+    "Titanic HTB.md",
+    "Enumeration.md",
+    "Web Cache Deception.md",
     "Tags/LFI.md",
     "Tags/SNMP (161 UDP port).md",
-    "Enumeration.md",
     "Types of API.md",
-    "Web Cache Deception.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Regular expression Denial of Service - ReDoS.md",
     "TLS 1.3 better than TLS 1.2.md",
@@ -205,7 +206,6 @@
     "Tags/TFTP (port 69).md",
     "Tags/NetBIOS Session Service (port 139).md",
     "Tags/LDAP (port 389).md",
-    "LDAP (port 389).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
