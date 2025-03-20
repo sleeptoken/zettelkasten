@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "652f7043bbd83e3b",
+        "id": "f63aaee519bed46a",
         "type": "tabs",
         "children": [
           {
-            "id": "ae80af669bd79b02",
+            "id": "67ba0349b75f014d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/use SQLite on DB found via LFI.md",
+                "file": "Web Cache Deception.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "use SQLite on DB found via LFI"
+              "title": "Web Cache Deception"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/use SQLite on DB found via LFI.md",
+                "file": "Web Cache Deception.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of use SQLite on DB found via LFI"
+              "title": "Outline of Web Cache Deception"
             }
           }
         ],
@@ -178,11 +178,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae80af669bd79b02",
+  "active": "67ba0349b75f014d",
   "lastOpenFiles": [
-    "Tags/Find.md",
-    "Remote Thought/use SQLite on DB found via LFI.md",
     "Enumeration.md",
+    "Remote Thought/LFI to RCE via log poisoning.md",
+    "Remote Thought/PHP filter chain & ssh-keygen.md",
+    "Remote Thought/Steal cookie via xss using requestbin.md",
+    "Remote Thought/Chrome Policies.md",
+    "Remote Thought/OpenID Connect & less sanitization.md",
+    "Remote Thought/use SQLite on DB found via LFI.md",
+    "Tags/Find.md",
     "Web Cache Deception.md",
     "Tags/LFI.md",
     "Tags/SNMP (161 UDP port).md",
@@ -196,16 +201,11 @@
     "Tags/RPC Endpoint Mapper (port 135).md",
     "Underpass htb.md",
     "Frameworks & basics.md",
-    "Remote Thought/OpenID Connect & less sanitization.md",
     "Tags/OSINT.md",
     "Tags/SNMP TRAP (162 port).md",
     "Tags/BGP (port 179).md",
     "Tags/SSH (22 port).md",
     "Tags/SIP (5060,5061 port).md",
-    "Tags/FTP (21,20 port).md",
-    "Tags/Telnet (port 23).md",
-    "Tags/TFTP (port 69).md",
-    "Tags/NetBIOS Session Service (port 139).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
