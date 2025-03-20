@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Titanic HTB.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Titanic HTB"
+              "title": "use SQLite on DB found via LFI"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Titanic HTB.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Titanic HTB"
+              "title": "Outline of use SQLite on DB found via LFI"
             }
           }
         ],
@@ -180,7 +180,8 @@
   },
   "active": "ae80af669bd79b02",
   "lastOpenFiles": [
-    "Titanic HTB.md",
+    "Tags/Find.md",
+    "Remote Thought/use SQLite on DB found via LFI.md",
     "Enumeration.md",
     "Web Cache Deception.md",
     "Tags/LFI.md",
@@ -205,7 +206,6 @@
     "Tags/Telnet (port 23).md",
     "Tags/TFTP (port 69).md",
     "Tags/NetBIOS Session Service (port 139).md",
-    "Tags/LDAP (port 389).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",

