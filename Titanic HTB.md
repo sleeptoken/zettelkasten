@@ -23,7 +23,12 @@ since the ticket reading functionality is not implemented securely, we can repla
 - we can directly read the `user.txt` flag by replacing ticket parameters value to `/home/developer/user.txt`
 
 since ssh key files aren't readable we read the `etc/hosts` and see a subdomain  - `dev.titanic.htb` - 
-after adding this to our `etc/hosts` file and visiting the website we see `gitea`
+after adding this to our `etc/hosts` file and visiting the website we see This subdomain has `gitea` on it
+
+browsing around in `gitea` we see an explore tab, it has 2 repos 
+From the `docker-compose.yml` file we find out the path to the gitea directory
+
+Searching on the web we find that gitea has all the data in gitea.db
 
 
 ### References
