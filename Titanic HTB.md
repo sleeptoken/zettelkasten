@@ -3,7 +3,7 @@
 
 Source: #htb #Boot2root 
 
-
+rustscan shows 
 
 
 
