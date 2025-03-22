@@ -26,7 +26,8 @@ These files store their data in a binary format, so their contents cannot be eas
 
 To examine a `wtmp` file independently, the `utmpdump` utility can be used. It is included in the `util-linux` package, which can be installed via `sudo apt install util-linux`
 
-
+> [!tip]
+> in questions like these create a timeline of events 
 
 ### References
 https://motasemhamdan.medium.com/hackthebox-sherlock-brutus-writeup-2fae098f4b64
