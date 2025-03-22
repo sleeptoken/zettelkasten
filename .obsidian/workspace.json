@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sherlock from hackthebox.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sherlock from hackthebox"
+              "title": "use SQLite on DB found via LFI"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sherlock from hackthebox.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sherlock from hackthebox"
+              "title": "Outline of use SQLite on DB found via LFI"
             }
           }
         ],
