@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/LDAP (port 389).md",
+                "file": "Enumeration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "LDAP (port 389)"
+              "title": "Enumeration"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/LDAP (port 389).md",
+                "file": "Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LDAP (port 389)"
+              "title": "Outline of Enumeration"
             }
           }
         ],
@@ -180,8 +180,8 @@
   },
   "active": "92084f6c04a2a62a",
   "lastOpenFiles": [
-    "Enumeration.md",
     "Tags/LDAP (port 389).md",
+    "Enumeration.md",
     "Tags/SNMP (161 UDP port).md",
     "USB HID analysis.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
