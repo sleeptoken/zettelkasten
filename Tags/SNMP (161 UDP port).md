@@ -58,15 +58,20 @@ MIB is a virtual database containing a formal description of all the network obj
 MIB-managed objects include scalar objects, which define a single object instance, and tabular objects, which define a group of related object instances. OIDs include the object's type (such as counter, string, or address), access level (such as read or read/write), size restrictions, and range information. The SNMP manager converts the OIDs into a human-readable display using the MIB as a codebook. 
 
 A user can access the contents of the MIB by using a web browser either by entering the IP address and Lseries.mib or by entering the DNS library name and `Lseries.mib`. For example, `http://IP.Address/Lseries.mib `or `http://library_name/Lseries.mib.Microsoft` provides the list of MIBs that are installed with the SNMP service in the Windows resource kit
-
-
-
-
 ## Enumeration 
 
+##### W SNMPWalk 
 
+is a CLI that allows attackers to scan numerous SNMP nodes instantly and identify a set of variables that are available for accessing the target network 
+```sh
+snmpwalk -v1 -c public <Target IP Address>
+```
 
+##### W Nmap 
 
+```sh
+nmap -sU -p 161 --script=snmp-processes <Target IP Address>
+```
 
 
 ### References

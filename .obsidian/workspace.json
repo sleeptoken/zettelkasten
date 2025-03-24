@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6672f0dad0e609c3",
+            "id": "92084f6c04a2a62a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "USB HID analysis.md",
+                "file": "Tags/LDAP (port 389).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "USB HID analysis"
+              "title": "LDAP (port 389)"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "USB HID analysis.md",
+                "file": "Tags/LDAP (port 389).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of USB HID analysis"
+              "title": "Outline of LDAP (port 389)"
             }
           }
         ],
@@ -178,14 +178,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "92084f6c04a2a62a",
   "lastOpenFiles": [
+    "Enumeration.md",
+    "Tags/LDAP (port 389).md",
+    "Tags/SNMP (161 UDP port).md",
     "USB HID analysis.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
     "Sherlock from hackthebox.md",
     "Tags/Forensics.md",
     "Web Cache Deception.md",
-    "Enumeration.md",
     "Remote Thought/LFI to RCE via log poisoning.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
     "Remote Thought/Steal cookie via xss using requestbin.md",
@@ -193,7 +195,6 @@
     "Remote Thought/OpenID Connect & less sanitization.md",
     "Tags/Find.md",
     "Tags/LFI.md",
-    "Tags/SNMP (161 UDP port).md",
     "Types of API.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Regular expression Denial of Service - ReDoS.md",
@@ -205,7 +206,6 @@
     "Underpass htb.md",
     "Frameworks & basics.md",
     "Tags/OSINT.md",
-    "Tags/SNMP TRAP (162 port).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
