@@ -51,3 +51,6 @@ Displays a list of computer in a specific workgroup or shared resources availabl
 net view \\<computername_or_IP> /ALL
 ```
 above cmd displays all the shares on the specified remote computer, along w hidden shares 
+
+### Reference
+[[Enumeration]]

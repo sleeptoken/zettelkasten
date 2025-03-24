@@ -49,8 +49,24 @@ chmod +xs /tmp/nfs/shell.elf
 ##### Adversary machine
 
 check `/tmp` directory for shell.elf and execute it
+### Enumeration 
 
+NFS is a type of file system that enables users to access, view, store, and update files over a remote server. These remote data can be accessed by the client in the same way it is accessed on the local system. Depending on the privileges assigned to the clients, they can either only read or both read and write the data. 
 
+An NFS system is generally implemented on a computer network in which the centralization of data is required for critical resources. The remote procedure call (RPC) is used to route and process the request between clients and servers. 
+
+To accomplish the task of sharing files and directories over the network, the "exporting" process is used. However, the client first attempts to make the file available for sharing by using the "mounting" process. 
+- The `/etc/exports` location on the NFS server contains a list of clients allowed to share files on the server. In this approach, to access the server, the only credential used is the client's IP address.
+- NFS versions before version 4 run on the same security specification. 
+
+Enumerating NFS services enables attackers to identify the exported directories, list of clients connected to the NFS server along with their IP addresses, and the shared data associated with the IP addresses. After gathering this information, the attackers can spoof their IP addresses to gain full access to the shared files on the server.
+
+As shown in the screenshot, an attacker runs the following `rpcinfo` command to scan the target IP address for an open NFS port (port 2049) and the NFS services running on it: 
+`rpcinfo -p <Target IP Address>`
+#### Enum Tools
+
+[GitHub - hegusung/RPCScan: Tool to communicate with RPC services and check misconfigurations on NFS shares](https://github.com/hegusung/RPCScan)
+[GitHub - p4pentest/SuperEnum: This script does the basic enumeration of any open port along with screenshots.](https://github.com/p4pentest/SuperEnum)
 
 
 ### References
