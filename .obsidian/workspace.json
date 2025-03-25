@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "92084f6c04a2a62a",
+            "id": "dfd32e759848e1c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/webhook.md",
+                "file": "Remote Thought/Security configs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "webhook"
+              "title": "Security configs"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#py",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/webhook.md",
+                "file": "Remote Thought/Security configs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of webhook"
+              "title": "Outline of Security configs"
             }
           }
         ],
@@ -166,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 285.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,10 +179,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92084f6c04a2a62a",
+  "active": "dfd32e759848e1c9",
   "lastOpenFiles": [
-    "Remote Thought/SSRF Misconceptions.md",
+    "Remote Thought/PHP Object Injection & Serialization.md",
+    "Remote Thought/Security configs.md",
+    "Remote Thought/Binary exploit toolkit.md",
+    "Tags/py.md",
+    "Don't use eval.md",
     "Tags/webhook.md",
+    "Remote Thought/SSRF Misconceptions.md",
     "Tags/NFS (2049 port).md",
     "Enumeration.md",
     "Tags/SNMP TRAP (162 port).md",
@@ -201,11 +207,6 @@
     "Sherlock from hackthebox.md",
     "Tags/Forensics.md",
     "Web Cache Deception.md",
-    "Remote Thought/LFI to RCE via log poisoning.md",
-    "Remote Thought/PHP filter chain & ssh-keygen.md",
-    "Remote Thought/Steal cookie via xss using requestbin.md",
-    "Remote Thought/Chrome Policies.md",
-    "Remote Thought/OpenID Connect & less sanitization.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
