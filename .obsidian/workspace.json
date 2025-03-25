@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/NFS (2049 port).md",
+                "file": "Tags/webhook.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "NFS (2049 port)"
+              "title": "webhook"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/NFS (2049 port).md",
+                "file": "Tags/webhook.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of NFS (2049 port)"
+              "title": "Outline of webhook"
             }
           }
         ],
@@ -180,6 +180,9 @@
   },
   "active": "92084f6c04a2a62a",
   "lastOpenFiles": [
+    "Remote Thought/SSRF Misconceptions.md",
+    "Tags/webhook.md",
+    "Tags/NFS (2049 port).md",
     "Enumeration.md",
     "Tags/SNMP TRAP (162 port).md",
     "Tags/SIP (5060,5061 port).md",
@@ -203,9 +206,6 @@
     "Remote Thought/Steal cookie via xss using requestbin.md",
     "Remote Thought/Chrome Policies.md",
     "Remote Thought/OpenID Connect & less sanitization.md",
-    "Tags/Find.md",
-    "Tags/LFI.md",
-    "Types of API.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
