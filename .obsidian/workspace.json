@@ -30,8 +30,57 @@
               "icon": "lucide-file",
               "title": "Security configs"
             }
+          },
+          {
+            "id": "a2f0ee528e855c74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The host file only deals w hostnames, not ports.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "The host file only deals w hostnames, not ports"
+            }
+          },
+          {
+            "id": "279171e020ce8a80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mention headers while using wget.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "mention headers while using wget"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -153,13 +202,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Security configs.md",
+                "file": "mention headers while using wget.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Security configs"
+              "title": "Outline of mention headers while using wget"
             }
           }
         ],
@@ -179,8 +228,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dfd32e759848e1c9",
+  "active": "279171e020ce8a80",
   "lastOpenFiles": [
+    "Remote Thought/Tools for CTFs.md",
+    "mention headers while using wget.md",
+    "The host file only deals w hostnames, not ports.md",
     "Remote Thought/Security configs.md",
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Remote Thought/Binary exploit toolkit.md",
@@ -204,9 +256,6 @@
     "Tags/SNMP (161 UDP port).md",
     "USB HID analysis.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
-    "Sherlock from hackthebox.md",
-    "Tags/Forensics.md",
-    "Web Cache Deception.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
