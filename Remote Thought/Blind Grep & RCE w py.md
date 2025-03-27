@@ -1,7 +1,7 @@
 
 2024-07-19 21:01
 
-Source:  #natas #py 
+Source:  #natas 
 
 Tags: [[regex]]
 ## Natas 16

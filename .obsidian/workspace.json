@@ -32,78 +32,6 @@
             }
           },
           {
-            "id": "812c93e6d0863a67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Binary exploit toolkit"
-            }
-          },
-          {
-            "id": "8f1eef21d6c62a45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Blind Grep & RCE w py.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Blind Grep & RCE w py"
-            }
-          },
-          {
-            "id": "5b3256649c8c153f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Cross-site Session Hijacking w py.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Cross-site Session Hijacking w py"
-            }
-          },
-          {
             "id": "840cacd1e7cbc4e9",
             "type": "leaf",
             "state": {
@@ -440,7 +368,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -563,13 +491,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
+                "file": "mention headers while using wget.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Binary exploit toolkit"
+              "title": "Outline of mention headers while using wget"
             }
           }
         ],
@@ -589,9 +517,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "812c93e6d0863a67",
+  "active": "279171e020ce8a80",
   "lastOpenFiles": [
     "Tags/py.md",
+    "Remote Thought/Cross-site Session Hijacking w py.md",
+    "Remote Thought/Blind Grep & RCE w py.md",
+    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/SQL injection w py.md",
@@ -603,9 +534,6 @@
     "Remote Thought/File Upload vuln. w py.md",
     "Don't use eval.md",
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
-    "Remote Thought/Cross-site Session Hijacking w py.md",
-    "Remote Thought/Blind Grep & RCE w py.md",
-    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Security configs.md",
     "The host file only deals w hostnames, not ports.md",
     "mention headers while using wget.md",
