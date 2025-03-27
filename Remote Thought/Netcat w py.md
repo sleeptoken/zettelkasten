@@ -1,7 +1,7 @@
 
 2024-08-02 17:05
 
-Source: #htb #py 
+Source: #htb 
 
 Tags: [[pwntools]] [[Binary Exploit]]
 

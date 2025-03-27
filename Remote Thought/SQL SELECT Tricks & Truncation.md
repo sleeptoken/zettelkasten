@@ -1,7 +1,7 @@
 
 2024-08-03 14:07
 
-Source: #natas #web #py 
+Source: #natas #web 
 
 Tags: [[SQL injection]] [[PHP]]
 

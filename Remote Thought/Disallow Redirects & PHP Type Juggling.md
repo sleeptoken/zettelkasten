@@ -1,7 +1,7 @@
 
 2024-07-22 17:21
 
-Source: #natas  #web #py 
+Source: #natas  #web 
 ### Natas 22 - Disallow Redirects
 
 - on inspecting the source code we find that we have some `php` code at the start that checks if `revelio` is set to 1 

@@ -1,7 +1,7 @@
 
 2024-07-14 18:54
 
-Source:   #natas #web #py 
+Source:   #natas #web 
 
 Tags: [[Local File Inclusion & Command Injection]]
 ## Natas12
