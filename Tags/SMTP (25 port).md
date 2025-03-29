@@ -4,3 +4,12 @@ SMTP servers respond differently to `VRFY`, `EXPN`, and `RCPT TO` commands for v
 - Attackers can directly interact with SMTP via the Telnet prompt and collect a list of valid users on the SMTP server. 
 
 Administrators and pen testers can perform SMTP enumeration using command-line utilities such as Telnet and netcat or by using tools such as Metasploit, Nmap, NetScan Tools Pro, and smtp-user-enum to collect a list of valid users, delivery addresses, message recipients, etc.
+### Enumeration using Nmap
+
+lists all the SMTP commands available in the Nmap directory 
+```
+nmap -p 25, 365, 587 -script=smtp-commands <Target IP Address>
+```
+### Enumeration using Metasploit 
+
+The SMTP enumeration module that allows attackers to connect to the target SMTP server and enumerate usernames using predefined wordlists.

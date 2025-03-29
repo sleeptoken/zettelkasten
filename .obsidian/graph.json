@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "tag:#android  ",
@@ -39,6 +39,6 @@
   "repelStrength": 7.50519750519751,
   "linkStrength": 0.857588357588358,
   "linkDistance": 363,
-  "scale": 0.0883029475255148,
+  "scale": 0.04492517408528725,
   "close": false
 }
