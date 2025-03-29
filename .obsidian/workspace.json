@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2d9250a5f399f43",
+        "id": "6d63a6db8a21fe19",
         "type": "tabs",
         "children": [
           {
-            "id": "a2f0ee528e855c74",
+            "id": "a65977993b61c891",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The host file only deals w hostnames, not ports.md",
+                "file": "Tags/SMTP (25 port).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The host file only deals w hostnames, not ports"
+              "title": "SMTP (25 port)"
             }
           }
         ]
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The host file only deals w hostnames, not ports.md",
+                "file": "Tags/SMTP (25 port).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The host file only deals w hostnames, not ports"
+              "title": "Outline of SMTP (25 port)"
             }
           }
         ],
@@ -179,14 +178,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a2f0ee528e855c74",
+  "active": "a65977993b61c891",
   "lastOpenFiles": [
-    "Don't use eval.md",
+    "Enumeration.md",
+    "Tags/SMTP (25 port).md",
+    "Tags/LDAP (port 389).md",
+    "Web Cache Deception.md",
+    "USB HID analysis.md",
+    "Sherlock from hackthebox.md",
+    "Remote Thought/Don't use eval.md",
+    "Remote Thought/Mention headers while using wget.md",
+    "Remote Thought/The host file only deals w hostnames, not ports.md",
     "Tags/py.md",
     "Remote Thought/break RSA w public key.md",
     "Remote Thought/Reflected XSS.md",
     "Remote Thought/Pluck Exploit & Depix.md",
-    "The host file only deals w hostnames, not ports.md",
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
@@ -198,15 +204,8 @@
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/Security configs.md",
-    "Mention headers while using wget.md",
     "Remote Thought/Cross-site Session Hijacking w py.md",
     "Remote Thought/Blind Grep & RCE w py.md",
-    "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/Tools for CTFs.md",
-    "Tags/webhook.md",
-    "Remote Thought/SSRF Misconceptions.md",
-    "Tags/NFS (2049 port).md",
-    "Enumeration.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
