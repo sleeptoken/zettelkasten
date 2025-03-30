@@ -13,3 +13,7 @@ nmap -p 25, 365, 587 -script=smtp-commands <Target IP Address>
 ### Enumeration using Metasploit 
 
 The SMTP enumeration module that allows attackers to connect to the target SMTP server and enumerate usernames using predefined wordlists.
+
+### Other tools 
+
+[smtp-user-enum | pentestmonkey](https://pentestmonkey.net/tools/user-enumeration/smtp-user-enum)

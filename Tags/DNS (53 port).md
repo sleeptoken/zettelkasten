@@ -33,8 +33,7 @@ These records resolve to another domain name
 - write a little about SPF records
 
 DNS records all come with a [[TTL]] (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. (i.e. this field specifies how long a DNS record should be cached for) Caching saves on having to make a DNS request every time you communicate with a server.
-
-
+### Enumeration using [[DNS Zone Transfer]]
 ### References
 [TryHackMe | DNS in detail](https://tryhackme.com/r/room/dnsindetail)
 
