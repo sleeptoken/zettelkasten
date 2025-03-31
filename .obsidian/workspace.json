@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a65977993b61c891",
+            "id": "8811d22e238b29db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/DNS (53 port).md",
+                "file": "DNS Cache Snooping.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "DNS (53 port)"
-            }
-          },
-          {
-            "id": "8e1b495ca59a820e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DNS Zone Transfer.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "DNS Zone Transfer"
+              "title": "DNS Cache Snooping"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DNS Zone Transfer.md",
+                "file": "DNS Cache Snooping.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DNS Zone Transfer"
+              "title": "Outline of DNS Cache Snooping"
             }
           }
         ],
@@ -203,9 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e1b495ca59a820e",
+  "active": "8811d22e238b29db",
   "lastOpenFiles": [
-    "DNS Zone Transfer.md",
+    "DNS Cache Snooping.md",
+    "Remote Thought/DNS Zone Transfer.md",
     "Tags/DNS (53 port).md",
     "Tags/SMTP (25 port).md",
     "Enumeration.md",
@@ -230,7 +206,6 @@
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/Security configs.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",

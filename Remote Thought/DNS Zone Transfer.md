@@ -1,9 +1,7 @@
 
 2025-03-29 21:23
 
-Source: 
-
-Tags: 
+Tags: [[DNS (53 port)]] 
 
 ### Enumeration
  
@@ -12,7 +10,7 @@ DNS zone transfer is the process of transferring a copy of the DNS zone file fro
 In DNS enumeration using zone transfer, an attacker attempts to retrieve a copy of the entire zone file for a domain from the DNS server. Attackers can perform DNS zone transfer using tools such as nslookup, dig command, and DNSRecon. If the DNS transfer setting is enabled on the target name server, it will provide the DNS information; else, it will return an error stating it has failed or refused the zone transfer. 
 
 To perform a DNS zone transfer, the attacker sends a zone-transfer request to the DNS server pretending to be a client; the DNS server then sends a portion of its database as a zone to the attacker. This zone may contain a large amount of information about the DNS zone network.
-#### Dig command 
+#### Dig for Linux 
 
 Attackers use the dig command on Linux-based systems to query the DNS name servers and retrieve information about the target host addresses, name servers, mail exchanges, etc
 
@@ -26,9 +24,8 @@ Next, attackers use one of the name servers from the output of the above command
 dig @<domain of name server> <target domain> axfr 
 ```
 
-#### nslookup Command 
+#### nslookup for windows
 
-Source: https://docs.microsoft.com 
 Attackers use the nslookup command on Windows-based systems to query the DNS name servers and retrieve information about the target host addresses, name servers, mail exchanges, etc.
 Attackers use the following command to perform DNS zone transfer:
 
@@ -45,7 +42,6 @@ The above command sets the query type to the Start of Authority (SOA) record to 
 ```
 
 #### DNSRecon 
-Source: https://github.com 
 
 Attackers use DNSRecon to check all NS records of the target domain for zone transfers. As shown in the screenshot, attackers use the following command for DNS zone transfer: 
 
