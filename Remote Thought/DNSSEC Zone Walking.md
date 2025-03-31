@@ -19,6 +19,8 @@ LDNS - walk enumerates the DNSSEC Zone and obtains results on the DNS record fil
 ### DNSRecon
 
 DNSRecon is a zone enumeration tool that assists users in enumerating DNS records such as A, AAAA, and CNAME. It also performs NSEC Zone enumeration to obtain DNS record files of a target domain 
-
+```
+dnsrecord -d <target domain> -z
+```
 
 ### References

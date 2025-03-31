@@ -34,6 +34,38 @@ These records resolve to another domain name
 
 DNS records all come with a [[TTL]] (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. (i.e. this field specifies how long a DNS record should be cached for) Caching saves on having to make a DNS request every time you communicate with a server.
 
+### Enumeration using Amass
+
+OWASP Amass is a DNS enumeration tool that allows attackers to map the target network and discover potential attack surfaces. Attackers use a combination of both active and passive reconnaissance techniques to gather information from DNS. This tool enables attackers to enumerate critical information without triggering any security alerts within the DNS environment of the targeted network. 
+
+```
+amass enum -d <Target Domain> 
+```
+The above command allows attackers to gather all the details of DNS, including its subdomains. Using this command, attackers can also enumerate details of IP addresses, SSL/TLS, HTTP, APIs, certificates, web archives, and data scraping incorporated with the target domain.
+### Enumeration using [[nmap]]
+
+list all the available services on the target host
+```
+nmap --script=broadcast-dns-service-discovery <target domain>
+```
+
+to retrieve all the subdomains associated with the target host along w the IP address
+```
+nmap -T4 -p 53 --script dns-brute <target domain>
+```
+If any wildcard entries are recorded they are represented as `*A*` for IPv4 addresses and `*AAAA*` for IPv6 address
+
+to check weather DNS recursion is enabled on the target server
+```
+nmap -Pn -sU -p 53 --script=dns-recursion <IPaddress>
+```
+#### DNSSEC Enumeration 
+
+Enumerate using `dns-nsec-enum.nse` or `dns-nsec3-enum.nse`
+to retrieve the list of subdomains associated with the target domain 
+```
+nmap -sU -p 53 --script dns-nsec-enum --script-args dns-nsec-enum.domains=eccouncil.org <target IP>
+```
 ### References
 [TryHackMe | DNS in detail](https://tryhackme.com/r/room/dnsindetail)
 
