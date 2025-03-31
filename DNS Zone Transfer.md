@@ -48,8 +48,11 @@ The above command sets the query type to the Start of Authority (SOA) record to 
 Source: https://github.com 
 
 Attackers use DNSRecon to check all NS records of the target domain for zone transfers. As shown in the screenshot, attackers use the following command for DNS zone transfer: 
+
+```
 dnsrecon -t axfr -d <target domain> 
-In the above command, the -t option specifies the type of enumeration to be performed, axfr is the type of enumeration in which all NS servers are tested for a zone transfer, and the -d option specifies the target domain. 
-X
+```
+In the above command, the `-t` option specifies the type of enumeration to be performed, `axfr` is the type of enumeration in which all NS servers are tested for a zone transfer, and the `-d` option specifies the target domain. 
+
 ### References
 [[Enumeration]]
