@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8811d22e238b29db",
+            "id": "beba9204f3dfb085",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DNS Cache Snooping.md",
+                "file": "DNSSEC Zone Walking.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "DNS Cache Snooping"
+              "title": "DNSSEC Zone Walking"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DNS Cache Snooping.md",
+                "file": "DNSSEC Zone Walking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DNS Cache Snooping"
+              "title": "Outline of DNSSEC Zone Walking"
             }
           }
         ],
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,9 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8811d22e238b29db",
+  "active": "beba9204f3dfb085",
   "lastOpenFiles": [
-    "DNS Cache Snooping.md",
+    "DNSSEC Zone Walking.md",
+    "Remote Thought/DNS Cache Snooping.md",
     "Remote Thought/DNS Zone Transfer.md",
     "Tags/DNS (53 port).md",
     "Tags/SMTP (25 port).md",
@@ -205,7 +206,6 @@
     "Remote Thought/Return to Win.md",
     "Remote Thought/SQL injection w py.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
-    "Remote Thought/Time based SQL injection w py.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
