@@ -21,5 +21,13 @@ what should i input in place of formula to get flag.txt? -
 require('fs').readFileSync('/flag.txt').toString();
 ```
 
+> [!tip]
+> Try injecting code in every field that can be manipulated 
+
+### Blind Command Injection via file upload 
+
+
+
+
 ### References
 [TryHackMe | OWASP Top 10 - 2021](https://tryhackme.com/r/room/owasptop102021)
