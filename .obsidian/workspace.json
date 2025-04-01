@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2ebef6bcc673b1e9",
+            "id": "33ad17c92ac36525",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Injection.md",
+                "file": "Repeating Key XOR.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Injection"
+              "title": "Repeating Key XOR"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Injection.md",
+                "file": "Repeating Key XOR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Injection"
+              "title": "Outline of Repeating Key XOR"
             }
           }
         ],
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 284.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,21 +178,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "33ad17c92ac36525",
   "lastOpenFiles": [
+    "Repeating Key XOR.md",
+    "Remote Thought/Injection.md",
     "Untitled.md",
-    "Remote Thought/use SQLite on DB found via LFI.md",
     "Msfconsole.md",
+    "USB HID analysis.md",
+    "Sherlock from hackthebox.md",
+    "Enumeration.md",
+    "Remote Thought/use SQLite on DB found via LFI.md",
     "Tags/DNS (53 port).md",
     "Remote Thought/DNSSEC Zone Walking.md",
-    "Enumeration.md",
     "Remote Thought/DNS Cache Snooping.md",
     "Remote Thought/DNS Zone Transfer.md",
     "Tags/SMTP (25 port).md",
     "Tags/LDAP (port 389).md",
     "Web Cache Deception.md",
-    "USB HID analysis.md",
-    "Sherlock from hackthebox.md",
     "Remote Thought/Don't use eval.md",
     "Remote Thought/Mention headers while using wget.md",
     "Remote Thought/The host file only deals w hostnames, not ports.md",
@@ -204,8 +206,6 @@
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
     "Remote Thought/Netcat w py.md",
-    "Remote Thought/PHP Object Injection & Serialization.md",
-    "Remote Thought/PHPSESSID & session handler w py.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
