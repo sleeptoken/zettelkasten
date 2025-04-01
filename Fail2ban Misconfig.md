@@ -24,7 +24,11 @@ exploit
 ```
 
 After getting the meterpreter shell type `shell` to get access to all Unix shell commands 
+### Privesc 
+
 
 
 ### References
 [TryHackMe | Billing](https://tryhackme.com/room/billing)
+
+[CTF Chronicles: Billing | THM – NATSec](https://natsecure.wordpress.com/2025/03/08/ctf-chronicles-billing-thm/)
