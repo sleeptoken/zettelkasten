@@ -11,10 +11,24 @@
             "id": "ce2230b9c346e883",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Enumeration.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Enumeration"
             }
           }
         ]
@@ -138,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Repeating Key XOR.md",
+                "file": "Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Repeating Key XOR"
+              "title": "Outline of Enumeration"
             }
           }
         ],
@@ -164,15 +178,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "ce2230b9c346e883",
   "lastOpenFiles": [
-    "Remote Thought/Directory busting.md",
-    "Tags/stego.md",
-    "Repeating Key XOR.md",
-    "USB HID analysis.md",
+    "Remote Thought/DNS Cache Snooping.md",
+    "Enumeration.md",
     "Web Cache Deception.md",
     "Sherlock from hackthebox.md",
-    "Enumeration.md",
+    "USB HID analysis.md",
+    "Repeating Key XOR.md",
+    "Remote Thought/Directory busting.md",
+    "Tags/stego.md",
     "Untitled.md",
     "Tags/Msfconsole.md",
     "Remote Thought/Fail2ban Misconfig.md",
@@ -180,7 +195,6 @@
     "Remote Thought/use SQLite on DB found via LFI.md",
     "Tags/DNS (53 port).md",
     "Remote Thought/DNSSEC Zone Walking.md",
-    "Remote Thought/DNS Cache Snooping.md",
     "Remote Thought/DNS Zone Transfer.md",
     "Tags/SMTP (25 port).md",
     "Tags/LDAP (port 389).md",
