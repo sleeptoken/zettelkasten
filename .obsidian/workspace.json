@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fail2ban Misconfig.md",
+                "file": "Tags/Msfconsole.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Fail2ban Misconfig"
+              "title": "Msfconsole"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fail2ban Misconfig.md",
+                "file": "Tags/Msfconsole.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fail2ban Misconfig"
+              "title": "Outline of Msfconsole"
             }
           }
         ],
@@ -178,13 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33ad17c92ac36525",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "Repeating Key XOR.md",
-    "Remote Thought/Injection.md",
-    "Fail2ban Misconfig.md",
-    "Msfconsole.md",
     "USB HID analysis.md",
+    "Tags/Msfconsole.md",
+    "Repeating Key XOR.md",
+    "Remote Thought/Fail2ban Misconfig.md",
+    "Remote Thought/Injection.md",
     "Sherlock from hackthebox.md",
     "Enumeration.md",
     "Remote Thought/use SQLite on DB found via LFI.md",

