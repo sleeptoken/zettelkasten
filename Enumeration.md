@@ -136,5 +136,34 @@ Attackers can take advantage of the Telnet protocol to perform banner grabbing o
 [[BGP (port 179)]] is widely used by Internet service providers (ISPs) to maintain huge routing tables and for efficiently processing Internet traffic. BGP routers establish sessions on TCP port 179. 
 - The misconfiguration of BGP may lead to various attacks such as dictionary attacks, resource-exhaustion attacks, flooding attacks, and hijacking attacks.
 
+## IPsec Enumeration 
+
+IPsec is the most commonly implemented technology for both gateway-to-gateway (LAN-to-LAN) and host-to-gateway (remote access) enterprise VPN solutions. IPsec provides data security by employing various components such as Encapsulating Security Payload (`ESP`), Authentication Header (`AH`), and Internet Key Exchange (`IKE`) to secure communication between VPN endpoints. 
+Most IPsec-based VPNs use the Internet Security Association Key Management Protocol (`ISAKMP`), a part of IKE, to establish, negotiate, modify, and delete Security Associations (SA) and cryptographic keys in a VPN environment. 
+Attackers can perform simple direct scanning for ISAKMP at UDP port 500 with tools such as Nmap to acquire information related to the presence of a VPN gateway. 
+
+The following command can be used to perform an Nmap scan for checking the status of `ISAKMP` over port 500: 
+```
+nmap -sU -p 500 <target IP address>
+```
+
+In this type of scan specially crafted IKE packets with an ISAKMP header are sent to the target gateway
+```
+ike-scan -M <target gateway IP address>
+```
+ike-scan discovers IKE hosts and can fingerprint them using the retransmission backoff pattern 
+
+Fingerprinting: The IKE implementation used by the hosts can be determined, and in 
+some cases, the version of the software they are running can be determined. This is done in two ways: 
+- **UDP backoff fingerprinting**, which involves recording the times of arrival of the IKE response packets from the target hosts and comparing the observed retransmission backoff pattern against known patterns 
+- **Vendor ID fingerprinting**, which compares Vendor ID payloads from the VPN servers against known Vendor ID patterns.
+
+nmap script to detect the version of IKE running. which can provide insights into the IPsec config 
+```
+nmap -sU -p 500 -script=ike-version <Target IP>
+```
+
+
+
 ### References
 CEH v13 M4

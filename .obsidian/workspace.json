@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0b7637249fb40955",
+        "id": "f07e0152dccb86f7",
         "type": "tabs",
         "children": [
           {
-            "id": "33ad17c92ac36525",
+            "id": "5e1a15f41de8da08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Msfconsole.md",
+                "file": "Enumeration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Msfconsole"
+              "title": "Enumeration"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Msfconsole.md",
+                "file": "Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Msfconsole"
+              "title": "Outline of Enumeration"
             }
           }
         ],
@@ -178,10 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "5e1a15f41de8da08",
   "lastOpenFiles": [
-    "USB HID analysis.md",
+    "Web Cache Deception.md",
+    "Untitled.md",
     "Tags/Msfconsole.md",
+    "USB HID analysis.md",
     "Repeating Key XOR.md",
     "Remote Thought/Fail2ban Misconfig.md",
     "Remote Thought/Injection.md",
@@ -194,7 +196,6 @@
     "Remote Thought/DNS Zone Transfer.md",
     "Tags/SMTP (25 port).md",
     "Tags/LDAP (port 389).md",
-    "Web Cache Deception.md",
     "Remote Thought/Don't use eval.md",
     "Remote Thought/Mention headers while using wget.md",
     "Remote Thought/The host file only deals w hostnames, not ports.md",
@@ -205,7 +206,6 @@
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/File Upload vuln. w py.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
-    "Remote Thought/Netcat w py.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
