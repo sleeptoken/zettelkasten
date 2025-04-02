@@ -10,7 +10,7 @@ is slow
 ```sh
 gobuster dir -u [http://vulnnet.thm:80](http://vulnnet.thm/) -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -t 25 -q -x php,aspx,txt,asp
 ```
-
+`-x` is for extensions 
 #### Subdomains
 
 [[ffuf]]
