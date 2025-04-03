@@ -185,5 +185,33 @@ nmap -SR <target IP/network>
 nmap -T4 -A <target IP/network>
 ```
 
+## Unix/Linux User Enumeration 
+
+### rusers
+
+rusers displays a list of users who are logged in to remote machines or machines on the local network. It displays an output similar to the Who command, but for the hosts/systems on the local network.
+
+```sh
+/usr/bin/rusers [-a] [-l] [-u| -h| -i] [hosts]
+```
+### rwho 
+
+rwho displays a list of users who are logged in to hosts on the local network. Its output is similar to that of the `who` command and contains information about the username, host name, and start date and time of each session for all machines on the local network running the `rwho` daemon. Its syntax is as follows: 
+```
+rwho [-a] 
+```
+
+It has the following option. 
+-a: Includes all users; without this flag, users whose sessions are idle for an hour or more are not included in the report 
+### finger
+
+finger displays information about system users such as the user's login name, real name, terminal name, idle time, login time, office location, and office phone numbers. Its syntax is as follows: 
+
+```
+finger [-l] [-m] [-p] [-s] [user...] [user@host...] 
+```
+
+
+
 ### References
 CEH v13 M4
