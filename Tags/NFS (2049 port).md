@@ -67,6 +67,12 @@ As shown in the screenshot, an attacker runs the following `rpcinfo` command to 
 
 [GitHub - hegusung/RPCScan: Tool to communicate with RPC services and check misconfigurations on NFS shares](https://github.com/hegusung/RPCScan)
 [GitHub - p4pentest/SuperEnum: This script does the basic enumeration of any open port along with screenshots.](https://github.com/p4pentest/SuperEnum)
+#### Enumeration Countermeasure
 
+| Implement proper permissions (read/write must be restricted to specific users) on exported file systems                              |
+| ------------------------------------------------------------------------------------------------------------------------------------ |
+| Implement firewall rules to block NFS port 2049                                                                                      |
+| Ensure proper configuration of files, such as /etc/smb.conf, /etc/exports and etc/hosts.allow, to protect the data stored in servers |
+| Log the requests to access the system files on the NFS server                                                                        |
 
 ### References

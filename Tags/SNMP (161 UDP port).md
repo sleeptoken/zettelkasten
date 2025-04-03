@@ -66,12 +66,17 @@ is a CLI that allows attackers to scan numerous SNMP nodes instantly and identif
 ```sh
 snmpwalk -v1 -c public <Target IP Address>
 ```
-
 ##### W Nmap 
 
 ```sh
 nmap -sU -p 161 --script=snmp-processes <Target IP Address>
 ```
+#### Enumeration Countermeasure
 
+| Remove the SNMP agent or turn off the SNMP service                                                    |
+| ----------------------------------------------------------------------------------------------------- |
+| If turning off SNMP is not an option, then change the default community string names                  |
+| Upgrade to SNMP3, which encrypts passwords and messages                                               |
+| Implement the Group Policy security option called "Additional restrictions for anonymous connections" |
 
 ### References

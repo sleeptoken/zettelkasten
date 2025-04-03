@@ -210,8 +210,28 @@ finger displays information about system users such as the user's login name, re
 ```
 finger [-l] [-m] [-p] [-s] [user...] [user@host...] 
 ```
+## Ai generated enum script 
 
+```sh
+#!/bin/bash 
+target_range="10.10.1.0/24" 
+#Update system and install necessary tools 
+sudo apt-get update && sudo apt-get install -y nmap 
+#Create a directory for the enumeration outputs 
+mkdir -p ~/enumeration_results 
+#Perform a ping sweep to find live hosts 
+nmap -sn $target_range -oN ~/enumeration_results/ping_sweep.txt 
+#Perform a quick scan on discovered hosts 
+nmap -T4 -F $target_range -oN ~/enumeration_results/quick_scan.txt
+#Perform a detailed scan on discovered hosts. 
+nmap -T4 -A $target_range -oN ~/enumeration_results/detailed_scan.txt 
+#Perform a version detection scan on discovered hosts 
+nmap -sV $target_range -oN ~/enumeration_results/version_detection.txt 
+#Execute the script 
+chmod +x network_enumeration.sh &&./network_enumeration.sh
+```
 
+Countermeasures are mentioned at the end of each file eg. LDAP, SNMP et cetra.
 
 ### References
 CEH v13 M4

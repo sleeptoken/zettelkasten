@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/SMB shares (445 port).md",
+                "file": "Enumeration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SMB shares (445 port)"
+              "title": "Enumeration"
+            }
+          },
+          {
+            "id": "2d02664e7a84442f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tags/SNMP (161 UDP port).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SNMP (161 UDP port)"
             }
           }
         ]
@@ -152,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/SMB shares (445 port).md",
+                "file": "Enumeration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SMB shares (445 port)"
+              "title": "Outline of Enumeration"
             }
           }
         ],
@@ -180,7 +204,13 @@
   },
   "active": "ce2230b9c346e883",
   "lastOpenFiles": [
+    "Tags/NFS (2049 port).md",
     "Enumeration.md",
+    "Tags/LDAP (port 389).md",
+    "Tags/SNMP (161 UDP port).md",
+    "Tags/SMTP (25 port).md",
+    "Tags/DNS (53 port).md",
+    "Tags/SMB shares (445 port).md",
     "Remote Thought/DNS Cache Snooping.md",
     "Web Cache Deception.md",
     "Sherlock from hackthebox.md",
@@ -193,19 +223,13 @@
     "Remote Thought/Fail2ban Misconfig.md",
     "Remote Thought/Injection.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
-    "Tags/DNS (53 port).md",
     "Remote Thought/DNSSEC Zone Walking.md",
     "Remote Thought/DNS Zone Transfer.md",
-    "Tags/SMTP (25 port).md",
-    "Tags/LDAP (port 389).md",
     "Remote Thought/Don't use eval.md",
     "Remote Thought/Mention headers while using wget.md",
     "Remote Thought/The host file only deals w hostnames, not ports.md",
     "Tags/py.md",
     "Remote Thought/break RSA w public key.md",
-    "Remote Thought/Reflected XSS.md",
-    "Remote Thought/Pluck Exploit & Depix.md",
-    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",

@@ -66,6 +66,12 @@ to retrieve the list of subdomains associated with the target domain
 ```
 nmap -sU -p 53 --script dns-nsec-enum --script-args dns-nsec-enum.domains=eccouncil.org <target IP>
 ```
+#### Enumeration Countermeasure
+
+- Ensure that the resolver can be accessed only by the hosts inside the network 
+- Ensure that the request packets exiting the network use random ports
+- Audit DNS zones to identify vulnerabilities in domains and subdomains
+- Update and patch nameservers with the most recent versions of software
 ### References
 [TryHackMe | DNS in detail](https://tryhackme.com/r/room/dnsindetail)
 

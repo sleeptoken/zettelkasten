@@ -17,3 +17,12 @@ nmap -p 389 --script ldap-brute --script-args ldap.base='"cn=users,dc=CEH,dc=com
 
 [Softerra LDAP Administrator & Browser: Directory Management Tool for Windows](https://www.ldapadministrator.com/)
 [LDAPsearch](https://linux.die.net/man/1/ldapsearch)
+
+
+
+#### Enumeration Countermeasure
+
+| By default, LDAP traffic is transmitted unsecured; use SSL or STARTTLS technology to encrypt the traffic<br>   |
+| -------------------------------------------------------------------------------------------------------------- |
+| Select a username different from your email address and enable account lockout                                 |
+| Use NT LAN Manager (NTLM), Kerberos, or any basic authentication mechanism to limit access to legitimate users |
