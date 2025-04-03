@@ -178,10 +178,12 @@ Svmap is an open-source scanner that identifies SIP devices and PBX servers on a
 
 The remote procedure call (RPC) is a technology used for creating distributed client/server programs. RPC allows clients and servers to communicate in distributed client/server programs. It is an inter-process communication mechanism, which enables data exchange between different processes. In general, RPC consists of components such as a client, a server, an endpoint, an endpoint mapper, a client stub, and a server stub, along with various dependencies. 
 The portmapper service listens on TCP and UDP port 111 to detect the endpoints and present clients, along with details of listening RPC services. Enumerating RPC endpoints enables attackers to identify any vulnerable services on these service ports. In networks protected by firewalls and other security establishments, this portmapper is often filtered. Therefore, attackers scan wide port ranges to identify RPC services that are open to direct attack. 
+
 Attackers use the following Nmap scan commands to identify the RPC service running on the network: 
+```
 nmap -SR <target IP/network> 
 nmap -T4 -A <target IP/network>
-
+```
 
 ### References
 CEH v13 M4
