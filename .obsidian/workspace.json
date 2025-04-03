@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumeration.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Enumeration"
+              "title": "Spawning a TTY shell"
             }
           },
           {
@@ -176,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Enumeration.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Enumeration"
+              "title": "Outline of Spawning a TTY shell"
             }
           }
         ],
@@ -204,8 +204,8 @@
   },
   "active": "ce2230b9c346e883",
   "lastOpenFiles": [
-    "Tags/NFS (2049 port).md",
     "Enumeration.md",
+    "Tags/NFS (2049 port).md",
     "Tags/LDAP (port 389).md",
     "Tags/SNMP (161 UDP port).md",
     "Tags/SMTP (25 port).md",
