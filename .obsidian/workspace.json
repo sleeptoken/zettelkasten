@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/File transfer.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "File transfer"
+              "title": "Untitled"
             }
           }
         ],
@@ -177,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/File transfer.md",
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of File transfer"
+              "title": "Outline of Untitled"
             }
           }
         ],
@@ -205,8 +205,8 @@
   },
   "active": "3e964e6bdb0ade58",
   "lastOpenFiles": [
-    "Exploiting Chrome Remote Debugger.md",
     "Tags/File transfer.md",
+    "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Freq Analysis.md",
     "Remote Thought/Pluck Exploit & Depix.md",
     "Remote Thought/Spawning a TTY shell.md",
