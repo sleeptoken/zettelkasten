@@ -5,9 +5,13 @@ Source: #reversing
 
 Everything is carried out on [GitHub - mandiant/flare-vm: A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.](https://github.com/mandiant/flare-vm)
 
-Throwing the exe into CFF Explorer we find out that 
+Throwing the exe into CFF Explorer we find out that it is a `.NET Binary`
 
+Running the file shows a picture upon startup. Clicking on Decode button gives gibberish.
 
+Run the file through `CodeTrack`. This shows that under `initializecomponent()` we see the Decode button is implemented  
+
+Use `dnSpy` to explore the EXE and find the code that's triggered upon clicking the button, which is Form1.btnDecode_Click(). This loads Resources.dat_secret. Found that resource in dnSpy and save as file. Then notice some algorithm being executed on the data. Replicate that in Python (see challenge1.py) and we can resolve it t
 
 
 ### References
