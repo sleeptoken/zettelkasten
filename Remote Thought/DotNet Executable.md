@@ -45,6 +45,8 @@ Use `HxD` to look at the contents
 Rewrite the C code in python using chatGPT and print the final o/p
 [My Adventure with Fireeye FLARE Challenge](https://parsiya.net/blog/2014-09-23-my-adventure-with-fireeye-flare-challenge/#ch1)
 
+you get an email as a flag and you got to email them to receive an automated mail containing the next challenge 
+
 ### References
 Flare-on 2014
 [GitHub - fareedfauzi/Flare-On-Challenges: This repository aims to compile all Flare-On challenge binaries and write-ups. Update: 2014 -2024.](https://github.com/fareedfauzi/Flare-On-Challenges?tab=readme-ov-file)

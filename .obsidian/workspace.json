@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet Executable.md",
+                "file": "Remote Thought/DotNet Executable.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet Executable.md",
+                "file": "Remote Thought/DotNet Executable.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,9 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3aa5f044f4d9b8a3",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
-    "DotNet Executable.md",
+    "Remote Thought/DotNet Executable.md",
     "Untitled.md",
     "Repeating Key XOR.md",
     "USB HID analysis.md",
