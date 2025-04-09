@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "73c980d55d627ad8",
+        "id": "f62db0cc0051e56e",
         "type": "tabs",
         "children": [
           {
-            "id": "b4b06513b6c2a605",
+            "id": "3aa5f044f4d9b8a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Spawning a TTY shell.md",
+                "file": "Flare-on 2014.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Spawning a TTY shell"
-            }
-          },
-          {
-            "id": "3e964e6bdb0ade58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Flare-on 2014"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "Flare-on 2014.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of Flare-on 2014"
             }
           }
         ],
@@ -203,34 +178,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e964e6bdb0ade58",
+  "active": "3aa5f044f4d9b8a3",
   "lastOpenFiles": [
+    "Flare-on 2014.md",
+    "Untitled.md",
+    "Repeating Key XOR.md",
+    "USB HID analysis.md",
+    "Sherlock from hackthebox.md",
+    "Web Cache Deception.md",
+    "Enumeration.md",
+    "Remote Thought/Spawning a TTY shell.md",
     "Tags/File transfer.md",
     "Exploiting Chrome Remote Debugger.md",
     "Remote Thought/Freq Analysis.md",
     "Remote Thought/Pluck Exploit & Depix.md",
-    "Remote Thought/Spawning a TTY shell.md",
-    "Untitled.md",
     "Tags/linux.md",
     "Tags/SNMP (161 UDP port).md",
-    "Enumeration.md",
     "Tags/NFS (2049 port).md",
     "Tags/LDAP (port 389).md",
     "Tags/SMTP (25 port).md",
     "Tags/DNS (53 port).md",
     "Tags/SMB shares (445 port).md",
     "Remote Thought/DNS Cache Snooping.md",
-    "Web Cache Deception.md",
-    "Sherlock from hackthebox.md",
-    "USB HID analysis.md",
-    "Repeating Key XOR.md",
     "Remote Thought/Directory busting.md",
     "Tags/stego.md",
     "Tags/Msfconsole.md",
     "Remote Thought/Fail2ban Misconfig.md",
     "Remote Thought/Injection.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
-    "Remote Thought/DNSSEC Zone Walking.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
