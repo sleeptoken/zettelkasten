@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flare-on 2014.md",
+                "file": "DotNet Executable.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Flare-on 2014"
+              "title": "DotNet Executable"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flare-on 2014.md",
+                "file": "DotNet Executable.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Flare-on 2014"
+              "title": "Outline of DotNet Executable"
             }
           }
         ],
@@ -180,7 +180,7 @@
   },
   "active": "3aa5f044f4d9b8a3",
   "lastOpenFiles": [
-    "Flare-on 2014.md",
+    "DotNet Executable.md",
     "Untitled.md",
     "Repeating Key XOR.md",
     "USB HID analysis.md",
