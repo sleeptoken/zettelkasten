@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f62db0cc0051e56e",
+        "id": "4e343333704589d4",
         "type": "tabs",
         "children": [
           {
-            "id": "10a2e9474650e362",
+            "id": "8b4cf6178620eed1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PDF Malware Analysis.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "PDF Malware Analysis"
+              "title": "New tab"
             }
           }
         ]
@@ -84,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +139,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF Malware Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of PDF Malware Analysis"
+              "title": "Outline"
             }
           }
         ],
@@ -178,16 +164,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "10a2e9474650e362",
+  "active": "0cc3d1be09e41370",
   "lastOpenFiles": [
+    "Remote Thought/use SQLite on DB found via LFI.md",
+    "Web Cache Deception.md",
+    "Sherlock from hackthebox.md",
+    "USB HID analysis.md",
+    "Repeating Key XOR.md",
+    "Untitled.md",
+    "Remote Thought/PDF Malware Analysis.md",
+    "Template/Full Note.md",
     "Remote Thought/Php code in png file.md",
     "Remote Thought/DotNet Executable.md",
-    "PDF Malware Analysis.md",
-    "Untitled.md",
-    "Repeating Key XOR.md",
-    "USB HID analysis.md",
-    "Sherlock from hackthebox.md",
-    "Web Cache Deception.md",
     "Enumeration.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Tags/File transfer.md",
@@ -204,8 +192,6 @@
     "Remote Thought/DNS Cache Snooping.md",
     "Remote Thought/Directory busting.md",
     "Tags/stego.md",
-    "Tags/Msfconsole.md",
-    "Remote Thought/Fail2ban Misconfig.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
