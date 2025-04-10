@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PDF Malware Analysis.md",
+                "file": "Remote Thought/Php code in png file.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PDF Malware Analysis"
+              "title": "Php code in png file"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF Malware Analysis.md",
+                "file": "Remote Thought/Php code in png file.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of PDF Malware Analysis"
+              "title": "Outline of Php code in png file"
             }
           }
         ],
@@ -180,10 +180,10 @@
   },
   "active": "10a2e9474650e362",
   "lastOpenFiles": [
-    "PDF Malware Analysis.md",
-    "Untitled.md",
     "Remote Thought/DotNet Executable.md",
     "Remote Thought/Php code in png file.md",
+    "PDF Malware Analysis.md",
+    "Untitled.md",
     "Repeating Key XOR.md",
     "USB HID analysis.md",
     "Sherlock from hackthebox.md",
