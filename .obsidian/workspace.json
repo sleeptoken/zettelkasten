@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/HTTP Request Smuggling.md",
+                "file": "Sherlock from hackthebox.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "HTTP Request Smuggling"
+              "title": "Sherlock from hackthebox"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/HTTP Request Smuggling.md",
+                "file": "Sherlock from hackthebox.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of HTTP Request Smuggling"
+              "title": "Outline of Sherlock from hackthebox"
             }
           }
         ],
@@ -180,17 +180,22 @@
   },
   "active": "8b4cf6178620eed1",
   "lastOpenFiles": [
-    "Remote Thought/use SQLite on DB found via LFI.md",
     "Web Cache Deception.md",
+    "Enumeration.md",
     "Sherlock from hackthebox.md",
     "USB HID analysis.md",
     "Repeating Key XOR.md",
     "Untitled.md",
+    "Tags/Hashcat.md",
+    "Remote Thought/Sudo cat & JohnTheRipper.md",
+    "Tags/john.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Remote Thought/HTTP Request Smuggling.md",
+    "Remote Thought/use SQLite on DB found via LFI.md",
     "Remote Thought/PDF Malware Analysis.md",
     "Template/Full Note.md",
     "Remote Thought/Php code in png file.md",
     "Remote Thought/DotNet Executable.md",
-    "Enumeration.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Tags/File transfer.md",
     "Exploiting Chrome Remote Debugger.md",
@@ -201,11 +206,6 @@
     "Tags/NFS (2049 port).md",
     "Tags/LDAP (port 389).md",
     "Tags/SMTP (25 port).md",
-    "Tags/DNS (53 port).md",
-    "Tags/SMB shares (445 port).md",
-    "Remote Thought/DNS Cache Snooping.md",
-    "Remote Thought/Directory busting.md",
-    "Tags/stego.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
