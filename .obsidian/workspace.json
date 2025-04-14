@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8b4cf6178620eed1",
+            "id": "f0516ca6636900cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sherlock from hackthebox.md",
+                "file": "USB HID analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sherlock from hackthebox"
+              "title": "USB HID analysis"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sherlock from hackthebox.md",
+                "file": "USB HID analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sherlock from hackthebox"
+              "title": "Outline of USB HID analysis"
             }
           }
         ],
@@ -178,14 +178,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b4cf6178620eed1",
+  "active": "f0516ca6636900cc",
   "lastOpenFiles": [
-    "Web Cache Deception.md",
-    "Enumeration.md",
-    "Sherlock from hackthebox.md",
-    "USB HID analysis.md",
     "Repeating Key XOR.md",
     "Untitled.md",
+    "Template/Full Note.md",
+    "Tags/py.md",
+    "Untitled 1.md",
+    "Sherlock from hackthebox.md",
+    "Web Cache Deception.md",
+    "Enumeration.md",
+    "USB HID analysis.md",
     "Tags/Hashcat.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/john.md",
@@ -193,7 +196,6 @@
     "Remote Thought/HTTP Request Smuggling.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
     "Remote Thought/PDF Malware Analysis.md",
-    "Template/Full Note.md",
     "Remote Thought/Php code in png file.md",
     "Remote Thought/DotNet Executable.md",
     "Remote Thought/Spawning a TTY shell.md",
@@ -204,8 +206,6 @@
     "Tags/linux.md",
     "Tags/SNMP (161 UDP port).md",
     "Tags/NFS (2049 port).md",
-    "Tags/LDAP (port 389).md",
-    "Tags/SMTP (25 port).md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
