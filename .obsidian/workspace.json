@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "XOR(known key) values stores at a address.md",
+                "file": "Remote Thought/XOR(known key) values stores at a address.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "XOR(known key) values stores at a address.md",
+                "file": "Remote Thought/XOR(known key) values stores at a address.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e7cb15dbb4c24ab",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Pasted image 20250416114324.png",
-    "XOR(known key) values stores at a address.md",
+    "Remote Thought/XOR(known key) values stores at a address.md",
     "Rabbitmq.md",
     "Repeating Key XOR.md",
     "Frameworks & basics.md",
