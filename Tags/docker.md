@@ -42,8 +42,19 @@ RUN touch helloworld.txt
 3. The Dockerfile is located in our current working directory (`.`).
 ### Compose 
 
+allows multiple containers (or applications) to interact with each other when needed while running in isolation from one another.
+
+example -
+1. Creating the network between the two containers: `docker network create ecommerce`
+2. Running the Apache2 webserver container: `docker run -p 80:80 --name webserver --net ecommerce webserver`
+3. Running the MySQL Database server: `docker run --name database --net ecommerce webserver`
+ Do we want to do this for every container, every time? I certainly don’t.
+ Instead, we can use Docker Compose via `docker-compose up` to run these containers together
+#### Docker-compose.yml files
+
+One file to rule them all. The formatting of a _docker-compose.yml_ file is different to that of a Dockerfile. It is important to note that YAML requires indentation
 
 
-
+ 
 ### References
 [TryHackMe | Intro to Docker](https://tryhackme.com/room/introtodockerk8pdqk)
