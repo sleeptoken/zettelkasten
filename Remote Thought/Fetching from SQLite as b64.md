@@ -43,7 +43,7 @@ if nothing sticks out from the above command
 1. go to the `opt` directory  
 2. we find `containerd` dir 
 3. check the group we are in by using `id` command 
-since we are in the docker group we can use find exploits in gtfobins for [[docker]] 
+since we are in the docker group we can use find exploits in gtfobins for [[Docker]] 
 - find local docker images using `docker images`
 - run the below command further (bash is the local image found on the machine)
 ```
