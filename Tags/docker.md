@@ -16,9 +16,31 @@ example -  `docker run -it helloworld /bin/bash`
  After getting a shell, The hostname of a container is the container ID (which can be found by using `docker ps`)
 
 [Running containers | Docker Docs](https://docs.docker.com/engine/containers/run/)
+### DockerFiles (important)
 
+Dockerfiles is a formatted text file which essentially serves as an instruction manual for what containers should do and ultimately assembles a Docker image.
+- You use Dockerfiles to contain the commands the container should execute when it is built.
+- Dockerfiles are formatted in the following way:  `INSTRUCTION argument`
 
+```yml
+# THIS IS A COMMENT
+# Use Ubuntu 22.04 as the base operating system of the container
+FROM ubuntu:22.04
 
+# Set the working directory to the root of the container
+WORKDIR / 
+
+# Create helloworld.txt
+RUN touch helloworld.txt
+```
+ don’t expect a command to be there from the start (even commands like _curl_, _ping_, etc., may need to be installed.)
+### Building
+
+`docker build -t helloworld .` 
+1. We are going to name it ourselves, so we are going to use the `-t` argument.
+2. We want to name the image.
+3. The Dockerfile is located in our current working directory (`.`).
+### Compose 
 
 
 
