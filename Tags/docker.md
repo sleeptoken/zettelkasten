@@ -53,8 +53,21 @@ example -
 #### Docker-compose.yml files
 
 One file to rule them all. The formatting of a _docker-compose.yml_ file is different to that of a Dockerfile. It is important to note that YAML requires indentation
+_Check out the [compose file](https://docs.docker.com/compose/compose-file/) documentation for all possible instructions._
+### Sockets
 
+When you install Docker, there are two programs that get installed:
 
- 
+1. The Docker Client
+2. The Docker Server
+
+Docker works in a client/server model. Docker achieves this communication using something called a socket. Sockets are an essential feature of the operating system that allows data to be communicated. 
+
+ A socket can either be a network connection or what is represented as a file. What's important to know about sockets is that they allow for Interprocess Communication (IPC). This simply means that processes on an operating system can communicate with each other!
+
+In the context of Docker, the Docker Server is effectively just an API. The Docker Server uses this API to **listen** for requests, whereas the Docker Client uses the API to **send** requests.
+
+we can interact with the Docker Server using commands like `curl` or an API developer tool such as Postman.
+
 ### References
 [TryHackMe | Intro to Docker](https://tryhackme.com/room/introtodockerk8pdqk)

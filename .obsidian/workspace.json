@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "Docker"
             }
+          },
+          {
+            "id": "1e4631bd5265a8fc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +165,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Docker"
+              "title": "Outline"
             }
           }
         ],
@@ -178,7 +190,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "891424c5250a0f91",
+  "active": "1e4631bd5265a8fc",
   "lastOpenFiles": [
     "Docker.md",
     "Tags/Docker.md",
