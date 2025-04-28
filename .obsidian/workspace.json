@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Docker.md",
+                "file": "Tags/SSTI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "SSTI"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Docker.md",
+                "file": "Tags/SSTI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Docker"
+              "title": "Outline of SSTI"
             }
           }
         ],
@@ -180,6 +180,8 @@
   },
   "active": "670ca82fa19f5794",
   "lastOpenFiles": [
+    "Tags/SQL injection.md",
+    "Tags/SSTI.md",
     "Tags/Docker.md",
     "Docker.md",
     "Remote Thought/XOR(known key) values stored at a address.md",
@@ -205,8 +207,6 @@
     "Tags/Hashcat.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/john.md",
-    "Remote Thought/HTTP Request Smuggling.md",
-    "Remote Thought/use SQLite on DB found via LFI.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
