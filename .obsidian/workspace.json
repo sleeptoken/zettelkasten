@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/SQL injection.md",
+                "file": "Remote Thought/Cross-origin resource sharing (CORS).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SQL injection"
+              "title": "Cross-origin resource sharing (CORS)"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/SQL injection.md",
+                "file": "Remote Thought/Cross-origin resource sharing (CORS).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL injection"
+              "title": "Outline of Cross-origin resource sharing (CORS)"
             }
           }
         ],
@@ -180,12 +180,14 @@
   },
   "active": "670ca82fa19f5794",
   "lastOpenFiles": [
+    "Remote Thought/Path Traversal.md",
+    "Remote Thought/XOR(known key) values stored at a address.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Tags/SQL injection.md",
     "Remote Thought/XML external entity injection.md",
     "Tags/SSTI.md",
-    "Tags/SQL injection.md",
     "Tags/Docker.md",
     "Docker.md",
-    "Remote Thought/XOR(known key) values stored at a address.md",
     "Underpass htb.md",
     "Apache velocity cve.md",
     "Intents and Activities.md",
@@ -205,8 +207,6 @@
     "Template/Full Note.md",
     "Tags/py.md",
     "Untitled 1.md",
-    "Tags/Hashcat.md",
-    "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
