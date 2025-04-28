@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/SSTI.md",
+                "file": "Tags/SQL injection.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SSTI"
+              "title": "SQL injection"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/SSTI.md",
+                "file": "Tags/SQL injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SSTI"
+              "title": "Outline of SQL injection"
             }
           }
         ],
@@ -180,8 +180,9 @@
   },
   "active": "670ca82fa19f5794",
   "lastOpenFiles": [
-    "Tags/SQL injection.md",
+    "Remote Thought/XML external entity injection.md",
     "Tags/SSTI.md",
+    "Tags/SQL injection.md",
     "Tags/Docker.md",
     "Docker.md",
     "Remote Thought/XOR(known key) values stored at a address.md",
@@ -206,7 +207,6 @@
     "Untitled 1.md",
     "Tags/Hashcat.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
-    "Tags/john.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
