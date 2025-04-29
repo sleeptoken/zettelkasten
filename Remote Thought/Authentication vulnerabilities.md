@@ -50,9 +50,15 @@ Click on the Settings tab to open the Settings side panel. Under `Grep - Extract
 while brute forcing Experiment with different usernames and passwords. Notice that your IP will be blocked if you make too many invalid login attempts. 
 Identify that the `X-Forwarded-For` header is supported, which allows you to spoof your IP address and bypass the IP-based brute-force protection.
 
-Send this request to Burp Intruder and select Pitchfork attack from the attack type drop-down menu. Add the `X-Forwarded-For` header.
-Add payload positions for the X-Forwarded-For header and the username parameter. Set the password to a very long string of characters (about 100 characters should do it).
-In the Payloads side panel, select position 1 from the Payload position drop-down list. Select the Numbers payload type. Enter the range 1 - 100 and set the step to 1. Set the max fraction digits to 0. This will be used to spoof your IP.
-Select position 2 from the Payload position drop-down list, then add the list of usernames. Start the attack.
+- Send this request to Burp Intruder and select Pitchfork attack from the attack type drop-down menu. Add the `X-Forwarded-For` header.
+- Add payload positions for the `X-Forwarded-For` header and the username parameter. Set the password to a very long string of characters (about 100 characters should do it).
+- In the Payloads side panel, select position 1 from the Payload position drop-down list. Select the Numbers payload type. Enter the range 1 - 100 and set the step to 1. Set the max fraction digits to 0. This will be used to spoof your IP.
+- Select position 2 from the Payload position drop-down list, then add the list of usernames. Start the attack.
+- When the attack finishes, at the top of the dialog, click Columns and select the Response received and Response completed options. These two columns are now displayed in the results table. Notice that one of the response times was significantly longer than the others
+
+Add the `X-Forwarded-For` header again and add a payload position to it. Insert the username that you just identified and add a payload position to the password parameter, find the response with a 302 status code
+
+
+  
 ### References
 https://portswigger.net/web-security/authentication
