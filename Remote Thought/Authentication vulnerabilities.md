@@ -40,13 +40,19 @@ Sometimes the returned error message is different depending on whether both the 
 ###### Response times
 For example, a website might only check whether the password is correct if the username is valid. This extra step might cause a slight increase in the response time. 
 This may be subtle, but an attacker can make this delay more obvious by entering an excessively long password that the website takes noticeably longer to handle.
-#### *Lab*
+#### *Lab* 
 
 in [[burpsuite]] while setting the payload position in intruder 
 Click on the Settings tab to open the Settings side panel. Under `Grep - Extract`, click Add. In the dialog that appears, scroll down through the response until you find the error message `Invalid username or password.` Use the mouse to highlight the text content of the message. The other settings will be automatically adjusted. Click `OK` and then start the attack. 
 
-### *Lab*
+### *Lab*: Username enumeration via response timing
 
-Identify that the X-Forwarded-For header is supported, which allows you to spoof your IP address and bypass the IP-based brute-force protection.
+while brute forcing Experiment with different usernames and passwords. Notice that your IP will be blocked if you make too many invalid login attempts. 
+Identify that the `X-Forwarded-For` header is supported, which allows you to spoof your IP address and bypass the IP-based brute-force protection.
+
+Send this request to Burp Intruder and select Pitchfork attack from the attack type drop-down menu. Add the `X-Forwarded-For` header.
+Add payload positions for the X-Forwarded-For header and the username parameter. Set the password to a very long string of characters (about 100 characters should do it).
+In the Payloads side panel, select position 1 from the Payload position drop-down list. Select the Numbers payload type. Enter the range 1 - 100 and set the step to 1. Set the max fraction digits to 0. This will be used to spoof your IP.
+Select position 2 from the Payload position drop-down list, then add the list of usernames. Start the attack.
 ### References
 https://portswigger.net/web-security/authentication
