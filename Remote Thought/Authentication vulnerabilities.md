@@ -57,6 +57,14 @@ Identify that the `X-Forwarded-For` header is supported, which allows you to spo
 - When the attack finishes, at the top of the dialog, click Columns and select the Response received and Response completed options. These two columns are now displayed in the results table. Notice that one of the response times was significantly longer than the others
 
 Add the `X-Forwarded-For` header again and add a payload position to it. Insert the username that you just identified and add a payload position to the password parameter, find the response with a 302 status code
+### Flawed brute-force protection
+
+The two most common ways of preventing brute-force attacks are:
+
+- Locking the account that the remote user is trying to access if they make too many failed login attempts
+- Blocking the remote user's IP address if they make too many login attempts in quick succession
+
+These aren't fail proof. For example, you might sometimes find that your IP is blocked if you fail to log in too many times. In some implementations, the counter for the number of failed attempts resets if the IP owner logs in successfully. This means an attacker would simply have to log in to their own account every few attempts to prevent this limit from ever being reached.
 
 
   
