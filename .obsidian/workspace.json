@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Authentication vulnerabilities.md",
+                "file": "Remote Thought/XOR (known key) values stored at a address.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Authentication vulnerabilities"
+              "title": "XOR (known key) values stored at a address"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Authentication vulnerabilities.md",
+                "file": "Remote Thought/XOR (known key) values stored at a address.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Authentication vulnerabilities"
+              "title": "Outline of XOR (known key) values stored at a address"
             }
           }
         ],
@@ -180,10 +180,10 @@
   },
   "active": "670ca82fa19f5794",
   "lastOpenFiles": [
-    "Remote Thought/XOR (known key) values stored at a address.md",
-    "aut.md",
     "Remote Thought/PDF Malware Analysis.md",
+    "Remote Thought/XOR (known key) values stored at a address.md",
     "Remote Thought/Authentication vulnerabilities.md",
+    "aut.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Cross-origin resource sharing (CORS).md",
     "Remote Thought/Path Traversal.md",
