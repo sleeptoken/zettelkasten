@@ -76,8 +76,12 @@ further go to resource pool and change the max concurrent requests to 1, making 
 hit attack and get the answer 
 ### Account Locking
 
+One way in which websites try to prevent brute-forcing is to lock the account if certain suspicious criteria are met, usually a set number of failed login attempts. Just as with normal login errors, responses from the server indicating that an account is locked can also help an attacker to enumerate usernames.
+
+Account locking also fails to protect against credential stuffing attacks. This involves using a massive dictionary of `username:password` pairs, composed of genuine login credentials stolen in data breaches. 
+
+Credential stuffing relies on the fact that many people reuse the same username and password on multiple websites and, therefore, there is a chance that some of the compromised credentials in the dictionary are also valid on the target website. .
 
 
 
-### References
 https://portswigger.net/web-security/authentication
