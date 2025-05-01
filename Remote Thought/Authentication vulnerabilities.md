@@ -65,7 +65,7 @@ The two most common ways of preventing brute-force attacks are:
 - Blocking the remote user's IP address if they make too many login attempts in quick succession
 
 These aren't fail proof. For example, you might sometimes find that your IP is blocked if you fail to log in too many times. In some implementations, the counter for the number of failed attempts resets if the IP owner logs in successfully. This means an attacker would simply have to log in to their own account every few attempts to prevent this limit from ever being reached.
-#### *Lab* - Broken brute-force protection, IP block
+#### *Lab*: Broken brute-force protection, IP block
 
 we find the same condition as mentioned in the example above 
 to bypass that we use custom lists -
@@ -81,7 +81,21 @@ One way in which websites try to prevent brute-forcing is to lock the account if
 Account locking also fails to protect against credential stuffing attacks. This involves using a massive dictionary of `username:password` pairs, composed of genuine login credentials stolen in data breaches. 
 
 Credential stuffing relies on the fact that many people reuse the same username and password on multiple websites and, therefore, there is a chance that some of the compromised credentials in the dictionary are also valid on the target website. .
+#### *Lab*: Username enumeration via account lock
+
+Select Cluster bomb attack from the attack type drop-down menu. Add a payload position to the username parameter. Add a blank payload position to the end of the request body by clicking Add `§`.
+
+```
+username=§invalid-username§&password=example§§
+```
+
+In the Payloads side panel, add the list of usernames for the first payload position. For the second payload position, select the Null payloads type and choose the option to generate 5 payloads. This will effectively cause each username to be repeated 5 times. Start the attack. Notice that one of the responses will have a different error message. 
+### User rate limiting 
 
 
+
+
+
+### References 
 
 https://portswigger.net/web-security/authentication
