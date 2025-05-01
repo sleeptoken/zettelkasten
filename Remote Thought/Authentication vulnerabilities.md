@@ -67,8 +67,13 @@ The two most common ways of preventing brute-force attacks are:
 These aren't fail proof. For example, you might sometimes find that your IP is blocked if you fail to log in too many times. In some implementations, the counter for the number of failed attempts resets if the IP owner logs in successfully. This means an attacker would simply have to log in to their own account every few attempts to prevent this limit from ever being reached.
 ### *Lab* - Broken brute-force protection, IP block
 
-
-
+we find the same condition as mentioned in the example above 
+to bypass that we use custom lists -
+- username - 2 Carlos , 1 wiener ... and repeat
+- password - 2 passwords from the given list , 1 peter ... and repeat 
+this ensures that we perform a successful login to reset the counter after every 2 unsuccessful attempts
+further go to resource pool and change the max concurrent requests to 1, making sure that 1 request is made at a time and also making sure that the sequence is followed 
+hit attack and
 
 
 ### References
