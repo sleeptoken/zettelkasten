@@ -45,7 +45,7 @@ This may be subtle, but an attacker can make this delay more obvious by entering
 in [[burpsuite]] while setting the payload position in intruder 
 Click on the Settings tab to open the Settings side panel. Under `Grep - Extract`, click Add. In the dialog that appears, scroll down through the response until you find the error message `Invalid username or password.` Use the mouse to highlight the text content of the message. The other settings will be automatically adjusted. Click `OK` and then start the attack. 
 
-### *Lab*: Username enumeration via response timing
+#### *Lab*: Username enumeration via response timing
 
 while brute forcing Experiment with different usernames and passwords. Notice that your IP will be blocked if you make too many invalid login attempts. 
 Identify that the `X-Forwarded-For` header is supported, which allows you to spoof your IP address and bypass the IP-based brute-force protection.
@@ -65,7 +65,7 @@ The two most common ways of preventing brute-force attacks are:
 - Blocking the remote user's IP address if they make too many login attempts in quick succession
 
 These aren't fail proof. For example, you might sometimes find that your IP is blocked if you fail to log in too many times. In some implementations, the counter for the number of failed attempts resets if the IP owner logs in successfully. This means an attacker would simply have to log in to their own account every few attempts to prevent this limit from ever being reached.
-### *Lab* - Broken brute-force protection, IP block
+#### *Lab* - Broken brute-force protection, IP block
 
 we find the same condition as mentioned in the example above 
 to bypass that we use custom lists -
@@ -73,7 +73,10 @@ to bypass that we use custom lists -
 - password - 2 passwords from the given list , 1 peter ... and repeat 
 this ensures that we perform a successful login to reset the counter after every 2 unsuccessful attempts
 further go to resource pool and change the max concurrent requests to 1, making sure that 1 request is made at a time and also making sure that the sequence is followed 
-hit attack and
+hit attack and get the answer 
+### Account Locking
+
+
 
 
 ### References
