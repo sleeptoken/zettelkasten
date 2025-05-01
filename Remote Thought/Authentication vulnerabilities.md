@@ -92,7 +92,26 @@ username=§invalid-username§&password=example§§
 In the Payloads side panel, add the list of usernames for the first payload position. For the second payload position, select the Null payloads type and choose the option to generate 5 payloads. This will effectively cause each username to be repeated 5 times. Start the attack. Notice that one of the responses will have a different error message. 
 ### User rate limiting 
 
+In this case, making too many login requests within a short period of time causes your IP address to be blocked. Typically, the IP can only be unblocked in one of the following ways:
 
+- Automatically after a certain period of time has elapsed
+- Manually by an administrator
+- Manually by the user after successfully completing a CAPTCHA
+
+User rate limiting is sometimes preferred to account locking due to being less prone to username enumeration and denial of service attacks. 
+
+As the limit is based on the rate of HTTP requests sent from the user's IP address, it is sometimes also possible to bypass this defense if you can work out how to guess multiple passwords with a single request.
+### HTTP basic authentication
+
+The client receives an authentication token from the server, which is constructed by concatenating the username and password, and encoding it in Base64. This token is stored and managed by the browser, which automatically adds it to the Authorization header of every subsequent request as follows:
+
+```
+Authorization: Basic base64(username:password)
+```
+
+HTTP basic authentication is also particularly vulnerable to session-related exploits, notably CSRF, against which it offers no protection on its own.
+
+In some cases, exploiting vulnerable HTTP basic authentication might only grant an attacker access to a seemingly uninteresting page. However, in addition to providing a further attack surface, the credentials exposed in this way might be reused in other, more confidential contexts.
 
 
 
