@@ -65,8 +65,11 @@ The two most common ways of preventing brute-force attacks are:
 - Blocking the remote user's IP address if they make too many login attempts in quick succession
 
 These aren't fail proof. For example, you might sometimes find that your IP is blocked if you fail to log in too many times. In some implementations, the counter for the number of failed attempts resets if the IP owner logs in successfully. This means an attacker would simply have to log in to their own account every few attempts to prevent this limit from ever being reached.
+### *Lab* - Broken brute-force protection, IP block
 
 
-  
+
+
+
 ### References
 https://portswigger.net/web-security/authentication

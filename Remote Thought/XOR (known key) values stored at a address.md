@@ -2,7 +2,7 @@
 2025-04-16 09:01
 
 Source: #reversing 
-### TLDR;
+### TL;DR
 
 exe file asks us to enter password; user entered password is XOR'd and compared with values stored in a buffer 
 if pass is correct we get success message. 
