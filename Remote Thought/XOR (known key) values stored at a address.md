@@ -36,6 +36,8 @@ print(''.join([chr(i ^ 0x7d) for i in s]))
 ```
 
 ### References
+Flare-on 1 2015
+
 https://adamhlt.com/flare-on-2015-0x1-first-challenge-writeup/#password-recovery
 https://github.com/fareedfauzi/Flare-On-Challenges?tab=readme-ov-file
 https://github.com/fareedfauzi/Flare-On-Challenges/blob/master/Write-ups/2015/2015solution1.pdf

@@ -8,13 +8,51 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0efa5c7b8c00da99",
+            "id": "a37d117a11e7c925",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Understand what evry func call is doing.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Understand what evry func call is doing"
+            }
+          },
+          {
+            "id": "6a7c2c324096f9a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/XOR (known key) values stored at a address.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "XOR (known key) values stored at a address"
             }
           }
         ]
@@ -138,12 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Remote Thought/Understand what evry func call is doing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Understand what evry func call is doing"
             }
           }
         ],
@@ -163,9 +202,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0efa5c7b8c00da99",
+  "active": "a37d117a11e7c925",
   "lastOpenFiles": [
     "Remote Thought/XOR (known key) values stored at a address.md",
+    "Remote Thought/Understand what evry func call is doing.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/PDF Malware Analysis.md",
     "aut.md",
@@ -190,7 +230,6 @@
     "Enumeration.md",
     "Web Cache Deception.md",
     "Sherlock from hackthebox.md",
-    "USB HID analysis.md",
     "Pasted image 20250416114324.png",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
