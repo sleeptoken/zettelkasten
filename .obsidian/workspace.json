@@ -11,10 +11,24 @@
             "id": "861640524f17395d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/XOR (known key) values stored at a address.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "XOR (known key) values stored at a address"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Remote Thought/XOR (known key) values stored at a address.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of XOR (known key) values stored at a address"
             }
           }
         ],
