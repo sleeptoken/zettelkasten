@@ -21,7 +21,7 @@ text:0040105F      call   sub_401084
 ``` 
 
  In this block of code we see the call to the function whose return value (zero or non-zero) will determine if the program displays the success or failure message. This function takes 3 arguments: 
- - The pointer value (0x4010E4) from the first call instruction (stored at cbp-10h),
+ - The pointer value (0x4010E4) from the first call instructiox2.n (stored at cbp-10h),
  - A pointer to buffer of input (0x402149)
  - The number of bytes entered as input (stored in ebp-4).
  
