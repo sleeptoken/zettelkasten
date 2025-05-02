@@ -65,10 +65,12 @@ Then the [POPF](https://pdos.csail.mit.edu/6.828/2008/readings/i386/POPF.htm) in
 The [ADC](https://www.felixcloutier.com/x86/adc) instruction that follows is just like a normal ADD instruction but it also adds the carry flag, which is always set in this case.
 
 The [SCASB](https://pdos.csail.mit.edu/6.828/2004/readings/i386/SCAS.htm) will then compare this low byte with the key value that is pointed to by EDI, as well as increment EDI.
+- SCAS subtracts the memory byte or word at the destination register from the AL, AX or EAX register. The result is discarded; only the flags are set. The operand must be addressable from the ES segment; no segment override is possible.
 
-If the values do not match then the CMOVNZ instruction will move a zero value stored in DX to the loop counter CX (part of ECX), effectively terminating the loop prematurely.
+If the values do not match then the `CMOVNZ` instruction will move a zero value stored in DX to the loop counter CX (part of ECX), effectively terminating the loop prematurely.
 
-The last JECXZ instruction checks to see if the loop counter is zero, which signifies a premature termination and a key mismatch, and jumps to the failure code path.
+The last [JECXZ](https://faydoc.tripod.com/cpu/jecxz.htm) instruction checks to see if the loop counter is zero, which signifies a premature termination and a key mismatch, and jumps to the failure code path.
+- JEXCZ - Checks the state of one or more of the status flags in the EFLAGS register (CF, OF, PF, SF, and ZF) and, if the flags are in the specified state (condition), performs a jump to the target instruction specified by the destination operand.
 
 If the loop iterates a full 37 times with no mismatches between the input and the key, then the LOOP instruction will stop branching when it decrements ECX to zero and the code will follow the success path.
 
@@ -98,3 +100,4 @@ print(result)
 Flare-on 2 2015
 
 [Flare-On-Challenges/Write-ups/2015/2015solution2.pdf at master · fareedfauzi/Flare-On-Challenges · GitHub](https://github.com/fareedfauzi/Flare-On-Challenges/blob/master/Write-ups/2015/2015solution2.pdf)
+https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
