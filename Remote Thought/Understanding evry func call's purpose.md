@@ -22,7 +22,7 @@ text:0040105F      call   sub_401084
 
  In this block of code we see the call to the function whose return value (zero or non-zero) will determine if the program displays the success or failure message. This function takes 3 arguments: 
  - The pointer value (0x4010E4) from the first call instructiox2.n (stored at cbp-10h),
- - A pointer to buffer of input (0x402149)
+ - A pointer to buffer of input (0x402159)
  - The number of bytes entered as input (stored in ebp-4).
  
 ```
@@ -50,7 +50,13 @@ loop      loc_4010A2
 
 This along with the fact that `edi` is set to the end of the key at the beginning of the loop is a sign that the key is stored in reverse order.
 
-The `BX` register maintains a rolling sum throughout the loop, which is factored into the computation of each byte. At the beginning of the loop, `BX` is copied to `DX` where the `AND` instruction clears all but the bottom 2 bits. Next, the value `0x1C7` is saved into `AX`, then stored on the stack, then the `SAHF` instruction loads the high byte of that value (which is 0x01) into the `EFLAGS` register. The result of this is that the Carry flag is set. The `LODSB` instruction loads a byte of the input, pointed to by `ESI` into AL and the PUSHF instruction stores the `EFLAGS` to the stack. 
+The [`BX`](https://www.quora.com/What-is-the-purpose-of-a-general-purpose-register-BX) register maintains a rolling sum throughout the loop, which is factored into the computation of each byte. 
+- BX is used as a data register, indicating that it can temporarily store general data.
+
+the [`SAHF`](https://www.felixcloutier.com/x86/sahf) instruction loads the high byte of that value (which is 0x01) into the `EFLAGS` register. The result of this is that the Carry flag is set. 
+- Loads the SF, ZF, AF, PF, and CF flags of the EFLAGS register with values from the corresponding bits in the AH register (bits 7, 6, 4, 2, and 0, respectively)
+
+The `LODSB` instruction loads a byte of the input, pointed to by `ESI` into AL and the PUSHF instruction stores the `EFLAGS` to the stack. 
 The input byte is XOR'd with a value from the stack, which if you inspect it closely or with a debugger you'll see that the value it is XORing against is 0xC7, which was saved on the stack with the previous "push eax" instruction. The contents of AH is still set to 0x01 and is then rotated (left) by the amount specified by the lowest 2 bits of the rolling sum value. Then the POPF instruction restores the EFLAGS register with the saved flags on the stack (carry flag set). The ADC instruction that follows is just like a normal ADD instruction but it also adds the carry flag, which is always set in this case. The next few instructions are straight forward, ending with the low byte of eax being added to the rolling sum in bx. The SCASB will then compare this low byte with the key value that is pointed to by EDI, as well as increment EDI. If the values do not match then the CMOVNZ instruction will move a zero value stored in DX to the loop counter CX (part of ECX), effectively terminating the loop prematurely. The last JECXZ instruction checks to see if the loop counter is zero, which signifies a premature termination and a key mismatch, and jumps to the failure code path. If the loop iterates a full 37 times with no mismatches between the input and the key, then the LOOP instruction will stop branching when it decrements ECX to zero and the code will follow the success path. 
 Deducing the inverse to this function is not straight-forward and it may be easier to simply place a breakpoint at the SCASB instruction and repeatedly try values until one produces the correct value needed to match the key. Figure 7 below is an IDA Python script which will print the correct answer to the IDA Python window.
 
