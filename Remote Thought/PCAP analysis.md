@@ -11,6 +11,9 @@ head over to statistics -> endpoints to see the people in conversation - In Wire
 
 right click on the stream/connection you are interested in -> follow -> TCP stream 
 Following a protocol stream applies a display filter which selects all the packets in the current stream.
+
+
+
 ### Following the HTTP2 Traffic 
 
 Sometimes we have to decrypt the ssl traffic in wireshark: 
