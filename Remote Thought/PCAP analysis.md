@@ -17,6 +17,10 @@ Sometimes we have to decrypt the ssl traffic in wireshark:
 - open the .pcap file and then load the sslkey.log file in **Wireshark**. The sslkey.log file is used for **decrypting the ssl traffic** in wireshark.
 - Then, we had to **filter and follow the HTTP2 traffic stream** to find the flag-
 
-
+Since we saw that there was TCP traffic there, let us see how many TCP streams are in there.
+```
+andrew@kali:~$ $ tshark -nr packet3.pcap -T fields -e tcp.stream | sort -u
+```
 ### References
 [TryHackMe | h4cked](https://tryhackme.com/r/room/h4cked)
+https://andrewroderos.com/how-to-solve-my-pcap-ctf-challenges/
