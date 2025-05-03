@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "861640524f17395d",
+            "id": "e5480c384d747f60",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/XOR (known key) values stored at a address.md",
+                "file": "UPX.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "XOR (known key) values stored at a address"
+              "title": "UPX"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/XOR (known key) values stored at a address.md",
+                "file": "UPX.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of XOR (known key) values stored at a address"
+              "title": "Outline of UPX"
             }
           }
         ],
@@ -178,10 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "861640524f17395d",
+  "active": "e5480c384d747f60",
   "lastOpenFiles": [
-    "Remote Thought/Understanding evry func call's purpose.md",
+    "UPX.md",
+    "Tags/stego.md",
+    "Tags/Forensics.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
+    "Remote Thought/Understanding evry func call's purpose.md",
     "Tags/png.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/PDF Malware Analysis.md",
@@ -203,9 +206,6 @@
     "Frameworks & basics.md",
     "Regular expression Denial of Service - ReDoS.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
-    "Types of API.md",
-    "Enumeration.md",
-    "Web Cache Deception.md",
     "Pasted image 20250416114324.png",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",

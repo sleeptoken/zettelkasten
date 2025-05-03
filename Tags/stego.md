@@ -26,3 +26,7 @@ stegseek -sf image.jpg /usr/share/wordlists/rockyou.txt
 [Aperi'Solve (aperisolve.com)](https://www.aperisolve.com/) for stego 
 
 [Overlay images online](https://overlay.imageonline.co/) - Manipulate images 
+
+### References 
+
+https://ctf-wiki.mahaloz.re/misc/picture/introduction/
