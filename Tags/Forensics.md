@@ -2,3 +2,5 @@
 adding `/home/username/.local/bin` to your the `PATH` -  [How to Install Volatility 2 and Volatility 3 on Debian, Ubuntu, or Kali Linux](https://seanthegeek.net/1172/how-to-install-volatility-2-and-volatility-3-on-debian-ubuntu-or-kali-linux/)
 
 https://www.youtube.com/watch?v=kMBOtaTrfio
+
+https://www.reddit.com/r/CTFlearn/comments/xwy0dw/first_ctf_binary_file_analysis/?rdt=65088
