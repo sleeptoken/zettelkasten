@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Frozen Python.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Frozen Python"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "Frozen Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of Frozen Python"
             }
           }
         ],
@@ -180,7 +180,7 @@
   },
   "active": "f769941dff456161",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Frozen Python.md",
     "Remote Thought/Understanding evry func call's purpose.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
     "USB HID analysis.md",
