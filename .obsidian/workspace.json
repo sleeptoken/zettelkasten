@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f769941dff456161",
+            "id": "4bc68a2da3b6df00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frozen Python.md",
+                "file": "Remote Thought/Frozen Python.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frozen Python.md",
+                "file": "Remote Thought/Frozen Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,9 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f769941dff456161",
+  "active": "4bc68a2da3b6df00",
   "lastOpenFiles": [
-    "Frozen Python.md",
+    "Remote Thought/Frozen Python.md",
     "Remote Thought/Understanding evry func call's purpose.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
     "USB HID analysis.md",
