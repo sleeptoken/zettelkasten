@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4bc68a2da3b6df00",
+            "id": "b88170b5ced0beaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UPX.md",
+                "file": "PEiD.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "UPX"
+              "title": "PEiD"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UPX.md",
+                "file": "PEiD.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of UPX"
+              "title": "Outline of PEiD"
             }
           }
         ],
@@ -178,8 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4bc68a2da3b6df00",
+  "active": "b88170b5ced0beaa",
   "lastOpenFiles": [
+    "PEiD.md",
+    "UPX.md",
     "Remote Thought/Python packaged executables.md",
     "Remote Thought/Understanding evry func call's purpose.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
@@ -187,7 +189,6 @@
     "Repeating Key XOR.md",
     "Sherlock from hackthebox.md",
     "Rabbitmq.md",
-    "UPX.md",
     "Tags/Forensics.md",
     "Remote Thought/PCAP analysis.md",
     "Tags/png.md",
@@ -205,7 +206,6 @@
     "Tags/Docker.md",
     "Docker.md",
     "Underpass htb.md",
-    "Apache velocity cve.md",
     "Pasted image 20250416114324.png",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
