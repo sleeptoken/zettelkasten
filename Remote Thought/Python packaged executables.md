@@ -14,7 +14,7 @@ when we download the challenge file, it doesn't has a file type written, append 
 There are several tools out there that will attempt to extract the original files used to build Python packaged executables. In particular, [Pyinstaller Extractor](http://sourceforge.net/projects/pyinstallerextractor/files/?source=navbar ) by extremecoders seems to work nicely: 
 
 Once you run the Pyinstaller Extractor tool on the executable, you'll notice a whole bunch of cruft that gets extracted. 
-After a cursory survey of the files that are dropped, the "elfie" file seems pretty conspicuous with a ton of crazy looking Python string variables. 
+After a cursory survey of the files that are dropped, the "elfie" file seems pretty conspicuous with a ton of crazy looking [[py]] string variables. 
 #### Deobfuscating the script 
 
 It should be noted that it's not always possible to get the actual Python source extracted from the executable. Other Python packagers like py2exe only include the compiled byte code from the scripts.pyc files. So if you ever encounter that problem you'll have the additional problem of attempting to decompile the .pyc files. 

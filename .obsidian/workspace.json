@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UPX.md",
+                "file": "Remote Thought/Python packaged executables.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "UPX"
+              "title": "Python packaged executables"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UPX.md",
+                "file": "Remote Thought/Python packaged executables.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of UPX"
+              "title": "Outline of Python packaged executables"
             }
           }
         ],
@@ -180,11 +180,11 @@
   },
   "active": "b88170b5ced0beaa",
   "lastOpenFiles": [
-    "PEiD.md",
-    "UPX.md",
-    "Remote Thought/Python packaged executables.md",
-    "Remote Thought/Understanding evry func call's purpose.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
+    "Remote Thought/Understanding evry func call's purpose.md",
+    "Remote Thought/Python packaged executables.md",
+    "UPX.md",
+    "PEiD.md",
     "USB HID analysis.md",
     "Repeating Key XOR.md",
     "Sherlock from hackthebox.md",
