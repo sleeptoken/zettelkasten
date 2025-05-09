@@ -5,6 +5,9 @@ Source: #reversing
 
 In Ida we have the breakpoints accessible whenever we have a debugger selected
 
+Right click on a line and click edit breakpoint 
+
+
 
 
 ### References
