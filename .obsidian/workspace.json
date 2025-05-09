@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Breakpoint in IDA.md",
+                "file": "Remote Thought/Breakpoint in IDA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Breakpoint in IDA.md",
+                "file": "Remote Thought/Breakpoint in IDA.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,11 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f71c00e703811fcc",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Tags/ASLR.md",
     "Remote Thought/Binary exploit toolkit.md",
-    "Breakpoint in IDA.md",
+    "Remote Thought/Breakpoint in IDA.md",
     "Tags/PEiD.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
     "Remote Thought/Python packaged executables.md",

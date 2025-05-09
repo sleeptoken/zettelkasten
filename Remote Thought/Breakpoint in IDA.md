@@ -36,7 +36,9 @@ We are putting a name as for example if we have a name anywhere in the database 
 ### Source code
 
 is source code as it says it could be pseudo code from the decompiler or actually Source level debugging and 
-source so suppose here Control+Alt+B to open the breakpoint window and so here we have a source breakpoint so here that's the function start line four that's the source level breakpoint so these
+source so suppose here Control+Alt+B to open the breakpoint window and so here we have a source breakpoint 
+`$7FF66ABA3BC0;4` 
+so here that's the function start; line four that's the source level breakpoint so these
 ## Actions 
 
 - Break what action to take 
@@ -46,8 +48,11 @@ source so suppose here Control+Alt+B to open the breakpoint window and so here w
 
 Conditional breakpoint - use custom script 
 
+### Hardware breakpoints 
 
-
+When enabled we get the following options - read, write, execute 
+Hardware break points are subject to limitations from the underlying Hardware, on x86 we have up to four different architectures which might have no Hardware break points or have more or less Etc and we can control the size of the hardware breakpoint as well based on the architecture 
+hardware breakpoint is good enough execute read write break points, very handy if you want to catch when a certain memory is being read from or written and so on. for example if we want to use Hardware breakpoint on execute it's pretty handy when we're dealing with packed code, we can put the breakpoint from the start even though the code has not been unpacked, so what does that mean it means we let the Packer write the actual code and then when it executes we'll hit the breakpoint if we didn't use hardware breakpoint in that case then we're putting a breakpoint on the packed code and that can influence the unpacking or perhaps trigger self check sum for example.
 
 ### References
 https://www.youtube.com/watch?v=EVG1GkTZu5w
