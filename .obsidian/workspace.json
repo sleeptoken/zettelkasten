@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b88170b5ced0beaa",
+            "id": "f71c00e703811fcc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Python packaged executables.md",
+                "file": "Breakpoint in IDA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Python packaged executables"
+              "title": "Breakpoint in IDA"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Python packaged executables.md",
+                "file": "Breakpoint in IDA.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Python packaged executables"
+              "title": "Outline of Breakpoint in IDA"
             }
           }
         ],
@@ -178,11 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b88170b5ced0beaa",
+  "active": "f71c00e703811fcc",
   "lastOpenFiles": [
+    "Breakpoint in IDA.md",
+    "Remote Thought/Python packaged executables.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
     "Remote Thought/Understanding evry func call's purpose.md",
-    "Remote Thought/Python packaged executables.md",
     "UPX.md",
     "PEiD.md",
     "USB HID analysis.md",
@@ -205,7 +206,6 @@
     "Tags/SSTI.md",
     "Tags/Docker.md",
     "Docker.md",
-    "Underpass htb.md",
     "Pasted image 20250416114324.png",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
