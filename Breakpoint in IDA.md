@@ -33,5 +33,13 @@ is source code as it says it could be pseudo code from the decompiler or actuall
 - Refresh debugger memory when the breakpoint hits for example we want to issue refresh debugger memory this will recompute all the map pages and the memory information 
 - Simply a breakpoint to enable or disable tracing so let's say we put a breakpoint at Point A to enable tracing and point B to disable tracing
 
+Conditional breakpoint - use custom script 
+### Absolute breakpoint 
+
+you can see it doesn't have any of those attributes so it's a direct address now since this is the main executable I knows how to rebase it if this target has [[ASLR]] now if we are adding break points to external modules and so on absolute break points might not be the way to go since those addresses will mean something else if rebasing happens
+
+
+
+
 ### References
 https://www.youtube.com/watch?v=EVG1GkTZu5w
