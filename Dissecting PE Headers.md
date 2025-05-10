@@ -109,8 +109,19 @@ we can see the values OriginalFirstThunk and FirstThunk. The Operating System us
 
 example:
  Take the redline binary from the attached VM as an example. Its IMAGE_IMPORT_DESCRIPTOR imports notable functions such as `CreateProcessW`, `CreateDirectoryW`, and `WriteFile` from `kernel32.dll`. This implies that this PE file intends to create a process, create a directory, and write some data to a file.
+### Packer
 
+ A packer is a tool to obfuscate the data in a PE file so that it can't be read without unpacking it.
+When the PE file is executed, it runs the unpacking routine to extract the original code and then executes it. 
+- Legitimate software developers use packing to address piracy concerns, 
+- malware authors use it to avoid detection. So how do we identify packers?
+### From Section Headers
 
+We see here that the section name is empty (.text section, a .data section, and a .rsrc section) , we might notice here is that the Entropy of the .data section and three of the four unnamed sections is higher than seven and is approaching 8. As we discussed in a previous task, higher Entropy represents a higher level of randomness in data. Random data is generally generated when the original data is obfuscated, indicating that these values might indicate a packed executable.
 
 ### References
 [TryHackMe | Dissecting PE Headers](https://tryhackme.com/room/dissectingpeheaders)
+
+
+
+
