@@ -8,15 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f71c00e703811fcc",
+            "id": "5c76e90995658f2e",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Images/0_Fz67vjEfSFoXtO_g.webp"
+                "file": "Dissecting PE Headers.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "0_Fz67vjEfSFoXtO_g"
+              "icon": "lucide-file",
+              "title": "Dissecting PE Headers"
             }
           }
         ]
@@ -140,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Images/0_Fz67vjEfSFoXtO_g.webp",
+                "file": "Dissecting PE Headers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0_Fz67vjEfSFoXtO_g"
+              "title": "Outline of Dissecting PE Headers"
             }
           }
         ],
@@ -166,9 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "5c76e90995658f2e",
   "lastOpenFiles": [
+    "Dissecting PE Headers.md",
     "UPX.md",
+    "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Rabbitmq.md",
     "Remote Thought/Breakpoint in IDA.md",
     "Tags/ASLR.md",
@@ -193,9 +207,7 @@
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Tags/SQL injection.md",
     "Remote Thought/XML external entity injection.md",
-    "Tags/SSTI.md",
     "Pasted image 20250416114324.png",
-    "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
     "TCP",
