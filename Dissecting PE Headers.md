@@ -29,11 +29,39 @@ the first entry in the IMAGE_DOS_HEADER dropdown menu. It says `e_magic` and h
 
 The last value in the IMAGE_DOS_HEADER is called `e_lfanew` it has a value of `0x000000d8`. This denotes the address from where the IMAGE_NT_HEADERS start. Therefore, in this PE file, the IMAGE_NT_HEADERS start from the address `0x000000d8`
 
-The IMAGE_DOS_HEADER is generally not of much use apart from these fields, especially during malware reverse engineering. **The only reason it's there is backward compatibility between MS-DOS and Windows.**
+> The IMAGE_DOS_HEADER is generally not of much use apart from these fields, especially during malware reverse engineering. **The only reason it's there is backward compatibility between MS-DOS and Windows.**
 ### The DOS_STUB:
 
 In the pe-tree utility, , we see that the following dropdown menu after IMAGE_DOS_HEADER is the DOS STUB.
-Please note that the size, hashes, and Entropy shown here by pe-tree are not related to the PE file; instead, it is for the particular section we are analyzing. These values are calculated based on the data in a specific header and are not included.
+Please note that the size, hashes, and Entropy shown here by pe-tree are not related to the PE file; instead, it is for the particular section we are analyzing. These values are calculated based on the data in a specific header and are not included
+- The size value denotes the size of the section in bytes. 
+- Entropy is the amount of randomness found in data. The higher the value of Entropy, the more random the data is.
+
+> The DOS STUB is a small piece of code that only runs if the PE file is incompatible with the system it is being run on. For example, since this PE file we are examining is a Windows executable, if it is run in MS-DOS, the PE file will exit after showing the message in the DOS STUB.
+
+### NT_HEADERS:
+
+The starting address of IMAGE_NT_HEADERS is found in `e_lfanew` from the IMAGE_DOS_HEADER
+
+So let's start by going to this offset and see what we find there. We can do that by pressing `Ctrl+G` in the Hex Editor Window or going to `Edit > Go to offset` from the GUI.
+#### Signature
+
+The first 4 bytes of the NT_HEADERS consist of the Signature. We can see this as the bytes `50 45 00 00` in Hex, or the characters `PE` in ASCII as shown in the Hex editor.
+#### FILE_HEADER
+
+the FILE_HEADER has the following fields:
+
+- **_Machine**:_ This field mentions the type of architecture for which the PE file is written. In the above example, we can see that the architecture is i386 which means that this PE file is compatible with 32-bit Intel architecture.
+
+- **_NumberOfSections**:_ A PE file contains different sections where code, variables, and other resources are stored. This field of the IMAGE_FILE_HEADER mentions the number of sections the PE file has. In our case, the PE file has five sections. We will learn about sections later in the room.
+
+- **_TimeDateStamp**:_ This field contains the time and date of the binary compilation. 
+
+- **_PointerToSymbolTable** and **NumberOfSymbols**:_ These fields are not generally related to PE files. Instead, they are here due to the COFF file headers.
+
+- **_SizeOfOptionalHeader**:_ This field contains the size of the optional header, which we will learn about in the next task. In our case, the size is 224 bytes. 
+
+- **_Characteristics**:_ This is another critical field. This field mentions the different characteristics of a PE file. In our case, this field tells us that the PE file has stripped relocation information, line numbers, and local symbol information. It is an executable image and compatible with a 32-bit machine.
 
 
 
