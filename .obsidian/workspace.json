@@ -11,24 +11,12 @@
             "id": "f71c00e703811fcc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "UPX.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "Images/0_Fz67vjEfSFoXtO_g.webp"
               },
-              "icon": "lucide-file",
-              "title": "UPX"
+              "icon": "lucide-image",
+              "title": "0_Fz67vjEfSFoXtO_g"
             }
           }
         ]
@@ -152,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UPX.md",
+                "file": "Images/0_Fz67vjEfSFoXtO_g.webp",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of UPX"
+              "title": "Outline of 0_Fz67vjEfSFoXtO_g"
             }
           }
         ],
@@ -178,8 +166,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f71c00e703811fcc",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "UPX.md",
     "Rabbitmq.md",
     "Remote Thought/Breakpoint in IDA.md",
     "Tags/ASLR.md",
@@ -188,7 +177,6 @@
     "Remote Thought/XOR (known key) values stored at a address.md",
     "Remote Thought/Python packaged executables.md",
     "Remote Thought/Understanding evry func call's purpose.md",
-    "UPX.md",
     "USB HID analysis.md",
     "Repeating Key XOR.md",
     "Sherlock from hackthebox.md",
