@@ -117,7 +117,22 @@ When the PE file is executed, it runs the unpacking routine to extract the ori
 - malware authors use it to avoid detection. So how do we identify packers?
 ### From Section Headers
 
-We see here that the section name is empty (.text section, a .data section, and a .rsrc section) , we might notice here is that the Entropy of the .data section and three of the four unnamed sections is higher than seven and is approaching 8. As we discussed in a previous task, higher Entropy represents a higher level of randomness in data. Random data is generally generated when the original data is obfuscated, indicating that these values might indicate a packed executable.
+- We see here that the section name is empty (.text section, a .data section, and a .rsrc section) , we might notice here is that the Entropy of the .data section and three of the four unnamed sections is higher than seven and is approaching 8.. Random data is generally generated when the original data is obfuscated, indicating that these values might indicate a packed executable.
+
+- Apart from the section names, another indicator of a packed executable is the permissions of each section. This is also not found in the ordinary unpacked PE file, where only the .text section has EXECUTE permissions
+
+- Another valuable piece of information from the section headers to identify a packed executable is the SizeOfRawData and Misc_VirtualSize. In a packed executable, the SizeOfRawData will always be significantly smaller than the Misc_VirtualSize in sections with WRITE and EXECUTE permissions. This is because when the PE file unpacks during execution, it writes data to this section, increasing its size in the memory compared to the size on disk, and then executes it.
+### From Import functions
+
+when we will see only a handful of imports, especially the `GetProcAddress`, `GetModuleHandleA`, and `LoadLibraryA`. These functions are often some of the only few imports of a packed PE file because these functions provide the functionality to unpack the PE file during runtime.
+
+the following indications point to a packed executable when we look at its PE header data:
+
+- Unconventional section names
+- EXECUTE permissions for multiple sections
+- High Entropy, approaching 8, for some sections.
+- A significant difference between SizeOfRawData and Misc_VirtualSize of some PE sections
+- Very few import functions
 
 ### References
 [TryHackMe | Dissecting PE Headers](https://tryhackme.com/room/dissectingpeheaders)
