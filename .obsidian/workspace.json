@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Dissecting PE Headers.md",
+                "file": "Tags/PHP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,107 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dissecting PE Headers"
+              "title": "PHP"
+            }
+          },
+          {
+            "id": "e54eb1db4b2ab918",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SQL SELECT Tricks & Truncation"
+            }
+          },
+          {
+            "id": "0f29d8d0917f3698",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Reflected XSS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Reflected XSS"
+            }
+          },
+          {
+            "id": "120829c1291b842e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/PHP Object Injection & Serialization.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PHP Object Injection & Serialization"
+            }
+          },
+          {
+            "id": "b8511da93671e91e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Cookie Manipulation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Cookie Manipulation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +249,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Dissecting PE Headers.md",
+                "file": "Remote Thought/SQL SELECT Tricks & Truncation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Dissecting PE Headers"
+              "title": "Outline of SQL SELECT Tricks & Truncation"
             }
           }
         ],
@@ -178,11 +275,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "e54eb1db4b2ab918",
   "lastOpenFiles": [
+    "Tags/PHP.md",
+    "Remote Thought/Reflected XSS.md",
+    "Remote Thought/PHP Object Injection & Serialization.md",
+    "Remote Thought/Php code in png file.md",
+    "Remote Thought/Cookie Manipulation.md",
+    "Remote Thought/Dissecting PE Headers.md",
     "Tags/ASLR.md",
     "Remote Thought/Breakpoint in IDA.md",
-    "Remote Thought/Dissecting PE Headers.md",
     "UPX.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Rabbitmq.md",
@@ -202,11 +304,6 @@
     "Remote Thought/PDF Malware Analysis.md",
     "aut.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Remote Thought/Cross-origin resource sharing (CORS).md",
-    "Remote Thought/Path Traversal.md",
-    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Tags/SQL injection.md",
-    "Remote Thought/XML external entity injection.md",
     "Pasted image 20250416114324.png",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
