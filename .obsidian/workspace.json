@@ -11,24 +11,10 @@
             "id": "52d989d8d663332e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zsteg.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Zsteg"
+              "title": "New tab"
             }
           }
         ]
@@ -178,7 +164,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52d989d8d663332e",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Tags/stego.md",
     "Zsteg.md",
