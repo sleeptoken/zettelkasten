@@ -15,6 +15,7 @@ If even after modifying the magic bytes the image does not open then
 By reviewing documentation from [wikipedia](https://en.wikipedia.org/wiki/PNG) of PNG, the file is also missing IHDR chunk length.
 Let’s add the IHDR size `00 00 00 0D`
 
+
 ### bruteforce and extract 
 
 `stegseek` to brute force the password and extract the contents of the file.
@@ -22,6 +23,11 @@ Let’s add the IHDR size `00 00 00 0D`
 stegseek -sf image.jpg /usr/share/wordlists/rockyou.txt
 ```
 ### Tools
+
+gives detailed analysis 
+```
+zsteg -a
+```
 
 [Aperi'Solve (aperisolve.com)](https://www.aperisolve.com/) for stego 
 

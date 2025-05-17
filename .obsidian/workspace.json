@@ -8,13 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "47b76838d59fa817",
+            "id": "52d989d8d663332e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Zsteg.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Zsteg"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Zsteg.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Zsteg"
             }
           }
         ],
@@ -163,35 +178,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47b76838d59fa817",
+  "active": "52d989d8d663332e",
   "lastOpenFiles": [
-    "Tags/PHP.md",
+    "Tags/stego.md",
+    "Zsteg.md",
+    "Tags/png.md",
     "Web Cache Deception.md",
+    "Sherlock from hackthebox.md",
+    "USB HID analysis.md",
+    "Repeating Key XOR.md",
+    "Rabbitmq.md",
+    "UPX.md",
+    "Remote Thought/Dissecting PE Headers.md",
+    "Tags/PHP.md",
     "Remote Thought/Reflected XSS.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/PHP Object Injection & Serialization.md",
     "Remote Thought/Php code in png file.md",
     "Remote Thought/Cookie Manipulation.md",
-    "Remote Thought/Dissecting PE Headers.md",
     "Tags/ASLR.md",
     "Remote Thought/Breakpoint in IDA.md",
-    "UPX.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
-    "Rabbitmq.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Tags/PEiD.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
     "Remote Thought/Python packaged executables.md",
     "Remote Thought/Understanding evry func call's purpose.md",
-    "USB HID analysis.md",
-    "Repeating Key XOR.md",
-    "Sherlock from hackthebox.md",
     "Tags/Forensics.md",
     "Remote Thought/PCAP analysis.md",
-    "Tags/png.md",
-    "Tags/stego.md",
     "Remote Thought/Authentication vulnerabilities.md",
-    "Remote Thought/PDF Malware Analysis.md",
     "Pasted image 20250416114324.png",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
