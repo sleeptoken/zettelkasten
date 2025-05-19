@@ -138,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zsteg.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Zsteg"
+              "title": "Outline"
             }
           }
         ],
