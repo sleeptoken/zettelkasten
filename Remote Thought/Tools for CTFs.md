@@ -10,3 +10,5 @@ https://www.aperisolve.com/
 
 
 ### References
+jason haddix bug bounty
+https://www.amazon.com/dp/1593278616

@@ -11,10 +11,24 @@
             "id": "52d989d8d663332e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Tools for CTFs.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Tools for CTFs"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Remote Thought/Tools for CTFs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Tools for CTFs"
             }
           }
         ],
@@ -163,7 +178,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "52d989d8d663332e",
   "lastOpenFiles": [
     "Tags/stego.md",
     "Zsteg.md",
