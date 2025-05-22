@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Tools for CTFs.md",
+                "file": "Remote Thought/Breakpoint in IDA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Tools for CTFs"
+              "title": "Breakpoint in IDA"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Tools for CTFs.md",
+                "file": "Remote Thought/Breakpoint in IDA.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tools for CTFs"
+              "title": "Outline of Breakpoint in IDA"
             }
           }
         ],
@@ -180,16 +180,17 @@
   },
   "active": "52d989d8d663332e",
   "lastOpenFiles": [
+    "Repeating Key XOR.md",
+    "UPX.md",
+    "Rabbitmq.md",
+    "Remote Thought/Tools for CTFs.md",
+    "Remote Thought/Dissecting PE Headers.md",
     "Tags/stego.md",
     "Zsteg.md",
     "Tags/png.md",
     "Web Cache Deception.md",
     "Sherlock from hackthebox.md",
     "USB HID analysis.md",
-    "Repeating Key XOR.md",
-    "Rabbitmq.md",
-    "UPX.md",
-    "Remote Thought/Dissecting PE Headers.md",
     "Tags/PHP.md",
     "Remote Thought/Reflected XSS.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
@@ -206,7 +207,6 @@
     "Remote Thought/Understanding evry func call's purpose.md",
     "Tags/Forensics.md",
     "Remote Thought/PCAP analysis.md",
-    "Remote Thought/Authentication vulnerabilities.md",
     "Pasted image 20250416114324.png",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",
