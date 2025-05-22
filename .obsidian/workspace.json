@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Breakpoint in IDA.md",
+                "file": "Remote Thought/Reverse Engineering Android apps.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Breakpoint in IDA"
+              "title": "Reverse Engineering Android apps"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#android keytool",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Breakpoint in IDA.md",
+                "file": "Remote Thought/Reverse Engineering Android apps.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Breakpoint in IDA"
+              "title": "Outline of Reverse Engineering Android apps"
             }
           }
         ],
@@ -166,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 285.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,6 +181,13 @@
   },
   "active": "52d989d8d663332e",
   "lastOpenFiles": [
+    "Remote Thought/Advanced Interception Tricks.md",
+    "Remote Thought/Building Android POC app.md",
+    "Remote Thought/Android Debug Bridge.md",
+    "Tags/apktool.md",
+    "Remote Thought/Dynamic Instrumentation.md",
+    "Remote Thought/Packet logging with tcpdump.md",
+    "Remote Thought/Breakpoint in IDA.md",
     "Repeating Key XOR.md",
     "UPX.md",
     "Rabbitmq.md",
@@ -198,15 +206,8 @@
     "Remote Thought/Php code in png file.md",
     "Remote Thought/Cookie Manipulation.md",
     "Tags/ASLR.md",
-    "Remote Thought/Breakpoint in IDA.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Remote Thought/Binary exploit toolkit.md",
-    "Tags/PEiD.md",
-    "Remote Thought/XOR (known key) values stored at a address.md",
-    "Remote Thought/Python packaged executables.md",
-    "Remote Thought/Understanding evry func call's purpose.md",
-    "Tags/Forensics.md",
-    "Remote Thought/PCAP analysis.md",
     "Pasted image 20250416114324.png",
     "Pasted image 20250123132350.png",
     "Images/Pasted image 20250123103744.png",

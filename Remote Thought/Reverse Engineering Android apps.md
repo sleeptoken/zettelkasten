@@ -42,6 +42,13 @@ keytool -genkey -v -keystore research.keystore -alias research_key -keyalg RSA -
 
 You can leave everything on default, and just confirm that the information is correct with `yes`.
 
+## Retrieving the key 
+
+retrieving the key may be essential in #CTF refer [here](https://stackoverflow.com/questions/28034899/how-to-retrieve-key-alias-and-key-password-for-signed-apk-in-android-studiomigr/28051161#28051161)
+find the flag in the alias name.  
+```
+keytool -list -v -keystore key.jks
+```
 # Signing an APK
 
 To sign an APK we use `jarsigner`:
