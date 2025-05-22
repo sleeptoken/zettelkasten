@@ -16,13 +16,13 @@ By reviewing documentation from [wikipedia](https://en.wikipedia.org/wiki/PNG)�
 Let’s add the IHDR size `00 00 00 0D`
 
 
-### bruteforce and extract 
+#### bruteforce and extract 
 
 `stegseek` to brute force the password and extract the contents of the file.
 ```
 stegseek -sf image.jpg /usr/share/wordlists/rockyou.txt
 ```
-### Tools
+#### Tools
 
 gives detailed analysis 
 ```
@@ -32,6 +32,10 @@ zsteg -a
 [Aperi'Solve (aperisolve.com)](https://www.aperisolve.com/) for stego 
 
 [Overlay images online](https://overlay.imageonline.co/) - Manipulate images 
+
+### Specifically for Audio
+
+for MP3 - https://www.stegonaut.com/
 
 ### References 
 
