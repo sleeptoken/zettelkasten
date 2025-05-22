@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fetch file using date cmd.md",
+                "file": "Remote Thought/Fetch file using date cmd.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fetch file using date cmd.md",
+                "file": "Remote Thought/Fetch file using date cmd.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bf2e585eb75335ad",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Remote Thought/Directory busting.md",
-    "Fetch file using date cmd.md",
+    "Remote Thought/Fetch file using date cmd.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Remote Thought/crawling a website.md",
     "Tags/NBNS (port 137).md",
