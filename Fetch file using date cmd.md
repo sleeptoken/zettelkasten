@@ -3,9 +3,7 @@
 
 Source: [[linux]]
 
-Tags: [[PHP]]
-
-The first thing was to understand the following exec command in php source code.
+The first thing was to understand the following exec command in [[PHP]] source code.
 
 ```
 $result = shell_exec("date '+" . escapeshellcmd($format) . "' 2>&1");
@@ -17,7 +15,8 @@ I understood that the following command runs on the server
 date +'<format here>'
 ```
 
-For a long time I kept thinking ways to execute `cat` command somehow but the `escapeshellcmd` function wouldn’t allow me to do so. So I went ahead and opened the man page of date using `man page` and see if I could print a file using this and I did. The `-f` flag can open DATEFILE and read date from it, however if the file format was not DATEFILE, it would print the contents of the file as part of the error. I got it!  
+For a long time I kept thinking ways to execute `cat` command somehow but the `escapeshellcmd` function wouldn’t allow me to do so. So I went ahead and opened the `man` page of `date` using  `man page` and see if I could print a file using this and I did. 
+The `-f` flag can open `DATEFILE` and read date from it, however if the file format was not DATEFILE, it would print the contents of the file as part of the error.
 So I carefully crafted a request to read the flag file (which btw had to be guessed where is) - turned out it was at /flag.  
 `format=' -f /flag'`  
 I used this to first close the opening single quote, then read the file and then open the closing the single quote. I URL encoded it and sent the request to get the flag! Final request looked like this
