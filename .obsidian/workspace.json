@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Image formation from TCP Stream.md",
+                "file": "Remote Thought/Image formation from TCP Stream.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Image formation from TCP Stream.md",
+                "file": "Remote Thought/Image formation from TCP Stream.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 278.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +180,7 @@
   },
   "active": "b7f844b262e94902",
   "lastOpenFiles": [
-    "Image formation from TCP Stream.md",
+    "Remote Thought/Image formation from TCP Stream.md",
     "Tags/png.md",
     "Remote Thought/PCAP analysis.md",
     "Remote Thought/Fetch file using date cmd.md",
