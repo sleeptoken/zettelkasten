@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Fetch file using date cmd.md",
+                "file": "Remote Thought/PCAP analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Fetch file using date cmd"
+              "title": "PCAP analysis"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Fetch file using date cmd.md",
+                "file": "Remote Thought/PCAP analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fetch file using date cmd"
+              "title": "Outline of PCAP analysis"
             }
           }
         ],
@@ -178,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57a1bb4c35f4d6c3",
+  "active": "bf2e585eb75335ad",
   "lastOpenFiles": [
-    "Remote Thought/Directory busting.md",
     "Remote Thought/Fetch file using date cmd.md",
+    "Remote Thought/Directory busting.md",
     "Remote Thought/Apache Proxy Server CVE.md",
     "Remote Thought/crawling a website.md",
     "Tags/NBNS (port 137).md",
