@@ -21,8 +21,16 @@ In the Recipe section
 - Drop bytes - length - 158 
 - From Hex 
 - Render Image 
+# Binwalk 
 
+```
+binwalk --dd='.*' -e security-footage-1648933966395.pcap
+```
+this dumps all the images in a new folder, but this also produces some corrupt images 
 
+# Py Script - Traditional 
+
+Click on anyone of the request then follow
 
 
 ### References
