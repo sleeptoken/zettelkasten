@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/PCAP analysis.md",
+                "file": "Tags/png.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PCAP analysis"
+              "title": "png"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/PCAP analysis.md",
+                "file": "Tags/png.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of PCAP analysis"
+              "title": "Outline of png"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "bf2e585eb75335ad",
   "lastOpenFiles": [
+    "Remote Thought/PCAP analysis.md",
     "Remote Thought/Fetch file using date cmd.md",
     "Remote Thought/Directory busting.md",
     "Remote Thought/Apache Proxy Server CVE.md",
@@ -205,7 +206,6 @@
     "Tags/png.md",
     "Web Cache Deception.md",
     "Sherlock from hackthebox.md",
-    "USB HID analysis.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250416114324.png",
     "Pasted image 20250123132350.png",
