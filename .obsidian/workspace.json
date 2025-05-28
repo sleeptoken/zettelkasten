@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UPX.md",
+                "file": "Remote Thought/Tracing with Frida.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "UPX"
+              "title": "Tracing with Frida"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#android",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UPX.md",
+                "file": "Remote Thought/Tracing with Frida.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of UPX"
+              "title": "Outline of Tracing with Frida"
             }
           }
         ],
@@ -180,6 +181,9 @@
   },
   "active": "b7f844b262e94902",
   "lastOpenFiles": [
+    "Remote Thought/SSL Validation Bypasses.md",
+    "Remote Thought/Tracing with Frida.md",
+    "UPX.md",
     "Remote Thought/RCE via SSRF & nmap privesc.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Remote Thought/LFI and crack.md",
@@ -203,9 +207,6 @@
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/Breakpoint in IDA.md",
-    "Repeating Key XOR.md",
-    "UPX.md",
-    "Rabbitmq.md",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Pasted image 20250416114324.png",
     "Pasted image 20250123132350.png",
