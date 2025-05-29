@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Building Android POC app.md",
+                "file": "Remote Thought/Special Android Features.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Building Android POC app"
+              "title": "Special Android Features"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Building Android POC app.md",
+                "file": "Remote Thought/Special Android Features.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Building Android POC app"
+              "title": "Outline of Special Android Features"
             }
           }
         ],
@@ -181,11 +181,11 @@
   },
   "active": "c2811e4580df61ad",
   "lastOpenFiles": [
+    "Remote Thought/Building Android POC app.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Proxy Setup script.md",
     "Intents and Activities.md",
     "Remote Thought/Tracing with Frida.md",
-    "Remote Thought/Building Android POC app.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/Advanced Interception Tricks.md",
