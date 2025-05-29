@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Internet perms & Networking.md",
+                "file": "Remote Thought/Packet logging with tcpdump.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Internet perms & Networking"
+              "title": "Packet logging with tcpdump"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Internet perms & Networking.md",
+                "file": "Remote Thought/Packet logging with tcpdump.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Internet perms & Networking"
+              "title": "Outline of Packet logging with tcpdump"
             }
           }
         ],
@@ -181,8 +181,8 @@
   },
   "active": "c2811e4580df61ad",
   "lastOpenFiles": [
-    "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/Internet perms & Networking.md",
+    "Remote Thought/Packet logging with tcpdump.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/Special Android Features.md",
     "Remote Thought/Building Android POC app.md",
