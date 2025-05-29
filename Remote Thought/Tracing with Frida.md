@@ -47,7 +47,7 @@ this sometimes is really useful, but in a lot of cases it's also really, really 
 ### Replace function arguments / return values returned by functions
 
 - This can be used to bypass security controls such as license checks 
-- even change different modes of the application, for example, into a developer mode Instead of a production mode. 
+- even change different modes of the application, for example, into a developer mode Insttead of a production mode. 
 - We can also often use it to bypass functionality such as SSL pinning.
 
 Interceptor does not really work with Java code, and so we basically have to build our own interceptor 
