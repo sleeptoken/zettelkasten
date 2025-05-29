@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Special Android Features.md",
-                "mode": "source",
+                "file": "Remote Thought/Internet perms & Networking.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Special Android Features"
+              "title": "Internet perms & Networking"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Special Android Features.md",
+                "file": "Remote Thought/Internet perms & Networking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Special Android Features"
+              "title": "Outline of Internet perms & Networking"
             }
           }
         ],
@@ -181,6 +181,8 @@
   },
   "active": "c2811e4580df61ad",
   "lastOpenFiles": [
+    "Remote Thought/Android Debug Bridge.md",
+    "Remote Thought/Special Android Features.md",
     "Remote Thought/Building Android POC app.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Proxy Setup script.md",
@@ -189,7 +191,6 @@
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Internet perms & Networking.md",
     "Remote Thought/Advanced Interception Tricks.md",
-    "Remote Thought/Android Debug Bridge.md",
     "Tags/apktool.md",
     "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
     "Remote Thought/Decompiling Android apps.md",
@@ -197,7 +198,6 @@
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Extract ab files.md",
     "Remote Thought/Packet logging with tcpdump.md",
-    "Remote Thought/Special Android Features.md",
     "Remote Thought/SSL Validation Bypasses.md",
     "UPX.md",
     "Remote Thought/RCE via SSRF & nmap privesc.md",
