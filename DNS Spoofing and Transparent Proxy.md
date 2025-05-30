@@ -36,29 +36,33 @@ and bind DNS mask to port 53 on our host and expose it to the outside. Now we ha
 but if we use our local DNS server,
 - `dig @127.0.0.1 hextree.io`   -> It'll return the configured IP.
 
-Next, we have to configure this DNS server on the phone, and there are two options, which both don't really work.
+## Configure this DNS server on the phone
+
+and there are two options, which both don't really work.
 ### Private DNS
 
-We could set up a private DNS but that only works with host names and not IPs. Or we can change the wifi connection from DHCP to static.
+We could set up a private DNS (search in settings) but that only works with host names and not IPs. 
 
-Make sure we enter exactly the same values as we got from the DHCP and then specify our own DNS.
+### Change Wi-Fi connection
 
-The problem is though, that applications such as Google Chrome might use DNS over HT PS and ignore our DNS server.
+Or we can change the Wi-Fi connection from DHCP to static. Make sure we enter exactly the same values as we got from the DHCP and then specify our own DNS.
+- IP address - 10.0.2.16
+- Gateway  - 10.0.2.2
+- Network prefix length - 24
+- DNS 1 - 192.168.178.37
 
-So when we try to resolve the IP for HX three IO, it still shows the real one, and that's where Android VPN tricks come into play.
+The problem is though, that applications such as Google Chrome might use DNS over HTTPS and ignore our DNS server. And that's where Android VPN tricks come into play.
+### Using Rethink VPN
 
-Again, using the Rethink DNS app, we can create a VPN connection where we can control the DNS server. There are many other apps that could do that as well,
-
-but this one as open source. So in the DNS setting, we can now select to proxy DNS, and we want to proxy it to our DNS mask instance.
+Again, using the Rethink DNS app, we can create a VPN connection where we can control the DNS server. So in the DNS setting ->Other DNS -> DNS 53 (DNS proxy), and we want to proxy it to our DNS mask instance. (IP address - 192.168.178.37, Port number - 53)
 
 After that, we can launch the VPN, which doesn't really do much except it forces the apps to use our DNS server.
 
-You know, it would be really bad for privacy if apps could bypass the V-P-N-D-N-S because that could lead to IP leaks.
-So this method ensures everything uses our DNS, and so if we now resolve H three lo, our IP is returned.
+You know, it would be really bad for privacy if apps could bypass the VPN DNS because that could lead to IP leaks. So this method ensures everything uses our DNS. 
 
-Now let's come back to our okay, HDP test. Remember, this request ignores any proxy setting, and in fact, we have not configured any kind
 
-of proxy right now anyway. But when we issue the request, the domain IPE mock has to be resolved to an ip, which will now point at our ip.
+
+Now let's come back to our okay, HDP test. Remember, this request ignores any proxy setting, and in fact, we have not configured any kind of proxy right now anyway. But when we issue the request, the domain IPE mock has to be resolved to an ip, which will now point at our ip.
 
 So the app tries to connect to our computer on HT PS Port 4, 4 3, expecting there to be a web server, which means we could now run a web
 
