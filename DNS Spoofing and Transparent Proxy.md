@@ -11,12 +11,17 @@ Continuation of [[Advanced Interception Tricks]]
 
 In order to make this work, we first have to create a setup that allows us to manipulate the DNS response.
 
-There are lots of ways how this could be done, but I will be using DNS Mask, which is a simple DNS server.
+```powershell
+docker ps
+docker pull andyshinn/dnsmasq
+```
 
-I'm going to run this in a Docker container because then it can be set up on Linux, Mac, or Windows as long as Dock has installed.
+There are lots of ways how this could be done, but I will be using DNSmasq, which is a simple DNS server. I'm going to run this in a Docker container because then it can be set up on Linux, Mac, or Windows as long as Docker has installed.
 
-So first, let's create the DNS mask config, where we can override the IP for some domains. For example, HX three 10
+So first, let's create the `dnsmasq.conf`, where we can override the IP for some domains. For example, HX three 10
+```
 
+```
 or the API mox URL used by the okay HDP proxy bypass test. Then we can execute docker, run mount the config into the container,
 
 and bind DNS mask to port five three on our host and expose it to the outside. Now we have a local DS server running, which we can query
