@@ -17,21 +17,29 @@ docker pull andyshinn/dnsmasq
 ```
 
 There are lots of ways how this could be done, but I will be using DNSmasq, which is a simple DNS server. I'm going to run this in a Docker container because then it can be set up on Linux, Mac, or Windows as long as Docker has installed.
+### dnsmasq config
 
-So first, let's create the `dnsmasq.conf`, where we can override the IP for some domains. For example, HX three 10
+So first, let's create the `dnsmasq.conf`, configure mappings between domain and IP.
+```dnsmasq.config
+address=/hextree.io/192.168.178.37 
+address=/ht-api-mocks-lcfc4kr5oa-uc.a.run.app/192.168.178.37 
+log-queries
 ```
 
+Then we can execute docker, run mount the config into the container,
+```powershell
+docker run --name my-dnsmasq --rm -it -p 0.0.0.0:53:53/udp \ -v D:\tmp\proxy\dnsmasq.conf:/etc/dnsmasq.conf andyshinn/dnsmasq.conf andyshinn/dnsmasq
 ```
-or the API mox URL used by the okay HDP proxy bypass test. Then we can execute docker, run mount the config into the container,
 
-and bind DNS mask to port five three on our host and expose it to the outside. Now we have a local DS server running, which we can query
+and bind DNS mask to port 53 on our host and expose it to the outside. Now we have a local DNS server running, which we can query with, for example on linux terminal run 
+- `dig hextree.io` -> So this is the real IP, 
+but if we use our local DNS server,
+- `dig @127.0.0.1 hextree.io`   -> It'll return the configured IP.
 
-with, for example, Dick. So this is the real lp, but if we use our local DS server, it'll return the configured ip.
+Next, we have to configure this DNS server on the phone, and there are two options, which both don't really work.
+### Private DNS
 
-Next, we have to configure this DS server on the phone,
-Next, we have to configure this DS server on the phone, and there are two options, which both don't really work.
-
-We could set up a private D Ns, but that only works with host names and not ips. Or we can change the wifi connection from DHCP to static.
+We could set up a private DNS but that only works with host names and not IPs. Or we can change the wifi connection from DHCP to static.
 
 Make sure we enter exactly the same values as we got from the DHCP and then specify our own DNS.
 
