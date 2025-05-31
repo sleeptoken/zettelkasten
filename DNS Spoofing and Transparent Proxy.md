@@ -60,35 +60,35 @@ After that, we can launch the VPN, which doesn't really do much except it forces
 
 You know, it would be really bad for privacy if apps could bypass the VPN DNS because that could lead to IP leaks. So this method ensures everything uses our DNS. 
 
+## OkHttp - NO-PROXY
 
+Remember, this request ignores any proxy setting, and in fact, we have not configured any kind of proxy right now anyway (we have not configured a proxy, we just use our own DNS server to return our IP).
+- So the app tries to connect to our computer on HTTPS Port 443, expecting there to be a web server, which means we could now run a web server on our computer to respond to this request. Also, if the app used any other kind of protocol, a different port, it would still try to connect to our computer and we could create a custom server on that Port to respond.
 
-Now let's come back to our okay, HDP test. Remember, this request ignores any proxy setting, and in fact, we have not configured any kind of proxy right now anyway. But when we issue the request, the domain IPE mock has to be resolved to an ip, which will now point at our ip.
+> [!NOTE]
+> **DNS spoofing** 
+> redirecting the traffic via DNS also works great with other protocols. as long as the app uses domains to establish communication with a server, we can make it connect to a different computer. 
 
-So the app tries to connect to our computer on HT PS Port 4, 4 3, expecting there to be a web server, which means we could now run a web
+but this is an excellent way to Intercept traffic for even custom protocols. 
+## Transparent Proxy Config  
 
-server on our computer to respond to this request. Also, if the app used any other kind of protocol, a different port, it would still try to connect
+For HTTP and HTTPS Interception, luckily we can use Burp Suite again, because in the Burp Suite proxy settings, we can configure transparent proxies. So let's create a proxy listener for HTTP requests on port 80 on all Interfaces and enable transparent proxy. 
 
-to our computer and we could create a custom server on that Port to respond. This of course, requires some engineering and finessing,
+- Bind to port: 80
+- Bind to address: All interfaces 
 
-but this is an excellent way to Intercept traffic for even custom protocols. But for HDP and HT PS Interception, luckily we can use Burp Suite again,
+- go to `Request handling` tab and check `support invisible proxying`
 
-because in the Bur Sulte proxy settings, we can configure transparent proxies. So let's create a proxy listener for HTP requests on port 80 on all Interfaces
+And then we do the same for HTTPS on port 443. What this basically does is that Burp will act as a web server, but forward the request to the real destination.
+## Transparent Proxy Working
 
-and enable transparent proxy. And then we do the same for HTT PS on port 4, 4 3. What this basically does is that Burp will act as a web server, but forward the request to the real destination. Here's how it works. When the app wants
+When the app wants to send an HTTP request, it first has to resolve the domain to an IP, which now points at our computer.
 
-to send an HDP request, it first has to resolve the domain to an ip, which now points at our computer.
+It then establishes a TCP connection on port 443. In the case of HTTPS, with that computer where Burp is listening, the app thinks it is now connected to the real web server. So it will send the HTTP request. 
 
-It then establishes a TCP connection on port 4, 4 3. In the case of H-G-D-P-S, with that computer where Burb is listening, the app thinks it is now connected
+Burp receives this HTTP request, and from the host header, it knows where the request was intended to go. So it will now send this request to the real server, gets a response back, and sends that response back to the app. 
 
-to the real web server. So it will send the HDP request. Bur receives this HDP request, and from the host header, it knows
-
-where the request was intended to go. So it will now send this request to the real server, gets a response back,
-
-and sends that response back to the app. And that's why it's called Transparent Proxying, because from the point of view of the app.
-
-there was no proxy Involved. It simply sent an HGP request to what it thinks is the real server. The server just happened to be birth suite intercepting
-
-and forwarding the request.
+> And that's why it's called Transparent Proxying, because from the point of view of the app. there was no proxy Involved. It simply sent an HTTP request to what it thinks is the real server. The server just happened to be burp suite intercepting and forwarding the request.
 
 ### References
 [DNS Spoofing and Transparent Proxy (hextree.io)](https://app.hextree.io/courses/network-interception/advanced-interception-tricks/dns-spoofing-and-transparent-proxy)
