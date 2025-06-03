@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/apktool.md",
+                "file": "Remote Thought/Decompiling Android apps.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "apktool"
+              "title": "Decompiling Android apps"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/apktool.md",
+                "file": "Remote Thought/Decompiling Android apps.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of apktool"
+              "title": "Outline of Decompiling Android apps"
             }
           }
         ],
@@ -181,6 +181,7 @@
   },
   "active": "c2811e4580df61ad",
   "lastOpenFiles": [
+    "Tags/apktool.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "DNS Spoofing and Transparent Proxy.md",
     "Remote Thought/Advanced Interception Tricks.md",
@@ -193,7 +194,6 @@
     "Remote Thought/Proxy Setup script.md",
     "Intents and Activities.md",
     "Remote Thought/Tracing with Frida.md",
-    "Tags/apktool.md",
     "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
     "Remote Thought/Decompiling Android apps.md",
     "Remote Thought/Dynamic Instrumentation.md",
