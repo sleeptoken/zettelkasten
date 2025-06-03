@@ -39,11 +39,11 @@ but if we use our local DNS server,
 ## Configure this DNS server on the phone
 
 and there are two options, which both don't really work.
-### Private DNS
+### Private DNS - Deprecated 
 
 We could set up a private DNS (search in settings) but that only works with host names and not IPs. 
 
-### Change Wi-Fi connection
+### Change Wi-Fi connection - Deprecated
 
 Or we can change the Wi-Fi connection from DHCP to static. Make sure we enter exactly the same values as we got from the DHCP and then specify our own DNS.
 - IP address - 10.0.2.16
