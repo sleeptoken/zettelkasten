@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Tracing with Frida.md",
+                "file": "Remote Thought/Dynamic Instrumentation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Tracing with Frida"
+              "title": "Dynamic Instrumentation"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Tracing with Frida.md",
+                "file": "Remote Thought/Dynamic Instrumentation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tracing with Frida"
+              "title": "Outline of Dynamic Instrumentation"
             }
           }
         ],
@@ -181,6 +181,7 @@
   },
   "active": "c2811e4580df61ad",
   "lastOpenFiles": [
+    "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Decompiling Android apps.md",
     "Tags/apktool.md",
@@ -195,7 +196,6 @@
     "Remote Thought/Building Android POC app.md",
     "Remote Thought/Proxy Setup script.md",
     "Intents and Activities.md",
-    "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Cleartext Traffic Leads to Zip Path Traversal.md",
     "Remote Thought/Extract ab files.md",
     "Remote Thought/SSL Validation Bypasses.md",
