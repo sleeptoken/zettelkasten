@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "getInte",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 277.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,7 +178,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0cc3d1be09e41370",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
     "Remote Thought/Dynamic Instrumentation.md",
     "Remote Thought/Tracing with Frida.md",
