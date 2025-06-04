@@ -102,6 +102,7 @@ With the process id, we can find the memory map of this app process. This app lo
 > the native code library implementing the interaction with the binder driver, which allows the app to send data to other app process such as the intent when we call start activity.
 
 Luckily we don't really have to interact with any of the low level stuff directly. That's the beauty of Android and the development SDK.
+### Implementing Intent Debug Features
 
 
 

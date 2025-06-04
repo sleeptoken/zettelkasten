@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Dynamic Instrumentation.md",
+                "file": "Intents and Activities.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dynamic Instrumentation"
+              "title": "Intents and Activities"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#android",
+                "query": "getInte",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Dynamic Instrumentation.md",
+                "file": "Intents and Activities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Dynamic Instrumentation"
+              "title": "Outline of Intents and Activities"
             }
           }
         ],
@@ -179,10 +179,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2811e4580df61ad",
+  "active": "0cc3d1be09e41370",
   "lastOpenFiles": [
-    "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Dynamic Instrumentation.md",
+    "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Decompiling Android apps.md",
     "Tags/apktool.md",
     "Remote Thought/Reverse Engineering Android apps.md",
