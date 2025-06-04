@@ -104,7 +104,56 @@ With the process id, we can find the memory map of this app process. This app lo
 Luckily we don't really have to interact with any of the low level stuff directly. That's the beauty of Android and the development SDK.
 ### Implementing Intent Debug Features
 
+As you know, w Return to current time in our activity with getintent, and we could simply print the
 
+two string of it to the logs. When we do that and look at the output, we can see that things like the intent,
+
+action and category and flags are there, but it's not nicely formatted and it doesn't contain everything, especially no extra values.
+
+So when working on an intent-related attack, I like to use a helper function to display all the data stored in an intent.
+
+By the way, you also saw it already in action in the Intent Attack Surface app. So let's get started and create a
+
+new class called Utils. In there we can create a static method dumpintent that takes an Intent, and it's supposed to return a string
+
+with all the intent details. If the intent is null, we just return a string null. But if we got one,
+
+we start to build a string. One of the important fields is the intent action, so we can simply prepare
+
+our string to include the action. Now what about the intent categories? Well, they are not a single string, but a list or a set of categories.
+
+So we have to create a loop to go through all the categories and add them to the string as well.
+Then we could also get the attached data URI. The target component, the flags, and most Importantly, the extras, which also require us to write a loop
+
+to go through all key and value pairs. Of course, this function should be public and we can retum the combined string at the end.
+
+And now back in our main activity we can call Utils.dumpintent and log it. If we now launch the app,
+
+we get the launch intent and we can see the details in logcat. The output is much more verbose. This is very useful,
+
+but it could be improved a lot. For example, the flags is an Integer value, but in reality it's individual bits that
+
+are set or not set making up that integer. So we could create a function that actually decodes the flags into a string.
+
+Which bits are set? Also, an intent could include an extra with another Intent, a nested intent. And in that case you would like to
+
+dump that intent value as well. And when it's nested, we would like to add some Indentation to the output.
+
+So long story short, I have already prepared this class for you. You can copy the provided function and replace the one we just created. What you get with this is now a more powerful dump Intent function, which for example calls getFlagsString, which checks the set bits of the
+
+flag integer and creates a string with all the set flags. But there's also another useful function called showDialog, which will dynamically build a layout with
+
+different elements to create a dialog, pop up with all the intent details, so you can conveniently add it into any activity
+
+you might want to display an intent. Back in the main activity, we can now replace the log output with a call to Utils.showDialog.
+
+We have to pass in a context of the current activity because we deal with Ul stuff. And then of course the intent itself.
+
+If we now run the app, we get the launch intent and the dialog will show the intent details displaying us all the
+
+details of the intent that was used by the launcher to launch our main activity. This is a super useful function you can
+
+use in lots of different places when debugging your intent-related attacks, and that's also why we added it into the Intent Attack Surface application.
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
