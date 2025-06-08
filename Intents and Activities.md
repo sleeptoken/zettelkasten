@@ -116,20 +116,7 @@ In the output, we can see that things like the intent, action and category and f
 
 So when working on an intent-related attack, I like to use a helper function to display all the data stored in an intent. Create a new class called `Utils.java`. 
 
-
-
-In there we can create a static method dumpintent that takes an Intent, and it's supposed to return a string
-
-with all the intent details. If the intent is null, we just return a string null. But if we got one,
-
-we start to build a string. One of the important fields is the intent action, so we can simply prepare
-
-our string to include the action. Now what about the intent categories? Well, they are not a single string, but a list or a set of categories.
-
-So we have to create a loop to go through all the categories and add them to the string as well.
-Then we could also get the attached data URI. The target component, the flags, and most Importantly, the extras, which also require us to write a loop
-
-to go through all key and value pairs. Of course, this function should be public and we can return the combined string at the end.
+In there we can create a static method dumpintent that takes an Intent, and it's supposed to return a string with all the intent details. If the intent is null, we just return a string null. But if we got one, we start to build a string. One of the important fields is the intent action, so we can simply prepare our string to include the action. Now what about the intent categories? Well, they are not a single string, but a list or a set of categories. So we have to create a loop to go through all the categories and add them to the string as well. Then we could also get the attached data URI. The target component, the flags, and most Importantly, the extras, which also require us to write a loop to go through all key and value pairs. Of course, this function should be public and we can return the combined string at the end.
 
 
 And now back in our main activity we can call `Utils.dumpIntent` and log it.
@@ -140,7 +127,7 @@ Log.i("Hextree","intent"+Utils.dumpIntent(intent));
 ```
 If we now launch the app, we get the launch intent and we can see the details in logcat. The output is much more verbose. 
 
-This is very useful, but it could be improved a lot. For example, the flags is an Integer value, but in reality it's individual bits that are set or not set making up that integer.
+It could be improved a lot. For example, the flags is an Integer value, but in reality it's individual bits that are set or not set making up that integer.
 example - `Intent.Flags`
 	decimal: 268435456
 	bin: 0001000000000000000000
@@ -148,23 +135,237 @@ there is one bit set
 
 So we could create a function that actually decodes the flags into a string. - Which bits are set?
 
-Also, an intent could include an extra with another Intent, a nested intent. And in that case you would like to dump that intent value as well. And when it's nested, we would like to add some Indentation to the output.
+Also, an intent could include an extra with another Intent (`Extra_Intent`), a nested intent. And in that case you would like to dump that intent value as well. And when it's nested, we would like to add some Indentation to the output.
+#### Improved Helper Function
 
-You can copy the provided function and replace the one we just created. What you get with this is now a more powerful dump Intent function, which for example calls getFlagsString, which checks the set bits of the
+Replace the `Utils.java` with the following, What you get with this is now a more powerful dump Intent function, which for example 
+- calls getFlagsString, which checks the set bits of the flag integer and creates a string with all the set flags. 
+- there's also another useful function called showDialog, which will dynamically build a layout with different elements to create a dialog, pop up with all the intent details, so you can conveniently add it into any activity you might want to display an intent.
+  
+```java
+// package io.hextree.activitiestest;
 
-flag integer and creates a string with all the set flags. But there's also another useful function called showDialog, which will dynamically build a layout with
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-different elements to create a dialog, pop up with all the intent details, so you can conveniently add it into any activity
+import java.util.Set;
 
-you might want to display an intent. Back in the main activity, we can now replace the log output with a call to Utils.showDialog.
+public class Utils {
+    public static String dumpIntent(Context context, Intent intent) {
+        return dumpIntent(context, intent, 0);
+    }
 
-We have to pass in a context of the current activity because we deal with Ul stuff. And then of course the intent itself.
+    private static String dumpIntent(Context context, Intent intent, int indentLevel) {
+        if (intent == null) {
+            return "Intent is null";
+        }
 
-If we now run the app, we get the launch intent and the dialog will show the intent details displaying us all the
+        StringBuilder sb = new StringBuilder();
+        String indent = new String(new char[indentLevel]).replace("\0", "    ");
 
-details of the intent that was used by the launcher to launch our main activity. This is a super useful function you can
+        // Append basic intent information
+        sb.append(indent).append("[Action]    ").append(intent.getAction()).append("\n");
+        // Append categories
+        Set<String> categories = intent.getCategories();
+        if (categories != null) {
+            for (String category : categories) {
+                sb.append(indent).append("[Category]  ").append(category).append("\n");
+            }
+        }
+        sb.append(indent).append("[Data]      ").append(intent.getDataString()).append("\n");
+        sb.append(indent).append("[Component] ").append(intent.getComponent()).append("\n");
+        sb.append(indent).append("[Flags]     ").append(getFlagsString(intent.getFlags())).append("\n");
 
-use in lots of different places when debugging your intent-related attacks, and that's also why we added it into the Intent Attack Surface application.
 
+        // Append extras
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+            for (String key : extras.keySet()) {
+                Object value = extras.get(key);
+                if (value instanceof Intent) {
+                    sb.append(indent).append("[Extra:'").append(key).append("'] -> Intent\n");
+                    // Recursively dump nested intents with increased indentation
+                    sb.append(dumpIntent(context, (Intent) value, indentLevel + 1));  
+                } else if (value instanceof Bundle) {
+                    sb.append(indent).append("[Extra:'").append(key).append("'] -> Bundle\n");
+                    // Recursively dump nested intents with increased indentation
+                    sb.append(dumpBundle((Bundle) value, indentLevel + 1));
+                } else {
+                    sb.append(indent).append("[Extra:'").append(key).append("']: ").append(value).append("\n");
+                }
+            }
+        }
+
+        // Query the content URI if FLAG_GRANT_READ_URI_PERMISSION is set
+        /*
+        if ((intent.getFlags() & Intent.FLAG_GRANT_READ_URI_PERMISSION) != 0) {
+            Uri data = intent.getData();
+            if (data != null) {
+                sb.append(queryContentUri(context, data, indentLevel + 1));
+            }
+        }
+        */
+
+        return sb.toString();
+    }
+    
+    public static String dumpBundle(Bundle bundle) {
+        return dumpBundle(bundle, 0);
+    }
+
+    private static String dumpBundle(Bundle bundle, int indentLevel) {
+        if (bundle == null) {
+            return "Bundle is null";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        String indent = new String(new char[indentLevel]).replace("\0", "    ");
+
+        for (String key : bundle.keySet()) {
+            Object value = bundle.get(key);
+            if (value instanceof Bundle) {
+                sb.append(String.format("%s['%s']: Bundle[\n%s%s]\n", indent, key, dumpBundle((Bundle) value, indentLevel + 1), indent));
+            } else {
+                sb.append(String.format("%s['%s']: %s\n", indent, key, value != null ? value.toString() : "null"));
+            }
+        }
+        return sb.toString();
+    }
+
+    private static String getFlagsString(int flags) {
+        StringBuilder flagBuilder = new StringBuilder();
+        if ((flags & Intent.FLAG_GRANT_READ_URI_PERMISSION) != 0) flagBuilder.append("GRANT_READ_URI_PERMISSION | ");
+        if ((flags & Intent.FLAG_GRANT_WRITE_URI_PERMISSION) != 0) flagBuilder.append("GRANT_WRITE_URI_PERMISSION | ");
+        if ((flags & Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION) != 0) flagBuilder.append("GRANT_PERSISTABLE_URI_PERMISSION | ");
+        if ((flags & Intent.FLAG_GRANT_PREFIX_URI_PERMISSION) != 0) flagBuilder.append("GRANT_PREFIX_URI_PERMISSION | ");
+        if ((flags & Intent.FLAG_ACTIVITY_NEW_TASK) != 0) flagBuilder.append("ACTIVITY_NEW_TASK | ");
+        if ((flags & Intent.FLAG_ACTIVITY_SINGLE_TOP) != 0) flagBuilder.append("ACTIVITY_SINGLE_TOP | ");
+        if ((flags & Intent.FLAG_ACTIVITY_NO_HISTORY) != 0) flagBuilder.append("ACTIVITY_NO_HISTORY | ");
+        if ((flags & Intent.FLAG_ACTIVITY_CLEAR_TOP) != 0) flagBuilder.append("ACTIVITY_CLEAR_TOP | ");
+        if ((flags & Intent.FLAG_ACTIVITY_FORWARD_RESULT) != 0) flagBuilder.append("ACTIVITY_FORWARD_RESULT | ");
+        if ((flags & Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP) != 0) flagBuilder.append("ACTIVITY_PREVIOUS_IS_TOP | ");
+        if ((flags & Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS) != 0) flagBuilder.append("ACTIVITY_EXCLUDE_FROM_RECENTS | ");
+        if ((flags & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) flagBuilder.append("ACTIVITY_BROUGHT_TO_FRONT | ");
+        if ((flags & Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED) != 0) flagBuilder.append("ACTIVITY_RESET_TASK_IF_NEEDED | ");
+        if ((flags & Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY) != 0) flagBuilder.append("ACTIVITY_LAUNCHED_FROM_HISTORY | ");
+        if ((flags & Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET) != 0) flagBuilder.append("ACTIVITY_CLEAR_WHEN_TASK_RESET | ");
+        if ((flags & Intent.FLAG_ACTIVITY_NEW_DOCUMENT) != 0) flagBuilder.append("ACTIVITY_NEW_DOCUMENT | ");
+        if ((flags & Intent.FLAG_ACTIVITY_NO_USER_ACTION) != 0) flagBuilder.append("ACTIVITY_NO_USER_ACTION | ");
+        if ((flags & Intent.FLAG_ACTIVITY_REORDER_TO_FRONT) != 0) flagBuilder.append("ACTIVITY_REORDER_TO_FRONT | ");
+        if ((flags & Intent.FLAG_ACTIVITY_NO_ANIMATION) != 0) flagBuilder.append("ACTIVITY_NO_ANIMATION | ");
+        if ((flags & Intent.FLAG_ACTIVITY_CLEAR_TASK) != 0) flagBuilder.append("ACTIVITY_CLEAR_TASK | ");
+        if ((flags & Intent.FLAG_ACTIVITY_TASK_ON_HOME) != 0) flagBuilder.append("ACTIVITY_TASK_ON_HOME | ");
+        if ((flags & Intent.FLAG_ACTIVITY_RETAIN_IN_RECENTS) != 0) flagBuilder.append("ACTIVITY_RETAIN_IN_RECENTS | ");
+        if ((flags & Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT) != 0) flagBuilder.append("ACTIVITY_LAUNCH_ADJACENT | ");
+        if ((flags & Intent.FLAG_ACTIVITY_REQUIRE_DEFAULT) != 0) flagBuilder.append("ACTIVITY_REQUIRE_DEFAULT | ");
+        if ((flags & Intent.FLAG_ACTIVITY_REQUIRE_NON_BROWSER) != 0) flagBuilder.append("ACTIVITY_REQUIRE_NON_BROWSER | ");
+        if ((flags & Intent.FLAG_ACTIVITY_MATCH_EXTERNAL) != 0) flagBuilder.append("ACTIVITY_MATCH_EXTERNAL | ");
+        if ((flags & Intent.FLAG_ACTIVITY_MULTIPLE_TASK) != 0) flagBuilder.append("ACTIVITY_MULTIPLE_TASK | ");
+        if ((flags & Intent.FLAG_RECEIVER_REGISTERED_ONLY) != 0) flagBuilder.append("RECEIVER_REGISTERED_ONLY | ");
+        if ((flags & Intent.FLAG_RECEIVER_REPLACE_PENDING) != 0) flagBuilder.append("RECEIVER_REPLACE_PENDING | ");
+        if ((flags & Intent.FLAG_RECEIVER_FOREGROUND) != 0) flagBuilder.append("RECEIVER_FOREGROUND | ");
+        if ((flags & Intent.FLAG_RECEIVER_NO_ABORT) != 0) flagBuilder.append("RECEIVER_NO_ABORT | ");
+        if ((flags & Intent.FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS) != 0) flagBuilder.append("RECEIVER_VISIBLE_TO_INSTANT_APPS | ");
+
+        if (flagBuilder.length() > 0) {
+            // Remove the trailing " | "
+            flagBuilder.setLength(flagBuilder.length() - 3);
+        }
+
+        return flagBuilder.toString();
+    }
+
+    public static void showDialog(Context context, Intent intent) {
+        if(intent == null) return;
+        // Create the dialog
+        Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(true);
+
+        // Create a LinearLayout to hold the dialog content
+        LinearLayout layout = new LinearLayout(context);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setPadding(20, 50, 20, 50);
+        layout.setBackgroundColor(0xffefeff5);
+
+
+        // Add a TextView for the title
+        TextView title = new TextView(context);
+        title.setText("Intent Details: ");
+        title.setTextSize(16);
+        title.setTextColor(0xff000000);
+        title.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
+        title.setPadding(0, 0, 0, 40);
+        title.setGravity(Gravity.CENTER);
+        title.setBackgroundColor(0xffefeff5);
+        layout.addView(title);
+
+        // Add a TextView for the message
+        TextView message = new TextView(context);
+        message.setText(dumpIntent(context, intent));
+        message.setTypeface(Typeface.MONOSPACE);
+        message.setTextSize(12);
+        message.setTextColor(0xff000000);
+        message.setPadding(0, 0, 0, 30);
+        message.setGravity(Gravity.START);
+        message.setBackgroundColor(0xffefeff5);
+        layout.addView(message);
+
+        // Add an OK button
+        Button positiveButton = new Button(context);
+        positiveButton.setText("OK");
+        positiveButton.setTextColor(0xff000000);
+        positiveButton.setOnClickListener(v -> dialog.dismiss());
+        layout.addView(positiveButton);
+
+        // Set the layout as the content view of the dialog
+        dialog.setContentView(layout);
+
+        // Adjust dialog window parameters to make it fullscreen
+        Window window = dialog.getWindow();
+        if (window != null) {
+            window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            window.setBackgroundDrawableResource(android.R.color.transparent);
+            WindowManager.LayoutParams wlp = window.getAttributes();
+            wlp.gravity = Gravity.BOTTOM;
+            wlp.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+            window.setAttributes(wlp);
+        }
+
+        dialog.show();
+        // Animate the dialog with a slide-in effect
+        layout.setTranslationY(2000); // Start off-screen to the right
+        layout.setAlpha(0f);
+        ObjectAnimator translateYAnimator = ObjectAnimator.ofFloat(layout, "translationY", 0);
+        ObjectAnimator alphaAnimator = ObjectAnimator.ofFloat(layout, "alpha", 1f);
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(translateYAnimator, alphaAnimator);
+        animatorSet.setDuration(300); // Duration of the animation
+        animatorSet.setStartDelay(100); // Delay before starting the animation
+        animatorSet.start();
+    }
+}
+```
+  
+Back in the main activity, we can now replace the log output with a call to Utils.showDialog.
+```java
+Intent intent = getIntent();
+Utils.showDialog(this,intent);
+```
+
+If we now run the app, we get the launch intent and the dialog will show the intent details displaying us all the details of the intent that was used by the launcher to launch our main activity.
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
