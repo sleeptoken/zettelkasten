@@ -8,6 +8,11 @@ The development documentation for [Activity](https://developer.android.com/refe
 > _"An activity is a single, focused thing that the user can do. Almost all activities interact with the user, so the Activity class takes care of creating a window for you in which you can place your UI"_
 
 When you open an app on your phone, any screen you can see has an Activity behind it, and it turns out that other apps can sometimes interact with these activities as well. Generally one activity implements one screen in an app.  
+
+> [!tip]
+> Always take the apk in jadx and see the android manifest, check the activities, click on them and see the code. 
+> Then target the intent using android studio
+
 ### Attack Surface
 
 In order to attack an app, we need to understand what can we even interact with. That's why we should look at the `AndroidManifest.xml` and look for any `<activity>` with the `android:exported="true"` attribute.
