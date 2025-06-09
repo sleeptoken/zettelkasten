@@ -11,6 +11,7 @@ $result = shell_exec("date '+" . escapeshellcmd($format) . "' 2>&1");
 
 The only parameter we could change was format and fortunately it was not being sanitized. So I was sure that I have to exploit something from here.  
 I understood that the following command runs on the server
+
 ```
 date +'<format here>'
 ```
