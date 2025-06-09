@@ -29,3 +29,4 @@ public void onClick(View view) {
 
 ### References
 https://www.youtube.com/watch?v=jnBmI1eD-og
+https://itsfading.github.io/posts/HexTree-Attack-Surface-App-Solutions/
