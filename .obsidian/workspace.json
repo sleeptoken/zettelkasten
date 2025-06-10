@@ -55,8 +55,7 @@
               "title": "Intent Attack surface app"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Intents and Activities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intent Attack surface app"
+              "title": "Outline of Intents and Activities"
             }
           }
         ],
@@ -203,10 +202,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd4e88513a3e9037",
+  "active": "c2811e4580df61ad",
   "lastOpenFiles": [
-    "Intents and Activities.md",
     "Remote Thought/Intent Attack surface app.md",
+    "Intents and Activities.md",
     "Remote Thought/Android Debug Bridge.md",
     "Remote Thought/SSL Interception.md",
     "Remote Thought/Dynamic Instrumentation.md",
