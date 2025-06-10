@@ -3,6 +3,8 @@
 
 Source: #android 
 
+Tags: [[Intent Attack surface app]]
+
 The development documentation for [Activity](https://developer.android.com/reference/android/app/Activity) explains it like this:
 
 > _"An activity is a single, focused thing that the user can do. Almost all activities interact with the user, so the Activity class takes care of creating a window for you in which you can place your UI"_

