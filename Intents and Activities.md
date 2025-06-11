@@ -374,6 +374,10 @@ Utils.showDialog(this,intent);
 
 If we now run the app, we get the launch intent and the dialog will show the intent details displaying us all the details of the intent that was used by the launcher to launch our main activity.
 
+> [!important]
+> The most common intent attack surface is the `onCreate()` method which handles the incoming intent from `getIntent()`. But the [activity lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle) is a bit more complex and the `Flag7Activity` [[Intent Attack surface app]] highlights another possible threat surface involving the `onNewIntent(Intent intent)` method. 
+> 
+
 # Activity vs. Service vs. Receiver
 
 Understanding the different ways how app-to-app communication works on Android is important. 
@@ -389,8 +393,48 @@ Broadcast receivers are a little bit different. Android apps can send or receive
 | **Activity**           | Yes (Main UI element) | `<activity>`                               | Displays UI and handles user interaction                 | Runs while user is interacting with it       | Viewing a photo, entering login details        | Yes                  |
 | **Service**            | No                    | `<service>`                                | Performs long-running background tasks                   | Can run long after app is in background      | Uploading files, playing music in background   | Yes                  |
 | **Broadcast Receiver** | No                    | `<receiver>`                               | Responds to system-wide or app-specific broadcast events | Short-lived; stops after handling the intent | Responding to "airplane mode on", SMS received | Yes                  |
+
 # Intent Redirect 
 
+Let's talk about the vulnerability, or rather, the vulnerable code pattern that led to many issues in many apps. It's often called Intent Forwarding 
+As you know, intents are complex objects that can carry a lot of different values, including other intents. Maybe you have already looked at the flag in the Intent Attack Surface. App Intent in Intent. This is exactly a challenge where you have to craft an intent with an intent inside.
 
+If you haven't solved this challenge yet, Go try to solve it now because we are now building on top of that.
+
+But if you solve this challenge, then when you reverse engineer this function, you might have also noticed a different condition that led to a
+
+startActivity call. And if you look carefully, it takes one of the intents inside the original intent. And this is what we then can call an
+
+Intent Redirect or Intent Forwarding. The attacker created an original intent which contained another intent, and the target app extracts this
+
+extra intent and calls startActivity with it and this is bad. This can be abused in two main ways. First, it allows you to attack
+
+non-exported activites. As you can see in the Attack Surface app, there is a flag activity that when called with a specific intent flag
+
+will be solved. Unfortunately, it just cannot be started from another app because it's not exported in the Android manifest, but not exported.
+
+activities can be started internally by the app itself, which we have seen earlier when we played around with intents.
+
+And now look at this code again. Here we have a startActivity within the app where the attacker controls the intent
+
+details. So the idea should be clear. If you manage to craft an intent targeting the non-exported activity and place it into the intent that leads to
+
+this vulnerable startActivity call, your intent will be redirected or forwarded to the non-exported activity. Solving the flag. So go ahead and try that now.
+
+The second way how this can be abused, and it's actually a lot more critical is related to content providers and
+
+gaining access to app internal files. I know this sounds crazy, but yes, it's possible to leak app internal files due to code like this.
+
+How that works, however, is a bit more complex. It involves a grant URI permission flag. So we will talk about this in another
+
+course when we are covering the storage. So for now, just keep in mind that if you see a pattern like this where the
+
+attacker can control an intent or part of an intent that is then being passed to startActivity, then this could lead to a serious issue.
+
+And this is really one of the more common vulnerabilities that you can find in various apps. If you are a developer,
+
+in order to fix this issue, ideally just never forward incoming attacker controlled intents in the first place, or use the Intent Sanitizer, which can be
+
+used to remove certain critical fields from an intent to limit the capabilities.
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)

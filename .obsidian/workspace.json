@@ -55,8 +55,7 @@
               "title": "Intent Attack surface app"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Intents and Activities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intent Attack surface app"
+              "title": "Outline of Intents and Activities"
             }
           }
         ],
@@ -203,8 +202,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c223aa8b0dd266c",
+  "active": "57a1bb4c35f4d6c3",
   "lastOpenFiles": [
+    "Remote Thought/Intent Attack surface app.md",
     "Intents and Activities.md",
     "Remote Thought/Image formation from TCP Stream.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
@@ -214,7 +214,6 @@
     "Remote Thought/Breakpoint in IDA.md",
     "Remote Thought/Dissecting PE Headers.md",
     "Remote Thought/Fetch file using date cmd.md",
-    "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Understanding evry func call's purpose.md",
     "Remote Thought/XOR (known key) values stored at a address.md",
     "Remote Thought/PDF Malware Analysis.md",
