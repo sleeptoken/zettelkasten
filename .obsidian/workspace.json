@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bd4e88513a3e9037",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intents and Activities.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Intents and Activities"
-            }
-          },
-          {
             "id": "7c223aa8b0dd266c",
             "type": "leaf",
             "state": {
@@ -55,8 +31,7 @@
               "title": "Intent Attack surface app"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
