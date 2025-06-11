@@ -15,14 +15,14 @@ When you open an app on your phone, any screen you can see has an Activity behin
 > Always take the apk in jadx and see the android manifest, check the activities, click on them and see the code. 
 > Then target the intent using android studio
 
-### Attack Surface
+# Attack Surface
 
 In order to attack an app, we need to understand what can we even interact with. That's why we should look at the `AndroidManifest.xml` and look for any `<activity>` with the `android:exported="true"` attribute.
 
 `android:exported="true"` tells us weather other apps can interact with this app directly or not 
 
 `android:exported="true"` is interesting to us ,`android:exported="false"` can be ignored
-### Intent
+# Intent
 
 Here is how the official documentation describes [Intent](https://developer.android.com/reference/android/content/Intent):
 
@@ -30,7 +30,7 @@ Here is how the official documentation describes [Intent](https://developer.and
 
 But a more intuitive description could be: _"Declaring an intention to do something, and let Android figure out the app that can handle it"_
 
-### Starting Activities
+# Starting Activities
 
 #### Basic exported activity
 
@@ -65,7 +65,7 @@ adb shell am start-activity -n io.hextree.attacksurface/io.hextree.attacksurface
 
 actions are mentioned in the android manifest then use -a tag in the adb shell command 
 
-### Incoming Intent
+# Incoming Intent
 
 The intent object that was used to start an activity, is available to the app via `getIntent()`.This feature is used to pass data to other apps, and thus it becomes a major attack surface.
 #### Intent Attack surface
@@ -75,7 +75,7 @@ The intent object that was used to start an activity, is available to the app vi
 - `onNewIntent(Intent data)`
 
 we can add things to an intent by using `intent.putExtra("hextree",1337);`
-### Journey of an Intent 
+# Journey of an Intent 
 
 #### Parcels
 
@@ -109,7 +109,7 @@ With the process id, we can find the memory map of this app process. This app lo
 > the native code library implementing the interaction with the binder driver, which allows the app to send data to other app process such as the intent when we call start activity.
 
 Luckily we don't really have to interact with any of the low level stuff directly. That's the beauty of Android and the development SDK.
-### Implementing Intent Debug Features
+# Implementing Intent Debug Features
 
 We can get an incoming intent in our activity with `getIntent()` and we could simply print the two string of it to the logs.
 
@@ -123,8 +123,7 @@ In the output, we can see that things like the intent, action and category and f
 
 So when working on an intent-related attack, I like to use a helper function to display all the data stored in an intent. Create a new class called `Utils.java`. 
 
-In there we can create a static method dumpintent that takes an Intent, and it's supposed to return a string with all the intent details. If the intent is null, we just return a string null. But if we got one, we start to build a string. One of the important fields is the intent action, so we can simply prepare our string to include the action. Now what about the intent categories? Well, they are not a single string, but a list or a set of categories. So we have to create a loop to go through all the categories and add them to the string as well. Then we could also get the attached data URI. The target component, the flags, and most Importantly, the extras, which also require us to write a loop to go through all key and value pairs. Of course, this function should be public and we can return the combined string at the end.
-
+-- updated code listed below -- 
 
 And now back in our main activity we can call `Utils.dumpIntent` and log it.
 
@@ -375,26 +374,23 @@ Utils.showDialog(this,intent);
 
 If we now run the app, we get the launch intent and the dialog will show the intent details displaying us all the details of the intent that was used by the launcher to launch our main activity.
 
-### Activity vs. Service vs. Receiver
+# Activity vs. Service vs. Receiver
 
 Understanding the different ways how app-to-app communication works on Android is important. 
 
 Activities are the main entry point of an app, and they are responsible for rendering the UI layout that you can see. So generally, everything you can see is an activity. And these activities can be exposed in the Android manifest so other apps can start them. 
 
-But not every functionality an app offers requires a Ul or a Ul might even be a hindrance. For example, uploading lots of photos for a backup. 
-
-In the Android manifest, they are declared with the tags receiver and service respectively
-
 A service can perform long-running operations in the background. It does not provide a user interface. Once started, a service might continue running for some time, even after the user switches to another application. 
 
-Broadcast receivers are a little bit different. Android apps can send or receive broadcast messages. Many of them come from the Android system, but it could also be an interaction with other regular apps. Usually, these broadcasts are sent when some kind of event occurs. 
+Broadcast receivers are a little bit different. Android apps can send or receive broadcast messages. Many of them come from the Android system, but it could also be an interaction with other regular apps. Usually, these broadcasts are sent when some kind of event occurs. broadcast receivers are short. You notify them in the background, they do something and they finish again. 
 
-broadcast receivers are short. You notify them in the background, they do something and they finish again. 
+| **Component**          | **UI Presence**       | **Declared like so** (in android manifest) | **Purpose**                                              | **Lifecycle**                                | **Example Use Case**                           | **Receives Intents** |
+| ---------------------- | --------------------- | ------------------------------------------ | -------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------- | -------------------- |
+| **Activity**           | Yes (Main UI element) | `<activity>`                               | Displays UI and handles user interaction                 | Runs while user is interacting with it       | Viewing a photo, entering login details        | Yes                  |
+| **Service**            | No                    | `<service>`                                | Performs long-running background tasks                   | Can run long after app is in background      | Uploading files, playing music in background   | Yes                  |
+| **Broadcast Receiver** | No                    | `<receiver>`                               | Responds to system-wide or app-specific broadcast events | Short-lived; stops after handling the intent | Responding to "airplane mode on", SMS received | Yes                  |
+# Intent Redirect 
 
-| **Component**          | **UI Presence**       | **Declared In** | **Purpose**                                              | **Lifecycle**                                | **Example Use Case**                           | **Receives Intents** |
-| ---------------------- | --------------------- | --------------- | -------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------- | -------------------- |
-| **Activity**           | Yes (Main UI element) | `<activity>`    | Displays UI and handles user interaction                 | Runs while user is interacting with it       | Viewing a photo, entering login details        | Yes                  |
-| **Service**            | No                    | `<service>`     | Performs long-running background tasks                   | Can run long after app is in background      | Uploading files, playing music in background   | Yes                  |
-| **Broadcast Receiver** | No                    | `<receiver>`    | Responds to system-wide or app-specific broadcast events | Short-lived; stops after handling the intent | Responding to "airplane mode on", SMS received | Yes                  |
+
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
