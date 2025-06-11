@@ -404,43 +404,34 @@ this is the code that is reason for this vulnerability found in flag5 in the att
 		if (this.nextIntent.getStringExtra("reason").equals("back")) {
 		    this.f.addTag(this.nextIntent.getStringExtra("reason"));
 		    success(this);
-		} else if (this.nextIntent.getStringExtra("reason").equals("next")) {
+		} else if (this.nextIntent.getStringExtra("reason").equals("next")) { //a different condition that led to a `startActivity` call
 		    intent.replaceExtras(new Bundle());
 		    startActivity(this.nextIntent);
 }
 ```
 (above code is an extension of the code written in flag5 attack surface app) 
 
-noticed a different condition that led to a `startActivity` call. And if you look carefully, it takes one of the intents inside the original intent And this is what we then can call an Intent Redirect or Intent Forwarding. The attacker created an original intent which contained another intent, and the target app extracts this
+- And if you look carefully, it takes one of the intents inside the original intent And this is what we call an Intent Redirect or Intent Forwarding.  
 
-extra intent and calls startActivity with it and this is bad. This can be abused in two main ways. First, it allows you to attack
+The attacker created an original intent which contained another intent, and the target app extracts this extra intent and calls `startActivity` with it and this is bad. 
 
-non-exported activites. As you can see in the Attack Surface app, there is a flag activity that when called with a specific intent flag
+This can be abused in two main ways. 
 
-will be solved. Unfortunately, it just cannot be started from another app because it's not exported in the Android manifest, but not exported.
+1. It allows you to attack non-exported activities.
+	`android:exported="false"`
 
-activities can be started internally by the app itself, which we have seen earlier when we played around with intents.
+> [!important]
+> 	Activities can be started internally by the app itself, which we have seen earlier when we played around with intents. And now look at this code again. Here we have a `startActivity` within the app where the attacker controls the intent details. 
 
-And now look at this code again. Here we have a startActivity within the app where the attacker controls the intent
+So the idea should be clear. If you manage to craft an intent targeting the non-exported activity and place it into the intent that leads to this vulnerable `startActivity` call, your intent will be redirected or forwarded to the non-exported activity. 
 
-details. So the idea should be clear. If you manage to craft an intent targeting the non-exported activity and place it into the intent that leads to
+2. The second way is related to content providers and gaining access to app internal files. I know this sounds crazy, but yes, it's possible to leak app internal files due to code mentioned above.
 
-this vulnerable startActivity call, your intent will be redirected or forwarded to the non-exported activity. Solving the flag. So go ahead and try that now.
+> [!tip]
+> just keep in mind that if you see a pattern like this where the attacker can control an intent or part of an intent that is then being passed to startActivity, then this could lead to a serious issue.
 
-The second way how this can be abused, and it's actually a lot more critical is related to content providers and
+### Mitigation 
 
-gaining access to app internal files. I know this sounds crazy, but yes, it's possible to leak app internal files due to code like this.
-
-How that works, however, is a bit more complex. It involves a grant URI permission flag. So we will talk about this in another
-
-course when we are covering the storage. So for now, just keep in mind that if you see a pattern like this where the
-
-attacker can control an intent or part of an intent that is then being passed to startActivity, then this could lead to a serious issue.
-
-And this is really one of the more common vulnerabilities that you can find in various apps. If you are a developer,
-
-in order to fix this issue, ideally just never forward incoming attacker controlled intents in the first place, or use the Intent Sanitizer, which can be
-
-used to remove certain critical fields from an intent to limit the capabilities.
+If you are a developer, in order to fix this issue, ideally just never forward incoming attacker controlled intents in the first place, or use the Intent Sanitizer, which can be used to remove certain critical fields from an intent to limit the capabilities. Check this [Intent redirection  |  Security  |  Android Developers](https://developer.android.com/privacy-and-security/risks/intent-redirection).
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
