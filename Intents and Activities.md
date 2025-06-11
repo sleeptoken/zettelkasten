@@ -397,15 +397,21 @@ Broadcast receivers are a little bit different. Android apps can send or receive
 # Intent Redirect 
 
 Let's talk about the vulnerability, or rather, the vulnerable code pattern that led to many issues in many apps. It's often called Intent Forwarding 
-As you know, intents are complex objects that can carry a lot of different values, including other intents. Maybe you have already looked at the flag in the Intent Attack Surface. App Intent in Intent. This is exactly a challenge where you have to craft an intent with an intent inside.
+As you know, intents are complex objects that can carry a lot of different values, including other intents. 
 
-If you haven't solved this challenge yet, Go try to solve it now because we are now building on top of that.
+this is the code that is reason for this vulnerability found in flag5 in the attack surface app 
+```java
+		if (this.nextIntent.getStringExtra("reason").equals("back")) {
+		    this.f.addTag(this.nextIntent.getStringExtra("reason"));
+		    success(this);
+		} else if (this.nextIntent.getStringExtra("reason").equals("next")) {
+		    intent.replaceExtras(new Bundle());
+		    startActivity(this.nextIntent);
+}
+```
+(above code is an extension of the code written in flag5 attack surface app) 
 
-But if you solve this challenge, then when you reverse engineer this function, you might have also noticed a different condition that led to a
-
-startActivity call. And if you look carefully, it takes one of the intents inside the original intent. And this is what we then can call an
-
-Intent Redirect or Intent Forwarding. The attacker created an original intent which contained another intent, and the target app extracts this
+noticed a different condition that led to a `startActivity` call. And if you look carefully, it takes one of the intents inside the original intent And this is what we then can call an Intent Redirect or Intent Forwarding. The attacker created an original intent which contained another intent, and the target app extracts this
 
 extra intent and calls startActivity with it and this is bad. This can be abused in two main ways. First, it allows you to attack
 

@@ -108,6 +108,7 @@ public void onCreate(Bundle bundle) {
         if (intent3 == null || intent3.getStringExtra("reason") == null) {
             return;
         }
+        this.f.addTag("nextIntent")
         ... // similar patterned code ahead 
 ```
 
