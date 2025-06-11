@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSRF to SSTI RCE & RabbitMQ Root.md",
+                "file": "Intents and Activities.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SSRF to SSTI RCE & RabbitMQ Root"
+              "title": "Intents and Activities"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSRF to SSTI RCE & RabbitMQ Root.md",
+                "file": "Intents and Activities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SSRF to SSTI RCE & RabbitMQ Root"
+              "title": "Outline of Intents and Activities"
             }
           }
         ],
@@ -180,14 +180,14 @@
   },
   "active": "bd4e88513a3e9037",
   "lastOpenFiles": [
+    "Remote Thought/Image formation from TCP Stream.md",
+    "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Remote Thought/Spawning a TTY shell.md",
     "Tags/File transfer.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Remote Thought/Python packaged executables.md",
     "Remote Thought/Breakpoint in IDA.md",
     "Remote Thought/Dissecting PE Headers.md",
     "Remote Thought/Fetch file using date cmd.md",
-    "Remote Thought/Image formation from TCP Stream.md",
     "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Understanding evry func call's purpose.md",
     "Remote Thought/XOR (known key) values stored at a address.md",

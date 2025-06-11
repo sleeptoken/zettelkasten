@@ -374,5 +374,27 @@ Utils.showDialog(this,intent);
 ```
 
 If we now run the app, we get the launch intent and the dialog will show the intent details displaying us all the details of the intent that was used by the launcher to launch our main activity.
+
+### Activity vs. Service vs. Receiver
+
+Understanding the different ways how app-to-app communication works on Android is important. 
+
+Activities are the main entry point of an app, and they are responsible for rendering the UI layout that you can see. So generally, everything you can see is an activity. And these activities can be exposed in the Android manifest so other apps can start them. 
+
+But not every functionality an app offers requires a Ul or a Ul might even be a hindrance. For example, uploading lots of photos for a backup. 
+
+In the Android manifest, they are declared with the tags receiver and service respectively
+
+A service can perform long-running operations in the background. It does not provide a user interface. Once started, a service might continue running for some time, even after the user switches to another application. 
+
+Broadcast receivers are a little bit different. Android apps can send or receive broadcast messages. Many of them come from the Android system, but it could also be an interaction with other regular apps. Usually, these broadcasts are sent when some kind of event occurs. 
+
+broadcast receivers are short. You notify them in the background, they do something and they finish again. 
+
+| **Component**          | **UI Presence**       | **Declared In** | **Purpose**                                              | **Lifecycle**                                | **Example Use Case**                           | **Receives Intents** |
+| ---------------------- | --------------------- | --------------- | -------------------------------------------------------- | -------------------------------------------- | ---------------------------------------------- | -------------------- |
+| **Activity**           | Yes (Main UI element) | `<activity>`    | Displays UI and handles user interaction                 | Runs while user is interacting with it       | Viewing a photo, entering login details        | Yes                  |
+| **Service**            | No                    | `<service>`     | Performs long-running background tasks                   | Can run long after app is in background      | Uploading files, playing music in background   | Yes                  |
+| **Broadcast Receiver** | No                    | `<receiver>`    | Responds to system-wide or app-specific broadcast events | Short-lived; stops after handling the intent | Responding to "airplane mode on", SMS received | Yes                  |
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
