@@ -44,8 +44,10 @@ If you are a developer, in order to fix this issue, ideally just never forward i
 
 # Returning Activity Results 
 
-We can send an intent to a target application, but there's also the possibility to return results back to the calling app. let's explore this with an example by
+We can send an intent to a target application, but there's also the possibility to return results back to the calling app. 
 #### Camera Access
+
+##### Setup capture action
 
 You do not need to integrate with the camera library. Instead, We can use an intent.
 
@@ -67,33 +69,24 @@ to be a bit more verbose we will not be using the constructor and instead call s
 
 in the intent we didn't set an explicit component to target. What you see here is called an implicit intent, where the Android system will help us find the target application to handle our action request to take a picture.
 
+let's focus on the function call `startActivityForResult`. It takes an intent and the request code, which is not that important to us. It just helps match the request and response.
+##### Getting the result 
 
+The real question you should ask yourself is how do we get the result back? Well, for `startActivityForResult`, it will actually call this special function `onActivityResult`, which we can override in our activity. 
 
+```java
+@Overide
+protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent){
+	super.onActivityResult(requestCode, resultCode, intent);
+	Utils.showDialog(this,intent);
+}
+```
 
+This function will be executed when a target application returns a result.
 
-But more on that later. For now, let's focus on the function call startActivityForResult. It takes an intent and the request code,
+> When we press the button, we send the intent to declare our intention that we want to take a photo, and the operating system opens the camera app to handle this intent for us, we can now take a photo, and the camera app will now send the result back to our main activity, triggering the `onActivityResult` function. And we can see the returned intent. 
 
-which is not that important to us. It just helps match the request and response. Now you see that Android Studio tells
-
-us that this method is deprecated. And if you want, you can look up in the developer documentation what the new way is.
-
-But I still like to use this method for now because it still works. And the new method was only
-
-introduced in Android nine. So this here works also below, but whichever you use it doesn't really matter. The real question you should ask yourself
-
-is how do we get the result back? Well, for this old case with start activity for result, it will actually call
-
-this special function onActivityResult, which we can override in our activity. This function will be executed when a target application returns a result.
-
-And what is the returned result? Well, surprise, it's another intent. So let's add our utils.showDialog function we developed previously to see the details
-
-of the intent that we receive back as a result. And now let's launch our app. When we press the button, we send the
-
-intent to declare our intention that we want to take a photo, and the operating system opens the camera app.
-
-To handle this intent for us, we can now take a photo, confirm the picture we have taken, and the camera app will now send the result
-
-back to our main activity, triggering the onActivityResult function. And we can see the returned intent. And if you look closely,
+And if you look closely,
 
 you can see that this intent doesn't contain much except for inline data. An extra field containing a Bitmap, an image.
 
