@@ -55,7 +55,8 @@
               "title": "Intent Attack surface app"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Common Intent Vulnerabilities.md",
+                "file": "Remote Thought/Intent Attack surface app.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Common Intent Vulnerabilities"
+              "title": "Outline of Intent Attack surface app"
             }
           }
         ],
@@ -202,10 +203,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87f6edd668834908",
+  "active": "2844ca5b3f874d4b",
   "lastOpenFiles": [
-    "Remote Thought/Intent Attack surface app.md",
     "Common Intent Vulnerabilities.md",
+    "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Intents and Activities.md",
     "Remote Thought/Image formation from TCP Stream.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",

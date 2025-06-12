@@ -93,6 +93,13 @@ To view this in our app. extend our layout with an `ImageView` element. set the 
 
 This Bitmap is a complex object that got serialized or, in Android terms, it got parceled. So we have to use `getParcelableExtra` with the key name "data", and the returned value should be our Bitmap image object that we can now set to the `ImageView` in the layout.
 
+append this code to `onActivityResult`
+```java
+Utils.showDialog(this,intent);  
+Bitmap img = intent.getParcelableExtra("data");  
+((ImageView) findViewById(R.id.img)).setImageBitmap(img);
+```
+
 the user can then decide to take a photo or not. If they decline, the returned intent will be empty. If they confirm, the intent contains the image data. No special permissions ever required for this app. 
 
 ### References
