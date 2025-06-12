@@ -74,8 +74,9 @@ let's focus on the function call `startActivityForResult`. It takes an intent an
 
 The real question you should ask yourself is how do we get the result back? Well, for `startActivityForResult`, it will actually call this special function `onActivityResult`, which we can override in our activity. 
 
+declare this outside `onCreate`
 ```java
-@Overide
+@Override
 protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent){
 	super.onActivityResult(requestCode, resultCode, intent);
 	Utils.showDialog(this,intent);
@@ -86,41 +87,13 @@ This function will be executed when a target application returns a result.
 
 > When we press the button, we send the intent to declare our intention that we want to take a photo, and the operating system opens the camera app to handle this intent for us, we can now take a photo, and the camera app will now send the result back to our main activity, triggering the `onActivityResult` function. And we can see the returned intent. 
 
-And if you look closely,
+you can see that the returned intent doesn't contain much except for inline data. An extra field containing a Bitmap, an image. So the whole image that was taken got serialized into an intent sent to us. 
 
-you can see that this intent doesn't contain much except for inline data. An extra field containing a Bitmap, an image.
+To view this in our app. extend our layout with an `ImageView` element. set the ID to `img` and then in the `onActivityResult` function we can get this view element, the `ImageView`, and set the image bitmap, grab the Bitmap from the intent.
 
-So the whole image that was taken got serialized into an intent sent to us. And we can now take this and display
+This Bitmap is a complex object that got serialized or, in Android terms, it got parceled. So we have to use `getParcelableExtra` with the key name "data", and the returned value should be our Bitmap image object that we can now set to the `ImageView` in the layout.
 
-it in our app. To do that, let's extend our layout with an ImageView element. I set the ID to image and then in the
-
-onActivityResult function we can get this view element, the ImageView, and set the image bitmap to what. For that, we obviously need to
-
-grab the Bilmap from the intent. And well, this Bitmap is a complex object that got serialized or, in Android terms, it got parceled.
-
-So we have to use getParcelableExtra with the key name "data", and the returned value should be our Bitmap image object that we can now
-
-set to the ImageView in the layout. If we now run the app, trigger the camera, snap a photo and confirm it,
-
-the intent gets returned back and we can see the image in our UI. This example is, I think, really cool because it shows the power
-
-of Android and the intent system. Our app did not require permissions to access the camera directly, nor did it require permissions to
-
-access the photos stored on the phone. Instead, our app just declared the intention: "Hey, I'd like to take a photo."
-
-The operating system redirected this to the camera, which opened, and the user can then decide to take a photo or not.
-
-If they decline, the returned intent will be empty. If they confirm, the intent contains the image data. No special permissions ever required
-
-for this app. And I think that's a really cool architecture. Now I'll have a look at the intent attack
-
-surface application again and look at the flag. Do you expect the result? This flag highlights a peculiarity in the
-
-information available in the activity when launched with startActivity versus startActivityForResult. It's a small weird thing to know about, but it led to a real vulnerability in
-
-a Google app before. So it's definitely interesting to solve this flag. And of course the app has more flags
-
-for you to get. So go ahead now and try to solve the flags listed below.
+the user can then decide to take a photo or not. If they decline, the returned intent will be empty. If they confirm, the intent contains the image data. No special permissions ever required for this app. 
 
 ### References
 
