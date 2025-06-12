@@ -393,6 +393,25 @@ Broadcast receivers are a little bit different. Android apps can send or receive
 | **Activity**           | Yes (Main UI element) | `<activity>`                               | Displays UI and handles user interaction                 | Runs while user is interacting with it       | Viewing a photo, entering login details        | Yes                  |
 | **Service**            | No                    | `<service>`                                | Performs long-running background tasks                   | Can run long after app is in background      | Uploading files, playing music in background   | Yes                  |
 | **Broadcast Receiver** | No                    | `<receiver>`                               | Responds to system-wide or app-specific broadcast events | Short-lived; stops after handling the intent | Responding to "airplane mode on", SMS received | Yes                  |
+# Explicit vs Implicit Intent 
+
+Explicit Intent 
+```java
+Intent intent = new Intent();
+intent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activites.FlagActivity");
+startActivity(intent);
+```
+
+Implicit Intent
+```java
+Intent intent = new Intent();
+intent.setAction("android.media.action.IMAGE_CAPTURE");
+startActivity(intent);
+```
+actions are mentioned using `<intent-filter>` in the android manifest.
+- android looks through all the apps to find the one that can handle this (specified action). 
+- we did'nt had to specify the activity class, were just able to declare our intention and the OS found the app to handle this for us 
+You can see this in action 
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
