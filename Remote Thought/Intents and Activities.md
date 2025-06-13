@@ -408,10 +408,14 @@ Intent intent = new Intent();
 intent.setAction("android.media.action.IMAGE_CAPTURE");
 startActivity(intent);
 ```
-actions are mentioned using `<intent-filter>` in the android manifest.
+Inside many `<activity>` tags you can often also find `<intent-filter>`. These intent filters serve an important role in the resolution of implicit intent.
 - android looks through all the apps to find the one that can handle this (specified action). 
-- we did'nt had to specify the activity class, were just able to declare our intention and the OS found the app to handle this for us 
-You can see this in action 
+- If your app creates an implicit intent with a specific action, category or data URI, the Android system can look through the intent filters and find a matching app.
+
+You can see this in action by adding 
+```java
+intent.addFlags(Intent.FLAG_DEBUG_LOG_RESOLUTION);
+```
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
