@@ -154,7 +154,9 @@ nextIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.act
 ```
 Do exactly the same as in the flag5 to get to the `startactivity()` call, then add the above code to the respective intent.
 
-#### 7 - 
+#### 7 - Activity lifecycle tricks
+
+
 
 # Activity Result 
 #### 8 - Do you expect a result?
@@ -164,3 +166,4 @@ Do exactly the same as in the flag5 to get to the `startactivity()` call, then a
 ## References
 https://www.youtube.com/watch?v=jnBmI1eD-og
 https://itsfading.github.io/posts/HexTree-Attack-Surface-App-Solutions/
+https://gaberoy.zip/posts/android-intent/android-intent/#flag-8---did-you-expect-a-result
