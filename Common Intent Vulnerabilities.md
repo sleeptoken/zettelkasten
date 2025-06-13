@@ -4,7 +4,6 @@
 Source: #android  
 # Intent Redirect 
 
-Let's talk about the vulnerability, or rather, the vulnerable code pattern that led to many issues in many apps. It's often called Intent Forwarding 
 As you know, intents are complex objects that can carry a lot of different values, including other intents. 
 
 this is the code that is reason for this vulnerability found in flag5 in the attack surface app 
