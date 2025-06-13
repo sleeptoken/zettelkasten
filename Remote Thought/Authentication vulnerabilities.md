@@ -121,6 +121,12 @@ It is also worth noting that the full benefits of multi-factor authentication ar
 #### Bypass 2FA
 
 If the user is first prompted to enter a password, and then prompted to enter a verification code on a separate page, the user is effectively in a "logged in" state before they have entered the verification code. In this case, it is worth testing to see if you can directly skip to "logged-in only" pages after completing the first authentication step. Occasionally, you will find that a website doesn't actually check whether or not you completed the second step before loading the page.
+#### Flawed 2FA 
+
+1. Sometimes flawed logic in two-factor authentication means that after a user has completed the initial login step, the website doesn't adequately verify that the same user is completing the second step.
+2. They are then assigned a cookie that relates to their account, before being taken to the second step of the login process:
+3. When submitting the verification code, the request uses this cookie to determine which account the user is trying to access:
+4. In this case, an attacker could log in using their own credentials but then change the value of the account cookie to any arbitrary username when submitting the verification code.
 
 
 
