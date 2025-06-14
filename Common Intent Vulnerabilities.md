@@ -100,6 +100,50 @@ Bitmap img = intent.getParcelableExtra("data");
 ```
 
 the user can then decide to take a photo or not. If they decline, the returned intent will be empty. If they confirm, the intent contains the image data. No special permissions ever required for this app. 
+# Hijack Implicit Intents
+
+ Even if the target activity is intended to handle implicit intents like the camera app, we could still explicitly target this app, and we don't have to hope that an implicit intent resolves to that app. 
+ 
+ So do we, as attackers not really care about implicit intents? Well, we care about them just as recipient. It should be pretty obvious when another application uses implicit intents, that
+
+our app could implement intent filters, that we become the target of those. Of course, in itself that is not a vulnerability.
+
+That's how the feature is intended to work. But it's another attack surface that we need to understand. There are cases where that
+
+could lead to a security issue. For example, some apps might use implicit intents to pass security critical data, such as authentication tokens or private
+
+user data to another app if a malicious app can become the handler of that intent. The secret data leaks to the
+malicious app. But that's not all. As you know from our camera example where we used startActivityForResult, we expected to get a response back
+
+and that response is an intent. So if an app sends an implicit intent to a malicious app and expects a response, the
+
+malicious app could return an evil intent. And you have to check whether the app handles the intent securely or not.
+
+By the way, we haven't really talked about how to implement a response to an activity yourself. So here is how that works.
+
+If your activity is intended to return a result back. So another activity starts your activity with a startActivityForResult, you can return a result
+
+with setResult. setResult. Generally takes a result code which can be used to indicate whether it was the call was a success or a failure.
+
+And then we can also create an intent that gets returned back to the other app. Now this just sets the expected result,
+
+but it might not trigger the other activity yet because our activity is still running. But we can also call finish,
+which indicates that the activity is done and should be closed, and then the activity result is propagated back to whoever launched our activity.
+
+In the Intent Attack Surface app, you can find several flags tagged with implicit intent. These work a little bit different to
+
+the activity flags we've seen before, because here you have to click on the flag and it will trigger an implicit intent.
+
+Your task is to reverse engineer what kind of implicit intent is sent here, and then implement the handler for it in your app.
+
+You can create for that a new activity, but make sure that you export it in the manifest and set the correct
+
+intent filters. And then of course, keep an eye out for the success function when reverse engineering the flag activities.
+
+For example, what kind of returned result does the app expect in order to call success and reveal the flag?
+
+So go ahead now and try to find the flags listed below.
+
 
 ### References
 

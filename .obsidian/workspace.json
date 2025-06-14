@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "81337454249fa7df",
+            "id": "f02623dfdace7d6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Authentication vulnerabilities.md",
+                "file": "Remote Thought/Intent Attack surface app.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Authentication vulnerabilities"
+              "title": "Intent Attack surface app"
+            }
+          },
+          {
+            "id": "42592c5fa3d362ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Common Intent Vulnerabilities.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Common Intent Vulnerabilities"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Authentication vulnerabilities.md",
+                "file": "Common Intent Vulnerabilities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Authentication vulnerabilities"
+              "title": "Outline of Common Intent Vulnerabilities"
             }
           }
         ],
@@ -178,11 +203,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81337454249fa7df",
+  "active": "42592c5fa3d362ec",
   "lastOpenFiles": [
+    "Remote Thought/Intent Attack surface app.md",
+    "Remote Thought/Intents and Activities.md",
+    "Common Intent Vulnerabilities.md",
+    "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/HTTP Methods.md",
     "Understanding basic crypto.md",
-    "Remote Thought/Authentication vulnerabilities.md",
     "Tags/Cryptography.md",
     "Remote Thought/Enumeration.md",
     "USB HID analysis.md",
