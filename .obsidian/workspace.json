@@ -55,8 +55,7 @@
               "title": "Common Intent Vulnerabilities"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Common Intent Vulnerabilities.md",
+                "file": "Remote Thought/Intent Attack surface app.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Common Intent Vulnerabilities"
+              "title": "Outline of Intent Attack surface app"
             }
           }
         ],
@@ -203,11 +202,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42592c5fa3d362ec",
+  "active": "f02623dfdace7d6f",
   "lastOpenFiles": [
+    "Common Intent Vulnerabilities.md",
     "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Intents and Activities.md",
-    "Common Intent Vulnerabilities.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/HTTP Methods.md",
     "Understanding basic crypto.md",

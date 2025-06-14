@@ -115,23 +115,8 @@ If an app sends an implicit intent to a malicious app and expects a response, th
 If your activity is intended to return a result back. So another activity starts your activity with a  `startActivityForResult`, you can return a result with `setResult`. This takes a result code which can be used to indicate whether it was the call was a success or a failure.
 - And then we can also create an intent that gets returned back to the other app. Now this just sets the expected result,
 
-but it might not trigger the other activity yet because our activity is still running. But we can also call finish,
-which indicates that the activity is done and should be closed, and then the activity result is propagated back to whoever launched our activity.
-
-In the Intent Attack Surface app, you can find several flags tagged with implicit intent. These work a little bit different to
-
-the activity flags we've seen before, because here you have to click on the flag and it will trigger an implicit intent.
-
-Your task is to reverse engineer what kind of implicit intent is sent here, and then implement the handler for it in your app.
-
-You can create for that a new activity, but make sure that you export it in the manifest and set the correct
-
-intent filters. And then of course, keep an eye out for the success function when reverse engineering the flag activities.
-
-For example, what kind of returned result does the app expect in order to call success and reveal the flag?
-
-So go ahead now and try to find the flags listed below.
-
+1. but it might not trigger the other activity yet because our activity is still running. 
+2. But we can also call `finish`, which indicates that the activity is done and should be closed, and then the activity result is propagated back to whoever launched our activity.
 
 ### References
 
