@@ -110,7 +110,7 @@ For example, some apps might use implicit intents to pass security critical data
 
 If an app sends an implicit intent to a malicious app and expects a response, the malicious app could return an evil intent. And you have to check whether the app handles the intent securely or not.
 
-implement a response to an activity yourself. 
+### Implement a response to an activity yourself. 
 
 If your activity is intended to return a result back. So another activity starts your activity with a  `startActivityForResult`, you can return a result with `setResult`. This takes a result code which can be used to indicate whether it was the call was a success or a failure.
 - And then we can also create an intent that gets returned back to the other app. Now this just sets the expected result,
