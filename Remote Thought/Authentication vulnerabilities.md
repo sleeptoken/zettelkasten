@@ -139,8 +139,8 @@ As possessing this cookie effectively allows you to bypass the entire login proc
 > - If the attacker is able to easily identify the hashing algorithm, and no salt is used, they can potentially brute-force the cookie by simply hashing their wordlists. This method can be used to bypass login attempt limits if a similar limit isn't applied to cookie guesses.
 
 Even if the attacker is not able to create their own account, they may still be able to exploit this vulnerability. Using the usual techniques, such as XSS, an attacker could steal another user's "remember me" cookie and deduce how the cookie is constructed from that.
-If the website was built using an open-source framework, the key details of the cookie construction may even be publicly documented.
-
+> If the website was built using an open-source framework, the key details of the cookie construction may even be publicly documented.
+##### *Lab*
 
 
 
