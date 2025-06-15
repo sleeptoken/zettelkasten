@@ -146,12 +146,15 @@ Even if the attacker is not able to create their own account, they may still be 
 - examine the cookie - its b64 encoded, then the password is MD5 hashed. (educated guess)
 	so the cookie is constructed as follows - `base64(username+':'+md5HashOfPassword)`
 
-In the most recent `GET /my-account?id=wiener` request highlight the stay-logged-in cookie parameter and send the request to Burp Intruder.
+In the most recent `GET /my-account?id=wiener` request highlight the stay-logged-in cookie parameter and send the request to Burp Intruder. 
+> Remove `?id=wiener` and remove the session cookie as if the `stay-logged-in` is valid then it generates a new session for us.
 
-Hash: MD5
-Add prefix: wiener:
-Encode: Base64-encode
+Under Payload processing, add the following rules in order. 
+- Hash: MD5
+- Add prefix: wiener:
+- Encode: Base64-encode
 
+As the Update email button is only displayed when you access the My account page in an authenticated state, we can use the presence or absence of this button to determine whether we've successfully brute-forced the cookie. In the  Settings side panel, add a `grep match` rule to flag any responses containing the string `Update email`
 
 ### References 
 
