@@ -279,7 +279,19 @@ public class SecondActivity extends AppCompatActivity {
 ```
 
 As you can see, my second activity doesn’t do anything because it doesn’t have to. Flag 10 only needs to be able to find an activity capable of handling the intent - then it will reveal the flag.
-### 11
+### 11 - Respond to implicit intent
+
+This is pretty similar to the last one except we need our program to reply with an intent that carries a specific token value.
+We make an intent to be returned to the target application that has the extra set on it for the token along with its specified value. We use `setResult` to say that we want to send the `resultIntent` we made back to the caller. We can then use `finish()` to manually close our activity
+
+for secondactivity the one that has the correct intent filter set in the manifest.
+```java
+Intent intent = new Intent();  
+intent.putExtra("token", 1094795585);  
+Utils.showDialog(this, intent);  
+setResult(42, intent);  
+finish();
+```
 ## References
 https://www.youtube.com/watch?v=jnBmI1eD-og
 https://itsfading.github.io/posts/HexTree-Attack-Surface-App-Solutions/
