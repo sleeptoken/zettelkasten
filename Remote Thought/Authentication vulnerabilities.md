@@ -140,8 +140,17 @@ As possessing this cookie effectively allows you to bypass the entire login proc
 
 Even if the attacker is not able to create their own account, they may still be able to exploit this vulnerability. Using the usual techniques, such as XSS, an attacker could steal another user's "remember me" cookie and deduce how the cookie is constructed from that.
 > If the website was built using an open-source framework, the key details of the cookie construction may even be publicly documented.
-##### *Lab*
+##### *Lab* - Brute-forcing a stay-logged-in cookie
 
+- clicking on the stay logged in button while logging in sets a `set-logged-in` cookie
+- examine the cookie - its b64 encoded, then the password is MD5 hashed. (educated guess)
+	so the cookie is constructed as follows - `base64(username+':'+md5HashOfPassword)`
+
+In the most recent `GET /my-account?id=wiener` request highlight the stay-logged-in cookie parameter and send the request to Burp Intruder.
+
+Hash: MD5
+Add prefix: wiener:
+Encode: Base64-encode
 
 
 ### References 
