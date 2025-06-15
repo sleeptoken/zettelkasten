@@ -127,6 +127,20 @@ If the user is first prompted to enter a password, and then prompted to enter a 
 2. They are then assigned a cookie that relates to their account, before being taken to the second step of the login process:
 3. When submitting the verification code, the request uses this cookie to determine which account the user is trying to access:
 4. In this case, an attacker could log in using their own credentials but then change the value of the account cookie to any arbitrary username when submitting the verification code.
+### Other Authentication methods 
+
+#### Keeping users logged in 
+
+This functionality is often implemented by generating a "remember me" token of some kind, which is then stored in a persistent cookie. 
+As possessing this cookie effectively allows you to bypass the entire login process 
+
+- some websites generate this cookie based on a predictable concatenation of static values, such as the username and a timestamp. Some even use the password as part of the cookie. 
+- This approach is particularly dangerous if an attacker is able to create their own account because they can study their own cookie and potentially deduce how it is generated. 
+> - If the attacker is able to easily identify the hashing algorithm, and no salt is used, they can potentially brute-force the cookie by simply hashing their wordlists. This method can be used to bypass login attempt limits if a similar limit isn't applied to cookie guesses.
+
+Even if the attacker is not able to create their own account, they may still be able to exploit this vulnerability. Using the usual techniques, such as XSS, an attacker could steal another user's "remember me" cookie and deduce how the cookie is constructed from that.
+If the website was built using an open-source framework, the key details of the cookie construction may even be publicly documented.
+
 
 
 
