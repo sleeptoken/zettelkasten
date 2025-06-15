@@ -173,6 +173,9 @@ On the exploit server, open the access log. There should be a GET request from t
 2. Resetting passwords using a URL - 
 	- Send a unique URL to users that takes them to a password reset page , generate a high entropy, hard to guess token in URL. In the best case scenario, this URL should provide no hints about which user's password is being reset. 
 	- When the user visits this URL, the system should check whether this token exists on the back-end and, if so, which user's password it is supposed to reset. This token should expire after a short period of time and be destroyed immediately after the password has been reset. However, some websites fail to also validate the token again when the reset form is submitted.
+#### *Lab: Password reset broken logic 
+
+Click forgot password go to the Email client button to view the password reset email that was sent. Click the link in the email and reset your password to whatever you want. Notice that when you submit your new password, the `POST /forgot-password?temp-forgot-password-token` request contains the username as hidden input. 
 
 
 ### References 
