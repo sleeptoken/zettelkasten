@@ -167,6 +167,12 @@ Go to one of the blogs and post a comment containing the following stored XSS pa
 On the exploit server, open the access log. There should be a GET request from the victim containing their stay-logged-in cookie.
 -  since the cookie is crafted the same as before, decode it accordingly.
   
+### Passwrd reset 
+
+1. Sending passwords by email - approach is highly susceptible to man-in-the-middle attacks.
+2. Resetting passwords using a URL - 
+	- Send a unique URL to users that takes them to a password reset page , generate a high entropy, hard to guess token in URL. In the best case scenario, this URL should provide no hints about which user's password is being reset. 
+	- When the user visits this URL, the system should check whether this token exists on the back-end and, if so, which user's password it is supposed to reset. This token should expire after a short period of time and be destroyed immediately after the password has been reset. However, some websites fail to also validate the token again when the reset form is submitted.
 
 
 ### References 
