@@ -118,6 +118,9 @@ If your activity is intended to return a result back. So another activity starts
 1. but it might not trigger the other activity yet because our activity is still running. 
 2. But we can also call `finish`, which indicates that the activity is done and should be closed, and then the activity result is propagated back to whoever launched our activity.
 
+
+
+
 ### References
 
 [[Intents and Activities]]

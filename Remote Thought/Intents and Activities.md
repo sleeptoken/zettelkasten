@@ -416,6 +416,37 @@ You can see this in action by adding
 ```java
 intent.addFlags(Intent.FLAG_DEBUG_LOG_RESOLUTION);
 ```
+# Pending Intent 
+
+PendingIntents are involved when implementing widgets or notifications, 
+
+Think again about the vulnerability class of intent redirects. For example, 
+- application A creates an intent and packages it as an extra intent within another intent (`intent.putExtra("EXTRA_INTENT",innerintent)`) and sends it to application B, and then 
+- application B takes the extra intent and calls `startActivity(innerIntent)` with it.
+
+> This is an intent redirect, and the cool thing here is that the redirected intent runs with the permission of application B,
+
+which makes sense because application B calls start activity with this intent, and this can be abused if application B has some kind of non-exported activities or other permissions Application A cannot use directly 
+
+pending intents.
+
+- Application A can create an intent and place it inside of a PendingIntent object, and then send this one over to Application B `(PendingIntent pendingIntent = PendingIntent.getActivity(this,0,targetIntent,PendingIntent.FLAG_MUTABLE);`.
+ - Application B can then take the PendingIntent object and execute it or send it. intent object and execute it or send it. But unlike with the startActivity from before, the executed PendingIntent now runs with the permission of Application A.
+Application A delegated the execution of the intent to Application B, so in some way it's a security mitigation of intent redirects.
+
+The redirected intent will always only have the permission of the original application. A this way a malicious app A cannot
+
+reach anything bad it couldn't before. Application B executes this intent with the permission of Application A. However, think about the case when
+
+the roles are reversed. Let's imagine App A sends a PendingIntent to a malicious App B. Now B receives the permission to perform an action
+
+with the permission of Application A. This is a cool feature, but could also lead to some issues. For example, when Application A intended to give this permission to some other safe app, but the malicious app somehow got a hold of it.
+
+Or there's also the concept of immutable and mutable PendingIntents. If it is a mutable PendingIntent, the receiving application can modify
+
+the PendingIntent before using it. And that, of course, could lead to lots of unexpected behavior. You can, of course, practice these
+
+different interactions with the Intent Attack Surface app and look out for their PendingIntents flags.
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/intents-and-activities)
