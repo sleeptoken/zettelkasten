@@ -177,6 +177,9 @@ On the exploit server, open the access log. There should be a GET request from t
 
 Click forgot password go to the Email client button to view the password reset email that was sent. Click the link in the email and reset your password to whatever you want. Notice that when you submit your new password, the `POST /forgot-password?temp-forgot-password-token` request contains the username as hidden input. 
 
+In Burp Repeater, observe that the password reset functionality still works even if you delete the value of the `temp-forgot-password-token` parameter in both the URL and request body. This confirms that the token is not being checked when you submit the new password.
+
+ Change the username parameter to carlos. log in to Carlos's account using the new password you just set.
 
 ### References 
 
