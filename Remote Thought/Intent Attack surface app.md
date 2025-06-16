@@ -292,6 +292,11 @@ Utils.showDialog(this, intent);
 setResult(42, intent);  
 finish();
 ```
+### 12 - Careful intent condition
+
+This is similar to previous challenge but we have a `onActivityResult` that checks for a `LOGIN = True` condition. 
+So we first need to send an intent where `LOGIN` is set to true, then have our second activity send over the token and the specified value.
+
 ## References
 https://www.youtube.com/watch?v=jnBmI1eD-og
 https://itsfading.github.io/posts/HexTree-Attack-Surface-App-Solutions/
