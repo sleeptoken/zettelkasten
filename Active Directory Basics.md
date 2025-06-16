@@ -30,6 +30,16 @@ Identifying machine accounts is relatively easy. The machine account name is the
 
 Security groups are also considered security principals and, therefore, can have privileges over resources on the network.
 - Groups can have both users and machines as members. If needed, groups can include other groups as well.
+You can obtain the complete list of default security groups from the [Microsoft documentation](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups).
+
+Go to "Active Directory Users and Computers" from the start menu, Here objects are organized in **Organizational Units (OUs)** which are container objects that allow you to classify users and machines. OUs are mainly used to define sets of users with similar policing requirements. user can only be a part of a single OU at a time.
+
+| Security Group                                                                                                                                                                        | OUs                                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Security Groups**, are used to **grant permissions over resources**. For example, you will use groups if you want to allow some users to access a shared folder or network printer. | **OUs** are handy for **applying policies** to users and computers, which include specific configurations that pertain to sets of users depending on their particular role in the enterprise. |
+| A user can be a part of many groups, which is needed to grant access to multiple resources.                                                                                           | a user can only be a member of a single OU at a time, as it wouldn't make sense to try to apply two different sets of policies to a single user.                                              |
+
+
 
 ### References
 [TryHackMe | Active Directory Basics](https://tryhackme.com/room/winadbasics)
