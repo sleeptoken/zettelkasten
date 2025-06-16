@@ -181,6 +181,11 @@ In Burp Repeater, observe that the password reset functionality still works even
 
  Change the username parameter to carlos. log in to Carlos's account using the new password you just set.
 
+> If the URL in the reset email is generated dynamically, this may also be vulnerable to password reset poisoning. 
+#### *Lab: Password reset poisoning via middleware*
+
+
+
 ### References 
 
 https://portswigger.net/web-security/authentication

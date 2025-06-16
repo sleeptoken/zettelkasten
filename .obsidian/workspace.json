@@ -226,10 +226,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fdb2bf9ae929edf9",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
-    "Remote Thought/Enumeration.md",
+    "Remote Thought/Fail2ban Misconfig.md",
     "Remote Thought/Authentication vulnerabilities.md",
+    "Remote Thought/Enumeration.md",
     "Remote Thought/Intent Attack surface app.md",
     "Common Intent Vulnerabilities.md",
     "Remote Thought/Intents and Activities.md",
