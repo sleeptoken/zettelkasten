@@ -185,7 +185,11 @@ In Burp Repeater, observe that the password reset functionality still works even
 #### *Lab: Password reset poisoning via middleware*
 
 Explore the password reset functionality fully by changing the password of a known account
-
+- try if the `X-Forwarded-Host:` header works  
+	- add the following ->  `X-Forwarded-Host: donotput_https://_here`
+	- replace `donotput_https://_here` w exploit server link. The link should be a server where u have access to logs 
+	
+Without the `X-Forwarded-Host` - Header 
 
 
 
