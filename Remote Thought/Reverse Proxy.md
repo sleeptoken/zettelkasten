@@ -18,10 +18,10 @@ the reverse proxy is used in a namespace i.e. we need to specify that what type 
 
 basically reverse proxy is used to hide content  
 
-when we use apache server with reverse proxy mode we have 3 headers set
+when we use Apache server with reverse proxy mode we have 3 headers set
 
 > X-Forwarded-For      > The IP address of the client.  
 > X-Forwarded-Host    > The original host requested by the client in the Host HTTP request header.  
-> X-Forwarded-Server > The hostname of the proxy server.(reverse proxy)
+> X-Forwarded-Server > The hostname of the proxy server. (reverse proxy)
 ### References
 [[Apache Proxy Server CVE]]
