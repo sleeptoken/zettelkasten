@@ -180,9 +180,9 @@
   },
   "active": "c22a5e229e3ad7e8",
   "lastOpenFiles": [
-    "Common Intent Vulnerabilities.md",
-    "Active Directory Basics.md",
     "Remote Thought/Common AD Attacks.md",
+    "Active Directory Basics.md",
+    "Common Intent Vulnerabilities.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Intent Attack surface app.md",

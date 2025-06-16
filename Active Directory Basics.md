@@ -10,9 +10,10 @@ Tags: [[win]]
  - The server that runs the Active Directory services is known as a **Domain Controller (DC)**.
 
 Active Directory is also the component that allows your school/university to restrict you from accessing the control panel on your school/university machines. Policies will usually be deployed throughout the network so that you don't have administrative privileges over those computers.
+## Active Directory 
 
-
-
+﻿The core of any Windows Domain is the **Active Directory Domain Service (AD DS)**. This service acts as a catalogue that holds the information of all of the "objects" that exist on your network.
+##### Users 
 
 ### References
 [TryHackMe | Active Directory Basics](https://tryhackme.com/room/winadbasics)
