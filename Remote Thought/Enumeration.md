@@ -14,7 +14,7 @@ Every email address contains two parts, a username and a domain name, in the for
 Many online resources provide a list of default passwords assigned by manufacturers to their products.
 #### Brute force Active Directory 
 
-Microsoft [[Active Directory]] is susceptible to username enumeration at the time of user-supplied input verification. This is a design error in the Microsoft Active Directory implementation. If a user enables the "logon hours" feature, then all the attempts at service authentication result in different error messages. 
+Microsoft [[Common AD Attacks]] is susceptible to username enumeration at the time of user-supplied input verification. This is a design error in the Microsoft Active Directory implementation. If a user enables the "logon hours" feature, then all the attempts at service authentication result in different error messages. 
 - Attackers take advantage of this to enumerate valid usernames. An attacker who succeeds in extracting valid usernames can conduct a brute-force attack to crack the respective passwords. 
 #### Extract information using DNS Zone Transfer 
 

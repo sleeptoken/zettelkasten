@@ -3,9 +3,9 @@
 
 Source: #AOC24 
 
-Tags: [[win]] 
+Tags: [[win]] [[Active Directory Basics]]
 
-**Active Directory** (AD) is, therefore, a Directory Service at the heart of most enterprise networks that stores information about objects in a network. The associated objects can include:
+**Active Directory** (AD) is a Directory Service at the heart of most enterprise networks that stores information about objects in a network. The associated objects can include:
 - **Users** - accounts representing people or services
 - **Groups** - Collections of users or other objects, often with specific permissions
 - **Computers** - Machines that belong to the domain governed by AD policies
