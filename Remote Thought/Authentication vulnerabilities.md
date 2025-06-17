@@ -195,6 +195,12 @@ Explore the password reset functionality fully by changing the password of a kno
 when we add the header we say Hey listen the host is not that one (origin header) it's this one over here which is equal to our Exploit server. What it did is that the application automatically trusted that this is the host and it generated the temporary forgot password token and it appended it to what it thinks is the host of the application however this is our exploit server.
 
 when we change the parameter to carlos and hit send. An email is send to the user carlos, the user clicks the email (for him nothing happens) and when we check the access logs of our exploit server, we get the carlos forget password token from the logs.
+### Changing user passwords 
+
+Changing your password involves entering your current password and then the new password twice. These pages fundamentally rely on the same process for checking that usernames and current passwords match as a normal login page does. Therefore, these pages can be vulnerable to the same techniques.
+
+
+
 
 ### References 
 

@@ -8,13 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b3a8eea05330626",
+            "id": "91626ea805576246",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Authentication vulnerabilities.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Authentication vulnerabilities"
             }
           }
         ]
@@ -138,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/use SQLite on DB found via LFI.md",
+                "file": "Remote Thought/Authentication vulnerabilities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of use SQLite on DB found via LFI"
+              "title": "Outline of Authentication vulnerabilities"
             }
           }
         ],
@@ -164,8 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "91626ea805576246",
   "lastOpenFiles": [
+    "Common Intent Vulnerabilities.md",
+    "Remote Thought/use SQLite on DB found via LFI.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
     "Remote Thought/SQL injection w py.md",
@@ -184,10 +200,8 @@
     "Remote Thought/Enlightenment SUID exploit.md",
     "Tags/Docker.md",
     "Tags/BlindSQL.md",
-    "Remote Thought/use SQLite on DB found via LFI.md",
     "Remote Thought/Intents and Activities.md",
     "Remote Thought/Intent Attack surface app.md",
-    "Common Intent Vulnerabilities.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/Common AD Attacks.md",
     "Remote Thought/Enumeration.md",
