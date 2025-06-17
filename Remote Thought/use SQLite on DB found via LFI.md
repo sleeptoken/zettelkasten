@@ -41,6 +41,9 @@ From the configure we find out the path to the database
 curl -s "http://titanic.htb/download?ticket=/home/developer/gitea/data/gitea/gitea.db" -o gitea.db
 ```
 
+> [!NOTE]
+> If in a CTF using UNION or SELECT is blocked then try using a different case for those words eg. Union Select. If a DB is vulnerable to SQLite injection you could use a known username eg.admin to drop table details using 
+
 Open `gitea.db` in SQLite: 
 ```
 sqlite3 gitea.db  

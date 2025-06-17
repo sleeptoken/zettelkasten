@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5a4039384f006556",
+        "id": "88dfc1fa4762c0ba",
         "type": "tabs",
         "children": [
           {
-            "id": "7b545e961e5ff3f5",
+            "id": "0d5c3e76d8422f73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Intents and Activities.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Intents and Activities"
+              "title": "use SQLite on DB found via LFI"
             }
           },
           {
-            "id": "6053d51b22b2e576",
+            "id": "132a97a9eaa6a0e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Intent Attack surface app"
+              "title": "use SQLite on DB found via LFI"
             }
           }
         ],
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "SQL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +109,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -177,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Remote Thought/use SQLite on DB found via LFI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intent Attack surface app"
+              "title": "Outline of use SQLite on DB found via LFI"
             }
           }
         ],
@@ -203,23 +204,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6053d51b22b2e576",
+  "active": "132a97a9eaa6a0e3",
   "lastOpenFiles": [
+    "Remote Thought/Time based SQL injection w py.md",
+    "Remote Thought/SQL SELECT Tricks & Truncation.md",
+    "Remote Thought/SQL injection w py.md",
+    "Tags/SQL injection.md",
+    "Remote Thought/PHP filter chain & ssh-keygen.md",
+    "Remote Thought/OpenID Connect & less sanitization.md",
+    "Remote Thought/Port Forwarding.md",
+    "Remote Thought/NOSQL.md",
+    "Tags/nmap.md",
+    "Remote Thought/JWT Attacks.md",
+    "Remote Thought/Injection.md",
+    "Remote Thought/Footprinting & Reconnaissance.md",
+    "Remote Thought/Flat-file Database.md",
+    "Remote Thought/Fetching from SQLite as b64.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Remote Thought/Enlightenment SUID exploit.md",
+    "Tags/Docker.md",
+    "Tags/BlindSQL.md",
+    "Remote Thought/use SQLite on DB found via LFI.md",
     "Remote Thought/Intents and Activities.md",
-    "Common Intent Vulnerabilities.md",
     "Remote Thought/Intent Attack surface app.md",
+    "Common Intent Vulnerabilities.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/Common AD Attacks.md",
     "Remote Thought/Enumeration.md",
-    "Active Directory Basics.md",
-    "Remote Thought/Reverse Proxy.md",
-    "Remote Thought/Fail2ban Misconfig.md",
-    "Remote Thought/HTTP Methods.md",
-    "Understanding basic crypto.md",
-    "Tags/Cryptography.md",
-    "USB HID analysis.md",
-    "UPX.md",
-    "Remote Thought/DNS Spoofing and Transparent Proxy.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md"
+    "Active Directory Basics.md"
   ]
 }
