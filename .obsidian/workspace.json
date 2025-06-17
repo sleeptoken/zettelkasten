@@ -4,59 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "88dfc1fa4762c0ba",
+        "id": "5cce7212634c4271",
         "type": "tabs",
         "children": [
           {
-            "id": "0d5c3e76d8422f73",
+            "id": "3b3a8eea05330626",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/use SQLite on DB found via LFI.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "use SQLite on DB found via LFI"
-            }
-          },
-          {
-            "id": "132a97a9eaa6a0e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/use SQLite on DB found via LFI.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "use SQLite on DB found via LFI"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SQL",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +70,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -204,7 +164,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "132a97a9eaa6a0e3",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
