@@ -199,7 +199,11 @@ when we change the parameter to carlos and hit send. An email is send to the use
 
 Changing your password involves entering your current password and then the new password twice. These pages fundamentally rely on the same process for checking that usernames and current passwords match as a normal login page does. Therefore, these pages can be vulnerable to the same techniques.
 
-
+### Prevention 
+#### Take care with user credentials
+You should audit your website to make sure that no username or email addresses are disclosed either through publicly accessible profiles or reflected in HTTP responses. & no sending data over unencrypted data channels.
+#### Don't count on users for security
+the JavaScript library `zxcvbn`, which was developed by Dropbox. By only allowing passwords which are rated highly by the password checker, you can enforce the use of secure passwords more effectively than you can with traditional policies.
 
 
 ### References 
