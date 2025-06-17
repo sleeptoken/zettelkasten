@@ -55,7 +55,8 @@
               "title": "Intent Attack surface app"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intents and Activities.md",
+                "file": "Remote Thought/Intent Attack surface app.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intents and Activities"
+              "title": "Outline of Intent Attack surface app"
             }
           }
         ],
@@ -202,8 +203,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b545e961e5ff3f5",
+  "active": "6053d51b22b2e576",
   "lastOpenFiles": [
+    "Remote Thought/Intents and Activities.md",
     "Common Intent Vulnerabilities.md",
     "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Authentication vulnerabilities.md",
@@ -212,7 +214,6 @@
     "Active Directory Basics.md",
     "Remote Thought/Reverse Proxy.md",
     "Remote Thought/Fail2ban Misconfig.md",
-    "Remote Thought/Intents and Activities.md",
     "Remote Thought/HTTP Methods.md",
     "Understanding basic crypto.md",
     "Tags/Cryptography.md",
