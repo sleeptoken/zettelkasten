@@ -200,20 +200,27 @@ when we change the parameter to carlos and hit send. An email is send to the use
 Changing your password involves entering your current password and then the new password twice. These pages fundamentally rely on the same process for checking that usernames and current passwords match as a normal login page does. Therefore, these pages can be vulnerable to the same techniques.
 
 ### Prevention 
-#### Take care with user credentials
-You should audit your website to make sure that no username or email addresses are disclosed either through publicly accessible profiles or reflected in HTTP responses. & no sending data over unencrypted data channels.
-#### Don't count on users for security
-the JavaScript library `zxcvbn`, which was developed by Dropbox. By only allowing passwords which are rated highly by the password checker, you can enforce the use of secure passwords more effectively than you can with traditional policies.
-#### Prevent username enumeration 
-It is considerably easier for an attacker to break your authentication mechanisms if you reveal that a user exists on the system. It is important to use identical, generic error messages You should always return the same HTTP status code with each login request and, finally, make the response times in different scenarios as indistinguishable as possible.
-#### Implement robust brute-force protection
- implement strict, IP-based user rate limiting. This should involve measures to prevent attackers from manipulating their apparent IP address. Ideally, you should require the user to complete a CAPTCHA test with every login attempt after a certain limit is reached.
-#### Triple-check your verification logic
-Auditing any verification or validation logic thoroughly to eliminate flaws is absolutely key to robust authentication.
-#### Don't forget supplementary functionality
-This is particularly important in cases where the attacker is free to register their own account and explore this functionality
-#### Implement proper multi-factor authentication
-Ideally, 2FA should be implemented using a dedicated device or app that generates the verification code directly.
+
+- #### Take care with user credentials
+	- You should audit your website to make sure that no username or email addresses are disclosed either through publicly accessible profiles or reflected in HTTP responses. & no sending data over unencrypted data channels.
+
+- #### Don't count on users for security
+	- the JavaScript library `zxcvbn`, which was developed by Dropbox. By only allowing passwords which are rated highly by the password checker, you can enforce the use of secure passwords more effectively than you can with traditional policies.
+	
+- #### Prevent username enumeration 
+	- It is considerably easier for an attacker to break your authentication mechanisms if you reveal that a user exists on the system. It is important to use identical, generic error messages You should always return the same HTTP status code with each login request and, finally, make the response times in different scenarios as indistinguishable as possible.
+	
+- #### Implement robust brute-force protection
+	 - implement strict, IP-based user rate limiting. This should involve measures to prevent attackers from manipulating their apparent IP address. Ideally, you should require the user to complete a CAPTCHA test with every login attempt after a certain limit is reached.
+	 
+- #### Triple-check your verification logic
+	- Auditing any verification or validation logic thoroughly to eliminate flaws is absolutely key to robust authentication.
+	
+- #### Don't forget supplementary functionality
+	- This is particularly important in cases where the attacker is free to register their own account and explore this functionality
+	
+- #### Implement proper multi-factor authentication
+	- Ideally, 2FA should be implemented using a dedicated device or app that generates the verification code directly.
 
 
 
