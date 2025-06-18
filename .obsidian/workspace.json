@@ -178,10 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "4f1e47bd2851d749",
   "lastOpenFiles": [
-    "Cast.md",
+    "Remote Thought/Image formation from TCP Stream.md",
+    "Remote Thought/Dissecting PE Headers.md",
+    "Remote Thought/Python packaged executables.md",
     "UPX.md",
+    "Cast.md",
     "Bluetooth reverse engineering.md",
     "Common Intent Vulnerabilities.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
@@ -202,9 +205,6 @@
     "Tags/nmap.md",
     "Remote Thought/JWT Attacks.md",
     "Remote Thought/Injection.md",
-    "Remote Thought/Footprinting & Reconnaissance.md",
-    "Remote Thought/Flat-file Database.md",
-    "Remote Thought/Fetching from SQLite as b64.md",
-    "Exploiting Chrome Remote Debugger.md"
+    "Remote Thought/Footprinting & Reconnaissance.md"
   ]
 }
