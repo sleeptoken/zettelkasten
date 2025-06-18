@@ -13,6 +13,12 @@ The user-agent string is a hint that the payload of these requests likely contai
 
 after combining the key values we get a long key that couldn't be decoded easily, luckily we have the executable that produced the traffic captured in the PCAP file, so we can figure out whether or not there are additional steps involved in encrypting the transmitted key. 
 
+On running strings on the executable 
+
+> The User-Agent string is the same one that we saw in the PCAP file: `Mozilla/5.0 (Windows NT 6.1; WOW64) KEY.` If this was a real malware this unique string could really be useful for writing a detection signature. 
+
+- The rest of the strings appear to be debugging log entries except the last two. The purpose of the string `flarebearstare` is not immediately clear. 
+- The last string appears almost like the base64 alphabet `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567891/` with the upper-case and lower-case blocks flipped. It is a common practice for malware authors to use custom Base64 alphabets, so take a mental note of this string for later analysis.
 
 
 
