@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "91626ea805576246",
+            "id": "4f1e47bd2851d749",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Common Intent Vulnerabilities.md",
+                "file": "Bluetooth reverse engineering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Common Intent Vulnerabilities"
+              "title": "Bluetooth reverse engineering"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Common Intent Vulnerabilities.md",
+                "file": "Bluetooth reverse engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Common Intent Vulnerabilities"
+              "title": "Outline of Bluetooth reverse engineering"
             }
           }
         ],
@@ -178,10 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "91626ea805576246",
+  "active": "4f1e47bd2851d749",
   "lastOpenFiles": [
-    "Remote Thought/Authentication vulnerabilities.md",
+    "Bluetooth reverse engineering.md",
     "Common Intent Vulnerabilities.md",
+    "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
     "Remote Thought/Time based SQL injection w py.md",
     "Remote Thought/SQL SELECT Tricks & Truncation.md",
@@ -204,7 +205,6 @@
     "Remote Thought/Intents and Activities.md",
     "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Common AD Attacks.md",
-    "Remote Thought/Enumeration.md",
-    "Active Directory Basics.md"
+    "Remote Thought/Enumeration.md"
   ]
 }
