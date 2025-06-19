@@ -28,7 +28,7 @@ thus we will add `11iloveyou`  to retrieve the password
 
 ### Natas 24 - PHP Type Juggling (strcmp)
 
-in our webiste source we have the following code that is vulnerable to type juggling
+in our website source we have the following code that is vulnerable to type juggling
 ```python
 if(!strcmp($_REQUEST["passwd"],"<censored>")){
 ```
@@ -48,5 +48,5 @@ output throws a warning and gives the pass.
 N22 - https://www.youtube.com/watch?v=NVuG0Pps-xk
 N23 - https://www.youtube.com/watch?v=cB2gBPiL8qE
 
-Type Juggling - https://www.youtube.com/watch?v=-1kftH6t5VA
+Type Juggling - https://www.youtube.com/watch?v=-1kftH6t5VA, https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Type%20Juggling/README.md
 strcmp - https://www.php.net/manual/en/function.strcmp.php

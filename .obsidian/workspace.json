@@ -180,7 +180,9 @@
   },
   "active": "b8dd98543b47c4a8",
   "lastOpenFiles": [
+    "Remote Thought/Scanning and Networks.md",
     "PCAP file traffic decryption by reverse engineering.md",
+    "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
     "TLS 1.3 better than TLS 1.2.md",
@@ -203,8 +205,6 @@
     "Tags/SQL injection.md",
     "Remote Thought/PHP filter chain & ssh-keygen.md",
     "Remote Thought/OpenID Connect & less sanitization.md",
-    "Remote Thought/Port Forwarding.md",
-    "Remote Thought/NOSQL.md",
-    "Tags/nmap.md"
+    "Remote Thought/Port Forwarding.md"
   ]
 }
