@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f52cc2b53132ca93",
+        "id": "d6878cd2df669f46",
         "type": "tabs",
         "children": [
           {
-            "id": "b8dd98543b47c4a8",
+            "id": "1a2380a7fae9f914",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCAP file traffic decryption by reverse engineering.md",
+                "file": "Remote Thought/Tools for CTFs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PCAP file traffic decryption by reverse engineering"
+              "title": "Tools for CTFs"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCAP file traffic decryption by reverse engineering.md",
+                "file": "Remote Thought/Tools for CTFs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of PCAP file traffic decryption by reverse engineering"
+              "title": "Outline of Tools for CTFs"
             }
           }
         ],
@@ -178,10 +178,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8dd98543b47c4a8",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
-    "Remote Thought/Scanning and Networks.md",
+    "Remote Thought/Don't use alert(1).md",
+    "Tags/SSDP.md",
+    "Tags/SCTP.md",
+    "Remote Thought/URL format bypass.md",
+    "Remote Thought/SSRF.md",
     "PCAP file traffic decryption by reverse engineering.md",
+    "Remote Thought/Scanning and Networks.md",
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
@@ -200,11 +205,6 @@
     "Remote Thought/PDF Malware Analysis.md",
     "Remote Thought/SSRF & pylib exploit.md",
     "Remote Thought/Time based SQL injection w py.md",
-    "Remote Thought/SQL SELECT Tricks & Truncation.md",
-    "Remote Thought/SQL injection w py.md",
-    "Tags/SQL injection.md",
-    "Remote Thought/PHP filter chain & ssh-keygen.md",
-    "Remote Thought/OpenID Connect & less sanitization.md",
-    "Remote Thought/Port Forwarding.md"
+    "Remote Thought/SQL SELECT Tricks & Truncation.md"
   ]
 }

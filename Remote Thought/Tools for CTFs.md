@@ -4,9 +4,8 @@
 https://www.encryptomatic.com/viewer/
 ### Online platform which performs layer analysis on image
 https://www.aperisolve.com/
-
-
-
+### Like Hacktricks
+https://book.jorianwoltjer.com/web/enumeration
 
 
 ### References
