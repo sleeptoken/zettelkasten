@@ -87,5 +87,10 @@ $ [...]/build-tools/34.0.0/zipalign -p -f -v 4 ./dist/<apktool_build>.apk aligne
 $ [...]/build-tools/34.0.0/apksigner sign --ks ./research.keystore ./aligned.apk
 ```
 
+> [!info]
+> If an app is open source and still doesn't has an android manifest file on GitHub then it could be a Cordova app, Cordova wraps ur HTML/Js app into a native container which can access the device functions of several platforms. 
+
+
+
 ### References
 [What is an APK? (hextree.io)](https://app.hextree.io/courses/reverse-android-apps/working-with-apks-and-apktool)
