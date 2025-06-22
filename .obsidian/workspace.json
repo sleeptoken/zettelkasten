@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e0d6737a09f0661",
+            "id": "e6c3498d2e8092f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Remote Thought/Server-side request forgery (SSRF).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Intent Attack surface app"
+              "title": "Server-side request forgery (SSRF)"
             }
           }
         ]
@@ -123,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Remote Thought/Server-side request forgery (SSRF).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Intent Attack surface app"
+              "title": "Outgoing links from Server-side request forgery (SSRF)"
             }
           },
           {
@@ -138,7 +138,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -152,17 +152,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Remote Thought/Server-side request forgery (SSRF).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intent Attack surface app"
+              "title": "Outline of Server-side request forgery (SSRF)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -178,19 +178,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54c08456faaf9906",
+  "active": "e6c3498d2e8092f5",
   "lastOpenFiles": [
+    "Remote Thought/SSRF Misconceptions.md",
+    "Remote Thought/Server-side request forgery (SSRF).md",
+    "Remote Thought/Intent Attack surface app.md",
+    "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
     "Untitled.md",
     "Android Deep Links.md",
-    "Remote Thought/Intent Attack surface app.md",
     "Bluetooth reverse engineering.md",
     "Common Intent Vulnerabilities.md",
     "Remote Thought/UPX.md",
-    "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Tools for CTFs.md",
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
-    "Remote Thought/SSRF.md",
     "Remote Thought/Building Android POC app.md",
     "Remote Thought/Don't use alert(1).md",
     "Tags/SSDP.md",
@@ -204,7 +205,6 @@
     "Remote Thought/Dissecting PE Headers.md",
     "Remote Thought/Image formation from TCP Stream.md",
     "Remote Thought/Python packaged executables.md",
-    "Cast.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md"
+    "Cast.md"
   ]
 }
