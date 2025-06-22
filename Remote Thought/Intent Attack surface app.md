@@ -349,6 +349,36 @@ The program is set up to see if the intent that was used to start the activity h
 So we first make an intent to send to the flag activity. We then package our intent as a pending intent and send it with the extra `PENDING`. We need to make sure that the pending intent has the `MUTABLE` flag set - if we don’t then `Flag22Activity` won’t be able to modify the intent before sending it back.
 # Hijacking Deep Link Intents
 
+Similar to hijacking intents, we can declare those attributes to handle a particular deep link using the `<intent-filter>` in our manifest file for our application. This way when you click a link that can be handled by an application, you will be prompted to choose which app handles it. This is intended functionality but we can practice taking advantage of a login flow in the intent attack surface app.
+### 14 - Hijack web login
+
+We begin by examining how the app is interacted with in the `AndroidManifest.xml`, essentially we mimic the behavior over to our application to make sure that intents designed to go here can be routed to our app instead.
+
+when u do this for the 1st time, our utils dialog will tell us the structure of the token that the app receives. So we know now that our link should look something like this:
+
+```http
+hex://token?authToken=5943c67&type=user&authChallenge=604b4343
+```
+
+We can look at the code for the activity to learn more about how this incoming intent should be handled to get the flag:
+
+So the activity takes the incoming intent and writes it to a URI called `data` and turns each query parameter into a string. Then the application then checks that the incoming `authToken` parameter is correct and will only give us the flag if the `type` parameter is set to `admin`.
+
+```java
+//in my DeepLinkActivity
+if(intent.getAction().equals("android.intent.action.VIEW")){  
+    Uri data = intent.getData();  
+    if (data != null && data.getScheme().equals("hex") && data.getHost().equals("token")) {  
+        Intent newIntent = new Intent();  
+        newIntent.fillIn(intent,Intent.FILL_IN_DATA | Intent.FILL_IN_ACTION | Intent.FILL_IN_CATEGORIES);  
+		newIntent.setClassName("io.hextree.attacksurface","io.hextree.attacksurface.activities.Flag14Activity");  
+        newIntent.setData(Uri.parse(newIntent.getDataString().replace("type=user","type=admin")));  
+        startActivity(newIntent);  
+    }  
+}
+```
+
+We take the incoming intent so long as it matches the specific action we know it will have, then we make a `Uri` called `data` that contains the data from the incoming deeplink intent. We validate that the incoming data fits the `hex` scheme and `token` host and we then create an intent. We can use the [`fillIn()`](https://developer.android.com/reference/android/content/Intent#fillIn%28android.content.Intent,%20int%29) public method to copy the contents of the incoming intent to our `newIntent`. We use the `FILL_IN_DATA` and other similar flags to ensure that the data, action, and categories are all overwritten in the new intent.
 
 
 ## References
