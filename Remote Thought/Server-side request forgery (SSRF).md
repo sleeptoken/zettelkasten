@@ -15,6 +15,18 @@ Essentially this allows an attacker to cause the server-side application to make
 #### Common SSRF attacks
 
 SSRF attacks often exploit trust relationships to escalate an attack from the vulnerable application and perform unauthorized actions. These trust relationships might exist in relation to the server, or in relation to other back-end systems within the same organization.
+#### SSRF attacks against the server 
+
+In an SSRF attack against the server, the attacker causes the application to make an HTTP request back to the server that is hosting the application, via its loopback network interface. This typically involves supplying a URL with a hostname like `127.0.0.1` (a reserved IP address that points to the loopback adapter) or localhost (a commonly used name for the same adapter).
+#### Why Trust Relations exists 
+
+- The access control check might be implemented in a different component that sits in front of the application server. When a connection is made back to the server, the check is bypassed.
+- For disaster recovery purposes, the application might allow administrative access without logging in, to any user coming from the local machine. This provides a way for an administrator to recover the system if they lose their credentials. This assumes that only a fully trusted user would come directly from the server.
+- The administrative interface might listen on a different port number to the main application, and might not be reachable directly by users.
+#### SSRF attacks against other back-end systems
+
+In some cases, the application server is able to interact with back-end systems that are not directly reachable by users. These systems often have non-routable private IP addresses. The back-end systems are normally protected by the network topology, so they often have a weaker security posture. In many cases, internal back-end systems contain sensitive functionality that can be accessed without authentication by anyone who is able to interact with the systems.
+
 
 
 
