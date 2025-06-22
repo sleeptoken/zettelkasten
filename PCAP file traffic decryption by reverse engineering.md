@@ -20,6 +20,13 @@ On running strings on the executable
 - The rest of the strings appear to be debugging log entries except the last two. The purpose of the string `flarebearstare` is not immediately clear. 
 - The last string appears almost like the base64 alphabet `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567891/` with the upper-case and lower-case blocks flipped. It is a common practice for malware authors to use custom Base64 alphabets, so take a mental note of this string for later analysis.
 
+We have some idea about what sender.exe does: it appears to read key data from the file key.txt in the same directory and send the contents over the network.
+
+> [!tip]
+> look at the assembly code, agar nhi samjh raha to ask chatgpt to give pseudocode based on the above disassembly 
+
+looking at the pseudo code, This appears to be a simple key based encryption. The string `flarebearstare` is used as the key
+... further solving is specific to the problem 
 
 
 
