@@ -28,7 +28,5 @@ We have some idea about what sender.exe does: it appears to read key data from t
 looking at the pseudo code, This appears to be a simple key based encryption. The string `flarebearstare` is used as the key
 ... further solving is specific to the problem 
 
-
-
 ### References
 [Flare-On-Challenges/Write-ups/2015/2015solution5.pdf at master · fareedfauzi/Flare-On-Challenges · GitHub](https://github.com/fareedfauzi/Flare-On-Challenges/blob/master/Write-ups/2015/2015solution5.pdf)
