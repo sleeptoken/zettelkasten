@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6f909fe1ee209202",
+        "id": "eca4d36a78940f36",
         "type": "tabs",
         "children": [
           {
-            "id": "37ba001cab4c0270",
+            "id": "0e0d6737a09f0661",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -178,16 +178,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "37ba001cab4c0270",
+  "active": "0e0d6737a09f0661",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Android Deep Links.md",
+    "Remote Thought/Intent Attack surface app.md",
     "Bluetooth reverse engineering.md",
     "Common Intent Vulnerabilities.md",
     "Remote Thought/UPX.md",
     "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
-    "Android Deep Links.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Tools for CTFs.md",
-    "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/SSRF.md",
     "Remote Thought/Building Android POC app.md",
@@ -204,7 +205,6 @@
     "Remote Thought/Image formation from TCP Stream.md",
     "Remote Thought/Python packaged executables.md",
     "Cast.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "Understanding basic crypto.md"
+    "SSRF to SSTI RCE & RabbitMQ Root.md"
   ]
 }

@@ -347,6 +347,8 @@ The program is set up to see if the intent that was used to start the activity h
             }  
 ```
 So we first make an intent to send to the flag activity. We then package our intent as a pending intent and send it with the extra `PENDING`. We need to make sure that the pending intent has the `MUTABLE` flag set - if we don’t then `Flag22Activity` won’t be able to modify the intent before sending it back.
+# Hijacking Deep Link Intents
+
 
 
 ## References
