@@ -27,6 +27,7 @@ In an SSRF attack against the server, the attacker causes the application to mak
 
 In some cases, the application server is able to interact with back-end systems that are not directly reachable by users. These systems often have non-routable private IP addresses. The back-end systems are normally protected by the network topology, so they often have a weaker security posture. In many cases, internal back-end systems contain sensitive functionality that can be accessed without authentication by anyone who is able to interact with the systems.
 
+can try brute forcing IP address or port to the non routable private IP address.
 
 
 
