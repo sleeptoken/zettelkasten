@@ -36,6 +36,46 @@ Of course, just being able to register such an intent filter is not itself a vul
 In the Intent Attack Surface app, we are simulating exactly such a case. The idea is that you want to link your account logged into the browser to the app. (much like how figma logs-in) . To do so, the app opens the website and asks the user to confirm this connection, and the site then uses a deep link to send the intent back to the app. Ideally, you hijack the intent with your own app .
 ## Generic Chrome intent: Scheme
 
+The YouTube chrome site has a button to open it in the app instead. Is this implemented using deep links? And can we now hijack this? Well we cannot. The regular YouTube app just opened.
+
+But why? Let's do a bit more research. If developer options are enabled on your phone and you have it connected with USB
+```
+chrome://inspect/#devices
+```
+you can go to Chrome Inspect on your PC and under devices, you find the connected phone and inspect the mobile Chrome browser.
+
+you get the regular browser developer tools. In the elements tab, we can search for the open app string to see if that maybe is just a link, but the HTML doesn't show anything.
+
+We could probably set a breakpoint at the onclick handler of that button and see if we can figure out what it calls,
+but we can also just search now for the deep link scheme we have seen before, such as V and YouTube.
+
+We stumble over a few instances, but look here. There's a different kind of deep link. Using an intent scheme.
+
+And then in the parameters of that link you have another scheme variable with the VND. YouTube. This is another deep link technique
+
+to perform explicit intents from the browser targeting a specific app. You can see the intent URI does include a package ID, so this intent
+
+explicitly targets the YouTube app. This means hijacking this deep link is almost impossible for a malicious app. Could use the same package ID,
+
+but that really lowers the severity of any kind of issue because that malicious app cannot be uploaded to the Play Store.
+
+Basically, only sideloaded malware could use the same package ID, and if the YouTube app is already installed, you couldn't install the malicious app either.
+
+So hijacking this intent really only happens in a weird edge case, and thus severity for any issue would probably be very, very low. But that doesn't make them useless for hacking. In fact, they are really cool because they increase the intent attack
+
+surface for us even more. Let's have a brief look at the documentation of this feature. It turns out this is actually not an
+
+Android system feature, but a feature of the Chrome browser, which is basically shipping with every Android phone. So it's definitely something you can use.
+
+But keep in mind, it probably only works in Chrome. Here you can see roughly how it works. A link has to start with intent:
+
+an optional host, then a hash intent, followed by several key-value pairs. And at the end you need a; end.
+
+This page also links here the Chrome browser source code that implements the intent URI parsing. It starts here creating a
+
+new intent object. Then, for example, when the URI contains an action-, it will extract the action and set it
+
+on the intent. You can even add extras. And this is the true power of these intent URIs. You can control the action value,
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/android-deep-links)
