@@ -21,9 +21,7 @@ Generally, deep links are interesting because they increase the attack surface o
 - But if there is an issue, it's automatically a lot more critical because you can reach it from a website.
 
 Exposing activities through a deep link could happen accidentally. Also some developers intended the exported activities just to be called by a link which is very limited, but these exposed activities can still be called by other apps as well.
-
 ## Hijacking Deep Link Intents
-
  
 For example an app has many more deep links registered. So what happens if we just register the same scheme in our app?
 
@@ -36,6 +34,8 @@ Now you can click on that link on the website and App Chooser dialog will open a
 Of course, just being able to register such an intent filter is not itself a vulnerability. That's just how the system works. But apps can use them. Insecurely. For example, if they use these deep links to pass secret information from the website to the app like an authentication token or so .
 
 In the Intent Attack Surface app, we are simulating exactly such a case. The idea is that you want to link your account logged into the browser to the app. (much like how figma logs-in) . To do so, the app opens the website and asks the user to confirm this connection, and the site then uses a deep link to send the intent back to the app. Ideally, you hijack the intent with your own app .
+## Generic Chrome intent: Scheme
+
 
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/android-deep-links)

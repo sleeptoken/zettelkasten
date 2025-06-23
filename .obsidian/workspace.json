@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Cryptography.md",
+                "file": "Remote Thought/Intent Attack surface app.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Cryptography"
+              "title": "Intent Attack surface app"
+            }
+          },
+          {
+            "id": "f82303710d5d1267",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Android Deep Links.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Android Deep Links"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Cryptography.md",
+                "file": "Android Deep Links.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cryptography"
+              "title": "Outline of Android Deep Links"
             }
           }
         ],
@@ -178,21 +203,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7307fec246ea2931",
+  "active": "f82303710d5d1267",
   "lastOpenFiles": [
+    "Active Directory Basics.md",
+    "Android Deep Links.md",
+    "Common Intent Vulnerabilities.md",
+    "Bluetooth reverse engineering.md",
+    "Remote Thought/Intent Attack surface app.md",
+    "Remote Thought/Reverse Engineering Android apps.md",
+    "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
+    "Remote Thought/Server-side request forgery (SSRF).md",
+    "Tags/Cryptography.md",
     "Tags/RSA.md",
     "Remote Thought/Mastering Traversal & Log based exploits.md",
-    "Tags/Cryptography.md",
-    "Remote Thought/Server-side request forgery (SSRF).md",
     "Remote Thought/SSRF Misconceptions.md",
-    "Remote Thought/Intent Attack surface app.md",
-    "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
     "Untitled.md",
-    "Android Deep Links.md",
-    "Bluetooth reverse engineering.md",
-    "Common Intent Vulnerabilities.md",
     "Remote Thought/UPX.md",
-    "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Tools for CTFs.md",
     "Remote Thought/Disallow Redirects & PHP Type Juggling.md",
     "Remote Thought/Building Android POC app.md",
@@ -204,7 +230,6 @@
     "Remote Thought/Authentication vulnerabilities.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
     "TLS 1.3 better than TLS 1.2.md",
-    "Template/Full Note.md",
-    "Remote Thought/Dissecting PE Headers.md"
+    "Template/Full Note.md"
   ]
 }
