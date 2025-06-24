@@ -53,7 +53,27 @@ We found a different kind of deep link. Using an intent scheme. This is another 
 So hijacking this intent really only happens in a weird edge case, and thus severity for any issue would probably be very, very low.
 
 Let's have a brief look at the documentation of this feature. It turns out this is actually not an **Android system feature, but a feature of the Chrome browser**, which is basically shipping with every Android phone. So it's definitely something you can use. But keep in mind, it probably only works in Chrome
+## Android App Links
 
+We have seen how easy it is for a malicious app to hijack deep link intents. Thus they should not be used for any sensitive data such as login flows. The Chrome `intent://` scheme solves this by allowing a site to create explicit intents that cannot be intercepted. However there exists another solution.
 
+So called [app links](https://developer.android.com/training/app-links) can be used to cryptographically verify that an app is allowed to handle certain links. This prevents the links from being hijackable by other apps.
+
+So Android introduced app links with an `autoVerify` attribute.
+```xml
+<intent-filter android:autoVerify="true">
+	<action andro....
+</intent-filter>
+```
+ This integrates more deeply into the Google world. If you want to add this link verification, you have to create and publish a so-called digital asset links JSON file on your website and verify the website ownership via the Google Search Console. 
+
+For example, here on YouTube as well. 
+```http
+https://youtube.com/.well-known/assetlinks.json
+```
+This means if YouTube and another app both register itself to handle YouTube links, the operating system can check this file on that domain and see that only, for example, the app with the package name. `com.google.android.youtube` is allowed to handle it, which is also cryptographically verified by checking the specific signing key, 
+- which means the operating system would never consider the malicious app to handle this URL. It will always redirect the user to the apps listed here. 
+
+Now, this is really a great way to kind of protect your app links, but it requires an internet connection. Though. When you click on a link, you probably have internet. And if the real app is not installed, just the malicious app, well, it still could choose the malicious app.
 ### References
 [Intent Attack Surface](https://app.hextree.io/courses/intent-threat-surface/android-deep-links)
