@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "Android Deep Links"
             }
-          },
-          {
-            "id": "1f1f8546495b1f0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Intent Attack surface app"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Android Deep Links.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intent Attack surface app"
+              "title": "Outline of Android Deep Links"
             }
           }
         ],
@@ -203,8 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f1f8546495b1f0c",
+  "active": "8caba6bf2eb549e8",
   "lastOpenFiles": [
+    "Remote Thought/Intent Attack surface app.md",
     "Android Deep Links.md",
     "Understanding basic crypto.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
@@ -220,7 +196,6 @@
     "Tags/Cryptography.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
-    "Remote Thought/Intent Attack surface app.md",
     "Common Intent Vulnerabilities.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/PCAP file traffic decryption by reverse engineering.md",

