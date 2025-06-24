@@ -15,7 +15,4 @@ nth --text <hash.in.text>
 nth --file <hash.file>
 ```
 
-# Bytes and big integers 
-
-> The most common way is to take the ordinal bytes of the message, convert them into hexadecimal, and concatenate. This can be interpreted as a base-16/hexadecimal number, and also represented in base-10/decimal.
 
