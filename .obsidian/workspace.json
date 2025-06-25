@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Sudo cat & JohnTheRipper.md",
+                "file": "Android Permission Overview.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sudo cat & JohnTheRipper"
+              "title": "Android Permission Overview"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Sudo cat & JohnTheRipper.md",
+                "file": "Android Permission Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sudo cat & JohnTheRipper"
+              "title": "Outline of Android Permission Overview"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "ca3a5287aa5f7be5",
   "lastOpenFiles": [
+    "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/RSA.md",
     "Remote Thought/break RSA w public key.md",
     "Android Permission Overview.md",
@@ -204,7 +205,6 @@
     "Repeating Key XOR.md",
     "Tags/Cryptography.md",
     "Common Intent Vulnerabilities.md",
-    "Remote Thought/Reverse Engineering Android apps.md",
-    "Remote Thought/Server-side request forgery (SSRF).md"
+    "Remote Thought/Reverse Engineering Android apps.md"
   ]
 }
