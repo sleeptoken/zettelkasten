@@ -3,7 +3,7 @@
 
 Source: #tryhackme 
 
-Tags: [[RSA]] [[Cryptography]] [[py]] 
+Tags: [[RSA]] [[Cryptography]] [[Python]] 
 
  Let n be a +ve odd integer. Using Fermat's factorization method we can efficiently factorize n into p and q (n = p * q) provided the **difference between p and q is small**.
 

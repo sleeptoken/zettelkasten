@@ -1,7 +1,7 @@
 
 2025-03-25 10:26
 
-Tags: [[py]]
+Tags: [[Python]]
 
 `datamap = eval(input('Provide some data here: '))` means that you actually evaluate the code _before_ you deem it to be unsafe or not. It evaluates the code as soon as the function is called. See also [the dangers of `eval`](http://nedbatchelder.com/blog/201206/eval_really_is_dangerous.html)
 

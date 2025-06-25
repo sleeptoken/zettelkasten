@@ -16,7 +16,7 @@ Before reflecting the user input, using the above php function will replace cert
 using the `sanitizeHtml()` from the `sanitize-html` library. This function removes unsafe elements and attributes. This includes removing script tags, among other elements that could be used for malicious purposes. 
 using the `escapeHtml()` function which aims to escape characters such as `<`, `>`, `&`, `"`, and `'`
 
-[[py]] (Flask)
+[[Python]] (Flask)
 - `request.args.get()` is used to access query string parameters from the request URL.
 - `request.args` contains all the query string parameters in a dictionary-like object
  using the `escape()` function from the `html` module. Note that the `html.escape()` function in Flask is actually an alias for `markupsafe.escape()`. They both come from the Werkzeug library and serve the same purpose: escaping unsafe characters in strings.

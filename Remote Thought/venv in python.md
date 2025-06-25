@@ -1,7 +1,7 @@
 
 2024-09-27 17:31
 
-Tags: [[py]]
+Tags: [[Python]]
 
 whenever you have a Debian based distribution in order to actually protect against mixing packages betwn `apt` and `pip`
 ```python 
