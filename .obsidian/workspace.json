@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3dd6954a4247d511",
+            "id": "ca3a5287aa5f7be5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android Deep Links.md",
+                "file": "Android Permission Overview.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Android Deep Links"
+              "title": "Android Permission Overview"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Deep Links.md",
+                "file": "Android Permission Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Android Deep Links"
+              "title": "Outline of Android Permission Overview"
             }
           }
         ],
@@ -178,14 +178,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3dd6954a4247d511",
+  "active": "ca3a5287aa5f7be5",
   "lastOpenFiles": [
+    "Android Permission Overview.md",
+    "Android Deep Links.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
-    "Android Deep Links.md",
     "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
     "Tags/tar.md",
-    "Untitled.md",
     "Tags/Python.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Intent Attack surface app.md",
