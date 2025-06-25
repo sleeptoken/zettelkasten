@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "zip ",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -179,7 +178,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "873c8b59c17f3f42",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
     "Android Deep Links.md",
     "Remote Thought/Intent Attack surface app.md",
