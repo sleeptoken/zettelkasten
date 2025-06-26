@@ -2,6 +2,8 @@
 2025-06-25 12:22
 
 Source: #android 
+
+There exist several [`protectionLevel`](https://developer.android.com/guide/topics/manifest/permission-element) for permissions
 ## Exported vs. Non-Exported Components
 
 When looking at the threat surface of an app, specifically the activities, the broadcast receivers and services. So far, we only looked at whether they are exported or not. Non-exported activities, for example, cannot be directly started from another app. They are essentially just private activities used by the app internally.
@@ -22,9 +24,12 @@ yes, it might seem useless, but it adds visibility and transparency to what apps
 
 #### Android core source code (permissions)
 
+Also have a look at the Android core [AndroidManifest.xml](https://android.googlesource.com/platform/frameworks/base.git/+/refs/heads/main/core/res/AndroidManifest.xml) for a huge list of default permissions.
 So when a vendor like Google builds their Android image, this file decides how the permissions behave. 
 
 the `android:protectionLevel="normal"`, which means regular apps can get this permission simply by adding a `<user-permission>` tag in their Android  manifest. 
+
+
 
 ### References
 [Android Permissions](https://app.hextree.io/courses/android-permissions/permission-overview)
