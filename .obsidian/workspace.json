@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "241318762af811f8",
+        "id": "5339a6b2139ed679",
         "type": "tabs",
         "children": [
           {
-            "id": "13d7d184688ad7af",
+            "id": "471d42f239ed39b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Flat-file Database.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Flat-file Database"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Remote Thought/Flat-file Database.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Flat-file Database"
             }
           }
         ],
@@ -163,33 +178,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "13d7d184688ad7af",
+  "active": "471d42f239ed39b3",
   "lastOpenFiles": [
+    "Remote Thought/Cryptographic Failures.md",
+    "Remote Thought/Broken Access Control.md",
+    "Remote Thought/Git forensics & pushing to a remote repo.md",
+    "Remote Thought/vim on more(editor) interactive mode.md",
+    "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
+    "Understanding basic crypto.md",
+    "Common Intent Vulnerabilities.md",
+    "Active Directory Basics.md",
+    "Bluetooth reverse engineering.md",
+    "Android Permission Overview.md",
+    "Remote Thought/Android Deep Links.md",
     "Tags/xxd.md",
     "Tags/tar.md",
-    "Android Permission Overview.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/RSA.md",
     "Remote Thought/break RSA w public key.md",
-    "Android Deep Links.md",
-    "Active Directory Basics.md",
-    "Bluetooth reverse engineering.md",
     "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
     "Tags/Python.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Intent Attack surface app.md",
-    "Understanding basic crypto.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Sherlock from hackthebox.md",
     "Web Cache Deception.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
     "USB HID analysis.md",
-    "Regular expression Denial of Service - ReDoS.md",
-    "Underpass htb.md",
-    "Cast.md",
-    "Remote Thought/OSCP resources.md",
-    "Repeating Key XOR.md",
-    "Tags/Cryptography.md",
-    "Common Intent Vulnerabilities.md"
+    "Regular expression Denial of Service - ReDoS.md"
   ]
 }
