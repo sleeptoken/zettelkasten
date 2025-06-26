@@ -4,6 +4,11 @@
 Source: #android 
 
 There exist several [`protectionLevel`](https://developer.android.com/guide/topics/manifest/permission-element) for permissions
+
+> [!quote]
+> Eighty percent of success is showing up.
+> © Woody Allen
+
 ## Exported vs. Non-Exported Components
 
 When looking at the threat surface of an app, specifically the activities, the broadcast receivers and services. So far, we only looked at whether they are exported or not. Non-exported activities, for example, cannot be directly started from another app. They are essentially just private activities used by the app internally.
@@ -28,8 +33,39 @@ Also have a look at the Android core [AndroidManifest.xml](https://android.goog
 So when a vendor like Google builds their Android image, this file decides how the permissions behave. 
 
 the `android:protectionLevel="normal"`, which means regular apps can get this permission simply by adding a `<user-permission>` tag in their Android  manifest. 
+## Dangerous System Permissions
 
+Dangerous means it's a higher risk permission that gives a requesting application access to either private user data, or control over the device that can negatively impact the user. Here is how these permissions work in
 
+practice. Let's say you want to access the user's contacts,
+
+the address book. Then the permission we have to request
+
+is
+
+android.permission.READ_CONTACTS, which is considered a dangerous permission. So let's add it to our Android manifest. In old Android version 5.1,
+
+declaring it like this was already enough. This used to trigger a dialog upon installation of the app, asking the user whether it's okay that the app has access to the contact details or not. But this was changed in Android 6.
+
+Simply requesting the permission in the manifest is not enough anymore. They have to be dynamically requested afterwards as well.
+
+Here in the main activity, we can then check whether a certain permission has been granted with check self permission and we can check if
+
+we have the READ_CONTACTS permission. If we now run the app and look at the logs, we see a -1, which indicates
+
+we are not allowed to read the contacts yet. We have to request it first. So let's call requestPermission with the
+
+list of the permissions we want to get, and that will trigger the dialog asking the user whether the app is
+
+allowed to access the contacts or not. If you now close the app and run the main activity again, you can see in the logs that we now get
+
+a 0 as the return of checkSelfPermission, and that means access was granted. Now theoretically we are allowed to access the contacts. Two fun facts First of all, you cannot request permissions that have not been declared previously in the Android manifest. Again, this helps with transparency.
+
+An app cannot ever request reading the contacts if it was not transparently mentioned before. And the second fun fact is the
+
+requestPermission function actually works with intents. If you set a breakpoint and step into it, you can see this buildRequestPermission
+
+intent function, which is creating an intent with the REQUEST_PERMISSION action targeting the Device's Package Manager app. So you send this intent to the package manager, and the package manager is then responsible for showing the dialog and of course then handles the response by the user.
 
 ### References
 [Android Permissions](https://app.hextree.io/courses/android-permissions/permission-overview)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Flat-file Database.md",
+                "file": "Android Permission Overview.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Flat-file Database"
+              "title": "Android Permission Overview"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Flat-file Database.md",
+                "file": "Android Permission Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Flat-file Database"
+              "title": "Outline of Android Permission Overview"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "471d42f239ed39b3",
   "lastOpenFiles": [
+    "Remote Thought/Flat-file Database.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Broken Access Control.md",
     "Remote Thought/Git forensics & pushing to a remote repo.md",
@@ -204,7 +205,6 @@
     "Sherlock from hackthebox.md",
     "Web Cache Deception.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "USB HID analysis.md",
-    "Regular expression Denial of Service - ReDoS.md"
+    "USB HID analysis.md"
   ]
 }
