@@ -17,6 +17,7 @@ So from the attacker perspective, we can generally ignore them unless we can fin
 This means as a developer, not exporting components is one of the strongest protections you can implement. This is real attack surface reduction. So if it doesn't have to be exported, always set exported to false.
 
 And if you are a developer, it's important that you pay attention to this and review your manifest. Because when you add new features, for example, if you create a broadcast receiver, by default it will be exported. So these mistakes could happen. 
+
 ## Normal System Permissions
 
 If you want to connect to some kind of web API to fetch some data from the internet, your app has to include a tag in the Android manifest, declaring that you want to use the `android.permission.INTERNET`, and maybe `android.permission.ACCESS_NETWORK_STATE`. These are so-called normal-level permissions and are granted automatically when the app is installed. 
@@ -33,6 +34,7 @@ Also have a look at the Android core [AndroidManifest.xml](https://android.goog
 So when a vendor like Google builds their Android image, this file decides how the permissions behave. 
 
 the `android:protectionLevel="normal"`, which means regular apps can get this permission simply by adding a `<user-permission>` tag in their Android  manifest. 
+
 ## Dangerous System Permissions
 
 Dangerous means it's a higher risk permission that gives a requesting application access to either private user data, or control over the device that can negatively impact the user
@@ -55,14 +57,14 @@ if(checkSelfPermission("android.permission.READ_CONTACTS") == -1){
 ```
 and that will trigger the dialog asking the user whether the app is allowed to access the contacts or not. 
 
-If you now open the app and click allow close the app and run the main activity again, you can see in the logs that we now get
-
-a 0 as the return of checkSelfPermission, and that means access was granted. Now theoretically we are allowed to access the contacts. Two fun facts 
-
+If you now open the app and click allow, you can see in the logs that we now get a 0 as the return of `checkSelfPermission`, and that means access was granted. Now theoretically we are allowed to access the contacts. 
 
 > First of all, you cannot request permissions that have not been declared previously in the Android manifest. Again, this helps with transparency. An app cannot ever request reading the contacts if it was not transparently mentioned before.
 
 The `RequestPermission` function actually works with intents. So you send this intent to the package manager, and the package manager is then responsible for showing the dialog and of course then handles the response by the user.
+
+## Security Boundaries of Permissions
+
 
 ### References
 [Android Permissions](https://app.hextree.io/courses/android-permissions/permission-overview)
