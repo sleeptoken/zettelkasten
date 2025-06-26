@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android Permission Overview.md",
+                "file": "Understanding basic crypto.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Android Permission Overview"
+              "title": "Understanding basic crypto"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Permission Overview.md",
+                "file": "Understanding basic crypto.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Android Permission Overview"
+              "title": "Outline of Understanding basic crypto"
             }
           }
         ],
@@ -180,6 +180,9 @@
   },
   "active": "471d42f239ed39b3",
   "lastOpenFiles": [
+    "Active Directory Basics.md",
+    "Bluetooth reverse engineering.md",
+    "Android Permission Overview.md",
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Broken Access Control.md",
@@ -188,9 +191,6 @@
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
     "Understanding basic crypto.md",
     "Common Intent Vulnerabilities.md",
-    "Active Directory Basics.md",
-    "Bluetooth reverse engineering.md",
-    "Android Permission Overview.md",
     "Remote Thought/Android Deep Links.md",
     "Tags/xxd.md",
     "Tags/tar.md",
