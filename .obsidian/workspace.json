@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android Permission Overview.md",
+                "file": "Tags/xxd.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Android Permission Overview"
+              "title": "xxd"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Permission Overview.md",
+                "file": "Tags/xxd.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Android Permission Overview"
+              "title": "Outline of xxd"
             }
           }
         ],
@@ -180,15 +180,16 @@
   },
   "active": "ca3a5287aa5f7be5",
   "lastOpenFiles": [
+    "Tags/tar.md",
+    "Tags/xxd.md",
+    "Android Permission Overview.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/RSA.md",
     "Remote Thought/break RSA w public key.md",
-    "Android Permission Overview.md",
     "Android Deep Links.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
     "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
-    "Tags/tar.md",
     "Tags/Python.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Intent Attack surface app.md",
@@ -204,7 +205,6 @@
     "Remote Thought/OSCP resources.md",
     "Repeating Key XOR.md",
     "Tags/Cryptography.md",
-    "Common Intent Vulnerabilities.md",
-    "Remote Thought/Reverse Engineering Android apps.md"
+    "Common Intent Vulnerabilities.md"
   ]
 }
