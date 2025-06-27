@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Permissions in Practice.md",
+                "file": "Remote Thought/Server-side request forgery (SSRF).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Permissions in Practice"
+              "title": "Server-side request forgery (SSRF)"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Permissions in Practice.md",
+                "file": "Remote Thought/Server-side request forgery (SSRF).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Permissions in Practice"
+              "title": "Outline of Server-side request forgery (SSRF)"
             }
           }
         ],
@@ -180,15 +180,15 @@
   },
   "active": "b07c53eb0385ede1",
   "lastOpenFiles": [
-    "Remote Thought/Android Permission Overview.md",
+    "Active Directory Basics.md",
     "Permissions in Practice.md",
+    "Bluetooth reverse engineering.md",
+    "Remote Thought/Android Permission Overview.md",
     "Tags/Networking.md",
     "Tags/Subnetting.md",
     "Remote Thought/Don't use eval.md",
     "Remote Thought/Regular expression Denial of Service - ReDoS.md",
     "Understanding basic crypto.md",
-    "Active Directory Basics.md",
-    "Bluetooth reverse engineering.md",
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Broken Access Control.md",
