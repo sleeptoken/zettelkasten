@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Regular expression Denial of Service - ReDoS.md",
+                "file": "Android Permission Overview.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Regular expression Denial of Service - ReDoS"
+              "title": "Android Permission Overview"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Regular expression Denial of Service - ReDoS.md",
+                "file": "Android Permission Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Regular expression Denial of Service - ReDoS"
+              "title": "Outline of Android Permission Overview"
             }
           }
         ],
@@ -180,6 +180,8 @@
   },
   "active": "471d42f239ed39b3",
   "lastOpenFiles": [
+    "Remote Thought/Don't use eval.md",
+    "Remote Thought/Regular expression Denial of Service - ReDoS.md",
     "Understanding basic crypto.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
@@ -203,8 +205,6 @@
     "Remote Thought/Intent Attack surface app.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Sherlock from hackthebox.md",
-    "Web Cache Deception.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "USB HID analysis.md"
+    "Web Cache Deception.md"
   ]
 }

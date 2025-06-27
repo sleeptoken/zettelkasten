@@ -7,7 +7,8 @@ Tags: [[Python]]
 
 [`ast.literal_eval`](https://docs.python.org/3/library/ast.html#ast.literal_eval) raises an exception if the input isn't a valid Python datatype, so the code won't be executed if it's not.
 
-Use `ast.literal_eval` whenever you need [`eval`](https://docs.python.org/3/library/functions.html#eval). You shouldn't usually evaluate literal Python statements.
+> [!NOTE]
+> Use `ast.literal_eval` whenever you need [`eval`](https://docs.python.org/3/library/functions.html#eval). You shouldn't usually evaluate literal Python statements.
 
 This isn't 100% correct advice since any bitwise operators (or overloaded operators) will fail. Eg. `ast.literal_eval("1 & 1")` will throw an error but `eval("1 & 1")` will not.
 ### References
