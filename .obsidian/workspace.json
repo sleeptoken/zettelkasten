@@ -11,10 +11,24 @@
             "id": "b07c53eb0385ede1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Permissions in Practice.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Permissions in Practice"
             }
           }
         ]
@@ -138,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Permissions in Practice.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Permissions in Practice"
             }
           }
         ],
@@ -163,9 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "b07c53eb0385ede1",
   "lastOpenFiles": [
     "Remote Thought/Android Permission Overview.md",
+    "Permissions in Practice.md",
     "Tags/Networking.md",
     "Tags/Subnetting.md",
     "Remote Thought/Don't use eval.md",
@@ -189,7 +205,6 @@
     "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
     "Tags/Python.md",
     "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/Intent Attack surface app.md",
-    "Hijacking OAuth flows via Cookie Tossing.md"
+    "Remote Thought/Intent Attack surface app.md"
   ]
 }

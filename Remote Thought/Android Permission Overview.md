@@ -3,6 +3,8 @@
 
 Source: #android 
 
+Tags: [[Permissions]]
+
 There exist several [`protectionLevel`](https://developer.android.com/guide/topics/manifest/permission-element) for permissions
 
 > [!quote]
