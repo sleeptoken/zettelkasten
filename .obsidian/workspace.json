@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Understanding basic crypto.md",
+                "file": "Regular expression Denial of Service - ReDoS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Understanding basic crypto"
+              "title": "Regular expression Denial of Service - ReDoS"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Understanding basic crypto.md",
+                "file": "Regular expression Denial of Service - ReDoS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Understanding basic crypto"
+              "title": "Outline of Regular expression Denial of Service - ReDoS"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "471d42f239ed39b3",
   "lastOpenFiles": [
+    "Understanding basic crypto.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
     "Android Permission Overview.md",
@@ -189,7 +190,6 @@
     "Remote Thought/Git forensics & pushing to a remote repo.md",
     "Remote Thought/vim on more(editor) interactive mode.md",
     "Remote Thought/Daemon Listening on port & burteforcing via shell scripting.md",
-    "Understanding basic crypto.md",
     "Common Intent Vulnerabilities.md",
     "Remote Thought/Android Deep Links.md",
     "Tags/xxd.md",
