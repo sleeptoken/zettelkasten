@@ -65,46 +65,16 @@ The `RequestPermission` function actually works with intents. So you send this i
 
 ## Security Boundaries of Permissions
 
-As you know, for hacking other apps, we usually develop a proof-of-concept app. And so for us, it's important to know
+> [!info]
+> The fewer permissions your attacking app requires, the better.
 
-where are the security boundaries? Can we assume our attacker app has certain permissions? Or should a malicious app by definition
+So generally speaking, you always want to attack upwards. If your app requires a lot less important permissions than your target, then you'll probably have a valid issue.
 
-not request any permissions? This is not super easy to answer as it depends a lot on the target. But generally, there's one
+- Let's do an example. Let's imagine there is a very privileged device managing app that holds INSTALL_PACKAGES permission and thus is allowed to install other apps. 
+- And now this app implements and exports an activity, `InstallAppActivity` that takes an Intent containing a link to an APK, downloads it, and installs it.
+- Now you can develop a malicious attack app without requesting any permissions, and just send such an Intent to that other app. And you can force install an APK that is a vulnerability because your app didn't have the INSTALL PACKAGES permission, but you abused the other app to do it for you. You could call this a [[Privilege Escalation]]
+  
+So when you hunt for exposed components like exported activities or so, and they require your app to have a certain permission, always make sure that you attack upwards. Your app should require permissions that are relatively lower than the permissions exploited in the target app. 
 
-big rule you should keep in mind. The fewer permissions your attacking app requires, the better. I think this becomes super clear once
-
-we think about an extreme example. There exist very privileged permissions an app could theoretically have that basically allows an app to do anything
-
-like manage your whole device. There are even rooted devices with apps having root access. So if your attacking app
-
-requires root to exploit another app, that doesn't make much sense. Root is basically the highest access you can have, so there is no security boundary
-
-that you cross when you attack an app. So generally speaking, you always want to attack upwards. If your app requires a lot less important permissions than your target, then you'll probably have a valid issue. Let's do an example. Let's imagine there is a very
-
-privileged device managing app that holds INSTALL_PACKAGES permission and thus is allowed to install other apps. And now this app implements and exports an
-
-activity, InstallAppActivity that takes an Intent containing a link to an APK, downloads it, and installs it. Now you can develop a malicious attack
-
-app without requesting any permissions, and just send such an Intent to that other app. And you can force install an APK that is
-
-a vulnerability because your app didn't have the INSTALL PACKAGES permission, but you abused the other app to do it for you.
-
-You could call this a privilege escalation, or some people say this is hijacking the INSTALL_PACKAGES permission from the other app.
-
-But honestly, I don't like the word hijack in this context. Now, let's say there's some quirk in this InstallAppActivity and our attacker app, in order to exploit this, now requires relatively privileged permissions like MANAGE_EXTERNAL_STORAGE for itself to be able to fully access the file system.
-
-And in order to get this permission, the user has to intentionally go into the settings to enable it for this app.
-
-So you really cannot assume that your attacker app easily gets this permission. But there's an argument to be made that
-
-INSTALL_PACKAGES is a way worse. Permission. So the permission that you require is a lot less. And so you can argue that this is
-
-probably still a fair requirement. The severity is not as high as it would be if you didn't require this permission.
-
-It's really limiting the impact and the severity. But there's still a significant jump from just file access to installing arbitrary
-
-APKS. So it should be still a valid issue. So when you hunt for exposed components like exported activities or so,
-
-and they require your app to have a certain permission, always make sure that you attack upwards. Your app should require permissions
 ### References
 [Android Permissions](https://app.hextree.io/courses/android-permissions/permission-overview)

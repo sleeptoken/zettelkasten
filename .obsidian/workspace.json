@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5339a6b2139ed679",
+        "id": "f47d490faa87a8c9",
         "type": "tabs",
         "children": [
           {
-            "id": "471d42f239ed39b3",
+            "id": "b07c53eb0385ede1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Android Permission Overview.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Android Permission Overview"
+              "title": "New tab"
             }
           }
         ]
@@ -152,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Permission Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Android Permission Overview"
+              "title": "Outline"
             }
           }
         ],
@@ -178,14 +163,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "471d42f239ed39b3",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
+    "Remote Thought/Android Permission Overview.md",
+    "Tags/Networking.md",
+    "Tags/Subnetting.md",
     "Remote Thought/Don't use eval.md",
     "Remote Thought/Regular expression Denial of Service - ReDoS.md",
     "Understanding basic crypto.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
-    "Android Permission Overview.md",
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Broken Access Control.md",
@@ -203,8 +190,6 @@
     "Tags/Python.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Intent Attack surface app.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
-    "Sherlock from hackthebox.md",
-    "Web Cache Deception.md"
+    "Hijacking OAuth flows via Cookie Tossing.md"
   ]
 }

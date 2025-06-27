@@ -1,7 +1,5 @@
 
 2024-12-25 10:18
-
-Tags: 
 ## IP Addressing and Subnetting
 
 -  IP address -- in its simplest form -- is just a series of `1` and `0` bits (binary or base 2 numbering)  
@@ -63,7 +61,7 @@ Given a subnet mask, you can calculate the _**total number of possible networks
     - Use the _**decimal value**_ of the network mask
     - Or, use the **_number of host bits_** as an exponent
 further listed here - https://notes.benheater.com/link/376#bkmrk-exploring-private-ip
-## **Subnetting**
+## **[[Subnetting]]**
 
 ### Why Do We Subnet? 
 
