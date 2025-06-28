@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f47d490faa87a8c9",
+        "id": "cffecf9ea656c2a6",
         "type": "tabs",
         "children": [
           {
-            "id": "b07c53eb0385ede1",
+            "id": "831fede30daec9c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Permissions in Practice.md",
+                "file": "Remote Thought/Android Deep Links.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Permissions in Practice"
-            }
-          },
-          {
-            "id": "c1da5ea482bdc2ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Android Permission Overview.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Android Permission Overview"
+              "title": "Android Deep Links"
             }
           }
         ]
@@ -176,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Permissions in Practice.md",
+                "file": "Remote Thought/Android Deep Links.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Permissions in Practice"
+              "title": "Outline of Android Deep Links"
             }
           }
         ],
@@ -202,9 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b07c53eb0385ede1",
+  "active": "831fede30daec9c5",
   "lastOpenFiles": [
     "Remote Thought/Android Permission Overview.md",
+    "Remote Thought/Decompiling Android apps.md",
+    "Tags/JNI.md",
     "Permissions in Practice.md",
     "Tags/Permissions.md",
     "Remote Thought/Server-side request forgery (SSRF).md",
@@ -227,8 +205,6 @@
     "Tags/tar.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
     "Tags/RSA.md",
-    "Remote Thought/break RSA w public key.md",
-    "Remote Thought/PCAP file traffic decryption by reverse engineering.md",
-    "Tags/Python.md"
+    "Remote Thought/break RSA w public key.md"
   ]
 }
