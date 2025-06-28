@@ -46,6 +46,8 @@ Some applications block input containing hostnames like 127.0.0.1 and localhost,
 - Obfuscate blocked strings using URL encoding or case variation.
 - Provide a URL that you control, which redirects to the target URL. Try using different redirect codes, as well as different protocols for the target URL. For example, switching from an `http:` to `https:` URL during the redirect has been shown to bypass some anti-SSRF filters.
 
+When double coding use the burp extension - hackvertor 
+- select the text then right click > extension > hackvetor > encode > `url_encode_all` > select the text incl. tags > extension > hackvetor > convert tags .
 
 
 #### [web/loopy](https://ctf.gg/blog/tjctf-2025/beginner-web)
