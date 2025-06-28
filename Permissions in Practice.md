@@ -34,26 +34,38 @@ allows system apps to bind to an application's task service.
 
 1. A first check can always be the [Android core manifest](https://android.googlesource.com/platform/frameworks/base.git/+/refs/heads/main/core/res/AndroidManifest.xml)
 2. Another quick trick for checking is using Android Studio. You can go into the Android manifest of your proof of concept app and try to use that permission. Then Android Studio can show you whether you can get this permission or not,
-	- but you should also test it dynamically on your actual device, because some Android vendors might change something weird with permissions, create their own permissions, and not properly declare them, or simply forget to declare it.
+	- But you should also test it dynamically on your actual device, because some Android vendors might change something weird with permissions, create their own permissions, and not properly declare them, or simply forget to declare it.
+	- So, especially for unique vendor permissions or new system permissions, check how it actually behaves on a running phone. 
 
-So, especially for unique vendor permissions or new system permissions, check how it actually behaves on a running phone. It's not the first time that a system
+#### Cool Weather app case study 
 
-permission turns out to be not enforced, allowing for a malicious app to use the permission and then access some
+Now, besides these system permissions that you declare in your component so That another system application can access your exported component. There's another reason why some developers like to use them. Let's say you develop a weather app that has access to the user's GPS location to show the local weather. 
 
-exported system service or activity. Now, besides these system permissions that you declare in your component so That another system application can
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+```
 
-access your exported component. There's another reason why some developers like to use them. Let's say you develop a weather app
+To do so, the app requests the location permission and the user grants it. Now, what if the app wants to export a service for other apps to read the weather status, and that weather status contains the location?
 
-that has access to the user's GPS location to show the local weather. To do so, the app requests the location
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<service 
+	android:name=".WeatherService"
+	android:exported="true" android:enabled="true" />
+```
 
-permission and the user grants it. Now, what if the app wants to export a service for other apps to read the weather status, and that weather status contains the location? Well, that could be a vulnerability because now a malicious app without GPS
+Well, that could be a vulnerability because now a malicious app without GPS permissions can query the weather app to get indirectly the user's location. 
 
-permissions can query the weather app to get indirectly the user's location. So in order to mitigate this attack, the weather app could add
+So in order to mitigate this attack, the weather app could add the location permission as a requirement to the exported service. 
 
-the location permission as a requirement to the exported service. With that change, only apps that also were granted access
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<service 
+	android:name=".WeatherService"
+	android:exported="true" android:enabled="true" 
+	android:permission="android.permission.ACCESS_FINE_LOCATION"/>
+```
 
-to the location are allowed to use the service to get the weather report, which contains the location details. So always keep an eye out for the
-
-exported functionality that maybe should be locked down with additional permission checks, because that could be a valid security issue.
+With that change, only apps that also were granted access to the location are allowed to use the service to get the weather report, which contains the location details.
 ### References
 [[Android Permission Overview]]
