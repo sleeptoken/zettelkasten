@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/NOSQL.md",
+                "file": "Tags/apktool.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "NOSQL"
+              "title": "apktool"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#andro",
+                "query": "#andro apktool",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/NOSQL.md",
+                "file": "Tags/apktool.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of NOSQL"
+              "title": "Outline of apktool"
             }
           }
         ],
@@ -181,6 +181,7 @@
   },
   "active": "98349dfb03afbcdb",
   "lastOpenFiles": [
+    "Remote Thought/NOSQL.md",
     "Tags/SQL injection.md",
     "Remote Thought/Tracing with Frida.md",
     "Remote Thought/Dynamic Instrumentation.md",
@@ -205,7 +206,6 @@
     "Remote Thought/Flat-file Database.md",
     "Remote Thought/Cryptographic Failures.md",
     "Remote Thought/Broken Access Control.md",
-    "Remote Thought/Git forensics & pushing to a remote repo.md",
-    "Remote Thought/vim on more(editor) interactive mode.md"
+    "Remote Thought/Git forensics & pushing to a remote repo.md"
   ]
 }
