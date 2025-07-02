@@ -67,5 +67,65 @@ So in order to mitigate this attack, the weather app could add the location perm
 ```
 
 With that change, only apps that also were granted access to the location are allowed to use the service to get the weather report, which contains the location details.
+
+## Creating Custom Permissions
+
+So far, we've only seen these official permissions getting declared by this Android core AndroidManifest to protect various areas of the Android system,
+
+but apps can actually create their own custom permissions as well and use the permission levels: normal, dangerous or signature to protect
+
+their exported components such as services and activities. Look at the Termux app because I think it's a perfect example for this.
+
+This is a terminal emulator giving you access to a Linux shell, and of course you can run arbitrary commands in here.
+
+Now, if you look at the manifest of this app, you can see that the app requests some permissions using permissions.
+
+But that's not all. It also contains a permission tag like we have seen the system uses to create these default Android permissions.
+
+This custom permission is called run command and is considered a dangerous permission. If we now look where this permission is involved, we can find an exported service com.termux app-run-command service and from the Termux wiki. We can also learn how to use the
+
+service from our own app to execute commands and think about this. Exposing this kind of functionality could be quite bad, right?
+
+It's remote code execution by design if it wasn't protected with the run command permission. So yes, you can use this Termux
+
+service to execute commands, but you need to have this permission. So let's go ahead and declare that we want to use this
+
+permission in our AndroidManifest. And then in the main activity we can check if our app already has this permission,
+
+and if not, we should request this permission. As you can see, this is exactly the same way how we have requested access
+
+to dangerous system permissions. But this is not a system permission. This is a new custom permission created by the Termux app.
+
+And so if we run this now, we actually get a consent dialog like we have seen with the system permissions. Do we allow our app to execute arbitrary commands within the Termux environment and access files, and this makes all the difference.
+
+Why the exported run command service of the Termux app is not a security issue. It's property protected, and if an app
+
+wants to run a command thanks to the dangerous permission, the system will ask the user whether that is okay or not.
+
+##### Protection Levels
+
+- So far we have only seen dangerous which triggers the special consent dialog. 
+- Normal means that it behaves like the normal system permissions.
+	- You request them in the `AndroidManifest` and they are granted on install. No special consent screen. 
+- Now when you see a permission that is a signature permission, it generally means game over for us as attackers, because you only get this permission if your app is signed with the same key as the app that declared it 
+	- Usually our attacker apps are not signed with the same key, so we cannot get this permission. The reason why apps use signature permission is also pretty obvious.
+	- It's especially used for cases where multiple apps by the same developer interact with each other. So you create a signature permission and they can talk to each other. But an external app cannot reach the same components. 
+	 
+But there's somewhat a typical mistake that can happen. And that is when only one app declares the signature permission. So if the user only installs one of the secondary apps that uses the permission but doesn't declare it, then an attacker app has no problem to declare the same permission and attack the secondary app. So when you encounter a signature permission, check other apps by the same developers, whether they are using the permissions and whether they also declare it in those apps as well.
+
+Now, if you have a very creative hacker mind, you might have wondered about the installation order. Sure, when Termux is installed first
+
+and you install your app later and request this permission, the system will see it's a dangerous permission and prompt the user.
+
+But what if our app was installed before Termux? Let's uninstall Termux again and then declare the permission in our own app
+
+as a normal permission. If we run our app now, we can see that we now have the run command permission
+
+without showing a user dialog. So can we now install Termux and then run arbitrary commands? If we try to do that,
+
+the installation of Termux actually fails. Install failed: duplicate permission. The package Termux attempted to redeclare permission run command, which is already owned by our attack app.
+
+So you cannot easily trick the system that way. This is how the integrity of the permissions is ensured.
+
 ### References
 [[Android Permission Overview]]
