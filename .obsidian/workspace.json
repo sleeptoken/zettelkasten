@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Permissions in Practice.md",
+                "file": "USB HID analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Permissions in Practice"
+              "title": "USB HID analysis"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Permissions in Practice.md",
+                "file": "USB HID analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Permissions in Practice"
+              "title": "Outline of USB HID analysis"
             }
           }
         ],
@@ -180,6 +180,12 @@
   },
   "active": "ca865e035c2b60bb",
   "lastOpenFiles": [
+    "Repeating Key XOR.md",
+    "SSRF to SSTI RCE & RabbitMQ Root.md",
+    "Remote Thought/Common Intent Vulnerabilities.md",
+    "Active Directory Basics.md",
+    "Bluetooth reverse engineering.md",
+    "Permissions in Practice.md",
     "Remote Thought/NOSQL.md",
     "Tags/apktool.md",
     "Tags/SQL injection.md",
@@ -193,18 +199,12 @@
     "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Android Deep Links.md",
     "Remote Thought/Android Permission Overview.md",
-    "Permissions in Practice.md",
     "Tags/Permissions.md",
     "Remote Thought/Server-side request forgery (SSRF).md",
-    "Active Directory Basics.md",
-    "Bluetooth reverse engineering.md",
     "Tags/Networking.md",
     "Tags/Subnetting.md",
     "Remote Thought/Don't use eval.md",
     "Remote Thought/Regular expression Denial of Service - ReDoS.md",
-    "Understanding basic crypto.md",
-    "Remote Thought/Flat-file Database.md",
-    "Remote Thought/Cryptographic Failures.md",
-    "Remote Thought/Broken Access Control.md"
+    "Understanding basic crypto.md"
   ]
 }
