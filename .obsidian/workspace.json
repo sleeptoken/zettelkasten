@@ -178,10 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
-    "Permissions in Practice.md",
+    "Remote Thought/PDF Malware Analysis.md",
     "Broadcast Threat Surface.md",
+    "Permissions in Practice.md",
     "USB HID analysis.md",
     "Repeating Key XOR.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
@@ -204,7 +205,6 @@
     "Tags/Permissions.md",
     "Remote Thought/Server-side request forgery (SSRF).md",
     "Tags/Networking.md",
-    "Tags/Subnetting.md",
-    "Remote Thought/Don't use eval.md"
+    "Tags/Subnetting.md"
   ]
 }

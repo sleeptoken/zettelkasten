@@ -22,7 +22,30 @@ So if we want to look for that threat surface, we can search for that method in 
 
 ## Sending Broadcasts
 
+First, let's prepare the intent.
+```java
+Intent intent = new Intent();
+intent.setAction("de.danoeh.antennapdsp.intent.SP_APPS_QUERY_FEEDS_RESPONSE");
+String[] feedUrls = {"https://media.rss.com/ctbbpodcast/feed.xml"};
+intent.putExtra("feeds",feedUrls);
+sendBroadcast(intent);
+```
 
+And we could, for example, add the excellent Critical Thinking Bug Bounty podcast to it. And that's basically it. 
+- We can now call sendBroadcast with the intent very similar to startActivity that we have seen before, except that startActivity launched the app Ul while this happens silently in the background.
+
+However, if we try this now, nothing appears to happen using the flag debug log resolution,
+```java
+intent.addFlags(Intent.FLAG_DEBUG_LOG_RESOLUTION);
+```
+we can see our intent is matching the broadcast receiver of the podcast app, but we get an error. Background execution not allowed.
+- This is a change that happened in Android 8, which restricts the delivery of implicit broadcasts to apps in order to save battery. But we have an easy way around it.
+	- And that is turning this implicit broadcast without a specific target into an explicit broadcast by specifying exactly the target.
+```java
+intent.setClassName("de.danoeh.antennapod","de.danoeh.antennapod.spa.SPARecceiver);
+```
+
+By doing that, the system is okay to deliver it for us, because it doesn't have to wake up potentially hundreds of apps. It just targets this one app.
 
 
 ### References
