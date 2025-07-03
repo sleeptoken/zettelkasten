@@ -55,8 +55,7 @@
               "title": "Intent Attack surface app"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Intent Attack surface app.md",
+                "file": "Broadcast Threat Surface.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intent Attack surface app"
+              "title": "Outline of Broadcast Threat Surface"
             }
           }
         ],
@@ -203,8 +202,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d15fce7f00807661",
+  "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
+    "Remote Thought/Intent Attack surface app.md",
     "Broadcast Threat Surface.md",
     "Remote Thought/PDF Malware Analysis.md",
     "Permissions in Practice.md",
@@ -224,7 +224,6 @@
     "Remote Thought/Special Android Features.md",
     "Remote Thought/SSL Validation Bypasses.md",
     "Remote Thought/Sudo cat & JohnTheRipper.md",
-    "Remote Thought/Intent Attack surface app.md",
     "Remote Thought/Android Deep Links.md",
     "Remote Thought/Android Permission Overview.md",
     "Tags/Permissions.md",

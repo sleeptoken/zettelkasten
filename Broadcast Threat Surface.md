@@ -42,7 +42,7 @@ we can see our intent is matching the broadcast receiver of the podcast app, but
 - This is a change that happened in Android 8, which restricts the delivery of implicit broadcasts to apps in order to save battery. But we have an easy way around it.
 	- And that is turning this implicit broadcast without a specific target into an explicit broadcast by specifying exactly the target.
 ```java
-intent.setClassName("de.danoeh.antennapod","de.danoeh.antennapod.spa.SPARecceiver);
+intent.setClassName("de.danoeh.antennapod","de.danoeh.antennapod.spa.SPARecceiver");
 ```
 
 By doing that, the system is okay to deliver it for us, because it doesn't have to wake up potentially hundreds of apps. It just targets this one app.
@@ -50,3 +50,4 @@ By doing that, the system is okay to deliver it for us, because it doesn't have 
 
 ### References
 [Broadcast Receivers](https://app.hextree.io/courses/broadcast-receivers/broadcast-threat-surface)
+https://gaberoy.zip/posts/android-broadcast/android-broadcast/#what-is-a-broadcast-receiver 
