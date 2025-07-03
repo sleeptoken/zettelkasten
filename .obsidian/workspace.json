@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ca865e035c2b60bb",
+            "id": "3db1b6c7de87fbb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "USB HID analysis.md",
+                "file": "Broadcast Threat Surface.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "USB HID analysis"
+              "title": "Broadcast Threat Surface"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "USB HID analysis.md",
+                "file": "Broadcast Threat Surface.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of USB HID analysis"
+              "title": "Outline of Broadcast Threat Surface"
             }
           }
         ],
@@ -178,14 +178,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca865e035c2b60bb",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
+    "Permissions in Practice.md",
+    "Broadcast Threat Surface.md",
+    "USB HID analysis.md",
     "Repeating Key XOR.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Remote Thought/Common Intent Vulnerabilities.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
-    "Permissions in Practice.md",
     "Remote Thought/NOSQL.md",
     "Tags/apktool.md",
     "Tags/SQL injection.md",
@@ -203,8 +205,6 @@
     "Remote Thought/Server-side request forgery (SSRF).md",
     "Tags/Networking.md",
     "Tags/Subnetting.md",
-    "Remote Thought/Don't use eval.md",
-    "Remote Thought/Regular expression Denial of Service - ReDoS.md",
-    "Understanding basic crypto.md"
+    "Remote Thought/Don't use eval.md"
   ]
 }
