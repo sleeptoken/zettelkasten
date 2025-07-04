@@ -50,7 +50,26 @@ By doing that, the system is okay to deliver it for us, because it doesn't have 
 
 ## System Event Broadcasts
 
+One of the original ideas behind the broadcast receivers is for the system to broadcast events to all interested apps. 
+- for example, one of the common ones used is the `BOOT_COMPLETED` broadcast, which is sent out when the phone is started. Your app can register it and execute some code in the receiver when the phone is started. Kind of like an auto start. 
 
+Now a big question is these are system broadcasts. Is there still a threat surface if they do something bad with an intent? Can an attacker mess with it? Let's try it. First of all, it should be obvious that we cannot just send an implicit broadcast with this action to all apps.
+
+We are not the system, and when we try it, we get a security exception. Permission denial not allowed to send
+
+the broadcast action power connected. And even when turning that into an explicit intent, by directly specifying the target app and the class,
+
+the system will still not allow it. This is a protected broadcast,
+
+but let's remove the action or use a
+
+different action string and still target exactly this class and then try again. We don't get an error, and if we look at
+
+the logs of the podcast app, we can see we get the log output not charging anymore, but the user allows auto download.
+
+This means we cannot get into the if case here. We cannot set the protected system broadcast action value. But the else case is not specifically
+
+checking the action, so we can still reach it with our explicit broadcast and invoke this broadcast receiver. So keep that in mind.
 ### References
 [Broadcast Receivers](https://app.hextree.io/courses/broadcast-receivers/broadcast-threat-surface)
 https://gaberoy.zip/posts/android-broadcast/android-broadcast/#what-is-a-broadcast-receiver 
