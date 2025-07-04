@@ -48,6 +48,8 @@ intent.setClassName("de.danoeh.antennapod","de.danoeh.antennapod.spa.SPARecceive
 
 By doing that, the system is okay to deliver it for us, because it doesn't have to wake up potentially hundreds of apps. It just targets this one app.
 
+## System Event Broadcasts
+
 
 ### References
 [Broadcast Receivers](https://app.hextree.io/courses/broadcast-receivers/broadcast-threat-surface)
