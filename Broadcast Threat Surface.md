@@ -38,6 +38,7 @@ However, if we try this now, nothing appears to happen using the flag debug log 
 ```java
 intent.addFlags(Intent.FLAG_DEBUG_LOG_RESOLUTION);
 ```
+
 we can see our intent is matching the broadcast receiver of the podcast app, but we get an error. Background execution not allowed.
 - This is a change that happened in Android 8, which restricts the delivery of implicit broadcasts to apps in order to save battery. But we have an easy way around it.
 	- And that is turning this implicit broadcast without a specific target into an explicit broadcast by specifying exactly the target.
