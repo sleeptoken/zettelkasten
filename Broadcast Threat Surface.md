@@ -82,14 +82,14 @@ sendBroadcast(intent);
 and if we look at the logs of the podcast app, we can see we get the log output not charging anymore, but the user allows auto download.
 ```java
 if ("android.intent.action.ACTION_POWER_CONNECTED".equals(action)) {
-            Log.d(TAG, "charging, starting auto-download");
-            AutoDownloadManager.getInstance().autodownloadUndownloadedItems(context);
-        } else if (!UserPreferences.isEnableAutodownloadOnBattery()) {
-            Log.d(TAG, "not charging anymore, canceling auto-download");
-            DownloadServiceInterface.get().cancelAll(context);
-        } else {
-            Log.d(TAG, "not charging anymore, but the user allows auto-download when on battery so we'll keep going");
-        }
+    Log.d(TAG, "charging, starting auto-download");
+    AutoDownloadManager.getInstance().autodownloadUndownloadedItems(context);
+} else if (!UserPreferences.isEnableAutodownloadOnBattery()) {
+    Log.d(TAG, "not charging anymore, canceling auto-download");
+    DownloadServiceInterface.get().cancelAll(context);
+} else {
+    Log.d(TAG, "not charging anymore, but the user allows auto-download when on battery so we'll keep going");
+}
 ```
 This means we cannot get into the if case here. We cannot set the protected system broadcast action value. But the else case is not specifically checking the action, so we can still reach it with our explicit broadcast and invoke this broadcast receiver.
 

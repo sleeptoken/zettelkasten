@@ -80,3 +80,7 @@ nmap -sU -p 161 --script=snmp-processes <Target IP Address>
 | Implement the Group Policy security option called "Additional restrictions for anonymous connections" |
 
 ### References
+SNMP - https://blog.pentesteracademy.com/snmp-exploitation-with-metasploit-and-snmpset-920de3fc2c50
+
+[Offensive Cybersecurity | 0xBEN | Notes](https://notes.benheater.com/shelves/offensive-cybersecurity)
+[Posts · HYH's Blog](https://www.hyhforever.top/posts/) 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Broadcast Threat Surface.md",
+                "file": "Remote Thought/Freq Analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Broadcast Threat Surface"
+              "title": "Freq Analysis"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Broadcast Threat Surface.md",
+                "file": "Remote Thought/Freq Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Broadcast Threat Surface"
+              "title": "Outline of Freq Analysis"
             }
           }
         ],
@@ -180,31 +180,31 @@
   },
   "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
-    "Remote Thought/Intent Attack surface app.md",
-    "Broadcast Threat Surface.md",
-    "Remote Thought/PDF Malware Analysis.md",
-    "Permissions in Practice.md",
+    "Tags/scp.md",
+    "Remote Thought/Freq Analysis.md",
+    "Tags/File transfer.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "AEM Misconfig.md",
+    "Frameworks & basics.md",
+    "Apache velocity cve.md",
+    "Cast.md",
+    "Types of API.md",
+    "Sherlock from hackthebox.md",
+    "Active Directory Basics.md",
+    "Remote Thought/Enumeration.md",
+    "Tags/SNMP (161 UDP port).md",
+    "Underpass htb.md",
+    "TLS 1.3 better than TLS 1.2.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Web Cache Deception.md",
     "USB HID analysis.md",
     "Repeating Key XOR.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "Remote Thought/Common Intent Vulnerabilities.md",
-    "Active Directory Basics.md",
+    "Understanding basic crypto.md",
     "Bluetooth reverse engineering.md",
-    "Remote Thought/NOSQL.md",
-    "Tags/apktool.md",
-    "Tags/SQL injection.md",
-    "Remote Thought/Tracing with Frida.md",
-    "Remote Thought/Dynamic Instrumentation.md",
-    "Remote Thought/Decompiling Android apps.md",
-    "Tags/JNI.md",
-    "Remote Thought/Special Android Features.md",
-    "Remote Thought/SSL Validation Bypasses.md",
-    "Remote Thought/Sudo cat & JohnTheRipper.md",
-    "Remote Thought/Android Deep Links.md",
-    "Remote Thought/Android Permission Overview.md",
-    "Tags/Permissions.md",
-    "Remote Thought/Server-side request forgery (SSRF).md",
-    "Tags/Networking.md",
-    "Tags/Subnetting.md"
+    "Permissions in Practice.md",
+    "Broadcast Threat Surface.md",
+    "Remote Thought/Intent Attack surface app.md",
+    "Remote Thought/PDF Malware Analysis.md"
   ]
 }

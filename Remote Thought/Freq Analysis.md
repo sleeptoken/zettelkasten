@@ -9,7 +9,9 @@ Tags: [[linux]] [[Cryptography]]
 
 create a temp dir on the ssh'ed machine
 use [[scp]](secure copy) command in Linux system to [[File transfer]] between servers in a secure way.
-`scp -P port source_file user@hostname:destination_file`
+```sh
+scp -P port source_file user@hostname:destination_file
+```
 here source file is the file you wanna transfer and destination file is the directory path where you wanna transfer the file to 
 
 in frequency analysis along with single letter occurrence also check trigrams (3 letter occurrence - "the" in English)

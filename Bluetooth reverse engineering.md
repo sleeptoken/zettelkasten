@@ -3,8 +3,6 @@
 
 Source: #hardware 
 
-Tags: 
-
 Enable Bluetooth HCI snoop log from the Android Developer settings. HCI stands for host controller interface. it is essentially the communication between our host, which is android and our controller, which is the actual Bluetooth chip in the phone and vice versa. 
 - This essentially creates a packet capture for us of all Bluetooth communication that was going on. 
 ### Loading the HCI snoop log in Wireshark
