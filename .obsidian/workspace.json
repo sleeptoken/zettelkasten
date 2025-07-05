@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Freq Analysis.md",
+                "file": "Tags/Networking.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Freq Analysis"
+              "title": "Networking"
             }
           }
         ]
@@ -50,7 +50,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Freq Analysis.md",
+                "file": "Tags/Networking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Freq Analysis"
+              "title": "Outline of Networking"
             }
           }
         ],
@@ -178,33 +178,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3db1b6c7de87fbb1",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
-    "Tags/scp.md",
-    "Remote Thought/Freq Analysis.md",
-    "Tags/File transfer.md",
+    "Remote Thought/crawling a website.md",
     "Exploiting Chrome Remote Debugger.md",
+    "Web Cache Deception.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Sherlock from hackthebox.md",
+    "Repeating Key XOR.md",
+    "USB HID analysis.md",
+    "Active Directory Basics.md",
+    "Understanding basic crypto.md",
+    "Broadcast Threat Surface.md",
+    "Bluetooth reverse engineering.md",
+    "Remote Thought/Android Permission Overview.md",
+    "Remote Thought/Server-side request forgery (SSRF).md",
+    "Remote Thought/Tracing with Frida.md",
+    "Remote Thought/Freq Analysis.md",
+    "Tags/scp.md",
+    "Tags/File transfer.md",
     "AEM Misconfig.md",
     "Frameworks & basics.md",
     "Apache velocity cve.md",
     "Cast.md",
     "Types of API.md",
-    "Sherlock from hackthebox.md",
-    "Active Directory Basics.md",
     "Remote Thought/Enumeration.md",
     "Tags/SNMP (161 UDP port).md",
     "Underpass htb.md",
-    "TLS 1.3 better than TLS 1.2.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
-    "Web Cache Deception.md",
-    "USB HID analysis.md",
-    "Repeating Key XOR.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "Understanding basic crypto.md",
-    "Bluetooth reverse engineering.md",
-    "Permissions in Practice.md",
-    "Broadcast Threat Surface.md",
-    "Remote Thought/Intent Attack surface app.md",
-    "Remote Thought/PDF Malware Analysis.md"
+    "TLS 1.3 better than TLS 1.2.md"
   ]
 }
