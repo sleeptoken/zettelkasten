@@ -9,6 +9,19 @@ Source: #Boot2root
 After obtaining a shell, we retrieved the **Erlang cookie**, which allowed us to enumerate the **RabbitMQ** instance and discover the password for the **root** user
 # Real deal 
 
+### Enum 
+
+There are four open ports:
+
+- **22** (`SSH`)
+- **80** (`HTTP`)
+- **4369** (`EPMD`)
+- **25672** (`Erlang Distribution`)
+
+On port 80 we are greeted w a login page 
+
+ 
+
 
 Jinja [[SSTI]] 
 ```json

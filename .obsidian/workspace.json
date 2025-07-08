@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Networking.md",
+                "file": "SSRF to SSTI RCE & RabbitMQ Root.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Networking"
+              "title": "SSRF to SSTI RCE & RabbitMQ Root"
             }
           }
         ]
@@ -50,7 +50,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Networking.md",
+                "file": "SSRF to SSTI RCE & RabbitMQ Root.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Networking"
+              "title": "Outline of SSRF to SSTI RCE & RabbitMQ Root"
             }
           }
         ],
@@ -178,8 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
+    "Bluetooth reverse engineering.md",
+    "Permissions in Practice.md",
+    "Broadcast Threat Surface.md",
+    "Tags/Networking.md",
     "Remote Thought/crawling a website.md",
     "Exploiting Chrome Remote Debugger.md",
     "Web Cache Deception.md",
@@ -189,8 +193,6 @@
     "USB HID analysis.md",
     "Active Directory Basics.md",
     "Understanding basic crypto.md",
-    "Broadcast Threat Surface.md",
-    "Bluetooth reverse engineering.md",
     "Remote Thought/Android Permission Overview.md",
     "Remote Thought/Server-side request forgery (SSRF).md",
     "Remote Thought/Tracing with Frida.md",
@@ -203,8 +205,6 @@
     "Cast.md",
     "Types of API.md",
     "Remote Thought/Enumeration.md",
-    "Tags/SNMP (161 UDP port).md",
-    "Underpass htb.md",
-    "TLS 1.3 better than TLS 1.2.md"
+    "Tags/SNMP (161 UDP port).md"
   ]
 }
