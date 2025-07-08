@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SSRF to SSTI RCE & RabbitMQ Root.md",
+                "file": "Bluetooth reverse engineering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SSRF to SSTI RCE & RabbitMQ Root"
+              "title": "Bluetooth reverse engineering"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SSRF to SSTI RCE & RabbitMQ Root.md",
+                "file": "Bluetooth reverse engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SSRF to SSTI RCE & RabbitMQ Root"
+              "title": "Outline of Bluetooth reverse engineering"
             }
           }
         ],
@@ -180,9 +180,10 @@
   },
   "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
-    "Bluetooth reverse engineering.md",
     "Permissions in Practice.md",
     "Broadcast Threat Surface.md",
+    "SSRF to SSTI RCE & RabbitMQ Root.md",
+    "Bluetooth reverse engineering.md",
     "Tags/Networking.md",
     "Remote Thought/crawling a website.md",
     "Exploiting Chrome Remote Debugger.md",
@@ -204,7 +205,6 @@
     "Apache velocity cve.md",
     "Cast.md",
     "Types of API.md",
-    "Remote Thought/Enumeration.md",
-    "Tags/SNMP (161 UDP port).md"
+    "Remote Thought/Enumeration.md"
   ]
 }

@@ -15,7 +15,12 @@ adb bugreport
 after extracting navigate to `FS-> data -> log -> bt` to find `btsnoop_hci.log`
 
 - This isn't a text log instead it's a binary log containing full packet capture
+### Lab
 
+While reversing the hexlock app, we were understanding parts and renaming the variables and function.
+there we stumble across 2 APIs.
+1. API that takes username and password as json and returns an ID
+2. API that return bluetooth ID and takes the above returned ID as a parameter
 
 
 ### References
