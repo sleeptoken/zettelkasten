@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "Bluetooth reverse engineering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Privilege Escalation"
+              "title": "Bluetooth reverse engineering"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Privilege Escalation.md",
+                "file": "Bluetooth reverse engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Privilege Escalation"
+              "title": "Outline of Bluetooth reverse engineering"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
+    "Remote Thought/Privilege Escalation.md",
     "Tags/c.md",
     "Tags/curl.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
@@ -204,7 +205,6 @@
     "USB HID analysis.md",
     "Active Directory Basics.md",
     "Understanding basic crypto.md",
-    "Remote Thought/Android Permission Overview.md",
-    "Remote Thought/Server-side request forgery (SSRF).md"
+    "Remote Thought/Android Permission Overview.md"
   ]
 }

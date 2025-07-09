@@ -7,7 +7,7 @@ Enable Bluetooth HCI snoop log from the Android Developer settings. HCI stands f
 - This essentially creates a packet capture for us of all Bluetooth communication that was going on. 
 ### Loading the HCI snoop log in Wireshark
 
-on modern android we couldn't just adb pull these files.
+on modern android we couldn't just [[Android Debug Bridge]] pull these files.
 use the following to generate a zip file, this will take a while.
 ```powershell 
 adb bugreport
@@ -23,5 +23,16 @@ there we stumble across 2 APIs.
 2. API that return bluetooth ID and takes the above returned ID as a parameter
 
 In order to hit those API's use [[curl]] 
+```sh
+curl -d '{"username":"stacksmash", "password":"test12"}' http://hexlock.hexoak.com:5001/user/locks -H 'Content-Type: application/json'
+```
+above command returns an array `[305,400]`
+we use this to hit the `getbyid` API.
+```sh
+curl http://hexlock.hexoak.com:5001/padlocks/get-by-id/305
+```
+this returns a json object with `bluetooth_mac`, here we have the IDOR vulnerability, as we can iterate over the last `305` parameter and the API returns different `Bluetooth_mac` because of lack of authentication.
+
+
 ### References
 [hextree.io](https://app.hextree.io/courses/android-bluetooth-reversing/bluetooth-basics)
