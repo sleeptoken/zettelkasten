@@ -22,6 +22,6 @@ there we stumble across 2 APIs.
 1. API that takes username and password as json and returns an ID
 2. API that return bluetooth ID and takes the above returned ID as a parameter
 
-
+In order to hit those API's use [[curl]] 
 ### References
 [hextree.io](https://app.hextree.io/courses/android-bluetooth-reversing/bluetooth-basics)

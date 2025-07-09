@@ -33,7 +33,7 @@ WORKDIR /
 # Create helloworld.txt
 RUN touch helloworld.txt
 ```
- don’t expect a command to be there from the start (even commands like _curl_, _ping_, etc., may need to be installed.)
+ don’t expect a command to be there from the start (even commands like [[curl]], _ping_, etc., may need to be installed.)
 ### Building
 
 `docker build -t helloworld .` 

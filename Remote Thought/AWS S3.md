@@ -20,7 +20,7 @@ root@kali ~# aws s3 ls s3://a700de6aeab6ef373e7d
 2017-09-18 12:16:31         35 flag.txt
 ```
 
-Visit either style URL, get the flag.
+Visit either style URL, get the flag via [[curl]]
 ```
 root@kali ~# curl https://s3.amazonaws.com/a700de6aeab6ef373e7d/flag.txt
 

