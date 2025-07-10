@@ -31,7 +31,8 @@ we use this to hit the `getbyid` API.
 ```sh
 curl http://hexlock.hexoak.com:5001/padlocks/get-by-id/305
 ```
-this returns a json object with `bluetooth_mac`, here we have the IDOR vulnerability, as we can iterate over the last `305` parameter and the API returns different `Bluetooth_mac` because of lack of authentication.
+this returns a json object with `bluetooth_mac`, here we have the [[IDOR]] vulnerability, as we can iterate over the last `305` parameter and the API returns different `Bluetooth_mac` because of lack of authentication.
+
 
 
 ### References
