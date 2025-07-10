@@ -35,8 +35,14 @@ this returns a json object with `bluetooth_mac`, here we have the [[IDOR]] vulne
 
 - see how the lock data is actually used in the app.
 
-> sometimes the name of the class has been obfuscated but the` log messages `will give the actual class name in the original source code. 
+> Log messages are our biggest friend when reverse-engineering - They often contain original class names and information that helps us understand what a method or class is doing.
 
 in the source code we can see lot of log messages have `BLELOCK` so we can assume that this class is `BLELOCK`, sometimes the compiler will inline other classes, in those cases we might see multiple different tags in the same class
+
+
+
+
+
+
 ### References
 [hextree.io](https://app.hextree.io/courses/android-bluetooth-reversing/bluetooth-basics)
