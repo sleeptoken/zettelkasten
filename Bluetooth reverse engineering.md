@@ -41,7 +41,7 @@ in the source code we can see lot of log messages have `BLELOCK` so we can assum
 
 # About Bluetooth
 
-Bluetooth consists of a lot of different and big standards, and so this will be very simplified and just be enough to get started with reversing our application. Now, we have to split Bluetooth into essentially two categories
+Bluetooth consists of a lot of different and big standards, check out the [Wikipedia](https://en.wikipedia.org/wiki/Bluetooth) entry, which gives a great overview of all the different protocols that are involved. Now, we have to split Bluetooth into essentially two categories
 1. Classic Bluetooth 
 2. Bluetooth low energy.
 ### Classic Bluetooth
@@ -50,7 +50,7 @@ Now, classic Bluetooth is nowadays mainly used for headphones and speakers, and 
 ### Bluetooth low energy
 
 - Or BLE is very focused on low energy consumption. And so you can find devices that can run month or even years on a single battery charge using Bluetooth Low energy.
-- BLE is also focused on a very fast connection setup. 
+- BLE is also focused on a very fast connection setup & we mostly interact with services & characteristics though a device might also use more low-level communication based on L2CAP.
 - Now, obviously, low power consumption also comes with a couple of drawbacks, and so BLE in general has a pretty low bandwidth, and so it's not really suitable for high bandwidth applications such as audio.
 ## Gatt (Generic Attribute Profile)
 
@@ -59,11 +59,10 @@ Now, almost all BLE devices use something called the `Generic Attribute Profile`
 - our phone would ask the fitness tracker, Hey, what services do you provide?
 - the fitness tracker would then reply with, Hey, I have a service for heart rate and I have a service for a running data.
 
-There's a huge list of predefined services that can be provided by A BLE device, but you could also create a custom one. Each of the predefined services has a unique `UUID` assigned to it. This will be fairly important later on
-
-as we continue reversing the Bluetooth part.
+There's a huge list of predefined services that can be provided by A BLE device, but you could also create a custom one. Each of the predefined services has a unique `UUID` assigned to it. You can find the [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/) document
 
 Now each service can expose so-called characteristics. Characteristics are essentially attributes that we can read and or write to, and we can also get notifications for when they change. 
+
 In the case of the heart rate service, we would have 
 - a characteristic for giving us the current heart rate,
 - a characteristic for reading out the maximum heart rate,
