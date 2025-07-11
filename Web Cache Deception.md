@@ -128,6 +128,29 @@ Delimiters specify boundaries between different elements in URLs.
 
 Consider these requests to an origin server running the Ruby on Rails framework, which uses `.` as a delimiter to specify the response format:
 
+Encoded characters may also sometimes be used as delimiters. For example, consider the request `/profile%00foo.js`:
+- The `OpenLiteSpeed` server uses the encoded null `%00` character as a delimiter. An origin server that uses `OpenLiteSpeed` would therefore interpret the path as `/profile`.
+- Most other frameworks respond with an error if `%00` is in the URL. However, if the cache uses `Akamai` or `Fastly`, it would interpret `%00` and everything after it as the path.
+
+#### Exploiting delimiter discrepancies
+
+You may be able to use a delimiter discrepancy to add a static extension to the path that is viewed by the cache, but not the origin server. To do this, you'll need to identify a character that is used as a delimiter by the origin server but not the cache.
+
+Firstly, find characters that are used as delimiters by the origin server. Start this process by adding an arbitrary string to the URL of your target endpoint.
+
+> [!NOTE]
+> If the response is identical to the original response, this indicates that the request is being redirected. You'll need to choose a different endpoint to test.
+
+add a possible delimiter character between the original path and the arbitrary string, for example `/settings/users/list;aaa`:
+	- If the response is identical to the base response, this indicates that the `;` character is used as a delimiter and the origin server interprets the path as `/settings/users/list`.
+	- If it matches the response to the path with the arbitrary string, this indicates that the `;` character isn't used as a delimiter and the origin server interprets the path as `/settings/users/list;aaa` .
+
+Once you've identified delimiters that are used by the origin server, test whether they're also used by the cache. To do this, add a static extension to the end of the path. If the response is cached, this indicates:
+	- That the cache doesn't use the delimiter and interprets the full URL path with the static extension.
+	- That there is a cache rule to store responses for requests ending in `.js`. 
+
+[list of potential delimiter characters](http://portswigger.net/web-security/web-cache-deception/wcd-lab-delimiter-list )
+
 
 
 ### References
