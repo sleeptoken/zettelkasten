@@ -151,6 +151,20 @@ Once you've identified delimiters that are used by the origin server, test wheth
 
 [list of potential delimiter characters](http://portswigger.net/web-security/web-cache-deception/wcd-lab-delimiter-list )
 
+ For example, consider the payload /`settings/users/list;aaa.js.` The origin server uses `;` as a delimiter:
+
+	- The cache interprets the path as: /settings/users/list;aaa.js
+	- The origin server interprets the path as: /settings/users/list
+The origin server returns the dynamic profile information, which is stored in the cache.
+
+> [!tip]
+> Some delimiter characters may be processed by the victim's browser before it forwards the request to the cache. This means that some delimiters can't be used in an exploit. For example, browsers URL-encode characters like {, }, <, and >, and use # to truncate the path.
+> 
+> If the cache or origin server decodes these characters, it may be possible to use an encoded version in an exploit.
+
+##### Lab
+
+
 
 
 ### References
