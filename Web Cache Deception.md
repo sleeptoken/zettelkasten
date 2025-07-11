@@ -108,8 +108,20 @@ Caches may have rules based on specific static extensions. Try a range of extens
 > 
 > Burp Scanner automatically detects web cache deception vulnerabilities that are caused by path mapping discrepancies during audits. You can also use the [Web Cache Deception Scanner](https://portswigger.net/bappstore/7c1ca94a61474d9e897d307c858d52f0) BApp to detect misconfigured web caches.
 #### Lab
+##### Identify a path mapping discrepancy
 
+- Go to the Repeater tab. Add an arbitrary segment to the base path, for example change the path to `/my-account/abc`.
+- Send the request. Notice that you still receive a response containing your API key. This indicates that the origin server abstracts the URL path to `/my-account`.
+- Add a static extension to the URL path, for example `/my-account/abc.js`.
+- Send the request. Notice that the response contains the `X-Cache: miss` and `Cache-Control: max-age=30` headers.
+	- The `X-Cache: miss` header indicates that this response wasn't served from the cache.
+	- The `Cache-Control: max-age=30` header suggests that if the response has been cached, it should be stored for 30 seconds.
+- Resend the request within 30 seconds. Notice that the value of the X-Cache header changes to hit. This shows that it was served from the cache. From this, we can infer that the cache interprets the URL path as `/my-account/abc.js` and has a cache rule based on the `.js` static extension. You can use this payload for an exploit.
 
+### Delimiter discrepancies
+
+Delimiters specify boundaries between different elements in URLs. 
+- The use of characters and strings as delimiters is generally standardized. For example, ? is generally used to separate the URL path from the query string. However, as the URI RFC is quite permissive, variations still occur between different frameworks or technologies.
 
 ### References
 [Web cache deception | Web Security Academy](https://portswigger.net/web-security/web-cache-deception)
