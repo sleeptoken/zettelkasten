@@ -89,8 +89,6 @@ Discrepancies in how the cache and origin server map the URL path to resources c
 - An origin server using REST-style URL mapping may interpret this as a request for the `/user/123/profile` endpoint and returns the profile information for user `123`, ignoring `wcd.css` as a non-significant parameter.
 - A cache that uses traditional URL mapping may view this as a request for a file named `wcd.css` located in the `/profile` directory under `/user/123`. It interprets the URL path as `/user/123/profile/wcd.css`. If the cache is configured to store responses for requests where the path ends in `.css`, it would cache and serve the profile information as if it were a CSS file.
 
-	Concept similar to [[HTTP Request Smuggling]]
-
 ### Exploiting path mapping discrepancies
 
 To test how the origin server maps the URL path to resources, add an arbitrary path segment to the URL of your target endpoint. If the response still contains the same sensitive data as the base response, it indicates that the origin server abstracts the URL path and ignores the added segment. For example, this is the case if modifying `/api/orders/123` to `/api/orders/123/foo` still returns order inform2ation.
@@ -121,7 +119,16 @@ Caches may have rules based on specific static extensions. Try a range of extens
 ### Delimiter discrepancies
 
 Delimiters specify boundaries between different elements in URLs. 
-- The use of characters and strings as delimiters is generally standardized. For example, ? is generally used to separate the URL path from the query string. However, as the URI RFC is quite permissive, variations still occur between different frameworks or technologies.
+- The use of characters and strings as delimiters is generally standardized. For example, `?` is generally used to separate the URL path from the query string. However, as the URI RFC is quite permissive, variations still occur between different frameworks or technologies.
+
+> Discrepancies in how the cache and origin server use characters and strings as delimiters can result in web cache deception vulnerabilities.    Concept similar to [[HTTP Request Smuggling]]
+
+- The [[Java]] Spring framework uses the `;` character to add parameters known as matrix variables. An origin server that uses Java Spring would therefore interpret `;` as a delimiter. It truncates the path after `/profile` and returns profile information.
+- Most other frameworks don't use `;` as a delimiter. Therefore, a cache that doesn't use Java Spring is likely to interpret `;` and everything after it as part of the path. If the cache has a rule to store responses for requests ending in `.css`, it might cache and serve the profile information as if it were a CSS file.
+
+Consider these requests to an origin server running the Ruby on Rails framework, which uses `.` as a delimiter to specify the response format:
+
+
 
 ### References
 [Web cache deception | Web Security Academy](https://portswigger.net/web-security/web-cache-deception)
