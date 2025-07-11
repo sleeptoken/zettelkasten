@@ -180,10 +180,11 @@
   },
   "active": "3db1b6c7de87fbb1",
   "lastOpenFiles": [
+    "Remote Thought/HTTP Request Smuggling.md",
+    "Web Cache Deception.md",
     "Sherlock from hackthebox.md",
     "Permissions in Practice.md",
     "Broadcast Threat Surface.md",
-    "Web Cache Deception.md",
     "Bluetooth reverse engineering.md",
     "Remote Thought/Privilege Escalation.md",
     "Tags/c.md",
@@ -204,7 +205,6 @@
     "Repeating Key XOR.md",
     "USB HID analysis.md",
     "Active Directory Basics.md",
-    "Understanding basic crypto.md",
-    "Remote Thought/Android Permission Overview.md"
+    "Understanding basic crypto.md"
   ]
 }
