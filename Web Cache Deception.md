@@ -3,7 +3,7 @@
 
 Web cache deception exploits cache rules to trick the cache into storing sensitive or private content, which the attacker can then access.
 
-It's caused by discrepancies between how the cache server and origin server handle requests.
+> It's caused by discrepancies between how the cache server and origin server handle requests.
 
 In a web cache deception attack, an attacker persuades a victim to visit a malicious URL, inducing the victim's browser to make an ambiguous request for sensitive content. The cache misinterprets this as a request for a static resource and stores the response. The attacker can then request the same URL to access the cached response, gaining unauthorized access to private information.
 ## Web caches
