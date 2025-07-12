@@ -7,7 +7,7 @@ We have a website which sells online courses. If possible try buying a course & 
 
 after completing the course ,the site offered me a certificate generator to download my certificate.
 
-## the certificate generator feature
+## The Certificate Generator Feature
 
 the page will let you enter:
 - Your **name**
@@ -61,6 +61,11 @@ and set up a listener on my end (Burp Collaborator / [[netcat]] / web server).
 
 Now i confirmed that **the server was rendering HTML and loading iframe content from our input**.  
 that’s **SSRF via HTML Injection** in the PDF rendering flow.
+
+## Going for [[AWS S3]] metadata 
+
+Having SSRF is one thing, but proving its impact is another. Since the server was making outbound HTTP requests, I suspected it might be hosted on **AWS** — and if so, I wanted to reach the **Instance Metadata Service (IMDS)**.
+
 
 
 

@@ -1,7 +1,7 @@
 
 2025-01-03 11:44
 
-Source: #Cloud
+Source: [[Azure]]
 ### Azure Key Vault
 
 Azure Key Vault is an Azure service that allows users to securely store and access secrets. These secrets can be anything from API Keys, certificates, passwords, cryptographic keys, and more. 
