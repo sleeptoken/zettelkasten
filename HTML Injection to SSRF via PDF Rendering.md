@@ -60,11 +60,43 @@ and set up a listener on my end (Burp Collaborator / [[netcat]] / web server).
 > I received a DNS and HTTP hit to listener from the IP address of the web application server.
 
 Now i confirmed that **the server was rendering HTML and loading iframe content from our input**.  
-that’s **SSRF via HTML Injection** in the PDF rendering flow.
+> that’s **SSRF via HTML Injection** in the PDF rendering flow.
 
-## Going for [[AWS S3]] metadata 
+## Going for [[AWS]] metadata 
 
-Having SSRF is one thing, but proving its impact is another. Since the server was making outbound HTTP requests, I suspected it might be hosted on **AWS** — and if so, I wanted to reach the **Instance Metadata Service (IMDS)**.
+Having [[Server-side request forgery (SSRF)]] is one thing, but proving its impact is another. Since the server was making outbound HTTP requests, I suspected it might be hosted on **AWS** — and if so, I wanted to reach the **Instance Metadata Service (IMDS)**.
+
+To begin the attack, I injected a new payload designed to access the metadata endpoint:
+```json
+"title": "<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/'></iframe>"
+```
+
+The generated PDF included the IAM role name, my-app-instance-role, confirming that the server was running on an AWS EC2 instance with IMDSv1 enabled. IMDSv1 is particularly vulnerable because it does not require authentication tokens, unlike IMDSv2.
+
+I then crafted another payload to target the specific IAM role and leak temporary credentials:
+```json
+"title": "<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/my-app-instance-role'></iframe>"
+```
+
+The resulting PDF contained sensitive data, including:
+- **AccessKeyId**
+- **SecretAccessKey**
+- **Token**
+
+these were **temporary AWS credentials,** depending on the permissions tied to that IAM role, this could’ve granted access to other AWS services like S3, DynamoDB, etc.
+
+Besides AWS access keys, see if there is any sensitive data in the user-data IMDS endpoint
+```
+http://169.254.169.254/latest/user-data
+```
+
+the `user-data` section often includes bootstrapping scripts, environment variables, or even hardcoded secrets in plaintext.
+
+
+
+
+
+
 
 
 
