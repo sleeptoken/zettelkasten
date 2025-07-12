@@ -86,20 +86,31 @@ The resulting PDF contained sensitive data, including:
 these were **temporary AWS credentials,** depending on the permissions tied to that IAM role, this could’ve granted access to other AWS services like S3, DynamoDB, etc.
 
 Besides AWS access keys, see if there is any sensitive data in the user-data IMDS endpoint
-```
+ ```
 http://169.254.169.254/latest/user-data
 ```
 
 the `user-data` section often includes bootstrapping scripts, environment variables, or even hardcoded secrets in plaintext.
 
+## What really happened
 
+how does putting an iframe in a PDF result in the **server** sending HTTP requests?
 
+when i submit my name, title, and quote, the server builds an HTML version of the certificate and passes it to a rendering engine like `wkhtmltopdf`, `puppeteer`, or another headless browser tool.  
+those tools process the full HTML just like a normal browser would. that means they fetch images, iframes, stylesheets, and more — **automatically** — to fully render the page before converting it to a PDF or PNG.
 
+so when you include this:
+```html
+<iframe src="http://169.254.169.254/latest/meta-data/"></iframe>
+```
 
+the rendering tool on the server sees that iframe and tries to fetch the content from that IP address.  
+and since `169.254.169.254` is the AWS metadata IP, this turns into an SSRF from **inside** the cloud environment.
 
+your input is not just sitting in the PDF — it is being **processed and loaded** before the final file is created.
 
-
-
+this is the core of the vulnerability.  
+you’re abusing HTML injection, not to trigger JavaScript or do XSS, but to trick the server into making internal HTTP requests by rendering your iframe or other HTML tags.
 
 ### References
 [How I Escalated Simple HTML Injection to SSRF via PDF Rendering | by Ahmed Tarek | Jul, 2025 | Medium](https://medium.com/@0x_xnum/how-i-escalated-simple-html-injection-to-ssrf-via-pdf-rendering-682ea94b3194)
