@@ -216,5 +216,6 @@ You may be able to exploit a decoding discrepancy by using an encoded delimiter 
 Use the same testing methodology you used to identify and exploit delimiter discrepancies, but use a range of encoded characters. Make sure that you also test encoded non-printable characters, particularly `%00`, `%0A` and `%09`. If these characters are decoded they can also truncate the URL path.
 
 
+
 ### References
 [Web cache deception | Web Security Academy](https://portswigger.net/web-security/web-cache-deception)
