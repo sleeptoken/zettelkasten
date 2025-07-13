@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5b85f4c6d8da1a3c",
+        "id": "6db18259ffa4612f",
         "type": "tabs",
         "children": [
           {
-            "id": "6c7e62e864f7b696",
+            "id": "9482f2d14e6bbbdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AEM Misconfig.md",
+                "file": "Apache velocity cve.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "AEM Misconfig"
+              "title": "Apache velocity cve"
             }
           }
         ]
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AEM Misconfig.md",
+                "file": "Apache velocity cve.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AEM Misconfig"
+              "title": "Outline of Apache velocity cve"
             }
           }
         ],
@@ -179,13 +178,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6c7e62e864f7b696",
+  "active": "9482f2d14e6bbbdd",
   "lastOpenFiles": [
-    "Tags/Bug Bounty.md",
-    "AEM Misconfig.md",
+    "Frameworks & basics.md",
     "Apache velocity cve.md",
     "Cast.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Stream Cipher.md",
+    "Remote Thought/UPX.md",
     "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
+    "Remote Thought/AEM Misconfig.md",
+    "Tags/Bug Bounty.md",
     "Remote Thought/Android Permission Overview.md",
     "Active Directory Basics.md",
     "Permissions in Practice.md",
@@ -202,10 +205,6 @@
     "Sherlock from hackthebox.md",
     "Remote Thought/HTTP Request Smuggling.md",
     "Bluetooth reverse engineering.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Tags/c.md",
-    "Tags/curl.md",
-    "Remote Thought/use SQLite on DB found via LFI.md",
-    "Remote Thought/Port frwd & cmd injection.md"
+    "Remote Thought/Privilege Escalation.md"
   ]
 }

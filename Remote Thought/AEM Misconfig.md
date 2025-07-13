@@ -28,7 +28,22 @@ Use [YesWeHack VDP Finder](https://github.com/yeswehack/yeswehack_vdp_finder) t
 
 ### Exploitation
 
+Anyways providing you with an overview of the steps involved for better clarity.
 
+1. Let’s call our vulnerable website `www.example.com` , and it renders a PDF 
+```
+https://www.example.com/content/dam/example.pdf/
+```
+
+2. Append `.children.json` which modifies the URL 
+```
+https://www.example.com/content/dam/example.pdf/.children.json
+```
+
+3. A JSON response will be returned which contains a data field `jcr:lastModifiedBy` that has sensitives details such as Email ID / Name / Numerical IDs of the last person who modified the given file.
+
+I was able to view the internal email ID of the employee who last updated the file. This being a PII (Personally Identifiable Information) was sufficient to show the impact of the vulnerability.
+A simple fix to the vulnerability is to filter out the `.json` endpoints and whitelist only the ones that should be allowed
 
 ### References
 https://abhishek-praveen.github.io/posts/Story-of-a-Simple-AEM-Misconfiguration-Bug/
