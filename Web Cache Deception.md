@@ -162,9 +162,23 @@ The origin server returns the dynamic profile information, which is stored in th
 > 
 > If the cache or origin server decodes these characters, it may be possible to use an encoded version in an exploit.
 
-##### Lab
+##### Lab: Exploiting path delimiters 
 
+In the repeater tab . Add an arbitrary segment to the path i.e. `/my-account/abc`. Send the request. 
+	- Notice the `404` Not Found response with no evidence of caching. This indicates that the origin server doesn't abstract the path to `/my-account`.
 
+Remove the arbitrary segment and add an arbitrary string to the original path. For example, change the path to `/my-accountabc`.
+	- Send the request. Notice the `404` Not Found response with no evidence that the response was cached. You'll use this response as a reference to help you identify characters that aren't used as delimiters.
+
+brute force possible delimiters in intruder -` /my-account§§abc` 
+
+In the Payloads side panel, under Payload configuration, add a list of characters that may be used as delimiters.
+
+Under Payload encoding, deselect URL-encode these characters.
+
+Click  Start attack. The attack runs in a new window.
+
+When the attack finishes, sort the results by Status code. Notice that the ; and ? characters receive a 200 response with your API key. All other characters receive the 404 Not Found response. This indicates that the origin server uses ; and ? as path delimiters.
 
 
 ### References
