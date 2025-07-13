@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bug bounty",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,6 +181,8 @@
   },
   "active": "6c7e62e864f7b696",
   "lastOpenFiles": [
+    "Tags/Bug Bounty.md",
+    "AEM Misconfig.md",
     "Apache velocity cve.md",
     "Cast.md",
     "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
@@ -187,7 +190,6 @@
     "Active Directory Basics.md",
     "Permissions in Practice.md",
     "Broadcast Threat Surface.md",
-    "AEM Misconfig.md",
     "Web Cache Deception.md",
     "Remote Thought/Server-side request forgery (SSRF).md",
     "Remote Thought/AWS S3.md",
@@ -204,7 +206,6 @@
     "Tags/c.md",
     "Tags/curl.md",
     "Remote Thought/use SQLite on DB found via LFI.md",
-    "Remote Thought/Port frwd & cmd injection.md",
-    "Remote Thought/Mention headers while using wget.md"
+    "Remote Thought/Port frwd & cmd injection.md"
   ]
 }
