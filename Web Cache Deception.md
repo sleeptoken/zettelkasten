@@ -164,6 +164,8 @@ The origin server returns the dynamic profile information, which is stored in th
 
 ##### Lab: Exploiting path delimiters 
 
+###### Identify 
+
 In the repeater tab . Add an arbitrary segment to the path i.e. `/my-account/abc`. Send the request. 
 	- Notice the `404` Not Found response with no evidence of caching. This indicates that the origin server doesn't abstract the path to `/my-account`.
 
@@ -171,14 +173,22 @@ Remove the arbitrary segment and add an arbitrary string to the original path. F
 	- Send the request. Notice the `404` Not Found response with no evidence that the response was cached. You'll use this response as a reference to help you identify characters that aren't used as delimiters.
 
 brute force possible delimiters in intruder -` /my-account§§abc` 
-
-In the Payloads side panel, under Payload configuration, add a list of characters that may be used as delimiters.
-
 Under Payload encoding, deselect URL-encode these characters.
 
-Click  Start attack. The attack runs in a new window.
+the `;` and `?` characters receive a `200` response with your API key. All other characters receive the 404 Not Found response. This indicates that the origin server uses `;` and `?` as path delimiters.
+###### Investigate 
 
-When the attack finishes, sort the results by Status code. Notice that the ; and ? characters receive a 200 response with your API key. All other characters receive the 404 Not Found response. This indicates that the origin server uses ; and ? as path delimiters.
+Try `/my-account?abc.js` this 
+	- Notice that the response doesn't contain evidence of caching. This may indicate that the cache also uses `?` as a path delimiter.
+	
+Repeat this test using the `;` character instead of `?`. Notice that the response contains the `X-Cache: miss` header.
+	- Resend the request. Notice that the value of the `X-Cache header` changes to hit. This indicates that the cache doesn't use `;` as a path delimiter and has a cache rule based on the `.js` static extension. You can use this payload for an exploit.
+
+in the exploit server use add the following the body of the request 
+```js
+<script>document.location="https://YOUR-LAB-ID.web-security-academy.net/my-account;wcd.js"</script>
+```
+make the victim visit the crafter url of urs.
 
 
 ### References
