@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML Injection to SSRF via PDF Rendering.md",
+                "file": "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML Injection to SSRF via PDF Rendering.md",
+                "file": "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec8296751ba0bdc7",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
     "Remote Thought/Server-side request forgery (SSRF).md",
-    "HTML Injection to SSRF via PDF Rendering.md",
+    "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
     "Remote Thought/AWS S3.md",
     "Tags/Azure.md",
     "Tags/AWS.md",

@@ -3,9 +3,9 @@
 
 Source: #web 
 
-We have a website which sells online courses. If possible try buying a course & start testing from inside. Try the usual stuff like bypassing payments, accessing locked content, checking for IDORs, and looking for exposed assets.
+We have a website which sells online courses. If possible try buying a course & start testing from inside. Try the usual stuff like bypassing payments, accessing locked content, checking for `IDORs`, and looking for exposed assets.
 
-after completing the course ,the site offered me a certificate generator to download my certificate.
+So after buying a course and completing the course ,the site offered me a certificate generator to download my certificate.
 
 ## The Certificate Generator Feature
 
@@ -83,9 +83,9 @@ The resulting PDF contained sensitive data, including:
 - **SecretAccessKey**
 - **Token**
 
-these were **temporary AWS credentials,** depending on the permissions tied to that IAM role, this could’ve granted access to other AWS services like S3, DynamoDB, etc.
+these were **temporary AWS credentials,** depending on the permissions tied to that `IAM` role, this could’ve granted access to other AWS services like `S3`, `DynamoDB`, etc.
 
-Besides AWS access keys, see if there is any sensitive data in the user-data IMDS endpoint
+Besides AWS access keys, see if there is any sensitive data in the user-data `IMDS` endpoint
  ```
 http://169.254.169.254/latest/user-data
 ```
