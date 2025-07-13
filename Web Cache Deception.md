@@ -184,11 +184,36 @@ Try `/my-account?abc.js` this
 Repeat this test using the `;` character instead of `?`. Notice that the response contains the `X-Cache: miss` header.
 	- Resend the request. Notice that the value of the `X-Cache header` changes to hit. This indicates that the cache doesn't use `;` as a path delimiter and has a cache rule based on the `.js` static extension. You can use this payload for an exploit.
 
+###### Exploit 
+
 in the exploit server use add the following the body of the request 
 ```js
 <script>document.location="https://YOUR-LAB-ID.web-security-academy.net/my-account;wcd.js"</script>
 ```
 make the victim visit the crafter URL of urs.
+
+### Delimiter decoding discrepancies
+
+Websites sometimes need to send data in the URL that contains characters that have a special meaning within URLs, such as delimiters. To ensure these characters are interpreted as data, they are usually encoded. However, some parsers decode certain characters before processing the URL. If a delimiter character is decoded, it may then be treated as a delimiter, truncating the URL path.
+
+> [!NOTE]
+> Differences in which delimiter characters are decoded by the cache and origin server can result in discrepancies in how they interpret the URL path, even if they both use the same characters as delimiters. 
+
+Consider the example `/profile%23wcd.css`, which uses the URL-encoded `#` character:
+- The origin server decodes `%23` to `#`. It uses `#` as a delimiter, so it interprets the path as `/profile` and returns profile information.
+- The cache also uses the `#` character as a delimiter, but doesn't decode `%23`. It interprets the path as `/profile%23wcd.css`. If there is a cache rule for the `.css` extension it will store the response.
+
+In addition, some cache servers may decode the URL and then forward the request with the decoded characters. Others first apply cache rules based on the encoded URL, then decode the URL and forward it to the next server. These behaviors can also result in discrepancies in the way cache and origin server interpret the URL path
+
+Consider the example `/myaccount%3fwcd.css`:
+- The cache server applies the cache rules based on the encoded path `/myaccount%3fwcd.css` and decides to store the response as there is a cache rule for the `.css` extension. It then decodes `%3f` to `?` and forwards the rewritten request to the origin server.
+- The origin server receives the request `/myaccount?wcd.css`. It uses the `?` character as a delimiter, so it interprets the path as `/myaccount`.
+
+#### Exploiting delimiter decoding discrepancies
+
+You may be able to exploit a decoding discrepancy by using an encoded delimiter to add a static extension to the path that is viewed by the cache, but not the origin server.
+
+Use the same testing methodology you used to identify and exploit delimiter discrepancies, but use a range of encoded characters. Make sure that you also test encoded non-printable characters, particularly `%00`, `%0A` and `%09`. If these characters are decoded they can also truncate the URL path.
 
 
 ### References
