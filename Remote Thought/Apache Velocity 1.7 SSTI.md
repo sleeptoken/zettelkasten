@@ -5,7 +5,7 @@ Source: #htb #web
 
 in the challenge description we find a `pom.xml`, This is an XML file containing a list of dependencies, plugins, etc. that the server uses.
 
-I find out that the last dependency on this list — Apache Velocity Engine 1.7 — is affected by [CVE-2020–13936](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13936). This makes the web application vulnerable to **server side template injection** [[SSTI]].
+I find out that the last dependency on this list — Apache Velocity Engine 1.7 — is affected by [CVE-2020–13936](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13936). This makes the web application vulnerable to **server side template injection** [[Server-side template injection (SSTI)]].
 
 Since we are dealing with an Apache web server. By default, you can view web configurations in the `/etc/apache2/sites-enabled/000-default.conf`
 

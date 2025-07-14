@@ -3,7 +3,7 @@
 
 Source: #web #htb 
 
-Tags: [[SSTI]]
+Tags: [[Server-side template injection (SSTI)]]
 ## Reconnaissance
 
 We notice the `go` source code that seems to execute code from remote templates.

@@ -3,7 +3,7 @@
 
 Source: #htb #web 
 
-Tags: [[SSTI]]
+Tags: [[Server-side template injection (SSTI)]]
 
 Source Code Snippet - 
 ```ruby
