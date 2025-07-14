@@ -75,9 +75,28 @@ usually at the beginning of the class we will see them defined.
 The UUID will look like this - "`00001828-0000-1000-8000-00805f9b34fb`"
 but the UUID suffix is same for all, the suffix is as follows -  `-0000-1000-8000-00805f9b34f`
 - we only care about `1828` from the above `UUID`  
-in the  [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/) document we will see 4 digit numbers, they represent the prefix part of 
+in the  [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/) document we will see 4 digit numbers, they represent the prefix part of UUID. i.e `0x1828`
+
+### BLE MeshProxy 
+
+BLE Mesh proxy is a predefined service that exposes two main characteristics, Namely `DataIn` and `DataOut` into data in. We can write data and data out will notify us if we received data.
+
+We write data in so-called PDs, protocol data units, but these are really just bys that we send into data in
+
+and receive from data out. Now, SDNA suggests BLE mesh proxy is for meshing networks. And so for example, let's say we have a network of a lot
+
+of Bluetooth devices and some of those Bluetooth devices might be farther away from US and outside of the receiving range of our phone.
+
+In a mesh network, we can send the data to the closest device we have in range, and that device will then forward it to the next device
+
+and that in turn will forward it to the next device until our data hopefully ends up at the correct device.
+
+Now in our case, we just have the phone and the lock, and so we can ignore all of this back in the code.
+
+We can see that we indeed get the two characteristics from the service mesh proxy data in and mesh proxy data out.
 
 
+ 
 ### References
 [hextree.io](https://app.hextree.io/courses/android-bluetooth-reversing/bluetooth-basics)
 
