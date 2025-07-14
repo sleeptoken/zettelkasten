@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apache velocity cve.md",
+                "file": "Remote Thought/Apache Velocity 1.7 SSTI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Apache velocity cve"
+              "title": "Apache Velocity 1.7 SSTI"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apache velocity cve.md",
+                "file": "Remote Thought/Apache Velocity 1.7 SSTI.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Apache velocity cve"
+              "title": "Outline of Apache Velocity 1.7 SSTI"
             }
           }
         ],
@@ -178,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9482f2d14e6bbbdd",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
     "Frameworks & basics.md",
-    "Apache velocity cve.md",
+    "Remote Thought/Apache Velocity 1.7 SSTI.md",
     "Cast.md",
     "Exploiting Chrome Remote Debugger.md",
     "Stream Cipher.md",
