@@ -69,7 +69,13 @@ In the case of the heart rate service, we would have
 - a characteristic for getting the resting heart rate. 
 Both the heart rate service and the characteristics have assigned `UUIDs`, which you can lookup in the assigned numbers document from the Bluetooth body.
  
+### UUID
 
+usually at the beginning of the class we will see them defined.
+The UUID will look like this - "`00001828-0000-1000-8000-00805f9b34fb`"
+but the UUID suffix is same for all, the suffix is as follows -  `-0000-1000-8000-00805f9b34f`
+- we only care about `1828` from the above `UUID`  
+in the  [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/) document we will see 4 digit numbers, they represent the prefix part of 
 
 
 ### References
