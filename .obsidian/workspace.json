@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Server-side template injection (SSTI).md",
+                "file": "Bluetooth reverse engineering.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Server-side template injection (SSTI)"
-            }
-          },
-          {
-            "id": "66eae06556ef0ce4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Mako (Python) SSTI.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Mako (Python) SSTI"
+              "title": "Bluetooth reverse engineering"
             }
           }
         ]
@@ -176,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Server-side template injection (SSTI).md",
+                "file": "Bluetooth reverse engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Server-side template injection (SSTI)"
+              "title": "Outline of Bluetooth reverse engineering"
             }
           }
         ],
@@ -204,12 +180,13 @@
   },
   "active": "9482f2d14e6bbbdd",
   "lastOpenFiles": [
-    "Remote Thought/Mako (Python) SSTI.md",
+    "Bluetooth reverse engineering.md",
     "Tags/Server-side template injection (SSTI).md",
+    "Jinja2 SSTI.md",
+    "Remote Thought/Mako (Python) SSTI.md",
     "Remote Thought/Apache Velocity 1.7 SSTI.md",
     "Broadcast Threat Surface.md",
     "Permissions in Practice.md",
-    "Bluetooth reverse engineering.md",
     "Understanding basic crypto.md",
     "Frameworks & basics.md",
     "Cast.md",
@@ -228,7 +205,6 @@
     "Tags/AWS.md",
     "Remote Thought/Analyze AWS logs using JQ.md",
     "Remote Thought/Azure Key Vault.md",
-    "Tags/netcat.md",
-    "Tags/java.md"
+    "Tags/netcat.md"
   ]
 }
