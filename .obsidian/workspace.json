@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bluetooth reverse engineering.md",
+                "file": "Tags/java.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Bluetooth reverse engineering"
+              "title": "java"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bluetooth reverse engineering.md",
+                "file": "Tags/java.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Bluetooth reverse engineering"
+              "title": "Outline of java"
             }
           }
         ],
@@ -180,6 +180,9 @@
   },
   "active": "9482f2d14e6bbbdd",
   "lastOpenFiles": [
+    "Cast.md",
+    "Frameworks & basics.md",
+    "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Bluetooth reverse engineering.md",
     "Tags/Server-side template injection (SSTI).md",
     "Jinja2 SSTI.md",
@@ -188,8 +191,6 @@
     "Broadcast Threat Surface.md",
     "Permissions in Practice.md",
     "Understanding basic crypto.md",
-    "Frameworks & basics.md",
-    "Cast.md",
     "Exploiting Chrome Remote Debugger.md",
     "Stream Cipher.md",
     "Remote Thought/UPX.md",
@@ -204,7 +205,6 @@
     "Tags/Azure.md",
     "Tags/AWS.md",
     "Remote Thought/Analyze AWS logs using JQ.md",
-    "Remote Thought/Azure Key Vault.md",
-    "Tags/netcat.md"
+    "Remote Thought/Azure Key Vault.md"
   ]
 }
