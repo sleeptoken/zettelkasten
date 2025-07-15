@@ -79,22 +79,16 @@ in the  [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/a
 
 ### BLE MeshProxy 
 
-BLE Mesh proxy is a predefined service that exposes two main characteristics, Namely `DataIn` and `DataOut` into data in. We can write data and data out will notify us if we received data.
+BLE Mesh proxy is a predefined service that exposes two main characteristics, Namely `DataIn` and `DataOut` 
+- Data In - We can write data 
+- Data Out - Will notify us if we received data.
 
-We write data in so-called PDs, protocol data units, but these are really just bys that we send into data in
+We write data in so-called PDUs, protocol data units, but these are really just bytes that we send into `Data In` and receive from `Data Out`. 
 
-and receive from data out. Now, SDNA suggests BLE mesh proxy is for meshing networks. And so for example, let's say we have a network of a lot
-
-of Bluetooth devices and some of those Bluetooth devices might be farther away from US and outside of the receiving range of our phone.
-
-In a mesh network, we can send the data to the closest device we have in range, and that device will then forward it to the next device
-
-and that in turn will forward it to the next device until our data hopefully ends up at the correct device.
-
-Now in our case, we just have the phone and the lock, and so we can ignore all of this back in the code.
-
-We can see that we indeed get the two characteristics from the service mesh proxy data in and mesh proxy data out.
-
+BLE mesh proxy is for meshing networks. And so for example,
+- let's say we have a network of a lot of Bluetooth devices and some of those Bluetooth devices might be farther away from us and outside of the receiving range of our phone.
+- In a mesh network, we can send the data to the closest device we have in range, and that device will then forward it to the next device. and that in turn will forward it to the next device until our data hopefully ends up at the correct device.
+MUCH MORE LIKE PEER TO PEER.
 
  
 ### References
