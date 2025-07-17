@@ -15,9 +15,3 @@ Above code is overriding a method in the animal class with what we are defining 
 > so remove the `@Override` annotation and then change the method signature 
 
 
-
-
-
-
-
-### References

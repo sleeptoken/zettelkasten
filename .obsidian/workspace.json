@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/java.md",
+                "file": "USB HID analysis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "java"
+              "title": "USB HID analysis"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/java.md",
+                "file": "USB HID analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of java"
+              "title": "Outline of USB HID analysis"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "9482f2d14e6bbbdd",
   "lastOpenFiles": [
+    "Tags/java.md",
     "Cast.md",
     "Frameworks & basics.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
@@ -204,7 +205,6 @@
     "Remote Thought/AWS S3.md",
     "Tags/Azure.md",
     "Tags/AWS.md",
-    "Remote Thought/Analyze AWS logs using JQ.md",
-    "Remote Thought/Azure Key Vault.md"
+    "Remote Thought/Analyze AWS logs using JQ.md"
   ]
 }
