@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "USB HID analysis.md",
+                "file": "Jinja2 SSTI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "USB HID analysis"
+              "title": "Jinja2 SSTI"
+            }
+          },
+          {
+            "id": "09661e2ae32679fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Outbound htb.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Outbound htb"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "USB HID analysis.md",
+                "file": "Outbound htb.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of USB HID analysis"
+              "title": "Outline of Outbound htb"
             }
           }
         ],
@@ -178,18 +203,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9482f2d14e6bbbdd",
+  "active": "09661e2ae32679fc",
   "lastOpenFiles": [
+    "Jinja2 SSTI.md",
+    "Outbound htb.md",
+    "Broadcast Threat Surface.md",
+    "USB HID analysis.md",
     "Tags/java.md",
     "Cast.md",
     "Frameworks & basics.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Bluetooth reverse engineering.md",
     "Tags/Server-side template injection (SSTI).md",
-    "Jinja2 SSTI.md",
     "Remote Thought/Mako (Python) SSTI.md",
     "Remote Thought/Apache Velocity 1.7 SSTI.md",
-    "Broadcast Threat Surface.md",
     "Permissions in Practice.md",
     "Understanding basic crypto.md",
     "Exploiting Chrome Remote Debugger.md",
@@ -203,8 +230,6 @@
     "Web Cache Deception.md",
     "Remote Thought/Server-side request forgery (SSRF).md",
     "Remote Thought/AWS S3.md",
-    "Tags/Azure.md",
-    "Tags/AWS.md",
-    "Remote Thought/Analyze AWS logs using JQ.md"
+    "Tags/Azure.md"
   ]
 }
