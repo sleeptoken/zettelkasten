@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Outbound htb.md",
+                "file": "Remote Thought/Mako (Python) SSTI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,19 +28,19 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Outbound htb"
+              "title": "Mako (Python) SSTI"
             }
           },
           {
-            "id": "4b1dbfb211a50cc8",
+            "id": "7a95ff1c961583aa",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.9.12"
+                "currentVersion": "1.9.14"
               },
               "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "Release Notes 1.9.14"
             }
           }
         ],
@@ -191,11 +191,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b1dbfb211a50cc8",
+  "active": "7a95ff1c961583aa",
   "lastOpenFiles": [
     "Remote Thought/Mako (Python) SSTI.md",
-    "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
     "Outbound htb.md",
+    "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
     "Bluetooth reverse engineering.md",
     "Broadcast Threat Surface.md",
     "Jinja2 SSTI.md",
