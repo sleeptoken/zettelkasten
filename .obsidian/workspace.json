@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Mako (Python) SSTI.md",
+                "file": "Remote Thought/Public key certificates.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,23 +28,34 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Mako (Python) SSTI"
+              "title": "Public key certificates"
             }
           },
           {
-            "id": "7a95ff1c961583aa",
+            "id": "6d08d4c538886fb9",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.14"
+                "file": "Tags/JavaScript.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.14"
+              "icon": "lucide-file",
+              "title": "JavaScript"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remote Thought/HTTP Methods.md",
+                "file": "Remote Thought/Public key certificates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +138,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for HTTP Methods"
+              "title": "Backlinks for Public key certificates"
             }
           },
           {
@@ -165,20 +176,21 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Remote Thought/Public key certificates.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Public key certificates"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,33 +203,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a95ff1c961583aa",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
+    "hold on/Preventing integrity violation.md",
+    "hold on/Peppering.md",
+    "hold on/Osint & regex.md",
+    "hold on/Network loggin.md",
+    "hold on/IAM.md",
+    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
+    "hold on/Kerberos auth.md",
+    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
+    "Tags/JavaScript.md",
     "Remote Thought/Mako (Python) SSTI.md",
-    "Outbound htb.md",
-    "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
-    "Bluetooth reverse engineering.md",
-    "Broadcast Threat Surface.md",
-    "Jinja2 SSTI.md",
-    "USB HID analysis.md",
-    "Tags/java.md",
-    "Cast.md",
-    "Frameworks & basics.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "Tags/Server-side template injection (SSTI).md",
-    "Remote Thought/Apache Velocity 1.7 SSTI.md",
-    "Permissions in Practice.md",
-    "Understanding basic crypto.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Stream Cipher.md",
-    "Remote Thought/UPX.md",
-    "Remote Thought/AEM Misconfig.md",
-    "Tags/Bug Bounty.md",
-    "Remote Thought/Android Permission Overview.md",
-    "Active Directory Basics.md",
-    "Web Cache Deception.md",
-    "Remote Thought/Server-side request forgery (SSRF).md",
-    "Remote Thought/AWS S3.md",
-    "Tags/Azure.md"
+    "Remote Thought/Emails.md",
+    "hold on/Web cache entanglement.md",
+    "hold on/UTF-8.md",
+    "hold on/Untitled.md",
+    "hold on/Session fixation vs hijacking.md",
+    "Remote Thought/Public key certificates.md",
+    "hold on/Pasted image 20250828161637.png",
+    "hold on/Unix/Tricks linux.md",
+    "hold on/Unix/Symbolic links.md",
+    "hold on/Unix/Links.md",
+    "hold on/Unix/Disk partition.md",
+    "hold on/Unix/Curl.md",
+    "hold on/Unix/Attack using Environment variables.md",
+    "hold on/Unix",
+    "hold on/Tags/Html.md",
+    "hold on/Tags/X86.md",
+    "hold on/Tags",
+    "hold on/Notes from babaji/Zlib extract.md",
+    "hold on/Notes from babaji/Turing machine in loader.md",
+    "hold on/Notes from babaji",
+    "hold on/Networking",
+    "hold on/Lwn",
+    "hold on/Kernel",
+    "hold on/Forensics",
+    "hold on/Cloud sec",
+    "hold on/Binary",
+    "hold on"
   ]
 }
