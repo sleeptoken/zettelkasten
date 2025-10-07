@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Find.md",
+                "file": "Remote Thought/Security Operations Center.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Find"
+              "title": "Security Operations Center"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Find.md",
+                "file": "Remote Thought/Security Operations Center.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Find"
+              "title": "Outline of Security Operations Center"
             }
           }
         ],
@@ -179,10 +179,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09661e2ae32679fc",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
-    "Remote Thought/Privilege Escalation.md",
+    "Tags/Defence.md",
     "Remote Thought/Security Operations Center.md",
+    "Remote Thought/Emails.md",
+    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
+    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
+    "hold on/IAM.md",
+    "hold on/Network loggin.md",
+    "Tags/Find.md",
+    "Remote Thought/Privilege Escalation.md",
     "hold on/Session fixation vs hijacking.md",
     "hold on/Peppering.md",
     "hold on/Preventing integrity violation.md",
@@ -200,17 +207,10 @@
     "Remote Thought/Footprinting & Reconnaissance.md",
     "Remote Thought/Cross-origin resource sharing (CORS).md",
     "Remote Thought/Azure Key Vault.md",
-    "Remote Thought/Emails.md",
     "hold on/Osint & regex.md",
-    "hold on/Network loggin.md",
-    "hold on/IAM.md",
-    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
     "hold on/Kerberos auth.md",
-    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
     "Remote Thought/Mako (Python) SSTI.md",
     "hold on/Pasted image 20250828161637.png",
-    "hold on/Unix/Tricks linux.md",
-    "hold on/Unix/Symbolic links.md",
     "hold on/Unix",
     "hold on/Tags",
     "hold on/Notes from babaji",

@@ -1,5 +1,11 @@
-Soc also known as computer emergency response teams and computer security incident response teams
 
+2025-10-07 11:23
+
+Source: #paloalto 
+
+Tags: [[Defence]]
+
+Soc also known as computer emergency response teams and computer security incident response teams
 #### Obj and strategies of soc 
 
 ###### Planning 
@@ -26,30 +32,32 @@ Adverse event is any event that has negative consequence. Malware infection on a
 **Security incident**
 A violation or imminent threat of violation of organisational cybersecurity policies, intrusion on a network system, DoS, keylogger 
 
-**Incident Response lifecycle**
+##### Incident Response lifecycle
 Prepration -> detection and analysis -> containment, eradication, and recovery -> post incident activity 
 #### Frameworks
 
-Based on existing standards, guidelines, and practices for organizations to better manage and reduce their organizational cybersecurity risk. It also encourages comms between internal and external organisation stakeholders regarding cybersecurity 
+Based on existing standards, guidelines, and practices for organizations to better manage and reduce their organizational cybersecurity risk. It also encourages comms between internal and external organization stakeholders regarding cybersecurity 
 ##### NIST 
-Improved security posture 
-Core - provides a set of desired activities to be used in a cybersecurity implementation program to meet w the needs of any size org.
-Implementation tree - helps org to provide an organisational view for cybersecurity risk mgmt and to discuss their risk appetite , budget and priorities 
-Profiles - provides organization a way to strengthen their existing processes or implement new processes. The profiles allow a powerful comms within the organisation 
+For Improved security posture, following are the 3 major parts 
+###### Core 
+provides a set of desired activities to be used in a cybersecurity implementation program to meet w the needs of any size org.
+###### Implementation tree 
+helps org to provide an organizational view for cybersecurity risk mgmt and to discuss their risk appetite , budget and priorities 
+###### Profiles 
+provides organization a way to strengthen their existing processes or implement new processes. The profiles allow a powerful comms within the organization 
 
-Plan - each incident response plan has a mission statement, strategies and goals an organisational approach to incident response 
-
-Review - review each incident with post incident activity so that the organisation is prepared for future attacks 
+**Plan** - each incident response plan has a mission statement, strategies and goals an organizational approach to incident response 
+**Review** - review each incident with post incident activity so that the organization is prepared for future attacks 
 ##### FedRAMP (Federal risk and Authorization management program)
 
 Features- 
-Effective cloud sec
+###### Effective cloud sec
 Provides a framework for creating and managing repeatable processes for an effective cloud security for the government 
 
 Marketplace 
-Haa established a mrktplace for cloud services due collaboration across government agencies by use case tactical solutions
+Has established a mrktplace for cloud services due collaboration across government agencies by use case tactical solutions
 
-Sec baselines 
+Security baselines 
 High w a set of 421 controls
 Moderate w a set of 325 controls
 Low w a set of 125 controls
@@ -58,7 +66,7 @@ LI SaaS w a set of 36 controls
 
 Requirements
 - Information Systems inventory 
-- Information and information systems categorisation by their risk level
+- Information and information systems categorization by their risk level
 - Selection of appropriate security controls and assurance requirements
 - Risk assessment 
 - System security plan 
