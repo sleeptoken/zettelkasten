@@ -13,6 +13,7 @@ The originator first sends the message to be signed, then computes a checksum of
 1. nobody has modified the data while underway, 
 2. The possessor of the private key is the only person who could have generated that encrypted signature.
 ### Why certificates exists
+
 Of course two systems can exchange data, and know a message came from a specific sender, with traditional _symmetric encryption_ too. However that requires that the two somehow _share a common encryption key_ before the communication starts, via some unspecified “secure” approach (eg by previously having met in person, or a trusted courier who brings a USB stick from one to the other).
 With public-key encryption, an entity can announce its _public key_ to the world, with no need for secrecy - only the private key must be protected.
 
@@ -37,7 +38,6 @@ An attacker might be able to intercept or redirect my data, but because I am usi
 
 The “`name`” is usually an internet domain name, eg “`www.myserver.example`”. Actually, this is represented in `X.500` (ie LDAP) form, eg “`cn=www.myserver.example,o=mycorp,c=mycountry`”.
 #### how to verify a cert
-
 To repeat from above: I can download a certificate from an untrusted source, and still verify its contents (most importantly, the name/key pair) via a chain of trust. This is done as follows:
 
  1. Obtain and verify the signer certificate
@@ -88,7 +88,7 @@ It is also quite valid for a user to remove/disable entries from the default set
 
 Among the attributes of a certificate are fields named “usage” and “constraints”. Together, these are used to specify which purposes a certificate may be used for; when software is validating a certificate, validation will fail if the certificate is being used for some purpose that its usage/constraints do not permit.
 
-The most significant flag is the “Signing Certificate” flag, indicating that this certificate can be used to sign other certificates; these are also known as Certificate Authority Certificates aka CA Certificates. Such certificates are relatively rare; normal certificates used to identify websites do not have the “signing certificate” flag, ie are always at the end of a “chain of trust”.
+The most significant flag is the “Signing Certificate” flag, indicating that this certificate can be used to sign other certificates; these are also known as Certificate Authority Certificates aka [[CA Certificates]]. Such certificates are relatively rare; normal certificates used to identify websites do not have the “signing certificate” flag, ie are always at the end of a “chain of trust”.
 
 The possessor of an existing Certificate Authority certificate should be careful who they issue normal (non-CA) certificates to, and extra-careful who they issue CA certificates to (where “issue” means signing a certificate). Of course anyone can create their own certificate with this flag set, but persuading an existing widely-trusted CA to sign that certificate will (and should) be difficult. 
 

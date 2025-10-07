@@ -34,3 +34,4 @@ one drawback of UTF-8 is the lack of direct indexing, making it challenging to a
 ### Reference 
 
 https://medium.com/@briannqc/utf-8-explained-its-not-8-bits-encoding-nor-32-bits-unicode-205362df9c80
+[[Encoding clusterfuck]]
