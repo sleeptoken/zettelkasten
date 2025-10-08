@@ -86,7 +86,7 @@ Collection
 Privileged escalation 
 Exfiltration 
 Defence evasion 
-Cwc
+C2c
 Credential access
 Impact 
 ##### International organization for standardization (ISO)
