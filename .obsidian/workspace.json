@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Security Operations Center.md",
+                "file": "Remote Thought/Appdata storage in windows.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Security Operations Center"
+              "title": "Appdata storage in windows"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "AppData",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Security Operations Center.md",
+                "file": "Remote Thought/Appdata storage in windows.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Security Operations Center"
+              "title": "Outline of Appdata storage in windows"
             }
           }
         ],
@@ -179,10 +180,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "09661e2ae32679fc",
   "lastOpenFiles": [
-    "Tags/Defence.md",
     "Remote Thought/Security Operations Center.md",
+    "Tags/Defence.md",
     "Remote Thought/Emails.md",
     "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
     "hold on/Misconfigured Nginx, and real-world password management flaws.md",
