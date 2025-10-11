@@ -1,7 +1,7 @@
 
 2025-10-11 10:18
 
-Tags: [[hashing]]
+Tags: [[Hashing]]
 
  pepper is a secret added to an input such as a password during hashing with a [[Cryptography]] hash function. This value differs from a salt in that it is not stored alongside a password hash, but rather the pepper is kept separate in some other medium, such as a Hardware Security Module
 

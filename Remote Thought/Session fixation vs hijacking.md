@@ -1,3 +1,8 @@
+
+2025-10-11 10:38
+
+Source: #web
+
 ## Session fixation 
 
 Session fixation is a type of attack where the attacker sets the session identifier before the victim logs in. When the user authenticates with the same session ID, the attacker can reuse it to access the session without needing credentials. This exploit takes advantage of poor session management practices, such as not regenerating session IDs after login. 
