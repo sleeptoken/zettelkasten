@@ -1,3 +1,5 @@
+Tags: [[Encoding clusterfuck]]
+
 > Supporting non English characters necessitates a letter character set, leading to creation of unicode
 
 Unicode encompasses characters from all writing systems worldwide, including accents and many others, assigning each character a unique identifier called Unicode code point. As of July 2023, Unicode 15 defines nearly 150,000 characters. To represent all these we require 17.2 bits, which unfortunately is slightly larger than the size of 2 bytes. Consequently, the natural data type to hold a single code point is int32, and that is precisely what UTF-32 does.

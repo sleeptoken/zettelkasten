@@ -1,0 +1,10 @@
+
+2025-10-11 10:18
+
+Tags: [[hashing]]
+
+ pepper is a secret added to an input such as a password during hashing with a [[Cryptography]] hash function. This value differs from a salt in that it is not stored alongside a password hash, but rather the pepper is kept separate in some other medium, such as a Hardware Security Module
+
+The hash and salt are usually stored in a database, but a pepper must be stored separately to prevent it from being obtained by the attacker in case of a database breach. A pepper should be long enough to remain secret from brute force attempts to discover it (NIST recommends at least 112 bits).
+
+### References

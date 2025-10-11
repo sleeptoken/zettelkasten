@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Appdata storage in windows.md",
+                "file": "hold on/Session fixation vs hijacking.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Appdata storage in windows"
+              "title": "Session fixation vs hijacking"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "AppData",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Appdata storage in windows.md",
+                "file": "hold on/Session fixation vs hijacking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Appdata storage in windows"
+              "title": "Outline of Session fixation vs hijacking"
             }
           }
         ],
@@ -182,20 +181,25 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
+    "hold on/Pasted image 20250828161637.png",
+    "hold on/Linux on Mac.md",
+    "hold on/IAM notes.md",
+    "Tags/Peppering.md",
+    "Tags/hashing.md",
+    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
+    "hold on/Preventing integrity violation.md",
+    "hold on/Osint & regex.md",
+    "hold on/Session fixation vs hijacking.md",
+    "Remote Thought/UTF-8.md",
+    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
+    "Remote Thought/Public key certificates.md",
+    "Remote Thought/Appdata storage in windows.md",
     "Remote Thought/Security Operations Center.md",
     "Tags/Defence.md",
     "Remote Thought/Emails.md",
-    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
-    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
-    "hold on/IAM.md",
     "hold on/Network loggin.md",
     "Tags/Find.md",
     "Remote Thought/Privilege Escalation.md",
-    "hold on/Session fixation vs hijacking.md",
-    "hold on/Peppering.md",
-    "hold on/Preventing integrity violation.md",
-    "hold on/Untitled.md",
-    "hold on/UTF-8.md",
     "Jinja2 SSTI.md",
     "Template/Full Note.md",
     "hold on/Web cache entanglement.md",
@@ -203,15 +207,9 @@
     "Untitled.base",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
     "Tags/JavaScript.md",
-    "Remote Thought/Public key certificates.md",
     "Remote Thought/Reverse Engineering Android apps.md",
     "Remote Thought/Footprinting & Reconnaissance.md",
     "Remote Thought/Cross-origin resource sharing (CORS).md",
-    "Remote Thought/Azure Key Vault.md",
-    "hold on/Osint & regex.md",
-    "hold on/Kerberos auth.md",
-    "Remote Thought/Mako (Python) SSTI.md",
-    "hold on/Pasted image 20250828161637.png",
     "hold on/Unix",
     "hold on/Tags",
     "hold on/Notes from babaji",

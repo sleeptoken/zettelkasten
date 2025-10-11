@@ -1,3 +1,5 @@
+Tags: [[Defence]]
+
 IGA solutions (Identity and access governance) -- iam for users 
 Identity management 
 Access rights management 
