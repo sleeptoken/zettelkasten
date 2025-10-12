@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Hashing.md",
+                "file": "hold on/Misconfigured Nginx, and real-world password management flaws.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hashing"
+              "title": "Misconfigured Nginx, and real-world password management flaws"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Hashing.md",
+                "file": "hold on/Misconfigured Nginx, and real-world password management flaws.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hashing"
+              "title": "Outline of Misconfigured Nginx, and real-world password management flaws"
             }
           }
         ],
@@ -181,18 +181,18 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
-    "hold on/Preventing integrity violation.md",
+    "hold on/IAM notes.md",
+    "hold on/Linux on Mac.md",
+    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
     "Tags/Hashing.md",
+    "hold on/Preventing integrity violation.md",
     "Tags/OSINT.md",
     "hold on/Osint & regex.md",
     "Tags/regex.md",
-    "hold on/IAM notes.md",
-    "hold on/Linux on Mac.md",
     "hold on/Unix/Links.md",
     "Remote Thought/Session fixation vs hijacking.md",
     "Images/Pasted image 20250828161637.png",
     "Tags/Peppering.md",
-    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
     "Remote Thought/UTF-8.md",
     "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
     "Remote Thought/Public key certificates.md",

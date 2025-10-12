@@ -35,7 +35,7 @@ On intercepting the request and manipulating the path to attempt accessing sensi
 
 The response returned the contents of `/etc/passwd`, confirming a path traversal vulnerability due to improper handling of URL paths in the web server configuration.
 
-fuzz the vulnerable endpoint to identify other accessible files. I used FFUF with a wordlist targeting common LFI paths and saved the output to a file:
+fuzz the vulnerable endpoint to identify other accessible files. I used [[ffuf]] with a wordlist targeting common LFI paths and saved the output to a file:
 ```sh
 ffuf -u 'http://mountaineer.thm/wordpress/images..FUZZ' \
      -w /usr/share/seclists/Fuzzing/LFI/LFI-linux-and-windows_by-1N3@CrowdShield.txt \
@@ -56,13 +56,13 @@ This generated a clean list of payloads, which can further be used in burp intru
 
 Inside `/var/mail/www-data`, I found an email containing a password reset link for the user Everest.
 
-However, when I visited the link, it had already expired. The reset page indicated that I could request a new password reset by submitting a username. This gave me an idea — what if I used this same functionality to reset the password for the admin account?
+> However, when I visited the link, it had already expired. The reset page indicated that I could request a new password reset by submitting a username. This gave me an idea — what if I used this same functionality to reset the password for the admin account?
 
 I submitted the username `admin`, and the site responded by saying a reset link had been sent to the registered email.
 
-To intercept that link, I returned to BurpSuite Intruder, using the same LFI payloads to monitor for new entries in the webmail logs. After scrolling to the bottom of the response from `/var/mail/www-data`, I found a new password reset link , this time for the admin user. Click the link and reset the password 
+To intercept that link, I returned to BurpSuite Intruder, using the same [[LFI]] payloads to monitor for new entries in the webmail logs. After scrolling to the bottom of the response from `/var/mail/www-data`, I found a new password reset link , this time for the admin user. Click the link and reset the password 
 
-While reviewing the responses from BurpSuite Intruder, one of the LFI payloads successfully retrieved `/var/log/lastlog`, which contained entries revealing a `hostname:adminroundcubemail.mountaineer.thm`. I added the hostname to my /etc/hosts file to resolve it locally, on visiting the domain, I was redirected to a Roundcube webmail login page.
+While reviewing the responses from BurpSuite Intruder, one of the LFI payloads successfully retrieved `/var/log/lastlog`, which contained entries revealing a `hostname:adminroundcubemail.mountaineer.thm`. I added the hostname to my` /etc/hosts `file to resolve it locally, on visiting the domain, I was redirected to a Roundcube webmail login page.
 
 ### Roundcube Webmail
 
