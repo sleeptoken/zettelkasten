@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Permissions.md",
+                "file": "Port Knocking.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Permissions"
+              "title": "Port Knocking"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/Permissions.md",
+                "file": "Port Knocking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Permissions"
+              "title": "Outline of Port Knocking"
             }
           }
         ],
@@ -181,11 +181,12 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
-    "Remote Thought/Spawning a TTY shell.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Web Cache Deception.md",
-    "Sherlock from hackthebox.md",
     "USB HID analysis.md",
+    "Sherlock from hackthebox.md",
+    "Web Cache Deception.md",
+    "Remote Thought/Spawning a TTY shell.md",
+    "Tags/Permissions.md",
+    "Remote Thought/Stabilizing Shells and RootBash.md",
     "Repeating Key XOR.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Understanding basic crypto.md",
@@ -207,7 +208,6 @@
     "Remote Thought/Session fixation vs hijacking.md",
     "Images/Pasted image 20250828161637.png",
     "Tags/Peppering.md",
-    "Remote Thought/UTF-8.md",
     "Untitled 1.base",
     "Untitled.base",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
