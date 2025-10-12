@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Misconfigured Nginx, and real-world password management flaws.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Misconfigured Nginx, and real-world password management flaws"
+              "title": "Spawning a TTY shell"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hold on/Misconfigured Nginx, and real-world password management flaws.md",
+                "file": "Remote Thought/Spawning a TTY shell.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Misconfigured Nginx, and real-world password management flaws"
+              "title": "Outline of Spawning a TTY shell"
             }
           }
         ],
@@ -181,9 +181,21 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
+    "Web Cache Deception.md",
+    "Sherlock from hackthebox.md",
+    "USB HID analysis.md",
+    "Repeating Key XOR.md",
+    "SSRF to SSTI RCE & RabbitMQ Root.md",
+    "Understanding basic crypto.md",
+    "Active Directory Basics.md",
+    "Bluetooth reverse engineering.md",
+    "Permissions in Practice.md",
+    "Broadcast Threat Surface.md",
+    "Jinja2 SSTI.md",
+    "Port Knocking.md",
+    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
     "hold on/IAM notes.md",
     "hold on/Linux on Mac.md",
-    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
     "Tags/Hashing.md",
     "hold on/Preventing integrity violation.md",
     "Tags/OSINT.md",
@@ -196,21 +208,9 @@
     "Remote Thought/UTF-8.md",
     "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
     "Remote Thought/Public key certificates.md",
-    "Remote Thought/Appdata storage in windows.md",
-    "Remote Thought/Security Operations Center.md",
-    "Tags/Defence.md",
-    "Remote Thought/Emails.md",
-    "hold on/Network loggin.md",
-    "Tags/Find.md",
-    "Remote Thought/Privilege Escalation.md",
-    "Jinja2 SSTI.md",
-    "Template/Full Note.md",
-    "hold on/Web cache entanglement.md",
     "Untitled 1.base",
     "Untitled.base",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
-    "Tags/JavaScript.md",
-    "Remote Thought/Reverse Engineering Android apps.md",
     "hold on/Unix",
     "hold on/Tags",
     "hold on/Notes from babaji",
