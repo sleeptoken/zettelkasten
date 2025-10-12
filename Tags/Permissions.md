@@ -1,7 +1,17 @@
 
 `-rwx, drwx`
-`-` means file 
-`d` means directory
+
+File types listed in below table 
+
+| Character | Type              |
+| --------- | ----------------- |
+| `-`       | Regular file      |
+| `d`       | Directory         |
+| `l`       | Symbolic link     |
+| `c`       | Character device  |
+| `b`       | Block device      |
+| `s`       | Socket            |
+| `p`       | Named pipe (FIFO) |
 
 `rwx`   ->  read write execute 
 r    -> 4
