@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Port Knocking.md",
+                "file": "Curl revshell.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Port Knocking"
+              "title": "Curl revshell"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Port Knocking.md",
+                "file": "Curl revshell.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Port Knocking"
+              "title": "Outline of Curl revshell"
             }
           }
         ],
@@ -181,6 +181,9 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
+    "Outbound htb.md",
+    "Port Knocking.md",
+    "Curl revshell.md",
     "USB HID analysis.md",
     "Sherlock from hackthebox.md",
     "Web Cache Deception.md",
@@ -195,7 +198,6 @@
     "Permissions in Practice.md",
     "Broadcast Threat Surface.md",
     "Jinja2 SSTI.md",
-    "Port Knocking.md",
     "hold on/Misconfigured Nginx, and real-world password management flaws.md",
     "hold on/IAM notes.md",
     "hold on/Linux on Mac.md",
@@ -205,9 +207,7 @@
     "hold on/Osint & regex.md",
     "Tags/regex.md",
     "hold on/Unix/Links.md",
-    "Remote Thought/Session fixation vs hijacking.md",
     "Images/Pasted image 20250828161637.png",
-    "Tags/Peppering.md",
     "Untitled 1.base",
     "Untitled.base",
     "Images/0_Fz67vjEfSFoXtO_g.webp",
