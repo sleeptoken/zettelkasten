@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Curl revshell.md",
+                "file": "Remote Thought/Reverse shell using curl.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Curl revshell"
+              "title": "Reverse shell using curl"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "277ebed70b781143",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Curl revshell.md",
+                "file": "Remote Thought/Reverse shell using curl.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Curl revshell"
+              "title": "Outline of Reverse shell using curl"
             }
           }
         ],
@@ -166,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,9 +183,10 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
+    "hold on/IAM notes.md",
+    "Remote Thought/Reverse shell using curl.md",
     "Outbound htb.md",
     "Port Knocking.md",
-    "Curl revshell.md",
     "USB HID analysis.md",
     "Sherlock from hackthebox.md",
     "Web Cache Deception.md",
@@ -199,7 +202,6 @@
     "Broadcast Threat Surface.md",
     "Jinja2 SSTI.md",
     "hold on/Misconfigured Nginx, and real-world password management flaws.md",
-    "hold on/IAM notes.md",
     "hold on/Linux on Mac.md",
     "Tags/Hashing.md",
     "hold on/Preventing integrity violation.md",
