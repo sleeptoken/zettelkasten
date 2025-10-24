@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "277ebed70b781143",
@@ -183,8 +182,10 @@
   },
   "active": "09661e2ae32679fc",
   "lastOpenFiles": [
-    "hold on/IAM notes.md",
+    "Tags/curl.md",
     "Remote Thought/Reverse shell using curl.md",
+    "hold on/Unix/Curl.md",
+    "hold on/IAM notes.md",
     "Outbound htb.md",
     "Port Knocking.md",
     "USB HID analysis.md",
@@ -207,8 +208,6 @@
     "hold on/Preventing integrity violation.md",
     "Tags/OSINT.md",
     "hold on/Osint & regex.md",
-    "Tags/regex.md",
-    "hold on/Unix/Links.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
