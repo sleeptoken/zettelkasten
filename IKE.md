@@ -6,7 +6,14 @@ Source: #htb #Boot2root
 Tags: 
 ### Enumeration 
 
-rustscan only shows port 22 open, we move to UDP enum
+rustscan only shows port 22 open, When TCP fails, we turn to its connectionless counterpart, UDP.
+```
+udpx -t 10.129.13.112 -c 128 -w 1000 
+```
+- `-c`: Concurrency level
+- `-w`: Wait time in milliseconds
+
+
 
 
 
