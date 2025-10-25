@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "7a4e16ecca09d536",
+            "id": "550bb15ab34e54c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IKE.md",
+                "file": "Expressway Htb.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "IKE"
+              "title": "Expressway Htb"
             }
           }
         ],
@@ -113,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "277ebed70b781143",
@@ -177,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Reverse shell using curl.md",
+                "file": "Expressway Htb.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Reverse shell using curl"
+              "title": "Outline of Expressway Htb"
             }
           }
         ],
@@ -205,10 +206,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a4e16ecca09d536",
+  "active": "550bb15ab34e54c8",
   "lastOpenFiles": [
+    "Internet Key Exchange.md",
+    "Expressway Htb.md",
     "Remote Thought/Enumeration.md",
-    "IKE.md",
     "Port Knocking.md",
     "Outbound htb.md",
     "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
@@ -232,7 +234,6 @@
     "Understanding basic crypto.md",
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
-    "Permissions in Practice.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
