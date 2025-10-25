@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "Port Knocking"
             }
+          },
+          {
+            "id": "7a4e16ecca09d536",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IKE.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "IKE"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,8 +205,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "7a4e16ecca09d536",
   "lastOpenFiles": [
+    "Remote Thought/Enumeration.md",
+    "IKE.md",
+    "Port Knocking.md",
     "Outbound htb.md",
     "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
     "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
@@ -193,7 +221,6 @@
     "Tags/curl.md",
     "hold on/Unix/Curl.md",
     "hold on/IAM notes.md",
-    "Port Knocking.md",
     "USB HID analysis.md",
     "Sherlock from hackthebox.md",
     "Web Cache Deception.md",
@@ -206,8 +233,6 @@
     "Active Directory Basics.md",
     "Bluetooth reverse engineering.md",
     "Permissions in Practice.md",
-    "Broadcast Threat Surface.md",
-    "Jinja2 SSTI.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
