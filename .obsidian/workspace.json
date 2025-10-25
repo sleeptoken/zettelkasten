@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Reverse shell using curl.md",
+                "file": "Port Knocking.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Reverse shell using curl"
+              "title": "Port Knocking"
             }
           }
         ]
@@ -180,13 +180,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09661e2ae32679fc",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
-    "Tags/curl.md",
+    "Outbound htb.md",
+    "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
+    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
+    "Remote Thought/Session fixation vs hijacking.md",
+    "Remote Thought/Public key certificates.md",
     "Remote Thought/Reverse shell using curl.md",
+    "hold on/Notes from babaji/Dirtycow.md",
+    "hold on/Network loggin.md",
+    "Tags/curl.md",
     "hold on/Unix/Curl.md",
     "hold on/IAM notes.md",
-    "Outbound htb.md",
     "Port Knocking.md",
     "USB HID analysis.md",
     "Sherlock from hackthebox.md",
@@ -202,12 +208,6 @@
     "Permissions in Practice.md",
     "Broadcast Threat Surface.md",
     "Jinja2 SSTI.md",
-    "hold on/Misconfigured Nginx, and real-world password management flaws.md",
-    "hold on/Linux on Mac.md",
-    "Tags/Hashing.md",
-    "hold on/Preventing integrity violation.md",
-    "Tags/OSINT.md",
-    "hold on/Osint & regex.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
