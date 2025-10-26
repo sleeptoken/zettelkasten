@@ -59,7 +59,7 @@ sudo ike-scan -A expressway.htb
 The server supports Aggressive Mode and leaked an identity: a Fully Qualified Domain Name of a user, `ike@expressway.htb`. This gives us a valid username.
 
 Now we have a username (`ike`) and know the authentication method is a PSK. The final step is to capture the authentication hash from the Aggressive Mode exchange and crack the PSK offline.
-##### Capturing the hash 
+#### Capturing the hash 
 
 `ike-scan` can automatically format the necessary data for cracking with its sister tool, `psk-crack`.
 
@@ -73,6 +73,8 @@ psk-crack -d /usr/share/wordlists/rockyou.txt ike.psk
 ```
 
 reuse these new found creds for ssh access
+### Privilege Escalation 
+
 
 
 
