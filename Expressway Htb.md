@@ -25,7 +25,7 @@ o/p of UDP scan
 68  open  dhcpc
 69  open  tftp
 500  open  isakmp
-#### Fingerprinting IKE
+#### Fingerprinting IKE (Port 500)
 
 `ike-scan` - It crafts [[Internet Key Exchange]] packets to fingerprint the VPN gateway and elicit responses that can reveal its configuration, identity, and vulnerabilities.
 
@@ -75,10 +75,21 @@ psk-crack -d /usr/share/wordlists/rockyou.txt ike.psk
 reuse these new found creds for ssh access
 ### Privilege Escalation 
 
+#### M1 - exploiting sudo vuln using CVE
 
+First thing I did was check `$PATH` which contains an odd path:
 
+```sh
+ike@expressway:/usr/local/bin$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+```
 
+Then I checked the files in `/usr/local/bin` and it contained some sudo binary.
+When I ran `./sudo -V` it gave me the version
 
+When you look it up, you can find CVE-2025-32463 which is a local privilege escalation. Exploitdb already has a finished PoC that we can use for our case. [https://www.exploit-db.com/exploits/52352](https://www.exploit-db.com/exploits/52352)
+
+After running the script we get a root shell and can read the root flag:
 
 ### References
 https://app.hackthebox.com/machines/736
