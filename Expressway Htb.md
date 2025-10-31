@@ -89,8 +89,9 @@ When I ran `./sudo -V` it gave me the version
 
 When you look it up, you can find CVE-2025-32463 which is a local privilege escalation. Exploitdb already has a finished PoC that we can use for our case. [https://www.exploit-db.com/exploits/52352](https://www.exploit-db.com/exploits/52352)
 
-After running the script we get a root shell and can read the root flag:
+After running the script we get a root shell and can read the root flag
 
+### M2  
 ### References
 https://app.hackthebox.com/machines/736
 
