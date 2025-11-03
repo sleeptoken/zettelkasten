@@ -91,7 +91,7 @@ When you look it up, you can find CVE-2025-32463 which is a local privilege esca
 
 After running the script we get a root shell and can read the root flag
 
-### M2  
+### M2   
 ### References
 https://app.hackthebox.com/machines/736
 
