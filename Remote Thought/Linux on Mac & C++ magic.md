@@ -31,7 +31,7 @@ Not C++
 Because C does not have magic.
 C++ on the other hand, is full of magic.
 %% As in? %%
- `A + B` can do any bloody thing behind the curtains; depending upon types of A and B, and how is `operator+` is defined.
+`A + B` can do any bloody thing behind the curtains; depending upon types of A and B, and how is `operator+` is defined.
 Or, overloaded.
 `A + B` sending an email in background because fuck you? Absolutely possible.
 So you can’t reason about all the side effects, unless you dabble into a lot more corners of code base.

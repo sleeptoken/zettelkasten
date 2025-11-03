@@ -1,4 +1,5 @@
-Arizona CTF 2025
+Source: pwncollege
+
 Tags: [[Symbolic links]]
 
 We see a program with suid bit set, on using cat cmd on the program we see
@@ -21,3 +22,7 @@ Then add this to the path
 export PATH=/tmp:$PATH
 ```
 Then go to challenge directory and run the program 
+
+### References
+
+Arizona CTF 2025

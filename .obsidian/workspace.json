@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Linux on Mac.md",
+                "file": "Cortex XSIAM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Linux on Mac"
+              "title": "Cortex XSIAM"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hold on/Linux on Mac.md",
+                "file": "Cortex XSIAM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Linux on Mac"
+              "title": "Outline of Cortex XSIAM"
             }
           }
         ],
@@ -181,8 +181,17 @@
   },
   "active": "1a91ff4838da5bf6",
   "lastOpenFiles": [
-    "Cortex XSIAM.md",
+    "hold on/Unix/Symbolic links.md",
+    "Remote Thought/Attack using Environment variables.md",
     "Remote Thought/Security Operations Center.md",
+    "hold on/Unix/Links.md",
+    "hold on/Unix/Disk partition.md",
+    "hold on/Unix/Tricks linux.md",
+    "Tags/linux.md",
+    "hold on/Network loggin.md",
+    "hold on/IAM notes.md",
+    "Remote Thought/Linux on Mac & C++ magic.md",
+    "Cortex XSIAM.md",
     "Remote Thought/Reverse shell using curl.md",
     "Port Knocking.md",
     "Jinja2 SSTI.md",
@@ -195,18 +204,9 @@
     "Remote Thought/Session fixation vs hijacking.md",
     "Remote Thought/Public key certificates.md",
     "hold on/Notes from babaji/Dirtycow.md",
-    "hold on/Network loggin.md",
     "Tags/curl.md",
     "hold on/Unix/Curl.md",
-    "hold on/IAM notes.md",
     "USB HID analysis.md",
-    "Sherlock from hackthebox.md",
-    "Web Cache Deception.md",
-    "Remote Thought/Spawning a TTY shell.md",
-    "Tags/Permissions.md",
-    "Remote Thought/Stabilizing Shells and RootBash.md",
-    "Repeating Key XOR.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
