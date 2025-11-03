@@ -1,6 +1,9 @@
-[04/10, 12:37 am] +91 76190 25219: Installed Linux on macbook today.
-[04/10, 12:49 am] +91 91368 97339: How did SIP allow that? 
-[04/10, 12:51 am] +91 96996 17371: System Integrity Protection
+> Installed Linux on macbook today.
+
+How did SIP (System Integrity Protection) allow that? 
+
+
+
 [04/10, 12:52 am] +91 76190 25219: What do you mean? SIP is for MacOS partition. Wo alag hai
 [04/10, 12:52 am] +91 91368 97339: And and will sandboxing work in the same way in Linux?
 [04/10, 12:52 am] +91 76190 25219: Naya partition banaya

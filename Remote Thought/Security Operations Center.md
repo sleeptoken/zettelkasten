@@ -320,12 +320,6 @@ Soc analysts use the following to address compliance needs
 
   
 
-Compliance requirements for soc related functions of the following
-
-##### PCI DSS
-
-  
-
 ### Data loss protection
 
   

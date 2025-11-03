@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "09661e2ae32679fc",
+            "id": "1a91ff4838da5bf6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Port Knocking.md",
+                "file": "hold on/Linux on Mac.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Port Knocking"
-            }
-          },
-          {
-            "id": "550bb15ab34e54c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Expressway Htb.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Expressway Htb"
+              "title": "Linux on Mac"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Expressway Htb.md",
+                "file": "hold on/Linux on Mac.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Expressway Htb"
+              "title": "Outline of Linux on Mac"
             }
           }
         ],
@@ -204,18 +179,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "550bb15ab34e54c8",
+  "active": "1a91ff4838da5bf6",
   "lastOpenFiles": [
-    "Internet Key Exchange.md",
+    "Cortex XSIAM.md",
+    "Remote Thought/Security Operations Center.md",
+    "Remote Thought/Reverse shell using curl.md",
+    "Port Knocking.md",
+    "Jinja2 SSTI.md",
+    "Outbound htb.md",
+    "Tags/Internet Key Exchange.md",
     "Expressway Htb.md",
     "Remote Thought/Enumeration.md",
-    "Port Knocking.md",
-    "Outbound htb.md",
     "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
     "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
     "Remote Thought/Session fixation vs hijacking.md",
     "Remote Thought/Public key certificates.md",
-    "Remote Thought/Reverse shell using curl.md",
     "hold on/Notes from babaji/Dirtycow.md",
     "hold on/Network loggin.md",
     "Tags/curl.md",
@@ -229,9 +207,6 @@
     "Remote Thought/Stabilizing Shells and RootBash.md",
     "Repeating Key XOR.md",
     "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "Understanding basic crypto.md",
-    "Active Directory Basics.md",
-    "Bluetooth reverse engineering.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
