@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cortex XSIAM.md",
+                "file": "Cortex XSIAM/Automation XSIAM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Cortex XSIAM"
+              "title": "Automation XSIAM"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cortex XSIAM.md",
+                "file": "Cortex XSIAM/Automation XSIAM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cortex XSIAM"
+              "title": "Outline of Automation XSIAM"
             }
           }
         ],
@@ -179,8 +179,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a91ff4838da5bf6",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
+    "Cortex XSIAM",
     "hold on/Unix/Symbolic links.md",
     "Remote Thought/Attack using Environment variables.md",
     "Remote Thought/Security Operations Center.md",
@@ -191,7 +192,7 @@
     "hold on/Network loggin.md",
     "hold on/IAM notes.md",
     "Remote Thought/Linux on Mac & C++ magic.md",
-    "Cortex XSIAM.md",
+    "Cortex XSIAM/Automation XSIAM.md",
     "Remote Thought/Reverse shell using curl.md",
     "Port Knocking.md",
     "Jinja2 SSTI.md",
@@ -206,7 +207,6 @@
     "hold on/Notes from babaji/Dirtycow.md",
     "Tags/curl.md",
     "hold on/Unix/Curl.md",
-    "USB HID analysis.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",

@@ -4,20 +4,19 @@
 Source: #paloalto 
 
 Tags: [[Defence]]
-### Automation Foundations
+## Automation components
 
-to streamline and optimize various cybersecurity and security operations tasks within the Cortex platform
-#### Automation components
-
-##### Marketplace
+### Marketplace
 is the central hub for managing content packs, which enhance security operations with content such as playbooks, integrations, scripts, and more. It also helps optimize case and asset management.
 
-##### Playbook
+### Playbook
 orchestrating a sequence of tasks, conditions, automations, commands, and loops to streamline and enhance investigation and response processes. *reduces investigation time*.
 
-##### Filters and Transformers
+### Filters and Transformers
 allowing users to extract, manipulate, and present data in JSON format
-Scripts - Scripts within Cortex serve as potent tools for executing specific actions through commands.
+
+### Scripts 
+Scripts within Cortex serve as potent tools for executing specific actions through commands.
 
 ### Content Pack Features in marketplace
 
