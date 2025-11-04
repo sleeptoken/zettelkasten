@@ -47,15 +47,6 @@ facilitate data-driven decision-making and the communication of security insight
 ### Playbook
 orchestrating a sequence of tasks, conditions, automations, commands, and loops to streamline and enhance investigation and response processes. *reduces investigation time*.
 
-### Filters and Transformers
-allowing users to extract, manipulate, and present data in JSON format
-
-### Scripts 
-Scripts within Cortex serve as potent tools for executing specific actions through commands.
-
-
-#### Playbook Overview
-
 Playbooks come into play during the investigation and response phase of the issue lifecycle. Serve as the core automation engine within the cortex system.
 
 Playbooks and case lifecycle
@@ -77,7 +68,20 @@ Automation tasks - automatically remediate issues by engaging third-party integr
 
 
 
-### work plan options to manage a playbook
+
+
+
+
+
+
+### Filters and Transformers
+allowing users to extract, manipulate, and present data in JSON format
+
+### Scripts 
+Scripts within Cortex serve as potent tools for executing specific actions through commands. A script is attached by default, making it uneditable. To modify a script, users can detach it or create a duplicate. 
+
+
+### Work Plan 
 
 Work plans are a part of issues, and contains the playbooks that are slated to be run for that issue.
 
