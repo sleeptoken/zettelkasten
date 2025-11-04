@@ -44,21 +44,6 @@ consolidate the view of security operations, enabling prompt decision-making and
 Reports
 facilitate data-driven decision-making and the communication of security insights to relevant parties.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Playbook
 orchestrating a sequence of tasks, conditions, automations, commands, and loops to streamline and enhance investigation and response processes. *reduces investigation time*.
 
@@ -69,9 +54,9 @@ allowing users to extract, manipulate, and present data in JSON format
 Scripts within Cortex serve as potent tools for executing specific actions through commands.
 
 
-### Playbook Overview
+#### Playbook Overview
 
-Playbooks come into play during the investigation and response phase of the issue lifecycle
+Playbooks come into play during the investigation and response phase of the issue lifecycle. Serve as the core automation engine within the cortex system.
 
 Playbooks and case lifecycle
 
@@ -83,7 +68,8 @@ Playbooks and case lifecycle
 6. Remediations criteria
 7. Continuous improvement
 
-Types of playbook
+**Types of playbook**
+
 Manual tasks
 Conditional tasks - validate conditions based on parameters
 Communication tasks - facilitate interaction w others
