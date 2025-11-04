@@ -80,22 +80,19 @@ allowing users to extract, manipulate, and present data in JSON format
 ### Scripts 
 Scripts within Cortex serve as potent tools for executing specific actions through commands. A script is attached by default, making it uneditable. To modify a script, users can detach it or create a duplicate. 
 
-
 ### Work Plan 
 
-Work plans are a part of issues, and contains the playbooks that are slated to be run for that issue.
+Work plans are a part of issues, and contains the playbooks that are slated to be run for that issue. Playbooks are used to consistently perform and document security monitoring, orchestration, and response activities.
 
-##### work plan options
+**Work plan options**
 
-Change the playbook
-Follow a Playbook - see running in real time
-Run Again
-zoom
-Export Playbook - in png
-
-
-
-#### playbook management
+- Change the playbook
+- Follow a Playbook - see running in real time
+- Run Again
+- zoom
+- Export Playbook - in png
+  
+#### Playbook management
 
 Sub-Playbook Loops
 involve the creation of loops within a parent playbook using sub-playbooks. The parent playbook can be configured to exit the loop based on conditions like "For Each Input" or "Built-in." This feature is instrumental for iterating over a set of tasks multiple times, enhancing automation capabilities.
@@ -108,8 +105,6 @@ Creating issue fields in a playbook is an iterative process. The set issue scrip
 
 Playbook Debugger
 Debugger features include setting breakpoints, overriding inputs and outputs, skipping tasks, and viewing context data and indicators.
-
-
 
 ### Playbook tasks
 
