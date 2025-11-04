@@ -9,6 +9,56 @@ Tags: [[Defence]]
 ### Marketplace
 is the central hub for managing content packs, which enhance security operations with content such as playbooks, integrations, scripts, and more. It also helps optimize case and asset management.
 
+>  Content Pack Features 
+
+Cortex provides the full potential of automation through a rich set of features that empower organizations to fortify their security posture and streamline case management.
+##### Integrations
+
+Integrations connect third-party security and alert management platforms to Cortex. This connection enables these platforms to trigger events, which are then transformed into issues within Cortex, initiating automated security processes.
+##### Playbooks \& Scripts
+
+Playbooks efficiently automate case handling, minimizing response times and ensuring consistency, while scripts provide customized automation tailored to organizational requirements.
+
+- Playbooks are triggered by ingested issues, enabling the definition of a sequence of actions for specific case types. They offer adaptability and resource allocation optimization.
+- Scripts are composed of a series of commands that can be employed in playbook tasks and when running commands in the issue War Room.
+##### Issue Types and Fields
+
+Issue types are essential for categorizing and prioritizing issues within Cortex, serve as the first step in classifying issues, determining the most suitable response and actions for each issue. Each issue type corresponds to a specific set of issue fields, ensuring the association of relevant information with each issue
+
+Issue fields provide detailed information about each issue, capturing specific data relevant to the corresponding issue type.
+##### Rules
+
+**Correlation Rules** 
+analyze multiple events from various sources using the XQL-based engine within Cortex. They are scheduled and utilize the XQL engine, allowing for rule-based threat detection.
+
+**Data Model Rules** 
+play a pivotal role in data normalization and enrichment. They allow the creation of a standardized schema with predefined data types and the mapping of third-party data to this schema. (making data from various sources easily consumable and consistent in format.)
+
+**Parsing Rules**
+Enable the preprocessing of incoming data, allowing for the removal of unnecessary information, data quality improvement, and storage optimization.
+##### Dashboards and Reports
+
+Dashboards
+consolidate the view of security operations, enabling prompt decision-making and enhancing situational awareness. w  Customizable widgets
+
+Reports
+facilitate data-driven decision-making and the communication of security insights to relevant parties.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Playbook
 orchestrating a sequence of tasks, conditions, automations, commands, and loops to streamline and enhance investigation and response processes. *reduces investigation time*.
 
@@ -17,58 +67,6 @@ allowing users to extract, manipulate, and present data in JSON format
 
 ### Scripts 
 Scripts within Cortex serve as potent tools for executing specific actions through commands.
-
-### Content Pack Features in marketplace
-
-Cortex provides the full potential of automation through a rich set of features that empower organizations to fortify their security posture and streamline case management.
-
-#### Integrations
-
-Integrations connect third-party security and alert management platforms to Cortex. This connection enables these platforms to trigger events, which are then transformed into issues within Cortex, initiating automated security processes.
-
-
-
-#### Playbooks \& Scripts
-
-In Cortex, playbooks efficiently automate case handling, minimizing response times and ensuring consistency, while scripts provide customized automation tailored to organizational requirements.
-Playbooks are triggered by ingested issues, enabling the definition of a sequence of actions for specific case types. They offer adaptability and resource allocation optimization.
-
-
-
-Scripts are composed of a series of commands that can be employed in playbook tasks and when running commands in the issue War Room.
-
-
-
-#### Issue Types and Fields
-
-Issue types are essential for categorizing and prioritizing issues within Cortex, serve as the first step in classifying issues, determining the most suitable response and actions for each issue. Each issue type corresponds to a specific set of issue fields, ensuring the association of relevant information with each issue
-
-Issue fields provide detailed information about each issue, capturing specific data relevant to the corresponding issue type.
-
-
-
-#### Rules
-
-Correlation Rules analyze multiple events from various sources using the XQL-based engine within Cortex. They are scheduled and utilize the XQL engine, allowing for rule-based threat detection.
-
-Data Model Rules play a pivotal role in data normalization and enrichment. They allow the creation of a standardized schema with predefined data types and the mapping of third-party data to this schema. (making data from various sources easily consumable and consistent in format.)
-
-Parsing Rules
-Enable the preprocessing of incoming data, allowing for the removal of unnecessary information, data quality improvement, and storage optimization.
-
-
-
-#### Dashboards and Reports
-
-Dashboards consolidate the view of security operations, enabling prompt decision-making and enhancing situational awareness. w  Customizable widgets
-Reports facilitate data-driven decision-making and the communication of security insights to relevant parties.
-
-
-
-### Content pack mgmt
-
-Content packs undergo regular updates to address bugs, introduce enhancements, and refine their functionality.
-
 
 
 ### Playbook Overview
