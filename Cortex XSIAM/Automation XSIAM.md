@@ -164,7 +164,7 @@ Use commands like` !ad-get-user` with `raw-response=true` for precision in ident
 
 ### Filters and Transformers
 
-data manipulation is crucial for effective case response, by allowing users to extract, manipulate, and present data in JSON format. Whether applied in playbook tasks or instance mapping, these tools empower users to shape the information according to their specific needs
+Data manipulation is crucial for effective case response, by allowing users to extract, manipulate, and present data in JSON format. Whether applied in playbook tasks or instance mapping, these tools empower users to shape the information according to their specific needs
 
 **Filters (can be nested)**
 - Filters serve the purpose of extracting relevant data for further use within the platform.
