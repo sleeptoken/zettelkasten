@@ -177,33 +177,24 @@ Manual (Default: Out-of-band)
 Indicator Extraction Rules and Options
 Enhancing indicator extraction within tasks involves creating rules for efficient playbook execution. Default extraction values are set to inline, and commands like extractIndicators, !ip, and enrichIndicators are used
 
-
-
-Use commands like !ad-get-user with raw-response=true for precision in identifying information for extension.
-
-
+Use commands like` !ad-get-user` with `raw-response=true` for precision in identifying information for extension.
 
 ### Filters and transformers
 
 data manipulation is crucial for effective case response, by allowing users to extract, manipulate, and present data in JSON format. Whether applied in playbook tasks or instance mapping, these tools empower users to shape the information according to their specific needs
 
-Filters (can be nested)
-Filters serve the purpose of extracting relevant data for further use within the platform.
+**Filters (can be nested)**
+- Filters serve the purpose of extracting relevant data for further use within the platform.
 
-
-
-Transformer
-Transformers play a crucial role in data manipulation by focusing on converting or rendering values. eg. A practical illustration involves transforming a date from non-Unix to Unix format or utilizing the count transformer to ascertain the number of elements.
-Transformers are further categorized into Date, General, and Custom types:
-Date transformers specifically handle the conversion of date formats.
-General transformers provide functionalities such as sorting, splicing, and counting.
-Users also have the capability to create custom transformers, adding an additional layer of customization to the data transformation process.
-
-
+**Transformer**
+- Transformers play a crucial role in data manipulation by focusing on converting or rendering values. 
+	- eg. A practical illustration involves transforming a date from non-Unix to Unix format or utilizing the count transformer to ascertain the number of elements.
+- Transformers are further categorized into Date, General, and Custom types:
+	- Date transformers specifically handle the conversion of date formats.
+	- General transformers provide functionalities such as sorting, splicing, and counting.
+	- Users also have the capability to create custom transformers, adding an additional layer of customization to the data transformation process.
 
 Filters in Cortex are categorized based on their functionality. These categories include Boolean, Date, General, String, Number, and Unknown.
-
-
 
 ### Lists in cortex
 
