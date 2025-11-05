@@ -80,6 +80,8 @@ allowing users to extract, manipulate, and present data in JSON format
 ### Scripts 
 Scripts within Cortex serve as potent tools for executing specific actions through commands. A script is attached by default, making it uneditable. To modify a script, users can detach it or create a duplicate. 
 
+
+
 ### Work Plan 
 
 Work plans are a part of issues, and contains the playbooks that are slated to be run for that issue. Playbooks are used to consistently perform and document security monitoring, orchestration, and response activities.
@@ -91,7 +93,6 @@ Work plans are a part of issues, and contains the playbooks that are slated to b
 - Run Again
 - zoom
 - Export Playbook - in png
-  
 #### Playbook management
 
 Sub-Playbook Loops
@@ -109,23 +110,17 @@ Debugger features include setting breakpoints, overriding inputs and outputs, sk
 ### Playbook tasks
 
 Depending on the task type, playbooks feature inputs and outputs crucial for task execution. Sub-playbooks, categorized as parent or child playbooks, provide modularity and reusability in playbook development.
-
 #### Metadata
 
-Understanding playbook metadata helps in troubleshooting system performance issues.
-Navigate to the Case War Room on the Cases page and run the following command:
+Understanding playbook metadata helps in troubleshooting system performance issues, users can analyze playbook task i/p & o/p, storage usage and task types.
+- Navigate to the Case War Room on the Cases page and run the following command:
+```
 !getInvPlaybookMetaData caseId=<case ID> minSize=<size of the data you want to return in KB. Default is 10>
-
-
-
+```
 #### Task Execution and Management
 
-
-
 Playbooks are executed when cases are ingested, automatically running through their predefined workflows.
-
-
-
+Users can view and update playbooks associated with cases or issues in the work plan section.
 #### Auth for comms tasks
 
 Organizations can configure SSO by setting up dedicated groups of external users in their identity provider (IdP) such as Okta. Parameters such as Single Sign-On URL, Audience URI (Unified Resource Identifier), and IdP SSO URL are specified to establish a secure authentication process.
@@ -138,19 +133,19 @@ Within the work plan, you can create tasks for a specific iteration of a playboo
 
 You can run automation and sub-playbooks with tasks, communicate with end users, set conditions, and store relevant data.
 
-Standard
+**Standard**
 Standard tasks range from manual tasks, like creating a case or escalating an existing case, to automated(could be done w scripts) tasks, such as assigning analysts to cases or enriching indicators.
 
-Conditional
+**Conditional**
 Use conditional tasks as decision trees in your flow chart
 
-Data Collection
+**Data Collection**
 You can use a data-collection task to interact with users through a survey
 
-Section Header
+**Section Header**
 These tasks make it easy to identify the playbook's start, various sections, and end.
 
-### Inputs and Outputs in Cortex
+### Inputs and Outputs in Playbook Cortex
 
 Inputs are data pieces originating from issues or external integrations. These inputs undergo manipulation and enrichment, resulting in outputs
 
