@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Expressway Htb.md",
+                "file": "hold on/Lwn/What is Seccomp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Expressway Htb"
+              "title": "What is Seccomp"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Expressway Htb.md",
+                "file": "hold on/Lwn/What is Seccomp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Expressway Htb"
+              "title": "Outline of What is Seccomp"
             }
           }
         ],
@@ -181,32 +181,33 @@
   },
   "active": "1a91ff4838da5bf6",
   "lastOpenFiles": [
+    "Tags/linux.md",
+    "hold on/Unix/Links.md",
+    "hold on/Kernel/Linux from scratch.md",
+    "Remote Thought/Disk partition.md",
+    "Remote Thought/Bizzare Info, Facts.md",
+    "hold on/Tags/Html.md",
+    "Tags/Bug Bounty.md",
+    "Tags/X86.md",
+    "Tags/Forensics.md",
+    "Remote Thought/Hiding on disks.md",
+    "hold on/Forensics/Forensics.md",
+    "hold on/IAM notes.md",
+    "hold on/Network loggin.md",
+    "Jinja2 SSTI.md",
+    "Outbound htb.md",
+    "Port Knocking.md",
+    "Expressway Htb.md",
     "Cortex XSIAM/Automation XSIAM.md",
     "Cortex XSIAM",
     "hold on/Unix/Symbolic links.md",
     "Remote Thought/Attack using Environment variables.md",
     "Remote Thought/Security Operations Center.md",
-    "hold on/Unix/Links.md",
-    "hold on/Unix/Disk partition.md",
     "hold on/Unix/Tricks linux.md",
-    "Tags/linux.md",
-    "hold on/Network loggin.md",
-    "hold on/IAM notes.md",
     "Remote Thought/Linux on Mac & C++ magic.md",
     "Remote Thought/Reverse shell using curl.md",
-    "Port Knocking.md",
-    "Jinja2 SSTI.md",
-    "Outbound htb.md",
     "Tags/Internet Key Exchange.md",
-    "Expressway Htb.md",
     "Remote Thought/Enumeration.md",
-    "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
-    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
-    "Remote Thought/Session fixation vs hijacking.md",
-    "Remote Thought/Public key certificates.md",
-    "hold on/Notes from babaji/Dirtycow.md",
-    "Tags/curl.md",
-    "hold on/Unix/Curl.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",

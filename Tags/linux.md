@@ -11,3 +11,6 @@ Unshadow command is used to merge contents of 2 files eg.
 `sudo unshadow /etc/passwd /etc/shadow >> creds.txt`
 
 Understand Shell commands = [explainshell.com - match command-line arguments to their help text](https://explainshell.com/)
+
+[LinuxFromScratch](https://www.linuxfromscratch.org/lfs/view/stable/)
+[The Linux Kernel Archives](https://kernel.org/) -> kernel hacking 

@@ -1,3 +1,8 @@
+
+Source: 
+
+Tags: [[Tags/Forensics|Forensics]] [[linux]] 
+
 Disk partition is a contiguous area of a hard disk that has several logical disks.
 Every file system is organized into a sequence of blocks (e.g. 1024 bytes each) With the following components 
 - Boot block - contains the initial bootstrap program used to load the O.S(kernal). Located in the 1st few sections of the file system 

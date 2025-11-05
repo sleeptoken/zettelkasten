@@ -1,5 +1,10 @@
-[[win]]
-Linkedin learning 
+
+2025-11-05 23:25
+
+Source: [[win]]
+
+Tags: [[Tags/Forensics|Forensics]]
+
 ### Hidden history folder 
 
 ```
@@ -24,4 +29,8 @@ NTFS files are a complex structure, at min these files contain a `$DATA` in it.
 NTFS can also have multiple data streams also known as alternate data stream 
 
 We can see alternate data streams by using `/r` eg.`dir datafile.txt /r`
+
+### References
+
+Linkedin learning 
 
