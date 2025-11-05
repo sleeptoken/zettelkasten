@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cortex XSIAM/Automation XSIAM.md",
+                "file": "Expressway Htb.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Automation XSIAM"
+              "title": "Expressway Htb"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cortex XSIAM/Automation XSIAM.md",
+                "file": "Expressway Htb.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Automation XSIAM"
+              "title": "Outline of Expressway Htb"
             }
           }
         ],
@@ -179,8 +179,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "1a91ff4838da5bf6",
   "lastOpenFiles": [
+    "Cortex XSIAM/Automation XSIAM.md",
     "Cortex XSIAM",
     "hold on/Unix/Symbolic links.md",
     "Remote Thought/Attack using Environment variables.md",
@@ -192,7 +193,6 @@
     "hold on/Network loggin.md",
     "hold on/IAM notes.md",
     "Remote Thought/Linux on Mac & C++ magic.md",
-    "Cortex XSIAM/Automation XSIAM.md",
     "Remote Thought/Reverse shell using curl.md",
     "Port Knocking.md",
     "Jinja2 SSTI.md",
@@ -217,7 +217,6 @@
     "hold on/Networking",
     "hold on/Lwn",
     "hold on/Kernel",
-    "hold on/Forensics",
-    "hold on/Cloud sec"
+    "hold on/Forensics"
   ]
 }

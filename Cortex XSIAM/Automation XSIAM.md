@@ -190,29 +190,26 @@ Different types of data can be stored in a list, including text, string, numbers
 eg. of using a list will be that it typically holds IP addresses for whitelisting or blacklisting purposes.
 
 playbook tasks allow you to automate managing lists. You can use playbook tasks to create, view, and manipulate lists.
-
-
-
 ### Jobs
 
 enabling automation and orchestration of diverse security operations tasks. By configuring a job, *you can execute a playbook in response to specific events or time triggers.*
 
 2 types of jobs :
-Time-Triggered Jobs
-Feed Triggered Jobs
+- Time-Triggered Jobs
+- Feed Triggered Jobs
 
 Where are jobs used in cortex
 
-Creating Indicators List
-Vulnerability Management
-Indicators Enrichment
-System Health Check  
-Generating Summary Reports
+- Creating Indicators List
+- Vulnerability Management
+- Indicators Enrichment
+- System Health Check  
+- Generating Summary Reports
 
 Job panel views
-Chart Panel
-Table View
-Detailed View
+- Chart Panel
+- Table View
+- Detailed View
 
 
 
