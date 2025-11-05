@@ -65,24 +65,7 @@ Manual tasks
 Conditional tasks - validate conditions based on parameters
 Communication tasks - facilitate interaction w others
 Automation tasks - automatically remediate issues by engaging third-party integrations, ticketing systems, or file detonation using a sandbox
-
-
-
-
-
-
-
-
-
-### Filters and Transformers
-allowing users to extract, manipulate, and present data in JSON format
-
-### Scripts 
-Scripts within Cortex serve as potent tools for executing specific actions through commands. A script is attached by default, making it uneditable. To modify a script, users can detach it or create a duplicate. 
-
-
-
-### Work Plan 
+#### Work Plan 
 
 Work plans are a part of issues, and contains the playbooks that are slated to be run for that issue. Playbooks are used to consistently perform and document security monitoring, orchestration, and response activities.
 
@@ -107,29 +90,29 @@ Creating issue fields in a playbook is an iterative process. The set issue scrip
 Playbook Debugger
 Debugger features include setting breakpoints, overriding inputs and outputs, skipping tasks, and viewing context data and indicators.
 
-### Playbook tasks
+#### Playbook tasks
 
 Depending on the task type, playbooks feature inputs and outputs crucial for task execution. Sub-playbooks, categorized as parent or child playbooks, provide modularity and reusability in playbook development.
-#### Metadata
+##### Metadata
 
 Understanding playbook metadata helps in troubleshooting system performance issues, users can analyze playbook task i/p & o/p, storage usage and task types.
 - Navigate to the Case War Room on the Cases page and run the following command:
 ```
 !getInvPlaybookMetaData caseId=<case ID> minSize=<size of the data you want to return in KB. Default is 10>
 ```
-#### Task Execution and Management
+##### Task Execution and Management
 
 Playbooks are executed when cases are ingested, automatically running through their predefined workflows.
 Users can view and update playbooks associated with cases or issues in the work plan section.
-#### Auth for comms tasks
+##### Auth for comms tasks
 
 Organizations can configure SSO by setting up dedicated groups of external users in their identity provider (IdP) such as Okta. Parameters such as Single Sign-On URL, Audience URI (Unified Resource Identifier), and IdP SSO URL are specified to establish a secure authentication process.
 
-#### Adding an Ad-Hoc Task
+##### Adding an Ad-Hoc Task
 
 Within the work plan, you can create tasks for a specific iteration of a playbook. The task type can be an automation or another playbook. For example, within a manual task, you might need to enrich some data when running an investigation playbook.
 
-### Playbook task types
+#### Playbook task types
 
 You can run automation and sub-playbooks with tasks, communicate with end users, set conditions, and store relevant data.
 
@@ -145,15 +128,15 @@ You can use a data-collection task to interact with users through a survey
 **Section Header**
 These tasks make it easy to identify the playbook's start, various sections, and end.
 
-### Inputs and Outputs in Playbook Cortex
+#### Inputs and Outputs in Playbook Cortex
 
 Inputs are data pieces originating from issues or external integrations. These inputs undergo manipulation and enrichment, resulting in outputs
 
-#### Task cheatsheets
+##### Task cheatsheets
 
 a valuable tool for playbook development, offering quick access to the system and custom fields. By clicking on the playbook brackets, developers can efficiently populate task inputs and outputs, simplifying the configuration process and enhancing overall playbook development.
 
-#### Indicator Extraction
+##### Indicator Extraction
 
 is a crucial feature in identifying indicators from various text sources such as email content or war room entries. Troubleshooting involves checking the extraction mode and configuring rules for effective indicator extraction.
 
@@ -167,7 +150,7 @@ Indicators are extracted within the context that indicator extraction runs (sync
 Out-Of-Band
 Indicators are extracted in parallel (asynchronously) to other actions. The extracted data will be available within the issue, however, it is not available for immediate use in task inputs or outputs since the information is not available in real-time.
 
-#### Indicator Extractor Defaults
+##### Indicator Extractor Defaults
 
 Case Creation (Default: Inline)
 Case Field Change (Default: Out-of-band)
@@ -179,7 +162,7 @@ Enhancing indicator extraction within tasks involves creating rules for efficien
 
 Use commands like` !ad-get-user` with `raw-response=true` for precision in identifying information for extension.
 
-### Filters and transformers
+### Filters and Transformers
 
 data manipulation is crucial for effective case response, by allowing users to extract, manipulate, and present data in JSON format. Whether applied in playbook tasks or instance mapping, these tools empower users to shape the information according to their specific needs
 
@@ -196,14 +179,15 @@ data manipulation is crucial for effective case response, by allowing users to e
 
 Filters in Cortex are categorized based on their functionality. These categories include Boolean, Date, General, String, Number, and Unknown.
 
+### Scripts 
+Scripts within Cortex serve as potent tools for executing specific actions through commands. A script is attached by default, making it uneditable. To modify a script, users can detach it or create a duplicate. 
+
 ### Lists in cortex
 
 A list in Cortex is a container for storing data and is mainly used in playbooks and scripts.
-you can access the data in a list via the context button(double-curly brackets) under Lists or by using the path ${lists.<list\_name>}
+you can access the data in a list via the context button(`double-curly brackets`) under Lists or by using the `path ${lists.<list\_name>}`
 Different types of data can be stored in a list, including text, string, numbers, Markdown, HTML, CSS, and JSON objects.
 eg. of using a list will be that it typically holds IP addresses for whitelisting or blacklisting purposes.
-
-
 
 playbook tasks allow you to automate managing lists. You can use playbook tasks to create, view, and manipulate lists.
 
