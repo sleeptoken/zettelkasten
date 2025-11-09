@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6db18259ffa4612f",
+        "id": "903d713b7bc79bbe",
         "type": "tabs",
         "children": [
           {
-            "id": "1a91ff4838da5bf6",
+            "id": "995b6052d95b8340",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Lwn/What is Seccomp.md",
+                "file": "Tags/ASLR.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "What is Seccomp"
+              "title": "ASLR"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hold on/Lwn/What is Seccomp.md",
+                "file": "Tags/ASLR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of What is Seccomp"
+              "title": "Outline of ASLR"
             }
           }
         ],
@@ -179,10 +179,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a91ff4838da5bf6",
+  "active": "995b6052d95b8340",
   "lastOpenFiles": [
-    "Tags/linux.md",
+    "hold on/Binary/Aslr.md",
+    "Tags/ASLR.md",
+    "Remote Thought/Binary exploit toolkit.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
     "hold on/Unix/Links.md",
+    "hold on/Unix/Symbolic links.md",
+    "hold on/IAM notes.md",
+    "Remote Thought/Shared responsibility model.md",
+    "Remote Thought/What is Seccomp.md",
+    "Tags/linux.md",
     "hold on/Kernel/Linux from scratch.md",
     "Remote Thought/Disk partition.md",
     "Remote Thought/Bizzare Info, Facts.md",
@@ -192,7 +200,6 @@
     "Tags/Forensics.md",
     "Remote Thought/Hiding on disks.md",
     "hold on/Forensics/Forensics.md",
-    "hold on/IAM notes.md",
     "hold on/Network loggin.md",
     "Jinja2 SSTI.md",
     "Outbound htb.md",
@@ -200,14 +207,7 @@
     "Expressway Htb.md",
     "Cortex XSIAM/Automation XSIAM.md",
     "Cortex XSIAM",
-    "hold on/Unix/Symbolic links.md",
     "Remote Thought/Attack using Environment variables.md",
-    "Remote Thought/Security Operations Center.md",
-    "hold on/Unix/Tricks linux.md",
-    "Remote Thought/Linux on Mac & C++ magic.md",
-    "Remote Thought/Reverse shell using curl.md",
-    "Tags/Internet Key Exchange.md",
-    "Remote Thought/Enumeration.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",

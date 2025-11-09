@@ -1,8 +1,6 @@
 
 2025-11-05 23:37
 
-Source: 
-
 Tags: [[linux]]
 
 > The idea behind seccomp is to restrict the system calls that can be made from a process
