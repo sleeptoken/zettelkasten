@@ -6,7 +6,7 @@ Central competent of both our network and our security
 
 ##### Find IP of router
 
-List of default ip addresses https://www.techspot.com/guides/287-default-router-ip-addresses/
+List of default IP addresses https://www.techspot.com/guides/287-default-router-ip-addresses/
 In windows
 	- `route print`  
 	- `ipconfig`
@@ -22,10 +22,10 @@ Login to the web interface using user pass
 https://www.routerpasswords.com/
 
 Router will shield your devices from the internet 
-It has an external and an internal IP address we communicate w internal IP adress (default gateway) to determine your external IP use whereismyip
+It has an external and an internal IP address we communicate w internal IP address (default gateway), to determine your external IP use `whereismyip`
 
 No one will be able to make a direct connection to my internal devices via the internet because of NAT(network address translation)
-Cause of NAT you would have to specifically configure within the router to forward traffic to a specific device on a specific port in order for internet devices to connect to your internal devices it is often call port forwarding or DMZ 
+Cause of NAT you would have to specifically configure within the router to forward traffic to a specific device on a specific port in order for internet devices to connect to your internal devices it is often call [[Port Forwarding]] or DMZ 
 
 When you make connections out of the router to the internet. The router will remember who you have connected to and allows them to send traffic back to you in response this is called maintaining state and will be configured by default 
 
@@ -34,26 +34,26 @@ What we call a router these days are a collection of switch, firewall, router, m
 ## Switch
 
 Switches keep a table of Ethernet mac addresses called a Mac table. It uses these unique mac addresses for your devices to send traffic to its destination on the land and works at the data link too.
-Once data is traveling on your local network max addresses are used for traffic to find its destination to the local network. IP addresses are only used on the internet 
+> Once data is traveling on your local network mac addresses are used for traffic to find its destination to the local network. IP addresses are only used on the internet 
 
 Switches are more secure than hub 
 Cause switch have isolated collision domain (u can't sniff the traffic on the network )
 
-So When traffic goes into the switch it knows what what the mac address is. So instead of sending the data of all the devices, it just sends it to that one physical port 
-We can defeat ICD with OPP spoofing 
+So When traffic goes into the switch it knows what the mac address is. So instead of sending the data of all the devices, it just sends it to that one physical port 
+We can defeat `ICD` with `OPP` spoofing 
 
-### modems 
+### Modems 
 
 They modulate and de modulate the signal so it can be passed onto the local loop of your network carrier 
 
-### bridge 
+### Bridge 
 
 Which forwards packets and filters based on MAC addresses. It forwards broadcast traffic but not collision 
 
 ### DHCP 
 
-Cat /var/log/syslog | grep DHCP
-If ipaddresses are not dynamically assigned by DHCP then they are statically assigned
+`Cat /var/log/syslog | grep DHCP`
+If `ipaddresses` are not dynamically assigned by `DHCP` then they are statically assigned
 ### Os of router
 
 - OpenWrt is used in a lot of devices

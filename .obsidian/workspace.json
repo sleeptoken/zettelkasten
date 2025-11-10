@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Networking/Router.md",
+                "file": "hold on/Networking/Wifi delicacy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Router"
+              "title": "Wifi delicacy"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hold on/Networking/Router.md",
+                "file": "hold on/Networking/Wifi delicacy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Router"
+              "title": "Outline of Wifi delicacy"
             }
           }
         ],
@@ -181,6 +181,8 @@
   },
   "active": "995b6052d95b8340",
   "lastOpenFiles": [
+    "Remote Thought/Router.md",
+    "Remote Thought/Port Forwarding.md",
     "hold on/Networking/Firewall.md",
     "hold on/Binary/Movapps issue.md",
     "hold on/Binary/Why add shellcode to pwn script.md",
@@ -205,8 +207,6 @@
     "hold on/Tags/Html.md",
     "Tags/Bug Bounty.md",
     "Tags/X86.md",
-    "Tags/Forensics.md",
-    "Remote Thought/Hiding on disks.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
