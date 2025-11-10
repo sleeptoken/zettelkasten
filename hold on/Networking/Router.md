@@ -2,9 +2,10 @@
 Works At layer 3 
 
 Central competent of both our network and our security 
-The router is usually the default gateway for all traffic on the internet 
+>The router is usually the default gateway for all traffic on the internet 
 
-Find IP of router
+##### Find IP of router
+
 List of default ip addresses https://www.techspot.com/guides/287-default-router-ip-addresses/
 In windows
 	- `route print`  
@@ -21,7 +22,7 @@ Login to the web interface using user pass
 https://www.routerpasswords.com/
 
 Router will shield your devices from the internet 
-It has an external and an internal IP adress we communicate w internal IP adress (default gateway) to determine your external IP use whereismyip
+It has an external and an internal IP address we communicate w internal IP adress (default gateway) to determine your external IP use whereismyip
 
 No one will be able to make a direct connection to my internal devices via the internet because of NAT(network address translation)
 Cause of NAT you would have to specifically configure within the router to forward traffic to a specific device on a specific port in order for internet devices to connect to your internal devices it is often call port forwarding or DMZ 
@@ -49,11 +50,11 @@ They modulate and de modulate the signal so it can be passed onto the local loop
 
 Which forwards packets and filters based on MAC addresses. It forwards broadcast traffic but not collision 
 
-### dhcp
+### DHCP 
 
 Cat /var/log/syslog | grep DHCP
 If ipaddresses are not dynamically assigned by DHCP then they are statically assigned
-### os of router
+### Os of router
 
 - OpenWrt is used in a lot of devices
 - Busybox is used in a lot of routers 

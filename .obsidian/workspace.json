@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/ASLR.md",
+                "file": "hold on/Networking/Router.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ASLR"
+              "title": "Router"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tags/ASLR.md",
+                "file": "hold on/Networking/Router.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ASLR"
+              "title": "Outline of Router"
             }
           }
         ],
@@ -181,8 +181,16 @@
   },
   "active": "995b6052d95b8340",
   "lastOpenFiles": [
-    "hold on/Binary/Aslr.md",
+    "hold on/Networking/Firewall.md",
+    "hold on/Binary/Movapps issue.md",
+    "hold on/Binary/Why add shellcode to pwn script.md",
+    "hold on/Binary/Format string vuln.md",
+    "hold on/Binary/Buffer overflow.md",
+    "hold on/Binary/C trick for buff.md",
     "Tags/ASLR.md",
+    "hold on/Binary/edian.md",
+    "Tags/endianness.md",
+    "hold on/Binary/Aslr.md",
     "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "hold on/Unix/Links.md",
@@ -199,15 +207,7 @@
     "Tags/X86.md",
     "Tags/Forensics.md",
     "Remote Thought/Hiding on disks.md",
-    "hold on/Forensics/Forensics.md",
-    "hold on/Network loggin.md",
-    "Jinja2 SSTI.md",
-    "Outbound htb.md",
-    "Port Knocking.md",
-    "Expressway Htb.md",
-    "Cortex XSIAM/Automation XSIAM.md",
     "Cortex XSIAM",
-    "Remote Thought/Attack using Environment variables.md",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
     "Untitled.base",
