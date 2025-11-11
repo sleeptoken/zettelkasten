@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Networking/Wifi delicacy.md",
+                "file": "Cortex XSIAM/Automation XSIAM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Wifi delicacy"
+              "title": "Automation XSIAM"
+            }
+          },
+          {
+            "id": "e66177e8b95aa020",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cortex XSIAM/XQL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "XQL"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hold on/Networking/Wifi delicacy.md",
+                "file": "Cortex XSIAM/XQL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Wifi delicacy"
+              "title": "Outline of XQL"
             }
           }
         ],
@@ -179,13 +204,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "995b6052d95b8340",
+  "active": "e66177e8b95aa020",
   "lastOpenFiles": [
+    "Cortex XSIAM/Automation XSIAM.md",
+    "Cortex XSIAM/XQL.md",
+    "Remote Thought/Reverse shell using curl.md",
+    "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
+    "hold on/Networking/Wifi delicacy.md",
     "hold on/Networking/Windows callback routine.md",
     "hold on/Unix/Links.md",
     "Remote Thought/Txt dumps.md",
     "Tags/linux.md",
-    "hold on/Networking/Wifi delicacy.md",
     "Remote Thought/Router.md",
     "Remote Thought/Port Forwarding.md",
     "hold on/Networking/Firewall.md",
@@ -203,10 +232,6 @@
     "hold on/Unix/Symbolic links.md",
     "hold on/IAM notes.md",
     "Remote Thought/Shared responsibility model.md",
-    "Remote Thought/What is Seccomp.md",
-    "hold on/Kernel/Linux from scratch.md",
-    "Remote Thought/Disk partition.md",
-    "Remote Thought/Bizzare Info, Facts.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",

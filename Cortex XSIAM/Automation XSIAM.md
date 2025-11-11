@@ -1,8 +1,6 @@
 
 2025-11-03 18:24
 
-Source: #paloalto 
-
 Tags: [[Defence]]
 ## Automation components
 
@@ -182,7 +180,7 @@ Filters in Cortex are categorized based on their functionality. These categories
 ### Scripts 
 Scripts within Cortex serve as potent tools for executing specific actions through commands. A script is attached by default, making it uneditable. To modify a script, users can detach it or create a duplicate. 
 
-### Lists in cortex
+## Lists in cortex
 
 A list in Cortex is a container for storing data and is mainly used in playbooks and scripts.
 you can access the data in a list via the context button(`double-curly brackets`) under Lists or by using the `path ${lists.<list\_name>}`
