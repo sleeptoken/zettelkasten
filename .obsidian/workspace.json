@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cortex XSIAM/XQL.md",
+                "file": "Expressway Htb.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "XQL"
+              "title": "Expressway Htb"
             }
           }
         ],
@@ -113,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "277ebed70b781143",
@@ -177,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cortex XSIAM/XQL.md",
+                "file": "Expressway Htb.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of XQL"
+              "title": "Outline of Expressway Htb"
             }
           }
         ],
@@ -191,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,9 +208,9 @@
   },
   "active": "e66177e8b95aa020",
   "lastOpenFiles": [
+    "Cortex XSIAM/XQL.md",
     "Expressway Htb.md",
     "Remote Thought/Reverse shell using curl.md",
-    "Cortex XSIAM/XQL.md",
     "Cortex XSIAM/Automation XSIAM.md",
     "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
     "hold on/Networking/Wifi delicacy.md",

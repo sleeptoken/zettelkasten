@@ -2,8 +2,6 @@
 2025-10-25 18:40
 
 Source: #htb #Boot2root 
-
-Tags: 
 ### Enumeration 
 
 Rustscan only shows port 22 open, When TCP fails, we turn to its connectionless counterpart, UDP.
@@ -15,7 +13,7 @@ udpx -t 10.129.13.112 -c 128 -w 1000
 - `-w`: Wait time in milliseconds
 
 ----
-UDP scan w [[nmap]]
+Alternate UDP scan w [[nmap]]
 
 ```sh
 nmap -sU -p 68,69,500,4500 -sV --script=ike-version,tftp-enum,broadcast-dhcp-discover -Pn --max-retries 3 --host-timeout 5m 10.10.11.87
@@ -26,6 +24,8 @@ o/p of UDP scan
 69  open  tftp
 500  open  isakmp
 #### Fingerprinting IKE (Port 500)
+
+IKE is the complex handshake protocol that allows two endpoints to agree on cryptographic keys and algorithms to build a secure IPsec tunnel. The "Aggressive mode" is known to have weaknesses.
 
 `ike-scan` - It crafts [[Internet Key Exchange]] packets to fingerprint the VPN gateway and elicit responses that can reveal its configuration, identity, and vulnerabilities.
 
@@ -64,14 +64,14 @@ Now we have a username (`ike`) and know the authentication method is a PSK. The 
 `ike-scan` can automatically format the necessary data for cracking with its sister tool, `psk-crack`.
 
 ```sh
-sudo ike-scan -A expressway.htb --id=ike@expressway.htb -Pike.psk
+sudo ike-scan -A expressway.htb --id=ike@expressway.htb -P ike.psk
 ```
 above cmd created a ike.psk 
 
 ```sh
 psk-crack -d /usr/share/wordlists/rockyou.txt ike.psk
 ```
-
+ 
 reuse these new found creds for ssh access
 ### Privilege Escalation 
 
@@ -90,8 +90,31 @@ When I ran `./sudo -V` it gave me the version
 When you look it up, you can find CVE-2025-32463 which is a local privilege escalation. Exploitdb already has a finished PoC that we can use for our case. [https://www.exploit-db.com/exploits/52352](https://www.exploit-db.com/exploits/52352)
 
 After running the script we get a root shell and can read the root flag
-
 ### M2   
+
+Our `id` command revealed something interesting: our user `ike` is part of the `proxy` group.
+
+checking `sudo -l`
+```
+ike@expressway:~$ sudo -l
+[sudo] password for ike: f***********
+Sorry, user ike may not run sudo on expressway.
+```
+
+This is a custom denial message. A standard `sudo` would say `ike is not in the sudoers file`. This suggests the `sudo` binary itself has been altered or replaced. Let’s check its location.
+
+```
+ike@expressway:~$ which sudo
+/usr/local/bin/sudo
+```
+
+This confirms our suspicion. The system is using a `sudo` binary from `/usr/local/bin`, which is in the `$PATH` before the standard `/usr/bin`. This is a custom, SUID root binary and almost certainly our path to root.
+
+
+
+
+
+
 ### References
 https://app.hackthebox.com/machines/736
 
