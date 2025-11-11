@@ -576,6 +576,8 @@ Call Stage Syntax
 call "<name of predefined query>" [<param_name1> = <value1> <param_name2> = <value2>....]
 ```
 
+> Essentially, the call command serves as a dynamic lookup within other queries.
+
 Advantage of call stage 
 
 Flexibility
@@ -584,6 +586,9 @@ The call stage allows you to insert other queries with varying time frames into 
 Object-Oriented Coding
 The call stage can be used in a manner similar to object-oriented coding. By inserting a series of call stages into a simpler query, you can execute more complex queries without having to modify the saved queries.
 
+### Graph search 
+
+	
 
 
 ### References
