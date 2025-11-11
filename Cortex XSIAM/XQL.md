@@ -588,7 +588,67 @@ The call stage can be used in a manner similar to object-oriented coding. By ins
 
 ### Graph search 
 
-	
+The Graph Search feature visualizes your security environment as a network of interconnected elements.
+
+One of the most significant advantages of Cortex Cloud Graph Search is its foundation on a single, normalized data model.
+
+Graph Search requires View and Edit Role-Based Access Control (RBAC) permissions for Query Center and the Personal Query Library, which are the same permissions required for Cortex Query Language (XQL).
+
+Initiating a Graph Search
+Custom Queries
+This option provides maximum flexibility, allowing you to build queries from scratch
+
+Every custom graph query is composed of three fundamental operators:
+FIND: This operator defines the initial type of asset or finding node you want to start your search with.
+Example: find virtual machines
+WHERE: This operator helps you filter the nodes you've selected with find based on specific attributes or conditions. 
+Example: where Internet exposed equals true
+                 (filtering virtual machines that are internet-exposed)
+THAT: This operator defines the relationship between the current set of nodes and the next set of nodes you want to explore. It allows you to traverse the graph and discover connected entities.
+Example: that host container images 
+
+
+Out of the box Queries 
+Cortex Cloud provides a Query Library with a collection of pre-built, out-of-the-box queries, designed by Palo Alto Networks .
+
+
+In the graph, each asset node is shown as a circle. The node's color and icon depend on the asset category and class types you select.
+Examples of asset nodes include:
+Virtual machines (Elastic Compute Cloud (EC2) instances)
+Container images
+S3 buckets
+Identity and Access Management (IAM) roles
+Artificial Intelligence (AI) model data
+Code
+Identities
+
+In the graph, each finding node is shown as a diamond. The node's color and icon depend on the finding type you select. 
+Unlike asset nodes, there's only one category type for each finding.
+
+Examples of finding nodes include:
+Vulnerabilities (e.g., Common Vulnerabilities and Exposures (CVEs), Log4Shell)
+Malware presence
+Configuration issues
+Posture findings
+Identity findings
+
+practical utility of the Graph Search
+
+Log4Shell Impact and AI Model Data  
+This query is designed to identify vulnerable EC2 instances by filtering for virtual machines that are internet-exposed and contain a specific CVE, such as Log4Shell. It further refines the search to include only those where an identity is impersonating a Service Account with permissions to an S3 bucket containing AI model training data.
+
+High-Risk EC2 Instances
+This query identifies high-risk EC2 instances by filtering for internet-facing virtual machines that have high-severity vulnerabilities and possess elevated privileges, such as the ability to impersonate a service account with associated identity findings.
+
+Vulnerable Container Images
+This query is designed to identify and prioritize a highly elevated security risk—vulnerable container images running on virtual machines that are already compromised with malware. This combination presents an immediate and severe threat, making these findings a top priority for remediation.
+Query Logic
+FIND > Container Image
+THAT > Hosted On > Virtual Machine
+THAT > Has > Malware Finding
+THAT > Has > Vulnerability Finding
+WHERE > Vulnerability Severity > Critical, High
+
 
 
 ### References
