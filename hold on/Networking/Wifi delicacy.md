@@ -1,4 +1,3 @@
-## wifi weakness
 ### WEP (IEEE 802.11)
 
 Weakness of wep
