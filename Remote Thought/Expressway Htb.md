@@ -134,7 +134,7 @@ The logic suggests that the custom `sudo` binary’s policy might depend on th
 ike@expressway:/usr/bin$ /usr/local/bin/sudo -h offramp.expressway.htb ./bash
 ```
 
-
+gives root shell
 
 ### References
 https://app.hackthebox.com/machines/736

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Expressway Htb.md",
+                "file": "Exploiting Chrome Remote Debugger.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,23 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Expressway Htb"
+              "title": "Exploiting Chrome Remote Debugger"
+            }
+          },
+          {
+            "id": "2c56f0228a2c72aa",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "277ebed70b781143",
@@ -177,13 +190,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Expressway Htb.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Expressway Htb"
+              "title": "Outline"
             }
           }
         ],
@@ -204,34 +216,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e66177e8b95aa020",
+  "active": "2c56f0228a2c72aa",
   "lastOpenFiles": [
+    "Cast.md",
+    "Stream Cipher.md",
+    "Exploiting Chrome Remote Debugger.md",
+    "Frameworks & basics.md",
+    "Hijacking OAuth flows via Cookie Tossing.md",
+    "Sherlocks from hackthebox.md",
+    "Web Cache Deception.md",
+    "TLS 1.3 better than TLS 1.2.md",
+    "Types of API.md",
+    "USB HID analysis.md",
+    "Repeating Key XOR.md",
+    "SSRF to SSTI RCE & RabbitMQ Root.md",
+    "Understanding basic crypto.md",
+    "Active Directory Basics.md",
+    "Bluetooth reverse engineering.md",
+    "Permissions in Practice.md",
+    "Broadcast Threat Surface.md",
+    "Outbound htb.md",
+    "Remote Thought/Jinja2 SSTI.md",
+    "Port Knocking.md",
+    "Remote Thought/Expressway Htb.md",
     "Cortex XSIAM/XQL.md",
-    "Expressway Htb.md",
     "Remote Thought/Reverse shell using curl.md",
     "Cortex XSIAM/Automation XSIAM.md",
     "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
     "hold on/Networking/Wifi delicacy.md",
-    "hold on/Networking/Windows callback routine.md",
-    "hold on/Unix/Links.md",
-    "Remote Thought/Txt dumps.md",
-    "Tags/linux.md",
-    "Remote Thought/Router.md",
-    "Remote Thought/Port Forwarding.md",
-    "hold on/Networking/Firewall.md",
-    "hold on/Binary/Movapps issue.md",
-    "hold on/Binary/Why add shellcode to pwn script.md",
-    "hold on/Binary/Format string vuln.md",
-    "hold on/Binary/Buffer overflow.md",
-    "hold on/Binary/C trick for buff.md",
-    "Tags/ASLR.md",
-    "hold on/Binary/edian.md",
-    "Tags/endianness.md",
-    "hold on/Binary/Aslr.md",
-    "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/Format String Vulnerabilities (printf).md",
-    "hold on/Unix/Symbolic links.md",
-    "hold on/IAM notes.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
