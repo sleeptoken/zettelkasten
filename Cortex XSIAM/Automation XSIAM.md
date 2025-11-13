@@ -194,9 +194,9 @@ You can manage lists in Cortex using various commands through the built-in CLI, 
 
 enabling automation and orchestration of diverse security operations tasks. By configuring a job, *you can execute a playbook in response to specific events or time triggers.*
 
-2 types of jobs :
-- Time-Triggered Jobs
-- Feed Triggered Jobs
+Two types of jobs :
+- Time-Triggered Jobs - at a predetermined time or at regular intervals 
+- Feed Triggered Jobs - by changes in the feed
 
 Where are jobs used in cortex
 
@@ -211,23 +211,19 @@ Job panel views
 - Table View
 - Detailed View
 
-
-
 ## Cortex Cloud Automation Features
-
-
 
 Automation Features operate at the issue level, Analyst will assign targeted actions to run automatically when those conditions are met. These actions are implemented through lightweight playbooks, which are simpler and more focused than those typically used at the case level.
 
 Automation Features is built around four key building blocks.
-Triggers - conditions under which a playbook should run
-Jobs -
-Integrations - such as AWS or Slack can be configured directly from the playbook task where they’re used
-Quick Actions -  are single-task automations, like sending a Slack message, closing a ticket, or changing issue severity.
+- Triggers - conditions under which a playbook should run.
+- Jobs - automation process that run on a fixed schedule.
+- Integrations - such as AWS or Slack can be configured directly from the playbook task where they’re used
+- Quick Actions -  are single-task automations, like sending a Slack message, closing a ticket, or changing issue severity.
 
 Understanding the Playbook Catalog -> Use-Case-Driven Structure
 
-
+When a playbook is adopted, the system installs its underlying Marketplace content pack in the background. These playbooks can be reviewed, customized, and edited, all within the same interface, without the need for context switching.
 ### Automation Rules
 
 Automation rules define how and when a playbook should run based on incoming issues or specific criteria. These rules replace the older concept of playbook triggers and are designed for greater flexibility and control.

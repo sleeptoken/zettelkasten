@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "995b6052d95b8340",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cortex XSIAM/Automation XSIAM.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Automation XSIAM"
-            }
-          },
-          {
             "id": "e66177e8b95aa020",
             "type": "leaf",
             "state": {
@@ -55,8 +31,7 @@
               "title": "Automation XSIAM"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
