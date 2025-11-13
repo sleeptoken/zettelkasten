@@ -183,11 +183,13 @@ Scripts within Cortex serve as potent tools for executing specific actions throu
 ## Lists in cortex
 
 A list in Cortex is a container for storing data and is mainly used in playbooks and scripts.
-you can access the data in a list via the context button(`double-curly brackets`) under Lists or by using the `path ${lists.<list\_name>}`
+you can access the data in a list via the context button `(double-curly brackets`) under Lists or by using the `path ${lists.<list\_name>}`
 Different types of data can be stored in a list, including text, string, numbers, Markdown, HTML, CSS, and JSON objects.
 eg. of using a list will be that it typically holds IP addresses for whitelisting or blacklisting purposes.
 
 playbook tasks allow you to automate managing lists. You can use playbook tasks to create, view, and manipulate lists.
+
+You can manage lists in Cortex using various commands through the built-in CLI, automation, and playbook tasks. The CLI feature is located at the bottom of the War Rooms interface. It allows you to execute commands and scripts and has a variety of list manipulation commands.
 ### Jobs
 
 enabling automation and orchestration of diverse security operations tasks. By configuring a job, *you can execute a playbook in response to specific events or time triggers.*

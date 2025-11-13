@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploiting Chrome Remote Debugger.md",
+                "file": "Cortex XSIAM/Automation XSIAM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,23 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Exploiting Chrome Remote Debugger"
-            }
-          },
-          {
-            "id": "2c56f0228a2c72aa",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
+              "title": "Automation XSIAM"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "277ebed70b781143",
@@ -190,12 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Cortex XSIAM/Automation XSIAM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Automation XSIAM"
             }
           }
         ],
@@ -216,11 +204,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2c56f0228a2c72aa",
+  "active": "e66177e8b95aa020",
   "lastOpenFiles": [
+    "Exploiting Chrome Remote Debugger.md",
     "Cast.md",
     "Stream Cipher.md",
-    "Exploiting Chrome Remote Debugger.md",
     "Frameworks & basics.md",
     "Hijacking OAuth flows via Cookie Tossing.md",
     "Sherlocks from hackthebox.md",
