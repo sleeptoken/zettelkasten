@@ -1,6 +1,6 @@
-### Return oriented programming 
+Return oriented programming 
 
-Is the idea of changing together small snippets of assembly with stack control to cause the program to do complex things. 
+Is the idea of chaining together small snippets of assembly with stack control to cause the program to do complex things. 
 
 The reason shellcode works is due to the VPN Neumann architecture (it doesn't differentiate data and instructions), it will attempt to run it. 
 

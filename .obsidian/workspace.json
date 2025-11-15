@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b50402d958010884",
+            "id": "d44064983eff40d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Binary/Buffer overflow.md",
+                "file": "hold on/Binary/Movapps issue.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,107 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Buffer overflow"
-            }
-          },
-          {
-            "id": "90f6c15613c9232a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Binary exploit toolkit.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Binary exploit toolkit"
-            }
-          },
-          {
-            "id": "e121acacc66963f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Bypassing Stack Canaries.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Bypassing Stack Canaries"
-            }
-          },
-          {
-            "id": "1c2481f8ed443138",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Overflow buff & overwrite the return address.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Overflow buff & overwrite the return address"
-            }
-          },
-          {
-            "id": "b02652acfbd857f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Overwriting variables on the stack.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Overwriting variables on the stack"
+              "title": "Movapps issue"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -249,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Overwriting variables on the stack.md",
+                "file": "hold on/Binary/Movapps issue.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Overwriting variables on the stack"
+              "title": "Outline of Movapps issue"
             }
           }
         ],
@@ -263,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,35 +179,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b02652acfbd857f1",
+  "active": "d44064983eff40d7",
   "lastOpenFiles": [
-    "Remote Thought/Overflow buff & overwrite the return address.md",
+    "hold on/Binary/C trick for buff.md",
+    "hold on/Binary/Movapps issue.md",
+    "Tags/ASLR.md",
+    "Tags/rop.md",
+    "Remote Thought/Ret2Labyrinth.md",
     "Remote Thought/Bypassing Stack Canaries.md",
-    "Remote Thought/Binary exploit toolkit.md",
+    "Remote Thought/Return to Win.md",
+    "Tags/ropper.md",
     "hold on/Binary/Buffer overflow.md",
+    "Tags/Binary Exploit.md",
+    "Remote Thought/Binary exploit toolkit.md",
+    "Remote Thought/Overflow buff & Overwrite the return address.md",
     "Remote Thought/Overwriting variables on the stack.md",
+    "Remote Thought/Return to Lib-C.md",
+    "Remote Thought/Leak PIE & Ret2Lib-C.md",
+    "Remote Thought/Breakpoint in IDA.md",
+    "Tags/Compiling binary.md",
+    "Stream Cipher.md",
+    "hold on/Unix/Links.md",
+    "hold on/Network loggin.md",
+    "hold on/IAM notes.md",
     "Images/buffer-overflow-diagram.png",
     "hold on/Notes from babaji/Side-channel attack on MagSafe LED.md",
     "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
     "Remote Thought/Expressway Htb.md",
     "Remote Thought/Reverse shell using curl.md",
     "Remote Thought/Security Operations Center.md",
-    "Remote Thought/Attack using Environment variables.md",
-    "Remote Thought/Disk partition.md",
-    "Remote Thought/Emails.md",
-    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
-    "Remote Thought/Hiding on disks.md",
-    "Remote Thought/Linux on Mac & C++ magic.md",
-    "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
-    "Remote Thought/Public key certificates.md",
-    "Remote Thought/Router.md",
-    "Remote Thought/Shared responsibility model.md",
-    "Remote Thought/Session fixation vs hijacking.md",
-    "Remote Thought/What is Seccomp.md",
-    "Remote Thought/UTF-8.md",
-    "Remote Thought/Jinja2 SSTI.md",
-    "Remote Thought/Mako (Python) SSTI.md",
-    "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",

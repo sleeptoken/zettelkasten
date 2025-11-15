@@ -50,5 +50,4 @@ buffer overflow - https://avinetworks.com/glossary/buffer-overflow/
 Disassembler - [[Ghidra]]/IDA/Radare/BinaryNinja/Hopper : https://gist.github.com/liba2k/d522b4f20632c4581af728b286028f8f
 Debugger - GDB-PwnDBG/GEF/PEDA: https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8
 
-cheatsheet - 
 ghidra - https://ghidra-sre.org/CheatSheet.html

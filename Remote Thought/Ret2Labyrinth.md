@@ -7,7 +7,7 @@ Tags: [[Binary Exploit]]
 
 > [!NOTE]
 > 
-> The binary has [Full RELRO](https://ctf101.org/binary-exploitation/relocation-read-only/) enabled, which removes the possibility of a [GOT](https://ctf101.org/binary-exploitation/what-is-the-got/) overwrite attack. Additionally, there is no [stack canary](https://ctf101.org/binary-exploitation/stack-canaries/) and no PIE, which means we can use a straightforward ROP technique.
+> The binary has [Full RELRO](https://ctf101.org/binary-exploitation/relocation-read-only/) enabled, which removes the possibility of a [GOT](https://ctf101.org/binary-exploitation/what-is-the-got/) overwrite attack. Additionally, there is no [stack canary](https://ctf101.org/binary-exploitation/stack-canaries/) and no PIE, which means we can use a straightforward [[ROP]] technique.
 
 the code asks us to choose a door and if we choose the door `69` or `069`, we get another opportunity to input a value. If we fail to provide the value, it will be stored in the `local_38` variable, which has a size of `0x44` and can lead to a stack overflow.
 
