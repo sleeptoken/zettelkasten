@@ -79,3 +79,6 @@ Why Manchester encoding can't work for discrete waves. Digital Electronics & Com
 
 macOS IOKit, SMC APIs
 
+### References 
+
+#babajiwisdom 

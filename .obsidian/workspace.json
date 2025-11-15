@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e546caf5c0e0493c",
+        "id": "80c82a01e5d99c49",
         "type": "tabs",
         "children": [
           {
-            "id": "cb4e876aac088e02",
+            "id": "b50402d958010884",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cortex XSIAM/Automation XSIAM.md",
+                "file": "hold on/Binary/Buffer overflow.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Automation XSIAM"
+              "title": "Buffer overflow"
             }
           },
           {
-            "id": "6613b61b55a75039",
+            "id": "90f6c15613c9232a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cortex XSIAM/Case Management.md",
+                "file": "Remote Thought/Binary exploit toolkit.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Case Management"
+              "title": "Binary exploit toolkit"
+            }
+          },
+          {
+            "id": "e121acacc66963f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Bypassing Stack Canaries.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Bypassing Stack Canaries"
+            }
+          },
+          {
+            "id": "1c2481f8ed443138",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Overflow buff & overwrite the return address.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Overflow buff & overwrite the return address"
+            }
+          },
+          {
+            "id": "b02652acfbd857f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Overwriting variables on the stack.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Overwriting variables on the stack"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -113,7 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 374.5
   },
   "right": {
     "id": "277ebed70b781143",
@@ -177,13 +249,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cortex XSIAM/Case Management.md",
+                "file": "Remote Thought/Overwriting variables on the stack.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Case Management"
+              "title": "Outline of Overwriting variables on the stack"
             }
           }
         ],
@@ -191,7 +263,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,34 +277,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6613b61b55a75039",
+  "active": "b02652acfbd857f1",
   "lastOpenFiles": [
-    "Cortex XSIAM/Automation XSIAM.md",
-    "Cortex XSIAM/Case Management.md",
-    "Cortex XSIAM/XQL.md",
-    "Exploiting Chrome Remote Debugger.md",
-    "Cast.md",
-    "Stream Cipher.md",
-    "Frameworks & basics.md",
-    "Hijacking OAuth flows via Cookie Tossing.md",
-    "Sherlocks from hackthebox.md",
-    "Web Cache Deception.md",
-    "TLS 1.3 better than TLS 1.2.md",
-    "Types of API.md",
-    "USB HID analysis.md",
-    "Repeating Key XOR.md",
-    "SSRF to SSTI RCE & RabbitMQ Root.md",
-    "Understanding basic crypto.md",
-    "Active Directory Basics.md",
-    "Bluetooth reverse engineering.md",
-    "Permissions in Practice.md",
-    "Broadcast Threat Surface.md",
-    "Outbound htb.md",
-    "Remote Thought/Jinja2 SSTI.md",
-    "Port Knocking.md",
+    "Remote Thought/Overflow buff & overwrite the return address.md",
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Remote Thought/Binary exploit toolkit.md",
+    "hold on/Binary/Buffer overflow.md",
+    "Remote Thought/Overwriting variables on the stack.md",
+    "Images/buffer-overflow-diagram.png",
+    "hold on/Notes from babaji/Side-channel attack on MagSafe LED.md",
+    "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
     "Remote Thought/Expressway Htb.md",
     "Remote Thought/Reverse shell using curl.md",
-    "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
+    "Remote Thought/Security Operations Center.md",
+    "Remote Thought/Attack using Environment variables.md",
+    "Remote Thought/Disk partition.md",
+    "Remote Thought/Emails.md",
+    "Remote Thought/Exploiting WebSocket Authentication Bypass.md",
+    "Remote Thought/Hiding on disks.md",
+    "Remote Thought/Linux on Mac & C++ magic.md",
+    "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
+    "Remote Thought/Public key certificates.md",
+    "Remote Thought/Router.md",
+    "Remote Thought/Shared responsibility model.md",
+    "Remote Thought/Session fixation vs hijacking.md",
+    "Remote Thought/What is Seccomp.md",
+    "Remote Thought/UTF-8.md",
+    "Remote Thought/Jinja2 SSTI.md",
+    "Remote Thought/Mako (Python) SSTI.md",
+    "Remote Thought/HTML Injection to SSRF via PDF Rendering.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",

@@ -44,3 +44,6 @@ If you are particularly unlucky, hardware can get bricked permanently.
 Ab ya to tum JTAG / SPI ke through uska firmware wapas flash karo
 nahi to apni marwao
 aur naya kharid ke laao
+### References
+
+#babajiwisdom
