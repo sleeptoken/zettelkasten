@@ -1,7 +1,7 @@
 
 2025-11-11 16:18
 
-Tags: [[Automation XSIAM]]
+Tags: [[Automation XSIAM]] [[Defence]]
  
 XQL is designed for use with XML data in Cortex. It allows users to query and manipulate XML data in a flexible and extensible manner that makes querying easy and intuitive. used for both reactive tasks, like doing case investigations, and proactive tasks, like creating detection rules.
 

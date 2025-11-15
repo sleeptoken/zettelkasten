@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "903d713b7bc79bbe",
+        "id": "e546caf5c0e0493c",
         "type": "tabs",
         "children": [
           {
-            "id": "e66177e8b95aa020",
+            "id": "cb4e876aac088e02",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "Automation XSIAM"
             }
+          },
+          {
+            "id": "6613b61b55a75039",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cortex XSIAM/Case Management.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Case Management"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cortex XSIAM/Automation XSIAM.md",
+                "file": "Cortex XSIAM/Case Management.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Automation XSIAM"
+              "title": "Outline of Case Management"
             }
           }
         ],
@@ -179,8 +204,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e66177e8b95aa020",
+  "active": "6613b61b55a75039",
   "lastOpenFiles": [
+    "Cortex XSIAM/Automation XSIAM.md",
+    "Cortex XSIAM/Case Management.md",
+    "Cortex XSIAM/XQL.md",
     "Exploiting Chrome Remote Debugger.md",
     "Cast.md",
     "Stream Cipher.md",
@@ -202,11 +230,8 @@
     "Remote Thought/Jinja2 SSTI.md",
     "Port Knocking.md",
     "Remote Thought/Expressway Htb.md",
-    "Cortex XSIAM/XQL.md",
     "Remote Thought/Reverse shell using curl.md",
-    "Cortex XSIAM/Automation XSIAM.md",
     "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
-    "hold on/Networking/Wifi delicacy.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
