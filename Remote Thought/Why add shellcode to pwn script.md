@@ -3,7 +3,7 @@ Tags: [[Binary Exploit]]
 When running file on the binary 
 ELF 64 bit
 
-Shell code is added when nx is disabled and we can execute shell code from stack or heap
+Shell code is added when [[NX (No-Execute)]] bit is disabled and we can execute shell code from stack or heap
 
 The program doesn't include `bin.sh` that's why we add shell code in the pen script
 

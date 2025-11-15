@@ -17,7 +17,7 @@ our goal is going to be to overflow this buffer and overwrite the return address
 
 identify `eip` offset using cyclic command to overflow the buffer 
 
-if the instruction in the `eip` was saying jump `esp`, it would jump here and it would start executing whatever's on the stack providing that we don't have that `nx` set (the no execute protection)
+if the instruction in the `eip` was saying jump `esp`, it would jump here and it would start executing whatever's on the stack providing that we don't have that [[NX (No-Execute)]] set (the no execute protection)
 
 we can find the jump `esp` gadget using [[ropper]]  - 
 ```

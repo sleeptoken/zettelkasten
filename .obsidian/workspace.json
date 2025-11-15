@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Why add shellcode to pwn script.md",
+                "file": "Remote Thought/Overflow buff & Overwrite the return address.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Why add shellcode to pwn script"
+              "title": "Overflow buff & Overwrite the return address"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "NX",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Why add shellcode to pwn script.md",
+                "file": "Remote Thought/Overflow buff & Overwrite the return address.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Why add shellcode to pwn script"
+              "title": "Outline of Overflow buff & Overwrite the return address"
             }
           }
         ],
@@ -180,10 +181,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35e30d41c58ed0d4",
+  "active": "d44064983eff40d7",
   "lastOpenFiles": [
-    "Remote Thought/Format String Vulnerabilities (printf).md",
+    "NX (No-Execute).md",
+    "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
+    "Remote Thought/Leak PIE & Ret2Lib-C.md",
+    "Remote Thought/HTTP Request Smuggling.md",
+    "Remote Thought/Footprinting & Reconnaissance.md",
+    "Remote Thought/Bypassing Stack Canaries.md",
+    "Tags/Binary Exploit.md",
+    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Why add shellcode to pwn script.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Format String pwn.md",
     "hold on/Binary/Format string vuln.md",
     "Remote Thought/C trick for buff.md",
@@ -191,24 +200,16 @@
     "Tags/ASLR.md",
     "Tags/rop.md",
     "Remote Thought/Ret2Labyrinth.md",
-    "Remote Thought/Bypassing Stack Canaries.md",
     "Remote Thought/Return to Win.md",
     "Tags/ropper.md",
     "hold on/Binary/Buffer overflow.md",
-    "Tags/Binary Exploit.md",
-    "Remote Thought/Binary exploit toolkit.md",
     "Remote Thought/Overflow buff & Overwrite the return address.md",
     "Remote Thought/Overwriting variables on the stack.md",
     "Remote Thought/Return to Lib-C.md",
-    "Remote Thought/Leak PIE & Ret2Lib-C.md",
     "Remote Thought/Breakpoint in IDA.md",
     "Tags/Compiling binary.md",
     "Stream Cipher.md",
-    "hold on/Unix/Links.md",
-    "hold on/Network loggin.md",
-    "hold on/IAM notes.md",
     "Images/buffer-overflow-diagram.png",
-    "hold on/Notes from babaji/Side-channel attack on MagSafe LED.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
