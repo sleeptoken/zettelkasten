@@ -1,11 +1,11 @@
-4-THM
+Tags: [[Binary Exploit]] 
 
 When running file on the binary 
 ELF 64 bit
 
 Shell code is added when nx is disabled and we can execute shell code from stack or heap
 
-The program doesn't include bin.sh that's why we add shell code in the pen script
+The program doesn't include `bin.sh` that's why we add shell code in the pen script
 
 ```
 from pwn import *
@@ -26,9 +26,7 @@ P interactive()
 P64 and p32 only takes int that's why decode it from hexadecimal to int. 
 
 0x58 ( is mentioned at the top of the function in graph view in cutter ) is where get function starts to take input 
-
 ### Payload 
-
 
 Heap is
 - hierarchical, also larger 
@@ -36,10 +34,10 @@ Heap is
 - Can be stored and retrieved in any order
 
 Data has 2 parts 
-- .data - hold variable 
-- .bss - hold unsigned variables (buffer)
+- `.data` - hold variable 
+- `.bss` - hold unsigned variables (buffer)
 
-Text - main instructions loaded into, this segment to be fetched by cpu
+Text - main instructions loaded into, this segment to be fetched by CPU
 
 ```
 | Retn | <- high address
@@ -55,3 +53,7 @@ Text - main instructions loaded into, this segment to be fetched by cpu
 Stack upr se neeche assign karega address aur neeche se uper fill karega 
 
 Use `context.log_level="debug"` to do detailed analysis of the binary 
+### References
+4-THM
+
+

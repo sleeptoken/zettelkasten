@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hold on/Binary/Movapps issue.md",
+                "file": "Remote Thought/Why add shellcode to pwn script.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Movapps issue"
+              "title": "Why add shellcode to pwn script"
+            }
+          },
+          {
+            "id": "cd9963a5938119e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Format String pwn.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Format String pwn"
+            }
+          },
+          {
+            "id": "b8bc7bbf95e66b96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remote Thought/Format String Vulnerabilities (printf).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Format String Vulnerabilities (printf)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hold on/Binary/Movapps issue.md",
+                "file": "Remote Thought/Format String pwn.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Movapps issue"
+              "title": "Outline of Format String pwn"
             }
           }
         ],
@@ -179,10 +228,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d44064983eff40d7",
+  "active": "cd9963a5938119e1",
   "lastOpenFiles": [
-    "hold on/Binary/C trick for buff.md",
-    "hold on/Binary/Movapps issue.md",
+    "Remote Thought/Format String Vulnerabilities (printf).md",
+    "Remote Thought/Format String pwn.md",
+    "Remote Thought/Why add shellcode to pwn script.md",
+    "hold on/Binary/Format string vuln.md",
+    "Remote Thought/C trick for buff.md",
+    "Remote Thought/Movaps issue.md",
     "Tags/ASLR.md",
     "Tags/rop.md",
     "Remote Thought/Ret2Labyrinth.md",
@@ -204,10 +257,6 @@
     "hold on/IAM notes.md",
     "Images/buffer-overflow-diagram.png",
     "hold on/Notes from babaji/Side-channel attack on MagSafe LED.md",
-    "Remote Thought/Bizzare Info, Facts, Uncategorized.md",
-    "Remote Thought/Expressway Htb.md",
-    "Remote Thought/Reverse shell using curl.md",
-    "Remote Thought/Security Operations Center.md",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
     "Untitled 1.base",
