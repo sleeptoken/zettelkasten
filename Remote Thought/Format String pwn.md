@@ -3,8 +3,10 @@
 
 Source: #htb 
  
-Tags: [[Binary Exploit]] [[Format String Vulnerabilities (printf)]]
+Tags: [[Binary Exploit]] 
 ## Gist 
+
+> In short, this is a classic [[Format String Vulnerabilities (printf)]] exploit that leverages the `%p` specifier to perform **information disclosure** (stack memory readout).
 
 - We are given a binary that takes a bunch of Boolean inputs and if it matches a randomly generated value (referred to as winning) then it gives you an option to input some data that gets stored in the stack and reveals the flag.
 - now, if you win then the code checks if a `flag.txt` exists in the working directory and if it doesn't then it throws an error.

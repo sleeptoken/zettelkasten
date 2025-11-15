@@ -30,57 +30,8 @@
               "icon": "lucide-file",
               "title": "Why add shellcode to pwn script"
             }
-          },
-          {
-            "id": "cd9963a5938119e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Format String pwn.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Format String pwn"
-            }
-          },
-          {
-            "id": "b8bc7bbf95e66b96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Remote Thought/Format String Vulnerabilities (printf).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Format String Vulnerabilities (printf)"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5
+    "width": 261.5,
+    "collapsed": true
   },
   "right": {
     "id": "277ebed70b781143",
@@ -201,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Format String pwn.md",
+                "file": "Remote Thought/Why add shellcode to pwn script.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Format String pwn"
+              "title": "Outline of Why add shellcode to pwn script"
             }
           }
         ],
@@ -215,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,11 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd9963a5938119e1",
+  "active": "d44064983eff40d7",
   "lastOpenFiles": [
     "Remote Thought/Format String Vulnerabilities (printf).md",
-    "Remote Thought/Format String pwn.md",
     "Remote Thought/Why add shellcode to pwn script.md",
+    "Remote Thought/Format String pwn.md",
     "hold on/Binary/Format string vuln.md",
     "Remote Thought/C trick for buff.md",
     "Remote Thought/Movaps issue.md",

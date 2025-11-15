@@ -20,17 +20,19 @@ exploit code listed in the references works for 32bit as well as 64bit because w
 
 ---
 Different types of format pointer 
-- %c char
-- %d int 
-- %s string 
-- %x for 32bit int -> output is in little endian and prints only 4 bytes 
-- %lx for 64bit int -> output is in little endian and prints only 8 bytes 
-- %n pointer 
-- %hn half pointer 
+- `%c` char
+- `%d` int 
+- `%s` string 
+- `%x` for 32bit hexadecimal int -> output is in little endian (on common Intel/AMD (x86/x64) ) else in natural order and prints only 4 bytes 
+- `%lx` for 64bit hexadecimal long int -> output similar to %x but prints only 8 bytes 
+- `%n` pointer 
+- `%hn` half pointer -> often used to write one or two bytes at a time for precise memory overwrites.
 ### how to identify 
 
-File 32 bit use `%x`
+File 32 bit use `%x` 
+	**32-bit systems** use 4-byte addresses, which correspond well to the 4-byte `int` that `%x` typically prints.
 File 64 bit use `%lx`
+	**64-bit systems** use 8-byte addresses, which correspond well to the 8-byte `long int` that `%lx` prints.
 
 `%x.%x.%x` used to overflow hexadecimal string in the heap, here `.` is a field seperator 
 
