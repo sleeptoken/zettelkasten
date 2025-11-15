@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5,
-    "collapsed": true
+    "width": 337.5
   },
   "right": {
     "id": "277ebed70b781143",
@@ -181,7 +180,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d44064983eff40d7",
+  "active": "35e30d41c58ed0d4",
   "lastOpenFiles": [
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Why add shellcode to pwn script.md",

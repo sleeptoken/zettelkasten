@@ -7,7 +7,7 @@ Shell code is added when nx is disabled and we can execute shell code from stack
 
 The program doesn't include `bin.sh` that's why we add shell code in the pen script
 
-```
+```python
 from pwn import *
 
 context.binary="./bin4.pwn4"
