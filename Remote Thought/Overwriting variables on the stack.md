@@ -24,7 +24,7 @@ gcc vuln.c -o vuln -fno-stack-protector -z execstack -no-pie -m32
 ```
 `-m32` --> above code will output a 32 bit file  
 `-fno-stack-protector` --> no protections enabled, prevent it from adding canaries to the stack
-`-z execstac` --> makes sure the program is marked as executable - NX Disabled 
+`-z execstac` --> makes sure the program is marked as executable - [[NX (No-Execute)]] Disabled 
 `-no-pie` --> means that the program will load at the same memory address each time
 
 [[gets]] shouldn't be used as it doesn't check if the value entered by the user is within the limits of the stack. instead use `fgets()`. 

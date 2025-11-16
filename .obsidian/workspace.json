@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remote Thought/Overflow buff & Overwrite the return address.md",
+                "file": "hold on/Networking/Firewall.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Overflow buff & Overwrite the return address"
+              "title": "Firewall"
             }
           }
         ]
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remote Thought/Overflow buff & Overwrite the return address.md",
+                "file": "hold on/Networking/Firewall.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Overflow buff & Overwrite the return address"
+              "title": "Outline of Firewall"
             }
           }
         ],
@@ -183,6 +182,16 @@
   },
   "active": "d44064983eff40d7",
   "lastOpenFiles": [
+    "hold on/Networking/Windows callback routine.md",
+    "hold on/Networking/Wifi router.md",
+    "hold on/Networking/Firewall.md",
+    "hold on/Networking/Wifi delicacy.md",
+    "Remote Thought/Why add shellcode to pwn script.md",
+    "Remote Thought/Return to Lib-C.md",
+    "Tags/Pem files.md",
+    "Remote Thought/Overwriting variables on the stack.md",
+    "Remote Thought/Overwrite Global Offset Table (GOT) Entries with printf().md",
+    "Remote Thought/Overflow buff & Overwrite the return address.md",
     "NX (No-Execute).md",
     "Remote Thought/Misconfigured Nginx, and real-world password management flaws.md",
     "Remote Thought/Leak PIE & Ret2Lib-C.md",
@@ -191,7 +200,6 @@
     "Remote Thought/Bypassing Stack Canaries.md",
     "Tags/Binary Exploit.md",
     "Remote Thought/Binary exploit toolkit.md",
-    "Remote Thought/Why add shellcode to pwn script.md",
     "Remote Thought/Format String Vulnerabilities (printf).md",
     "Remote Thought/Format String pwn.md",
     "hold on/Binary/Format string vuln.md",
@@ -200,15 +208,6 @@
     "Tags/ASLR.md",
     "Tags/rop.md",
     "Remote Thought/Ret2Labyrinth.md",
-    "Remote Thought/Return to Win.md",
-    "Tags/ropper.md",
-    "hold on/Binary/Buffer overflow.md",
-    "Remote Thought/Overflow buff & Overwrite the return address.md",
-    "Remote Thought/Overwriting variables on the stack.md",
-    "Remote Thought/Return to Lib-C.md",
-    "Remote Thought/Breakpoint in IDA.md",
-    "Tags/Compiling binary.md",
-    "Stream Cipher.md",
     "Images/buffer-overflow-diagram.png",
     "Cortex XSIAM",
     "Images/Pasted image 20250828161637.png",
